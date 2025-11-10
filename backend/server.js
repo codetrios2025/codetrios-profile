@@ -7,7 +7,7 @@ import mongoSanitize from "express-mongo-sanitize";
 import rateLimit from "express-rate-limit";
 import cookieParser from "cookie-parser";
 import xss from "xss-clean";
-import connectDB from "./config/db";
+import connectDB from "../backend/config/db.js";
 
 dotenv.config();
 const app = express();
