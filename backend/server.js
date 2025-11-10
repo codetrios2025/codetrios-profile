@@ -7,6 +7,7 @@ import mongoSanitize from "express-mongo-sanitize";
 import rateLimit from "express-rate-limit";
 import cookieParser from "cookie-parser";
 import xss from "xss-clean";
+import connectDB from "./config/db";
 
 dotenv.config();
 const app = express();
@@ -20,12 +21,8 @@ app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
 app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
 
-// Database
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ MongoDB Connected"))
-  .catch((err) => console.error("❌ Mongo Error:", err));
-
+// ✅ Connect Database
+connectDB();
 // Example route
 app.get("/", (req, res) => {
   res.json({ message: "Secure API working ✅" });
