@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-import mongoose from "mongoose";
+import adminRoutes from "./routes/adminRoutes.js";
+import { errorHandler } from "./middleware/errorMiddleware.js";
 import cors from "cors";
 import helmet from "helmet";
 import mongoSanitize from "express-mongo-sanitize";
@@ -23,6 +24,11 @@ app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
 
 // ✅ Connect Database
 connectDB();
+
+app.use("/api/admin", adminRoutes);
+
+// global error handler
+app.use(errorHandler);
 // Example route
 app.get("/", (req, res) => {
   res.json({ message: "Secure API working ✅" });
