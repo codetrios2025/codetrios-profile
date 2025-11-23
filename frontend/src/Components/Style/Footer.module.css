@@ -1,0 +1,69 @@
+.FooterMain{position: relative;background: #E5E5F2;padding: 30px 0 10px}
+/* .FooterMain:after{position: absolute;content: "";top: 100px;left: 0;width: 100%;height: 1px;background: #fff;} */
+.FooterMain h6{font-family: 'Sora-Bold';font-size: 17px;color: #0054a5;text-transform: uppercase;}
+.FooterMain h5{font-family: 'Lato Bold';font-size: 16px;color: #000;text-transform: capitalize;}
+.FooterMain a{font-family: 'Lato Regular';font-size: 14px;line-height: 24px;color: #000000;}
+.FooterMain a strong{font-family: 'Lato Bold';}
+.FooterMain ul{display: flex;flex-direction: column;}
+.FooterMain form{position: relative;}
+.FooterMain form input{font-family: 'Sora-Bold';width: 100%;border: none;border-bottom: 1px solid #B8B2B2;padding-bottom: 14px;background: transparent;font-size: 17px;}
+input::placeholder{color: #000;}
+.FooterMain form button{    position: absolute;top: -12px;right: 0;background: transparent;border: none;width: auto;}
+.FooterMain .socialLink{display: flex;flex-direction: row;margin: 0 0 5px;} 
+.FooterMain .socialLink a{color: #0C184C;font-size: 20px;}
+.FooterMain .socialLink li{margin-right: 40px;}
+.socialLink p.insta a {font-size:14px;background: #0274B3;border-radius: 4px;color: #fff;width: 24px;height: 21px;display: block;font-size: 15px;display: inline-flex;justify-content: center;align-items: center;}
+
+.FooterMain p{font-family: 'Lato Regular';margin-bottom: 8px;}
+.FooterMain p a{color: #000;font-size: 14px;}
+.FooterMain p img{margin-right: 10px;}
+.copyRight .copyFlex{border-top: 1px solid #C5C5C5;padding-top: 15px;display: flex;justify-content:space-between;align-items: center;margin-top: 10px;}
+.copyRight .copyFlex p, .copyRight .copyFlex p a{font-size: 12px;color: #000;margin: 0;text-align: center;}
+.copyRight .copyFlex p img{margin: 0;}
+.footerLogo{margin-top: 25px;}
+.topSpace{margin-top: 20px;}
+.colmSpace{padding-left: 80px;}
+.insta{margin: 0;}
+.insta a{color: #fff!important;}
+.newAddress .iconBg{width: 21px;height: 21px;border-radius: 50%;background: #063e74;color: #fff;min-width: 21px;display: flex;align-items: center;justify-content: center;margin-right: 10px;}
+.newAddress ul{margin-bottom: 10px;}
+.newAddress ul li{display: flex;margin-bottom: 5px;font-family: 'Lato Regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;}  
+.newAddress ul li strong{margin-right: 8px;color: #063e74;font-size: 12px;}    
+.newAddress p{margin: 0;}
+.mobFlex{display: flex;flex-direction: column;}
+@media only screen and (max-width:1199px){
+.FooterMain .socialLink li{margin-right: 20px;}
+.FooterMain p a{font-size: 16px;}
+.colmSpace{padding-left: 40px;}
+}
+
+@media only screen and (max-width:991px){
+.FooterMain h6{font-size: 14px;}
+.FooterMain form input{font-size: 14px;}
+.FooterMain form button{margin: 0;padding: 0;line-height: normal;top: 0;}
+.FooterMain .socialLink{margin: 10px 0;}
+.FooterMain .socialLink li{margin-right: 15px;}
+.FooterMain p a{font-size: 12px;}
+.footerLogo{margin-top: 15px;width: 100px;}
+.FooterMain p{margin: 0;}
+.mobWid{width: 50%;}
+.CTFSpace{margin-top: 20px;}
+.FooterMain p img{margin-right: 5px;}
+.copyRight .copyFlex{flex-direction: column;}
+.FooterMain a{font-size: 13px;}
+}
+
+@media only screen and (max-width:767px){
+.colmSpace{padding-left: 15px;margin-top: 15px;}
+.copyRight .copyFlex p{margin-bottom: 5px;}
+
+}
+@media only screen and (max-width:580px){
+.mobWidth{width: 100%;margin-top: 15px;}
+.mobFlex{flex-direction: row; justify-content: space-between;width: 100%;}
+.mobFlex .topSpace{margin: 0;}
+.mobFlex>div{flex: 1;}
+}

@@ -1,0 +1,136 @@
+.HeaderMain,
+.HeaderMainAdmin {
+padding: 15px 0;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+}
+
+.headerFlex,
+.headerFlexAmdin {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #fff;
+padding: 0 30px 0 20px;
+border-radius: 8px;
+}
+
+header ul {
+display: flex;
+}
+
+.Menu {
+margin-left: 0;
+}
+
+.Menu ul li {
+font-family: 'Lexend Deca Medium';
+margin: 0 10px;
+position: relative;
+}
+
+.Menu ul li a {
+color: #000;
+padding: 22px 10px;
+font-size: 16px;
+display: block;
+border-bottom: 2px solid transparent;
+}
+
+
+@media only screen and (min-width:992px) {
+
+.Menu ul li:hover .subMenu{display: block;}
+/* .Menu ul li:hover .subMenu:after {position: absolute;top: -12px;left: 20px;content: "";border-bottom: 12px solid #0054a5;border-right: 8px solid transparent;border-left: 8px solid transparent;} */
+.Menu li:hover .megaMenu {display: block;}
+/* .Menu li:hover .megaMenu:after {position: absolute;top: -12px;left: 37%;content: "";border-bottom: 12px solid #0054a5;border-right: 8px solid transparent;border-left: 8px solid transparent;transform: translate(-50%);} */
+}  
+.Menu ul li .subMenu {display: none;position: absolute;top: 70px;left: 0;background: #0054a5;padding: 10px 12px;width: 220px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.Menu .subMenu li {margin: 0;}
+.Menu .subMenu li a {display: block;font-family: 'Lexend Deca Medium';font-size: 14px;padding: 8px 0;color: #fff;border-bottom: 1px dotted #465AAA;}
+.Menu ul li:hover .subMenu li a {background-color: transparent;border-bottom: 1px dotted #465AAA;}
+.Menu .subMenu li:last-child a {border: none;}
+.Menu ul li:hover a {border-color: #0054A5;background-color: #e6e6f2;}
+.SocialIcon li {padding: 0 7px;}
+.SocialIcon li a {font-size: 20px;color: #0054A5;}
+.headerFlexAmdin {border-radius: 0;background: #16234F;}
+.SocialIcon li.insta a {background: #0274B3;border-radius: 4px;color: #fff;width: 24px;height: 21px;display: block;font-size: 15px;display: flex;justify-content: center;align-items: center;}
+.SocialIcon li.Search{position: relative;}
+.SocialIcon li.Search .searchBtn {background: #0274B3;border-radius: 50%;color: #fff !important;display: block;font-size: 14px;display: flex;justify-content: center;align-items: center;margin: 0;padding: 6px;}
+.SocialIcon li.Search .searchBox{position: absolute;bottom: -91px;right: 0;width: 300px;background: #0E216F;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;padding: 10px;}
+.SocialIcon li.Search .searchBox input{width: 100%;border: none;height: 50px;padding: 0 47px 0 15px;}    
+.SocialIcon li.Search .searchBox button{margin: 0;padding: 0 12px;position: absolute;top: 10px;    right: 10px;height: 50px;border-radius: 0;font-size: 24px;background: #0274b3;}
+.HeaderMainAdmin {padding: 0;}
+.Logout,
+.Logout a {color: #fff;}
+.SocialIcon ul {display: flex;align-items: center;}
+.megaMenu {width: 950px;background: #0054a5;/*padding:25px 0 30px;*/border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;display: none;position: absolute;top: 70px;left: -270px;overflow: hidden;right: -270px;}
+.megaMenu .tabContainer {display: flex;}
+.megaMenu .tabContainer .leftArea {width: 240px; padding: 30px 0;}
+.megaMenu .tabContainer .RightArea {width: calc(100% - 240px);}
+.megaLink {display: flex;flex-wrap: wrap;}
+.Menu .megaLink li {width: 50%;margin: 0;}
+.Menu .megaLink li {margin-bottom: 12px;}
+.Menu .megaLink li a {color: #fff;padding: 0;font-size: 14px;line-height: 20px;}
+.Menu .megaLink li a:hover {border: none;}
+.Menu ul li:hover .megaLink li a {background-color: transparent;border: 0;}
+.ToggleMenu{display: none;}
+.closeMenu, .subMenuIcon{display: none;}
+/* .SocialIcon{display: none;} */
+
+@media only screen and (max-width:1399px) {
+.megaMenu{width: 850px;}
+}
+
+@media only screen and (max-width:1200px) {
+
+.headerFlex, .headerFlexAmdin {padding: 0 20px;}
+.Menu ul li {margin: 0 15px;}
+.Menu {margin-left: 40px;}
+}
+
+@media only screen and (max-width:992px) {
+    .SocialIcon{display: block;}
+.Menu ul li:hover a {border-color: transparent;background-color: transparent;}
+.headerFlex,
+.headerFlexAmdin {padding: 10px 20px;}
+.Menu {        display: none;position: fixed;top: 0;right: 0;width: 300px;height: 100vh;overflow: auto;background: #0E216F;z-index: 9999;padding-top: 30px;}
+    .Menu.active{display: block;}    
+.Menu ul{flex-direction: column;}    
+.Menu ul li{margin: 0;position: relative;}
+.Menu ul li button{position: absolute;top: 0;right: 0;margin: 0;padding: 0 17px;font-size: 20px;color: #fff;background: #10288b;z-index: 99999;height: 44px;border-radius: 0;}
+.subMenuIcon{display: block;}
+.Menu ul li a{color: #fff;padding: 10px;}
+.Menu ul li ul, .megaMenu{position: relative!important;top: 0!important;left: 0;width: 100%!important;margin: 0;}
+.Menu ul li:hover .subMenu:after{content: none;}
+.ToggleMenu{display: block;}
+.ToggleMenu button{padding: 0;margin: 0;width: 26px;height: 26px;background: #0274B3;border-radius: 4px;        display: flex;    align-items: center;justify-content: center;}
+.megaMenu{padding: 0;}
+.megaMenu .tabContainer {flex-direction: column;}
+.megaMenu .tabContainer .leftArea{width: 100%;padding: 0;}
+.megaMenu .tabContainer .leftArea ul li{text-align: left;padding: 10px 20px;font-size: 14px;}
+.megaMenu .tabContainer .RightArea{width: 100%;padding-left: 0;}
+.Menu .megaLink li{width: 100%;margin: 0;}
+.Menu .megaLink li a{font-size: 14px;font-family: 'Lexend Deca Regular';padding: 8px 25px;}
+.closeMenu{display: block;margin: 0;padding: 0;position: absolute;top: 5px;right: 10px;background: transparent;font-size: 22px;}
+.Menu li:hover .megaMenu:after{content: none;}
+.Menu ul li a {font-size: 14px;}
+.Menu li:hover .subMenu li:last-child a {border: none;}
+.Menu ul li .subMenu{padding: 0;}
+.Menu ul li .subMenu li a{padding: 10px 20px;font-family: 'Lexend Deca Regular';}
+.subMenu.active, .megaMenu.active{display: block!important;border-radius: 0;}
+.Menu ul li:hover a{margin: 0;}
+.Menu ul li .megaLink li a, .Menu ul li:hover .megaLink li a {    border-bottom: 1px dotted #e8404f;}
+}
+
+@media only screen and (max-width:767px) {
+.HeaderMain, .HeaderMainAdmin {padding: 10px 0;}
+.SocialIcon li {padding: 0 7px 0 0;}
+.headerFlex, .headerFlexAmdin {padding: 10px;}
+}
+
+@media only screen and (max-width:576px){
+    .SocialIcon li.Search .searchBox{right: -100px;}
+}

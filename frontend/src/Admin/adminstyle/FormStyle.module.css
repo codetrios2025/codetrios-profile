@@ -1,0 +1,70 @@
+/* Form container styles */
+.headerForm {
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styles */
+.headerForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form label styles */
+.headerForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Form input styles */
+.headerForm input[type="text"],
+.headerForm input[type="url"],
+.headerForm input[type="color"],
+.Selectdropdown {
+    width: calc(100% - 16px);
+    /* Adjust input width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Form color input styles */
+.headerForm input[type="color"] {
+    padding: 6px;
+    /* Adjust padding for color input */
+}
+
+/* Form submit button styles */
+.headerForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.headerForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button {
+    width: max-content;
+    margin: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .headerForm {
+        padding: 20px;
+    }
+}
