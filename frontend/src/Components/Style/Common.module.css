@@ -1,0 +1,1725 @@
+/* ----Home Page Style Start----- */
+.centerAlight{text-align: center;}
+.zoomEffect, .zoomEffect *{transition: all 0.5s ease;overflow: hidden;}
+.zoomEffect:hover figure img{scale: 1.25;}
+.imgBgStyle{position: relative;}
+.imgBgStyle:after{position: absolute;content:"";top: 0;left: 0;width: 100%;height: 100%;background: #9B8F8F;left: -16px;top: 16px;border-radius: 7px;opacity: 0.2;}
+.imgBgStyle img{position: relative;z-index: 9;}
+.brownBg{background: #FAFAFA!important;}
+/* Banner Section */
+.HomeBanner .BannerSlide{position: relative;height: 600px;overflow: hidden;}
+.banerMask{position: absolute;top: 0;left: 0;}
+.banerMask img{opacity: .4;}
+.heroImg{width: 100%;height: 100%;object-fit: cover;}
+.heroBannerContent{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 520px;color: #fff;max-width: 100%;z-index: 9;}
+.heroBannerContent h1{text-transform: capitalize;margin-bottom: 30px;}
+.heroBannerContent h1 span{display: block;}
+.heroBannerContent a{padding: 13px 50px 13px 24px;}
+.BannerSlide{position: relative;}
+.BannerSlide::after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: #00000050;}
+/* We Are Section */
+.WhoWeAre{position: relative;padding: 35px 0;}
+.AreContainer{background: #fff;padding: 40px 40px 40px;}
+.WhoWeAre .BoxFlex{display: flex;padding: 0 200px 0 50px;align-items: center;}
+.WhoWeAre .BoxFlex h2{font-size: 65px;
+    line-height: 65px;
+    text-align: left;
+    text-transform: capitalize;
+    min-width: 250px;}
+.WhoWeAre .BoxFlex h2 span{display: block;}
+.WhoWeAre .BoxFlex .Boxcontent{margin-left: 30px;padding-left: 40px;position: relative;}
+.WhoWeAre .BoxFlex .Boxcontent:after{position: absolute;top: 0;left: 0;width: 1px;height: 130px;content: "";background: #F1EEEE;}
+.WhoWeAre .BoxFlex .Boxcontent p{margin-bottom: 10px;font-family: 'Lexend Deca Medium';}
+.WhoWeAre .BoxFlex .Boxcontent a{margin-top: 10px;display: inline-block;}
+.areRank ul{padding: 0 50px;border-top: 1px solid #F1EEEE;display: flex;align-items: center;justify-content: space-between;margin-top: 25px;padding-top: 25px;}
+.areRank ul li h2{font-size: 80px;color: #0054a5;}
+.areRank ul li h6{padding-right: 0;font-family: 'Lexend Deca SemiBold';}
+
+/* We Offer Section */
+.OfferSec{position: relative;padding: 55px 0;background: #0054A5 url(../../assest//images/red_mark.png) no-repeat;background-position: 0 65%;}
+.tabContainer{display: flex;flex-wrap: wrap;}
+.tabContainer .leftArea{width: 240px;}
+.tabContainer .leftArea ul{margin: 155px 0 0 0;}
+.tabContainer .RightArea{flex: 1;padding-left: 30px;width: 80%;}
+.OfferOwlContainer{position: relative;margin: 0 8px;border-radius: 6px;overflow: hidden;height: 400px;}
+.OfferOwlContainer figure img{width: 100%;height: 100%;object-fit: cover;}
+.OfferOwlContainer figure{position: relative;height: 100%;}
+.OfferOwlContainer figure:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: linear-gradient(1.25deg, #102553 0.99%, rgba(57, 91, 166, 0.25) 42.84%);}
+.OfferOwlContainer .OfferOwlElem{position: absolute;bottom: 0;left: 0;width: 100%;padding: 18px;display: flex;align-items: center;justify-content: space-between;z-index: 9;}
+.OfferOwlElem h5{font-family: 'Lato Bold';color: #fff;line-height: 22px;margin: 0;font-size: 16px;}
+.offerHeading{display: flex;color: #fff;padding-left: 0;margin-bottom: 50px;align-items: center;padding-right: 50px;}
+.offerHeading h3{text-align: right;position: relative;    margin-right: 40px;padding-right: 50px;width: 280px;    margin-bottom: 0;}
+.offerHeading h3:after{position: absolute;content: "";top:12px;right: 0;width: 5px;height: 90px;border-radius: 40px;background: #ED1F1D;}
+.offerHeading h3 span{display: block;}
+.offerHeading p{flex: 1;color: #fff;margin: 0;}
+.buttonFlex{text-align: center;margin-top: 45px;}
+.buttonFlex button{display: inline-block;}
+
+/* Leader Ship Section */
+.TQTeam{position: relative;background: #E5E5F2;padding: 40px 0;}
+.InnerContainer{padding: 0 125px;}
+.TQTeam h3{font-size: 45px;}
+.LeaderSlider{position: relative;}
+.leaderItem{display: flex;justify-content: space-between;background: #040D33;padding: 50px 0 0 50px;}
+.itemContent{color: #fff;    padding-right: 90px;}
+.itemContent h3{text-transform: uppercase;}
+.itemContent h4{font-size: 42px;color: #FF003D;margin: 20px 0 10px;}
+.itemContent p{font-size: 14px;line-height: 24px;color: #fff!important;}
+.itemContent p span{background: transparent!important;color: #fff!important;}
+.leaderThum{display: flex;background: rgba(217, 217, 217, 0.55);padding: 10px;border-radius: 10px;align-items: center;opacity: .5;cursor: pointer;}
+.leaderThum figure{width: 49px;height: 49px;padding: 4px;border-radius: 100%;min-width: 49px;margin-right: 8px;border: 1px solid #fff;overflow: hidden;}
+.leaderThum figure img{width: 100%;}
+.leaderThum h6{font-size: 10px;color: #fff;font-family: 'Sora-Bold';margin: 0;}
+.leaderThum h6 span{display: block;color: #000;text-transform: uppercase;margin-top: 3px;}
+.JoinTeamSec figure{text-align: right;height: 375px;overflow: hidden;}
+.JoinTeamSec figure img{width: auto;max-width: 100%;}
+.maskImg{position: absolute;top: 50px;right: 100px;z-index: 9;}
+.blankDiv{background: #E5E5F2;height: 102px;border-bottom: 1px solid #fff;}
+/* Join Our Team Section */
+.JoinTeamSec{position: relative;background: #094C8A;}
+.JoinTeamSec .InnerContainer{padding: 0 235px 0 125px;height: 375px;overflow: hidden;}
+.teamContent{padding: 40px 0 30px 0;color: #fff;}
+.teamContent h3{margin-bottom: 20px;}
+.teamContent h3 span{color: #ED1F1D;}
+.teamContent p{margin-bottom: 40px;line-height: 27px;}
+.gridContainer{position: relative;display: flex;padding-left: 50px;}
+.teamGrid{display: flex;flex-direction: column;position:relative; top:0px; left:0px; overflow:hidden; white-space: nowrap;
+    animation: bannermove 30s linear infinite;
+    margin: 0 -5px;}
+.teamGrid:last-child{margin-top: 50px;}
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -90%);
+    }
+  }
+  /* .teamGrid figure:nth-child(2)  {margin-top: 30px;} */
+  .teamGrid>div{margin: 5px 10px;}  
+.teamGrid figure{border: 1px solid #fff;border-radius: 7px;width: 100%;padding: 5px;height: 250px;}
+.teamGrid figure img{width: 100%;object-fit: cover;height: 100%;border-radius: 7px;}
+
+/* Improve Section  */
+.ImproveSec{position: relative;padding: 65px 0;background: url(../../assest/images/leadership_bg.jpg) no-repeat;background-size: cover;}
+.ImproveSec:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: radial-gradient(50% 50% at 50% 50%, #0054a5 0%, #0054a5 100%);opacity: 0.94}
+.ImproveContainer{position: relative;z-index: 9;padding: 40px 200px;}
+.ImproveContainer:after{position: absolute;top: 0;left: 50px;content: '';width: 74px;height: 60px;border-top: 1px solid #fff;border-left: 1px solid #fff;}
+.ImproveContainer:before{position: absolute;bottom: 0;right: 50px;content: '';width: 74px;height: 60px;border-bottom: 1px solid #fff;border-right: 1px solid #fff;}
+.ImproveContainer p{text-align: center;color: #fff;font-family: 'Sora-SemiBold';font-size: 30px;line-height: 44px;margin: 0;}
+
+/* Sectors Section */
+.projectServices .SectorsSec {background: #fff;}
+.SectorsSec{position: relative;padding: 70px 0;background: linear-gradient(0deg, #E5E5F2 0%, #FFFFFF 100%);overflow: hidden;}
+.GlobalSec{background: #fff;}
+.SectorsSlid{padding: 35px 100px 0;}
+.SectorsItemContainer{position: relative;}
+.SectorsItemContainer figure{position: relative;}
+.SectorsItemContainer figure img {width: 100%;height: 300px;object-fit: cover;}
+/* .SectorsItemContainer figure:after{position: absolute;content: "";bottom: 0;left: 0;width: 100%;height: 70%;background: linear-gradient(360deg, #FFFFFF 41.84%, rgba(255, 255, 255, 0.377406) 71.17%, rgba(153, 153, 153, 0) 92.18%);} */
+.SectorsItemElem{position: relative;width: 100%;padding: 20px;background: #094C8A;}
+.SectorsItemElem .sectorTitle{width: 100%;}
+.SectorsItemElem .sectorDes{width: 60%;padding-left: 25px;}
+.SectorsItemElem .sectorLink{    display: flex;justify-content: flex-end;width: 10%;}
+.SectorsItemElem h4 {font-size: 26px;font-family: 'Sora-SemiBold';color: #ffffff;margin: 0; display: flex; justify-content: center; align-items: center;}
+.SectorsItemElem h4 span {display: inline-block;padding-left: 15px;}
+.SectorsItemElem h4 span a {height: 37px;min-width: 37px;width: 37px;}
+.SectorsItemElem p{font-size: 14px;line-height: 25px;margin: 0;font-family: 'Lexend Deca Medium';padding-right: 30px;}
+.SectorsItemElem p ol{margin:0 0 0 15px;padding: 0;display: none;}
+.SectorsItemElem p ol li{list-style-type: disc;}
+.SectorsItemElem p p{display: none;}
+.SectorsItemElem p p:first-child{display: block;}
+/* Key Project section */
+.keySec{position: relative;background: #E4E4E4;padding: 60px 0;}
+.keySlider{padding-left: 70px;margin-top: 35px;}
+
+/* ----Home Page End Start----- */
+
+/* ----About Page Style Start----- */
+
+/* LeaderShip Team Page */
+.leaderBlock{position: relative;}
+.innerBanner{position: relative;height: 450px;overflow: hidden;}
+.smallBanner{height: 250px;}
+.innerBanner:after{position: absolute;content: "";top:0;left: 0;width: 100%;height: 100%;background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #24262E 71.14%);}
+.innerBanner:before{position: absolute;content: "";top: 0;left: -60px;width: 100%;height: 100%;background: url('../../assest/images/banner_mask.png') no-repeat;z-index: 1;background-size: contain;}
+.innerBanner .innerBannerimg{    width: 100%;height: 100%;object-fit: cover;}
+.innerBannerContent{position: absolute;z-index: 9;top: 30%;left: 0;color: #fff;width: 100%;}
+.innerBannerContent .detail{padding-left: 20px;width: 615px;max-width: 100%;}
+.innerBannerContent p{margin-bottom: 30px;}
+/* Inner Small Banner */
+.InnerSmallBanner.innerBanner:after{background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(36, 38, 46, 0.61) 71.14%);}
+.InnerSmallBanner.innerBanner:before{background: url('../../assest/images/Mask-lg.png') no-repeat;    background-size: contain;}
+.InnerSmallBanner .innerBannerContent{top: 50%;text-align: center;}
+.InnerSmallBanner .innerBannerContent .detail{width: 100%;}
+.noneMask.InnerSmallBanner.innerBanner:before{content: none;}
+/* Inner Small Banner */
+.leaderRank{border-top: 1px solid #D9D2D2;padding-top: 30px;margin-top: 60px;}
+.leaderRank .areRank ul{margin: 0;border: none;    padding: 0 0;}
+.leaderRank .areRank ul h2{font-size: 70px;}
+.leaderRank .areRank ul li{border-right: 1px solid #D9D2D2;padding: 17px 80px 25px;}
+.leaderRank .areRank ul li:last-child{border: none;}
+.seniorTeam{position: relative;padding: 40px 0;background: #0054a5;color: #fff;}
+.seniorContainer {padding: 0 80px;display: flex;flex-wrap: wrap;margin-top: 35px;}
+.seniorElem{width: 25%;padding: 0 9px;margin-bottom: 35px;}
+.seniorElem .seniorElemSpace{position: relative;}
+.seniorElem figure{height: 340px;}
+.seniorElem figure img{width: 100%;border-radius: 5px;height: 100%;object-fit: cover;}
+.seniorDetail{display: flex;align-items: flex-start;justify-content: space-between;margin-top: 20px;}
+.seniorDetail h6{font-size: 18px;line-height: 26px;}
+.seniorDetail h6 span{display: block;font-family: 'Lexend Deca Regular';font-size: 15px;}
+.seniorElem .expendLeader{display: none;}
+.seniorElem:hover .expendLeader{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(18, 45, 104, 0.62);background-blend-mode: hard-light;display: flex;align-items: center;justify-content: center;}
+.seniorElem .expendLeader a{color: #fff;font-size: 14px;position: relative;width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}    
+/* .seniorElem .expendLeader:after{position: absolute;top: 16px;left: 20px;content: '';width: 35px;height: 37px;border-top: 1px solid #fff;border-left: 1px solid #fff;}
+.seniorElem .expendLeader:before{position: absolute;top: 16px;right: 20px;content: '';width: 35px;height: 37px;border-top: 1px solid #fff;border-right: 1px solid #fff;}
+.seniorElem .expendLeader a:after{position: absolute;bottom: 16px;left: 20px;content: '';width: 35px;height: 37px;border-bottom: 1px solid #fff;border-left: 1px solid #fff;}
+.seniorElem .expendLeader a:before{position: absolute;bottom: 16px;right: 20px;content: '';width: 35px;height: 37px;border-bottom: 1px solid #fff;border-right: 1px solid #fff;} */
+.branchAddress{position: relative;background: #fff;padding: 45px 0;}
+.addressContainer{display: flex;margin: 35px auto 0;flex-wrap: wrap;width: 1070px;max-width: 100%;justify-content: center;}
+.addressContainer .addressElem{width: 48%;margin: 0 8px 16px;background: #F5F5F5;padding: 40px;}
+.addressElem h5{font-size: 18px;font-family: 'Sora-Bold';color: #0054a5;margin: 0;}
+.addressElem span{color: #ED1F1D;display: block;margin: 3px 0;}
+.addressElem p{font-size: 15px;line-height: 26px;margin: 0;}
+.AffiliatesSec{position: relative;background: #F3F0F0;padding: 70px 0;}
+.AffiliOwl{margin-top: 35px;}
+.slideContainer{display: flex;background: #0054a5;height: 325px;overflow: hidden;flex-wrap: wrap;}
+.slideContainer figure{width: 35%;background: #fff;display: flex;align-items: center;justify-content: center;padding: 10px;}
+.slideContainer figure img{width: 200px;
+    height: 125px;
+    max-width: 100%;
+    object-fit: contain;}
+.slideContainer .SlideDetail{background: #0054a5;padding: 45px 30px;color: #fff;width: 65%;}
+.slideContainer .SlideDetail h5{font-family: 'Sora-Bold';line-height: 31px;}
+.slideContainer .SlideDetail p{font-size: 14px;line-height: 25px;margin: 0;}
+.slideContainer .SlideDetail p span{background: transparent!important;color: #fff!important;}
+
+/* Board of Director Page */
+.directoeList{position: relative;background: #F1F1F1;padding: 50px 0 20px;}
+.directoerContainer{padding: 0 100px;}
+.directoerElem{display: flex;padding: 40px 50px;flex-wrap: wrap;background: #fff;margin-bottom: 50px;align-items: flex-start;}
+.directoerElem .BDdetail{width: 67%;padding-right: 100px;display: flex;flex-direction: column;justify-content: center;align-items: flex-start;}
+.directoerElem .BDImage{width: 33%;display: flex;justify-content: flex-end;} 
+.directoerElem .BDImage figure{position: relative;width: 100%;}
+.directoerElem .BDImage figure img{position: relative;z-index: 9;border-radius: 7px;width: 100%;}
+.directoerElem .BDImage figure:after{position: absolute;content: "";top: 15px;left: -16px;width: 100%;height: 100%;border-radius: 7px;background: #9B8F8F;opacity: 0.2;}
+.directoerElem h4{font-family: 'Sora-SemiBold';color: #0054a5;line-height: 42px;}
+.directoerElem h5{font-family: 'Lexend Deca Regular';color: #000;line-height: 30px;font-size: 30px;margin: 0 0 15px 0;}
+.directoerElem p p{display: none;}
+.directoerElem p p:first-child{display: block;}
+.directoerElem p span{color:#000!important}
+.directoerElem button{margin: 0;padding: 10px 40px 10px 24px;background-position: 86% center;}
+.directoerElem:nth-child(even) .BDdetail{order: 2;}
+.directoerElem:nth-child(even) .BDImage{order: 1;justify-content: flex-start;}
+.directoerElem:nth-child(even) .BDdetail{padding-left: 50px;padding-right: 0;}
+.directoerElem:nth-child(even) .BDImage figure:after{left: auto;right: -16px;}
+.memberPopop{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #00000070;z-index: 9999;display: flex;align-items: center;    justify-content: center;}
+.memberPopop .directoerContainer{padding: 0;}
+.memberPopop .directoerElem{width: 1300px;max-width: 100%;position: relative;    margin: 0;}
+.memberPopop .directoerElem p p{display: block;}
+.memberPopop .directoerElem .BDImage{margin-top: 40px;}
+/* .memberPopop .directoerElem .BDImage figure:after{background: #045CAD;opacity: 1;} */
+.memberPopop .directoerElem .BDdetail{padding-left: 30px;padding-right: 0;}
+.memberPopop .directoerElem h4{font-family: 'Lexend Deca bold';}
+.memberPopop .directoerElem h5{font-family: 'Lexend Deca SemiBold';border-bottom: 1px solid #ED1F1D;/*padding-right: 15px;*/padding-bottom: 10px;}
+.memberPopop .directoerElem p{font-size: 14px;line-height: 22px;}
+.memberPopop .closePopup{position: absolute;top: 15px;right: 15px;background: transparent;padding: 0;margin: 0;width: 34px;height: 34px;border-radius: 50%;border: 2px solid #000;display: flex;align-items: center;justify-content: center;color: #000;}
+/* key Project Page */
+.keyOption{position: relative;padding: 80px 0;background: linear-gradient(180deg, #E5E5F2 0%, #FFFFFF 100%);}
+/* .keyOption:after{position: absolute;content: "";top: 0;left: 0;width: 100%;height: 100%;background: url('../../assest/images/key-mask.png') no-repeat top left;} */
+.keyHeading{padding: 0 50px;position: sticky;top: 130px;background: url('../../assest/images/key-mask.png') no-repeat top left;background-size: 500px;height: 500px;}
+.keyHeading .keyBgMask{position: absolute;top: 0;left: 0;}
+.keyHeading h1 span{display: block;}
+.keyPageElem{background: #fff;border-radius: 10px;box-shadow: 0px 11px 7px rgba(204, 199, 199, 0.25);margin-bottom: 40px;}
+.keyPageContainer{position: relative;z-index: 9;padding-right: 50px;}
+.keyPageElem h4{font-size: 30px;line-height: 44px;color: #0054a5;padding: 15px 35px;}
+.keyPageElem figure{height: 300px;}
+.keyPageElem figure img{width: 100%;height: 100%;object-fit: cover;}
+.keyPageElem .keyPageElemDEtail{position: relative;padding: 45px 40px;}
+.keyPageElem .keyPageElemDEtail p:last-child{margin: 0;}
+.keyPageElem span{position: absolute;top: -30px;left: -25px;font-family: 'Lexend Deca bold';width: 56px;height: 56px;background: #ED1F1D;color: #fff;border-radius: 50%;display: flex;align-items: center;justify-content: center;font-size: 21px;}
+
+/* Overview Style */
+.aboutContent{position: relative;padding: 50px 0 0;background: linear-gradient(0deg, #F4F3F3 0%, #FFFFFF 100%);overflow: hidden;}
+.aboutImg{position: absolute;right: 0;top: 0;}
+.aboutElem{padding-left: 80px;width: 1000px;max-width: 100%;}
+.aboutElem h5{font-size: 22px;color: #0054a5;font-family: 'Sora-SemiBold';margin-bottom: 20px;}
+.aboutElem p{font-size: 14px;}
+.overviewSec{position: relative;padding: 60px 0;background-color: #fff;}
+.pageSpace{padding: 0 105px;}
+.overviewSec h3{font-size: 45px;;line-height: 61px;text-transform: none;}
+.overviewSec h3 span{color: #0054a5;}
+.overviewSec h5{font-size: 25px;color: #0054a5;}
+.overviewSec p{font-size: 16px;line-height: 26px;}
+.overViewImg{display: flex;}
+.overViewImg figure{margin: 6px;border-radius: 5px;}
+.overViewImg figure img{border-radius: 5px;}
+.rightClm{display: flex;flex-direction: column;}
+.aboutRank{position: relative;background: url('../../assest/images/rank_bg.jpg') no-repeat;background-size: cover;padding: 25px 0;}
+.aboutRank ul{padding: 0 105px;border: none;color: #fff;}
+.aboutRank .areRank ul li h2{color: #fff;font-size: 76px;line-height: normal;position: relative;}
+.aboutRank .areRank ul li h2:after{position: absolute;content: "";top: 15px;right: -50px;width: 1px;height: 60px;background: #fff;}
+.aboutRank .areRank ul li:last-child h2:after{content: none;}
+.aboutMission{position: relative;background: #EDEBEB;padding: 90px 0 75px;}
+.missionContainer{width: 890px;max-width: 100%;margin: 0 auto;display: flex;flex-wrap: wrap;}
+.missionElem{position: relative;width: 47%;background: #0054a5;border-radius: 10px;height: 265px;margin: 0 10px;color: #fff;}
+.missionElem:last-child{background: #0779EF;}
+.missionElem .zoomEffect{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border-radius: 10px;overflow: hidden;}
+.missionElem .zoomEffect img{width: 100%;height: 100%;opacity: .5;}
+.elemContent{position: relative;z-index: 9;display: flex;flex-direction: column;align-items: center;padding: 0 80px;top: -50px;}
+.elemContent img{margin-bottom: 15px;}
+.elemContent p{font-size: 18px;line-height: 30px;text-align: center;}
+.missionElem:hover .zoomEffect img{scale: 1.25;}
+.ValueContent{position: relative;background: #fff;padding: 80px 0;}
+.ValueContent p{font-family: 'Lexend Deca Medium';font-size: 18px;line-height: 30px;margin: 0;text-align: center;padding: 0 165px;}
+.aboutValue{position: relative;background: #162340;padding-bottom: 70px;}
+.aboutValue .valueBg{width: 100%;position: absolute;top: 0;left: 0;}
+.valueContainer{position: relative;}
+.valueFrontImg{position: absolute;top: 0;left: 0;}
+.valueElement{position: relative;z-index: 9;display: flex;padding:45px 0 0 50px;}
+.valueElement h4{color: #fff;font-size: 30px;}
+.valyeBoxContainer{display: flex;flex-wrap: wrap;padding-left: 140px;margin-top: 20px;}
+.valyeBoxContainer .valueBox{width: 49%;background: #fff;margin: 0 5px 10px;padding: 13px 12px 20px 30px;font-family: 'Lexend Deca Medium';}
+.valyeBoxContainer .heading{display: flex;align-items: center;justify-content: space-between;}
+.valyeBoxContainer h6{color: #ED1F1D;font-size: 19px;margin: 0;}
+
+.valyeBoxContainer ul{display: flex;flex-direction: column;}
+.valyeBoxContainer ul li, .valyeBoxContainer p p{font-size: 14px;border-bottom: 1px solid #E8E0E0;line-height: 28px;padding-bottom: 8px;margin-bottom: 8px;}
+.valyeBoxContainer ul li:last-child, .valyeBoxContainer p p:last-child{border: none;}
+.valyeBoxContainer .valueBox:nth-child(2) h6{color: #F5AB36;}
+.valyeBoxContainer .valueBox:nth-child(3) h6{color: #3FA654;}
+.valyeBoxContainer .valueBox:nth-child(4) h6{color: #1E8CCC;}
+.visionSec{position: relative;display: flex;}
+.visionSec .vissionElem{flex: 1;background: #0780F1 url('../../assest//images/vission-bg.png') no-repeat left center;color: #fff;display: flex;justify-content: center;}
+.visionSec .vissionElem .elemContent{    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    text-align: left;
+    top: 0;
+    width: auto;
+    padding: 40px 50px;}
+.visionSec .vissionElem .elemContent img{margin-right: 30px;}
+.visionSec .vissionElem .elemContent h4{font-size: 30px;}
+.visionSec .vissionElem .elemContent p{text-align: left;}
+.visionSec .vissionElem:last-child{background: #076FCB!important;}
+.missionVideo{position: relative;height: 500px;overflow: hidden;}
+.missionVideo:after{position: absolute;content: "";top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(180deg, rgba(8, 29, 118, 0) 0%, #0E142F 100%);
+    opacity: 0.77;}
+
+.missionVideo .videoElem{width: 100%;
+    margin-top: 0;
+    height: 100%;
+    object-fit: cover;}
+.missionVideo button{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin: 0;padding: 0;display: flex;flex-direction: column;background: transparent;font-family: 'Sora-Bold';font-size: 18px;align-items: center;z-index: 9;}
+.missionVideo button img{margin-bottom: 5px;}
+.missionPageBlock .aboutValue{position: relative;background: #04519A url('../../assest/images/tata-value-bg.png') no-repeat;background-size: cover;margin-top: -5px;}
+.missionPageBlock .valueElement{padding: 0;flex-direction: column;margin-top: 50px;padding: 0 60px;}
+.missionPageBlock .valueElement h4{margin-left: 50px;}
+.missionPageBlock .valyeBoxContainer{padding: 0;    margin: 0 -5px;}
+.missionPageBlock .valueBox{padding: 13px 50px 20px 50px;}
+.leaderDetail{background: #162340;padding: 90px 0;}
+.leaderDetail .seniorLeaderDetailImg{position: relative;padding-left: 50px;}
+.leaderDetail figure{position: relative;}
+.leaderDetail figure img{width: 100%;position: relative;z-index: 9;}
+.leaderDetail figure:after{position: absolute;content: "";top: 23px;left: -25px;width: 100%;height: 100%;background: #045CAD;}
+.seniorLeaderDetail{color: #fff;padding: 0 50px 0 25px;}
+.seniorLeaderDetail h3{font-family: 'Lexend Deca bold';}
+.seniorLeaderDetail h4{font-size: 30px;font-family: 'Lexend Deca SemiBold';border-bottom: 1px solid #fff;display: inline-block;padding-right: 15px;padding-bottom: 15px;}
+.seniorLeaderDetail p{font-size: 14px;line-height: 24px;margin-bottom: 10px;}
+.seniorLeaderDetail ul{margin-top: 10px;}
+.seniorLeaderDetail ul li{margin-right: 25px;}
+
+/* Blog Page Style */
+.blogList{position: relative;padding: 50px 0;}
+.blogContainer{padding: 0 20px;}
+.blogElem{position: relative;margin-bottom: 45px;}
+.blogElem button {
+    width: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.blogElem figure{width: 100%;height: 285px;}
+.blogElem figure img{width: 100%;height: 100%;object-fit: cover;}
+.blogElem h6{font-family: 'Lexend Deca SemiBold';color: #000;font-size: 18px;line-height: 28px;margin: 20px 0 25px;height: 120px;}
+.blogElem ul{border-top: 1px solid #D2D2D2;padding-top: 12px;}
+.blogElem li{font-size: 14px;color: #656565;line-height: 18px;padding: 0 5px;}
+.blogElem li:first-child{padding-left: 0;}
+.paginaion{display: flex;justify-content: center;border-top: 1px solid #D2D2D2;padding-top: 40px;}
+.paginaion li{padding: 12px 20px;color: #000;font-size: 18px;}
+
+/* ----About Page End Start----- */
+/* Sector Detail page Style */
+.TQValue{position: relative;padding: 90px 0;background: #fff;}
+.TQvalueContainer{padding: 0 150px;}
+.TQElem{padding-right: 60px;display: flex;flex-direction: column;justify-content: center;height: 100%;}
+.TQElem h3{font-size: 45px;color: #0054a5;font-family: 'Sora-SemiBold';}
+.TQElem p br{display: none;}
+.TQElem ol{padding-left: 25px;}
+.TQElem ol li{padding-left: 20px;position: relative;    z-index: 9;list-style-type: auto;margin-bottom: 15px;}
+.TQElem ol li:after{position: absolute;content: "";top: 0;left: -24px;width: 26px;height: 26px;background: #0054a5;border-radius: 50%;z-index: -1;}
+.TQElem ol li::marker{font-family: 'Sora-SemiBold';font-size: 14px;color: #fff;}
+.TQvalueImg{display: flex;    justify-content: flex-end;}
+.TQvalueImg img{width: auto;max-width: 100%;border-radius: 7px;}
+.ratanTata{position: relative;padding: 90px 0;background: #0351A3;}
+.ratanTata .ratanText{width: 1200px;;position: relative;color: #fff;margin: 0 auto;padding: 0 30px;max-width: 100%;}
+.ratanTata .ratanText:after{position: absolute;content: "";top: -12px;left: 15px;width: 35px;height: 27px;background: url('../../assest/images/graph-icon.png') no-repeat;}
+.ratanTata .ratanText:before{position: absolute;content: "";bottom: 20px;right: 50px;width: 35px;height: 27px;background: url('../../assest/images/graph-icon.png') no-repeat;transform: rotate(180deg);}
+.ratanText p{font-size: 24px;line-height: 36px;text-align: center;}
+.ratanText span{text-align: center;font-family: 'Sora-SemiBold';font-size: 21px;display: block;}
+.tataValueSec{position: relative;background: url('../../assest//images/tatavalue-bg.jpg') no-repeat;background-size: cover;padding: 80px 0;}
+.valueText{width: 860px;margin: 0 auto 30px;max-width: 100%;}
+.valueText p{text-align: center;}
+.valueBoxContainer{background: #fff;border-radius: 10px;padding: 25px 85px 25px;margin: 0 20px;}
+.valueBoxElem{position: relative;padding: 35px 25px 10px;display: flex;flex-direction: column;color: #000;margin-bottom: 50px;height: 100%;}
+.valueBoxElem img{width: auto;}
+.valueBoxElem *{z-index: 9;position: relative;}
+.valueBoxElem:hover img{filter: brightness(0) invert(1);}
+.valueBoxElem:after{position: absolute;bottom: 0;left: 0;content: "";width: 100%;height: 1px;background: #0054a5;transition: all 0.3s ease;z-index: 1;}
+.valueBoxElem h5{font-size: 25px;margin: 15px 0 10px;}
+.valueBoxElem p{margin: 0;height: 100px;}
+.valueBoxElem:hover{color: #fff;}
+.valueBoxElem:hover:after{height: 100%;background: #0054a5;}
+.valueBoxElem figure{height: 50px;}
+.valueAnime{display: flex;justify-content: center;align-items: center;position: relative;left: -100px;}
+.valueAnime h2{border-right: 4px solid #ED1F1D;padding-right: 25px;margin-right: 25px;line-height: 50px;}
+.valueAnime h6{position: relative;}
+.valueAnime h6 span{font-family: 'Sora-SemiBold';font-size: 40px;position: absolute;top: -20px;}
+.policiesSec{position: relative;background: #E8E8E8;padding: 80px 0 70px;}
+.pdfContainer{padding: 0 45px;}
+.pdfElem{margin-bottom: 15px;}
+.pdfElem button{background: #fff;display: flex;align-items: center;padding: 30px 30px;width: 100%;justify-content: flex-start;border-radius: 0;margin: 0;height: 140px;}
+.pdfElem button h6{font-size: 17px;color: #0054a5;text-align: left;margin-left: 20px; font-family: 'Lexend Deca Regular';margin-bottom: 0;word-break: break-all;line-height: 22px;}
+.pdfElem button h6 span{color: #000;font-size: 15px;display: block;}
+.popupModel{position: fixed;top: 0;left: 0;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;background: #0000008f;z-index: 999;}
+.popupElem{width: 600px;padding: 35px 20px;background: #fff;text-align: center;position: relative;max-width: 100%;}
+.popupElem .ClosePopup{position: absolute;top: 10px;right: 10px;background: transparent;color: #000;font-size: 25px;padding: 0;margin: 0;}
+.popupElem h6{font-size: 20px;}
+.LanguageButton button{background: #ED1F1D;}
+.raiseSes{position: relative;padding: 80px 0;background: #0054a5;overflow: hidden;}
+.raiseSes:after{background: url('../../assest/images/raise-icon.png') no-repeat left center;    position: absolute;content: "";top: 50%;left: 60px;width: 158px;height: 138px;transform: translate(0, -50%);background-size: contain;}
+.raiseContainer{position: relative;z-index: 99;padding: 0 180px;}
+.raiseContainer h3{color: #fff;margin: 0;}
+.raiseContainer h3 span{display: block;}
+.raiseContainer p{font-size: 18px;line-height: 28px;padding-left: 70px;border-left: 1px solid #fff;color: #fff;}
+.raiseContainer .btnContainer{padding-left: 70px;display: flex;margin-top: 10px;}
+.raiseContainer .btnContainer a{background: #ED1F1D url('../../assest/images/White_Arrow.png') no-repeat;font-size: 14px;color: #fff;font-family: 'Lato Bold';padding: 8px 45px 8px 14px;border-radius: 4px;margin-right: 10px;background-position: 92% center;}
+.raiseContainer .btnContainer a img{margin-right: 8px;}
+.blogDetail{position: relative;background: #fff;}
+.detailContainer{position: relative;margin-top: 120px;border-top: 1px solid #D2D2D2;padding-top: 25px;padding-bottom: 30px;}
+.detailContainer h3{font-size: 45px;line-height: 58px;}
+.detailContainer .authorBlog{margin: 10px 0 25px;}
+.detailContainer .authorBlog li{display: flex;color: #656565;font-size: 24px;padding: 0 5px;}
+.detailContainer .authorBlog li:first-child{padding-left: 0;}
+.detailContainer .blogContent{padding: 0 95px;margin-top: 35px;}
+.detailContainer .blogContent p{font-size: 14px;line-height: 25px;color: #000409;}
+.detailContainer .blogContent p strong{font-size: 16px;font-family: 'Lexend Deca SemiBold';}
+.detailContainer .blogContent p br{display: none;}
+.aboutAuth p{margin: 0 0 10px 0;}
+.aboutAuth p:first-child{font-family: 'Lexend Deca SemiBold';}
+
+/* Contact Us page Style */
+.contactForm{position: relative;background: url('../../assest//images/contact-bg.png') no-repeat;background-size: cover;padding: 70px 0;margin-top: -5px;}
+.FormContainer{position: relative;width: 975px;margin: 0 auto;background: rgba(255, 255, 255, 0.95);border-radius: 10.3866px;padding: 50px;max-width: 100%;}
+.FormContainer h4{font-size: 30px;margin-bottom: 20px;}
+.formGroup{display: flex;margin: 0 -4px;}
+.fromElem .group{flex: 1;padding: 0 4px;margin-bottom: 10px;}
+.fromElem .formGroup input, .fromElem .formGroup select, .fromElem .formGroup textarea{background: #fff;border-radius: 5px;padding: 17px 25px;font-family: 'Lexend Deca Regular';width: 100%;border: 1px solid #CEC6C6;color: #534040;}
+.fromElem .formGroup input::placeholder, .fromElem .formGroup select::placeholder, .fromElem .formGroup textarea::placeholder{color: #534040;}
+.fromElem .formGroup textarea{height: 135px;}
+.submitButton{background: #ED1F1D url('../../assest/images/White_Arrow.png') no-repeat;color: #fff;padding: 10px 70px 10px 24px;background-position: 80% center;}
+.TQMap{position: relative;margin-top: -3px;display: flex;}
+.TQMapContainer{position: relative;display: flex;width: 100%;flex-direction: column;}
+.TQMapContainer .TQMapElem{height: 400px;}
+
+.TQMapContainer .TQMapElem img{width: 100%;height: 100%;object-fit: cover;}
+.addressBg{position: relative;background: #0054a5;padding: 50px 0;}
+.TQMapAddress{background: #0054a5;display: flex;flex-wrap: wrap;}
+.addressList{display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 33.33%;}
+    .addressList:last-child{ border-bottom:none;}
+    .mainaddressList{border-bottom: none;}
+.addresshedingList{padding-top: 10px;background-color: #fff;margin-top: -21px;}
+.addresshedingList h5{color: #0054a5;}
+.addressList h5{font-size: 20px;margin-bottom: 10px;}
+.addressList h6{font-size: 16px;font-family: 'Sora-SemiBold';margin-bottom: 15px;}
+.addressList ul{display: flex;flex-direction: column;}
+.addressList ul li{display: flex;margin-bottom: 15px;}
+.addressList ul li span.icon{  min-width: 25px;  width: 25px;height: 25px;border-radius: 50%;background: #275C98;margin-right: 12px;display: flex;font-size: 16px;justify-content: center;align-items: center;}
+.addressList ul li:last-child span.icon{font-size: 13px;}
+.addressList ul li p{margin: 0;}
+/* Rectangle 9572 */
+.CTFOverview{padding: 50px 0;background: #fff;}
+.ovewviewCOntainer{width: 1260px;max-width: 100%;margin: 0 auto;}
+.ovewviewCOntainer figure img{width: auto;max-width: 100%;}
+.ovewviewCOntainer .content{    display: flex;flex-direction: column;align-items: flex-start;justify-content: center;height: 100%;padding-left: 40px;}
+.CFTContainer{background: linear-gradient(360deg, #E8E8E8 0%, #FFFFFF 100%);padding: 70px 0;border-top: 1px solid #E6E6E6;}
+.CTFElem{width: 1100px;max-width: 100%;padding: 0 0;margin: 0 auto;display: flex;align-items: center;position: relative;}
+.CFTContainer .contentOrder{width: 50%;padding-right: 60px;}
+.CFTContainer .content{display: flex;flex-direction: column;align-items: flex-start;justify-content: center;}
+.CFTContainer .content .icon img{width: auto;height: auto;}
+.CFTContainer .content h4{font-size: 40px;line-height: normal;margin: 15px 0;}
+.CFTContainer .imgOrder{width: 50%;display: flex;justify-content: flex-end;}
+.CFTContainer .imgOrder figure{position: relative;height: 420px;}
+.CFTContainer .imgOrder figure:after{position: absolute;content: "";top: 15px;left: -15px;width: 100%;height: 100%;background: #DADADA;}
+.CFTContainer .imgOrder figure img{position: relative;z-index: 9;width: auto;max-width: 100%;height: 100%;object-fit: cover}
+.CFTContainer:nth-child(odd){background: #fff;}
+.CFTContainer:nth-child(odd) .contentOrder{order: 2;    padding-left: 60px;}
+.CFTContainer:nth-child(odd) .imgOrder{order: 1;justify-content: flex-start;}
+.CFTContainer:nth-child(odd) .imgOrder figure:after{left: auto;right: -15px;}
+.CFTContainer:first-child{display: none;}
+.MSCPage{background: #fff;}
+.MSCPage h3{font-size: 45px;line-height: 62px;color: #000409;font-family: 'Lexend Deca SemiBold';}
+.IDList{position: relative;margin-top: -15px;}
+.IDList {position: sticky;top: 70px;z-index: 91;}
+.IDList ul{background: #0054a5;display: flex;align-items: center;justify-content: center;border-radius: 5px;width: 1380px;max-width: 100%;margin: 0 auto;flex-wrap: wrap;}
+.IDList ul li{padding: 10px 8px;background: none !important;}
+.IDList ul li a{font-family: 'Sora-SemiBold';font-size: 13px;color: #fff;line-height: normal;background: url(../../assest/images/right_icon.png) no-repeat left center;padding: 0 0 0 25px;}
+.QMSblock{position: relative;padding: 50px 0;}
+.innerContainer{width: 1190px;margin: 0 auto;max-width: 100%;}
+.innerContainer h5{color: #000;font-family: 'Lexend Deca SemiBold';line-height: 33px;}
+.innerContainer ul{flex-direction: column;}
+.innerContainer p{font-size: 14px;line-height: 25px;color: #000;font-family: 'Lexend Deca Medium';}
+.QMSElem{display: flex;border: 1px solid #E9DEDE;padding: 50px 35px;}
+.QMSElem .contentSide{flex: 1 1 52%;background: #ECECEC;color: #000;padding: 60px 75px;}
+.QMSElem .imgSide{flex:  1 1 48%;background: #fff;display: flex;justify-content: flex-end;}
+.QMSElem .imgSide figure{    display: flex;align-items: center;justify-content: center;}
+.QMSElem .imgSide img{width: auto;max-width: 100%;height: auto;} 
+.benefitblock{position: relative;}
+.benefitBG{width: 100%;}
+.benefitElem{display: flex;position: relative;margin-top: -270px;}
+.benefitElem .IOSTag{position: absolute;top: -90px;left: 50%;transform: translate(-50%);}
+.benefitElem>div{flex: 1 0 50%;}
+.benefitElem .contentSideLeft{background: #0054a5;padding: 100px 75px;}
+.benefitElem .contentSideLeft p{color: #fff;font-family: 'Lexend Deca Regular';}
+.benefitElem .contentSideRight{background: #F6F6F6;padding: 65px 70px 100px;}
+.benefitElem .contentSideRight h5{font-size: 24px;margin-bottom: 15px;}
+.benefitElem .contentSideRight ul li{font-size: 14px;line-height: 25px;color: #000;background: url('../../assest/images/msc_li_icon.png') no-repeat left 8px;margin-bottom: 12px;padding-left: 20px;}
+.EMSbllock{position: relative;background: linear-gradient(360deg, #D9D9D9 0%, #FFFFFF 100%);padding: 80px 0 100px;}
+.EMSbllock h3{padding-right: 210px;}
+.EMSbllock .EMSElem{display: flex;}
+.EMSbllock .EMSElem>div{flex: 1 1 50%;}
+.EMSbllock .EMSElem .contentSide{padding-right: 150px;margin-top: 20px;}
+.EMSbllock .EMSElem h5{font-size: 24px;}
+.CFTStyleSame ul li, .CFTStyleSame ol li{font-size: 14px;line-height: 25px;color: #000;background: url('../../assest/images/msc_li_icon.png') no-repeat left 8px;margin-bottom: 5px;padding-left: 20px;}
+.EMSbllock .EMSElem .contentSideimg{margin-top: -50px;padding-left: 50px;}
+.TQEMSbllock{position: relative;padding: 50px 0 80px;}
+.TQEMSbllock h3{text-align: center;}
+.TQEMSbllock .EMSElem{display: flex;margin-top: 50px;}
+.TQEMSbllock .EMSElem figure{flex: 1 1 45%;margin-top: 30px;}
+.TQEMSbllock .contentSide{flex: 1 1 55%;}
+.TQEMSbllock .contentSide ul li{margin-bottom: 8px;}
+.TQEMSbllock .contentSide h5{width: 390px;max-width: 100%;}
+.energyBlock{position: relative;background: linear-gradient(249.02deg, #09193D 0.44%, #0F2E71 55.05%, #1A2D57 99.72%);padding: 70px 0;}
+.energyBlock figure{padding-right: 50px;margin: 0!important;}
+.energyBlock h3{text-align: center;color: #fff;font-size: 40px;font-family: 'Sora-Bold';margin-bottom: 40px;}
+.energyBlock h3 span{border-bottom: 2px solid #fff;}
+.energyBlock *{color: #fff!important;font-family: 'Lexend Deca Regular'!important;}
+.energyBlock .innerContainer img{width: auto;max-width: 100%;margin-bottom: 40px;}
+.energyBlock .innerContainer p, .IOSBlock p, .energyBlock .innerContainer ul, .IOSBlock ul{margin-bottom: 20px;}
+.IOSBlock{position: relative;padding: 60px 0;}
+.IOSBlock h3{text-align: center;}
+.IOSBlock .IOSElem{display: flex;margin-top: 40px;}
+.IOSBlock .leftSide{flex: 1 1 60%;}
+.IOSBlock .rightSide{flex: 1 1 40%;padding-left: 80px;}
+.IOSBlock .rightSide figure{width: 100%;border: 1px solid #E1E1E1;height: 345px;display: flex;align-items: center;justify-content: center;}
+.IOSBlock .rightSide figure img{width: auto;max-width: 100%;}
+.aboutFood{position: relative;padding: 70px 0;background: #fff;}
+.foodContainer{width: 1210px;max-width: 100%;margin: 0 auto;}
+.aboutFood .foodContainer{display: flex;    align-items: center;}
+.aboutFood .foodContainerTech{  align-items: center;}
+.aboutFood .foodContent{flex: 1 1 60%;}
+.aboutFood .foodContentImg{flex: 1 1 40%;padding-left: 20px;} 
+.aboutFood h3{font-size: 55px;margin-bottom: 20px;line-height: 57px;}
+.aboutFood .foodContentImg img{width: auto;max-width: 100%;height: auto;}
+.foodListing{position: relative;background: url('../../assest//images/food_bg.jpg') no-repeat; background-size: cover;padding: 90px 0 70px;}
+.ListElem{display: flex;flex-wrap: wrap;margin: 0 -9px;}
+.ListElem .listBox{width: 33%;padding: 0 9px 15px;}
+.ListElem .listBox>div{background: #fff;padding: 40px;display: flex;flex-direction: column;justify-content: flex-start;height: 192px;}
+.ListElem .listBox figure{height: 50%;}
+.ListElem .listBox p{margin: 0;}
+.foodTabbing{position: relative;padding: 55px 0;background: #fff;}
+.foodtabContainer{display: flex;flex-wrap: wrap;align-items: flex-start;}
+.foodtabContainer .tabStyleFood{width: 280px;margin: 0;padding: 25px 0 15px 15px;border-radius: 5px;background: #0054a5;display: flex;flex-direction: column;top: 200px;position: sticky;}
+.foodtabContainer .tabStyleFood li{list-style-type: none;margin: 0 0 10px 0!important;background: url(../../assest/images/red_arrow.png) no-repeat left center!important;font-family: 'Sora-SemiBold';color: #fff;font-size: 17px;padding-left: 25px;border: none;box-shadow: none;}
+.foodtabContainer .tabStyleFood li:after{content: none!important;}
+.foodtabContainer .foodBodyContainer{width: 76%;padding-left: 45px;}
+.foodtabContainer .foodBody h3{font-size: 30px;line-height: 34px;}
+.foodtabContainer .foodBody .pdfElem{    box-shadow: 0 5px 10px #00000026;}
+.foodtabContainer .foodBody figure{position: relative;margin: 25px 0 70px;}
+.foodtabContainer .foodBody img{width: auto;max-width: 100%;height: auto;}
+.foodtabContainer .foodBody figure .TabIcon{position: absolute;bottom: -55px;right: 17px;}
+.foodtabContainer .foodBody h5{ font-family: 'Lexend Deca SemiBold';font-size: 18px;line-height: normal;margin-bottom: 20px;}
+.foodtabContainer .foodBody h5 br{display: none;}
+/* .foodtabContainer .foodBody li{margin-bottom: 15px;} */
+.yogaTagLine{width: 925px;max-width: 100%;margin: 40px auto 0;text-align: center;}
+.yogaTagLine p{margin: 0;font-size: 21px;line-height: 32px;}
+.YogaListBlock{position: relative;padding: 50px 0 60px;background: #0054a5;}
+.YogaListBlock .foodContainer{display: flex;align-items: center;}
+.YogaListBlock .yogaImg{flex: 1 1 55%;}
+.YogaListBlock .yogaImg img{width: auto;max-width: 100%;height: auto;}
+.YogaListBlock .yogaContent{flex: 1 1 45%;color: #fff!important;padding-left: 50px;}
+.YogaListBlock .yogaContentTech{flex: 1 1 100%;color: #fff!important;padding-left: 50px;padding-top: 30px;}
+.YogaListBlock .yogaContent p br{display: none;}
+.YogaListBlock .yogaContent .wrap{display: flex;flex-wrap: wrap;margin-bottom: 15px;}
+.YogaListBlock .yogaContent .wrap li{width: 50%;color: #fff;}
+.YogaListBlock .yogaContent li{color: #fff;}
+.keyAspects{position: relative;padding: 60px 0 30px;color: #fff!important;background: #132EAD;}
+.keyAspects ul{display: flex;flex-wrap: wrap;width: 1260px;max-width: 100%;margin: 70px auto 0;}
+.keyAspects ul li{width: 25%;display: flex;flex-direction: column;align-items: center;justify-content: flex-start;padding: 0 50px;margin-bottom: 30px;text-align: center;}
+.keyAspects ul li figure{height: 70px;}
+.keyAspects ul li h6{font-family: 'Sora-Bold';font-size: 18px;margin: 15px 0 5px 0;}
+.keyAspects ul li p{text-align: center;font-family: 'Sora-Regular';}
+.CFTbenefit{position: relative;background: #EEEEEE;padding: 50px 0;}
+.CFTbenefitContainer{width: 815px;max-width: 100%;margin: 0 auto}
+.CFTbenefitContainer ul{display: flex;flex-wrap: wrap;margin-top: 20px;}
+.CFTbenefitContainer ul li{font-size: 14px;line-height: 25px;color: #000;background: url('../../assest/images/msc_li_icon.png') no-repeat left 8px;margin-bottom: 12px;padding-left: 20px;width: 50%;}
+.auditsSec{position: relative;background: linear-gradient(249.02deg, #09193D 0.44%, #0F2E71 55.05%, #1A2D57 99.72%);padding: 70px 0;}
+.auditsContainer{width: 980px;max-width: 100%;margin: 0 auto;display: flex;align-items: center;color: #fff!important;}
+.auditsContainer h3{margin: 0;border-right: 1px solid #fff;padding: 5px 30px 5px 0;margin-right: 70px;}
+.auditsContainer p{font-size: 18px;line-height: 28px;}
+.auditsContainer a{padding: 13px 50px 13px 34px;}
+.specificBloxk{position: relative;padding: 40px 0;background: #fff;}
+.specificBloxk .specificContainer{display: flex;flex-wrap: wrap;align-items: center;}
+.specificBloxk .specificContainer br{display: none;}
+.specificBloxk .specificContent{width: 70%;padding-right: 100px;}
+.specificBloxk .specificContent ul{margin-bottom: 30px;}
+.specificBloxk .specificImg{width: 30%;position: relative;}
+.specificBloxk .specificImg img{width: 100%;}
+.specificBloxk .specificImg h6{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(360deg, #0054a5 0%, rgba(3, 8, 33, 0) 72.7%);padding: 0 15px 20px;color: #fff;font-size: 16px;    display: flex;align-items: flex-end;line-height: 22px;}
+.ChartImg{text-align: center;margin-top: 30px;}
+.ChartImg img{width: auto;max-width: 100%;height: auto;}
+.projectOverViewPage{position: relative;}
+.ovewViewBlock{position: relative;}
+.servicesSection{position: relative;background: linear-gradient(180deg, #FFFFFF 0%, #EAEAEA 100%);padding: 70px 0;overflow: hidden;}
+.servicesSection:after{position: absolute;content: "";top: 0;left: 0;width: 100%;height: 100%;background: url('../../assest//images/as_bg.png') no-repeat;background-size: cover;}
+.servicesSection .servicesMask{position: absolute;top: -60px;left: 0;z-index: 2;}
+.servicesSection .servicesElem{width: 1190px;max-width: 100%;display: flex;justify-content: space-between;align-items: flex-end;margin: 0 auto;position: relative;z-index: 9;}
+.servicesSection .servicesElem p span{background: transparent!important;}
+.servicesSection .servicesElem .contentOrder{width: 455px;}
+.servicesSection .servicesElem .imgOrder{width: 515px;position: relative;}
+.servicesSection .servicesElem .imgOrder figure{position: relative;}
+.servicesSection .servicesElem .imgOrder figure img{position: relative;width: 100%;z-index: 9;}
+.servicesSection .servicesElem .imgOrder figure:after{position: absolute;content: "";top: 18px;left: -20px;width: 100%;height: 100%;background: #D7D8DB;}
+.servicesSection:nth-child(even){background: linear-gradient(251.68deg, #040E3E 0.94%, #0B2699 51.27%, #051044 99.62%);}
+.servicesSection:nth-child(even) .contentOrder{order: 2;color: #fff!important;}
+.servicesSection:nth-child(even) .imgOrder{order: 1;}
+.servicesSection:nth-child(even) .servicesMask{left: auto; right: 130px;}
+.servicesSection:nth-child(even) .servicesElem .imgOrder figure:after{background: #475BB0;}
+.servicesSection:nth-child(2):after{background: url('../../assest//images/ps_bg.png') no-repeat;background-size: cover;}
+.servicesSection:nth-child(3):after{background: url('../../assest//images/ctf_bg.png') no-repeat;background-size: cover;}
+.sectorBlock{position: relative;padding: 60px 0 80px;}
+.sectorBlock .sectorHeading{width: 1000px;max-width: 100%;margin: 0 auto;text-align: center;}
+.sectorBlock .sectorHeading h4{color: #0054a5;line-height: 42px;margin-bottom: 20px;}
+/* .sectorBlock .sectorHeading p{font-family: 'Lexend Deca Light 300';} */
+.sectorProject{text-align: center;padding: 0 50px;margin-top: 15px;}
+.sectorProject h4{font-family: 'Lexend Deca SemiBold';margin-bottom: 35px;}
+.projectBox{position: relative;margin-bottom: 25px;height: calc(100% - 25px);}
+.projectBox:before {
+    position: absolute;
+    content: '';
+    width: 96%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #0054a5;border-radius: 0 0px 10px 10px;
+}
+.projectBox figure{width: 100%;height: 305px;position: relative;}
+.projectBox img{width: 100%;max-width: 100%;height: 100%;object-fit: cover;}
+.projectBox .projectDetails{position: relative;left: 50%;transform: translate(-50%);width: 96%;background: #0054a5;padding: 22px;border-radius: 10px;margin-top: -40px;}
+.projectBox .projectDetails h6{font-size: 14px;line-height: 26px;color: #fff;margin: 0;text-align: left;}
+.projectOverView{position: relative;padding: 90px 0;background: linear-gradient(249.02deg, #0054a5 0.44%, #0054a5 55.05%, #0054a5 99.72%);overflow: hidden;margin-top: 30px;}
+.projectOverView:after{position: absolute;content: "";top: -170px;right: -90px;width: 350px;height: 350px;background: url('../../assest/images/Mask.png') no-repeat;background-size: cover;opacity: .6;}
+.proContainer{width: 1145px;max-width: 100%;margin: 0 auto;color: #fff!important;}
+.projectOverView .imgSide{padding-right: 35px;}
+.projectOverView .imgSide img{width: 100%;height: auto;}
+.projectOverView .imgBgStyle:after{    background: #09225A;border-radius: 0;opacity: 1;left: auto;right: -15px;}
+.projectOverView h3{color: #fff;}
+.projectOverView p{margin: 0;}
+.projectNeed{position: relative;background: #E4E4E4;padding: 45px 0;}
+.needContainer{display: flex;flex-wrap: wrap;margin: 0 -7px;margin-top: 30px;}
+.needContainer .needElem{width: 50%;padding: 0 7px;margin-bottom: 14px;}
+.needContainer .needElem>div{background: #fff;padding: 40px 60px;text-align: left;color: #000;height: 100%;}
+.needContainer .needElem figure{height: 95px;width: 95px;}
+.needContainer .needElem figure img{width: 100%;height: 100%;object-fit: contain;}
+.needContainer .needElem h4{font-size: 30px;margin: 10px 0 20px;line-height: normal;}
+.needContainer .needElem p{margin: 0;}
+.AsOverView{position: relative;padding: 75px 0;background: #fff;}
+.AsPaddingLeft{padding-left: 50px;}
+.AsPaddingRight{padding-right: 50px;}
+.AsOverView .AsImg img{width: 100%;height: auto;}
+.AsOverView .AsImg .imgBgStyle:after{left: auto;right: -15px;border-radius: 0;}
+.AsOverView .AsContent{height: 100%;
+    display: flex;padding-left: 50px;
+    flex-direction: column;
+    justify-content: center;}
+.AssuranceServies{position: relative;background: #0054a5;padding: 55px 0 80px;}
+.AssuranceServies h3{color: #fff;}
+.AsCarousel{position: relative;margin-top: 50px;padding-left: 10%;}
+.AsItem{border: 1px solid #627FBE;text-align: center;margin: 0 15px;padding-bottom: 25px;}
+.AsItem img{width: 100%;height: auto;}
+.AsItem h5{font-family: 'Sora-Bold';color: #fff;font-size: 20px;margin: 30px 0 20px;position: relative;}
+.AsItem h5:after{position: absolute;left: 50%;bottom: -10px;background: #4A5DB2;transform: translate(-50%);content: "";height: 1px;width: 105px;}
+.AsItem p, .AsItem span{color: #fff;margin: 0;background: transparent!important;}
+.AsCarousel .AsItem { padding-bottom: 0px; border-bottom: 0;}
+.AsCarousel .AsItem .boxHeight { padding-bottom: 25px; border-bottom: 1px solid #627FBE;height: auto;min-height: 80px;}
+.AsRank{position: relative;background: #fff;padding: 40px 0;}
+.AsRank ul{margin: 0 auto;display: flex;align-items: flex-start;justify-content: center;}
+.AsRank ul li{font-family: 'Sora-Bold';font-size: 45px;color: #0054a5;text-align: left;line-height: 35px;border-right: 1px solid #D9D2D2;    padding: 20px 45px;}
+.AsRank ul li span{display: block;font-size: 14px;font-family: 'Lexend Deca Medium';color: #000000;line-height: normal;margin-top: 10px;}
+.AsRank ul li:last-child{border: none;}
+.AsCustomer{position: relative;padding: 50px 0;}
+.AsCustomer .customerOwl{width: 1320px;max-width: 100%;margin: 0 auto;}
+.customerOwl .customerItem{background: #fff;padding: 50px 55px;margin-top: 40px;}
+.customerOwl .customerItem figure{display: flex;align-items: center;justify-content: space-around;margin-bottom: 60px;}
+.customerOwl .customerItem figure:last-child{margin: 0;}
+.AsPdf{position: relative;background: url('../../assest/images/As_pdf_bg.png') no-repeat;background-size: cover;padding: 60px 0;}
+.AsPdf h3{color: #fff;padding-left: 0;}
+.AsPdf .AsPDFContainer{display: flex;flex-wrap: wrap;padding-right: 0;margin: 0 -5px;}
+.AsPdf .AsPDFContainer .box{width: 33%;padding: 0 5px;}
+.AsPdf .AsPDFContainer .box button{background: #fff;padding: 40px 30px;display: flex;align-items: center;margin: 0;width: 100%;border-radius: 0;}
+.AsPdf .AsPDFContainer h6{color: #0054a5;font-family: 'Lexend Deca Medium';font-size: 17px;line-height: 26px;text-align: left;padding-left: 15px;}
+.AsPdf .AsPDFContainer h6 span{display: block;color: #000;font-size: 15px;}
+.flexCenter{display: flex;align-items: center;}
+.UlStyle .AsOverView .AsContent{height: 100%;display: flex;flex-direction: column;justify-content: center;}
+.SqKey{position: relative;background: linear-gradient(180deg, #0054a5 0%, #084a89 100%);padding: 60px 0;}
+.SqKey h3{color: #fff;}
+.SqKeyContainer{padding: 0 130px;display: flex;flex-wrap: wrap;margin: 40px -17px 0;}
+.SqKeyContainer .SqKeyElem{width: 50%;padding: 0 17px;margin-bottom: 30px;display: flex;}
+.SqKeyContainer .SqKeyElem>div{background: #fff;border-radius: 10px;overflow: hidden;}
+.SqKeyContainer .SqKeyElem figure{width: 100%;height: 250px;}
+.SqKeyContainer .SqKeyElem img{width: 100%;height: 100%;object-fit: cover;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.SqKeyContainer .SqKeyElem .content{padding: 15px 20px 10px;}
+.SqKeyContainer .SqKeyElem h5{font-family: 'Lexend Deca SemiBold';font-size: 24px;line-height: 33px;margin: 0 0 10px;}
+.SqKeyContainer .SqKeyElem ul li{border-bottom: 1px dotted #CAC7C7;padding-bottom: 10px;margin-bottom: 10px;}
+.SqKeyContainer .SqKeyElem ul li strong{font-family: 'Lexend Deca SemiBold';}
+.SqKeyContainer .SqKeyElem ul li:last-child{border: none;padding: 0 0 0 20px;margin: 0;}
+.SqKeyCenter{    justify-content: center;}
+.SqKey.SqKeyCenter{background: #fff;}
+.SqKey.SqKeyCenter h3{color: #000;}
+.SqKey.SqKeyCenter .SqKeyElem{width: 100%;margin: 0;}
+.SqKey.SqKeyCenter .SqKeyElem>div{text-align: center;width: 100%;}
+.SqKey.SqKeyCenter figure {height: auto!important;}
+.SqKey.SqKeyCenter figure img{width: auto;max-width: 100%;height: auto;object-fit: contain;}
+.UlStyle ul li{font-size: 14px;line-height: 25px;color: #000;background: url('../../assest/images/msc_li_icon.png') no-repeat left 8px;margin-bottom: 5px;padding-left: 20px;}
+.SqModel{position: relative;background: #0054a5;padding: 40px 0;}
+.SqModel h3{color: #fff;font-size: 25px;font-family: 'Lexend Deca SemiBold';}
+.modelContainer{width: 740px;max-width: 100%;margin: 30px auto 0;display: flex;flex-wrap: wrap;justify-content: center;}
+.modelContainer .modelBox{width: 25%;padding: 0 13px;}
+.modelContainer .modelBox figure{width: 100%;height: 122px;background: #0054a5;border: 1px solid #4C72C8;border-radius: 10px;display: flex;align-items: center;justify-content: center;}
+.modelContainer .modelBox h6{font-family: 'Lexend Deca SemiBold';font-size: 18px;margin: 5px 0 0;line-height: 33px;text-align: center;color: #fff;}
+.Sqodel{padding: 60px 0;background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%); }
+.chooseTqOwl{width: 850px;max-width: 100%;margin: 40px auto 0;}
+.chooseTqOwl .TqItem{position: relative;width: 540px!important;height: 540px;position: relative;border: 1px dotted #000000;padding: 10px;border-radius: 50%;overflow: hidden;}
+.chooseTqOwl .TqItem>div{position: relative;height: 100%;}
+.chooseTqOwl .TqItem figure{width: 100%;height: 100%;border-radius: 50%;}
+.chooseTqOwl .TqItem .content{position: absolute;width: 100%;height: 100%;border-radius: 50%;background: linear-gradient(178.76deg, rgba(255, 255, 255, 0.91) 1.06%, rgba(255, 255, 255, 0) 1.07%, rgba(255, 255, 255, 0.91) 54.26%);top: 0;left: 0;display: flex;flex-direction: column;align-items: center;justify-content: flex-end;padding: 0 50px 60px;}
+.chooseTqOwl .TqItem figure img{width: 100%;height: 100%;object-fit: cover;border-radius: 50%;}
+.chooseTqOwl .TqItem h5{font-family: 'Sora-Bold';font-size: 24px;margin: 15px 0 5px;}
+.chooseTqOwl .TqItem p{font-size: 13px;line-height: 22px;}
+.chooseTqOwl ul li{background: transparent;padding: 0;margin: 0;}
+.TqOwlButton {display: flex;justify-content: space-between;position: absolute;top: 50%;width: 100%;transform: translateY(-50%);z-index: 9;}
+.TqOwlButton span{    width: 36px;height: 36px;background: #0C399E;color: #fff;display: block;border-radius: 50%;font-size: 20px;display: flex;justify-content: center;align-items: center;position: absolute;top: 2px;left: -15px;}  
+.TqOwlButton button{    border-radius: 50px;background: #fff;border: 1px dotted #666666;font-family: 'Sora-Regular';color: #000;font-size: 16px;margin: 0;display: flex;align-items: center;padding: 8px 30px;position: absolute;top: 50%;transform: translateY(-50%);left: -100px;}
+.TqOwlButton button:last-child{left: auto;right: -100px;}
+.TqOwlButton button:last-child span{transform: rotate(180deg);left: auto;right: -15px;}
+.Sqodel .centerAlight p{width: 650px;max-width: 100%;margin: 20px auto 0;}
+.Sqodel .centerAlight p span{background: transparent!important;}
+.assuranceOwl{position: relative;margin-left: 135px;}
+.assuranceOwl .assuranceItem{margin-right: 40px;}
+.assuranceOwl .assuranceItem>div{display: flex;flex-wrap: wrap;justify-content: center;background: #fff;border-radius: 5px;overflow: hidden;}
+.assuranceOwl .assuranceItem figure{width: 40%;}
+.assuranceOwl .assuranceItem figure img{width: 100%;height: 100%;object-fit: cover;}
+.assuranceOwl .assuranceItem .content{width: 60%;padding: 50px 45px;}
+.lokingFor{position: relative;background: linear-gradient(360deg, #E8E8E8 0%, #FFFFFF 100%);padding: 40px 0 0;}
+.lookingSec{position: relative;border-top: 1px solid #DAD2D2;padding-top: 50px;margin-top: 40px;padding-bottom: 60px;background: url('../../assest/images/career_side_img.png') no-repeat left bottom;}
+.lokingForContainer {width: 1024px;max-width: 100%;margin: 0 auto;}
+.loginContainer{position: relative;display: flex;flex-direction: column;background: #fff;box-shadow: -1.21px 6.894px 15px 0px rgba(0, 0, 0, 0.07);}
+.loginContainer .lookingSlider{width: 100%;padding: 0;text-align: center;}
+.lookSpace{padding: 0 80px;}
+.lookingSlider{position: relative;width: 100%;}
+.sliderContainer {display: flex;transition: transform 0.5s ease-in-out;position: relative;}
+.slideItem{position: absolute;top: 0;left: 50%;transform: translate(-50%);width: 270px;}
+.slideItem:nth-child(odd) img{width: 100%;transform: rotate(3deg);}
+.slideItem:nth-child(even) img{width: 100%;transform: rotate(-3deg);}
+.lookingSlider .TqOwlButton button{background: transparent;margin: 0;padding: 0;border: none;left: 40px;right: auto;}
+.lookingSlider .TqOwlButton button span{border: 2px solid #fff;}
+.lookingSlider .TqOwlButton button:last-child{left: auto;right: 20px;}
+.lookingSlider .TqOwlButton button:last-child span{transform: rotate(180deg);left: auto;right: 0;}
+.loginContainer .content{width: 100%;padding: 20PX;color: #000;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;height: 205px;}
+.loginContainer .content h4{font-size: 20px;line-height: 35px;margin: 0 0 0;}
+.loginContainer .content p{font-size: 14px;margin-bottom: 0;line-height: 22px;}
+.joinTata{position: relative;padding: 55px 0;background: url('../../assest/images/career_bg.4564da8ff0b071690a09.jpg') no-repeat;background-size: cover;}
+.joinSpace{padding: 0 70px;}
+.tatContainer{background: #fffffff6;border-radius: 10px;padding: 90px 60px;display: flex;flex-wrap: wrap;}
+.tatContainer .content{width: 65%;color: #000;padding-right: 100px;}
+.tatContainer h4{font-size: 40px;}
+.tatContainer .contentImg{text-align: right;width: 35%;border-left: 1px solid #000;}
+.tatContainer .contentImg img{width: auto;max-width: 100%;}
+.workBlock{position: relative;background: linear-gradient(180deg, #E8E8E8 0%, #E5F1F8 100%);padding: 60px 0;}
+.jobListingBox{width: 100%;max-width: 100%;margin: 30px auto 0;padding: 0 70px;}
+.jobListingBox .jobForm{display: flex;justify-content: center;}
+.jobListingBox .jobForm .jobGroup{padding: 0 7px;}
+.jobListingBox .jobForm select, .jobListingBox .jobForm input{background: #fff;width: 140px;border-radius: 50px;font-family: 'Lexend Deca Medium';line-height: 28px;color: #000;padding: 5px 20px 5px 16px;height: 38px;border: 1px solid #8d8d8d;}
+.jobListingBox .jobForm select {background: #fff url('../../assest//images/down_arrow.png') no-repeat 97% 70%;-moz-appearance:none; /* Firefox */    -webkit-appearance:none;appearance:none;}
+.jobListingBox .jobForm button{margin: 0;padding: 0;background: #0054a5;color: #fff;font-family: 'Lexend Deca Medium';font-size: 14px;line-height: 28px;width: 140px;border-radius: 50px;height: 38px;}
+.jobListingBox .jobForm button:last-child{margin-left: 15px;}
+.jobList table{width: 100%;margin: 30px 0;}
+.jobList table th{text-align: center;font-family: 'Lexend Deca SemiBold';font-size: 16px;line-height: 28px;padding: 7px 10px;color: #fff;}
+.jobList table tr.blueBg{background: #00214E;border-radius: 5px;border: 3px solid #e6edf1;}
+.jobList table td{text-align: center;font-size: 16px;line-height: 28px;padding: 7px 10px 10px;color: #000;background: #fff;border: 3px solid #e6edf1;}
+.jobList table tr td:last-child{width: 150px;}
+.jobOpening{position: relative;padding-bottom: 0;overflow: hidden;}
+.jobOpening .jobMask{    position: absolute;
+    bottom: -40px;
+    right: 0;
+    z-index: 9;
+    width: 730px;
+    max-width: 100%;}
+.jobImg{width: 100%;}
+.openingContainer{position: relative; background: linear-gradient(0deg, #EAEAEA 0%, #FFFAFA 100%);}
+.openingContainer .openingElem{background: #0054a5;border-radius: 10px;width: 1170px;max-width: 100%;padding: 40px 75px;margin: 0 auto 0;color: #fff;display: flex;flex-wrap: wrap;align-items: center;position: relative;z-index: 99;
+top: -120px;
+}
+.openingContainer h4{font-family: 'Lexend Deca SemiBold';font-size: 35px;line-height: 41px;width: 25%;border-right: 1px solid #fff;}
+.openingContainer h4 span{display: block;}
+.openingContainer .content{width: 75%;padding-left: 42px;}
+.openingContainer .content p{font-family: 'Lexend Deca Light 300';}
+.jobDetailSec{position: relative;background: linear-gradient(180deg, #E8E8E8 0%, #E5F1F8 100);padding: 50px 0;margin-top: 100px;}
+.positionContainer{width: 1320px;max-width: 100%;margin: 0 auto;border-radius: 10px;background-color: #fff;padding: 20px 40px 50px;} 
+.positionContainer .btnLook{padding: 8px 40px 8px 24px;}
+.jobHeading{display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #EDE1E1;padding-bottom: 15px;} 
+.jobHeading h5{margin: 0;}
+.positionContainer h5{color: #0054a5;font-size: 24px;}
+.aboutJob{display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #EDE1E1;padding: 10px 20px 12px 0;flex-wrap: wrap;}
+.aboutJob li{font-family: 'Sora-SemiBold';font-size: 16px;line-height: 32px;margin-bottom: 5px;}
+.aboutJob li img{margin-right: 5px;}
+.jobDes{margin-top: 20px;}
+.jobDes h6{font-family: 'Sora-Bold';font-size: 16px;}
+.jobDes p{font-family: 'Sora-Regular';font-size: 16px;line-height: 30px;margin-bottom: 8px;}
+.jobDes ul{margin-left: 15px;margin-bottom: 25px;}
+.jobDes ul li{list-style-type: disc;font-family: 'Sora-Regular';font-size: 16px;line-height: 30px;}
+.disclamierBlock{margin-top: 35px;background: #0054a5;border-radius: 10px;padding: 35px 40px;}
+.disclamierBlock h5{color: #fff!important;font-family: 'Sora-Regular';}
+.disclamierBlock p{font-family: 'Sora-Regular';font-size: 16px;line-height: 27px;color: #fff;margin: 0;}
+.disclamierBlock p a{color: #05A3FA;}
+.ApplyFor{padding: 40px 95px;width: 1160px;max-width: 100%;}
+.ApplyFor h4{font-family: 'Sora-Bold';font-size: 14px;line-height: 25px;text-align: left;margin: 0 ;}
+.ApplyFor h4 .dots{color: #ED1F1D;}
+.submitJobLavel{display: flex;margin: 30px 0 30px;}
+.submitJobLavel li{font-family: 'Sora-Regular';font-size: 15px;color: #757883;padding-right: 65px;position: relative;padding-bottom: 20px;}
+.submitJobLavel li:after{position: absolute;bottom: 0;left: 0;content:"";width: 14px;height: 14px;border-radius: 50%;background: #fff;border: 1px solid #D7CFCF;}
+.submitJobLavel li:before{position: absolute;bottom: 7px;left: 0;content:"";width: 100%;height: 1px;background: #ED1F1D;}
+.submitJobLavel li:last-child{margin: 0;padding: 0;}
+.submitJobLavel li:last-child:after{left: auto;right: 0;}
+.submitJobLavel li.active{font-family: 'Sora-Bold';color: #0054a5;}
+.submitJobLavel li.active:after{background: #ED1F1D;border-color: #ED1F1D;}
+.FormControl{display: flex;margin: 0 -8px;}
+.FormControl .group{padding: 0 8px;margin-bottom: 12px;width: 100%;}
+.FormControl .group input, .FormControl .group select{border: 1px solid #BCBCBC;border-radius: 5px;font-size: 14px;padding: 14px 17px;color: #969696;width: 100%;}
+.FormControl .group input::placeholder, .FormControl .group select{color: #969696;}
+.FormControl .group span{font-size: 12px;color: #ED1F1D;}
+.FormControl .group input.errrorMsg{border-color: #ED1F1D;}
+.FormControl .group input.errrorMsg::placeholder{color: #ED1F1D;}
+.FormControl.centerAlign{display: flex;justify-content: center;margin-top: 20px;}
+.FormControl.centerAlign button{padding: 10px 50px 10px 30px;font-family: 'Lato Bold';background-position: 70% center;margin: 0;}
+.jobApplySec{background: linear-gradient(180deg, #E8E8E8 0%, #E5F1F8 100%);padding: 50px 0;}
+.ayushOverView{position: relative;background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);padding: 100px 0 50px; }
+.ayushOverView figure{background: #fff;padding:35px 70px ;width: 870px;margin: 40px auto 0;max-width: 100%;}
+.ayushOverView figure img{width: auto;max-width: 100%;height: auto;}
+.AyushSec h3{font-size: 45px;}
+.AyushSec h5{font-size: 16px;line-height: normal;color: #000409;font-family: 'Lexend Deca SemiBold'; }
+.ayushContainer{padding-left: 110px;}
+.ayushProduct{position: relative;padding: 70px 0;background: #fff;}
+.ayushProduct h3{line-height: 57px;}
+.ayushProduct h3 span{display: block;}
+.aboutPro{margin-top: 40px;}
+.aboutPro h5 span{display: block;}
+.aboutPro ul{margin-bottom: 25px;}
+.ayushProduct .CertificatImg{width: 870px;max-width: 100%;margin: 30px auto 50px;border: 1px solid #ECDCDC;display: flex;align-items: center;justify-content: center;padding: 60px 15px;}
+.ayushProduct .CertificatImg img{width: auto;max-width: 100%;}
+.ayushMask h5 span{width: 20px;height: 20px;border-radius: 50%;font-size: 14px;line-height: normal;background: #FF0000;display: flex;color: #fff;justify-content: center;margin-right: 10px;}
+.ayushMask h5{display: flex;align-items: center;padding-left: 35px;margin-bottom: 0;}
+.ayushMask h5.greenColor{color: #0A8033;padding: 0;}
+.ayushMask h5.yellowColor{color: #C5A80B;padding: 0;margin-top: 20px;}
+.ayushMask table{width: 1100px;max-width: 100%;margin-top: 40px;}
+.ayushMask table th{font-family: 'Lexend Deca SemiBold';font-size: 16px;padding: 16px 40px;background: #0054a5;color: #fff;border: 2px solid #fff;width: 50%;}
+.ayushMask table td{font-family: 'Lexend Deca SemiBold';font-size: 16px;padding: 16px 40px;background: #A3CCF4;color: #000;border: 2px solid #fff;width: 50%;vertical-align: top;}
+.ayushMask table tr:nth-child(odd) td{background: #DBE8F4;}
+.ayushBenefit{background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);padding: 45px 0;}
+.OrganicPage{background: #fff;}
+.organicSpace{padding: 0 110px;}
+.OrganicPage h3{font-family: 'Lexend Deca SemiBold';font-size: 45px;line-height: 57px;color: #000;margin-bottom: 15px;}
+.OrganicPage h3 span{display: block;}
+.OrganicPage p{margin-bottom: 15px;}
+.OrganicPage strong{font-family: 'Lexend Deca bold';}
+.OrganicPage h5{font-family: 'Lexend Deca SemiBold';font-size: 24px;line-height: 33px;}
+.organicSce{position: relative;background: #fff;padding: 75px 0 0;}
+.organicSce figure{display: flex;height: 100%;justify-content: flex-end;align-items: flex-end;}
+.organicSce figure img{width: auto;max-width: 100%;height: auto;}
+.organicBenefit{position: relative;background: url('../../assest/images/operate_bg.jpg') no-repeat;background-size: cover;padding: 40px;margin-top: 60px;}
+.organicBenefit .content{display: flex;justify-content: flex-end}
+.organicBenefit .contentBox{background: rgba(6, 62, 116, 0.91);padding: 32px;}
+.organicBenefit .contentBox h5{color: #fff;}
+.organicBenefit .contentBox ul li{color: #fff;}
+.indgapSce{position: relative;padding-top: 70px;}
+.indgapSce figure{text-align: center;}
+.indgapSce figure img{width: auto;max-width: 100%;}
+.indgapBenefit{background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);margin-top: 30px;padding: 30px 0;}
+.globalSce{position: relative;padding: 45px 0;}
+.globalSce figure{text-align: right;margin-top: 80px;}
+.globalSce figure img{width: auto;max-width: 100%;}
+.OrganicPage .globalSce p{margin-bottom: 10px;}
+.spaceRight{margin-right: 50px;}
+.VCSSce{position: relative;background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);padding: 60px 0;}
+.VCSSce .content{padding-left: 30px;}
+.OrganicPage .VCSSce p{margin-bottom: 5px;} 
+.RcmSce{position: relative;padding: 55px 0;}
+.RcmSce figure{text-align: right;}
+.RcmSce figure img{width: auto;max-width: 100%;}
+.OrganicPage .RcmSce p{margin-bottom: 10px;}
+.imgcenter{display: flex;align-items: center;justify-content: center;margin-top: 50px;}
+.imgcenter img{width: auto;max-width: 100%;}
+.UASSce{position: relative;background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);padding: 40px 0;}
+.UASSce .UASImg{margin-bottom: 30px;}
+.UASSce h5{padding-right: 150px;}
+.UASSce .UASImg img{width: 100%;}
+.IBSOverview{position: relative;padding: 70px 0;}
+.IBSOverview figure img{width: auto;max-width: 100%;}
+.IBSOverview .content{height: 100%;display: flex;flex-direction: column;justify-content: center;padding-right: 100px;}
+.IBSOverview .content p:last-child{margin: 0;}
+.IBSOverview .content p{margin-bottom: 5px;}
+.flexHeight{display: flex;height: 100%;justify-content: center;align-items: center;}
+.flexSpace{margin-top: 50px;}
+.T4SAudits{position: relative;background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);padding: 50px 0;}
+.T4SAudits p{margin-bottom: 10px;}
+.T4SAudits figure img{width: auto;max-width: 100%;}
+.flexRight{display: flex;justify-content: flex-end;}
+.secSpace{margin-top: 30px;}
+.IMSBlock{position: relative;padding: 60px 0;}
+.IMSEmel{width: 930px;max-width: 100%;margin: 50px auto 0;display: flex;justify-content: center;flex-wrap: wrap;align-items: center;}
+.IMSEmel figure{width: 40%;}
+.IMSBlock figure img{width: auto;max-width: 100%;}
+.IMSEmel .content{width: 60%;padding-left: 25px;}
+.OrganicPage .AuditSec p{margin-bottom: 5px;}
+.wareHouse{position: relative;padding: 60px 0;background: #edededa9;}
+.wareHouse h3{font-size: 55px;}
+.wareHouse p{margin-bottom: 5px;}
+.wareHouse h5{margin-top: 20px;}
+.wareHouse figure{margin-top: 20px;}
+.wareHouse figure img{width: auto;max-width: 100%;}
+.wareHouseSlid{position: relative;padding: 60px 0;background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);}
+.houseContainer{position: relative;padding-left: 11%;margin-top: 15px;}
+.slideItemOwl{padding-bottom: 15px;}
+.houseContainer ul li {list-style-type: none!important;padding: 0;margin: 0;background: none!important;}
+.houseContainer ul li .wareHouseItemBlock{margin-right:30px;position: relative;}
+.houseContainer ul li .wareHouseItemBlock:after{position: absolute;top: 14px;right: -14px;width: 100%;height: 100%;content: "";background: #B8DBFF;z-index: -1;}
+.houseContainer .wareHouseItem{position: relative;z-index: 9;padding: 45px 35px 35px;background: #fff;height: 100%;min-height: 380px;}
+.houseContainer .wareHouseItem h4{font-size: 26px;margin-top: 15px;padding-right: 70px;}
+.houseContainer .wareHouseItem p{margin: 0;}
+.houseContainer .wareHouseItem p br{display: none;}
+.wareHouseBank{position: relative;padding: 30px 0 60px;}
+.bankElem{position: relative;margin-bottom: 30px;}
+.bankElem img{width: 100%;}
+.bankElem .bankcontent{position: absolute;top: 50%;right: 70px;width: 480px;padding: 45px 30px;background: #063f74de;transform: translate(0, -50%);max-width: 96%;}
+.bankElem .bankcontent p span{background: transparent!important;}
+.bankElem .bankcontent h4{font-size: 26px;color: #fff;padding-right: 190px;}
+.bankElem .bankcontent p{color: #fff;line-height: 23px;}
+.WarehouseMatter figure{margin-top: 40px;}
+.WarehouseMatter img{width: auto;max-width: 100%;}
+.approach{position: relative;padding: 40px 0;background: linear-gradient(180deg, #F8F8F8 0%, #ECECEC 100%);}
+.xlxsIcon{width: 50px!important;}
+.OrganicPage .AsPdf h3{color: #fff;padding-left: 0;}
+.SqodelOwl{position: relative;padding-left: 130px;margin-top: 45px;}
+.SqodelOwl ul li{background: none;padding: 0;margin: 0 45px 0 0;}
+.sqodelItem{background: #fff;border-radius: 10px;overflow: hidden;display: flex;flex-wrap: wrap;height: 325px;}
+.sqodelItem figure{width: 45%;height: 100%;}
+.sqodelItem figure img{width: 100%;height: 100%;object-fit: cover;}
+.sqodelItem .content{padding: 15px 45px;width: 55%;display: flex;flex-direction: column;justify-content: center;align-items: flex-start;}
+.sqodelItem .content h5{font-family: 'Sora-Bold';font-size: 26px;margin: 10px 0;}
+.sqodelItem .content p{margin: 0;}
+.searchPage{position: relative;margin-top: 140px;background: #fff;padding: 50px 0;}
+.SearchElem{padding: 60px 110px;}
+.SearchElem h4{font-size: 24px;}
+.searchSec{width: 500px;margin: 0 auto 30px;max-width: 100%;position: relative;}
+.searchSec input{width: 100%;height: 50px;border: 1px solid #BCBCBC;border-radius: 5px;padding: 15px;}
+.searchSec button{position: absolute;top: 0;right: 0;margin: 0;}
+.ApplyFor button{margin-right: 15px;margin-left: 0;}
+.aservicesPage .valueBoxContainer{margin-top: 30px;}
+.aservicesPage .valueBoxContainer .valueBoxElem p{height: auto;margin: 0;border: none;}
+.aservicesPage .valueBoxContainer .valueBoxElem p br{display: none;}
+.aservicesPage .valueBoxContainer .valueBoxElem h5{font-size: 23px;}
+.AsItem figure{height: 250px;}
+.AsItem figure img{width: 100%;height: 100%;object-fit: cover;}
+.boxHeight{height: 50px;}
+.globalStyle{display: flex;justify-content: center;margin-top: 30px;}
+.globalStyle img{width: auto;max-width: 100%;}
+.globalStyle svg{max-width: 100%;}
+p br{display: none;}
+strong{font-family: 'Lexend Deca bold';}
+.AsPdf>div>div>div{width: 100%;display: flex;    justify-content: center;}
+.AsPdf .AsPDFContainer .box{width: 100%;}
+.toolsSec img{    filter: brightness(0) invert(1);}
+.toolsSec .modelContainer .modelBox{width: 30%;}
+.toolsSec .modelContainer p{text-align: center;color: #fff;line-height: normal;}
+.ApplyFor h2{font-size: 45px;text-align: center;}
+.radioBtn{display: flex;justify-content: flex-start;margin:20px 0;}
+.radioBtn label{  display: block;
+position: relative;
+padding-left: 22px;
+margin: 0 10px 0 0;
+cursor: pointer;
+font-size: 16px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;}
+.radioBtn label input{
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}  
+.radioBtn label .checkmark {
+position: absolute;
+top: 5px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+background-color: #ccc;
+border-radius: 50%;
+}
+.radioBtn label:hover input ~ .checkmark {
+background-color: #ccc;
+}
+.radioBtn label input:checked ~ .checkmark {
+background-color: #0054a5;
+}
+.radioBtn label .checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.radioBtn label input:checked ~ .checkmark:after {
+display: block;
+}
+.radioBtn label .checkmark:after {
+top: 3px;
+left: 3px;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background: white;
+}
+.thanksCenter{text-align: center;}
+.thanksCenter button{background-color: #0054a5;}
+.removeBtn{margin: 0;background: #ED1F1D;font-size: 14px;}
+.addBtn{margin: 10px 0;background: #0054a5;font-size: 14px;}
+.FormControl .group.uploadFile input{padding: 9px 17px;}
+/* .applyDetail{display: flex;flex-wrap: wrap;}*/
+.applyDetail>div{margin-bottom: 20px;} 
+.applyDetail h4{text-align: left;margin: 0 0 0 0;color: #0054a5;}
+.applyDetail p{margin: 0;}
+.secondClm figure .TabIcon{position: relative!important;top: 0;left: 0;width: auto;max-width: 100%;height: auto;}
+.MobShow{display: none;}
+.foodtabContainer .foodBody .AsPdf figure{margin: 0;}
+.RMCIMg{display: flex;flex-wrap: wrap;}
+.RMCIMg div{width: 50%;padding: 10px;}
+.RMCIMg div img{width: auto;max-width: 100%;}
+.CertificatSec{position: relative;padding: 60px 0 40px;background: #f4f4f9;}
+.CertificatSec ul{width: 1000px;margin: 30px auto 0;max-width: 100%;display: flex;flex-wrap: wrap;justify-content: center;}
+.success{text-align: center;color: green;}
+.CertificatSec ul li figure{padding: 10px;}
+.CertificatSec ul li img{width: 130px;}
+.error{color: #ED1F1D;font-size: 12px;margin: 0;}
+.flexCntr{height: 100%;display: flex;align-items: center;}
+.globalStyle svg{width: 1100px;max-width: 100%;}
+.IDList button{display: none;}
+.cinIcon{margin-right: 15px;font-size: 12px;font-family: 'Lexend Deca SemiBold';   font-weight: bold;}
+.polictContant h4{font-size: 18px;}
+.privatPolicySec{background: #fff;padding: 50px 0;}
+.polictContant{width: 1100px;max-width: 100%;margin: 0 auto;}
+.polictContant ul{margin-bottom: 20px;}
+.polictContant ul, .polictContant ol{padding-left: 15px;}
+.polictContant ul li{list-style-type: disc;}
+.polictContant ol li{list-style-type: circle;}
+.pdfStyle{display: flex;flex-wrap: wrap;margin: 0 -15px;}
+.pdfStyle .pdfWidth{width: 50%;padding: 0 15px;}
+.dataMsg{text-align: center;margin: 0 auto;font-family: 'Lexend Deca SemiBold';}
+.policiPdfView{background: #fff;}
+.policiPdfView h2{font-size: 36px;line-height: 1;color: #0054a5;margin-bottom: 20px;}
+.pdfCont{padding: 0 45px;margin-bottom: 30px;}
+.pdfCont span{width: 40px;    border-bottom: 2px solid #0054a5;direction: ltr;display: block;margin: 0 auto 0 0;}
+.policiPdfView .pdfElem button{background: transparent;border: 1px solid #0054a5;padding: 15px;height: calc(100% - 24px);}
+.policiPdfView .pdfElem button h6{margin: 0;word-break: break-word;}
+.policiPdfView .pdfElem button span{border: 2px solid #0054a5;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 15px;color: #0054a5;}
+.policiPdfView .pdfElem button span svg{width: 32px;height: 32px;}
+
+@media only screen and (max-width:1590px){
+
+}
+
+@media only screen and (max-width:1400px){
+.TQvalueImg{align-items: center;height: 100%;}    
+    .elemContent p{font-size: 15px;line-height: 25px;}    
+.houseContainer .wareHouseItem{min-height: 360px;}
+.keyHeading{background-size: 350px;height: 350px;}
+.HomeBanner .BannerSlide{height: 450px;}    
+.heroBannerContent{top: 55%;width: 500px;}
+.WhoWeAre .BoxFlex{    padding: 0 50px 0 50px;}
+.leaderItem{padding: 30px 0 0 30px;}
+.areRank ul{padding: 20px 20px 0;margin-top: 20px;}
+.areRank ul li h2, .leaderRank .areRank ul h2{font-size: 60px;}
+.offerHeading{padding-left: 0;margin-bottom: 50px;}
+.ImproveContainer{padding: 40px 160px;}
+.SectorsSlid{padding: 35px 50px 0;}
+.teamGrid figure{width: 162px;height: 200px;}
+.JoinTeamSec .InnerContainer{padding: 0 50px 0 40px;;}
+.ImproveContainer p{    font-size: 24px;line-height: 42px;}
+.InnerContainer{padding: 0 80px;}
+.TQTeam h3{font-size: 40px;}
+.itemContent h4{font-size: 35px;    margin: 10px 0 10px;}
+.itemContent{font-size: 13px;line-height: 23px;}
+.itemContent{padding: 0;}
+.leaderItem figure img{width: 450px;}
+.leaderThum{padding: 5px;}
+.innerBanner{height: 350px;}
+.aboutElem{padding-left: 50px;width: 850px;}
+.leaderRank .areRank ul li{padding: 17px 50px 25px;}
+.leaderRank{padding-top: 25px;margin-top: 25px;}
+.seniorContainer {padding: 0 40px;}
+.seniorDetail h6{font-size: 15px;line-height: 22px;}
+.seniorDetail h6 span{font-size: 13px;}
+.addressContainer{width: 900px;}
+.addressContainer .addressElem{padding: 30px;}
+.addressContainer h5{    font-size: 16px;line-height: 25px;}
+.addressContainer p{font-size: 14px;line-height: 22px;}
+.slideContainer .SlideDetail{padding: 20px;}
+.slideContainer .SlideDetail p{font-size: 14px;line-height: 24px;}
+.valyeBoxContainer .valueBox{padding: 13px 30px 20px 30px;}
+.valyeBoxContainer ul li, .valyeBoxContainer p p{    line-height: 22px;}
+.directoerContainer{padding: 0 50px;}
+.memberPopop .directoerElem{width: 1150px;max-width: 90%;}
+.memberPopop .directoerElem{height: 80vh;overflow: auto;}
+.directoerElem p{font-size: 16px;line-height: 26px;}
+.valueAnime h6 span{font-size: 32px;}
+.valueBoxContainer{padding: 35px 45px 5px;}
+.SectorsItemElem p{padding: 0;}
+.pdfWidth{width: 33%;}
+.raiseContainer{padding: 0 50px;}
+.raiseSes:after{        top: 30%;left: 20px;width: 138px;height: 128px;background-size: contain;transform: translate(0, 0);}
+.tatContainer .contentImg{padding-left: 30px;}
+.tatContainer .contentImg img{height: auto;}
+.tatContainer .content{padding-right: 50px;}
+.tatContainer{padding: 60px;}
+.jobList table th, .jobList table td{font-size: 14px;}
+.submitJobLavel li{padding-right: 75px;}
+.ApplyFor h5{margin-bottom: 20px;}
+.addressList h5{font-size: 18px;}
+.addressList h6{font-size: 15px;}
+.IDList ul li a{font-size: 12px;}
+.SqKeyContainer{padding: 0 60px;}
+.SqKeyContainer .SqKeyElem h5{font-size: 20px;}
+.valueBoxContainer{margin: 0;}
+.valueBoxElem{    padding: 15px 25px;}
+.aboutFood h3{font-size: 45px;}
+.AsItem figure{height: 200px;}
+.AsItem figure img{width: 100%;height: 100%;object-fit: cover;}
+.AsItem h5{font-size: 15px;margin: 15px 0;}
+.needContainer .needElem h4{font-size: 28px;}
+.needContainer .needElem>div{padding: 30px 40px;height: 100%;}
+.needContainer .needElem p{height: auto;}
+.TQValue{padding: 70px 0;}
+.TQvalueContainer{padding: 0 100px;}
+.sectorProject{padding: 0;}
+.keyAspects ul li{padding: 0 20px;}
+.QMSElem .contentSide{padding: 30px;}
+.IDList ul{flex-wrap: wrap;}
+.foodtabContainer .foodBodyContainer{width: 74%;}
+.foodtabContainer .foodBody h3{font-size: 32px;line-height: normal;}
+.yogaTagLine{margin: 30px auto 0;}
+.yogaTagLine p{font-size: 18px;line-height: 28px;}
+.YogaListBlock .yogaImg{flex: 1 1 50%;}
+.YogaListBlock .yogaContent{flex: 1 1 50%;padding-left: 30px;}
+.ayushOverView figure{width: 600px;}
+.AyushSec h5{font-size: 16px;}
+.AyushSec h5 span{width: 20px;    height: 20px;font-size: 14px;}
+.ayushMask table th, .ayushMask table td{    font-size: 14px;padding: 10px 30px;}
+.IBSOverview .content{padding: 0;}
+.organicSpace{padding: 0 70px;}
+.wareHouse h3{font-size: 45px;line-height: normal;}
+.houseContainer .wareHouseItem h4{font-size: 20px;margin-top: 10px;padding-right: 0;}
+.SearchElem{padding: 60px 70px;}
+.banerMask img{width: 750px;max-width: 100%;}
+.jobListingBox .jobForm button{width: 95px;}
+.jobListingBox .jobForm .jobGroup{padding: 0 5px;}
+.loginContainer .content h4{font-size: 18px;}
+.loginContainer .content p{font-size: 13px;line-height: 19px;}
+.loginContainer .content {height: 230px;}
+.foodtabContainer .tabStyleFood{padding: 15px 0 15px 8px;}
+.foodtabContainer .tabStyleFood li{font-size: 14px;margin: 0 0 3px 0!important;}
+.ratanTata .ratanText:after{left: -12px;top: -18px;}
+.AsPaddingLeft{display: flex;align-items: center;}
+.openingContainer h4{font-size: 32px;line-height: 45px;}
+}
+
+@media only screen and (max-width:1199px){
+    .raiseSes:after{top: 25%;        width: 88px;}    
+.jobListingBox{padding: 0;}    
+.jobListingBox .jobForm .jobGroup{padding: 0 5px;}
+.jobListingBox .jobForm select, .jobListingBox .jobForm input{width: 132px;}    
+.banerMask img{width: 600px;max-width: 100%;}    
+.houseContainer .wareHouseItem{min-height: 320px;}
+.OrganicPage h3{font-size: 35px;line-height: normal;}    
+.wareHouse h3{font-size: 35px;}
+.ayushOverView{padding: 50px 0;}
+.AyushSec h3{font-size: 35px;line-height: normal;}
+.ayushProduct .CertificatImg{width: 450px;padding: 20px 15px;}    
+.specificBloxk .specificContent{width: 60%;padding-right: 50px;}
+.specificBloxk .specificImg{width: 40%;}    
+.yogaTagLine p{font-size: 16px;line-height: 26px;}    
+.foodtabContainer .foodBodyContainer{width: 70%;}
+.foodtabContainer .foodBody h3{font-size: 30px;line-height: normal;}    
+.AsPdf h3{padding-left: 0;}    
+.benefitElem .contentSideLeft{padding: 50px 30px;}
+.benefitElem .contentSideRight{padding: 45px 50px 30px;}
+.TQEMSbllock .contentSide{padding-left: 20px;}
+.EMSbllock .EMSElem .contentSideimg{padding: 0;}
+.projectBox figure img {width: 100%;max-width: 100%;height: 100%;}
+.MSCPage img{width: auto;height: auto;max-width: 100%;}
+.CTFElem{width: 992px;}    
+.keyAspects ul li{padding: 0 10px;}  
+.CFTContainer .content h4{font-size: 30px;}  
+.TQvalueContainer{padding: 0 50px;}    
+.TQElem h3{font-size: 35px;}
+ .needContainer .needElem h4{font-size: 24px;}
+.needContainer .needElem>div{padding: 20px 30px;height: 100%;}
+.needContainer .needElem figure{height: 70px;}
+.needContainer .needElem figure img{width: 50px;}
+.submitJobLavel li{padding-right: 45px;font-size: 16px;}    
+.jobList table tr td a{padding: 12px 30px 12px 8px;}    
+.openingContainer h4{font-size: 28px;line-height: 36px;}    
+.tatContainer h4{font-size: 30px;}    
+.openingContainer .openingElem{padding: 20px 45px;}
+.tatContainer .contentImg{display: flex;align-items: center;}   
+.tatContainer{padding: 40px;}
+.pdfElem button{padding: 15px;}    
+.raiseContainer{padding: 0 0;}
+.raiseContainer p{font-size: 14px;line-height: 22px;}
+.memberPopop .directoerElem{max-width: 90%;transform: translate(-50%, -50%);top: 50%;left: 50%;position: absolute;}    
+.heroBannerContent{top: 55%;width: 400px;left: 50%;}
+.WhoWeAre .BoxFlex h2{font-size: 60px;line-height: 65px;}
+.WhoWeAre .BoxFlex {padding: 0 20px;}
+.WhoWeAre .BoxFlex .Boxcontent{margin-left: 30px;padding-left: 30px;}
+.areRank ul{padding-top: 10px;}
+.areRank ul li{flex: 1;}
+.areRank ul li h2{font-size: 50px;}
+.tabContainer .leftArea{width: 200px;}
+.offerHeading{padding-right: 0;}
+.offerHeading h3:after{height: 70px;}
+.InnerContainer{padding: 0 30px;}
+.TQTeam h3{font-size: 30px;line-height: 35px;}
+.itemContent h4{font-size: 28px;    margin: 10px 0 10px;}
+.AreContainer{padding: 20px;}
+.offerHeading{padding-left: 0;}
+.ImproveContainer{padding: 20px 130px;}
+.ImproveContainer p{        font-size: 20px;line-height: 38px;}
+.ImproveSec{padding: 45px 0;}
+.ImproveSec{height: 350px;}
+.SectorsItemContainer figure img{width: 100%;height: 100%;object-fit: cover;}
+.SectorsItemElem h4{font-size: 30px;min-width: auto;}
+.SectorsSlid{padding: 35px 10px 0;}
+.SectorsItemElem .sectorLink{width: 5%;}
+.JoinTeamSec .InnerContainer{padding: 0;}
+.SectorsItemContainer figure img{height: 300px;} 
+.aboutImg{    right: -50px;width: 390px;}
+.aboutElem{margin-bottom: 10PX;}
+.leaderRank .areRank ul{    align-items: flex-start;}
+.leaderRank{padding-top: 10px;margin-top: 10px;}
+.leaderRank .areRank ul li{        padding: 17px 40px 10px;}
+.seniorElem figure{height: 230px;}
+.seniorDetail{font-size: 14px;}
+.seniorElem{margin-bottom: 15px}
+.addressContainer h5{font-size: 16px;}
+.addressContainer p{font-size: 14px;}
+.slideContainer figure{width: 35%;}
+.slideContainer .SlideDetail{width: 65%;}
+.visionSec .vissionElem .elemContent h4{font-size: 24px;}
+.elemContent p{font-size: 16px;}
+.missionVideo{height: 320px;}
+.valyeBoxContainer .valueBox{width: 48%;}
+.valyeBoxContainer .valueBox img{width: 60px;}
+.valyeBoxContainer .valueBox h6{font-size: 18px;}
+.directoerElem h4{line-height: normal;}
+.ratanText p{font-size: 20px;line-height: 30px;}
+.ratanTata .ratanText:after{    top: -30px;left: -5px;}
+.valueBoxContainer{padding: 20px 5px 30px;}
+.valueBoxElem{margin-bottom: 0;}
+.valueBoxElem p{    height: 130px;}
+.jobDes ul li{font-size: 14px;line-height: 26px;}
+.addressList{    padding: 0 15px;}
+.addresshedingList{    padding-top:15px;}
+.servicesSection .servicesElem{width: 992px;}
+.aservicesPage .IDList ul li{padding: 8px 5px;}
+.aservicesPage h3, .MSCPage h3{font-size: 35px;line-height: normal;}
+.AsOverView .AsContent{padding-left: 20px;}
+.SqKeyContainer{padding: 0 30px;}
+.SqKeyContainer .SqKeyElem{padding: 0 10px;}
+.SqKeyContainer .SqKeyElem h5{line-height: normal;}
+.SqKeyContainer .SqKeyElem figure{height: 200px;}
+.modelContainer .modelBox figure{height: 100px;}
+.modelContainer .modelBox figure img{width: 50px;}
+.modelContainer .modelBox  h6{font-size: 16px;}
+.AsRank ul li{font-size: 30px;line-height: 22px;padding: 0px 35px;}
+.keyPageContainer{padding-right: 0;}
+.keyHeading{padding: 0;}
+.auditsContainer p{font-size: 16px;line-height: 26px;}
+.QMSElem{padding: 15px;}
+.organicSpace{padding: 0 0;}
+.aboutFood h3{font-size: 30px;line-height: normal;}
+.foodtabContainer .foodBody img{height: auto;}
+.foodtabContainer .foodBody figure .TabIcon{width: 100px;    bottom: -25px;}
+.loginContainer .content h4{font-size: 16px;line-height: normal ;margin-bottom: 10px;}
+.lookSpace{padding: 0 15px;}
+.tabContainer .leftArea ul{margin: 135px 0 0 0;}
+.tabContainer .RightArea .offerHeading{padding-right: 20px;margin-bottom: 35px;}
+.tabContainer .RightArea .offerHeading h3{width: 250px;}
+.SectorsSec{padding: 50px 0;}
+}
+
+@media only screen and (max-width:991px){
+    .raiseSes:after{top: auto;bottom: 0;}   
+.tabContainer .RightArea .offerHeading {align-items: flex-start;height: 100px;}    
+.tabContainer .RightArea .offerHeading h3{width: 180px;}    
+.banerMask img{width: 530px;max-width: 100%;}    
+.slideContainer figure img{width: 150px;height: auto;}    
+.bankElem .bankcontent h4{font-size: 22px;color: #fff;padding-right: 0;}   
+.bankElem .bankcontent{padding: 20px;}     
+.wareHouse h3{font-size: 30px;}    
+.OrganicPage h3{font-size: 30px;line-height: normal;}        
+.aboutFood h3{font-size: 28px;}    
+.yogaTagLine p{font-size: 14px;line-height: 24px;}  
+.specificBloxk .specificImg h6{font-size: 12px;line-height: 20px;}
+.YogaListBlock .yogaImg{flex: 40%;}
+.YogaListBlock .yogaContent{flex: 60%;}
+.specificBloxk .specificContent{padding-right: 20px;}
+.EMSbllock .EMSElem .contentSide    {padding-right: 50px;}
+.IOSBlock .rightSide figure{height: auto;padding: 15px;}    
+.CTFElem{width: 768px;}      
+.benefitElem .contentSideRight{padding: 45px 20px 30px 50px;}
+.CFTContainer .content h4{font-size: 26px;margin: 5px 0;}
+.CFTContainer .imgOrder figure{height: 310px;}    
+.keyAspects ul li{width: 33%;}    
+.keyOption{padding: 50px 0;}
+.keyOption>div>div>div{flex: 100%;}    
+.TQvalueContainer{padding: 0 0;}    
+.keyHeading{margin-bottom: 30px;}
+.keyPageElem .keyPageElemDEtail{padding: 25px;}
+.TQElem h3{font-size: 30px;}    
+.keyOption:after{width: 500px;max-width: 100%;}
+.TQElem{padding-right: 0;}
+.IDList ul{flex-wrap: wrap;}    
+.IDList ul li{padding: 0 5px;margin: 0;}
+.AsPaddingLeft{padding-left: 15px;}
+.AsPaddingRight{padding-right: 15px;}
+.AsOverView{padding: 45px 0;}
+.aservicesPage h3, .MSCPage h3{font-size: 30px;}
+.SqKeyContainer{padding: 0 0;}
+.SqKeyContainer .SqKeyElem h5{font-size: 16px;}
+.UlStyle ul li{font-size: 13px;line-height: 21px;}
+.SqKeyContainer .SqKeyElem figure{height: 180px;}
+.modelContainer{width: 560px;}
+.servicesSection .servicesElem{width: 768px;}    
+.servicesSection .servicesElem .imgOrder figure img{width: auto;max-width: 100%;height: auto;}
+.servicesSection .servicesElem .contentOrder{width: 50%;}
+.servicesSection .servicesElem .imgOrder{width: 50%;padding-right: 20px;}
+.servicesSection:nth-child(odd) .imgOrder{padding-right: 0;padding-left: 20px;}
+.addressList{width: 50%;}       
+.ApplyFor button{margin-top: 5px;padding: 10px 40px 10px 25px;font-size: 14px;}    
+.submitJobLavel li{padding-right: 40px;font-size: 14px;}    
+.positionContainer h5{font-size: 20px;}
+.aboutJob{flex-direction: column;align-items: flex-start;}    
+.lokingForContainer {width: 90%;}   
+.disclamierBlock, .positionContainer{padding: 20px;}
+.lookSpace>div>div{width: 50%;}
+.loginContainer{margin-bottom: 20px;}
+.loginContainer .content{height: 200px;}
+.jobListingBox .jobForm{flex-wrap: wrap;}
+.jobListingBox .jobForm .jobGroup{width: 50%;margin-bottom: 10px;}
+.jobListingBox .jobForm select, .jobListingBox .jobForm input{width: 100%;}
+.jobList{width: 100%;overflow: auto;}
+.jobList table{width: 800px;}
+.openingContainer .openingElem{padding: 20px;}
+.openingContainer .openingElem h4{width: 30%;}
+.openingContainer .content{width: 70%;}
+.jobOpening .jobMask{width: 500px;bottom: 0;}
+.joinSpace, .jobListingBox{padding: 0 0;}
+.pdfContainer, .pdfCont{padding: 0 0;}    
+.pdfWidth{width: 50%;}
+.policiPdfView .pdfWidth{width: 100%;}
+.policiPdfView .pdfElem button {flex-direction: column;}
+.policiPdfView .pdfElem button span{margin: 0 0 15px;}
+.raiseContainer p, .raiseContainer .btnContainer{padding-left: 25px;}
+.raiseSes{padding: 60px 0;}
+.ratanText p{font-size: 18px;line-height: 24px;}    
+.directoerContainer{padding: 0;}    
+.directoerElem{padding: 20px;margin-bottom: 30px;}
+.valueBoxElem p{    height: 100px;}
+.tataValueSec{padding: 60px 0;}
+.ratanTata{padding: 80px 0 60px;}
+.valueBoxContainer .tableWidt{width: 50%;}
+.directoerElem .BDdetail{padding-right: 30px;}
+.directoerElem h5{font-size: 24px;}
+.visionSec .vissionElem .elemContent{width: 100%;padding: 20px;}
+.visionSec .vissionElem .elemContent img{width: 80px;margin-right: 15px;}    
+.visionSec .vissionElem .elemContent h4{font-size: 20px;}
+.visionSec .vissionElem .elemContent p{font-size: 14px;line-height: 24px;}
+.missionPageBlock .valueElement{padding: 0;}
+.missionPageBlock .valueElement h4{margin-left: 30px;font-size: 24px;}
+.valyeBoxContainer .valueBox{padding: 15px;}
+.missionVideo button{font-size: 16px;top: 35%;}
+.missionVideo button img{width: 50px;}
+.leaderRank .areRank ul li{padding: 17px 10px 10px;}
+.leaderRank .areRank ul li h2{font-size: 40px;}
+.seniorContainer{padding: 0;}
+.seniorElem{width: 33%;}
+.addressContainer .addressElem{padding: 20px;width: 47%;}
+.slideContainer .SlideDetail h5{font-size: 16px;line-height: 24px;}
+.slideContainer .SlideDetail p{font-size: 13px;line-height: 22px;}
+.aboutElem{padding-left: 0;}
+.HomeBanner .BannerSlide{height: 350px;}    
+.heroBannerContent{top: 55%;width: 400px;}
+.heroBannerContent h1{margin-bottom: 15px;}
+.heroImg{height: 100%;object-fit: cover;}
+.WhoWeAre .BoxFlex {padding: 0 0;}
+.WhoWeAre .BoxFlex h2{font-size: 40px;line-height: 45px;}
+.AreContainer{    padding: 20px 20px 10px;}
+.WhoWeAre .BoxFlex .Boxcontent:after{height: 225px;}
+.areRank ul li h2{font-size: 35px;}
+.areRank ul li h6{font-size: 13px;}
+.tabContainer .RightArea{width: 79%;}
+.OfferOwlContainer .OfferOwlElem{padding: 10px;}
+.OfferOwlContainer .OfferOwlElem h5{font-size: 14px;}
+.offerHeading h3{margin-right: 20px;padding-right: 30px;}
+.leaderItem{flex-direction: column;}
+.leaderItem figure{text-align:right}
+.leaderItem figure img{width: 300px;}
+.JoinTeamSec{height: auto;}
+.teamContent{    padding: 40px 30px 40px 0;}
+.tabContainer .leftArea{width: 160px;}
+.WhoWeAre .BoxFlex h2{min-width: 150px}
+.areRank ul{align-items: flex-start;}
+.offerHeading h3{width: 180px;}
+.OfferOwlContainer{height: 280px;}
+.OfferOwlContainer figure img{height: 100%;object-fit: cover;}
+.ImproveSec{height: 230px;}
+.ImproveContainer{padding: 20px 70px;}
+.ImproveContainer:after{left: 0;}
+.ImproveContainer:before{right: 0;}
+.ImproveContainer p{        font-size: 18px;line-height: 32px;}
+.SectorsSec{padding: 40px 0;}
+.SectorsSlid{padding: 35px 0 0;}
+.SectorsItemElem p{line-height: 22px;}
+.SectorsItemElem{padding: 20px;justify-content: space-between;}
+.SectorsItemElem h4{font-size: 22px;}
+.SectorsItemContainer figure img {height: 250px;}
+.teamContent{padding-right: 0;}
+.gridContainer{padding-left: 0;}
+.teamGrid figure{width: 140px;height: 180px;}
+.teamContent p{margin-bottom: 20px;line-height: 23px;}
+.maskImg{top: 67px;right: 100px;width: 500px;}
+.FormContainer{padding: 30px;}
+.seniorElem figure{height: 300px;}
+.boxHeight{height: 70px;}
+.AsCarousel{margin-top: 30px;padding-left: 5%;}
+.AsRank ul{flex-wrap: wrap;}
+.AsRank ul li{margin-bottom: 30px;}
+.AsRank{padding: 30px 0 20px;}
+.proContainer>div>div{flex: 100%;}
+.projectOverView .imgSide{padding: 0;margin-bottom: 30px;}
+.sectorProject >div>div{flex: 50% 0;}
+.auditsContainer p{font-size: 14px;line-height: 24px;}
+.ListElem .listBox{width: 50%;}
+.foodtabContainer .foodBodyContainer{width: 59%;padding-left: 20px;}
+.aboutFood, .foodListing{padding: 50px 0;}
+.AsPdf .AsPDFContainer .box button{padding: 5px;}
+.AsPdf .AsPDFContainer .box button h6{font-size: 14px;line-height: normal;}
+.ayushContainer{padding-left: 0;}
+.AyushSec h3{font-size: 30px;}
+.AyushSec h5{font-size: 14px;        line-height: 23px;}
+.AyushSec h5 span{width: 16px;    height: 16px;font-size: 12px;}
+.ayushMask h5{padding-left: 35px;}
+.ayushMask table th, .ayushMask table td{    font-size: 14px;line-height: normal;}
+.SearchElem{padding: 40px 15px;}
+.SearchElem h4{font-size: 20px;}
+.smallBanner{height: 200px!important;}
+.keyHeading{background: transparent;height: auto;}
+.slideContainer{height: auto;}
+.slideContainer figure{width: 100%;height: 250px;}
+.slideContainer .SlideDetail{width: 100%;}
+.toolsSec .modelContainer .modelBox{width: 40%;}
+.foodtabContainer .foodBody h3{font-size: 26px;line-height: normal;}    
+.CertificatSec ul li img{width: 90px;}
+.AsRank ul li{        padding: 0px 15px;font-size: 24px;}
+.pdfStyle .pdfWidth{width: 100%;}
+}
+
+@media only screen and (max-width:767px){
+    .policiPdfView .pdfElem button h6{font-size: 15px;}
+.pdfStyle .pdfWidth .pdfElem button{height: auto;}    
+    .AsRank ul li{width: 50%;}
+    .AsRank ul li:last-child{    border-right: 1px solid #D9D2D2;}
+    .AsRank ul li span{font-size: 13px;}
+.TQMapContainer .TQMapElem{height: 300px;}  
+.addressList{ padding: 0 10px;width: 100%;margin: 0 15px 15px;}  
+.addresshedingList{margin-top: -21px;padding-top: 10px;}    
+.mainaddressList{    margin-bottom: 20px;}
+.CertificatSec{padding: 50px 0 40px;}    
+.TQMapAddress{padding: 0;}
+.visionSec .vissionElem{height: auto;padding: 0 0;} 
+.visionSec .vissionElem .elemContent{padding: 15px;}  
+.MobShow{display: block;}   
+.tabContainer .RightArea .offerHeading{height: auto;padding: 0 15px 0 0;}
+.tabContainer .leftArea ul{margin: 0 auto 20px;display: flex;}
+.tabContainer .RightArea .offerHeading h3{display: none;} 
+.foodtabContainer .tabStyleFood{position: relative;top: 0;}    
+.SectorsItemElem h4{font-size: 18px;}
+.energyBlock{padding: 40px 0;}    
+.energyBlock figure, .energyBlock figure img{padding: 0;margin: 0!important;}    
+.bankElem img{width: 100%;height: 310px;object-fit: cover;}    
+.bankElem .bankcontent h4{font-size: 18px;color: #fff;padding-right: 0;}       
+.bankElem .bankcontent{right: 10px;}
+.organicSpace{padding: 0 0;}    
+.IBSOverview .content{margin-top: 25px;}
+.flexRight{justify-content: flex-start;}
+.secSpace{margin-top: 40px;}
+.IMSEmel{flex-direction: column;}
+.IMSEmel figure{width: 100%;}
+.IMSEmel .content{width: 100%;padding-left: 0;}
+.foodtabContainer .foodBody h3{font-size: 24px;line-height: normal;}        
+    .foodtabContainer .foodBodyContainer{padding-left: 0;}    
+.foodtabContainer .tabStyleFood li{font-size: 14px;padding: 0 0 0 25px;}    
+.foodtabContainer .foodBody figure    {margin: 15px 0 40px;}
+.foodtabContainer .foodBody h5{font-size: 15px;line-height: normal;}
+.aboutFood .foodContainer{flex-direction: column;}    
+.ListElem .listBox, .foodtabContainer .tabStyleFood{width: 100%;}
+.foodtabContainer .foodBodyContainer{width: 100%;margin-top: 20px;}
+.auditsContainer{flex-direction: column;justify-content: center;text-align: center;} 
+.auditsContainer h3{border: none;padding: 0;margin: 0 0 15px;}
+.ovewviewCOntainer .content{padding: 0;}    
+.keyAspects ul li{width: 50%;} 
+.CTFElem{width: 580px;flex-direction: column;max-width: 98%;padding: 0 15px;}
+.CFTContainer:nth-child(odd) .contentOrder{order: 1;    padding-left: 0;}
+.CFTContainer:nth-child(odd) .imgOrder{order: 2;justify-content: center;}  
+.CFTContainer .contentOrder, .CFTContainer .imgOrder{width: 100%;padding: 0;}
+.CFTContainer .imgOrder{margin-top: 30px;    justify-content: center;}
+.TQvalueImg{justify-content: center;}    
+.AsPaddingLeft, .AsPaddingRight{flex: 100%;}
+.AsOverView .AsContent{margin-top: 30px;padding: 0;}
+.SqKeyContainer .SqKeyElem{width: 100%;}
+.SqKeyContainer .SqKeyElem figure{height: auto;}
+.servicesSection:nth-child(even) .contentOrder{order: 1;}
+.servicesSection:nth-child(even) .imgOrder{order: 2;}    
+.servicesSection .servicesElem .imgOrder figure img{width: 100%;}  
+.servicesSection .servicesElem  .contentOrder{margin-bottom: 20px;}
+.servicesSection .servicesElem{width: 580px;max-width: 96%;}      
+.servicesSection .servicesElem{flex-direction: column;padding: 0 15px;}    
+.servicesSection .servicesElem .contentOrder{width: 100%;}
+.servicesSection .servicesElem .imgOrder{width: 100%;padding-right: 0;}
+.servicesSection:nth-child(odd) .imgOrder{padding-right: 0;padding-left: 0;}    
+.addressList h5{font-size: 16px;}    
+.addressList h6{font-size: 14px;}    
+.FormContainer{padding: 10px;}        
+.submitJobLavel li{padding-right: 0;font-size: 13px;line-height: normal;}
+.aboutJob li,.disclamierBlock p{font-size: 14px;line-height: 24px;}
+.raiseContainer h3{text-align: center;}    
+.raiseContainer h3 span{display: inline-block;}
+.raiseContainer p{border: none;border-top: 1px solid #fff;padding: 15px 0 0 0;margin-top: 20px;text-align: center;}
+.raiseContainer .btnContainer{padding: 0;        display: flex;justify-content: center;}
+.ratanText p{font-size: 16px;}    
+.ratanTata .ratanText{padding: 0;}   
+.ratanTata .ratanText:after{left: -35px;} 
+.ratanTata .ratanText:before{right: -35px;} 
+.valueBoxContainer .tableWidt{width: 100%;}
+.valueBoxElem p{    height: auto;}
+.valueText p{font-size: 14px;line-height: 23px;}
+.directoerElem .BDdetail, .directoerElem .BDImage{width: 100%;}  
+.directoerElem .BDdetail{padding-right: 0;align-items: center;}
+.directoerElem .BDdetail p{text-align: center;}
+.directoerElem .BDImage figure{    width: 80%;margin: 30px auto 0;}  
+.directoerElem{padding: 20px 20px 50px;}
+.directoerElem:nth-child(even) .BDdetail{order: 1;padding: 0;}
+.memberPopop .directoerElem .BDImage figure{    width: 300px;margin: 30px auto 0;}  
+.memberPopop .directoerElem .BDImage{margin-top: 0;}
+.memberPopop .directoerElem .BDdetail{padding: 0;margin-top: 30px;}
+.directoerElem:nth-child(even) .BDImage{order: 2;}
+.valyeBoxContainer .valueBox{width: 100%;}    
+.aboutElem h5{font-size: 16px;margin-bottom: 10px;} 
+.aboutImg{    right: -40px;width: 270px;}
+.seniorElem{width: 50%;}
+.addressContainer .addressElem{padding: 20px;width: 100%;margin-bottom: 20px;}
+.AffiliatesSec{padding: 50px 0;}
+.slideContainer{height: auto;flex-direction: column;}
+.slideContainer figure{width: 100%;height: 250px;}
+.innerBanner{height: 300px;}
+.innerBanner h2{font-size: 30px;}
+.leaderRank .areRank ul li:nth-child(2){border: none;}
+.heroBannerContent{padding: 0 15px;}
+.WhoWeAre .BoxFlex{flex-direction: column;}
+.WhoWeAre .BoxFlex h2{font-size: 30px;line-height: 35px;border-bottom: 1px solid #F1EEEE;display: block;width: 100%;text-align: center;padding-bottom: 10px;margin-bottom: 15px;}
+.WhoWeAre .BoxFlex h2 span{display: inline-block;}
+.WhoWeAre .BoxFlex .Boxcontent{margin-left: 0;padding-left: 0;text-align: center;}
+.WhoWeAre .BoxFlex .Boxcontent:after{content: none;}
+.areRank ul{flex-wrap: wrap;padding: 10px 0 0 0;}
+.areRank ul li{width: 50%;        flex: none;margin-bottom: 15px;}
+.offerHeading{padding: 0;flex-direction: column;margin-bottom: 20px;}
+.offerHeading h3{margin-right: 0;padding-right: 0;text-align: center;margin-bottom: 30px;}
+.offerHeading h3:after{height: 4px;width: 100px;top: auto;bottom: -13px;left: 50%;transform: translate(-50%);}
+.offerHeading p{text-align: center;}
+.tabContainer{flex-direction: column;}
+.tabContainer .leftArea{width: 100%;padding: 0 10px;}
+.tabContainer .RightArea{flex: 1;padding-left: 10px;width: 100%;}
+.OfferOwlContainer .OfferOwlElem h5{font-size: 13px;line-height: 18px;}
+.InnerContainer{padding: 0 0;}
+.TQTeam h3{font-size: 24px;line-height: 35px;}
+.TQTeam .leaderItem h3{font-size: 20px;line-height: 26px;}
+.TQTeam .leaderItem h4{font-size: 18px;margin: 0;}
+.leaderItem{padding: 15px 0 0 15px;}
+.offerHeading h3{width: auto;}
+.ImproveSec{height: auto;padding: 30px 0;}
+.ImproveContainer{padding: 20px;}
+.ImproveContainer p{font-size: 14px;line-height: 24px;}
+.ImproveContainer:after,.ImproveContainer:before{width: 54px;height: 40px;}
+.SectorsItemContainer{height: auto;}
+.SectorsItemElem>div{width: 100%!important;padding: 0!important;}
+.SectorsItemElem .sectorLink{justify-content: flex-start;margin-top: 10px;}
+.SectorsItemElem p{font-size: 13px;}
+.SectorsItemElem h4{border: none;margin: 0 0 10px;}
+.keySec{padding: 40px 0;}
+.keySlider{padding-left: 10px;}
+.maskImg{top: auto;bottom: 0;z-index: 1;opacity: .4;}
+.JoinTeamSec>div, .teamContent{position: relative;z-index: 9;}
+.JoinTeamSec{overflow: hidden;}
+.JoinTeamSec .InnerContainer {overflow: hidden;height: auto;}
+.gridContainer{        position: absolute;right: 0;opacity: .2;justify-content: flex-end;}
+.blankDiv{display: none;}
+.visionSec {flex-direction: column;} 
+.visionSec .vissionElem{height: auto;padding: 20px 0;}  
+.directoerElem p{font-size: 14px;line-height: 23px;margin-bottom: 10px;}
+.valueBoxContainer{margin: 0;}
+.policiesSec{padding: 50px 0;}
+.raiseContainer p{font-size: 14px;}
+.lokingForContainer{width: 96%;flex-direction: column;} 
+.lookSpace>div>div{width: 100%;}
+.loginContainer .content{height: auto;}
+.tatContainer{padding: 20px;flex-direction: column;}
+.tatContainer .content{padding: 0;}
+.tatContainer .content, .tatContainer .contentImg{width: 100%;}
+.tatContainer .contentImg{        justify-content: center;border: none;border-top: 1px solid #000;padding-top: 20px;}
+.tatContainer .contentImg img{width: 200px;}
+.jobListingBox .jobForm .jobGroup{width: 100%;}
+.workBlock{padding-bottom:30px;}
+.openingContainer .openingElem h4{width: 100%;text-align: center;border: none;border-bottom: 1px solid #fff;padding-bottom: 15px;margin-bottom: 15px;}
+.openingContainer .content{width: 100%;padding: 0;}
+.openingContainer .content p{text-align: center;}
+.needContainer .needElem figure{height: auto;}
+.needContainer .needElem h4{font-size: 20px;margin: 5px 0 10px;}
+.projectOverView{padding: 50px 0;}
+.needContainer .needElem>div{padding: 15px;}
+.sectorProject >div>div{flex: 100% 0;}
+.sectorBlock{position: relative;padding: 40px 0 60px;}
+.keyPageElem h4{font-size: 20px;line-height: normal;padding: 15px;margin: 0;}
+.QMSElem, .benefitElem, .EMSbllock .EMSElem, .TQEMSbllock .EMSElem, .IOSBlock .IOSElem{flex-direction: column;}
+.benefitElem .IOSTag{width: 70px;top: -20px;}
+.EMSbllock h3{padding-right: 0;}
+.EMSbllock .EMSElem>div, .TQEMSbllock .contentSide{flex: 1 1 100%;}
+.EMSbllock .EMSElem .contentSideimg{margin: 0;}
+.EMSbllock .EMSElem .contentSide {padding: 0;}
+.TQEMSbllock .contentSide{padding-left: 0;margin-top: 20px;}
+.IOSBlock .leftSide{flex: 1 1 100%;}
+.IOSBlock .rightSide{flex: 1 1 100%;padding-left: 0;}
+.innerContainer h5{font-size: 20px!important;word-break: break-all;}
+.organicSpace{padding: 0 15px;}
+.benefitElem{margin-top: -70px;}   
+.ListElem .listBox p{font-size: 16px;} 
+.ListElem .listBox>div{    height: 162px;padding: 30px;}
+.YogaListBlock .foodContainer, .specificBloxk .specificContainer{flex-direction: column;}
+.YogaListBlock .yogaImg{flex: 100%;}
+.YogaListBlock .yogaContent{flex: 100%;padding: 0;margin-top: 25px;}
+.specificBloxk .specificContainer>div{width: 100%!important;}
+.specificBloxk .specificImg{margin-bottom: 25px;}
+.globalSce figure{text-align: left;margin-top: 20px;}
+.VCSSce .content{padding-left: 0;margin-top: 20px;}
+.RcmSce figure{text-align: left;}
+.UASSce h5{padding-right: 0;}
+.OrganicPage h5{font-size: 20px;line-height: normal;}
+.VCSSce img{width: auto;max-width: 100%;}
+.wareHouse{padding: 40px 0;}
+.IDList ul li{        padding: 10px 5px!important;margin: 0;}
+.IDList button{display: block;margin: 0;padding: 10px 15px;font-family: 'Sora-Regular';background: #0054a5;width: 100%;text-align: right;font-size: 14px;border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.IDList ul{border-top-left-radius: 0;border-top-right-radius: 0;}
+.indgapSce{padding-top: 40px;}
+}
+
+@media only screen and (max-width:576px){
+    .toolsSec .modelContainer .modelBox{width: 200px;}    
+.bankElem img{width: 100%;height: 360px;object-fit: cover;}      
+    .organicBenefit{padding: 20px 0;} 
+.ayushMask table th, .ayushMask table td{    font-size: 12px;padding: 12px 15px;line-height: normal;}    
+.ayushMask table td li{font-size: 12px;line-height: normal;}
+.ListElem .listBox p{font-size: 14px;} 
+.AsPdf .AsPDFContainer{padding: 0;}    
+.benefitElem .contentSideLeft{padding:50px 20px 20px;}
+.benefitElem .contentSideRight{padding: 45px 20px 30px 15px;}    
+.QMSElem .contentSide{padding: 10px;}    
+.modelContainer .modelBox{width: 50%;margin-bottom: 15px;}    
+.servicesSection .servicesElem .imgOrder figure:after{top: 10px;left: -10px;}
+.positionContainer h5{font-size: 16px;}    
+.TQMap{height: auto;}
+.FormControl, .formGroup, .TQMapContainer{flex-direction: column;}    
+.openingContainer .openingElem h4{font-size: 22px;line-height: normal;}
+.loginContainer .content{padding: 20px;}
+.loginContainer .content p{font-size: 14px;line-height: 24px;}
+.pdfWidth{width: 100%;} 
+.pdfElem button{height: 100px;}
+.pdfElem button h6{font-size: 15px;line-height: normal;}
+.raiseContainer .btnContainer{flex-direction: column;align-items: center;}
+.raiseContainer .btnContainer a{margin-bottom: 10px;}
+.pdfElem button{justify-content: flex-start;}
+.valueAnime h2{        margin: 0;padding: 0;border: none;border-bottom: 2px solid #ED1F1D;}    
+.valueAnime h6 span{position: relative;top: 5px;font-size: 28px;}
+.innerBannerContent .detail{padding: 0;}    
+.valueAnime{flex-direction: column;left: 0;padding: 0;}    
+.ratanText p{font-size: 13px;line-height: 23px;}
+.ratanText span{font-size: 16px;}
+.ratanTata .ratanText:after{left: 0;} 
+.ratanTata .ratanText:before{right: 0;bottom: 0;} 
+.directoerElem h4{font-size: 20px;}   
+.directoerElem h5{font-size: 18px;margin-bottom: 5px;}   
+.aboutImg{    right: -40px;width: 200px;}    
+.OfferOwlContainer{height: 210px;}    
+.heroBannerContent{padding: 0 15px;width: 100%;}
+.seniorElem{width: 100%;}
+.seniorElem figure{height: auto;}
+.AsOverView .AsImg .imgBgStyle:after{left: auto;right: -5px;}
+.AsCarousel{padding-left: 0;}
+.imgBgStyle:after{content: none;}
+.keyPageElem span{    top: -40px;left: 0;}
+.keyPageElem figure{height: 250px;}
+.CFTContainer .imgOrder figure{height: auto;}  
+
+}

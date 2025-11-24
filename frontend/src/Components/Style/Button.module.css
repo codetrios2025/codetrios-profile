@@ -1,0 +1,79 @@
+.btn{
+    font-family: 'Lato Regular';
+    border-radius: 4px;
+    padding: 13px 40px 13px 24px;
+    background: transparent url(../../assest/images/White_Arrow.png) no-repeat;
+    background-position: 90% center;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.whiteBorder{
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+}
+.whiteBorder:hover{
+    color: #fff;
+    background-color: #ED1F1D;
+    border-color: #ED1F1D;
+}
+.BlurBtn{
+    background-color: #0054a5;
+    color: #fff;
+}
+
+.RedBtn{
+    background-color: #ED1F1D;
+    color: #fff;
+}
+.lightBlue{
+    background-color: #0156A4;
+    color: #fff;
+}
+.BlurBtn:hover, .lightBlue:hover, .RedBtn:hover{color: #fff;}
+.roundBtn{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 37px;
+}
+.roundBtnSm{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 28px;
+}
+.roundBtnLg{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 56px;
+}
+.RoundRed{background: #ED1F1D;}
+
+
+@media only screen and (max-width:1200px){
+.btn{    padding: 15px 60px 15px 24px;}
+.roundBtnLg{width: 40px;height: 40px;min-width: 40px;}
+}
+
+@media only screen and (max-width:991px){
+    .btn{    padding: 15px 40px 15px 15px;font-size: 13px;background-position: 87% center;}
+    .roundBtn{width: 30px;height: 30px;min-width: 30px}    
+}
+
+@media only screen and (max-width:767px){
+.btn{        padding: 12px 32px 12px 10px;font-size: 12px;background-position: 90% center;}
+.roundBtn{width: 25px;height: 25px;min-width: 25px;}
+.roundBtn img{width: 10px;height: 10px;}
+.roundBtnLg{width: 30px;height: 30px;min-width: 30px;}
+}
