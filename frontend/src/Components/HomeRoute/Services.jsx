@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
-import servicesImg from '../../assets/images/hero-banner.webp';
+import servicesImg from '../../assets/images/E-commerceSolutions.webp';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
 import { BsCart3 } from "react-icons/bs";
@@ -17,6 +17,7 @@ const OurServices = () =>{
                 <Row>
                     <Col>
                         <h2 className={Style.title}>Our Services</h2>
+                        <p className={Style.subContent}>At CodeTrio, we deliver end-to-end digital solutions designed to help your business thrive online. From full-stack development and API integrations to responsive design and performance optimization — we handle everything from concept to deployment, ensuring your digital presence is modern, scalable, and future-ready. </p>
                     </Col>
                 </Row>
                 <Row>
@@ -28,8 +29,8 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span><FaPaintBrush className={Style.icon} /></span>
                                 <h3>Website Design</h3>
-                                <p>Need an online store that sells? We build smooth, secure e-commerce websites that make shopping easy and help you increase sales.</p>
-                                <Link to="">Read More <BsArrowRight className={Style.icon} /></Link>
+                                <p>Looking to take your business online? We build powerful, secure, and easy-to-manage e-commerce platforms that deliver seamless shopping experiences and drive conversions. Our goal is to help you sell more with smarter, faster, and mobile-friendly online stores. </p>
+                                <Link to="/services-detail">Read More <BsArrowRight className={Style.icon} /></Link>
                             </div>
                         </div>
                     </Col>

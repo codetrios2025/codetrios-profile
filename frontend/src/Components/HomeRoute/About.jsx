@@ -12,22 +12,22 @@ const AboutUs = () =>{
         <div className={Style.commonPading + " " + Style.aboutSec}>
             <Container>
                 <Row>
-                    <Col>
+                    <Col md={6}>
                         <figure>
                             <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
                         </figure>
                     </Col>
-                    <Col>
+                    <Col md={6}>
                         <div className={Style.aboutContent}>
                             <h6>About Codetrios</h6>
-                            <h2 className={Style.title}>Why Choose Us</h2>
-                            <p>We are a trio of passionate developers creating cutting-edge web solutions for startups, agencies, and enterprises. Our mission is to transform your ideas into beautiful and functional digital experiences. With deep server-side knowledge and a keen eye for design, we build platforms that stand out and perform.</p>
+                            <h2 className={Style.title}>Full-Stack Web Development that Drives Business Growth</h2>
+                            <p>We partner with businesses to transform ideas into high-performing, scalable, and SEO-optimized web platforms—all with a single, expert team.</p>
                             <ul>
                                 <li><FiCheck className={Style.icon} /> Top Digital Service: We craft future-ready websites with creative finesse.</li>
                                 <li><FiCheck className={Style.icon} /> Seamless Digital Transformation: We craft websites that redefine your online presence.</li>
                                 <li><FiCheck className={Style.icon} /> Responsive Design Excellence: Your website, accessible and engaging on any device.</li>
                             </ul>
-                            <Link to="" className={Style.btnStyle}>Explore More <BsArrowRight className={Style.icon} /></Link>
+                            <Link to="/about-us" className={Style.btnStyle}>Explore More <BsArrowRight className={Style.icon} /></Link>
                         </div>
                     </Col>
                 </Row>

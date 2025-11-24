@@ -9,7 +9,7 @@ import { FiCheck } from "react-icons/fi";
 
 const ContactUs = () =>{
     return(
-        <div className={Style.commonPading + " " + Style.aboutSec}>
+        <div className={Style.commonPading}>
             <Container>
                 <Row>
                     <Col>

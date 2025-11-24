@@ -7,7 +7,7 @@
 .buttonFlex{display: flex;justify-content: center;margin-top: 30px;}
 .primeryBg{background: #7C3AED;}
 
-.btnStyle{background: #7C3AED;color: #fff;padding: 20px 30px;position: relative;z-index: 1;}
+.btnStyle{background: #7C3AED;color: #fff;padding: 20px 30px;position: relative;z-index: 1;border: none;}
 .btnStyle .icon{margin-left: 10px;}
 .btnStyle::after, .btnStyle::before {content: "";background-color: #000;width: 0;height: 50%;position: absolute;z-index: -1;}
 .btnStyle::after{bottom: 0;right: 0;-webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);transition: .3s cubic-bezier(.785, .135, .15, .86);}
@@ -99,6 +99,7 @@
     background: #F8FAFC;
 
 }
+.servicesSec .subContent{display: none;}
 .servicesBox{
     padding: 0;
     border-radius: 10px;
@@ -136,11 +137,16 @@
     left: 20px;
 }
 .servicesBox .content h3{
-    font-size: 20px;
+    font-size: 22px;
+    margin: 10px 0 10px;
 }
 .servicesBox .content p{
     margin: 0 0 10px 0;
-    font-weight: 300;
+    font-weight: 400;
+        overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 .servicesBox .content a{
     color: #000;
@@ -228,3 +234,46 @@ position: relative;
     padding: 15px 40px;
 }
 .fomrStyle button:hover{color: #fff;}
+
+/* innerBanner */
+.innerBanner{position: relative;background: #7C3AED;padding: 50px 0;height: 400px;}
+.aboutPage .aboutContent a{display: none;}
+.weBuild{position: relative;background: #f7f7f7;}
+.weBuild h2{text-align: center;margin: 0 0 40px;}
+.weBuild .box{background: #fff;padding: 20px;margin-bottom: 20px;position: relative;color: #000;transition: all 0.2s linear;}
+.weBuild .box:before{position: absolute;bottom: 0;left: 0;width: 100%;height: 0px;content: "";z-index: 1;transition: all 0.2s linear;}
+.weBuild .box:hover{color: #fff;}
+.weBuild .box:hover:before{height: 100%;background: #7C3AED;}
+.weBuild .box *{position: relative;z-index: 1;}
+.weBuild .box .icon{font-size: 35px;color: #7C3AED;}
+.weBuild .box:hover .icon{color: #fff;}
+.weBuild .box h3{font-size: 20px;margin: 10px 140px 15px 0;}
+.whyUs figure{height: 100%;background: #7C3AED;;}
+.whyUs .aboutContent{padding: 40px 0 30px 40px;height: 100%;display: flex;justify-content: center;}
+.whyUs ul li{flex-direction: column;margin-bottom: 25px;}
+.whyUs ul li h4{font-weight: 600;display: flex;align-items: center;margin: 0;font-size: 20px;color: #000;}
+.whyUs h2{margin-bottom: 40px;}
+.whyUs ul li h4 .icon{top: 0;color: #000;}
+.whyUs ul li p{padding-left: 30px;margin: 0;}
+.whyUs ul li:last-child{margin: 0;}
+.visionSec{position: relative;background: #f7f7f7;padding: 60px 0;}
+.visionSec .visionElem{display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.visionSec h4{color: #000;font-size: 24px;}
+
+
+.formPop{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #0000004b;z-index: 9999;display: flex;align-items: center;justify-content: center;}
+.formElem{width: 500px;background: #fff;max-width: 95%;position: relative;height: 95%;overflow: auto;padding: 30px 15px 20px;}
+.formPop .commonPading{padding: 0;}
+.formPop h2.title{font-weight: 400;font-size: 30px;}
+.formPop .inputFlex label{color:#4F4C4C;font-weight: 100;}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 100;}
+.formPop .inputFlex{flex-direction: column;}
+.formPop .inputFlex .group{margin-bottom: 20px;}
+.formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;}
+.formPop .buttonFlex{margin: 10px 0 0;}
+.formPop .buttonFlex button{background: #7C3AED;color: #fff;}
+
+.servicesPage .buttonFlex{display: none;}
+.servicesPage .servicesBox .content p{display: flex;overflow: auto;    -webkit-line-clamp: none;}
+.servicesPage .subContent{display: block;}
+.servicesDetail .aboutContent h4{font-weight: 600;}

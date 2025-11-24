@@ -20,8 +20,8 @@ const Header=()=>{
                                 </div>
                                 <ul>
                                     <li><Link to="" title="Home"><span>Home</span></Link></li>
-                                    <li><Link to="" title="About"><span>About</span></Link></li>
-                                    <li><Link to="" title="Services"><span>Services <IoIosArrowDown /></span></Link>
+                                    <li><Link to="/about-us" title="About"><span>About</span></Link></li>
+                                    <li><Link to="/services" title="Services"><span>Services <IoIosArrowDown /></span></Link>
                                         <ul className={Style.subMenu}>
                                             <li><Link to="" title="Website Design">Website Design</Link></li>
                                             <li><Link to="" title="Web Development">Web Development</Link></li>
