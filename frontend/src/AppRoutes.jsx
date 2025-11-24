@@ -33,20 +33,32 @@ import JobApplicationListRoutes from "./Admin/adminsection/jobSection/jobApplica
 
 // Frontend Site Routes
 // Add your frontend pages:
+import LayoutScreen from "./Components/Common/Layout";
  import Home from "./Components/Routes";
+ import AboutUsPage from "./Components/Pages/AboutUsPage";
+ import Services from './Components/Pages/ServicesPage'
+ import ServicesDetail from "./Components/Pages/ServicesDetail";
+ import ScrollTop from "./Components/Common/ScrollTop";
 // import About from "./Frontend/pages/About";
 // import Contact from "./Frontend/pages/Contact";
 // Add more as needed...
 
 function AppRoutes() {
   return (
-   
+    <>
+      <ScrollTop />
       <Routes>
 
         {/* -----------------------------------
             FRONTEND / PUBLIC ROUTES
         ------------------------------------ */}
-         <Route path="/" element={<Home />} />
+        
+          <Route path="/" element={<LayoutScreen />}>
+            <Route index element={<Home />} />
+            <Route path="about-us" element={<AboutUsPage />} />
+            <Route path="services" element={<Services />} />
+            <Route path="services-detail" element={<ServicesDetail />} />
+          </Route>
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */} 
 
@@ -96,7 +108,7 @@ function AppRoutes() {
         </Route>
 
       </Routes>
- 
+    </>
   );
 }
 
