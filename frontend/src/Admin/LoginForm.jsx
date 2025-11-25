@@ -3,9 +3,9 @@ import { useNavigate, Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Style from "./adminstyle/LoginForm.module.css";
 
-// import constants from "../services/constants";
-// import { useDispatch } from "react-redux";
-// import { userlogin } from "../store/authSlice";
+import constants from "../services/constants";
+import { useDispatch } from "react-redux";
+import { userlogin } from "../store/authSlice";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -13,59 +13,59 @@ const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
 
-  // const navigate = useNavigate();
-  // const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // if (!email || !password) {
-    //   setError("Please enter both email and password.");
-    //   return;
-    // }
+    if (!email || !password) {
+      setError("Please enter both email and password.");
+      return;
+    }
 
-    // try {
-    //   const response = await fetch(`${constants.API_BASE_URL}login`, {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify({ email, password }),
-    //   });
+    try {
+      const response = await fetch(`${constants.API_BASE_URL}login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
 
-    //   if (!response.ok) {
-    //     setError("Invalid email or password.");
-    //     return;
-    //   }
+      if (!response.ok) {
+        setError("Invalid email or password.");
+        return;
+      }
 
-    //   const data = await response.json();
+      const data = await response.json();
 
-    //   const user = data.user;
-    //   const token = data.token;
+      const user = data.user;
+      const token = data.token;
 
-    //   // store data
-    //   localStorage.setItem("token", token);
-    //   localStorage.setItem("userDetail", JSON.stringify(user));
-    //   localStorage.setItem(
-    //     "authData",
-    //     JSON.stringify({
-    //       isAuthenticatedTq: true,
-    //       user,
-    //       token,
-    //     })
-    //   );
+      // store data
+      localStorage.setItem("token", token);
+      localStorage.setItem("userDetail", JSON.stringify(user));
+      localStorage.setItem(
+        "authData",
+        JSON.stringify({
+          isAuthenticatedTq: true,
+          user,
+          token,
+        })
+      );
 
-    //   dispatch(userlogin({ user, token }));
+      dispatch(userlogin({ user, token }));
 
-    //   setError("");
+      setError("");
 
-    //   // redirect user
-    //   if (user.role !== "user" && user.modules?.length > 0) {
-    //     navigate(`/admin/${user.modules[0]}`);
-    //   } else {
-    //     navigate("/admin/menu");
-    //   }
-    // } catch (err) {
-    //   setError("Something went wrong. Please try again.");
-    // }
+      // redirect user
+      if (user.role !== "user" && user.modules?.length > 0) {
+        navigate(`/admin/${user.modules[0]}`);
+      } else {
+        navigate("/admin/menu");
+      }
+    } catch (err) {
+      setError("Something went wrong. Please try again.");
+    }
   };
 
   return (
