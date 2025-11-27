@@ -71,7 +71,7 @@ function AppRoutes() {
         <Route path="/admin/register" element={<RegisterForm />} />
         <Route path="/admin/forgot-password" element={<ForgetPassword />} />
         <Route path="/admin/reset-password/:token" element={<ResetPassword />} />
-
+   <Route path="/admin/menu" element={<MenuRoutes />} />
         {/* -----------------------------------
             ADMIN PROTECTED ROUTES
         ------------------------------------ */}
@@ -86,7 +86,7 @@ function AppRoutes() {
           <Route index element={<Content />} />
 
           <Route path="home" element={<HomeRoutes />} />
-          <Route path="menu" element={<MenuRoutes />} />
+       
           <Route path="about" element={<AboutRoutes />} />
           <Route path="career" element={<CarrerRoutes />} />
           <Route path="mission" element={<MissionRoutes />} />
