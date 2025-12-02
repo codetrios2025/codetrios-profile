@@ -205,7 +205,7 @@ const MenuManagement = () => {
                   />
                 )}
               </td>
-
+{console.log(`${IMAGE_BASE_URL}${item.image}`)}
               <td>
                 <Button
                   variant="warning"
