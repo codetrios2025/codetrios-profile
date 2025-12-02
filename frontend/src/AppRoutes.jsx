@@ -71,41 +71,48 @@ function AppRoutes() {
         <Route path="/admin/register" element={<RegisterForm />} />
         <Route path="/admin/forgot-password" element={<ForgetPassword />} />
         <Route path="/admin/reset-password/:token" element={<ResetPassword />} />
-   <Route path="/admin/menu" element={<MenuRoutes />} />
+     
         {/* -----------------------------------
             ADMIN PROTECTED ROUTES
         ------------------------------------ */}
-        <Route
-          path="/admin/*"
+        {/* <Route
+          path="/"
           element={
             <PrivateRoute>
               <Layout />
             </PrivateRoute>
           }
-        >
-          <Route index element={<Content />} />
+        > */}
+         <Route
+  path="/"
+  element={
+    
+      <Layout />
+  
+  }
+>
+  <Route path="admin/menu" element={<MenuRoutes />} />
+  <Route path="admin/home-page" element={<HomeRoutes />} />
+  <Route path="admin/about" element={<AboutRoutes />} />
+  <Route path="admin/career" element={<CarrerRoutes />} />
+  <Route path="admin/mission" element={<MissionRoutes />} />
+  <Route path="admin/members" element={<MemberRoutes />} />
+  <Route path="admin/social-media" element={<SocialMediaLinkManagerRoutes />} />
+  <Route path="admin/contact" element={<ContactManagerRoutes />} />
+  <Route path="admin/key-projects" element={<KeyProjectsRoutes />} />
+  <Route path="admin/blogs" element={<BlogManagerRoutes />} />
+  <Route path="admin/policies" element={<PoliciesManagerRoutes />} />
+  <Route path="admin/project-service" element={<ProjectServiceSectionRoutes />} />
+  <Route path="admin/customers" element={<CustmoresManagerRoutes />} />
+  <Route path="admin/downloads" element={<DownloadManagerRoutes />} />
+  <Route path="admin/food-downloads" element={<FoodDownloadManagerRoutes />} />
+  <Route path="admin/contact-messages" element={<ContactUsRoutes />} />
+  <Route path="admin/job-list" element={<JobListRoutes />} />
+  <Route path="admin/job-applications" element={<JobApplicationListRoutes />} />
+  <Route path="admin/map-location" element={<MapLocationRoutes />} />
+  <Route path="admin/user-permissions" element={<UserPermissionRoutes />} />
+</Route>
 
-          <Route path="home" element={<HomeRoutes />} />
-       
-          <Route path="about" element={<AboutRoutes />} />
-          <Route path="career" element={<CarrerRoutes />} />
-          <Route path="mission" element={<MissionRoutes />} />
-          <Route path="members" element={<MemberRoutes />} />
-          <Route path="social-media" element={<SocialMediaLinkManagerRoutes />} />
-          <Route path="contact" element={<ContactManagerRoutes />} />
-          <Route path="key-projects" element={<KeyProjectsRoutes />} />
-          <Route path="blogs" element={<BlogManagerRoutes />} />
-          <Route path="policies" element={<PoliciesManagerRoutes />} />
-          <Route path="project-service" element={<ProjectServiceSectionRoutes />} />
-          <Route path="customers" element={<CustmoresManagerRoutes />} />
-          <Route path="downloads" element={<DownloadManagerRoutes />} />
-          <Route path="food-downloads" element={<FoodDownloadManagerRoutes />} />
-          <Route path="contact-messages" element={<ContactUsRoutes />} />
-          <Route path="job-list" element={<JobListRoutes />} />
-          <Route path="job-applications" element={<JobApplicationListRoutes />} />
-          <Route path="map-location" element={<MapLocationRoutes />} />
-          <Route path="user-permissions" element={<UserPermissionRoutes />} />
-        </Route>
 
       </Routes>
     </>
