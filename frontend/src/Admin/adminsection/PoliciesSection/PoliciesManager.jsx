@@ -10,8 +10,8 @@ import {
   Pagination,
 } from "react-bootstrap";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css";
 import "../../adminstyle/Style.module.css";
 import { useForm, useFieldArray } from "react-hook-form";
 import parse from "html-react-parser";

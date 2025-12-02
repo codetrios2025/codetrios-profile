@@ -10,8 +10,8 @@ import constants from "../../../services/constants";
 import { getItem } from "../../../services/routes.backend.services";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import Quill CSS
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css"; // Import Quill CSS
 import { useSelector } from "react-redux";
 
 const schema = yup.object().shape({

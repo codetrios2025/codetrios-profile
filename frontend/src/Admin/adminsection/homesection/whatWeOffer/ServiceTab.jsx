@@ -3,8 +3,8 @@ import { Table, Button, Modal, Form } from "react-bootstrap";
 import axios from "axios";
 import constants from "../../../../services/constants";
 import parse from "html-react-parser";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import Quill CSS
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css"; // Import Quill CSS
 import slugify from "slugify";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";

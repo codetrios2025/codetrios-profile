@@ -10,8 +10,8 @@ import {
   Pagination,
 } from "react-bootstrap";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import Quill CSS
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css"; // Import Quill CSS
 import "../../adminstyle/Style.module.css";
 import parse from "html-react-parser";
 import axios from "axios";
