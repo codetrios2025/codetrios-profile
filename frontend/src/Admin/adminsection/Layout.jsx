@@ -14,7 +14,7 @@ const Layout = () => {
     //     Authorization: `Bearer ${token}`, // Assuming token is stored in `user.token`
     //   },
     // };
-    console.log("siddha Layout");
+    
   return (
     <div>
         <HeaderAdmin/>

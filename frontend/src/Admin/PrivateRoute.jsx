@@ -5,9 +5,8 @@ import { Navigate } from 'react-router-dom';
 const PrivateRoute = ({ element }) => {
   const isAuthenticatedTq = useSelector(state => state.auth.isAuthenticatedTq);
   
-// console.log(isAuthenticatedTq);
   return (
-    isAuthenticatedTq ? element : <Navigate to='/Login' />
+    isAuthenticatedTq ? element : <Navigate to='/Login' replace />
   );
 };
 
