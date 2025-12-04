@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { userlogout } from '../../../store/authSlice';
 import constants from "../../../services/constants";
 import axios from "axios";
+import Logo from '../../../assets/images/logo.png';
 import { toast } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Make sure to import these at the top
 
@@ -76,7 +77,7 @@ const [showPassword, setShowPassword] = useState({
       <header className={HeaderStyle.HeaderMainAdmin}>
         <div className={HeaderStyle.headerFlexAmdin}>
           <div className={HeaderStyle.Logo}>
-            <img src={require('../../../assest/images/Qcert-logo.png')} alt="Logo" />
+            <img src={Logo} alt="Logo" width="150" height="60"/>
           </div>
           <div className={HeaderStyle.Logout}>
             {userRole !== "user" && (

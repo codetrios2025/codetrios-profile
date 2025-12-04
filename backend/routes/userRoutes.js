@@ -13,16 +13,16 @@ const {
   getSubAdminUserDetails,
   SoftdeleteUser,
   updateUser,
-  updateUserPassword,      
-  toggleUserStatus  ,        
+  updateUserPassword,
+  toggleUserStatus,
 } = require("../controllers/userController");
 const { authMiddleware } = require("../middleware/authMiddleware");
 const { isAuthenticatedUser, authorizeRoles } = require("../middleware/auth");
-const {upload} = require("../middleware/uploadMiddleware")
+const { upload } = require("../middleware/uploadMiddleware");
 
 const router = express.Router();
 
-router.route("/register/:module").post(upload.single('avatar'),registerUser);
+router.route("/register").post(upload.single("avatar"), registerUser);
 
 router.route("/login").post(loginUser);
 
@@ -37,8 +37,12 @@ router.route("/me").get(isAuthenticatedUser, getUserDetails);
 router.route("/password/update").put(isAuthenticatedUser, updatePassword);
 router.route("/admin/subusers").get(authMiddleware, getSubAdminUserDetails);
 router.route("/admin/delete/:id").delete(authMiddleware, SoftdeleteUser);
-router.route("/admin/update/:id").put( authMiddleware,upload.single('avatar'), updateUser);
-router.route("/admin/change-update-password/:id").put(authMiddleware, updateUserPassword);
+router
+  .route("/admin/update/:id")
+  .put(authMiddleware, upload.single("avatar"), updateUser);
+router
+  .route("/admin/change-update-password/:id")
+  .put(authMiddleware, updateUserPassword);
 router.route("/admin/update-status/:id").put(authMiddleware, toggleUserStatus);
 
 router

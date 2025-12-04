@@ -14,10 +14,16 @@ const app = express();
 
 // Security Middlewares
 app.use(helmet());
-app.use(mongoSanitize());
-app.use(xss());
-app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
+
+//app.use(xss());
+app.use(cors());
 app.use(express.json({ limit: "10mb" }));
+// app.use(
+//   mongoSanitize({
+//     allowDots: true,
+//     replaceWith: "_",
+//   })
+// );
 app.use(cookieParser());
 app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
 

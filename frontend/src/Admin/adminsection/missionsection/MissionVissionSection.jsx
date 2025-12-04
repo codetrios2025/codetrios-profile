@@ -11,8 +11,8 @@ import {
 import axios from "axios";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import constants from "../../../services/constants";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import Quill CSS
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css"; // Import Quill CSS
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";

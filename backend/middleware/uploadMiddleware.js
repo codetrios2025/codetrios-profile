@@ -28,7 +28,7 @@ const storage = multer.diskStorage({
 });
 
 const fileFilter = (req, file, cb) => {
-    if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png' || file.mimetype === 'application/pdf' || file.mimetype === 'application/msword'  || file.mimetype === 'vnd.openxmlformats-officedocument.wordprocessingml.document') {
+    if (file.mimetype === 'image/jpeg'||file.mimetype ===  'image/webp' || file.mimetype === 'image/png' || file.mimetype === 'application/pdf' || file.mimetype === 'application/msword'  || file.mimetype === 'vnd.openxmlformats-officedocument.wordprocessingml.document') {
         cb(null, true);
     } else {
         cb(new Error('Unsupported file type'), false);

@@ -11,10 +11,9 @@ import {
   Pagination,
 } from "react-bootstrap";
 import Style from "../../adminstyle/FormStyle.module.css";
-import constants from "../../../services/constants";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Import Quill CSS
+import ReactQuill from "react-quill-new";
+import "react-quill-new/dist/quill.snow.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
@@ -24,100 +23,94 @@ const MenuManagement = () => {
   const [currentItem, setCurrentItem] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState(""); // Search query state
+  const [searchQuery, setSearchQuery] = useState("");
+
   const itemsPerPage = 5;
+
+  // VITE CONFIG
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  const IMAGE_BASE_URL = import.meta.env.VITE_IMAGE_BASE_URL;
+
   const { token } = useSelector((state) => state.auth);
-  const config = {
-    headers: {
-      Authorization: `Bearer ${token}`, // Assuming token is stored in `user.token`
-    },
-  };
   const userRole = useSelector((state) => state.auth.user?.role);
+
+  const config = {
+    headers: { Authorization: `Bearer ${token}` },
+  };
+
   useEffect(() => {
     fetchMenuItems();
   }, []);
 
   const fetchMenuItems = async () => {
     try {
-      const response = await axios.get(`${constants.API_BASE_URL}header/list`);
-      const sortedItems = response.data.headers.sort((a, b) =>
+      const res = await axios.get(`${API_BASE_URL}header/list`);
+      const sorted = res.data.headers.sort((a, b) =>
         a.linkText.localeCompare(b.linkText)
       );
-      setMenuItems(sortedItems);
-    } catch (error) {
-      console.error("Error fetching menu items:", error);
+
+      setMenuItems(sorted);
+    } catch (err) {
+      console.error(err);
     }
   };
 
   const handleAddItem = async (newItem) => {
     try {
       const formData = new FormData();
-      Object.keys(newItem).forEach((key) => {
-        formData.append(key, newItem[key]);
+      Object.keys(newItem).forEach((key) =>
+        formData.append(key, newItem[key])
+      );
+
+      await axios.post(`${API_BASE_URL}header`, formData, {
+        ...config,
+        headers: { ...config.headers, "Content-Type": "multipart/form-data" },
       });
 
-      const response = await axios.post(
-        `${constants.API_BASE_URL}header`,
-        formData,
-        config,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
       fetchMenuItems();
-      setMenuItems([...menuItems, response.data]);
       setShowModal(false);
-      toast.success("Menu item added successfully");
+      toast.success("Menu item added successfully!");
     } catch (error) {
-      console.error("Error adding new item:", error);
-      toast.error("Error adding new item");
+      toast.error("Error adding menu");
+      console.error(error);
     }
   };
 
   const handleEditItem = async () => {
     try {
       const formData = new FormData();
-      Object.keys(currentItem).forEach((key) => {
-        formData.append(key, currentItem[key]);
-      });
+      Object.keys(currentItem).forEach((key) =>
+        formData.append(key, currentItem[key])
+      );
 
-      const response = await axios.put(
-        `${constants.API_BASE_URL}header/${currentItem._id}`,
+      await axios.put(
+        `${API_BASE_URL}header/${currentItem._id}`,
         formData,
-        config,
         {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
+          ...config,
+          headers: { ...config.headers, "Content-Type": "multipart/form-data" },
         }
       );
-      const updatedItems = menuItems.map((item) =>
-        item._id === currentItem._id ? response.data : item
-      );
-      setMenuItems(updatedItems);
-      setShowModal(false);
-      toast.success("Menu item Update successfully");
 
       fetchMenuItems();
+      setShowModal(false);
+      toast.success("Menu updated successfully!");
     } catch (error) {
-      console.error("Error editing item:", error);
-      toast.error("There was an error submitting the form!");
+      toast.error("Error updating item");
+      console.error(error);
     }
   };
 
   const handleDeleteItem = async (id) => {
-    if (window.confirm("Are you sure you want to delete this record?")) {
-      try {
-        await axios.delete(`${constants.API_BASE_URL}header/${id}`, config);
-        setMenuItems(menuItems.filter((item) => item._id !== id));
-        fetchMenuItems();
-        toast.success("Menu item Deleted successfully");
-      } catch (error) {
-        console.error("Error deleting item:", error);
-        toast.error("Error deleteing Item");
-      }
+    if (!confirm("Are you sure you want to delete?")) return;
+
+    try {
+      await axios.delete(`${API_BASE_URL}header/${id}`, config);
+      fetchMenuItems();
+      toast.success("Menu deleted successfully!");
+    } catch (error) {
+      toast.error("Delete failed");
+      console.error(error);
     }
   };
 
@@ -133,11 +126,9 @@ const MenuManagement = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (currentItem._id) {
-      handleEditItem();
-    } else {
-      handleAddItem(currentItem);
-    }
+
+    if (currentItem._id) handleEditItem();
+    else handleAddItem(currentItem);
   };
 
   const handleImageChange = (e) => {
@@ -146,21 +137,13 @@ const MenuManagement = () => {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+
     setCurrentItem({
       ...currentItem,
       [name]: type === "checkbox" ? checked : value,
     });
   };
 
-  const handleQuillChange = (value) => {
-    setCurrentItem({ ...currentItem, description: value });
-  };
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
-  // Filter items based on search query
   const filteredItems = menuItems.filter((item) =>
     item.linkText.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -169,6 +152,7 @@ const MenuManagement = () => {
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
+
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
 
   return (
@@ -177,10 +161,11 @@ const MenuManagement = () => {
 
       <Row className="mb-3">
         <Col md={6}>
-          <Button variant="primary" onClick={() => handleShowModal()} block>
+          <Button variant="primary" className="w-100" onClick={() => handleShowModal()}>
             Add Menu Title
           </Button>
         </Col>
+
         <Col md={6}>
           <Form.Control
             type="text"
@@ -190,7 +175,8 @@ const MenuManagement = () => {
           />
         </Col>
       </Row>
-      <Table striped bordered hover responsive className="w-100 mt-3">
+
+      <Table striped bordered hover responsive>
         <thead>
           <tr>
             <th>#</th>
@@ -201,24 +187,25 @@ const MenuManagement = () => {
             <th>Actions</th>
           </tr>
         </thead>
+
         <tbody>
           {paginatedItems.map((item, index) => (
-            <tr key={index}>
+            <tr key={item._id}>
               <td>{(currentPage - 1) * itemsPerPage + index + 1}</td>
               <td>{item.linkText}</td>
-              <td>{item.parentTab && <span>{item.parentTab}</span>}</td>
+              <td>{item.parentTab}</td>
               <td>{item.linkUrl}</td>
 
               <td>
-                {" "}
                 {item.image && (
                   <img
-                    src={`${constants.Image_BASE_URL}${item.image}`}
-                    alt={item.linkText}
+                    src={`${IMAGE_BASE_URL}${item.image}`}
+                    alt="thumb"
                     style={{ width: "50px" }}
                   />
                 )}
               </td>
+{console.log(`${IMAGE_BASE_URL}${item.image}`)}
               <td>
                 <Button
                   variant="warning"
@@ -228,74 +215,80 @@ const MenuManagement = () => {
                   <FaEdit />
                 </Button>{" "}
                 {userRole === "user" && (
-                <Button
-                  variant="danger"
-                  size="sm"
-                  onClick={() => handleDeleteItem(item._id)}
-                >
-                  <FaTrash />
-                </Button>
+                  <Button
+                    variant="danger"
+                    size="sm"
+                    onClick={() => handleDeleteItem(item._id)}
+                  >
+                    <FaTrash />
+                  </Button>
                 )}
               </td>
             </tr>
           ))}
         </tbody>
       </Table>
+
+      {/* PAGINATION */}
       <Pagination className="mt-3">
         <Pagination.First
-          onClick={() => handlePageChange(1)}
           disabled={currentPage === 1}
+          onClick={() => setCurrentPage(1)}
         />
         <Pagination.Prev
-          onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
+          onClick={() => setCurrentPage(currentPage - 1)}
         />
-        {[...Array(totalPages).keys()].map((number) => (
+
+        {[...Array(totalPages)].map((_, i) => (
           <Pagination.Item
-            key={number + 1}
-            active={number + 1 === currentPage}
-            onClick={() => handlePageChange(number + 1)}
+            key={i}
+            active={i + 1 === currentPage}
+            onClick={() => setCurrentPage(i + 1)}
           >
-            {number + 1}
+            {i + 1}
           </Pagination.Item>
         ))}
+
         <Pagination.Next
-          onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
+          onClick={() => setCurrentPage(currentPage + 1)}
         />
         <Pagination.Last
-          onClick={() => handlePageChange(totalPages)}
           disabled={currentPage === totalPages}
+          onClick={() => setCurrentPage(totalPages)}
         />
       </Pagination>
+
+      {/* MODAL */}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>
             {currentItem._id ? "Edit Item" : "Add Item"}
           </Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
           <Form onSubmit={handleFormSubmit}>
-            <Form.Group controlId="parent-tab">
-              <Form.Label>Parent Menu Text:</Form.Label>
-              <Form.Control
-                as="select"
+
+            <Form.Group>
+              <Form.Label>Parent Menu</Form.Label>
+              <Form.Select
                 name="parentTab"
                 value={currentItem.parentTab || ""}
                 onChange={handleChange}
-                className={Style.Selectdropdown}
               >
-                <option value="">Select Parent Tab</option>
-                {menuItems.map((item, index) => (
-                  <option key={index} value={item.linkText}>
+                <option value="">Select Parent</option>
+                {menuItems.map((item) => (
+                  <option key={item._id} value={item.linkText}>
                     {item.linkText}
                   </option>
                 ))}
-              </Form.Control>
+              </Form.Select>
             </Form.Group>
 
-            <Form.Group controlId="link-text">
-              <Form.Label>Menu Text:</Form.Label>
+            <Form.Group>
+              <Form.Label>Menu Text</Form.Label>
               <Form.Control
                 type="text"
                 name="linkText"
@@ -304,8 +297,9 @@ const MenuManagement = () => {
                 required
               />
             </Form.Group>
-            <Form.Group controlId="link-text">
-              <Form.Label>Short Menu Text:</Form.Label>
+
+            <Form.Group>
+              <Form.Label>Short Title</Form.Label>
               <Form.Control
                 type="text"
                 name="shorttitle"
@@ -315,37 +309,35 @@ const MenuManagement = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="link-url">
-              <Form.Label>Menu URL:</Form.Label>
+            <Form.Group>
+              <Form.Label>Menu URL</Form.Label>
               <Form.Control
                 type="text"
                 name="linkUrl"
                 value={currentItem.linkUrl || ""}
                 onChange={handleChange}
-                placeholder="https://example.com"
               />
             </Form.Group>
 
-            <Form.Group controlId="description">
-              <Form.Label>Description:</Form.Label>
+            <Form.Group>
+              <Form.Label>Description</Form.Label>
               <ReactQuill
-                name="description"
                 value={currentItem.description || ""}
-                onChange={handleQuillChange}
+                onChange={(value) =>
+                  setCurrentItem({ ...currentItem, description: value })
+                }
               />
             </Form.Group>
-            <Form.Group className="mb-3">
+
+            <Form.Group>
               <Form.Label>Banner Image</Form.Label>
-              <Form.Control
-                type="file"
-                name="image"
-                onChange={handleImageChange}
-              />
+              <Form.Control type="file" onChange={handleImageChange} />
             </Form.Group>
-            <Form.Group controlId="order-number">
-              <Form.Label>Order Number:</Form.Label>
+
+            <Form.Group>
+              <Form.Label>Order Number</Form.Label>
               <Form.Control
-                type="text"
+                type="number"
                 name="orderNumber"
                 value={currentItem.orderNumber || ""}
                 onChange={handleChange}
@@ -353,24 +345,18 @@ const MenuManagement = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="mega-menu">
+            <Form.Group>
               <Form.Check
                 type="checkbox"
-                label="Mega Menu"
                 name="megaMenu"
+                label="Mega Menu"
                 checked={currentItem.megaMenu || false}
                 onChange={handleChange}
               />
             </Form.Group>
-            <Button variant="success" type="submit">
+
+            <Button variant="success" type="submit" className="mt-2">
               {currentItem._id ? "Save Changes" : "Create Menu"}
-            </Button>
-            <Button
-              variant="secondary"
-              onClick={handleCloseModal}
-              className="ml-2"
-            >
-              Cancel
             </Button>
           </Form>
         </Modal.Body>
