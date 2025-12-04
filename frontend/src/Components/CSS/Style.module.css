@@ -7,14 +7,14 @@
 .buttonFlex{display: flex;justify-content: center;margin-top: 30px;}
 .primeryBg{background: #7C3AED;}
 
-.btnStyle{background: #7C3AED;color: #fff;padding: 20px 30px;position: relative;z-index: 1;border: none;}
+.btnStyle{background: #7C3AED;color: #fff;padding: 20px 30px;position: relative;z-index: 1;border: none;overflow: hidden;}
 .btnStyle .icon{margin-left: 10px;}
 .btnStyle::after, .btnStyle::before {content: "";background-color: #000;width: 0;height: 50%;position: absolute;z-index: -1;}
 .btnStyle::after{bottom: 0;right: 0;-webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);transition: .3s cubic-bezier(.785, .135, .15, .86);}
 .btnStyle::before {top: 0;left: 0;-webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);transition: .3s cubic-bezier(.785, .135, .15, .86);}
 .btnStyle:hover::after, .btnStyle:hover::before {width: 100%;}
 
-.heroBanner{position: relative;height: 100vh;overflow: hidden;}
+.heroBanner{position: relative;height: 100vh;overflow: hidden;margin-top: 74px;}
 .heroBanner img{width: auto;}
 .heroBanner .content{
     position: absolute;
@@ -231,12 +231,15 @@ position: relative;
     border: none;
     background: #fff;
     color: #000;
+    margin: 0;
     padding: 15px 40px;
+    
 }
 .fomrStyle button:hover{color: #fff;}
 
 /* innerBanner */
-.innerBanner{position: relative;background: #7C3AED;padding: 50px 0;height: 400px;}
+.innerBanner{position: relative;background: #7C3AED;padding: 0 0 0 0;height:400px;margin-top: 74px;}
+.innerBanner img{width: 100%;height: 100%;object-fit: cover;}
 .aboutPage .aboutContent a{display: none;}
 .weBuild{position: relative;background: #f7f7f7;}
 .weBuild h2{text-align: center;margin: 0 0 40px;}
@@ -258,6 +261,7 @@ position: relative;
 .whyUs ul li:last-child{margin: 0;}
 .visionSec{position: relative;background: #f7f7f7;padding: 60px 0;}
 .visionSec .visionElem{display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.visionSec .visionElem p{text-align: center;}
 .visionSec h4{color: #000;font-size: 24px;}
 
 
@@ -277,3 +281,83 @@ position: relative;
 .servicesPage .servicesBox .content p{display: flex;overflow: auto;    -webkit-line-clamp: none;}
 .servicesPage .subContent{display: block;}
 .servicesDetail .aboutContent h4{font-weight: 600;}
+
+.whoAreSec{position: relative;background: url(../../assets/images/aboutBanner.png) no-repeat center center;background-size: cover;padding: 90px 0;}
+.whoAreSec *{position: relative;z-index: 1;color: #fff;}
+.whoAreSec:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: #00000083;}
+.whoAreSec .box{width: 1024PX;margin: 0 auto;text-align: center;}
+.whoAreSec .box h2{margin: 0 0 30px;}
+
+.contactSec{position: relative;}
+.contactSec .leftArea{position: relative;background: #7C3AED;}
+.contactSec .leftArea::after{position: absolute;content: '';top: 0;left: 0;width: 100%;height: 100%;left: -100%;background: #7C3AED;}
+.areInfo{padding: 100px 40px;}
+.areInfo h3{font-size: 40px;}
+.areInfo p{color: #000;
+    display: flex;
+    position: relative;
+    padding-left: 30px;}
+.areInfo p .icon {
+    margin-right: 10px;
+    color: #7C3AED;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    font-size: 18px;
+}    
+.areInfo p a{color: #000;}
+.ourPlatForm{padding-bottom: 80px;}
+.boxContainer{position: relative;}
+.boxContainer h4{text-transform: uppercase;font-weight: 700;color: #000;font-size: 40px;margin-top: 50px;}
+.boxContainer .boxElem{background: #f0f0f0;padding: 50px 30px;display: flex;flex-wrap: wrap;color: #000;border-radius: 10px;margin-top: 30px;}
+.boxContainer .boxElem .leftArea{width: 50%;padding-right: 50px;    display: flex;flex-direction: column;justify-content: center;}
+.boxContainer .boxElem .rightArea{width: 50%;display: flex;flex-wrap: wrap;}
+.boxContainer .boxElem .techLogo{width: 25%;text-align: center;margin-bottom: 20px;}
+.boxContainer .boxElem .techLogo h6{font-size: 16px;margin: 10px 0 0;}
+.boxContainer h5{font-size: 26px;font-weight: 700;margin: 0 0 20px;}
+
+
+@media (max-width: 1400px){
+  .heroBanner .content h1{    font-size: 50px;line-height: 60px;}  
+  .heroBanner .content{    justify-content: flex-start;}
+  .heroBanner .detail{    margin-top: 80px;}
+.queryForm{margin-top: 20px;}
+.title{font-size: 40px;}
+}
+
+@media (max-width: 1199px){
+.queryForm{padding: 0 30px;}
+.heroBanner .content h1{    font-size: 40px;line-height: 50px;}  
+.queryForm .group input{max-width: 150PX;font-size: 14PX;}
+.title{font-size: 32px;}
+.aboutContent h6{font-size: 16px;}
+.aboutContent ul li{line-height: 26px;}
+.servicesBox .content h3{font-size: 18px;}
+.projectBox .projectImg{min-height: 285px;}
+.btnStyle{padding: 15px 20px;}
+.inputFlex .group input, .inputFlex .group textarea{font-size: 16px;}
+.commonPading{padding: 60px 0;}
+}
+
+@media (max-width: 992px){
+.heroBanner img{    width: 100%;height: 100%;object-fit: cover;}
+.projectBox h5{margin: 10px 0 0;}
+.aboutContent ul li{line-height: 24px;margin-bottom: 6px;}
+.title{font-size: 28px;}
+}
+
+@media (max-width: 767px){
+.heroBanner .content h1{    font-size: 30px;line-height: 40px;}  
+.heroBanner{height: 600px;}
+.heroBanner .content h6{font-size: 14px;}
+.heroBanner form{display: none;}
+.aboutContent{margin-top: 30px;}
+.title{font-size: 24px;}
+.innerBanner{height: 200px;}
+.commonPading{padding: 50px 0;}
+}
+
+@media (max-width: 580px){
+.inputFlex{flex-direction: column;}
+.inputFlex .group{margin-bottom: 20px;}
+}

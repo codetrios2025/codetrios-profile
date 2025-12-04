@@ -6,9 +6,7 @@ const LayoutScreen = () =>{
     return(
         <>
             <Header />
-            <main>
                 <Outlet />
-            </main>
             <Footer /> 
         </>
     )

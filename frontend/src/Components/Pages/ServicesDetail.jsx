@@ -43,6 +43,18 @@ const ServicesDetail = () =>{
                     </Row>
                 </Container>
             </div>
+            <div className={Style.whoAreSec}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className={Style.box}>
+                                <h2 className={Style.title}>Why Choose Our E-Commerce Development? </h2>
+                                <p>We understand that every brand is unique — and so is its e-commerce journey. Our solutions combine elegant design, powerful functionality, and scalability to help your store grow with your business. </p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
             <div className={Style.commonPading + " " +Style.weBuild}>
                 <Container>
                     <Row>
@@ -91,6 +103,24 @@ const ServicesDetail = () =>{
                                 <span className={Style.icon}><AiOutlineCloudServer  /></span>
                                 <h3>Performance Optimization</h3>
                                 <p>Fast-loading pages for better user retention and search ranking.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            <div className={Style.platformsSec}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className={Style.box}>
+                                <h2 className={Style.title}>Platforms We Work On </h2>
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <img src='' />
+                                        </figure>
+                                    </li>
+                                </ul>
                             </div>
                         </Col>
                     </Row>

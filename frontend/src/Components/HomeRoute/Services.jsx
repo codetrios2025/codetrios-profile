@@ -12,7 +12,7 @@ import { FaMobileAlt } from "react-icons/fa";
 
 const OurServices = () =>{
     return(
-        <div className={Style.commonPading + " " + Style.servicesSec}>
+        <div className={'servicesView ' + Style.commonPading + " " + Style.servicesSec}>
             <Container>
                 <Row>
                     <Col>

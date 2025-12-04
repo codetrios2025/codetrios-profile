@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/web-design.webp';
+import AboutBanner from '../../assets/images/about-banner.webp';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
 import { Link } from 'react-router-dom';
 //Icon
@@ -32,7 +33,7 @@ const AboutUsPage = ()=>{
         <>
         <div className={Style.innerPage + " " + Style.aboutPage}>
             <div className={Style.innerBanner}>
-
+                <img src={AboutBanner} />
             </div>
             <AboutUs />
             <div className={Style.commonPading + " " +Style.weBuild}>

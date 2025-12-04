@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
+import ServicesBanner from '../../assets/images/services-banner.webp';
 import webImage from '../../assets/images/web-design.webp';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
 import { Link } from 'react-router-dom';
@@ -32,7 +33,7 @@ const ServicesPage = ()=>{
         <>
         <div className={Style.innerPage + " " + Style.servicesPage}>
             <div className={Style.innerBanner}>
-
+                <img src={ServicesBanner} />
             </div>
             <OurServices />
         </div>
