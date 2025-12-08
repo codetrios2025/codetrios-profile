@@ -142,7 +142,7 @@ const WhoWeAreListing = () => {
     <div className="container">
       <ToastContainer />
       <Button variant="primary" onClick={handleAdd}>
-        Add Who We Are
+        Add About Us
       </Button>
       <Table striped bordered hover className="mt-3">
         <thead>

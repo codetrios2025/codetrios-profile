@@ -154,7 +154,7 @@ const JoinTeamSection = () => {
       <ToastContainer />
       <Row className="my-4">
         <Col>
-          <Button onClick={handleShow}>Add Join team details</Button>
+          <Button onClick={handleShow}>Add Portfolio</Button>
         </Col>
       </Row>
       <Row>

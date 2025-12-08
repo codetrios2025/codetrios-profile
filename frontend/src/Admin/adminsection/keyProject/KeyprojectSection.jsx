@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Table, Modal, Form, Pagination } from 'rea
 import axios from 'axios';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import constants from '../../../services/constants';
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill-new';
 import 'react-quill/dist/quill.snow.css'; // Import Quill CSS
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';

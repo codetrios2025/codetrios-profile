@@ -4,7 +4,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import '../../adminstyle/Style.module.css'
 import InfraSectorSection from './InfraSectorSection';
 import AboutMain from './AboutMainSection';
-
+import AboutOtherSection from './AboutOtherSection'
 function AboutUsroutes() {
   return (
     <Tabs
@@ -14,7 +14,7 @@ function AboutUsroutes() {
     >
  <Tab eventKey="InfraSectorSection" title="Subsidiaries & Affiliates" > <InfraSectorSection/></Tab>
  <Tab eventKey="AboutMain" title="About Main Section" > <AboutMain/></Tab>
-     
+      <Tab eventKey="Why Choose US" title="About Detail" > <AboutOtherSection/></Tab>
     </Tabs>
   );
 }

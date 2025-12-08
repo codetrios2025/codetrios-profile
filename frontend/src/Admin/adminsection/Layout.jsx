@@ -28,26 +28,14 @@ const Layout = () => {
               <li><NavLink to="/admin/home-page">Home Page</NavLink></li>
 
               <li><NavLink to="/admin/about">About Page</NavLink></li>
-              <li><NavLink to="/admin/career">Career Page</NavLink></li>
+             <li><NavLink to="/admin/project-service">Services</NavLink></li>
+              {/* <li><NavLink to="/admin/mission">Mission Value</NavLink></li> */}
+             <li><NavLink to="/admin/policies">Policies Page</NavLink></li>
 
-              <li><NavLink to="/admin/project-service">Services</NavLink></li>
-              <li><NavLink to="/admin/mission">Mission Value</NavLink></li>
-              <li><NavLink to="/admin/members">Team Member</NavLink></li>
-
-              <li><NavLink to="/admin/key-projects">Key Projects</NavLink></li>
-              <li><NavLink to="/admin/blogs">Blog Page</NavLink></li>
-
-              <li><NavLink to="/admin/policies">Policies Page</NavLink></li>
-
-              <li><NavLink to="/admin/customers">Customers</NavLink></li>
-              <li><NavLink to="/admin/downloads">Downloads</NavLink></li>
-              <li><NavLink to="/admin/food-downloads">Food Downloads</NavLink></li>
+             
 
               <li><NavLink to="/admin/contact">Contact Us Query</NavLink></li>
 
-              <li><NavLink to="/admin/job-list">Job Posting</NavLink></li>
-
-              <li><NavLink to="/admin/map-location">Map Location</NavLink></li>
             </ul>
 
         </nav>

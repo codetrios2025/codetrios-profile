@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
-const rateLimit = require("express-rate-limit");
+// const rateLimit = require("express-rate-limit");
 const cookieParser = require("cookie-parser");
 const xss = require("xss-clean");
 const connectDB = require("../backend/config/db.js");
@@ -25,7 +25,7 @@ app.use(express.json({ limit: "10mb" }));
 //   })
 // );
 app.use(cookieParser());
-app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
+// app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
 
 // Connect DB
 connectDB();
