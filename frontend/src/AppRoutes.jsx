@@ -34,7 +34,7 @@ import JobApplicationListRoutes from "./Admin/adminsection/jobSection/jobApplica
 // Frontend Site Routes
 // Add your frontend pages:
 import LayoutScreen from "./Components/Common/Layout";
- import Home from "./Components/Routes";
+import HomeRoute from "./Components/HomeRoute/HomeRoute";
  import AboutUsPage from "./Components/Pages/AboutUsPage";
  import Services from './Components/Pages/ServicesPage'
  import ServicesDetail from "./Components/Pages/ServicesDetail";
@@ -54,7 +54,7 @@ function AppRoutes() {
         ------------------------------------ */}
         
           <Route path="/" element={<LayoutScreen />}>
-            <Route index element={<Home />} />
+            <Route index element={<HomeRoute />} />
             <Route path="about-us" element={<AboutUsPage />} />
             <Route path="services" element={<Services />} />
             <Route path="services-detail" element={<ServicesDetail />} />
