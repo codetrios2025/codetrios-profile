@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill-new';
 import 'react-quill/dist/quill.snow.css'; // Import Quill styles
 const ContactFormModal = ({ show, handleClose, addContact, editContact, contactToEdit }) => {
   const [contact, setContact] = useState({

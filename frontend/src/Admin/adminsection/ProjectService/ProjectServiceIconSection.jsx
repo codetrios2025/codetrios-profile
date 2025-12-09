@@ -4,7 +4,7 @@ import axios from 'axios';
 import { getItem } from '../../../services/routes.backend.services';
 import constants from '../../../services/constants';
 import { FaEdit, FaTrash } from 'react-icons/fa';
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill-new';
 import 'react-quill/dist/quill.snow.css'; // Import Quill CSS
 import { useForm, useFieldArray } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify'; 

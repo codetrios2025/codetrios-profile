@@ -11,7 +11,7 @@ import {
 import axios from "axios";
 import constants from "../../../services/constants";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import ReactQuill from "react-quill";
+import ReactQuill from "react-quill-new";
 import { getItem } from "../../../services/routes.backend.services";
 import "react-quill/dist/quill.snow.css"; // Import Quill CSS
 import Pagination from "react-bootstrap/Pagination";

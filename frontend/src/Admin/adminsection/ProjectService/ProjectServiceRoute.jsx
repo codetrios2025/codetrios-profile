@@ -18,7 +18,7 @@ function ProjectServiceRoutes() {
       <Tab eventKey="Icon  & Delivery Model" title="Icon & Delivery Model" > <ProjectServiceIconSection/></Tab>
       <Tab eventKey="Service deatils" title="All Service Details" > <ServiceDtails/></Tab>
       <Tab eventKey="Assurance Overview" title="Assurance Overview" > <AssuranceOverviewSection/></Tab>
-      <Tab eventKey="Why Choose US" title="Why Choose US" > <WhyChooseUS/></Tab>
+      {/* <Tab eventKey="Why Choose US" title="Why Choose US" > <WhyChooseUS/></Tab> */}
      
     </Tabs>
   );

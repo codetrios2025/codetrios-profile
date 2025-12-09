@@ -41,7 +41,7 @@ const JoinTeamSection = () => {
 
   const fetchData = async () => {
     try {
-      const response = await getItem("jointeams");
+      const response = await getItem("portfolio");
       setItems(response.data.jointeams);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -71,7 +71,7 @@ const JoinTeamSection = () => {
     try {
       if (editing) {
         const response = await axios.put(
-          `${constants.API_BASE_URL}jointeams/${currentItem._id}`,
+          `${constants.API_BASE_URL}portfolio/${currentItem._id}`,
           formData,
           config
         );
@@ -82,7 +82,7 @@ const JoinTeamSection = () => {
         fetchData();
       } else {
         const response = await axios.post(
-          `${constants.API_BASE_URL}jointeams`,
+          `${constants.API_BASE_URL}portfolio`,
           formData,
           config
         );
@@ -108,7 +108,7 @@ const JoinTeamSection = () => {
     if (window.confirm("Are you sure you want to delete this record?")) {
       try {
         await axios.delete(
-          `${constants.API_BASE_URL}jointeams/${data._id}`,
+          `${constants.API_BASE_URL}portfolio/${data._id}`,
           config
         );
         const filteredItems = items.filter((item, index) => index !== data._id);
@@ -125,7 +125,7 @@ const JoinTeamSection = () => {
   const handleImageDelete = async (data, fileName) => {
     try {
       await axios.delete(
-        `${constants.API_BASE_URL}jointeams/teamimage/${data._id}`,
+        `${constants.API_BASE_URL}portfolio/teamimage/${data._id}`,
         {
           data: { fileName }, // Send fileName in the request body
         }
@@ -154,7 +154,7 @@ const JoinTeamSection = () => {
       <ToastContainer />
       <Row className="my-4">
         <Col>
-          <Button onClick={handleShow}>Add Join team details</Button>
+          <Button onClick={handleShow}>Add Portfolio</Button>
         </Col>
       </Row>
       <Row>

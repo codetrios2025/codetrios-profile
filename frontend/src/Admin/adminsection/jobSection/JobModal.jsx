@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { createJob, updateJob } from "../../../services/jobService"; // Replace with actual service paths
 import { toast } from "react-toastify";
-import ReactQuill from "react-quill";
+import ReactQuill from "react-quill-new";
 import { useSelector } from "react-redux";
 import store from "../../../store/store";
 

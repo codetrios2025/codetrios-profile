@@ -5,7 +5,7 @@ import axios from 'axios';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { getItem } from '../../../services/routes.backend.services';
 import constants from '../../../services/constants';
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill-new';
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-quill/dist/quill.snow.css'; // Import Quill CSS
@@ -39,6 +39,7 @@ const ServiceDetails = () => {
   const [serviceFields, setFields] = useState(items.fields);
   const [serviceDetailId, setServiceDetailId] = useState(null);
   const [mainTitleImage, setMainTitleImage] = useState(null);
+  const [serviceMains, setServiceMains] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
   const [searchTerm, setSearchTerm] = useState(''); // Add state for search term
@@ -46,8 +47,16 @@ const ServiceDetails = () => {
 
   useEffect(() => {
     fetchData();
+    fetchServices();
   }, []);
-
+const fetchServices = async () => {
+    try {
+      const response = await axios.get(`${constants.API_BASE_URL}homeservices`);
+      setServiceMains(response.data.homeservice);
+    } catch (error) {
+      console.error("Error fetching services:", error);
+    }
+  };
   const fetchData = async () => {
     try {
       const response = await getItem('servicedetails');
@@ -302,8 +311,11 @@ const totalPages = Math.ceil(getFilteredAndSortedItems().length / itemsPerPage);
               <Form.Label>Title</Form.Label>
               <Form.Select aria-label="Select Service" value={selectedValue} onChange={handleServiceChange}  disabled={!!editing}>
                 <option value="">Select a service</option>
-                <option value="Services">Services</option>
-                <option value="Certification">Certification</option>
+                 {serviceMains.map((service) => (
+                  <option key={service._id} value={service.title}>
+                    {service.title}
+                  </option>
+                ))}
                 {serviceHeading.map((service) => (
                   <option key={service._id} value={service.text}>
                     {service.text}

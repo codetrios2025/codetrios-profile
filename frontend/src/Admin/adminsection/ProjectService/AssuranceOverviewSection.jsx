@@ -6,7 +6,7 @@ import * as yup from 'yup';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import axios from 'axios';
 import constants from '../../../services/constants';
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill-new';
 import 'react-quill/dist/quill.snow.css'; // Import Quill CSS
 import { getItem } from '../../../services/routes.backend.services';
 import { ToastContainer, toast } from 'react-toastify'; 

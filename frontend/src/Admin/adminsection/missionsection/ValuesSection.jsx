@@ -12,7 +12,7 @@ import {
 import axios from "axios";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import constants from "../../../services/constants";
-import ReactQuill from "react-quill";
+import ReactQuill from "react-quill-new";
 import { getItem } from "../../../services/routes.backend.services";
 import "react-quill/dist/quill.snow.css"; // Import Quill CSS
 import { ToastContainer, toast } from "react-toastify";

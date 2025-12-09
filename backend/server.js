@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
-const rateLimit = require("express-rate-limit");
+// const rateLimit = require("express-rate-limit");
 const cookieParser = require("cookie-parser");
 const xss = require("xss-clean");
 const connectDB = require("../backend/config/db.js");
@@ -25,7 +25,7 @@ app.use(express.json({ limit: "10mb" }));
 //   })
 // );
 app.use(cookieParser());
-app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
+// app.use(rateLimit({ windowMs: 10 * 60 * 1000, max: 100 }));
 
 // Connect DB
 connectDB();
@@ -86,14 +86,14 @@ app.use("/api/v1/whoweoffermain", whoweoffermainRoute);
 app.use("/api/v1/homeservices", homeservicesRoute);
 app.use("/api/v1/homeservicesimage", homeservicesimageRoute);
 app.use("/api/v1/team", teamRoutes);
-app.use("/api/v1/jointeams", jointeamsRoutes);
+app.use("/api/v1/portfolio", jointeamsRoutes);
 app.use("/api/v1/improvement", improvementRoutes);
 app.use("/api/v1/keyproject", keyprojectRoutes);
 app.use("/api/v1/mission", missionRoutes);
 app.use("/api/v1/sector", sectorRoutes);
 app.use("/api/v1/values", valuesRoutes);
 app.use("/api/v1/about", aboutRoutes);
-app.use("/api/v1/infra", infraRoutes);
+app.use("/api/v1/vision", infraRoutes);
 app.use("/api/v1/blog", blogsRoute);
 app.use("/api/v1/policies", policiesRoutes);
 app.use("/api/v1/video", videoRoutes);

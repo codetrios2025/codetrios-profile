@@ -18,11 +18,11 @@ function Homeroutes() {
       className="mb-3"
     >
       <Tab eventKey="banner" title="Banner"> <BannerListing/> </Tab>
-      <Tab eventKey="whoweare" title="Who We Are"><WhoWeAreListing/> </Tab>
-      <Tab eventKey="whatweoffer" title="What we offer" ><WhatWeOffer/></Tab>
-      <Tab eventKey="jointeam" title="Join Team" > <JoinTeamSection/></Tab>
-      <Tab eventKey="improvement" title="Improvement Section" > <ImprovementSection/></Tab>
-      <Tab eventKey="sector" title="Sectors" ><SectorSection/></Tab>
+      <Tab eventKey="whoweare" title="About Us"><WhoWeAreListing/> </Tab>
+      <Tab eventKey="whatweoffer" title="Our Services" ><WhatWeOffer/></Tab>
+      <Tab eventKey="jointeam" title="Portfoilo" > <JoinTeamSection/></Tab>
+      {/* <Tab eventKey="improvement" title="Improvement Section" > <ImprovementSection/></Tab>
+      <Tab eventKey="sector" title="Sectors" ><SectorSection/></Tab> */}
      
      
     </Tabs>
