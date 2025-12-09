@@ -64,7 +64,7 @@ export const getAboutUsAPI = () => { //About Page content
 };
 
 export const getSubsidiariesAffiliatesAPI = () => { //Key Project Section
-  return axiosService.get(`infra`);
+  return axiosService.get(`vision`);
 };
 
 export const getTQTeams = (positionType) => { //Board of Directors and leadership

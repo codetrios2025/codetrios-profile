@@ -26,7 +26,7 @@ const storage = multer.diskStorage({
 // Check file type
 function checkFileType(file, cb) {
   // console.log("gg",file);
-   const filetypes = /mp4|mkv|mov|pdf|jpeg|png|gif|xlsx|xls|jpg/;
+   const filetypes = /mp4|mkv|mov|pdf|jpeg|png|gif|xlsx|xls|webp|jpg/;
  const mimeTypes = [
     'video/mp4',
     'video/mkv',
@@ -37,7 +37,8 @@ function checkFileType(file, cb) {
     'image/gif',
     'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', // XLSX
     'application/vnd.ms-excel', // XLS
-    'image/jpg'
+    'image/jpg',
+    'image/webp'
   ]
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
   const mimetype = mimeTypes.includes(file.mimetype);

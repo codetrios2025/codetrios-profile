@@ -12,7 +12,7 @@ function AboutUsroutes() {
       id="uncontrolled-tab-example"
       className="mb-3"
     >
- <Tab eventKey="InfraSectorSection" title="Subsidiaries & Affiliates" > <InfraSectorSection/></Tab>
+ <Tab eventKey="InfraSectorSection" title="Vision Bottom" > <InfraSectorSection/></Tab>
  <Tab eventKey="AboutMain" title="About Main Section" > <AboutMain/></Tab>
       <Tab eventKey="Why Choose US" title="About Detail" > <AboutOtherSection/></Tab>
     </Tabs>

@@ -43,7 +43,7 @@ const InfraSectorSection = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`${constants.API_BASE_URL}infra`);
+      const response = await axios.get(`${constants.API_BASE_URL}vision`);
       setItems(response.data.infra);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -80,7 +80,7 @@ const InfraSectorSection = () => {
     try {
       if (editing) {
         const response = await axios.put(
-          `${constants.API_BASE_URL}infra/${currentItem._id}`,
+          `${constants.API_BASE_URL}vision/${currentItem._id}`,
           formData,
           config
         );
@@ -92,7 +92,7 @@ const InfraSectorSection = () => {
         fetchData();
       } else {
         const response = await axios.post(
-          `${constants.API_BASE_URL}infra`,
+          `${constants.API_BASE_URL}vision`,
           formData,
           config
         );
@@ -118,7 +118,7 @@ const InfraSectorSection = () => {
     if (window.confirm("Are you sure you want to delete this record?")) {
       try {
         await axios.delete(
-          `${constants.API_BASE_URL}infra/${data._id}`,
+          `${constants.API_BASE_URL}vision/${data._id}`,
           config
         );
         const filteredItems = items.filter((item, index) => index !== data._id);
@@ -149,7 +149,7 @@ const InfraSectorSection = () => {
       <ToastContainer />
       <Row className="my-4">
         <Col>
-          <Button onClick={handleShow}>Add Subsidiaries & Affiliates</Button>
+          <Button onClick={handleShow}>Add Vision</Button>
         </Col>
       </Row>
       <Row>
