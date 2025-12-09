@@ -8,6 +8,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 const cookieParser = require("cookie-parser");
 const xss = require("xss-clean");
 const connectDB = require("../backend/config/db.js");
+const path = require("path");
 
 dotenv.config();
 const app = express();
@@ -29,7 +30,16 @@ app.use(cookieParser());
 
 // Connect DB
 connectDB();
-
+app.use((req, res, next) => {
+  res.setHeader("Cross-Origin-Resource-Policy", "cross-origin");
+  res.setHeader("Cross-Origin-Embedder-Policy", "unsafe-none");
+  res.setHeader("Cross-Origin-Opener-Policy", "same-origin-allow-popups");
+  next();
+});
+app.use(
+  "/uploads",
+  express.static(path.join(process.cwd(), "uploads"))
+);
 // Example route
 app.get("/", (req, res) => {
   res.json({ message: "Secure API working ✅" });
