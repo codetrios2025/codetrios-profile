@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeroImage from '../../assets/images/hero-banner.webp';
-
+import constants from "../../services/constants";
 import Style from '../CSS/Style.module.css';
 import { FaUser } from "react-icons/fa";
 import { IoMail, IoCall  } from "react-icons/io5";
@@ -20,7 +20,7 @@ const HomeBanner = ({data}) =>{
         }
     return(
         <div className={Style.heroBanner}>
-            <img src={HeroImage} alt="We Build Modern Web Experiences" width="2400" height="1122" className={Style.imgResponsive} />
+            <img src={`${constants.Image_BASE_URL}${banner?.bannerImage}`} alt="We Build Modern Web Experiences" width="2400" height="1122" className={Style.imgResponsive} />
             <div className={Style.content}>
                 <Container>
                     <Row>

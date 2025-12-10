@@ -29,7 +29,7 @@ const OurServices = ({ data }) =>{
                                 <Col md={4} key={index}>
                                     <div className={Style.servicesBox}>
                                         <figure>
-                                            <img src={`${constants.Image_BASE_URL}/${item.image}`} alt="" />
+                                            <img src={`${constants.Image_BASE_URL}${item.image}`} alt="" />
                                         </figure>
                                         <div className={Style.content}>
                                             <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>

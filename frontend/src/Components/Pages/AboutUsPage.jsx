@@ -22,11 +22,22 @@ import ContactUs from '../HomeRoute/Contact';
 import { fetchAllData } from '../../services/routes.services';
 const AboutUsPage = ()=>{
     const [isOPen, setIsopen] = useState(false);
-     const [aboutData, setAboutData] = useState([]);
-
-    useEffect(() => {
-        fetchAllData("whoweare").then(res => setAboutData(res.data));
+    const [aboutData, setAboutData] = useState([]);
+    const [buildData, setBuildData] = useState([]);
+    const fetchData = async () =>{
+        try{
+            const aboutResponse = await fetchAllData('whoweare');
+            const buildResponse = await fetchAllData('whychooseus');
+            setAboutData(aboutResponse?.data);
+            setBuildData(buildResponse?.data)
+        }catch(error){
+            console.log(error)
+        }
+    }
+    useEffect(() =>{
+        fetchData();
     }, []);
+    console.log(buildData)
     const formOpenHandler=()=>{
         setIsopen(true);
     }
@@ -45,7 +56,7 @@ const AboutUsPage = ()=>{
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className={Style.title}>What We Buile</h2>
+                            <h2 className={Style.title}>{buildData?.whychooseus[0]?.titlename}</h2>
                         </Col>
                     </Row>
                     <Row>
