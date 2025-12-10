@@ -41,6 +41,7 @@ import HomeRoute from "./Components/HomeRoute/HomeRoute";
  import ScrollTop from "./Components/Common/ScrollTop";
  import ContactUsPage from "./Components/Pages/ContactUsPage";
  import TechnologiesPage from "./Components/Pages/Technologies";
+ import PortfolioPage from "./Components/Pages/ProtfolioPage";
 // import About from "./Frontend/pages/About";
 // import Contact from "./Frontend/pages/Contact";
 // Add more as needed...
@@ -60,6 +61,7 @@ function AppRoutes() {
             <Route path="about-us" element={<AboutUsPage />} />
             <Route path="services" element={<Services />} />
             <Route path="services-detail" element={<ServicesDetail />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />
           </Route>

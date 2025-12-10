@@ -8,9 +8,10 @@ import { IoMail, IoCall  } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import ContactUs from "./Contact";
 
-const HomeBanner = () =>{
+const HomeBanner = ({data}) =>{
     const [isOPen, setIsopen] = useState(false);
-    
+    const banner = data?.banners?.[0];
+    //console.log(banner)
         const formOpenHandler=()=>{
             setIsopen(true);
         }
@@ -26,7 +27,7 @@ const HomeBanner = () =>{
                         <Col>
                             <div className={Style.detail}>
                                 <h6>Your Partner for Digital Growth Solutions</h6>
-                                <h1>We Build Fast & Modern Web <span>Experiences That Scale</span></h1>
+                                <h1>{banner?.title}</h1>
                                 <p>Code Trio delivers scalable, fast and elegant websites and <span>applications tailored to your business goals.</span></p>
                                 <form>
                                     <div className={Style.queryForm}>

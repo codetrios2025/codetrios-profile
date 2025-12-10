@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/web-design.webp';
@@ -19,9 +19,14 @@ import { IoCloseSharp } from "react-icons/io5";
 import AboutUs from '../HomeRoute/About';
 import ContactUs from '../HomeRoute/Contact';
 
+import { fetchAllData } from '../../services/routes.services';
 const AboutUsPage = ()=>{
     const [isOPen, setIsopen] = useState(false);
+     const [aboutData, setAboutData] = useState([]);
 
+    useEffect(() => {
+        fetchAllData("whoweare").then(res => setAboutData(res.data));
+    }, []);
     const formOpenHandler=()=>{
         setIsopen(true);
     }
@@ -35,7 +40,7 @@ const AboutUsPage = ()=>{
             <div className={Style.innerBanner}>
                 <img src={AboutBanner} />
             </div>
-            <AboutUs />
+            <AboutUs data={aboutData} />
             <div className={Style.commonPading + " " +Style.weBuild}>
                 <Container>
                     <Row>

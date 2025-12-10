@@ -3,13 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
-
+import constants from '../../services/constants';
 import portfolio1 from '../../assets/images/portfolio01.png';
 import portfolio2 from '../../assets/images/portfolio02.png';
 import portfolio3 from '../../assets/images/portfolio03.png';
 import portfolio4 from '../../assets/images/portfolio04.png';
 
-const OurPortfolio = () =>{
+const OurPortfolio = ({ data }) =>{
+    const portfolio = data?.jointeams;
     return(
         <div className={Style.commonPading + " " + Style.protfolioSec}>
             <Container>
@@ -19,18 +20,26 @@ const OurPortfolio = () =>{
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6}>
-                        <div className={Style.projectBox}>
-                            <Link to="">
-                                <div className={Style.projectImg}>
-                                    <span className={Style.scrollAnime} style={{ backgroundImage: `url(${portfolio1})` }}></span>
-                                </div>
-                                <p>Ecommerce Website - Shopify</p>
-                                <h5>Elite GYM</h5>
-                            </Link>
-                        </div>
-                    </Col>
-                    <Col md={6}>
+                    {portfolio && portfolio.length > 0 ?
+                        portfolio.map((item, index) =>{
+                            return(
+                                <Col md={6} key={index}>
+                                    <div className={Style.projectBox}>
+                                        <Link to="">
+                                            <div className={Style.projectImg}>
+                                                <span className={Style.scrollAnime} style={{ backgroundImage: `url(${constants.Image_BASE_URL}/${item?.image?.[0].fileName})` }}></span>
+                                            </div>
+                                            <p>{item?.description}</p>
+                                            <h5>{item?.title}</h5>
+                                        </Link>
+                                    </div>
+                                </Col>
+                            )
+                        })
+                        : null
+                    }
+                    
+                    {/* <Col md={6}>
                         <div className={Style.projectBox}>
                             <Link to="">
                                 <div className={Style.projectImg}>
@@ -62,7 +71,7 @@ const OurPortfolio = () =>{
                                 <h5>Anjum Jewels</h5>
                             </Link>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row>
                     <Col>

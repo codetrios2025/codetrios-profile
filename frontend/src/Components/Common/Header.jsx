@@ -50,7 +50,7 @@ const Header=()=>{
                                             </ul>
                                         </li>
                                         <li><Link onClick={closeMenu} to="/technologies" title="About"><span>Technologies</span></Link></li>
-                                        <li><Link onClick={closeMenu} to="" title="Portfolio"><span>Portfolio</span></Link></li>
+                                        <li><Link onClick={closeMenu} to="/portfolio" title="Portfolio"><span>Portfolio</span></Link></li>
                                         <li><Link onClick={closeMenu} to="/contact-us" title="Contact Us"><span>Contact Us</span></Link></li>
                                     </ul>
                                 </div>

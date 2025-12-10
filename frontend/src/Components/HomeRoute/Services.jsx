@@ -8,9 +8,11 @@ import { BsCart3 } from "react-icons/bs";
 import { FaPaintBrush } from "react-icons/fa";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaMobileAlt } from "react-icons/fa";
-
-
-const OurServices = () =>{
+import parse from 'html-react-parser';
+import constants from '../../services/constants';
+const OurServices = ({ data }) =>{
+    console.log(data)
+    const services = data?.homeservice;
     return(
         <div className={'servicesView ' + Style.commonPading + " " + Style.servicesSec}>
             <Container>
@@ -21,20 +23,29 @@ const OurServices = () =>{
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={4}>
-                        <div className={Style.servicesBox}>
-                            <figure>
-                                <img src={servicesImg} alt='' />
-                            </figure>
-                            <div className={Style.content}>
-                                <span><FaPaintBrush className={Style.icon} /></span>
-                                <h3>Website Design</h3>
-                                <p>Looking to take your business online? We build powerful, secure, and easy-to-manage e-commerce platforms that deliver seamless shopping experiences and drive conversions. Our goal is to help you sell more with smarter, faster, and mobile-friendly online stores. </p>
-                                <Link to="/services-detail">Read More <BsArrowRight className={Style.icon} /></Link>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col md={4}>
+                    {services && services.length > 0 ?
+                        services.slice(0, 6).map((item, index) =>{
+                            return(
+                                <Col md={4} key={index}>
+                                    <div className={Style.servicesBox}>
+                                        <figure>
+                                            <img src={`${constants.Image_BASE_URL}/${item.image}`} alt="" />
+                                        </figure>
+                                        <div className={Style.content}>
+                                            <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>
+                                            <h3>{item?.title}</h3>
+                                            {item?.description && parse(item?.description)}
+                                            {/* <p>Looking to take your business online? We build powerful, secure, and easy-to-manage e-commerce platforms that deliver seamless shopping experiences and drive conversions. Our goal is to help you sell more with smarter, faster, and mobile-friendly online stores. </p> */}
+                                            <Link to={item?.link}>Read More <BsArrowRight className={Style.icon} /></Link>
+                                        </div>
+                                    </div>
+                                </Col>
+                            )
+                        })
+                        : null
+                    }
+                    
+                    {/* <Col md={4}>
                         <div className={Style.servicesBox}>
                             <figure>
                                 <img src={servicesImg} alt='' />
@@ -98,12 +109,12 @@ const OurServices = () =>{
                                 <Link to="">Read More <BsArrowRight className={Style.icon} /></Link>
                             </div>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row>
                     <Col>
                         <div className={Style.buttonFlex}>
-                            <Link to="" className={Style.btnStyle}>See all Services <BsArrowRight className={Style.icon} /></Link>
+                            <Link to="/services" className={Style.btnStyle}>See all Services <BsArrowRight className={Style.icon} /></Link>
                         </div>
                     </Col>
                 </Row>
