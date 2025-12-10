@@ -16,6 +16,7 @@ import { BiTargetLock } from "react-icons/bi";
 import { IoCloseSharp } from "react-icons/io5";
 
 //Components
+import parse from 'html-react-parser';
 import AboutUs from '../HomeRoute/About';
 import ContactUs from '../HomeRoute/Contact';
 
@@ -60,13 +61,20 @@ const AboutUsPage = ()=>{
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><TbDeviceDesktopCode  /></span>
-                                <h3>Frontend Development that Converts </h3>
-                                <p>Architecting responsive, fast UI/UX with modern stacks like **React.js, JavaScript, HTML5, CSS3, and Bootstrap** to maximize user engagement. </p>
-                            </div>
-                        </Col>
+                        {buildData.whychooseus[0] && buildData.whychooseus[0].length > 0 ?
+                            buildData.whychooseus[0].fields.map((item, index) =>{
+                                return(
+                                    <Col md={4} key={index}>
+                                        <div className={Style.box}>
+                                            <span className={Style.icon}><TbDeviceDesktopCode  /></span>
+                                            <h3>{item?.title}</h3>
+                                            <p>Architecting responsive, fast UI/UX with modern stacks like **React.js, JavaScript, HTML5, CSS3, and Bootstrap** to maximize user engagement. </p>
+                                        </div>
+                                    </Col>
+                                )
+                            })
+                            : null
+                        }
                         <Col md={4}>
                             <div className={Style.box}>
                                 <span className={Style.icon}><FaServer  /></span>
