@@ -13,7 +13,7 @@ const fieldSchema = new mongoose.Schema({
     title: { type: String,},
     link: { type: String,  },
     description: { type: String,  },
-    description2: { type: String,  },
+    iconfield: { type: String,  },
     order: { type: Number,  },
     image: { type: [imageSchema], } // Assuming you store image paths or URLs
   });

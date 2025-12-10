@@ -15,7 +15,7 @@ import { useSelector } from 'react-redux';
 const ServiceDetails = () => {
   const { control, register, handleSubmit, reset, setValue } = useForm({
     defaultValues: {
-      fields: [{ title: '', link: '', description: '', description2: '', order: '', image: null }],
+      fields: [{ title: '', link: '', description: '', iconfield: '', order: '', image: null }],
     },
   });
   const { fields, append, remove } = useFieldArray({
@@ -74,7 +74,7 @@ const fetchServices = async () => {
 
   const handleClose = () => {
     setShow(false);
-    reset({ fields: [{ title: '', link: '', description: '', description2: '', order: '', image: null }] });
+    reset({ fields: [{ title: '', link: '', description: '', iconfield: '', order: '', image: null }] });
     setEditing(false);
   };
 
@@ -93,7 +93,7 @@ const fetchServices = async () => {
       formData.append(`fields[${index}][title]`, field.title);
       formData.append(`fields[${index}][link]`, field.link);
       formData.append(`fields[${index}][description]`, field.description);
-      formData.append(`fields[${index}][description2]`, field.description2);
+      formData.append(`fields[${index}][iconfield]`, field.iconfield);
       formData.append(`fields[${index}][order]`, field.order);
       if (field.image && field.image.length > 0) {
         Array.from(field.image).forEach((img, imgIndex) => {
@@ -124,7 +124,7 @@ const fetchServices = async () => {
       toast.error("There was an error !");
     }finally {
       reset({ 
-        fields: [{ title: '', link: '', description: '', description2: '', order: '', image: null }]
+        fields: [{ title: '', link: '', description: '', iconfield: '', order: '', image: null }]
       });
       setSelectedValue('');
       setMainTitleImage(null);
@@ -361,12 +361,9 @@ const totalPages = Math.ceil(getFilteredAndSortedItems().length / itemsPerPage);
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label>Field Description 2</Form.Label>
-                  <Controller
-                    name={`fields.${index}.description2`}
-                    control={control}
-                    render={({ field }) => <ReactQuill {...field} />}
-                  />
+                  <Form.Label>Icon</Form.Label>
+                  <Form.Control type="text" {...register(`fields.${index}.iconfield`)} placeholder="Enter Icon" />
+                 
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label>Field Order</Form.Label>
@@ -394,7 +391,7 @@ const totalPages = Math.ceil(getFilteredAndSortedItems().length / itemsPerPage);
                 </Button>
               </div>
             ))}
-            <Button variant="primary" onClick={() => append({ title: '', link: '', description: '', description2: '', order: '', image: null })}>
+            <Button variant="primary" onClick={() => append({ title: '', link: '', description: '', iconfield: '', order: '', image: null })}>
               Add Field
             </Button>
             <Modal.Footer>
