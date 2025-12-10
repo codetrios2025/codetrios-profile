@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux';
 const AboutOtherSection = () => {
   const { control, register, handleSubmit, reset, setValue } = useForm({
     defaultValues: {
-      fields: [{ title: '', link: '',subtitle:'', description: '', description2: '', order: '', image: null }],
+      fields: [{ title: '', link: '',subtitle:'', description: '', iconfield: '', order: '', image: null }],
     },
   });
   const { fields, append, remove } = useFieldArray({
@@ -62,7 +62,7 @@ const AboutOtherSection = () => {
 
   const handleClose = () => {
     setShow(false);
-    reset({ fields: [{ title: '', link: '',subtitle:'', description: '', description2: '', order: '', image: null }] });
+    reset({ fields: [{ title: '', link: '',subtitle:'', description: '', iconfield: '', order: '', image: null }] });
     setEditing(false);
   };
 
@@ -82,7 +82,7 @@ const AboutOtherSection = () => {
       formData.append(`fields[${index}][title]`, field.title);
       formData.append(`fields[${index}][link]`, field.link);
       formData.append(`fields[${index}][description]`, field.description);
-      formData.append(`fields[${index}][description2]`, field.description2);
+      formData.append(`fields[${index}][iconfield]`, field.iconfield);
       formData.append(`fields[${index}][order]`, field.order);
       if (field.image && field.image.length > 0) {
         Array.from(field.image).forEach((img, imgIndex) => {
@@ -222,7 +222,7 @@ const AboutOtherSection = () => {
              <ToastContainer />
       <Row className="my-4">
         <Col md={6}>
-          <Button onClick={handleShow}>Add Why choose Us Service</Button>
+          <Button onClick={handleShow}>Add Why choose Us Service </Button>
         </Col>
         <Col md={6}> <Form.Control
             type="text"
@@ -357,18 +357,9 @@ const AboutOtherSection = () => {
                  
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label>Description 2</Form.Label>
-                  <Controller
-                  name={`fields.${index}.description2`} // Adjust path based on index
-                  control={control}
-                  render={({ field }) => (
-                    <ReactQuill
-                      value={field.value || ''} // Ensure the value is handled correctly
-                      onChange={field.onChange} // Update form state on change
-                     
-                    />
-                  )}
-                />
+                  <Form.Label>Icon</Form.Label>
+                   <Form.Control type="text" {...register(`fields.${index}.iconfield`)} />
+                 
                  
                 </Form.Group>
                 <Form.Group>

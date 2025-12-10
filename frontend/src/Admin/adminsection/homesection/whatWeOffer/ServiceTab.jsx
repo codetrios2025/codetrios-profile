@@ -23,6 +23,7 @@ const ServiceTab = () => {
   const [showModal, setShowModal] = useState(false);
   const [editBanner, setEditBanner] = useState(null);
   const [offerText, setOfferText] = useState("");
+  const [offerIcon, setOfferIcon] = useState("");
   const [bannerOrder, setBannerOrder] = useState("");
   const [offerDescription, setOfferDescription] = useState("");
   const [imageFile, setImageFile] = useState(null);
@@ -46,6 +47,7 @@ const ServiceTab = () => {
   const handleEdit = (offer) => {
     setEditBanner(offer);
     setOfferText(offer.title);
+    setOfferIcon(offer.iconfield);
     setOfferDescription(offer.description);
     setBannerOrder(offer.order);
     setShowModal(true);
@@ -83,6 +85,7 @@ const ServiceTab = () => {
     formData.append("title", offerText);
     formData.append("description", offerDescription);
     formData.append("order", bannerOrder);
+    formData.append("iconfield", offerIcon);
     formData.append("link", slugify(offerText, { lower: true, strict: true }));
     if (imageFile) {
       formData.append("image", imageFile);
@@ -202,6 +205,20 @@ const ServiceTab = () => {
                 onChange={(e) => setOfferText(e.target.value)}
                 isInvalid={!!errors.offerText}
                 disabled={!!editBanner} // Disable when editing
+              />
+              <Form.Control.Feedback type="invalid">
+                {errors.offerText}
+              </Form.Control.Feedback>
+            </Form.Group>
+             <Form.Group className="mb-3">
+              <Form.Label>Service icon</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Service icon"
+                value={offerIcon}
+                onChange={(e) => setOfferIcon(e.target.value)}
+                isInvalid={!!errors.offerIcon}
+                
               />
               <Form.Control.Feedback type="invalid">
                 {errors.offerText}

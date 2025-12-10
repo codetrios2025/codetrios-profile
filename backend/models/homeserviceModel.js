@@ -14,6 +14,9 @@ var homeserviceSchema = new mongoose.Schema({
         type:Number,
         
     },
+    iconfield:{
+       type:String,   
+    },
    link:{
     type:String, 
    },

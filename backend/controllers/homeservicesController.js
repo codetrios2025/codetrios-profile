@@ -31,12 +31,12 @@ exports.getAllwithChildHomeservice = catchAsyncErrors(async (req, res, next) => 
 });
 // @desc    Create a whoweoffermain
 exports.createHomeservice= catchAsyncErrors(async (req,res,next) =>{
-  const { title,description,order,link} = req.body;
+  const { title,description,iconfield,order,link} = req.body;
   const image = req.file ? req.file.filename : null;
  
 
   const newHomeservice = new Homeservice({
-    title,description,order,link,image
+    title,description,order,link,image,iconfield
   });
   const homeservice = await newHomeservice.save();
   res.status(201).json(homeservice);
@@ -53,7 +53,7 @@ exports.getHomeserviceById = catchAsyncErrors(async (req,res,next)=>{
 })
 // @desc    Update a Home service
 exports.updateHomeservice = async (req, res) => {
-  const {title,description,order,link} = req.body;
+  const {title,description,iconfield,order,link} = req.body;
   const image = req.file ? req.file.filename : null;
  
   try {
@@ -66,6 +66,7 @@ exports.updateHomeservice = async (req, res) => {
 
       homeservice.title = title || homeservice.title;
       homeservice.description = description || homeservice.description;
+      homeservice.iconfield=iconfield||homeservice.iconfield;
       homeservice.order =order || homeservice.order;
       homeservice.image =image || homeservice.image;
       homeservice.link =link || homeservice.link;
