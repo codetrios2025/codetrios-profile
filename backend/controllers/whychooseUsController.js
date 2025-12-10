@@ -64,7 +64,7 @@ exports.createwhychooseus = catchAsyncErrors(async (req, res, next) => {
           link: fileData.link,
           order: fileData.order,
           description: fileData.description,
-          description2: fileData.description2,
+          iconfield: fileData.iconfield,
           image: filesArray
         });
       }
@@ -161,7 +161,7 @@ exports.updatewhychooseus = catchAsyncErrors(async (req, res, next) => {
           existingField.link = fileData.link || existingField.link;
           existingField.order = fileData.order || existingField.order;
           existingField.description = fileData.description || existingField.description;
-          existingField.description2 = fileData.description2 || existingField.description2;
+          existingField.iconfield = fileData.iconfield || existingField.iconfield;
 
           // Append valid new images to the existing ones
           if (newImagesArray.length > 0) {
@@ -175,7 +175,7 @@ exports.updatewhychooseus = catchAsyncErrors(async (req, res, next) => {
               link: fileData.link,
               order: fileData.order,
               description: fileData.description,
-              description2: fileData.description2,
+              iconfield: fileData.iconfield,
               image: newImagesArray,  // Add only valid images
             });
           }
