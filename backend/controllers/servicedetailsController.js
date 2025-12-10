@@ -68,7 +68,7 @@ exports.createservicedetails = catchAsyncErrors(async (req, res, next) => {
           link: fileData.link,
           order: fileData.order,
           description: fileData.description,
-          description2: fileData.description2,
+          iconfield: fileData.iconfield,
           image: filesArray
         });
       }
@@ -138,7 +138,7 @@ exports.updateservicedetails1 = catchAsyncErrors(async (req, res, next) => {
         link: fileData.link || existingField.link,
         order: fileData.order || existingField.order,
         description: fileData.description || existingField.description,
-        description2: fileData.description2 || existingField.description2,
+        iconfield: fileData.iconfield || existingField.iconfield,
         image: newImage,
       };
     } else if (fileData) {
@@ -151,7 +151,7 @@ exports.updateservicedetails1 = catchAsyncErrors(async (req, res, next) => {
         link: fileData.link,
         order: fileData.order,
         description: fileData.description,
-        description2: fileData.description2,
+        iconfield: fileData.iconfield,
         image: newImage,
       });
     }
@@ -224,7 +224,7 @@ exports.updateservicedetails = catchAsyncErrors(async (req, res, next) => {
           existingField.link = fileData.link || existingField.link;
           existingField.order = fileData.order || existingField.order;
           existingField.description = fileData.description || existingField.description;
-          existingField.description2 = fileData.description2 || existingField.description2;
+          existingField.iconfield = fileData.iconfield || existingField.iconfield;
 
           // Append valid new images to the existing ones
           if (newImagesArray.length > 0) {
@@ -238,7 +238,7 @@ exports.updateservicedetails = catchAsyncErrors(async (req, res, next) => {
               link: fileData.link,
               order: fileData.order,
               description: fileData.description,
-              description2: fileData.description2,
+              iconfield: fileData.iconfield,
               image: newImagesArray,  // Add only valid images
             });
           }

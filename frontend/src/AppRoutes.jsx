@@ -16,9 +16,9 @@ import AboutRoutes from "./Admin/adminsection/aboutUs/AboutUsroutes";
 import CarrerRoutes from "./Admin/adminsection/carrerPage/Carrerroutes";
 import MissionRoutes from "./Admin/adminsection/missionsection/Missionroutes";
 import MemberRoutes from "./Admin/adminsection/MemberSection/LeadershipTeam";
-import SocialMediaLinkManagerRoutes from "./Admin/adminsection/SocialAddress/SocialMediaLinkManager";
+// import SocialMediaLinkManagerRoutes from "./Admin/adminsection/SocialAddress/SocialMediaLinkManager";
 import ContactManagerRoutes from "./Admin/adminsection/Contactform/ContactManager";
-import KeyProjectsRoutes from "./Admin/adminsection/keyProject/KeyProjectRoutes";
+// import KeyProjectsRoutes from "./Admin/adminsection/keyProject/KeyProjectRoutes";
 import BlogManagerRoutes from "./Admin/adminsection/blogSection/BlogsManager";
 import PoliciesManagerRoutes from "./Admin/adminsection/PoliciesSection/PoliciesManager";
 import ProjectServiceSectionRoutes from "./Admin/adminsection/ProjectService/ProjectServiceRoute";
@@ -27,7 +27,7 @@ import DownloadManagerRoutes from "./Admin/adminsection/DownloadSection/Download
 import FoodDownloadManagerRoutes from "./Admin/adminsection/FoodSectionDownload/FoodDownloadroutes";
 import ContactUsRoutes from "./Admin/adminsection/ContactUs";
 import JobListRoutes from "./Admin/adminsection/jobSection/jobList";
-import MapLocationRoutes from "./Admin/adminsection/MapSection/Mapdata";
+// import MapLocationRoutes from "./Admin/adminsection/MapSection/Mapdata";
 import UserPermissionRoutes from "./Admin/adminsection/UserSection/UserAccess";
 import JobApplicationListRoutes from "./Admin/adminsection/jobSection/jobApplicationList";
 
@@ -96,9 +96,7 @@ function AppRoutes() {
             <Route path="admin/career" element={<CarrerRoutes />} />
             <Route path="admin/mission" element={<MissionRoutes />} />
             <Route path="admin/members" element={<MemberRoutes />} />
-            <Route path="admin/social-media" element={<SocialMediaLinkManagerRoutes />} />
-            <Route path="admin/contact" element={<ContactManagerRoutes />} />
-            <Route path="admin/key-projects" element={<KeyProjectsRoutes />} />
+           <Route path="admin/contact" element={<ContactManagerRoutes />} />
             <Route path="admin/blogs" element={<BlogManagerRoutes />} />
             <Route path="admin/policies" element={<PoliciesManagerRoutes />} />
             <Route path="admin/project-service" element={<ProjectServiceSectionRoutes />} />
@@ -108,8 +106,7 @@ function AppRoutes() {
             <Route path="admin/contact-messages" element={<ContactUsRoutes />} />
             <Route path="admin/job-list" element={<JobListRoutes />} />
             <Route path="admin/job-applications" element={<JobApplicationListRoutes />} />
-            <Route path="admin/map-location" element={<MapLocationRoutes />} />
-            <Route path="admin/user-permissions" element={<UserPermissionRoutes />} />
+           <Route path="admin/user-permissions" element={<UserPermissionRoutes />} />
           </Route>
 
 
