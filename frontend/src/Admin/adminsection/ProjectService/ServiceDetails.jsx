@@ -49,6 +49,7 @@ const ServiceDetails = () => {
     fetchData();
     fetchServices();
   }, []);
+  
 const fetchServices = async () => {
     try {
       const response = await axios.get(`${constants.API_BASE_URL}homeservices`);
@@ -325,7 +326,7 @@ const totalPages = Math.ceil(getFilteredAndSortedItems().length / itemsPerPage);
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Link</Form.Label>
-              <Form.Control type="text" {...register('link')} placeholder="Enter link"  disabled={!!editing} />
+              <Form.Control type="text" {...register('link')} placeholder="Enter link"   />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Description</Form.Label>

@@ -18,10 +18,15 @@ import { IoCloseSharp } from "react-icons/io5";
 import { fetchAllData } from '../../services/routes.services';
 
 const ServicesDetail = () =>{
-    const { url } = useParams(); 
+    // const { url } = useParams(); 
     const [data, setData] = useState(null);
+     const url = window.location.pathname; 
+ const parts = url.split("/").filter(Boolean);
+ const lastPart = parts[parts.length - 1];
+
+console.log(parts[0]);
     useEffect(() => {
-            fetchAllData("servicedetails").then(res =>{
+            fetchAllData(`servicedetails/deatils/${parts[0]}`).then(res =>{
                 setData(res.data);
                 console.log(data)
                 //findTitle = res.data.find(item => item.)
