@@ -18,7 +18,7 @@ import { IoCloseSharp } from "react-icons/io5";
 //Components
 import parse from 'html-react-parser';
 import AboutUs from '../HomeRoute/About';
-import ContactUs from '../HomeRoute/Contact';
+import VisionComponent from './VisionCode';
 
 import { fetchAllData } from '../../services/routes.services';
 const AboutUsPage = ()=>{
@@ -57,25 +57,29 @@ const AboutUsPage = ()=>{
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className={Style.title}>{buildData?.whychooseus[0]?.titlename}</h2>
+                            <h2 className={Style.title}>{buildData?.whychooseus?.[0]?.titlename}</h2>
                         </Col>
                     </Row>
                     <Row>
-                        {buildData.whychooseus[0] && buildData.whychooseus[0].length > 0 ?
+                        {buildData?.whychooseus?.[0]?.fields?.length > 0 &&
                             buildData.whychooseus[0].fields.map((item, index) =>{
                                 return(
                                     <Col md={4} key={index}>
                                         <div className={Style.box}>
-                                            <span className={Style.icon}><TbDeviceDesktopCode  /></span>
+                                            <span className={Style.icon}>
+                                                {item?.iconfield === "TbDeviceDesktopCode" && <TbDeviceDesktopCode />}
+                                                {item?.iconfield === "FaServer" && <FaServer />}
+                                                {item?.iconfield === "FaWordpress" && <FaWordpress />}
+                                                {item?.iconfield === "TbSeo" && <TbSeo />}
+                                            </span>
                                             <h3>{item?.title}</h3>
-                                            <p>Architecting responsive, fast UI/UX with modern stacks like **React.js, JavaScript, HTML5, CSS3, and Bootstrap** to maximize user engagement. </p>
+                                            {item?.description && parse(item?.description) }
                                         </div>
                                     </Col>
                                 )
                             })
-                            : null
                         }
-                        <Col md={4}>
+                        {/* <Col md={4}>
                             <div className={Style.box}>
                                 <span className={Style.icon}><FaServer  /></span>
                                 <h3>Scalable & Secure Backend Solutions </h3>
@@ -102,7 +106,7 @@ const AboutUsPage = ()=>{
                                 <h3>Server & Cloud Deployment </h3>
                                 <p>Setting up cloud-ready, secure, and scalable environments tailored for your business, ensuring **seamless deployment and uptime.** </p>
                             </div>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
             </div>
@@ -116,12 +120,25 @@ const AboutUsPage = ()=>{
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>Why Choose Code Trios? </h2>
+                                <h2 className={Style.title}>{buildData?.whychooseus?.[1]?.titlename}</h2>
                                 <ul>
-                                    <li>
-                                        <h4><RiLoopLeftLine  className={Style.icon} /> Full-Cycle Delivery </h4>
-                                        <p>We manage the project from initial planning and architecture, through development, launch, and **ongoing support.** </p>
-                                    </li>
+                                    {buildData?.whychooseus?.[1]?.fields?.length > 0 &&
+                                        buildData.whychooseus[1].fields.map((item, index) =>{
+                                            return(
+                                                <li key={index}>
+                                                    <h4>
+                                                        {item?.iconfield === "RiLoopLeftLine" && <RiLoopLeftLine className={Style.icon} />}
+                                                        {item?.iconfield === "RiTeamLine" && <RiTeamLine className={Style.icon} />}
+                                                        {item?.iconfield === "BiTargetLock" && <BiTargetLock className={Style.icon} />}
+                                                        {item?.iconfield === "TbWorldBolt" && <TbWorldBolt className={Style.icon} />}
+                                                        {item?.title}</h4>
+                                                    {item?.description && parse(item?.description) }
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                               {/* <ul>
                                     <li>
                                         <h4><RiTeamLine className={Style.icon} /> Single Team, Multiple Disciplines </h4>
                                         <p>No need to juggle different vendors for frontend, backend, SEO, and hosting. Get **complete end-to-end service** from one trusted partner. </p>
@@ -134,34 +151,14 @@ const AboutUsPage = ()=>{
                                         <h4><TbWorldBolt className={Style.icon} /> Future-Proof Solutions</h4>
                                         <p>Our commitment to clean code, modular design, and maintainability ensures your platform **scales effortlessly** with your business.</p>
                                     </li>
-                                </ul>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            <div className={Style.visionSec}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className={Style.visionElem}>
-                                <h4>Your vision deserves more than just code — it deserves commitment.</h4>
-                                <p>At Code Trios, we combine creativity, technical excellence, and strategic clarity to <br />craft solutions that drive real business growth.</p>
-                                <button type='button'onClick={formOpenHandler} className={Style.btnStyle}>Request a free project</button>
+                                </ul> */}
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
         </div>
-        {isOPen && 
-            <div className={Style.formPop}>
-                <div className={Style.formElem}>
-                    <button type='button' onClick={formCloseHandler} className={Style.closeBtn}><IoCloseSharp /></button>
-                    <ContactUs />
-                </div>
-            </div>
-        }
+        <VisionComponent />
         </>
     )
 }

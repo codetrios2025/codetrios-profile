@@ -60,7 +60,7 @@ function AppRoutes() {
             <Route index element={<HomeRoute />} />
             <Route path="about-us" element={<AboutUsPage />} />
             <Route path="services" element={<Services />} />
-            <Route path="services-detail" element={<ServicesDetail />} />
+            <Route path="/:link" element={<ServicesDetail />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />

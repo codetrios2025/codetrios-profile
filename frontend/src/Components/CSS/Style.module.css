@@ -263,8 +263,9 @@ position: relative;
 .weBuild .box:hover:before{height: 100%;background: #7C3AED;}
 .weBuild .box *{position: relative;z-index: 1;}
 .weBuild .box .icon{font-size: 35px;color: #7C3AED;}
-.weBuild .box:hover .icon{color: #fff;}
+.weBuild .box:hover .icon, .weBuild .box:hover p span{color: #fff!important;}
 .weBuild .box h3{font-size: 20px;margin: 10px 140px 15px 0;}
+.weBuild .box p span{background: transparent!important;color: #000!important;}
 .whyUs figure{height: 100%;background: #7C3AED;;}
 .whyUs .aboutContent{padding: 40px 0 30px 40px;height: 100%;display: flex;justify-content: center;}
 .whyUs ul li{flex-direction: column;margin-bottom: 25px;}

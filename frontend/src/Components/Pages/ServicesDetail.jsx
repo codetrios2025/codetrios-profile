@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/E-commerceSolutions.webp';
+import { useParams } from "react-router-dom";
 
 import { Link } from 'react-router-dom';
 import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
@@ -13,7 +14,19 @@ import { RiTeamLine } from "react-icons/ri";
 import { BiTargetLock } from "react-icons/bi";
 import { IoCloseSharp } from "react-icons/io5";
 
+//API
+import { fetchAllData } from '../../services/routes.services';
+
 const ServicesDetail = () =>{
+    const { url } = useParams(); 
+    const [data, setData] = useState(null);
+    useEffect(() => {
+            fetchAllData("servicedetails").then(res =>{
+                setData(res.data);
+                console.log(data)
+                //findTitle = res.data.find(item => item.)
+            })
+    }, []);
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
@@ -116,9 +129,9 @@ const ServicesDetail = () =>{
                                 <h2 className={Style.title}>Platforms We Work On </h2>
                                 <ul>
                                     <li>
-                                        <figure>
+                                        {/* <figure>
                                             <img src='' />
-                                        </figure>
+                                        </figure> */}
                                     </li>
                                 </ul>
                             </div>

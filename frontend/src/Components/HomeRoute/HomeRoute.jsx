@@ -35,13 +35,13 @@ const HomeRoute = () =>{
     }, []);
     //console.log(servicesData)
     return(
-        <>
+        <div>
             <HomeBanner data={bannerData} />
             <AboutUs data={aboutData} />
             <OurServices data={servicesData} />
             <OurPortfolio data={portfilioData} />
             <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
-        </>
+        </div>
     )
 }
 

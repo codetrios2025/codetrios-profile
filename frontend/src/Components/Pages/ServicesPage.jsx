@@ -2,26 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import ServicesBanner from '../../assets/images/services-banner.webp';
-import webImage from '../../assets/images/web-design.webp';
-import WhyChooseImg from '../../assets/images/why_choose.webp';
+
 import { Link } from 'react-router-dom';
 import constants from '../../services/constants';
 import parse from 'html-react-parser';
 //Icon
 import { BsArrowRight } from "react-icons/bs";
-import { FaPaintBrush } from "react-icons/fa";
-import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
-import { FaServer, FaWordpress } from "react-icons/fa";
-import { AiOutlineCloudServer } from "react-icons/ai";
-import { FiCheck } from "react-icons/fi";
-import { RiLoopLeftLine } from "react-icons/ri";
-import { RiTeamLine } from "react-icons/ri";
-import { BiTargetLock } from "react-icons/bi";
-import { IoCloseSharp } from "react-icons/io5";
+import { BsCart3 } from "react-icons/bs";
+import { FaPaintBrush, FaHandshake  } from "react-icons/fa";
+import { IoCodeSlash } from "react-icons/io5";
+import { FaMobileAlt } from "react-icons/fa";
+import { FaGlobeAmericas } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
+import { PiPlugsConnectedBold } from "react-icons/pi";
 
 //Components
-import OurServices from '../HomeRoute/Services';
-import ContactUs from '../HomeRoute/Contact';
+import VisionComponent from './VisionCode';
 import { fetchAllData } from '../../services/routes.services';
 
 const ServicesPage = ()=>{
@@ -62,11 +58,19 @@ const ServicesPage = ()=>{
                                                 <img src={`${constants.Image_BASE_URL}/${item.image}`} alt="" />
                                             </figure>
                                             <div className={Style.content}>
-                                                <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>
+                                                <span className={Style.spanICon}>
+                                                    {item?.iconfield === "FaPaintBrush" && <FaPaintBrush className={Style.icon} />}
+                                                    {item?.iconfield === "IoCodeSlash" && <IoCodeSlash className={Style.icon} />}
+                                                    {item?.iconfield === "BsCart3" && <BsCart3 className={Style.icon} />}
+                                                    {item?.iconfield === "FaGlobeAmericas" && <FaGlobeAmericas className={Style.icon} />}
+                                                    {item?.iconfield === "MdDesignServices" && <MdDesignServices className={Style.icon} />}
+                                                    {item?.iconfield === "PiPlugsConnectedBold" && <PiPlugsConnectedBold className={Style.icon} />}
+                                                    {item?.iconfield === "FaHandshake" && <FaHandshake  className={Style.icon} />}
+                                                </span>
                                                 <h3>{item?.title}</h3>
                                                 {item?.description && parse(item?.description)}
                                                 {/* <p>Looking to take your business online? We build powerful, secure, and easy-to-manage e-commerce platforms that deliver seamless shopping experiences and drive conversions. Our goal is to help you sell more with smarter, faster, and mobile-friendly online stores. </p> */}
-                                                <Link to={item?.link}>Read More <BsArrowRight className={Style.icon} /></Link>
+                                                <Link to={`/${item?.link}`}>Read More <BsArrowRight className={Style.icon} /></Link>
                                             </div>
                                         </div>
                                     </Col>
@@ -78,6 +82,7 @@ const ServicesPage = ()=>{
                 </Container>
             </div>
         </div>
+        <VisionComponent />
         </>
     )
 }
