@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Header.module.css';
 import { Link, Outlet  } from "react-router-dom";
@@ -8,13 +8,26 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 
+import { fetchAllData } from "../../services/routes.services";
+
 const Header=()=>{
     const [menuOpen, setMenuOpen] = useState(false);
     const [subOpen, setSubOpen] = useState(false); 
+    const [menuData, setMenuData] = useState([])
     const closeMenu = () => {
     setMenuOpen(false);
     setSubOpen(false);
   };
+
+  useEffect(()=>{
+    fetchAllData("header/list").then(res =>{
+        setMenuData(res?.data?.headers || []);
+    })
+  }, []);
+  const mainMenu = menuData.slice(0, 5);
+  const subMenu  = menuData.slice(5, 14);
+
+console.log(menuData)
     return(
         <>
             <header>
@@ -29,7 +42,33 @@ const Header=()=>{
                                 <div className={`mainMenu ${menuOpen ? "activeMenu" : ""}`}>
                                     <button type='button' className="closeBtn"  onClick={() => setMenuOpen(false)}><IoCloseSharp /></button>
                                     <ul>
-                                        <li><Link onClick={closeMenu} to="" title="Home"><span>Home</span></Link></li>
+                                        {mainMenu.map((item, index) =>(
+                                            index === 2 ? (
+                                                <li key={item._id}>
+                                                    <Link onClick={() => setSubOpen(!subOpen)} to={item.linkUrl}>
+                                                    {item.linkText} <IoIosArrowDown className="icon"/>
+                                                    </Link>
+
+                                                    {/* Submenu */}
+                                                    <ul className={`subMenuMob ${Style.subMenu} ${subOpen ? "open" : ""}`}>
+                                                    {subMenu.map(sub => (
+                                                        <li key={sub._id}>
+                                                        <Link onClick={closeMenu} to={sub.linkUrl}>
+                                                            {sub.linkText}
+                                                        </Link>
+                                                        </li>
+                                                    ))}
+                                                    </ul>
+                                                </li>
+                                            ) : (
+                      <li key={item._id}>
+                        <Link onClick={closeMenu} to={item.linkUrl}>
+                          {item.linkText}
+                        </Link>
+                      </li>
+                    )
+                                        ))}
+                                        {/* <li><Link onClick={closeMenu} to="" title="Home"><span>Home</span></Link></li>
                                         <li><Link onClick={closeMenu} to="/about-us" title="About"><span>About</span></Link></li>
                                         <li>
                                             <Link onClick={closeMenu} to="/services" title="Services"><span>Services <IoIosArrowDown className="icon" /></span></Link>
@@ -43,7 +82,6 @@ const Header=()=>{
                                                 <li><Link onClick={closeMenu} to="" title="Design Services">Design Services</Link></li>
                                                 <li><Link onClick={closeMenu} to="" title="eCommerce Solutions">eCommerce Solutions</Link></li>
                                                 <li><Link onClick={closeMenu} to="" title="Technology Solutions">Technology Solutions</Link></li>
-                                                {/* <li><Link to="" title="Business Consultancy">Business Consultancy</Link></li> */}
                                                 <li><Link onClick={closeMenu} to="" title="Digital Strategy">Digital Strategy</Link></li>
                                                 <li><Link onClick={closeMenu} to="" title="Search Engine Optimization">Search Engine Optimization</Link></li>
                                                 <li><Link onClick={closeMenu} to="" title="Content Writing">Content Writing</Link></li>
@@ -51,7 +89,7 @@ const Header=()=>{
                                         </li>
                                         <li><Link onClick={closeMenu} to="/technologies" title="About"><span>Technologies</span></Link></li>
                                         <li><Link onClick={closeMenu} to="/portfolio" title="Portfolio"><span>Portfolio</span></Link></li>
-                                        <li><Link onClick={closeMenu} to="/contact-us" title="Contact Us"><span>Contact Us</span></Link></li>
+                                        <li><Link onClick={closeMenu} to="/contact-us" title="Contact Us"><span>Contact Us</span></Link></li> */}
                                     </ul>
                                 </div>
                             </div>
