@@ -81,6 +81,7 @@
     font-size: 20px;
     text-transform: uppercase;
 }
+p strong{font-weight: normal;}
 .aboutContent ul, .aboutContent ol{
     margin: 0 0 15px 0;
 }
@@ -91,6 +92,7 @@
     position: relative;
     padding-left: 20px;
 }
+.aboutContent ul li{padding: 0;}
 .aboutContent ol li::before {
   content: "✔";                 /* or "\2713" */
   position: absolute;
@@ -302,6 +304,7 @@ position: relative;
 .whoAreSec:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: #00000083;}
 .whoAreSec .box{width: 1024PX;margin: 0 auto;text-align: center;}
 .whoAreSec .box h2{margin: 0 0 30px;}
+.whoAreSec .box p span{background: transparent!important;color: #fff!important;}
 
 .contactSec{position: relative;}
 .contactSec .leftArea{position: relative;background: #7C3AED;}

@@ -2,22 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/E-commerceSolutions.webp';
-import parse from 'html-react-parser';
-
-import { Link } from 'react-router-dom';
 import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
 import { FaServer, FaWordpress } from "react-icons/fa";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { FiCheck } from "react-icons/fi";
-import { RiLoopLeftLine } from "react-icons/ri";
-import { RiTeamLine } from "react-icons/ri";
-import { BiTargetLock } from "react-icons/bi";
-import { IoCloseSharp } from "react-icons/io5";
+import VisionComponent from '../Pages/VisionCode';
 
 //API
 import { fetchAllData } from '../../services/routes.services';
 
-const ServicesDetail = () =>{
+
+const EcommerceSolutions = () =>{
     const [data, setData] = useState({});
      const url = window.location.pathname; 
  const parts = url.split("/").filter(Boolean);
@@ -54,18 +49,6 @@ console.log(parts[0]);
                                     <li><FiCheck className={Style.icon} /> Inventory & Order Management </li>
                                     <li><FiCheck className={Style.icon} /> Product Optimization </li>
                                 </ul>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            <div className={Style.whoAreSec}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className={Style.box}>
-                                <h2 className={Style.title}>Why Choose Our E-Commerce Development? </h2>
-                                <p>We understand that every brand is unique — and so is its e-commerce journey. Our solutions combine elegant design, powerful functionality, and scalability to help your store grow with your business. </p>
                             </div>
                         </Col>
                     </Row>
@@ -124,26 +107,22 @@ console.log(parts[0]);
                     </Row>
                 </Container>
             </div>
-            <div className={Style.platformsSec}>
+            <div className={Style.whoAreSec}>
                 <Container>
                     <Row>
                         <Col>
                             <div className={Style.box}>
-                                <h2 className={Style.title}>Platforms We Work On </h2>
-                                <ul>
-                                    <li>
-                                        {/* <figure>
-                                            <img src='' />
-                                        </figure> */}
-                                    </li>
-                                </ul>
+                                <h2 className={Style.title}>Why Choose Our E-Commerce Development? </h2>
+                                <p>We understand that every brand is unique — and so is its e-commerce journey. Our solutions combine elegant design, powerful functionality, and scalability to help your store grow with your business. </p>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
+            
+            <VisionComponent />
         </div>
     )
 }
 
-export default ServicesDetail;
+export default EcommerceSolutions;

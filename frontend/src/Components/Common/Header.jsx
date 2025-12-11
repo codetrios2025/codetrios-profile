@@ -46,7 +46,7 @@ console.log(menuData)
                                             index === 2 ? (
                                                 <li key={item._id}>
                                                     <Link onClick={() => setSubOpen(!subOpen)} to={item.linkUrl}>
-                                                    {item.linkText} <IoIosArrowDown className="icon"/>
+                                                    <span>{item.linkText} <IoIosArrowDown className="icon"/></span>
                                                     </Link>
 
                                                     {/* Submenu */}
@@ -54,19 +54,17 @@ console.log(menuData)
                                                     {subMenu.map(sub => (
                                                         <li key={sub._id}>
                                                         <Link onClick={closeMenu} to={sub.linkUrl}>
-                                                            {sub.linkText}
+                                                            <span>{sub.linkText}</span>
                                                         </Link>
                                                         </li>
                                                     ))}
                                                     </ul>
                                                 </li>
                                             ) : (
-                      <li key={item._id}>
-                        <Link onClick={closeMenu} to={item.linkUrl}>
-                          {item.linkText}
-                        </Link>
-                      </li>
-                    )
+                                            <li key={item._id}>
+                                                <Link onClick={closeMenu} to={item.linkUrl}><span>{item.linkText}</span></Link>
+                                            </li>
+                                            )
                                         ))}
                                         {/* <li><Link onClick={closeMenu} to="" title="Home"><span>Home</span></Link></li>
                                         <li><Link onClick={closeMenu} to="/about-us" title="About"><span>About</span></Link></li>
