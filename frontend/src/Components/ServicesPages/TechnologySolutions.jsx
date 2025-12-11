@@ -14,6 +14,14 @@ const TechnologySolutions = () =>{
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>Technology Solutions</h1>
+                            <p>Custom tech solutions to streamline and automate your workflow.</p>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <div className={Style.commonPading + " " + Style.aboutSec}>
                 <Container>

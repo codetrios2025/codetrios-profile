@@ -254,7 +254,7 @@ position: relative;
 .fomrStyle button:hover{color: #fff;}
 
 /* innerBanner */
-.innerBanner{position: relative;background: #7C3AED;padding: 0 0 0 0;height:400px;margin-top: 74px;}
+.innerBanner{position: relative;background: url(../../assets/images/innerBanner_bg.webp) no-repeat center center;padding: 0 0 0 0;height:400px;margin-top: 74px;background-size: cover;}
 .innerBanner img{width: 100%;height: 100%;object-fit: cover;}
 .aboutPage .aboutContent a{display: none;}
 .weBuild{position: relative;background: #f7f7f7;}
@@ -326,14 +326,25 @@ position: relative;
 .areInfo p a{color: #000;}
 .ourPlatForm{padding-bottom: 80px;}
 .boxContainer{position: relative;}
+
 .boxContainer h4{text-transform: uppercase;font-weight: 700;color: #000;font-size: 40px;margin-top: 50px;}
-.boxContainer .boxElem{background: #f0f0f0;padding: 50px 30px;display: flex;flex-wrap: wrap;color: #000;border-radius: 10px;margin-top: 30px;}
+.boxContainer .boxElem{background: #f0f0f04f;padding: 50px 30px;display: flex;flex-wrap: wrap;color: #000;border-radius: 10px;margin-top: 30px;align-items: center;border-width: 2px 2px 5px 2px;
+    border-color: #d8d8d8;
+    border-style: solid;position: relative;}
+.boxContainer:nth-child(even) .boxElem{position: relative;}
+.boxContainer:nth-child(even) .boxElem .leftArea{order: 2;padding-right: 0;padding-left: 50px;}    
+.boxContainer:nth-child(even) .boxElem .rightArea{order: 1;}    
 .boxContainer .boxElem .leftArea{width: 50%;padding-right: 50px;    display: flex;flex-direction: column;justify-content: center;}
-.boxContainer .boxElem .rightArea{width: 50%;display: flex;flex-wrap: wrap;}
-.boxContainer .boxElem .techLogo{width: 25%;text-align: center;margin-bottom: 20px;}
+.boxContainer .boxElem .rightArea{width: 50%;display: flex;flex-wrap: wrap;    justify-content: center;}
+.boxContainer .boxElem .techLogo{width: 25%;text-align: center;margin-bottom: 20px;padding: 10px 0;border-radius: 10px;border: 1px solid transparent;cursor: pointer;}
 .boxContainer .boxElem .techLogo h6{font-size: 16px;margin: 10px 0 0;}
 .boxContainer h5{font-size: 26px;font-weight: 700;margin: 0 0 20px;}
 .PortfolioPage .buttonFlex{display: none;}
+.boxContainer .boxElem .techLogo:hover{background: #fff;border-color: #7C3AED;}
+
+.servicesDetail .innerBanner{height: 300px;}
+.servicesDetail .innerBanner h1{color: #fff;font-size: 45px;margin-top: 100px;}
+.servicesDetail .innerBanner p{font-size: 20px;color: #fff;}
 
 @media (max-width: 1400px){
   .heroBanner .content h1{    font-size: 50px;line-height: 60px;}  

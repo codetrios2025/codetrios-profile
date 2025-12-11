@@ -15,6 +15,14 @@ const WebApplications = () =>{
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>Web Applications</h1>
+                            <p>High‑performance mobile apps for Android and iOS users.</p>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <div className={Style.commonPading + " " + Style.aboutSec}>
                 <Container>

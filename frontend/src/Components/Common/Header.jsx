@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Header.module.css';
 import { Link, Outlet  } from "react-router-dom";
-import Logo from '../../assets/images/logo.webp';
+import Logo from '../../assets/images/logo01.png';
 import { CiMenuFries } from "react-icons/ci";
 
 import { IoIosArrowDown } from "react-icons/io";
@@ -20,7 +20,7 @@ const Header=()=>{
   };
 
   useEffect(()=>{
-    fetchAllData("header/list").then(res =>{
+    fetchAllData("header").then(res =>{
         setMenuData(res?.data?.headers || []);
     })
   }, []);
@@ -42,14 +42,44 @@ console.log(menuData)
                                 <div className={`mainMenu ${menuOpen ? "activeMenu" : ""}`}>
                                     <button type='button' className="closeBtn"  onClick={() => setMenuOpen(false)}><IoCloseSharp /></button>
                                     <ul>
-                                        {mainMenu.map((item, index) =>(
+                                        {menuData && menuData.length > 0 &&
+                                            menuData.map((item, index)=>{
+                                                const hasSubmenu = item.children && item.children.length > 0;
+                                                return(
+                                                    <li key={index}>
+                                                        <Link onClick={closeMenu} to={item.linkUrl}>
+                                                            <span>{item.linkText}</span> {hasSubmenu  &&<IoIosArrowDown className="icon"/>}
+                                                        </Link>
+                                                        {hasSubmenu && (
+                                                            <button type="button" className="subToggle" onClick={() => setSubOpen(subOpen === index ? null : index)}>
+                                                                <IoIosArrowDown className={subOpen === index ? "rotate" : ""}/>
+                                                            </button>
+                                                        )}
+                                                        {hasSubmenu  &&(
+                                                        <ul className={`subMenuMob ${Style.subMenu} ${subOpen ? "open" : ""}`}>
+                                                           {item.children.map(sub => (
+                                                                <li key={sub._id}>
+                                                                <Link onClick={closeMenu} to={sub.linkUrl}>
+                                                                    <span>{sub.linkText}</span>
+                                                                </Link>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                        )}
+
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                        {/* {mainMenu.map((item, index) =>(
                                             index === 2 ? (
                                                 <li key={item._id}>
-                                                    <Link onClick={() => setSubOpen(!subOpen)} to={item.linkUrl}>
+                                                    <Link onClick={closeMenu} to={item.linkUrl}>
                                                     <span>{item.linkText} <IoIosArrowDown className="icon"/></span>
                                                     </Link>
-
-                                                    {/* Submenu */}
+                                                    <button type="button" className="subToggle" onClick={() => setSubOpen(!subOpen)}>
+                                                        <IoIosArrowDown className={subOpen ? "rotate" : ""} />
+                                                    </button>
                                                     <ul className={`subMenuMob ${Style.subMenu} ${subOpen ? "open" : ""}`}>
                                                     {subMenu.map(sub => (
                                                         <li key={sub._id}>
@@ -65,7 +95,7 @@ console.log(menuData)
                                                 <Link onClick={closeMenu} to={item.linkUrl}><span>{item.linkText}</span></Link>
                                             </li>
                                             )
-                                        ))}
+                                        ))} */}
                                         {/* <li><Link onClick={closeMenu} to="" title="Home"><span>Home</span></Link></li>
                                         <li><Link onClick={closeMenu} to="/about-us" title="About"><span>About</span></Link></li>
                                         <li>
@@ -87,7 +117,7 @@ console.log(menuData)
                                         </li>
                                         <li><Link onClick={closeMenu} to="/technologies" title="About"><span>Technologies</span></Link></li>
                                         <li><Link onClick={closeMenu} to="/portfolio" title="Portfolio"><span>Portfolio</span></Link></li>
-                                        <li><Link onClick={closeMenu} to="/contact-us" title="Contact Us"><span>Contact Us</span></Link></li> */}
+                                        <li><Link onClick={closeMenu} to="/contact-us" title="Contact Us"><span>Contact Us</span></Link></li>  */}
                                     </ul>
                                 </div>
                             </div>

@@ -9,11 +9,19 @@ import { MdTransform, MdAutorenew, MdAnalytics, MdFactCheck, MdAssessment     } 
 import { FaChartLine } from "react-icons/fa";
 
 
-const BusinessConsultancy = () =>{
+const DigitalStrategy = () =>{
 
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>Digital Strategy</h1>
+                            <p>Data‑driven digital roadmaps to grow your online presence.</p>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <div className={Style.commonPading + " " + Style.aboutSec}>
                 <Container>
@@ -104,4 +112,4 @@ const BusinessConsultancy = () =>{
     )
 }
 
-export default BusinessConsultancy;
+export default DigitalStrategy;

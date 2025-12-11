@@ -11,7 +11,7 @@ import css from '../../assets/images/icon/css_logo.webp';
 import js from '../../assets/images/icon/js_logo.webp';
 import bootstrap from '../../assets/images/icon/bootstrap_logo.webp';
 import vue from '../../assets/images/icon/vue_logo.webp';
-import gsap from '../../assets/images/icon/gsap_logo.webp';
+import express from '../../assets/images/icon/express_logo.webp';
 import reactVite from '../../assets/images/icon/reactVite_logo.webp';
 import reactNative from '../../assets/images/icon/react_logo.webp';
 
@@ -20,9 +20,9 @@ import laravel from '../../assets/images/icon/laravel_logo.webp';
 import wordpress from '../../assets/images/icon/wordpress_logo.webp';
 import drupal from '../../assets/images/icon/drupal_icon.webp';
 import node from '../../assets/images/icon/node_logo.webp';
-import java from '../../assets/images/icon/java_logo.webp';
-import fastApi from '../../assets/images/icon/fastapi_logo.webp';
+import paython from '../../assets/images/icon/paython_logo.webp';
 import strapi from '../../assets/images/icon/strapi_logo.webp';
+import zframe from '../../assets/images/icon/zframe_logo.webp';
 
 import mysql from '../../assets/images/icon/mysql_logo.webp';
 import sql from '../../assets/images/icon/sql_logo.webp';
@@ -36,7 +36,14 @@ import Illustrator from '../../assets/images/icon/Illustrator_logo.webp';
 import corelDraw from '../../assets/images/icon/CorelDRAW_logo.webp';
 import canva from '../../assets/images/icon/canva_logo.webp';
 
+//Animation logo
+import gsap from '../../assets/images/icon/gsap_logo.webp';
+import three from '../../assets/images/icon/three_logo.webp';
+import anime from '../../assets/images/icon/anime_logo.webp';
+import lottie from '../../assets/images/icon/lottie_logo.webp';
+import aos_logo from '../../assets/images/icon/aos_logo.webp';
 
+import VisionComponent from './VisionCode';
 const TechnologiesPage = ()=>{
 
     return(
@@ -60,6 +67,12 @@ const TechnologiesPage = ()=>{
                                     <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
                                             <figure>
+                                                <img src={reactVite} alt='' />
+                                            </figure>
+                                            <h6>React + Vite</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
                                                 <img src={HTML} alt='' />
                                             </figure>
                                             <h6>HTML</h6>
@@ -82,12 +95,7 @@ const TechnologiesPage = ()=>{
                                             </figure>
                                             <h6>Bootstrap</h6>
                                         </div>
-                                        <div className={Style.techLogo}>
-                                            <figure>
-                                                <img src={reactVite} alt='' />
-                                            </figure>
-                                            <h6>React + Vite</h6>
-                                        </div>
+                                        
                                         <div className={Style.techLogo}>
                                             <figure>
                                                 <img src={vue} alt='' />
@@ -96,21 +104,21 @@ const TechnologiesPage = ()=>{
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={gsap} alt='' />
+                                                <img src={reactNative} alt='' />
                                             </figure>
-                                            <h6>GSAP</h6>
+                                            <h6>React</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={reactNative} alt='' />
+                                                <img src={express} alt='' />
                                             </figure>
-                                            <h6>React Native</h6>
+                                            <h6>Express.js</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4>FRONTEND</h4>
+                                <h4>BACKEND</h4>
                                 <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
                                 <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
@@ -120,40 +128,148 @@ const TechnologiesPage = ()=>{
                                     <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={HTML} alt='' />
+                                                <img src={php} alt='' />
                                             </figure>
-                                            <h6>HTML</h6>
+                                            <h6>PHP</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={css} alt='' />
+                                                <img src={laravel} alt='' />
                                             </figure>
-                                            <h6>CSS</h6>
+                                            <h6>Laravel</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={js} alt='' />
+                                                <img src={drupal} alt='' />
                                             </figure>
-                                            <h6>JavaScript</h6>
+                                            <h6>Drupal</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={bootstrap} alt='' />
+                                                <img src={node} alt='' />
                                             </figure>
-                                            <h6>Bootstrap</h6>
+                                            <h6>Node.js</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={reactVite} alt='' />
+                                                <img src={wordpress} alt='' />
                                             </figure>
-                                            <h6>React + Vite</h6>
+                                            <h6>Wordpress</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={vue} alt='' />
+                                                <img src={strapi} alt='' />
                                             </figure>
-                                            <h6>Vue</h6>
+                                            <h6>Strapi</h6>
                                         </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={paython} alt='' />
+                                            </figure>
+                                            <h6>Paython</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={zframe} alt='' />
+                                            </figure>
+                                            <h6>Zend Framework</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.boxContainer}>
+                                <h4>DATABASES</h4>
+                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
+                                <div className={Style.boxElem}>
+                                    <div className={Style.leftArea}>
+                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
+                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                    </div>
+                                    <div className={Style.rightArea}>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={monogoDB} alt='' />
+                                            </figure>
+                                            <h6>MonogoDB</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={mysql} alt='' />
+                                            </figure>
+                                            <h6>mySQL</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={sql} alt='' />
+                                            </figure>
+                                            <h6>SQL Server</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={cloudSql} alt='' />
+                                            </figure>
+                                            <h6>CloudSQL</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.boxContainer}>
+                                <h4>Designing</h4>
+                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
+                                <div className={Style.boxElem}>
+                                    <div className={Style.leftArea}>
+                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
+                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                    </div>
+                                    <div className={Style.rightArea}>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={figma} alt='' />
+                                            </figure>
+                                            <h6>Figma</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={adobeXD} alt='' />
+                                            </figure>
+                                            <h6>AdobeXD</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={Illustrator} alt='' />
+                                            </figure>
+                                            <h6>Illustrator</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={photoshop} alt='' />
+                                            </figure>
+                                            <h6>Photoshop</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={corelDraw} alt='' />
+                                            </figure>
+                                            <h6>CorelDraw</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={canva} alt='' />
+                                            </figure>
+                                            <h6>Canva</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.boxContainer}>
+                                <h4>Animation & Motion</h4>
+                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
+                                <div className={Style.boxElem}>
+                                    <div className={Style.leftArea}>
+                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
+                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                    </div>
+                                    <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
                                             <figure>
                                                 <img src={gsap} alt='' />
@@ -162,9 +278,27 @@ const TechnologiesPage = ()=>{
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={reactNative} alt='' />
+                                                <img src={three} alt='' />
                                             </figure>
-                                            <h6>React Native</h6>
+                                            <h6>Three.js</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={lottie} alt='' />
+                                            </figure>
+                                            <h6>LottieFiles</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={anime} alt='' />
+                                            </figure>
+                                            <h6>Anime.js</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={aos_logo} alt='' />
+                                            </figure>
+                                            <h6>AOS Animation</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -174,6 +308,7 @@ const TechnologiesPage = ()=>{
                 </Container>
             </div>
         </div>
+        <VisionComponent />
         </>
     )
 }

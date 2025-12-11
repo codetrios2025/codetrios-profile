@@ -28,6 +28,14 @@ console.log(parts[0]);
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>E-Commerce Solutions</h1>
+                            <p>Complete online store setups that drive sales and repeat buyers.</p>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <div className={Style.commonPading + " " + Style.aboutSec}>
                 <Container>

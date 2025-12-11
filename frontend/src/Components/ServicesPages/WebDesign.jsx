@@ -9,7 +9,7 @@ import { FaBuilding, FaNodeJs, FaReact } from "react-icons/fa";
 import { MdSupportAgent, MdDashboardCustomize  } from "react-icons/md";
 
 
-const WebDevelopment = () =>{
+const WebDesign = () =>{
 
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
@@ -17,8 +17,8 @@ const WebDevelopment = () =>{
                 <Container>
                     <Row>
                         <Col>
-                            <h1>Website Development</h1>
-                            <p>Fast, secure, scalable web applications tailored to your needs.</p>
+                            <h1>Website Design</h1>
+                            <p>Modern, responsive websites that convert visitors into customers.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -111,4 +111,4 @@ const WebDevelopment = () =>{
     )
 }
 
-export default WebDevelopment;
+export default WebDesign;
