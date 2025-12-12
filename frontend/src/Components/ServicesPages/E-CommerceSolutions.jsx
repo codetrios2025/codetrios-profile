@@ -61,7 +61,7 @@ console.log(parts[0]);
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " +Style.weBuild}>
+            <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild}>
                 <Container>
                     <Row>
                         <Col>
@@ -114,7 +114,7 @@ console.log(parts[0]);
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " + Style.buildStyle}>
+            {/* <div className={"boxHeight " + Style.commonPading + " " + Style.buildStyle}>
                 <Container>
                     <Row>
                         <Col>
@@ -122,13 +122,17 @@ console.log(parts[0]);
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <div className={Style.buildContainer}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaStore  /></span>
                                         <h3>Custom Store Design & Setup</h3>
                                         <p>We build fully customized e-commerce stores designed around your brand identity and business needs.</p>
-                                        <strong>Our services include:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaStore  /></span>
+                                        <h3>Our services include:</h3>
                                         <ul>
                                             <li>Platform selection (Shopify, WooCommerce, Magento, Headless Commerce, Custom Build)</li>
                                             <li>Custom homepage, category, and product page layouts</li>
@@ -139,11 +143,19 @@ console.log(parts[0]);
                                         <p>Your store not only looks impressive but is also built to convert.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaServer  /></span>
                                         <h3>Payment Gateway Integration</h3>
                                         <p>We ensure your customers enjoy a smooth, secure, and trustworthy checkout process.</p>
-                                        <strong>Features include:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaServer  /></span>
+                                        <h3>Features include:</h3>
                                         <ul>
                                             <li>Multiple payment modes (UPI, Cards, Wallets, COD, Net Banking)</li>
                                             <li>Multi-currency support for global stores</li>
@@ -154,11 +166,19 @@ console.log(parts[0]);
                                         <p>This makes your store safe, reliable, and customer-friendly.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaBoxes  /></span>
                                         <h3>Inventory & Order Management</h3>
                                         <p>Managing stock and orders becomes effortless with our integrated dashboards.</p>
-                                        <strong>You get:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaBoxes  /></span>
+                                        <h3>You get:</h3>
                                         <ul>
                                             <li>Product and category management</li>
                                             <li>Stock level tracking with alerts</li>
@@ -169,27 +189,42 @@ console.log(parts[0]);
                                         <p>Designed for smooth operations whether you have 50 products or 50,000.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdPhoneIphone  /></span>
                                         <h3>Mobile-Optimized Experience</h3>
-                                        <p>Since most online shopping happens on mobile, </p>
-                                        <strong>We build stores that are:</strong>
+                                        <p>Since most online shopping happens on mobile.</p>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdPhoneIphone  /></span>
+                                        <h3>We build stores that are:</h3>
                                         <ul>
                                             <li>Lightning fast on smartphones</li>
-                                            <li>Touch-friendly and easy to navigate</li>
                                             <li>Fully responsive with adaptive layouts</li>
+                                            <li>Touch-friendly and easy to navigate</li>
                                             <li>Optimized with compressed images and minimized scripts</li>
                                             <li>Enhanced with mobile-specific UI patterns (sticky cart, quick add, swipe galleries)</li>
                                         </ul>
                                         <p>A mobile-friendly store directly increases conversions and revenue.</p>
                                     </div>
                                 </div>
-
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaTags  /></span>
                                         <h3>Third-Party API Integration</h3>
-                                        <p>We connect your store with essential tools to automate and scale.</p>
-                                        <strong>Integrations include:</strong>
+                                        <p>We connect your store with essential tools to automate and scale. </p>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaTags  /></span>
+                                        <h3>Integrations include:</h3>
                                         <ul>
                                             <li>Logistics & shipping APIs (Shiprocket, Delhivery, DHL, Blue Dart)</li>
                                             <li>CRM and ERP systems</li>
@@ -200,11 +235,19 @@ console.log(parts[0]);
                                         <p>These integrations enhance workflows, reporting, and customer experience.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdSpeed  /></span>
                                         <h3>Performance Optimization</h3>
                                         <p>A fast store leads to higher sales and better rankings — we ensure peak performance.</p>
-                                        <strong>Optimizations include:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdSpeed  /></span>
+                                        <h3>Optimizations include:</h3>
                                         <ul>
                                             <li>Faster load times with caching and minification</li>
                                             <li>Image compression and responsive formats</li>
@@ -218,10 +261,9 @@ console.log(parts[0]);
                                 </div>
                             </div>
                         </Col>
-        
                     </Row>
                 </Container>
-            </div>
+            </div> */}
             {/* <div className={Style.whoAreSec}>
                 <Container>
                     <Row>

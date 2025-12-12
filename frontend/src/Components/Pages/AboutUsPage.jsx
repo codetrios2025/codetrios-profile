@@ -53,7 +53,7 @@ const AboutUsPage = ()=>{
                 <img src={AboutBanner} />
             </div>
             <AboutUs data={aboutData} />
-            <div className={Style.commonPading + " " +Style.weBuild}>
+            <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild}>
                 <Container>
                     <Row>
                         <Col>

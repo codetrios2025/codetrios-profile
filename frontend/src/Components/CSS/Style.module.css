@@ -103,10 +103,11 @@ p strong{font-weight: normal;}
   color: #7C3AED;          
   transform: translateY(2px);  
 }
+.aboutContent ul li{padding: 0;}
 .aboutContent ul li .icon, .aboutContent ol li .icon{color: #7C3AED;
-    position: absolute;
+    position: relative;
     top: 9px;
-    left: 0;}
+    margin-right: 10px;}
 .aboutContent br{display: none;}
 /* Services */
 .servicesSec{
@@ -340,7 +341,10 @@ position: relative;
 .boxContainer:nth-child(even) .boxElem .rightArea{order: 1;}    
 .boxContainer .boxElem .leftArea{width: 50%;padding-right: 50px;    display: flex;flex-direction: column;justify-content: center;}
 .boxContainer .boxElem .rightArea{width: 50%;display: flex;flex-wrap: wrap;    justify-content: center;}
-.boxContainer .boxElem .techLogo{width: 25%;text-align: center;margin-bottom: 20px;padding: 10px 0;border-radius: 10px;border: 1px solid transparent;cursor: pointer;}
+.boxContainer .boxElem .techLogo{width: 25%;text-align: center;margin-bottom: 20px;padding: 10px 0;border-radius: 10px;border: 1px solid transparent;cursor: pointer;    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 .boxContainer .boxElem .techLogo h6{font-size: 16px;margin: 10px 0 0;}
 .boxContainer h5{font-size: 26px;font-weight: 700;margin: 0 0 20px;}
 .PortfolioPage .buttonFlex{display: none;}
@@ -361,23 +365,34 @@ position: relative;
 .buildStyle .box p{margin: 0;}
 
 .buildStyle h2{text-align: center;}
-.buildContainer{max-width: 100%;margin: 0 auto;display: flex;flex-wrap: wrap;margin-top: 10px;align-items: flex-start;}
-.buildContainer .buildElem{border-radius: 5px;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;width: 50%;padding: 0 10px;margin-bottom: 20px;}
-/* .buildContainer .buildElem figure{width: 10%;} */
-.buildContainer .buildElem figure .icon{font-size: 100px;color: #7C3AED;}
-.buildContainer .buildElem .content{width: 100%;
-    /* background: url('../../assets/images/innerBanner_bg.webp') no-repeat; */
+.buildElem{width: 100%;padding: 0;position: relative;perspective: 1000px;margin-bottom: 30px;}
+.buildElem h3{font-weight: 700;font-size: 24px;margin: 10px 0;}
+.buildElem .icon{color: #7C3AED;font-size: 40px;}
+.buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
+.buildElem  ul li{list-style-type: disc;}
+.buildElem  strong{font-size: 18px;font-weight: 600;} 
+.buildElem .content{  position: relative;width: 100%;height: 100%;transition: transform .7s ease;transform-style: preserve-3d;}
+.buildElem:hover .content {transform: rotateY(180deg);}
+.buildElem:hover .flipBack .icon{color: #fff;}
+.flipFront {height: 100%;position: relative;padding: 20px;background: #fff;}
+.flipBack {    padding: 20px;position: absolute;inset: 0;backface-visibility: hidden;transform: rotateY(180deg);background: #4f46e5;color: #fff;box-shadow: 0 6px 20px rgba(0,0,0,0.1);}
+.techStyle .buildElem{height: 500px;}
+.techStyleOne .buildElem{height: 400px;}
+/* .buildContainer{max-width: 100%;margin: 0 auto;display: flex;flex-wrap: wrap;margin-top: 10px;align-items: flex-start;}
+.weBuild .buildElem{border-radius: 5px;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;width: 50%;padding: 0 10px;margin-bottom: 20px;}
+.weBuild .buildElem figure .icon{font-size: 100px;color: #7C3AED;}
+.weBuild .buildElem .content{width: 100%;
         border-width: 2px 2px 5px 2px;
     border-color: #d8d8d8;
     border-style: solid;
     padding: 20px;color: #000;border-radius: 10px;position: relative;overflow: hidden;background: #fff;}
-/* .buildContainer .buildElem .content::before{position: absolute;content: "";top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
 .buildContainer .buildElem .content *{position: relative;z-index: 9;}
+.buildContainer .buildElem .content .icon{color: #7C3AED;font-size: 40px;}
 .buildContainer .buildElem h3{font-weight: 700;font-size: 24px;}
 .buildContainer .buildElem p{margin: 0;}
 .buildContainer .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
 .buildContainer .buildElem  ul li{list-style-type: disc;}
-.buildContainer .buildElem  strong{font-size: 18px;font-weight: 600;}
+.buildContainer .buildElem  strong{font-size: 18px;font-weight: 600;} */
 
 @media (max-width: 1400px){
   .heroBanner .content h1{    font-size: 50px;line-height: 60px;}  

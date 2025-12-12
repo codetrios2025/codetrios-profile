@@ -58,11 +58,10 @@ const TechnologiesPage = ()=>{
                         <Col>
                             <div className={Style.boxContainer}>
                                 <h4>FRONTEND</h4>
-                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
                                 <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
-                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
-                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                        <h5>Front-End Development</h5>
+                                        <p>We craft high-performance, interactive, and visually stunning front-end experiences using modern JavaScript frameworks and UI technologies. Our focus is on building interfaces that are fast, responsive, accessible, and aligned with your brand identity. With pixel-perfect precision and smooth user flows, we ensure your customers enjoy an intuitive and seamless digital experience across all devices.</p>
                                     </div>
                                     <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
@@ -119,11 +118,10 @@ const TechnologiesPage = ()=>{
                             </div>
                             <div className={Style.boxContainer}>
                                 <h4>BACKEND</h4>
-                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
                                 <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
-                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
-                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                        <h5>Back-End Development</h5>
+                                        <p>We deliver secure, scalable, and high-performance backend systems designed to handle complex business logic, heavy loads, and real-time interactions. Our backend architecture ensures speed, reliability, and seamless data processing to support your web and mobile applications.</p>
                                     </div>
                                     <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
@@ -178,48 +176,11 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4>DATABASES</h4>
-                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
-                                <div className={Style.boxElem}>
-                                    <div className={Style.leftArea}>
-                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
-                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
-                                    </div>
-                                    <div className={Style.rightArea}>
-                                        <div className={Style.techLogo}>
-                                            <figure>
-                                                <img src={monogoDB} alt='' />
-                                            </figure>
-                                            <h6>MonogoDB</h6>
-                                        </div>
-                                        <div className={Style.techLogo}>
-                                            <figure>
-                                                <img src={mysql} alt='' />
-                                            </figure>
-                                            <h6>mySQL</h6>
-                                        </div>
-                                        <div className={Style.techLogo}>
-                                            <figure>
-                                                <img src={sql} alt='' />
-                                            </figure>
-                                            <h6>SQL Server</h6>
-                                        </div>
-                                        <div className={Style.techLogo}>
-                                            <figure>
-                                                <img src={cloudSql} alt='' />
-                                            </figure>
-                                            <h6>CloudSQL</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={Style.boxContainer}>
                                 <h4>Designing</h4>
-                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
                                 <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
-                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
-                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                        <h5>Designing Development</h5>
+                                        <p>We combine creativity, strategy, and UX principles to craft modern, user-friendly design systems. Our design approach ensures your brand stands out visually while offering a seamless and engaging experience across all platforms.</p>
                                     </div>
                                     <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
@@ -263,11 +224,10 @@ const TechnologiesPage = ()=>{
                             </div>
                             <div className={Style.boxContainer}>
                                 <h4>Animation & Motion</h4>
-                                <p>We build state-of-the-art frontend solutions based on ultra-modern technologies and the latest javascript frameworks</p>
                                 <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
-                                        <h5>Leveraging The Latest Front-End Development Technologies</h5>
-                                        <p>At Technogigz, we are committed to building websites with unrivalled UI and UX design. We make sure to cater to the needs of our clients and provide them with innovative suggestions to improve their judgement.</p>
+                                        <h5>Animation & Motion Development</h5>
+                                        <p>We enhance digital experiences with smooth, engaging, and visually appealing animations. From micro-interactions to full-scale motion graphics, our team uses advanced animation frameworks to bring interfaces and brand stories to life.</p>
                                     </div>
                                     <div className={Style.rightArea}>
                                         <div className={Style.techLogo}>
@@ -299,6 +259,41 @@ const TechnologiesPage = ()=>{
                                                 <img src={aos_logo} alt='' />
                                             </figure>
                                             <h6>AOS Animation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.boxContainer}>
+                                <h4>DATABASES</h4>
+                                <div className={Style.boxElem}>
+                                    <div className={Style.leftArea}>
+                                        <h5>Database Development</h5>
+                                        <p>Our database solutions ensure your applications run smoothly, securely, and efficiently. We architect data structures that scale with your business and support high-speed queries, analytics, and transaction-heavy workloads.</p>
+                                    </div>
+                                    <div className={Style.rightArea}>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={monogoDB} alt='' />
+                                            </figure>
+                                            <h6>MonogoDB</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={mysql} alt='' />
+                                            </figure>
+                                            <h6>mySQL</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={sql} alt='' />
+                                            </figure>
+                                            <h6>SQL Server</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={cloudSql} alt='' />
+                                            </figure>
+                                            <h6>CloudSQL</h6>
                                         </div>
                                     </div>
                                 </div>

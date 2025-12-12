@@ -5,8 +5,9 @@ import digitalImg from '../../assets/images/digital-strategy.webp';
 import { FiCheck } from "react-icons/fi";
 import VisionComponent from '../Pages/VisionCode';
 //icon
-import { MdTransform, MdAutorenew, MdAnalytics, MdFactCheck, MdInsights, MdShare , MdTimeline        } from "react-icons/md";
-import { FaChartLine, FaChartBar , FaBullhorn  } from "react-icons/fa";
+import { MdTransform, MdEmail , MdAnalytics, MdFactCheck, MdInsights, MdShare , MdTimeline        } from "react-icons/md";
+import { FaBullhorn , FaChartBar  } from "react-icons/fa";
+import { BiGitMerge } from "react-icons/bi";
 
 
 const DigitalStrategy = () =>{
@@ -42,7 +43,7 @@ const DigitalStrategy = () =>{
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " +Style.weBuild + " " + Style.buildStyle}>
+            <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild + " " + Style.buildStyle}>
                 <Container>
                     <Row>
                         <Col>
@@ -95,7 +96,7 @@ const DigitalStrategy = () =>{
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " + Style.buildStyle}>
+            {/* <div className={Style.commonPading + " " + Style.buildStyle + " " + Style.techStyleOne}>
                 <Container>
                     <Row>
                         <Col>
@@ -103,13 +104,17 @@ const DigitalStrategy = () =>{
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <div className={Style.buildContainer}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdInsights  /></span>
                                         <h3>Audience & Market Research</h3>
                                         <p>A strong strategy starts with understanding your customers.</p>
-                                        <strong>Our research includes:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdInsights  /></span>
+                                        <h3>Our research includes:</h3>
                                         <ul>
                                             <li>Demographics, interests & behavior analysis</li>
                                             <li>Pain points & motivation mapping</li>
@@ -120,41 +125,19 @@ const DigitalStrategy = () =>{
                                         <p>This ensures every message and campaign resonates with the right people.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Competitor & Industry Analysis</h3>
-                                        <p>We study your competitors to identify their strengths and weaknesses.</p>
-                                        <strong>Our analysis covers:</strong>
-                                        <ul>
-                                            <li>Competitor website & content audits</li>
-                                            <li>Social media and engagement reports</li>
-                                            <li>SEO keyword and ranking comparison</li>
-                                            <li>Ad strategies, creatives & positioning</li>
-                                            <li>Gaps and opportunities in the market</li>
-                                        </ul>
-                                        <p>This helps us build a strategy that puts you ahead of your competition.</p>
-                                    </div>
-                                </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>SEO Strategy & Content Planning</h3>
-                                        <p>We create a long-term SEO roadmap that improves your visibility and search ranking.</p>
-                                        <strong>Our SEO strategy includes:</strong>
-                                        <ul>
-                                            <li>Keyword research & clustering</li>
-                                            <li>On-page optimization planning</li>
-                                            <li>Technical SEO recommendations</li>
-                                            <li>Content calendar creation</li>
-                                            <li>Link-building and authority growth plan</li>
-                                        </ul>
-                                        <p>Designed to generate consistent, high-quality organic traffic.</p>
-                                    </div>
-                                </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Social & Paid Media Strategy</h3>
+                            </div>
+                        </Col> 
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaBullhorn  /></span>
+                                       <h3>Social & Paid Media Strategy</h3>
                                         <p>We help you identify the right channels and craft campaigns that drive measurable results.</p>
-                                        <strong>Strategy components include:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaBullhorn  /></span>
+                                        <h3>Strategy components include:</h3>
                                         <ul>
                                             <li>Social media content blueprint</li>
                                             <li>Paid ads budget planning & targeting</li>
@@ -165,11 +148,19 @@ const DigitalStrategy = () =>{
                                         <p>This ensures maximum reach and efficient ad spend.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Email & Automation Strategy</h3>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdEmail  /></span>
+                                       <h3>Email & Automation Strategy</h3>
                                         <p>Email remains one of the highest ROI digital channels.</p>
-                                        <strong>We create:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdEmail  /></span>
+                                        <h3>We create:</h3>
                                         <ul>
                                             <li>Drip email sequences</li>
                                             <li>Customer lifecycle flows</li>
@@ -180,11 +171,19 @@ const DigitalStrategy = () =>{
                                         <p>Delivering communication that converts and retains users.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Conversion Funnel Optimization</h3>
+                            </div>
+                        </Col> 
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><BiGitMerge  /></span>
+                                       <h3>Conversion Funnel Optimization</h3>
                                         <p>We map the complete customer journey to eliminate friction and increase conversions. </p>
-                                        <strong>Our funnel strategy includes:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><BiGitMerge  /></span>
+                                        <h3>Our funnel strategy includes:</h3>
                                         <ul>
                                             <li>Landing page structure planning</li>
                                             <li>CTA placement and design recommendations</li>
@@ -195,11 +194,19 @@ const DigitalStrategy = () =>{
                                         <p>Turning your website into a high-performing revenue engine.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Analytics, Tracking & Reporting</h3>
+                            </div>
+                        </Col> 
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdAnalytics   /></span>
+                                       <h3>Analytics, Tracking & Reporting</h3>
                                         <p>Data drives decisions — we ensure proper tracking and measurement.</p>
-                                        <strong>Our analytics setup covers:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdAnalytics   /></span>
+                                        <h3>Our analytics setup covers:</h3>
                                         <ul>
                                             <li>· Google Analytics 4 configuration</li>
                                             <li>· Google Tag Manager events & triggers</li>
@@ -210,11 +217,11 @@ const DigitalStrategy = () =>{
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-     
+                        </Col> 
+    
                     </Row>
                 </Container>
-            </div>
+            </div> */}
              {/* <div className={Style.whoAreSec}>
                 <Container>
                     <Row>

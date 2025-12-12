@@ -43,7 +43,7 @@ const WebApplications = () =>{
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " +Style.weBuild}>
+            <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild}>
                 <Container>
                     <Row>
                         <Col>
@@ -93,70 +93,6 @@ const WebApplications = () =>{
                                 <p>Deploy and manage your apps on AWS, Azure, or Google Cloud.</p>
                             </div>
                         </Col>
-                    </Row>
-                </Container>
-            </div>
-            <div className={Style.commonPading + " " + Style.buildStyle}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h2 className={Style.title}>Our Expertise</h2>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <div className={Style.buildContainer}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Custom Application Development</h3>
-                                        <p>Fully customized systems — CRMs, booking engines, workflow tools, task managers, HR systems, and more — built to match your exact business requirements with intuitive UIs and smart automation.</p>
-                                    </div>
-                                </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Progressive Web Apps (PWAs)</h3>
-                                        <p>Ultra-fast apps with offline functionality, push notifications, and home-screen installation. Ideal for businesses wanting mobile-first engagement without the cost of separate Android/iOS development.</p>
-                                    </div>
-                                </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>API Development & Integration</h3>
-                                        <p>Secure RESTful APIs, GraphQL endpoints, and third-party API integrations designed for stability and scalability. We ensure smooth communication between your app, services, and databases.</p>
-                                    </div>
-                                </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Enterprise Applications</h3>
-                                        <p>Advanced, multi-user systems designed for large teams and complex operations. </p>
-                                        <strong>Features include:</strong>
-                                        <ul>
-                                            <li>Role-based control & permissions</li>
-                                            <li>Custom dashboards</li>
-                                            <li>Multi-step workflows</li>
-                                            <li>Real-time analytics & reporting</li>
-                                            <li>Audit logs & activity tracking</li>
-                                        </ul>
-                                        <p>Perfect for organizations that need a powerful internal digital backbone.</p>
-                                    </div>
-                                </div>
-
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Cloud Integration</h3>
-                                        <p>Seamless deployment and integration with leading cloud providers — AWS, Azure, or Google Cloud.</p>
-                                        <strong>Our cloud services include:</strong>
-                                        <ul>
-                                            <li>Serverless architecture setup</li>
-                                            <li>CI/CD pipelines</li>
-                                            <li>Load balancing & scalability planning</li>
-                                            <li>Backup & disaster recovery</li>
-                                            <li>App monitoring and performance tuning</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-        
                     </Row>
                 </Container>
             </div>

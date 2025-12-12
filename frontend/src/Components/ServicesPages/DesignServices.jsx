@@ -44,7 +44,7 @@ const DesignServices = () =>{
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " +Style.weBuild}>
+            <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild}>
                 <Container>
                     <Row>
                         <Col>
@@ -90,7 +90,7 @@ const DesignServices = () =>{
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " + Style.buildStyle}>
+            {/* <div className={Style.commonPading + " " + Style.buildStyle}>
                 <Container>
                     <Row>
                         <Col>
@@ -98,13 +98,17 @@ const DesignServices = () =>{
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <div className={Style.buildContainer}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdDesignServices  /></span>
                                         <h3>UI/UX Design</h3>
                                         <p>We create human-centered design systems that balance aesthetics with functionality.</p>
-                                        <strong>Our UI/UX process includes:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdDesignServices  /></span>
+                                        <h3>Our UI/UX process includes:</h3>
                                         <ul>
                                             <li>User journey mapping</li>
                                             <li>Wireframing and prototyping</li>
@@ -115,11 +119,19 @@ const DesignServices = () =>{
                                         <p>interfaces that feel effortless, look modern, and convert better.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdWeb  /></span>
                                         <h3>Website Redesign</h3>
                                         <p>Outdated websites hurt trust and conversions — we fix that.</p>
-                                        <strong>Our redesigns focus on:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdWeb  /></span>
+                                        <h3>Our redesigns focus on:</h3>
                                         <ul>
                                             <li>Modernizing the visual layout</li>
                                             <li>Improving navigation and structure</li>
@@ -130,11 +142,19 @@ const DesignServices = () =>{
                                         <p>We retain what works and rebuild what doesn’t, transforming your site into a high-performing digital asset.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaRegIdBadge  /></span>
                                         <h3>Brand Identity & Logo Design</h3>
                                         <p>Your logo and branding are the first impression customers get — we make it impactful.</p>
-                                        <strong>Our branding services cover:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaRegIdBadge  /></span>
+                                        <h3>Our branding services cover:</h3>
                                         <ul>
                                             <li>Logo concepts and finalization</li>
                                             <li>Color palette engineering</li>
@@ -145,11 +165,19 @@ const DesignServices = () =>{
                                         <p>This ensures your brand looks consistent everywhere — online and offline.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaPaintBrush  /></span>
                                         <h3>Graphics & Illustrations</h3>
                                         <p>Custom-made visuals that capture attention and support your marketing goals.</p>
-                                        <strong>We design:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaPaintBrush  /></span>
+                                        <h3>We design:</h3>
                                         <ul>
                                             <li>Social media creatives</li>
                                             <li>Ad banners & hero images</li>
@@ -160,12 +188,19 @@ const DesignServices = () =>{
                                         <p>Each graphic is optimized for clarity, readability, and engagement.</p>
                                     </div>
                                 </div>
-
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaPlayCircle  /></span>
                                         <h3>Motion & Animation</h3>
                                         <p>Motion adds clarity, emotion, and modern appeal to your interfaces.</p>
-                                        <strong>We create:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaPlayCircle  /></span>
+                                        <h3>We create:</h3>
                                         <ul>
                                             <li>UI micro-interactions</li>
                                             <li>Logo animations</li>
@@ -177,25 +212,10 @@ const DesignServices = () =>{
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-        
+                        </Col>       
                     </Row>
                 </Container>
-            </div>
-            {/* <div className={Style.whoAreSec}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className={Style.box}>
-                                <h2 className={Style.title}>Our Design Approach</h2>
-                                <p>We blend creativity with usability — ensuring that every design not only looks great but drives interaction and results.</p>
-                                <p>We use the latest tools like Figma, Adobe XD, and After Effects to deliver pixel-perfect designs.</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-             */}
+            </div> */}
             <VisionComponent />
         </div>
     )

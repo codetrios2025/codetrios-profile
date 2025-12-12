@@ -5,9 +5,10 @@ import webImage from '../../assets/images/tech.webp';
 import { FiCheck } from "react-icons/fi";
 import VisionComponent from '../Pages/VisionCode';
 //icon
-import { MdSystemUpdateAlt, MdAutoMode, MdSpeed  } from "react-icons/md";
+import { MdSystemUpdateAlt , MdExtension , MdSpeed  } from "react-icons/md";
+import { FaRobot } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
-import { BiLayer } from "react-icons/bi";
+
 
 const TechnologySolutions = () =>{
 
@@ -93,7 +94,7 @@ const TechnologySolutions = () =>{
                     </Row>
                 </Container>
             </div> */}
-            <div className={Style.commonPading + " " + Style.weBuild}>
+            <div className={"boxHeight " + Style.commonPading + " " + Style.weBuild + " " + Style.techStyle}>
                 <Container>
                     <Row>
                         <Col>
@@ -101,13 +102,17 @@ const TechnologySolutions = () =>{
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <div className={Style.buildContainer}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdSystemUpdateAlt  /></span>
                                         <h3>Software Modernization</h3>
                                         <p>Legacy systems slow down productivity and limit innovation. We help transform outdated applications into modern, efficient, and cloud-ready platforms.</p>
-                                        <strong>Our modernization services include:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdSystemUpdateAlt  /></span>
+                                        <h3>Our modernization services include:</h3>
                                         <ul>
                                             <li> Rebuilding monolithic apps into modular architectures</li>
                                             <li> Migrating old codebases to modern frameworks</li>
@@ -118,11 +123,19 @@ const TechnologySolutions = () =>{
                                         <p>You get faster workflows, improved reliability, and better technology ROI — without disrupting your business operations.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Automation & AI Integration</h3>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><FaRobot  /></span>
+                                       <h3>Automation & AI Integration</h3>
                                         <p>Eliminate repetitive tasks and reduce operational costs with intelligent automation.</p>
-                                        <strong>We integrate automation and AI across your processes:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><FaRobot  /></span>
+                                       <h3>We integrate automation and AI across your processes:</h3>
                                         <ul>
                                             <li>Workflow automation for HR, finance, support, and operations</li>
                                             <li>AI-powered chatbots and customer support tools</li>
@@ -134,11 +147,19 @@ const TechnologySolutions = () =>{
                                         <p>The result: more productivity, fewer errors, and better decision-making.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>API Development & Integration</h3>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><TbApi  /></span>
+                                       <h3>API Development & Integration</h3>
                                         <p>A modern business thrives when its systems work together seamlessly. We build secure, reliable APIs and integrate third-party systems to create a connected ecosystem.</p>
-                                        <strong>Our API services include:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><TbApi  /></span>
+                                       <h3>Our API services include:</h3>
                                         <ul>
                                             <li>Custom REST & GraphQL API development</li>
                                             <li>Secure authentication (JWT, OAuth, API Keys)</li>
@@ -150,11 +171,19 @@ const TechnologySolutions = () =>{
                                         <p>This ensures smooth communication across all tools and enhances operational efficiency.</p>
                                     </div>
                                 </div>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <h3>Custom Framework Solutions</h3>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdExtension  /></span>
+                                       <h3>Custom Framework Solutions</h3>
                                         <p>We build custom software using modern, enterprise-level frameworks to ensure long-term scalability and strong performance.</p>
-                                        <strong>Our expertise covers:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdExtension  /></span>
+                                       <h3>Our expertise covers:</h3>
                                         <ul>
                                             <li>Node.js for fast, scalable backends</li>
                                             <li>React.js for high-performance frontend interfaces</li>
@@ -166,12 +195,19 @@ const TechnologySolutions = () =>{
                                         <p>Every solution is engineered for high uptime, security, and extensibility.</p>
                                     </div>
                                 </div>
-
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.buildElem}>
+                                <div className={Style.content}>
+                                    <div className={Style.flipFront}>
+                                        <span className={Style.icon}><MdSpeed  /></span>
                                         <h3>Performance Optimization</h3>
                                         <p>Slow systems lead to lost revenue — we fix that.</p>
-                                        <strong>We optimize applications at every level:</strong>
+                                    </div>
+                                    <div className={Style.flipBack}>
+                                        <span className={Style.icon}><MdSpeed  /></span>
+                                        <h3>We optimize applications at every level:</h3>
                                         <ul>
                                             <li>Code refactoring and cleanup</li>
                                             <li>Database query optimization</li>
@@ -184,8 +220,7 @@ const TechnologySolutions = () =>{
                                     </div>
                                 </div>
                             </div>
-                        </Col>
-        
+                        </Col>       
                     </Row>
                 </Container>
             </div>
