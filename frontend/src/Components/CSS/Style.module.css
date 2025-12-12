@@ -66,8 +66,10 @@
     display: flex;
     align-items: center;
 }
+.aboutSec figure img{width: 100%;}
 .aboutContent{
     display: flex;
+    padding-left: 30px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -90,9 +92,8 @@ p strong{font-weight: normal;}
     display: flex;
     align-items: flex-start;
     position: relative;
-    padding-left: 20px;
+    padding-left: 20px;position: relative;
 }
-.aboutContent ul li{padding: 0;}
 .aboutContent ol li::before {
   content: "✔";                 /* or "\2713" */
   position: absolute;
@@ -103,9 +104,9 @@ p strong{font-weight: normal;}
   transform: translateY(2px);  
 }
 .aboutContent ul li .icon, .aboutContent ol li .icon{color: #7C3AED;
-    position: relative;
+    position: absolute;
     top: 9px;
-    margin-right: 10px;}
+    left: 0;}
 .aboutContent br{display: none;}
 /* Services */
 .servicesSec{
@@ -260,13 +261,16 @@ position: relative;
 .weBuild{position: relative;background: #f7f7f7;}
 .weBuild h2{text-align: center;margin: 0 0 40px;}
 .weBuild .box{background: #fff;padding: 20px;margin-bottom: 20px;position: relative;color: #000;transition: all 0.2s linear;}
+.weBuild .col-md-4{display: flex;}
 .weBuild .box:before{position: absolute;bottom: 0;left: 0;width: 100%;height: 0px;content: "";z-index: 1;transition: all 0.2s linear;}
 .weBuild .box:hover{color: #fff;}
 .weBuild .box:hover:before{height: 100%;background: #7C3AED;}
 .weBuild .box *{position: relative;z-index: 1;}
+.weBuild .box ul{margin-left: 15px;}
+.weBuild .box ul li{list-style-type: disc;font-size: 14px;}
 .weBuild .box .icon{font-size: 35px;color: #7C3AED;}
 .weBuild .box:hover .icon, .weBuild .box:hover p span{color: #fff!important;}
-.weBuild .box h3{font-size: 20px;margin: 10px 140px 15px 0;}
+.weBuild .box h3{font-size: 20px;margin: 10px 0 15px 0;}
 .weBuild .box p span{background: transparent!important;color: #000!important;}
 .whyUs figure{height: 100%;background: #7C3AED;;}
 .whyUs .aboutContent{padding: 40px 0 30px 40px;height: 100%;display: flex;justify-content: center;}
@@ -276,7 +280,7 @@ position: relative;
 .whyUs ul li h4 .icon{top: 0;color: #000;}
 .whyUs ul li p{padding-left: 30px;margin: 0;}
 .whyUs ul li:last-child{margin: 0;}
-.visionSec{position: relative;background: #f7f7f7;padding: 60px 0;}
+.visionSec{position: relative;background: #e8e8e8;padding: 60px 0;}
 .visionSec .visionElem{display: flex;flex-direction: column;align-items: center;justify-content: center;}
 .visionSec .visionElem p{text-align: center;}
 .visionSec h4{color: #000;font-size: 24px;}
@@ -342,9 +346,38 @@ position: relative;
 .PortfolioPage .buttonFlex{display: none;}
 .boxContainer .boxElem .techLogo:hover{background: #fff;border-color: #7C3AED;}
 
-.servicesDetail .innerBanner{height: 300px;}
-.servicesDetail .innerBanner h1{color: #fff;font-size: 45px;margin-top: 100px;}
-.servicesDetail .innerBanner p{font-size: 20px;color: #fff;}
+.servicesDetail .innerBanner{height: 350px;}
+.innerBanner .content{height: 100%;display: flex;justify-content: center;flex-direction: column;max-width: 100%;}
+.servicesDetail .innerBanner div{height: 100%;}
+.servicesDetail .innerBanner h1{color: #fff;
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 20px;}
+.servicesDetail .innerBanner p{font-size: 16px;color: #fff;width: 500px;}
+.buildStyle .box h3{margin-right: 0;}
+.buildStyle .box ul{margin-left: 15px;margin-bottom: 10px;}
+.buildStyle .box ul li{list-style-type: disc;font-size: 14px;}
+.buildStyle .box strong{font-size: 18px;font-weight: 600;}
+.buildStyle .box p{margin: 0;}
+
+.buildStyle h2{text-align: center;}
+.buildContainer{max-width: 100%;margin: 0 auto;display: flex;flex-wrap: wrap;margin-top: 10px;align-items: flex-start;}
+.buildContainer .buildElem{border-radius: 5px;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;width: 50%;padding: 0 10px;margin-bottom: 20px;}
+/* .buildContainer .buildElem figure{width: 10%;} */
+.buildContainer .buildElem figure .icon{font-size: 100px;color: #7C3AED;}
+.buildContainer .buildElem .content{width: 100%;
+    /* background: url('../../assets/images/innerBanner_bg.webp') no-repeat; */
+        border-width: 2px 2px 5px 2px;
+    border-color: #d8d8d8;
+    border-style: solid;
+    padding: 20px;color: #000;border-radius: 10px;position: relative;overflow: hidden;background: #fff;}
+/* .buildContainer .buildElem .content::before{position: absolute;content: "";top: 0;left: 0;width: 100%;height: 100%;background: #0000001f;} */
+.buildContainer .buildElem .content *{position: relative;z-index: 9;}
+.buildContainer .buildElem h3{font-weight: 700;font-size: 24px;}
+.buildContainer .buildElem p{margin: 0;}
+.buildContainer .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
+.buildContainer .buildElem  ul li{list-style-type: disc;}
+.buildContainer .buildElem  strong{font-size: 18px;font-weight: 600;}
 
 @media (max-width: 1400px){
   .heroBanner .content h1{    font-size: 50px;line-height: 60px;}  

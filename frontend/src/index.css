@@ -23,6 +23,9 @@ input[type="number"]::-webkit-inner-spin-button{
   margin: 0;
 }
 .menuToggle, .closeBtn, .subToggle{display: none;}
+.boxHeight .col-md-4{display: flex;}
+
+
 @media (max-width: 1199px){
 body{font-size: 14px;}
 p{line-height: 24px;}
@@ -55,7 +58,49 @@ header .mainMenu ul li .subMenuMob li{width: 100%;margin: 0;}
 .servicesView .col-md-4{width: 50%;}
 }
 
+/* FULLSCREEN LOADER */
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+.loader-wrapper div{width: 300px;height: 70px;display: flex;
+    justify-content: center;position: relative;}
+/* Stack both images on top of each other (so icon hides cleanly) */
+.loader-wrapper img {
+  position: absolute;
+}
 
-@media (max-width: 767px){
-.servicesView .col-md-4{width: 100%;}
+/* ICON ANIMATION */
+.loader-icon {
+  width: 80px;
+  animation: moveIcon 2.5s ease-in-out forwards;
+  transition: opacity 0.4s ease;transition: all 0.2s linear;
+  left: 120px;
+}
+
+@keyframes moveIcon {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(0) scale(1) rotate(180deg); }
+  50%  { transform: translate(0) scale(0.5); }
+  75%  { transform: translate(0) scale(1) rotate(180deg); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+/* ICON HIDES COMPLETELY */
+.hide-icon {
+  opacity: 1 !important;
+  width: 30px;
+  left: 10px;
+}
+
+/* LOGO FADE IN */
+.loader-logo {
+  width: 260px;
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
