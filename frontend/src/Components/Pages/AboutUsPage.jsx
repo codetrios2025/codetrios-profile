@@ -121,24 +121,11 @@ const AboutUsPage = ()=>{
                         <Col md={7}>
                             <div className={Style.aboutContent}>
                                 <h2 className={Style.title}>{buildData?.whychooseus?.[1]?.titlename}</h2>
-                                <ul>
-                                    {buildData?.whychooseus?.[1]?.fields?.length > 0 &&
-                                        buildData.whychooseus[1].fields.map((item, index) =>{
-                                            return(
-                                                <li key={index}>
-                                                    <h4>
-                                                        {item?.iconfield === "RiLoopLeftLine" && <RiLoopLeftLine className={Style.icon} />}
-                                                        {item?.iconfield === "RiTeamLine" && <RiTeamLine className={Style.icon} />}
-                                                        {item?.iconfield === "BiTargetLock" && <BiTargetLock className={Style.icon} />}
-                                                        {item?.iconfield === "TbWorldBolt" && <TbWorldBolt className={Style.icon} />}
-                                                        {item?.title}</h4>
-                                                    {item?.description && parse(item?.description) }
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                               {/* <ul>
+                               <ul>
+                                    <li>
+                                        <h4><RiLoopLeftLine className={Style.icon} /> Full-Cycle Delivery</h4>
+                                        <p>We manage the project from initial planning and architecture, through development, launch, and **ongoing support.**</p>
+                                    </li>
                                     <li>
                                         <h4><RiTeamLine className={Style.icon} /> Single Team, Multiple Disciplines </h4>
                                         <p>No need to juggle different vendors for frontend, backend, SEO, and hosting. Get **complete end-to-end service** from one trusted partner. </p>
@@ -151,7 +138,7 @@ const AboutUsPage = ()=>{
                                         <h4><TbWorldBolt className={Style.icon} /> Future-Proof Solutions</h4>
                                         <p>Our commitment to clean code, modular design, and maintainability ensures your platform **scales effortlessly** with your business.</p>
                                     </li>
-                                </ul> */}
+                                </ul>
                             </div>
                         </Col>
                     </Row>

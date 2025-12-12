@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/E-commerceSolutions.webp';
-import { useParams } from "react-router-dom";
+import parse from 'html-react-parser';
 
 import { Link } from 'react-router-dom';
 import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
@@ -18,8 +18,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { fetchAllData } from '../../services/routes.services';
 
 const ServicesDetail = () =>{
-    // const { url } = useParams(); 
-    const [data, setData] = useState(null);
+    const [data, setData] = useState({});
      const url = window.location.pathname; 
  const parts = url.split("/").filter(Boolean);
  const lastPart = parts[parts.length - 1];
@@ -27,11 +26,10 @@ const ServicesDetail = () =>{
 console.log(parts[0]);
     useEffect(() => {
             fetchAllData(`servicedetails/deatils/${parts[0]}`).then(res =>{
-                setData(res.data);
-                console.log(data)
-                //findTitle = res.data.find(item => item.)
+                setData(res?.data?.servicedetails); 
             })
     }, []);
+    const detailItem = data?.[0];
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
@@ -46,7 +44,7 @@ console.log(parts[0]);
                         </Col>
                         <Col md={6}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>E-Commerce Solutions </h2>
+                                <h2 className={Style.title}>E-Commerce Solutions</h2>
                                 <p>Looking to take your business online? We build powerful, secure, and easy-to-manage e-commerce platforms that deliver seamless shopping experiences and drive conversions. Our goal is to help you sell more with smarter, faster, and mobile-friendly online stores. </p>
                                 <h4>Our e-commerce expertise includes: </h4>
                                 <ul>

@@ -42,6 +42,14 @@ import HomeRoute from "./Components/HomeRoute/HomeRoute";
  import ContactUsPage from "./Components/Pages/ContactUsPage";
  import TechnologiesPage from "./Components/Pages/Technologies";
  import PortfolioPage from "./Components/Pages/ProtfolioPage";
+//Services pages
+import EcommerceSolutions from "./Components/ServicesPages/E-CommerceSolutions";
+import WebApplications from "./Components/ServicesPages/WebApplications";
+import WebDevelopment from "./Components/ServicesPages/WebDevelopment";
+import DesignServices from "./Components/ServicesPages/DesignServices";
+import TechnologySolutions from "./Components/ServicesPages/TechnologySolutions";
+import DigitalStrategy from "./Components/ServicesPages/DigitalStrategy";
+import WebDesign from "./Components/ServicesPages/WebDesign";
 // import About from "./Frontend/pages/About";
 // import Contact from "./Frontend/pages/Contact";
 // Add more as needed...
@@ -60,7 +68,13 @@ function AppRoutes() {
             <Route index element={<HomeRoute />} />
             <Route path="about-us" element={<AboutUsPage />} />
             <Route path="services" element={<Services />} />
-            <Route path="/:link" element={<ServicesDetail />} />
+            <Route path="/e-commerce-solutions" element={<EcommerceSolutions />} />
+            <Route path="/web-applications" element={<WebApplications />} />
+            <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/design-services" element={<DesignServices />} />
+            <Route path="/digital-strategy" element={<DigitalStrategy />} />
+            <Route path="/website-design" element={<WebDesign />} />
+            <Route path="/technology-solutions" element={<TechnologySolutions />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />

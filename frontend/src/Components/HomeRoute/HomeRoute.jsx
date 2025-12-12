@@ -5,7 +5,7 @@ import AboutUs from "./About";
 import OurServices from "./Services";
 import OurPortfolio from "./Portfolio";
 import ContactUs from "./Contact";
-
+import Loader from "./Loader";
 //API
 import { fetchAllData } from "../../services/routes.services";
 
@@ -14,6 +14,12 @@ const HomeRoute = () =>{
     const [aboutData, setAboutData] = useState([]);
     const [servicesData, setServiceData] = useState([]);
     const [portfilioData, setPortfilioData] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
     const fetchData = async () =>{
         try{
             const bannerResponse = await fetchAllData('banners');
@@ -35,13 +41,19 @@ const HomeRoute = () =>{
     }, []);
     //console.log(servicesData)
     return(
-        <div>
-            <HomeBanner data={bannerData} />
-            <AboutUs data={aboutData} />
-            <OurServices data={servicesData} />
-            <OurPortfolio data={portfilioData} />
-            <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
-        </div>
+        <>
+        {loading ? 
+            <Loader /> 
+            :
+            <div>
+                <HomeBanner data={bannerData} />
+                <AboutUs data={aboutData} />
+                <OurServices data={servicesData} />
+                <OurPortfolio data={portfilioData} />
+                <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
+            </div>
+        }
+        </>
     )
 }
 

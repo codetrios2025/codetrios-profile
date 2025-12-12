@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Logo from '../../assets/images/logo.webp';
+import Logo from '../../assets/images/logo01.png';
 import Style from '../CSS/Header.module.css';
 import { Link, Outlet  } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-
+import { fetchAllData } from "../../services/routes.services";
 const Footer = () =>{
+    const [menuData, setMenuData] = useState([])
+    useEffect(()=>{
+        fetchAllData("header").then(res =>{
+            setMenuData(res?.data?.headers || []);
+        })
+      }, []);
     return(
         <footer>
             <Container>
@@ -22,12 +28,15 @@ const Footer = () =>{
                     <Col md={9}>
                         <div className={Style.footerLink}>
                             <ul>
-                                <li><Link to="" title="Home"><span>Home</span></Link></li>
-                                <li><Link to="" title="About"><span>About</span></Link></li>
-                                <li><Link to="" title="Services">Services</Link>
-                                </li>
-                                <li><Link to="" title="Portfolio"><span>Portfolio</span></Link></li>
-                                <li><Link to="" title="Contact Us"><span>Contact Us</span></Link></li>
+                                    {menuData && menuData.length > 0 &&
+                                        menuData.map((item, index)=>{
+                                            return(
+                                                <li key={index}>
+                                                    <Link to={item.linkUrl}><span>{item.linkText}</span> </Link>
+                                                </li>
+                                            )
+                                        })
+                                    }
                             </ul>
                             <div className={Style.address}>
                                 <p>
