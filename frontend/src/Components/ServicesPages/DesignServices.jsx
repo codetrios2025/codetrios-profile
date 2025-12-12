@@ -36,7 +36,7 @@ const DesignServices = () =>{
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>Design Services </h2>
+                                <h2 className={Style.title}>Creative Graphic Design Services – Branding & Visual Identity Experts</h2>
                                 <p>Design is the foundation of your brand’s digital presence — and at CodeTrios, we ensure every visual element reflects quality, clarity, and purpose. Our creative team combines strategy, aesthetics, and usability to craft designs that don’t just look beautiful, but also solve problems, guide user behavior, and bring your brand to life.</p>
                                 <p>Whether you’re building a new identity, refreshing an old one, or designing a full digital experience, we help you stand out with compelling visuals that connect with your audience and strengthen your brand.</p>
                             </div>

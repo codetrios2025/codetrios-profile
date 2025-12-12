@@ -23,7 +23,7 @@ const OurServices = ({ data }) =>{
                 <Row>
                     <Col>
                         <h2 className={Style.title}>Our Services</h2>
-                        <p className={Style.subContent}>At CodeTrio, we deliver end-to-end digital solutions designed to help your business thrive online. From full-stack development and API integrations to responsive design and performance optimization — we handle everything from concept to deployment, ensuring your digital presence is modern, scalable, and future-ready. </p>
+                        <p className={Style.subContent}>At CodeTrios, we deliver end-to-end digital solutions designed to help your business thrive online. From full-stack development and API integrations to responsive design and performance optimization — we handle everything from concept to deployment, ensuring your digital presence is modern, scalable, and future-ready. </p>
                     </Col>
                 </Row>
                 <Row>

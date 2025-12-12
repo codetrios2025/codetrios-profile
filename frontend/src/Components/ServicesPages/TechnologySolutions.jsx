@@ -20,7 +20,7 @@ const TechnologySolutions = () =>{
                         <Col>
                             <div className={Style.content}>
                                 <h1>Technology Solutions</h1>
-                                <p>We help businesses adopt cutting-edge technologies and modern frameworks to streamline workflows and boost performance. Whether it’s automation, AI integration, or custom software, CodeTrio ensures your tech stack is built for the future. .</p>
+                                <p>We help businesses adopt cutting-edge technologies and modern frameworks to streamline workflows and boost performance. Whether it’s automation, AI integration, or custom software, CodeTrios ensures your tech stack is built for the future. .</p>
                             </div>
                         </Col>
                     </Row>
@@ -36,7 +36,7 @@ const TechnologySolutions = () =>{
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>Technology Solutions </h2>
+                                <h2 className={Style.title}>Custom Technology Solutions – Automation & Workflow Optimization</h2>
                                 <p>Technology is evolving faster than ever — and businesses that adapt early gain a massive competitive advantage. At CodeTrios, we help companies modernize, automate, and scale their operations using powerful, future-ready technologies. Whether you need system upgrades, custom applications, intelligent automation, or architecture planning, we deliver solutions tailored to your exact workflows and growth goals.</p>
                                 <h4>Our focus is simple:</h4>
                                 <ul>

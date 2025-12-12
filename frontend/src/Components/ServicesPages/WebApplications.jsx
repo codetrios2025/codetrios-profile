@@ -36,7 +36,7 @@ const WebApplications = () =>{
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>Web Applications </h2>
+                                <h2 className={Style.title}>Mobile App Development Services – Android & iOS App Experts</h2>
                                 <p>We build powerful, scalable, and secure web applications that streamline your operations and elevate user experience. Whether you need internal tools, customer portals, or enterprise-level platforms, our solutions are tailored to your business goals and optimized for long-term growth. Accessible from any device — fast, intuitive, and engineered for performance.</p>
                             </div>
                         </Col>

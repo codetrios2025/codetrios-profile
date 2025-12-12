@@ -53,7 +53,7 @@ console.log(parts[0]);
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>E-Commerce Solutions</h2>
+                                <h2 className={Style.title}> E-Commerce Development Services – Complete Online Store Setup & Growth</h2>
                                 <p>Taking your business online requires more than just a website — it requires a strategic, high-performance e-commerce ecosystem that enhances user experience, streamlines operations, and boosts sales. At CodeTrios, we build robust, secure, and scalable e-commerce solutions tailored to your business model, product type, and customer behavior.</p>
                                 <p>Whether you're launching a new store or upgrading an existing one, our focus is to deliver an online shopping experience that is fast, intuitive, and optimized for conversions. From custom storefront designs to advanced integrations, we ensure your store performs smoothly across all devices and touchpoints.</p>
                             </div>

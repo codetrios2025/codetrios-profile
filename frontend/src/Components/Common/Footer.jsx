@@ -53,7 +53,7 @@ const Footer = () =>{
                 </Row>
             </Container>
             <div className={Style.copyRight}>
-                <p>© 2025 Codetrio. All rights reserved.</p>
+                <p>© 2025 Codetrios. All rights reserved.</p>
             </div>
         </footer>
     )

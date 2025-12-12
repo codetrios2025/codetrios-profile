@@ -36,6 +36,7 @@ const DigitalStrategy = () =>{
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
+                                <h2 className={Style.title}>Data-Driven Digital Strategy Services – Grow Your Online Presence</h2>
                                 <p>Digital success doesn’t happen by accident — it happens through a clear, data-driven strategy. At CodeTrios, we help businesses navigate the digital landscape with actionable insights, structured plans, and performance-focused frameworks. From understanding your audience to optimizing every touchpoint, our strategies ensure your brand shows up consistently and effectively across web, search, social, and paid marketing channels.</p>
                                 <p>Whether you’re launching a new brand, scaling an existing one, or refining your marketing funnel, we build custom digital roadmaps that maximize visibility, engagement, and conversions.</p>
                             </div>

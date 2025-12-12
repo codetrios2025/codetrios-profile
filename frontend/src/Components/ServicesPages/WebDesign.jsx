@@ -36,7 +36,7 @@ const WebDesign = () =>{
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>Modern, responsive websites that convert visitors into customers.</h2>
+                                <h2 className={Style.title}>Professional Website Design Services – Modern & Responsive Business Websites</h2>
                                 <p>Modern, responsive websites that convert visitors into customers. We design visually appealing, user-focused websites that reflect your brand identity and deliver seamless experiences across all devices. Our layouts are created with strategic UX, clear navigation, and strong visual hierarchy to increase engagement and guide users toward actions like inquiries, bookings, or purchases. Every design balances aesthetics with performance, ensuring your website is fast, accessible, and aligned with your business goals.</p>
                             </div>
                         </Col>
