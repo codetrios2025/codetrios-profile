@@ -36,10 +36,7 @@ app.use((req, res, next) => {
   res.setHeader("Cross-Origin-Opener-Policy", "same-origin-allow-popups");
   next();
 });
-app.use(
-  "/uploads",
-  express.static(path.join(process.cwd(), "uploads"))
-);
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 // Example route
 app.get("/", (req, res) => {
   res.json({ message: "Secure API working ✅" });
@@ -110,6 +107,7 @@ app.use("/api/v1/video", videoRoutes);
 app.use("/api/v1/projectservices", projectservicesRoutes);
 app.use("/api/v1/iconservices", iconservicesRoutes);
 app.use("/api/v1/contactus", contactusRoutes);
+app.use("/api/v1/contact", contactusRoutes);
 app.use("/api/v1/servicedetails", serviceDetailsRoutes);
 app.use("/api/v1/assurance", assuranceoverviewRoutes);
 app.use("/api/v1/customers", customersRoutes);

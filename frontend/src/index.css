@@ -75,6 +75,15 @@ header .mainMenu ul li .subMenuMob li{width: 100%;margin: 0;}
   position: absolute;
 }
 
+@media (max-width: 767px){
+.servicesView .col-md-4{width: 100%;}
+}
+.error-text {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
 /* ICON ANIMATION */
 .loader-icon {
   width: 80px;
@@ -104,3 +113,4 @@ header .mainMenu ul li .subMenuMob li{width: 100%;margin: 0;}
   transition: opacity 0.5s ease;
   opacity: 0;
 }
+
