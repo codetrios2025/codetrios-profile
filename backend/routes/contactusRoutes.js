@@ -4,7 +4,7 @@ const contactusController = require("../controllers/contactusController");
 const { authMiddleware } = require("../middleware/authMiddleware");
 
 router.get("/", authMiddleware, contactusController.getAllAddress);
-router.post("/", contactusController.createAddress);
+router.post("/", contactusController.submitContact);
 router.get(
   "/get-csrf-token",
   contactusController.csrfProtection,
