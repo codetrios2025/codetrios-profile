@@ -14,7 +14,24 @@ dotenv.config();
 const app = express();
 
 // Security Middlewares
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      useDefaults: true,
+      directives: {
+        "script-src": [
+          "'self'",
+          "https://www.gstatic.com",
+          "https://www.google.com",
+        ],
+        "frame-src": ["'self'", "https://www.google.com"],
+      },
+    },
+    referrerPolicy: {
+      policy: "strict-origin-when-cross-origin",
+    },
+  })
+);
 
 //app.use(xss());
 app.use(cors());
@@ -38,9 +55,9 @@ app.use((req, res, next) => {
 });
 app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 // Example route
-app.get("/", (req, res) => {
-  res.json({ message: "Secure API working ✅" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "Secure API working ✅" });
+// });
 
 // Route Imports
 const user = require("./routes/userRoutes");
@@ -125,8 +142,16 @@ app.use("/api/v1/fooddownloadtypes", fooddownloadType);
 app.use("/api/v1/search", globalSearchRoutes);
 
 // rest API
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome to TQcert app</h1>");
+// app.get("/", (req, res) => {
+//   res.send("<h1>Welcome to TQcert app</h1>");
+// });
+
+// -------- Serve React Build --------
+//const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
