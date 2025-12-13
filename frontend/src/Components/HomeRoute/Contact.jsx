@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from "../CSS/Style.module.css";
-import webImage from "../../assets/images/web-design.webp";
+import contactImage from "../../assets/images/contact_img.webp";
 
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
@@ -107,112 +107,71 @@ const ContactUs = () => {
         <Row>
           <Col>
             <div className={Style.contactFomr}>
-              <h2 className={Style.title}>Get in touch</h2>
-              <div className={Style.fomrStyle}>
-                <div className={Style.inputFlex}>
-                  <div className={Style.group}>
-                    <label>First Name</label>
-                    <input
-                      type="text"
-                      name="firstname"
-                      value={formData.firstname}
-                      onChange={handleChange}
-                    />
-                    {errors.firstname && (
-                      <p className="error-text">{errors.firstname}</p>
-                    )}
+              <div className={Style.contactImg}>
+                <img src={contactImage} />
+              </div>
+              <div className={Style.detail}>
+                <h2 className={Style.title}>Get in touch</h2>
+                <div className={Style.fomrStyle}>
+                  <div className={Style.inputFlex}>
+                    <div className={Style.group}>
+                      <label>First Name</label>
+                      <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} />
+                      {errors.firstname && ( <p className="error-text">{errors.firstname}</p>)}
+                    </div>
+                    <div className={Style.group}>
+                      <label>Last Name</label>
+                      <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} />
+                      {errors.lastname && ( <p className="error-text">{errors.lastname}</p>)}
+                    </div>
                   </div>
-                  <div className={Style.group}>
-                    <label>Last Name</label>
-                    <input
-                      type="text"
-                      name="lastname"
-                      value={formData.lastname}
-                      onChange={handleChange}
-                    />
-                    {errors.lastname && (
-                      <p className="error-text">{errors.lastname}</p>
-                    )}
+                  <div className={Style.inputFlex}>
+                    <div className={Style.group}>
+                      <label>Company</label>
+                      <input type="text" name="company" value={formData.company} onChange={handleChange} />
+                      {errors.company && ( <p className="error-text">{errors.company}</p>)}
+                    </div>
+                    <div className={Style.group}>
+                      <label>Mobile</label>
+                      <input type="number" name="mobile" value={formData.mobile} onChange={handleChange} />
+                      {errors.mobile && ( <p className="error-text">{errors.mobile}</p>)}
+                    </div>
                   </div>
-                </div>
-                <div className={Style.inputFlex}>
-                  <div className={Style.group}>
-                    <label>Company</label>
-                    <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                    />
-                    {errors.company && (
-                      <p className="error-text">{errors.company}</p>
-                    )}
+                  <div className={Style.inputFlex}>
+                    <div className={Style.group}>
+                      <label>Email</label>
+                      <input type="email" name="email" value={formData.email} onChange={handleChange} />
+                      {errors.email && ( <p className="error-text">{errors.email}</p>)}
+                    </div>
                   </div>
-                  <div className={Style.group}>
-                    <label>Mobile</label>
-                    <input
-                      type="number"
-                      name="mobile"
-                      value={formData.mobile}
-                      onChange={handleChange}
-                    />
-                    {errors.mobile && (
-                      <p className="error-text">{errors.mobile}</p>
-                    )}
+                  <div className={Style.inputFlex}>
+                    <div className={Style.group}>
+                      <label>Your Requirement?</label>
+                      <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
+                      {errors.message && ( <p className="error-text">{errors.message}</p>)}
+                    </div>
                   </div>
-                </div>
-                <div className={Style.inputFlex}>
-                  <div className={Style.group}>
-                    <label>Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                    />
-                    {errors.email && (
-                      <p className="error-text">{errors.email}</p>
-                    )}
+                  <div className={Style.inputFlex}>
+                    <div className={Style.group}>
+                      {/* <div
+                        className="g-recaptcha"
+                        data-sitekey="6Ldc9-YrAAAAAPlEy99RO6N06uFh6LRqjJ76ggk4"
+                      ></div> */}
+                      <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey="6Ldc9-YrAAAAAPlEy99RO6N06uFh6LRqjJ76ggk4"
+                        onChange={(token) => setCaptchaToken(token)}
+                      />
+                      {errors.captcha && (
+                        <p className="error-text">{errors.captcha}</p>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <div className={Style.inputFlex}>
-                  <div className={Style.group}>
-                    <label>Your Requirement?</label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                    ></textarea>
-                    {errors.message && (
-                      <p className="error-text">{errors.message}</p>
-                    )}
+                  <div className={Style.buttonFlex}>
+                    <button type="button" className={Style.btnStyle} onClick={handleSubmit} disabled={loading} >
+                      {loading ? "Submitting..." : "Submit"}
+                    </button>
                   </div>
-                </div>
-                <div className={Style.inputFlex}>
-                  <div className={Style.group}>
-                    {/* <div
-                      className="g-recaptcha"
-                      data-sitekey="6Ldc9-YrAAAAAPlEy99RO6N06uFh6LRqjJ76ggk4"
-                    ></div> */}
-                    <ReCAPTCHA
-                      ref={recaptchaRef}
-                      sitekey="6Ldc9-YrAAAAAPlEy99RO6N06uFh6LRqjJ76ggk4"
-                      onChange={(token) => setCaptchaToken(token)}
-                    />
-                    {errors.captcha && (
-                      <p className="error-text">{errors.captcha}</p>
-                    )}
-                  </div>
-                </div>
-                <div className={Style.buttonFlex}>
-                  <button
-                    type="button"
-                    className={Style.btnStyle}
-                    onClick={handleSubmit}
-                    disabled={loading}
-                  >
-                    {loading ? "Submitting..." : "Submit"}
-                  </button>
                 </div>
               </div>
             </div>

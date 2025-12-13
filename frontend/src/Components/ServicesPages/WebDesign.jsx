@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
-import webImage from '../../assets/images/web-designs.webp';
+import webImage from '../../assets/images/website-design.webp';
 import { FiCheck } from "react-icons/fi";
 import VisionComponent from '../Pages/VisionCode';
 //icon

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
-import webImage from '../../assets/images/ecomm.webp';
+import webImage from '../../assets/images/e-Commerce_img.webp';
 import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { FiCheck } from "react-icons/fi";

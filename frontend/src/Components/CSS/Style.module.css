@@ -141,7 +141,7 @@ p strong{font-weight: normal;}
 .servicesBox .content .spanICon{
     width: 50px;
     height: 50px;
-    font-size: 20px;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,6 +224,7 @@ position: relative;
     margin: 0 auto;
     color: #fff;
 }
+.contactSec .contactImg{display: none;}
 .fomrStyle{position: relative;margin-top: 30px;}
 .inputFlex{
     display: flex;
@@ -288,11 +289,24 @@ position: relative;
 
 
 .formPop{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #0000004b;z-index: 9999;display: flex;align-items: center;justify-content: center;}
-.formElem{width: 500px;background: #fff;max-width: 95%;position: relative;height: 95%;overflow: auto;padding: 30px 15px 20px;}
+.formElem{width: 800px;background: #fff;max-width: 95%;position: relative;height: 95%;overflow: auto;padding: 30px 15px 20px;}
+.formElem .contactFomr{display: flex;flex-wrap: wrap;}
+.formElem .contactFomr .contactImg{width: 50%;}
+.formElem .contactFomr .contactImg img{width: 100%;height: 100%;object-fit: cover;}
+.formElem .contactFomr .detail{width: 50%;}
+.formElem .contactFomr .inputFlex{margin: 0;}
+.formElem .contactFomr h2{padding-left: 15px;}
+.formElem{padding: 15px 0;}
+.formElem .contactFomr .inputFlex .group{position: relative;}
+.formElem .contactFomr .inputFlex .group p{    position: absolute;
+    left: 15px;
+    bottom: -23px;
+    margin: 0;
+    font-size: 12px;}
 .formPop .commonPading{padding: 0;}
 .formPop h2.title{font-weight: 400;font-size: 30px;}
 .formPop .inputFlex label{color:#4F4C4C;font-weight: 100;}
-.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 100;}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 400;}
 .formPop .inputFlex{flex-direction: column;}
 .formPop .inputFlex .group{margin-bottom: 20px;}
 .formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;}

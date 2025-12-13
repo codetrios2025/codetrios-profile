@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
-import webImage from '../../assets/images/web-design.webp';
+import webImage from '../../assets/images/about_services.webp';
 
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
