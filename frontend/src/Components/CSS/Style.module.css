@@ -58,7 +58,8 @@
 .queryForm .group input{max-width: 240px;margin: 0 10px 0 10px;font-size: 16px;border: none;padding: 10px 0;}
 .queryForm .group input:focus{outline: none;}
 .queryForm button{border: none;background: #7C3AED;color: #fff;font-weight: 500;font-size: 16px;padding: 15px 30px;border-radius: 30px;}
-.heroBanner .btnStyle{display: none;}
+.heroBanner .btnStyle{display: block;}
+.heroBanner form{display: none;}
 /* About */
 .aboutSec{position: relative;}
 .aboutSec figure{
@@ -506,6 +507,10 @@ background: #f0f0f0;
 .buildElem .content{height: 350px;}
 .buildElem h3{font-size: 18px;}
 .techStyle .buildElem{height: auto;}
+.inputFlex{margin: 0;}
+.inputFlex .group{padding: 0;}
+.contactFomr h2{margin-bottom: 20px;}
+.formElem .contactFomr h2{padding: 0;}
 }
 
 @media (max-width: 580px){
