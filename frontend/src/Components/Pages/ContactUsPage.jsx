@@ -17,9 +17,6 @@ const ContactUsPage = () => {
   return (
     <>
       <div className={Style.innerPage + " " + Style.contactPage}>
-        <div className={Style.innerBanner}>
-          <img src={ServicesBanner} />
-        </div>
         <div className={Style.contactSec}>
           <Container>
             <Row>

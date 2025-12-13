@@ -34,7 +34,7 @@ const VisionComponent = ()=>{
         </div>
         {isOPen && 
             <div className={Style.formPop}>
-                <div className={Style.formElem}>
+                <div className={'popStyle ' + Style.formElem}>
                     <button type='button' onClick={formCloseHandler} className={Style.closeBtn}><IoCloseSharp /></button>
                     <ContactUs />
                 </div>

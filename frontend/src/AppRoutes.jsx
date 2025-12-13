@@ -50,6 +50,7 @@ import DesignServices from "./Components/ServicesPages/DesignServices";
 import TechnologySolutions from "./Components/ServicesPages/TechnologySolutions";
 import DigitalStrategy from "./Components/ServicesPages/DigitalStrategy";
 import WebDesign from "./Components/ServicesPages/WebDesign";
+import ThankyouPage from "./Components/Pages/ThankYou";
 // import About from "./Frontend/pages/About";
 // import Contact from "./Frontend/pages/Contact";
 // Add more as needed...
@@ -78,6 +79,7 @@ function AppRoutes() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />
+            <Route path="thank-you" element={<ThankyouPage />} />
           </Route>
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */} 

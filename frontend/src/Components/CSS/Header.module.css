@@ -25,7 +25,7 @@ header{position: fixed;top: 0;left: 0;width: 100%;z-index: 999;background: #fff;
 }
 .head ul li:hover .subMenu{
     height: auto;
-    top: 74px;
+    top: 71px;
     display: flex;
     flex-direction: column;
 
@@ -60,7 +60,7 @@ footer{padding: 30px 0 0;}
 .info p{margin: 30px 0 0 0;}
 .footerLink ul{display: flex;border-bottom: 1px solid #c4c4c4;padding-bottom: 25px;margin-bottom: 30px;justify-content: space-between;}
 .footerLink ul li{margin-right: 50px;}
-.footerLink ul li a{font-size: 18px;color: #000;}
+.footerLink ul li a{font-size: 16px;color: #000;}
 .footerLink ul li a:hover{color: #7C3AED;}
 .footerLink{display: flex;flex-direction: column;justify-content: center;}
 .address{display: flex;justify-content: space-between;flex-wrap: wrap;}
@@ -74,24 +74,29 @@ footer{padding: 30px 0 0;}
 
 @media (max-width:1200px){
     .head ul li .subMenu{top: -200px;}
+    .footerLink ul li a{font-size: 14px;}
 }
 
 @media (max-width:992px){
 .info{padding-right: 0;}    
-.info img{width: 100px;}    
+.info img{width: 150px;}    
+.footerLink ul li{margin-right: 20px;}
 .footerLink ul li a{font-size: 14px;}
 .address{flex-direction: column;}
 .address p{width: 100%!important;}
 .info p{margin: 15px 0 0 0;}
 .footerLink ul{padding-bottom: 15px;margin-bottom: 20px;}
+.info{padding-right: 0;}
+.head{padding: 0;}
 }
 
 @media (max-width: 767px){
-.info{text-align: center;margin-bottom: 30px;}
+.info{text-align: center;margin-bottom: 15px;}
 }
 
 @media (max-width: 580px){
 .footerLink ul{flex-wrap: wrap;justify-content: center;}
 .footerLink ul li{margin: 0 20px 10px;}
 .footerLink ul{padding-bottom: 15px;margin-bottom: 20px;}
+.footerLink ul li{margin: 0 8px 7px;}
 }

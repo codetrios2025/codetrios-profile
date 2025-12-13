@@ -12,7 +12,7 @@ const AboutUs = ({data}) =>{
     const aboutContent = data?.whoweare?.[0];
     //console.log(aboutContent)
     return(
-        <div className={Style.commonPading + " " + Style.aboutSec}>
+        <div className={"aboutCls " + Style.commonPading + " " + Style.aboutSec}>
             <Container>
                 <Row>
                     <Col md={6}>

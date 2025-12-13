@@ -54,7 +54,7 @@
 .heroBanner .content p{color: #fff;}
 .heroBanner .content p span{display: block;}
 .queryForm{padding: 10px 30px;background: #fff;border-radius: 40px;display: flex;justify-content: space-around;margin-top: 50px;}
-.queryForm .group{display: flex;align-items: center;}
+.queryForm .group{display: flex;align-items: center;position: relative;}
 .queryForm .group input{max-width: 240px;margin: 0 10px 0 10px;font-size: 16px;border: none;padding: 10px 0;}
 .queryForm .group input:focus{outline: none;}
 .queryForm button{border: none;background: #7C3AED;color: #fff;font-weight: 500;font-size: 16px;padding: 15px 30px;border-radius: 30px;}
@@ -216,7 +216,7 @@ position: relative;
     margin: 0;
 }
 .projectBox h5{color: #000;margin: 10px 0;font-weight: 600;}
-
+.contactPage{overflow: hidden;}
 /* Contact Section */
 .contactSec .contactFomr{
     width: 850px;
@@ -230,7 +230,8 @@ position: relative;
     display: flex;
     margin: 0 -15px;
 }
-.inputFlex .group{flex: 1;padding: 0 15px;margin-bottom: 30px;display: flex;flex-direction: column;}
+.inputFlex .group{flex: 1;padding: 0 15px;margin-bottom: 30px;display: flex;flex-direction: column;position: relative;}
+.inputFlex .group p{margin: 0;position: absolute;bottom: -22px;font-size: 12px;}
 .inputFlex .group input, .inputFlex .group textarea{
     width: 100%;
     background: transparent;
@@ -283,17 +284,17 @@ position: relative;
 .whyUs ul li p{padding-left: 30px;margin: 0;}
 .whyUs ul li:last-child{margin: 0;}
 .visionSec{position: relative;background: #e8e8e8;padding: 60px 0;}
-.visionSec .visionElem{display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.visionSec .visionElem{display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
 .visionSec .visionElem p{text-align: center;}
 .visionSec h4{color: #000;font-size: 24px;}
 
 
-.formPop{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #0000004b;z-index: 9999;display: flex;align-items: center;justify-content: center;}
+.formPop{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #000000a1;z-index: 9999;display: flex;align-items: center;justify-content: center;}
 .formElem{width: 800px;background: #fff;max-width: 95%;position: relative;height: 95%;overflow: auto;padding: 30px 15px 20px;}
 .formElem .contactFomr{display: flex;flex-wrap: wrap;}
 .formElem .contactFomr .contactImg{width: 50%;}
 .formElem .contactFomr .contactImg img{width: 100%;height: 100%;object-fit: cover;}
-.formElem .contactFomr .detail{width: 50%;}
+.formElem .contactFomr .detail{width: 50%;margin: 0;}
 .formElem .contactFomr .inputFlex{margin: 0;}
 .formElem .contactFomr h2{padding-left: 15px;}
 .formElem{padding: 15px 0;}
@@ -371,7 +372,7 @@ position: relative;
     font-size: 70px;
     font-weight: 100;
     margin-bottom: 20px;}
-.servicesDetail .innerBanner p{font-size: 16px;color: #fff;width: 500px;}
+.servicesDetail .innerBanner p{font-size: 16px;color: #fff;width: 500px;max-width: 100%;}
 .buildStyle .box h3{margin-right: 0;}
 .buildStyle .box ul{margin-left: 15px;margin-bottom: 10px;}
 .buildStyle .box ul li{list-style-type: disc;font-size: 14px;}
@@ -407,7 +408,13 @@ position: relative;
 .buildContainer .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
 .buildContainer .buildElem  ul li{list-style-type: disc;}
 .buildContainer .buildElem  strong{font-size: 18px;font-weight: 600;} */
-
+.thanksPage{position: relative;text-align: center;padding: 15px;height: 500px;display: flex;align-items: center;flex-direction: column;justify-content: center;
+background: #f0f0f0;
+}
+.thanksPage h1{font-weight: 700;color: #7C3AED;}
+.thanksPage a{color: #000;text-decoration: underline;}
+.thanksPage p{font-size: 16px;}
+.contactPage{margin-top: 74px;}
 @media (max-width: 1400px){
   .heroBanner .content h1{    font-size: 50px;line-height: 60px;}  
   .heroBanner .content{    justify-content: flex-start;}
@@ -428,28 +435,89 @@ position: relative;
 .btnStyle{padding: 15px 20px;}
 .inputFlex .group input, .inputFlex .group textarea{font-size: 16px;}
 .commonPading{padding: 60px 0;}
+.innerBanner{height: 300px;}
+.contactSec .leftArea h2{margin-bottom: 30px;}
+.innerBanner{margin-top: 71px;}
+.contactPage{margin-top: 71px;}
 }
 
 @media (max-width: 992px){
+.heroBanner{margin-top: 65px;}
 .heroBanner img{    width: 100%;height: 100%;object-fit: cover;}
 .projectBox h5{margin: 10px 0 0;}
+.aboutContent{padding: 0;}
 .aboutContent ul li{line-height: 24px;margin-bottom: 6px;}
 .title{font-size: 28px;}
+.innerBanner{margin-top: 65px;height: 230px;}
+.formElem{width: 500px;max-width: 94%;}
+.formElem .contactFomr .contactImg{display: none;}
+.formElem .contactFomr .detail{width: 100%;}
+.fomrStyle{margin: 0;}
+.aboutSec figure{display: block;}
+.whyUs figure img{height: 100%;object-fit: cover;}
+.whyUs .aboutContent{padding: 40px 0 30px 0;}
+.whyUs ul li h4{font-size: 18px;}
+.whyUs h2{margin-bottom: 20px;}
+.boxContainer h4{font-size: 30px;}
+.boxContainer .boxElem{padding: 30px 20px;}
+.boxContainer .boxElem .leftArea{width: 100%;padding: 0!important;}
+.boxContainer .boxElem .rightArea{width: 100%;}
+.boxContainer:nth-child(even) .boxElem .leftArea{order: 1;}    
+.boxContainer:nth-child(even) .boxElem .rightArea{order: 2;}  
+.areInfo{padding: 50px 0 0 0;}
+.servicesDetail .innerBanner{position: relative;}
+.servicesDetail .innerBanner:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #00000038;content: "";}
+.servicesDetail .innerBanner .content{position: relative;z-index: 9;}
+.servicesDetail .innerBanner{height: auto;padding: 40px 0;}
+.innerBanner .content  h1{font-size: 40px;}
+.innerBanner .content p{font-size: 14px;line-height: 24px;}
+.buildElem h3{font-size: 22px;}
+.contactPage{margin-top: 65px;}
 }
 
 @media (max-width: 767px){
+    .contactSec .leftArea::before{position: absolute;content: '';top: 0;width: 100%;height: 100%;right: -100%;background: #7C3AED;}
+.boxContainer h4{font-size: 26px;margin-top: 30px;}   
+.boxContainer h5{font-size: 22px;}
+.boxContainer .boxElem{padding: 15px;margin-top: 15px;} 
+.boxContainer .boxElem .techLogo h6{font-size: 14px;}
+.whyUs ul li{margin-bottom: 15px;}    
+.whyUs ul li h4{font-size: 16px;}
+    .aboutContent ul, .aboutContent ol{margin: 0;}
+.visionSec{padding: 40px 0}
+.visionSec br{display: none;}
+.whyUs figure{height: 280px;margin-top: 40px;}    
+.whyUs .aboutContent{padding: 0 0 40px 0;margin: 20px 0 0 ;}
 .heroBanner .content h1{    font-size: 30px;line-height: 40px;}  
-.heroBanner{height: 600px;}
+.heroBanner{height: 440px;}
 .heroBanner .content h6{font-size: 14px;}
 .heroBanner form{display: none;}
-.aboutContent{margin-top: 30px;}
-.title{font-size: 24px;}
+.aboutContent{margin-top: 0;}
+.title{font-size: 30px;}
 .innerBanner{height: 200px;}
 .commonPading{padding: 50px 0;}
 .heroBanner .btnStyle{display: block;}
+.servicesBox .content p{    display: block;}
+.servicesBox .content .spanICon{font-size: 20px;left: 15px;width: 45px;height: 45px;}
+.contactPage{background: #f7f7f7;}
+.areInfo{padding: 30px 0;}
+.weBuild .box h3{font-size: 18px;margin: 5px 0 10px 0;}
+.visionSec h4{font-size: 20px;}
+.buildElem .content{height: 350px;}
+.buildElem h3{font-size: 18px;}
+.techStyle .buildElem{height: auto;}
 }
 
 @media (max-width: 580px){
+.boxContainer h4{font-size: 20px;margin-top: 30px;}   
+.boxContainer h5{font-size: 18px;margin-bottom: 15px;}  
+.heroBanner .content h1{font-size: 24px;
+        line-height: 33px;
+        padding: 0;margin-top: 0;}    
+.heroBanner .content p span{display: inline-block;}
 .inputFlex{flex-direction: column;}
 .inputFlex .group{margin-bottom: 20px;}
+.title{font-size: 24px;}
+.boxContainer .boxElem .techLogo{width: 33%;}
+.techStyle .buildElem .content{height: 400px;}
 }

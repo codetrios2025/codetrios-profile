@@ -28,7 +28,7 @@ const HomeBanner = ({data}) =>{
                             <div className={Style.detail}>
                                 <h6>Your Partner for Digital Growth Solutions</h6>
                                 <h1>{banner?.title}</h1>
-                                <p>Code Trio delivers scalable, fast and elegant websites and <span>applications tailored to your business goals.</span></p>
+                                <p>CodeTrios delivers scalable, fast and elegant websites and <span>applications tailored to your business goals.</span></p>
                                 <form>
                                     <div className={Style.queryForm}>
                                         <div className={Style.group}>

@@ -26,7 +26,7 @@ const WebDevelopment = () =>{
                     </Row>
                 </Container>
             </div>
-            <div className={Style.commonPading + " " + Style.aboutSec}>
+            <div className={'servicesCol ' + Style.commonPading + " " + Style.aboutSec}>
                 <Container>
                     <Row>
                         <Col md={5}>
