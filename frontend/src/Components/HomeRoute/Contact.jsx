@@ -57,49 +57,50 @@ const ContactUs = () => {
     return Object.keys(temp).length === 0;
   };
 
-  // Submit form
-  // const handleSubmit = async () => {
-  //   if (!validate()) return;
+  //Submit form
+  const handleSubmit = async () => {
+    if (!validate()) return;
 
-  //   setLoading(true);
-  //   setApiMessage("");
+    setLoading(true);
+    setApiMessage("");
 
-  //   try {
-  //     const res = await axios.post(
-  //       `${constants.API_BASE_URL}contact`, // YOUR BACKEND API
-  //       {
-  //         ...formData,
-  //         captchaToken,
-  //       },
-  //       {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       }
-  //     );
+    try {
+      const res = await axios.post(
+        "https://www.codetrios.com/api/submit-contact.php",
+        {
+          firstname: formData.firstname,
+          lastname: formData.lastname,
+          company: formData.company,
+          mobile: formData.mobile,
+          email: formData.email,
+          message: formData.message,
+          captcha: captchaToken,
+        },
+        { headers: { "Content-Type": "application/json" } }
+      );
 
-  //     setApiMessage("Your enquiry has been submitted successfully.");
-  //     setFormData({
-  //       firstname: "",
-  //       lastname: "",
-  //       company: "",
-  //       mobile: "",
-  //       email: "",
-  //       message: "",
-  //     });
+      setApiMessage("Your enquiry has been submitted successfully.");
+      setFormData({
+        firstname: "",
+        lastname: "",
+        company: "",
+        mobile: "",
+        email: "",
+        message: "",
+      });
 
-  //     recaptchaRef.current.reset();
-  //     setCaptchaToken("");
-  //   } catch (err) {
-  //     console.error(err);
-  //     setApiMessage(
-  //       err?.response?.data?.message ||
-  //         "Something went wrong. Please try again later."
-  //     );
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
+      recaptchaRef.current.reset();
+      setCaptchaToken("");
+    } catch (err) {
+      console.error(err);
+      setApiMessage(
+        err?.response?.data?.message ||
+          "Something went wrong. Please try again later."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div className={Style.commonPading}>
       <Container>
@@ -110,44 +111,91 @@ const ContactUs = () => {
                 <img src={contactImage} />
               </div>
               <div className={Style.detail}>
-                <h2 className={Style.title} data-aos="fade-up">Get in touch</h2>
-                <div className={Style.fomrStyle} data-aos="fade-up" data-aos-delay="200">
+                <h2 className={Style.title} data-aos="fade-up">
+                  Get in touch
+                </h2>
+                <div
+                  className={Style.fomrStyle}
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <div className={Style.inputFlex}>
                     <div className={Style.group}>
                       <label>First Name</label>
-                      <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} />
-                      {errors.firstname && ( <p className="error-text">{errors.firstname}</p>)}
+                      <input
+                        type="text"
+                        name="firstname"
+                        value={formData.firstname}
+                        onChange={handleChange}
+                      />
+                      {errors.firstname && (
+                        <p className="error-text">{errors.firstname}</p>
+                      )}
                     </div>
                     <div className={Style.group}>
                       <label>Last Name</label>
-                      <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} />
-                      {errors.lastname && ( <p className="error-text">{errors.lastname}</p>)}
+                      <input
+                        type="text"
+                        name="lastname"
+                        value={formData.lastname}
+                        onChange={handleChange}
+                      />
+                      {errors.lastname && (
+                        <p className="error-text">{errors.lastname}</p>
+                      )}
                     </div>
                   </div>
                   <div className={Style.inputFlex}>
                     <div className={Style.group}>
                       <label>Company</label>
-                      <input type="text" name="company" value={formData.company} onChange={handleChange} />
-                      {errors.company && ( <p className="error-text">{errors.company}</p>)}
+                      <input
+                        type="text"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                      />
+                      {errors.company && (
+                        <p className="error-text">{errors.company}</p>
+                      )}
                     </div>
                     <div className={Style.group}>
                       <label>Mobile</label>
-                      <input type="number" name="mobile" value={formData.mobile} onChange={handleChange} />
-                      {errors.mobile && ( <p className="error-text">{errors.mobile}</p>)}
+                      <input
+                        type="number"
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                      />
+                      {errors.mobile && (
+                        <p className="error-text">{errors.mobile}</p>
+                      )}
                     </div>
                   </div>
                   <div className={Style.inputFlex}>
                     <div className={Style.group}>
                       <label>Email</label>
-                      <input type="email" name="email" value={formData.email} onChange={handleChange} />
-                      {errors.email && ( <p className="error-text">{errors.email}</p>)}
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                      {errors.email && (
+                        <p className="error-text">{errors.email}</p>
+                      )}
                     </div>
                   </div>
                   <div className={Style.inputFlex}>
                     <div className={Style.group}>
                       <label>Your Requirement?</label>
-                      <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
-                      {errors.message && ( <p className="error-text">{errors.message}</p>)}
+                      <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                      ></textarea>
+                      {errors.message && (
+                        <p className="error-text">{errors.message}</p>
+                      )}
                     </div>
                   </div>
                   <div className={Style.inputFlex}>
@@ -167,7 +215,12 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className={Style.buttonFlex}>
-                    <button type="button" className={Style.btnStyle} disabled={loading} >
+                    <button
+                      type="button"
+                      className={Style.btnStyle}
+                      disabled={loading}
+                      onClick={handleSubmit}
+                    >
                       {loading ? "Submitting..." : "Submit"}
                     </button>
                   </div>

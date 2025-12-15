@@ -1,0 +1,3 @@
+<?php
+define("RECAPTCHA_SECRET", "6Ldc9-YrAAAAAA09FaRcduF5PQSvFMhAEvHfrSMQ");
+?>
