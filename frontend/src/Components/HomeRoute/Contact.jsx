@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
 import ReCAPTCHA from "react-google-recaptcha";
-// import axios from "axios";
+import axios from "axios";
 // import constants from "../../servicessss/constants";
 import { useNavigate } from "react-router-dom";
 
