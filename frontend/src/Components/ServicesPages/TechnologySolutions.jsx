@@ -41,7 +41,7 @@ const TechnologySolutions = () =>{
                                 <h4>Our focus is simple:</h4>
                                 <ul>
                                     <li><FiCheck className={Style.icon} /> Build systems that are secure, fast, scalable, and built to last.</li>
-                                    <li><FiCheck className={Style.icon} /> From enterprise tools to smart automation, we become your long-term technology partner, ensuring your business stays ahead in a digital-first world.</li>
+                                    <li><FiCheck className={Style.icon} /> <p>From enterprise tools to smart automation, we become your long-term technology partner, ensuring your business stays ahead in a digital-first world.</p></li>
                                 </ul>
                             </div>
                         </Col>

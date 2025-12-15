@@ -104,10 +104,11 @@ p strong{font-weight: normal;}
   color: #7C3AED;          
   transform: translateY(2px);  
 }
-.aboutContent ul li{padding: 0;}
+.aboutContent ul li{padding: 0 0 0 25px;position: relative;}
 .aboutContent ul li .icon, .aboutContent ol li .icon{color: #7C3AED;
-    position: relative;
+    position: absolute;
     top: 9px;
+    left: 0;
     margin-right: 10px;}
 .aboutContent br{display: none;}
 /* Services */
@@ -173,7 +174,8 @@ p strong{font-weight: normal;}
 .servicesBox .content a:hover{
     color: #7C3AED;
 }
-
+.whyUs .aboutContent ul li{padding: 0;}
+.whyUs .aboutContent ul li .icon{position: relative;}
 /* Portfolio */
 .projectBox{
 position: relative;

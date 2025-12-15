@@ -27,18 +27,18 @@ const ContactUsPage = () => {
               </Col>
               <Col md={5}>
                 <div className={Style.areInfo}>
-                  <h3>CodeTrios</h3>
-                  <p>
+                  <h3 data-aos="fade-up" data-aos-delay="100">CodeTrios</h3>
+                  <p data-aos="fade-up" data-aos-delay="200">
                     <IoMailOpenSharp className={Style.icon} />
                     <Link to="mailto:codetrio2025@gmail.com">
                       codetrio2025@gmail.com
                     </Link>
                   </p>
-                  <p>
+                  <p data-aos="fade-up" data-aos-delay="300">
                     <IoCall className={Style.icon} />{" "}
                     <Link to="tel:+91 8882309150">+91 8882309150</Link>
                   </p>
-                  <p>
+                  <p data-aos="fade-up" data-aos-delay="400">
                     <FaLocationDot className={Style.icon} />{" "}
                     <span>
                       We are a trio of passionate developers creating

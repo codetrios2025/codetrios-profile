@@ -110,8 +110,8 @@ const ContactUs = () => {
                 <img src={contactImage} />
               </div>
               <div className={Style.detail}>
-                <h2 className={Style.title}>Get in touch</h2>
-                <div className={Style.fomrStyle}>
+                <h2 className={Style.title} data-aos="fade-up">Get in touch</h2>
+                <div className={Style.fomrStyle} data-aos="fade-up" data-aos-delay="200">
                   <div className={Style.inputFlex}>
                     <div className={Style.group}>
                       <label>First Name</label>

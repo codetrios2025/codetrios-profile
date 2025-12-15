@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
-import ServicesBanner from '../../assets/images/services-banner.webp';
-import webImage from '../../assets/images/web-design.webp';
-import WhyChooseImg from '../../assets/images/why_choose.webp';
+import technologiesBanner from '../../assets/images/techBanner.webp';
 import { Link } from 'react-router-dom';
 //logo icon
 import HTML from '../../assets/images/icon/html_logo.webp';
@@ -50,15 +48,15 @@ const TechnologiesPage = ()=>{
         <>
         <div className={Style.innerPage + " " + Style.techPage}>
             <div className={Style.innerBanner}>
-                <img src={ServicesBanner} />
+                <img src={technologiesBanner} />
             </div>
             <div className={Style.ourPlatForm}>
                 <Container>
                     <Row>
                         <Col>
                             <div className={Style.boxContainer}>
-                                <h4>FRONTEND</h4>
-                                <div className={Style.boxElem}>
+                                <h4 data-aos="fade-up">FRONTEND</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
                                     <div className={Style.leftArea}>
                                         <h5>Front-End Development</h5>
                                         <p>We craft high-performance, interactive, and visually stunning front-end experiences using modern JavaScript frameworks and UI technologies. Our focus is on building interfaces that are fast, responsive, accessible, and aligned with your brand identity. With pixel-perfect precision and smooth user flows, we ensure your customers enjoy an intuitive and seamless digital experience across all devices.</p>
@@ -117,8 +115,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4>BACKEND</h4>
-                                <div className={Style.boxElem}>
+                                <h4 data-aos="fade-up">BACKEND</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
                                     <div className={Style.leftArea}>
                                         <h5>Back-End Development</h5>
                                         <p>We deliver secure, scalable, and high-performance backend systems designed to handle complex business logic, heavy loads, and real-time interactions. Our backend architecture ensures speed, reliability, and seamless data processing to support your web and mobile applications.</p>
@@ -176,8 +174,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4>Designing</h4>
-                                <div className={Style.boxElem}>
+                                <h4 data-aos="fade-up">Designing</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
                                     <div className={Style.leftArea}>
                                         <h5>Designing Development</h5>
                                         <p>We combine creativity, strategy, and UX principles to craft modern, user-friendly design systems. Our design approach ensures your brand stands out visually while offering a seamless and engaging experience across all platforms.</p>
@@ -223,8 +221,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4>Animation & Motion</h4>
-                                <div className={Style.boxElem}>
+                                <h4 data-aos="fade-up">Animation & Motion</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
                                     <div className={Style.leftArea}>
                                         <h5>Animation & Motion Development</h5>
                                         <p>We enhance digital experiences with smooth, engaging, and visually appealing animations. From micro-interactions to full-scale motion graphics, our team uses advanced animation frameworks to bring interfaces and brand stories to life.</p>
@@ -264,8 +262,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4>DATABASES</h4>
-                                <div className={Style.boxElem}>
+                                <h4 data-aos="fade-up">DATABASES</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
                                     <div className={Style.leftArea}>
                                         <h5>Database Development</h5>
                                         <p>Our database solutions ensure your applications run smoothly, securely, and efficiently. We architect data structures that scale with your business and support high-speed queries, analytics, and transaction-heavy workloads.</p>

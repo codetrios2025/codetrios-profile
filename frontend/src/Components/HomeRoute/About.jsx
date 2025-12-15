@@ -16,21 +16,21 @@ const AboutUs = ({data}) =>{
             <Container>
                 <Row>
                     <Col md={6}>
-                        <figure>
+                        <figure data-aos="fade-up">
                             <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
                         </figure>
                     </Col>
                     <Col md={6}>
                         <div className={Style.aboutContent}>
-                            <h6>About Codetrios</h6>
-                            <h2 className={Style.title}>Full-Stack Web Development that Drives Business Growth</h2>
-                            <p>We partner with businesses to transform ideas into high-performing, scalable, and SEO-optimized web platforms—all with a single, expert team.</p>
-                            <ul>
+                            <h6 data-aos="fade-up">About Codetrios</h6>
+                            <h2 className={Style.title} data-aos="fade-up" data-aos-delay="200">Full-Stack Web Development that Drives Business Growth</h2>
+                            <p data-aos="fade-up" data-aos-delay="400">We partner with businesses to transform ideas into high-performing, scalable, and SEO-optimized web platforms—all with a single, expert team.</p>
+                            <ul data-aos="fade-up" data-aos-delay="600">
                                 <li><FiCheck className={Style.icon} /> Top Digital Service: We craft future-ready websites with creative finesse.</li>
                                 <li><FiCheck className={Style.icon} /> Seamless Digital Transformation: We craft websites that redefine your online presence.</li>
                                 <li><FiCheck className={Style.icon} /> Responsive Design Excellence: Your website, accessible and engaging on any device.</li>
                             </ul>
-                            <Link to="about-us" className={Style.btnStyle}>Explore More <BsArrowRight className={Style.icon} /></Link>
+                            <Link to="about-us" className={Style.btnStyle} data-aos="fade-up" data-aos-delay="800">Explore More <BsArrowRight className={Style.icon} /></Link>
                         </div>
                     </Col>
                 </Row>

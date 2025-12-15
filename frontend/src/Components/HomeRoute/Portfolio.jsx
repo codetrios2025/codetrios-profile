@@ -14,12 +14,12 @@ const OurPortfolio = () =>{
             <Container>
                 <Row>
                     <Col>
-                        <h2 className={Style.title}>Featured Projects</h2>
+                        <h2 className={Style.title}data-aos="fade-up">Featured Projects</h2>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={6}>
-                        <div className={Style.projectBox}>
+                        <div className={Style.projectBox} data-aos="fade-up" data-aos-delay="200">
                             <Link to="">
                                 <div className={Style.projectImg}>
                                     <span className={Style.scrollAnime} style={{ backgroundImage: `url(${portfolio1})` }}></span>
@@ -29,7 +29,7 @@ const OurPortfolio = () =>{
                             </Link>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-up" data-aos-delay="300">
                         <div className={Style.projectBox}>
                             <Link to="">
                                 <div className={Style.projectImg}>
@@ -40,7 +40,7 @@ const OurPortfolio = () =>{
                             </Link>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-up" data-aos-delay="400">
                         <div className={Style.projectBox}>
                             <Link to="">
                                 <div className={Style.projectImg}>
@@ -51,7 +51,7 @@ const OurPortfolio = () =>{
                             </Link>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-up" data-aos-delay="500">
                         <div className={Style.projectBox}>
                             <Link to="">
                                 <div className={Style.projectImg}>

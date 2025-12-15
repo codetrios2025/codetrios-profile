@@ -12,6 +12,7 @@
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@reduxjs/toolkit": "^2.10.1",
+    "aos": "^2.3.4",
     "axios": "^1.13.2",
     "bootstrap": "^5.3.8",
     "html-react-parser": "^5.2.10",

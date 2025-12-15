@@ -19,12 +19,13 @@ import TechnologySolutions from "./Components/ServicesPages/TechnologySolutions"
 import DigitalStrategy from "./Components/ServicesPages/DigitalStrategy";
 import WebDesign from "./Components/ServicesPages/WebDesign";
 import ThankyouPage from "./Components/Pages/ThankYou";
-
+import AosRoute from "./Components/Common/AosRoute";
 
 function AppRoutes() {
   return (
     <>
       <ScrollTop />
+      <AosRoute />
       <Routes>
 
         {/* -----------------------------------

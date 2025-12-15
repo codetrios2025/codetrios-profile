@@ -18,7 +18,7 @@ import { FaPaintBrush, FaHandshake  } from "react-icons/fa";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaGlobeAmericas } from "react-icons/fa";
-import { MdDesignServices } from "react-icons/md";
+import { MdDesignServices, MdInsights  } from "react-icons/md";
 import { PiPlugsConnectedBold } from "react-icons/pi";
 
 //Components
@@ -35,15 +35,15 @@ const ServicesPage = ()=>{
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className={Style.title}>Our Services</h2>
-                            <p className={Style.subContent}>At CodeTrios, we deliver end-to-end digital solutions designed to help your business thrive online. From full-stack development and API integrations to responsive design and performance optimization — we handle everything from concept to deployment, ensuring your digital presence is modern, scalable, and future-ready. </p>
+                            <h2 className={Style.title} data-aos="fade-up">Our Services</h2>
+                            <p className={Style.subContent}  data-aos="fade-up" data-aos-delay="100">At CodeTrios, we deliver end-to-end digital solutions designed to help your business thrive online. From full-stack development and API integrations to responsive design and performance optimization — we handle everything from concept to deployment, ensuring your digital presence is modern, scalable, and future-ready. </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
                                 <figure>
-                                    <img src={webDesignImg} alt="" />
+                                    <img src={webDesignImg} alt="Website Design" />
                                 </figure>
                                 <div className={Style.content}>
                                     <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>
@@ -54,9 +54,9 @@ const ServicesPage = ()=>{
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="300">
                                 <figure>
-                                    <img src={webDevelopimg} alt="" />
+                                    <img src={webDevelopimg} alt="Web Development" />
                                 </figure>
                                 <div className={Style.content}>
                                     <span className={Style.spanICon}><IoCodeSlash className={Style.icon} /></span>
@@ -67,9 +67,9 @@ const ServicesPage = ()=>{
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="400">
                                 <figure>
-                                    <img src={eCommerceImg} alt="" />
+                                    <img src={eCommerceImg} alt="E-Commerce Solutions" />
                                 </figure>
                                 <div className={Style.content}>
                                     <span className={Style.spanICon}><BsCart3 className={Style.icon} /></span>
@@ -80,9 +80,9 @@ const ServicesPage = ()=>{
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="500">
                                 <figure>
-                                    <img src={webAppImg} alt="" />
+                                    <img src={webAppImg} alt="Web Applications" />
                                 </figure>
                                 <div className={Style.content}>
                                     <span className={Style.spanICon}><FaGlobeAmericas className={Style.icon} /></span>
@@ -93,9 +93,9 @@ const ServicesPage = ()=>{
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="600">
                                 <figure>
-                                    <img src={designServicesImg} alt="" />
+                                    <img src={designServicesImg} alt="Design Services" />
                                 </figure>
                                 <div className={Style.content}>
                                     <span className={Style.spanICon}><MdDesignServices className={Style.icon} /></span>
@@ -106,9 +106,9 @@ const ServicesPage = ()=>{
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="700">
                                 <figure>
-                                    <img src={technologyImg} alt="" />
+                                    <img src={technologyImg} alt="Technology Solutions" />
                                 </figure>
                                 <div className={Style.content}>
                                     <span className={Style.spanICon}><PiPlugsConnectedBold className={Style.icon} /></span>
@@ -119,12 +119,12 @@ const ServicesPage = ()=>{
                             </div>
                         </Col>
                         <Col md={4}>
-                            <div className={Style.servicesBox}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
                                 <figure>
-                                    <img src={designStrategyImg} alt="" />
+                                    <img src={designStrategyImg} alt="Digital Strategy" />
                                 </figure>
                                 <div className={Style.content}>
-                                    <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>
+                                    <span className={Style.spanICon}><MdInsights  className={Style.icon} /></span>
                                     <h3>Digital Strategy</h3>
                                     <p>Our work doesn’t stop at development — we offer strategic digital consultancy to guide your business toward growth and innovation. From identifying the right tools to optimizing your online strategy, we help you make smarter technology decisions.</p>
                                     <Link to="/digital-strategy">Read More <BsArrowRight className={Style.icon} /></Link>

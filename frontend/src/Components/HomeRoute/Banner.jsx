@@ -24,9 +24,9 @@ const HomeBanner = ({data}) =>{
                     <Row>
                         <Col>
                             <div className={Style.detail}>
-                                <h6>Your Partner for Digital Growth Solutions</h6>
-                                <h1>We Build Fast & Modern Web Experiences That Scale</h1>
-                                <p>CodeTrios delivers scalable, fast and elegant websites and <span>applications tailored to your business goals.</span></p>
+                                <h6 data-aos="fade-up">Your Partner for Digital Growth Solutions</h6>
+                                <h1 data-aos="fade-up" data-aos-delay="200">We Build Fast & Modern Web Experiences That Scale</h1>
+                                <p data-aos="fade-up" data-aos-delay="400">CodeTrios delivers scalable, fast and elegant websites and <span>applications tailored to your business goals.</span></p>
                                 <form>
                                     <div className={Style.queryForm}>
                                         <div className={Style.group}>
@@ -46,7 +46,7 @@ const HomeBanner = ({data}) =>{
                                         </div>
                                     </div>
                                 </form>
-                                <button type='button'onClick={formOpenHandler} className={Style.btnStyle}>Request a free project</button>
+                                <button data-aos="fade-up" data-aos-delay="600" type='button'onClick={formOpenHandler} className={Style.btnStyle}>Request a free project</button>
                             </div>
                         </Col>
                     </Row>

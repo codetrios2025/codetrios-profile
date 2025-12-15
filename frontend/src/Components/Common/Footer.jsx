@@ -13,13 +13,13 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={3}>
-            <div className={Style.info}>
+            <div className={Style.info} data-aos="fade-up">
               <img src={Logo} alt="codetrios" />
               <p>Website design & development company - Codetrios</p>
             </div>
           </Col>
           <Col md={9}>
-            <div className={Style.footerLink}>
+            <div className={Style.footerLink} data-aos="fade-up" data-aos-delay="200">
               <ul>
                 <li><Link to="/"><span>Home</span> </Link></li>
                 <li><Link to="about-us"><span>About</span> </Link></li>
