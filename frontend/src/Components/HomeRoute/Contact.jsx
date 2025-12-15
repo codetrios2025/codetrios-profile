@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
 import ReCAPTCHA from "react-google-recaptcha";
-import axios from "axios";
-import constants from "../../services/constants";
+// import axios from "axios";
+// import constants from "../../servicessss/constants";
 import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
@@ -58,49 +58,48 @@ const ContactUs = () => {
   };
 
   // Submit form
-  const handleSubmit = async () => {
-    if (!validate()) return;
+  // const handleSubmit = async () => {
+  //   if (!validate()) return;
 
-    setLoading(true);
-    setApiMessage("");
+  //   setLoading(true);
+  //   setApiMessage("");
 
-    try {
-      const res = await axios.post(
-        `${constants.API_BASE_URL}contact`, // YOUR BACKEND API
-        {
-          ...formData,
-          captchaToken,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+  //   try {
+  //     const res = await axios.post(
+  //       `${constants.API_BASE_URL}contact`, // YOUR BACKEND API
+  //       {
+  //         ...formData,
+  //         captchaToken,
+  //       },
+  //       {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       }
+  //     );
 
-      setApiMessage("Your enquiry has been submitted successfully.");
-      setFormData({
-        firstname: "",
-        lastname: "",
-        company: "",
-        mobile: "",
-        email: "",
-        message: "",
-      });
+  //     setApiMessage("Your enquiry has been submitted successfully.");
+  //     setFormData({
+  //       firstname: "",
+  //       lastname: "",
+  //       company: "",
+  //       mobile: "",
+  //       email: "",
+  //       message: "",
+  //     });
 
-      recaptchaRef.current.reset();
-      setCaptchaToken("");
-      //navigate("/thank-you");
-    } catch (err) {
-      console.error(err);
-      setApiMessage(
-        err?.response?.data?.message ||
-          "Something went wrong. Please try again later."
-      );
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     recaptchaRef.current.reset();
+  //     setCaptchaToken("");
+  //   } catch (err) {
+  //     console.error(err);
+  //     setApiMessage(
+  //       err?.response?.data?.message ||
+  //         "Something went wrong. Please try again later."
+  //     );
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
   return (
     <div className={Style.commonPading}>
       <Container>
@@ -168,7 +167,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className={Style.buttonFlex}>
-                    <button type="button" className={Style.btnStyle} onClick={handleSubmit} disabled={loading} >
+                    <button type="button" className={Style.btnStyle} disabled={loading} >
                       {loading ? "Submitting..." : "Submit"}
                     </button>
                   </div>

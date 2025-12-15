@@ -11,8 +11,6 @@ import technologyImg  from '../../assets/images/technology_solutions.webp';
 import designStrategyImg  from '../../assets/images/digital_strategy.webp';
 
 import { Link } from 'react-router-dom';
-import constants from '../../services/constants';
-import parse from 'html-react-parser';
 //Icon
 import { BsArrowRight } from "react-icons/bs";
 import { BsCart3 } from "react-icons/bs";
@@ -25,7 +23,6 @@ import { PiPlugsConnectedBold } from "react-icons/pi";
 
 //Components
 import VisionComponent from './VisionCode';
-import { fetchAllData } from '../../services/routes.services';
 
 const ServicesPage = ()=>{
     return(

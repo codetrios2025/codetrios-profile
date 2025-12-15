@@ -17,8 +17,6 @@ import { FaGlobeAmericas } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 import { PiPlugsConnectedBold } from "react-icons/pi";
 
-import parse from 'html-react-parser';
-import constants from '../../services/constants';
 const OurServices = () =>{
     return(
         <div className={'servicesView ' + Style.commonPading + " " + Style.servicesSec}>

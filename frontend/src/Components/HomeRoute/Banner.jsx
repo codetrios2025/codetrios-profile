@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeroImage from '../../assets/images/hero-banner.webp';
-import constants from "../../services/constants";
 import Style from '../CSS/Style.module.css';
 import { FaUser } from "react-icons/fa";
 import { IoMail, IoCall  } from "react-icons/io5";

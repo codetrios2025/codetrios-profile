@@ -12,23 +12,8 @@ import { FaStore, FaBoxes , FaServer, FaWordpress, FaTags } from "react-icons/fa
 import { MdPhoneIphone, MdSpeed  } from "react-icons/md";
 
 
-//API
-import { fetchAllData } from '../../services/routes.services';
-
-
 const EcommerceSolutions = () =>{
-    const [data, setData] = useState({});
-     const url = window.location.pathname; 
- const parts = url.split("/").filter(Boolean);
- const lastPart = parts[parts.length - 1];
 
-console.log(parts[0]);
-    useEffect(() => {
-            fetchAllData(`servicedetails/deatils/${parts[0]}`).then(res =>{
-                setData(res?.data?.servicedetails); 
-            })
-    }, []);
-    const detailItem = data?.[0];
     return(
         <div className={Style.innerPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>

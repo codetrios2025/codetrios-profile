@@ -25,24 +25,24 @@ input[type="number"]::-webkit-inner-spin-button{
 .menuToggle, .closeBtn, .subToggle{display: none;}
 .boxHeight .col-md-4{display: flex;}
 
-
+button{border: none;}
 @media (max-width: 1199px){
 body{font-size: 14px;}
 p{line-height: 24px;}
 }
 
 @media (max-width: 992px){
-.menuToggle{display: block;background: transparent;padding: 0;color: #000;font-size: 30px;margin: 10px 0;}
-.closeBtn{display: block;}
+.menuToggle{display: block;background: transparent;padding: 0;color: #000;font-size: 30px;margin: 10px 0;border: none;}
+.closeBtn{display: block;border: none;}
 header .mainMenu{background: #7C3AED;position: fixed;top: 0;right: -100%;width: 300px;height: 100%;padding-top: 30px;overflow: auto;}
 header .mainMenu.activeMenu{right: 0;}
 header .mainMenu ul{flex-direction: column;height: 100%;}
 header .mainMenu ul li{position: relative;}
 header .mainMenu ul li a{color: #fff;padding: 10px 15px;width: 100%;border-bottom: 1px dotted #fff;}
 header .mainMenu ul ul{display: none;}
-.mainMenu .closeBtn{margin: 0;padding: 0;top: 10px;right: 10px;position: absolute;background: #000;color: #fff;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;border-radius: 50%;}
+.mainMenu .closeBtn{margin: 0;padding: 0;top: 5px;right: 5px;position: absolute;background: #000;color: #fff;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;border-radius: 50%;}
 .mainMenu ul li a .icon{display: none;}
-.mainMenu ul li .subToggle{        position: absolute;top: 0;right: 0;margin: 0;padding: 0;padding: 8px 10px;background: #6217e3;color: #fff;border-radius: 0;z-index: 9;display: block;}
+.mainMenu ul li .subToggle{        position: absolute;top: 0;right: 0;margin: 0;padding: 0;padding: 10px;background: #6217e3;color: #fff;border-radius: 0;z-index: 9;display: block;}
 .mainMenu ul ul:after, .mainMenu ul ul:before{content: none!important;}        
 header .mainMenu ul li .subMenuMob {background: #854ce7;position: relative;top: 0!important;flex-direction: column;        padding: 0 0;display: none!important;border: none;}
 header .mainMenu ul li .subMenuMob.open{display: flex!important;}
