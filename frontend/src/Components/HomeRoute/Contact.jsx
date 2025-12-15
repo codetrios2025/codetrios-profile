@@ -91,6 +91,7 @@ const ContactUs = () => {
 
       recaptchaRef.current.reset();
       setCaptchaToken("");
+      navigate("/thank-you");
     } catch (err) {
       console.error(err);
       setApiMessage(
