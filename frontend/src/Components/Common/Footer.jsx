@@ -6,14 +6,8 @@ import { Link, Outlet } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import { fetchAllData } from "../../services/routes.services";
 const Footer = () => {
-  const [menuData, setMenuData] = useState([]);
-  useEffect(() => {
-    fetchAllData("header").then((res) => {
-      setMenuData(res?.data?.headers || []);
-    });
-  }, []);
+
   return (
     <footer>
       <Container>
@@ -27,17 +21,12 @@ const Footer = () => {
           <Col md={9}>
             <div className={Style.footerLink}>
               <ul>
-                {menuData &&
-                  menuData.length > 0 &&
-                  menuData.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <Link to={item.linkUrl}>
-                          <span>{item.linkText}</span>{" "}
-                        </Link>
-                      </li>
-                    );
-                  })}
+                <li><Link to="/"><span>Home</span> </Link></li>
+                <li><Link to="about-us"><span>About</span> </Link></li>
+                <li><Link to="services"><span>Services</span> </Link></li>
+                <li><Link to="technologies"><span>Technologies</span> </Link></li>
+                <li><Link to="portfolio"><span>Portfolio</span> </Link></li>
+                <li><Link to="contact-us"><span>Contact Us</span> </Link></li>
               </ul>
               <div className={Style.address}>
                 <p>

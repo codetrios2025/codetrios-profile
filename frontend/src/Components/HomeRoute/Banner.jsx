@@ -10,7 +10,6 @@ import ContactUs from "./Contact";
 
 const HomeBanner = ({data}) =>{
     const [isOPen, setIsopen] = useState(false);
-    const banner = data?.banners?.[0];
     //console.log(banner)
         const formOpenHandler=()=>{
             setIsopen(true);
@@ -20,14 +19,14 @@ const HomeBanner = ({data}) =>{
         }
     return(
         <div className={Style.heroBanner}>
-            <img src={`${constants.Image_BASE_URL}${banner?.bannerImage}`} alt="We Build Modern Web Experiences" width="2400" height="1122" className={Style.imgResponsive} />
+            <img src={HeroImage} alt="We Build Modern Web Experiences" width="2400" height="1122" className={Style.imgResponsive} />
             <div className={Style.content}>
                 <Container>
                     <Row>
                         <Col>
                             <div className={Style.detail}>
                                 <h6>Your Partner for Digital Growth Solutions</h6>
-                                <h1>{banner?.title}</h1>
+                                <h1>We Build Fast & Modern Web Experiences That Scale</h1>
                                 <p>CodeTrios delivers scalable, fast and elegant websites and <span>applications tailored to your business goals.</span></p>
                                 <form>
                                     <div className={Style.queryForm}>
