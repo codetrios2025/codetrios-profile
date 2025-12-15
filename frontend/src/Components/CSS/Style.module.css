@@ -9,7 +9,7 @@
 
 .btnStyle{background: #7C3AED;color: #fff;padding: 20px 30px;position: relative;z-index: 1;border: none;overflow: hidden;}
 .btnStyle .icon{margin-left: 10px;}
-.btnStyle::after, .btnStyle::before {content: "";background-color: #000;width: 0;height: 50%;position: absolute;z-index: -1;}
+.btnStyle::after, .btnStyle::before {content: "";background-color: #f99c10;width: 0;height: 50%;position: absolute;z-index: -1;}
 .btnStyle::after{bottom: 0;right: 0;-webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);transition: .3s cubic-bezier(.785, .135, .15, .86);}
 .btnStyle::before {top: 0;left: 0;-webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);transition: .3s cubic-bezier(.785, .135, .15, .86);}
 .btnStyle:hover::after, .btnStyle:hover::before {width: 100%;}
