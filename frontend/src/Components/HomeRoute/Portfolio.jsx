@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
-import portfolio1 from '../../assets/images/portfolio01.png';
-import portfolio2 from '../../assets/images/portfolio02.png';
-import portfolio3 from '../../assets/images/portfolio03.png';
-import portfolio4 from '../../assets/images/portfolio04.png';
+import portfolio1 from '../../assets/images/portfolio01.webp';
+import portfolio2 from '../../assets/images/portfolio02.webp';
+import portfolio3 from '../../assets/images/portfolio03.webp';
+import portfolio4 from '../../assets/images/portfolio04.webp';
 
 const OurPortfolio = () =>{
     return(

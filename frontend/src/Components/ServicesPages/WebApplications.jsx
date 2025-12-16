@@ -9,108 +9,111 @@ import { MdDeveloperMode , MdWeb } from "react-icons/md";
 import { BiGitMerge } from "react-icons/bi";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { BsCloudCheck } from "react-icons/bs";
-
+import SEO from '../Common/webSiteMeta.jsx';
 const WebApplications = () =>{
 
     return(
-        <div className={Style.innerPage + " " + Style.servicesDetail}>
-            <div className={Style.innerBanner}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className={Style.content}>
-                                <h1>Web Applications</h1>
-                                <p>We create custom web applications that empower your business to operate efficiently from anywhere. Our apps are built to perform — secure, user-friendly, and adaptable across all devices — ensuring both your team and your customers have the best experience. </p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
+        <>
+            <SEO  page="webapps" />
+            <div className={Style.innerPage + " " + Style.servicesDetail}>
+                <div className={Style.innerBanner}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className={Style.content}>
+                                    <h1>Web Applications</h1>
+                                    <p>We create custom web applications that empower your business to operate efficiently from anywhere. Our apps are built to perform — secure, user-friendly, and adaptable across all devices — ensuring both your team and your customers have the best experience. </p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className={'servicesCol ' + Style.commonPading + " " + Style.aboutSec}>
+                    <Container>
+                        <Row>
+                            <Col md={5}>
+                                <figure>
+                                    <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
+                                </figure>
+                            </Col>
+                            <Col md={7}>
+                                <div className={Style.aboutContent}>
+                                    <h2 className={Style.title}>Mobile App Development Services – Android & iOS App Experts</h2>
+                                    <p>We build powerful, scalable, and secure web applications that streamline your operations and elevate user experience. Whether you need internal tools, customer portals, or enterprise-level platforms, our solutions are tailored to your business goals and optimized for long-term growth. Accessible from any device — fast, intuitive, and engineered for performance.</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2 className={Style.title}>Our Offerings Include</h2>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><MdDeveloperMode  /></span>
+                                    <h3>Custom Application Development</h3>
+                                    <p>End-to-end development of bespoke web applications built around your business processes. From internal CRMs and inventory systems to customer portals and advanced workflow apps — we turn complex requirements into a seamless digital experience.</p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><MdWeb  /></span>
+                                    <h3>Mobile & Progressive Web Apps (PWAs)</h3>
+                                    <p>Modern, high-speed applications that feel and function like native mobile apps. PWAs work offline, are installable on mobile devices, and deliver exceptional performance — perfect for reaching users anytime, anywhere, without app-store limitations.</p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><MdWeb  /></span>
+                                    <h3>PHP & Node.js Development</h3>
+                                    <p>Robust backend systems built using industry-leading technologies. Whether you need the stability of PHP or real-time capabilities of Node.js, we architect solutions that scale effortlessly and remain secure under heavy usage.</p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><BiGitMerge  /></span>
+                                    <h3>API Development & Integration</h3>
+                                    <p>We design clean, secure, and well-documented APIs that allow systems to communicate effortlessly. From third-party integrations (payment gateways, CRMs, ERPs) to custom internal APIs — we ensure reliable data flow across all platforms.</p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><HiBuildingOffice2  /></span>
+                                    <h3>Enterprise Applications</h3>
+                                    <p>Role-based dashboards, workflows, and analytics for large teams. </p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><BsCloudCheck  /></span>
+                                    <h3>Cloud Integration</h3>
+                                    <p>Deploy and manage your apps on AWS, Azure, or Google Cloud.</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                {/* <div className={Style.whoAreSec}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className={Style.box}>
+                                    <h2 className={Style.title}>Why Choose Our Web Applications? </h2>
+                                    <p>We focus on performance, security, and user experience. Our applications are modular, easy to maintain, and designed to scale as your business grows.  </p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div> */}
+                
+                <VisionComponent />
             </div>
-            <div className={'servicesCol ' + Style.commonPading + " " + Style.aboutSec}>
-                <Container>
-                    <Row>
-                        <Col md={5}>
-                            <figure>
-                                <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
-                            </figure>
-                        </Col>
-                        <Col md={7}>
-                            <div className={Style.aboutContent}>
-                                <h2 className={Style.title}>Mobile App Development Services – Android & iOS App Experts</h2>
-                                <p>We build powerful, scalable, and secure web applications that streamline your operations and elevate user experience. Whether you need internal tools, customer portals, or enterprise-level platforms, our solutions are tailored to your business goals and optimized for long-term growth. Accessible from any device — fast, intuitive, and engineered for performance.</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            <div className={"boxHeight " + Style.commonPading + " " +Style.weBuild}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h2 className={Style.title}>Our Offerings Include</h2>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><MdDeveloperMode  /></span>
-                                <h3>Custom Application Development</h3>
-                                <p>End-to-end development of bespoke web applications built around your business processes. From internal CRMs and inventory systems to customer portals and advanced workflow apps — we turn complex requirements into a seamless digital experience.</p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><MdWeb  /></span>
-                                <h3>Mobile & Progressive Web Apps (PWAs)</h3>
-                                <p>Modern, high-speed applications that feel and function like native mobile apps. PWAs work offline, are installable on mobile devices, and deliver exceptional performance — perfect for reaching users anytime, anywhere, without app-store limitations.</p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><MdWeb  /></span>
-                                <h3>PHP & Node.js Development</h3>
-                                <p>Robust backend systems built using industry-leading technologies. Whether you need the stability of PHP or real-time capabilities of Node.js, we architect solutions that scale effortlessly and remain secure under heavy usage.</p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><BiGitMerge  /></span>
-                                <h3>API Development & Integration</h3>
-                                <p>We design clean, secure, and well-documented APIs that allow systems to communicate effortlessly. From third-party integrations (payment gateways, CRMs, ERPs) to custom internal APIs — we ensure reliable data flow across all platforms.</p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><HiBuildingOffice2  /></span>
-                                <h3>Enterprise Applications</h3>
-                                <p>Role-based dashboards, workflows, and analytics for large teams. </p>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.box}>
-                                <span className={Style.icon}><BsCloudCheck  /></span>
-                                <h3>Cloud Integration</h3>
-                                <p>Deploy and manage your apps on AWS, Azure, or Google Cloud.</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            {/* <div className={Style.whoAreSec}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className={Style.box}>
-                                <h2 className={Style.title}>Why Choose Our Web Applications? </h2>
-                                <p>We focus on performance, security, and user experience. Our applications are modular, easy to maintain, and designed to scale as your business grows.  </p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div> */}
-            
-            <VisionComponent />
-        </div>
+        </>
     )
 }
 

@@ -9,13 +9,15 @@ import { Link } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-
+import SEO from "../Common/webSiteMeta.jsx";
 //Components
 import ContactUs from "../HomeRoute/Contact";
 
 const ContactUsPage = () => {
   return (
     <>
+
+    <SEO page="contact" />
       <div className={Style.innerPage + " " + Style.contactPage}>
         <div className={Style.contactSec}>
           <Container>

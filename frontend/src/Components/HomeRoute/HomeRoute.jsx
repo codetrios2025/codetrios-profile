@@ -6,6 +6,7 @@ import OurServices from "./Services";
 import OurPortfolio from "./Portfolio";
 import ContactUs from "./Contact";
 import Loader from "./Loader";
+import SEO from "../Common/webSiteMeta.jsx";
 //API
 
 const HomeRoute = () =>{
@@ -23,6 +24,7 @@ const HomeRoute = () =>{
             <Loader /> 
             :
             <div>
+                <SEO page="home" />
                 <HomeBanner />
                 <AboutUs />
                 <OurServices/>

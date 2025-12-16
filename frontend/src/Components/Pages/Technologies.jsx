@@ -42,10 +42,12 @@ import lottie from '../../assets/images/icon/lottie_logo.webp';
 import aos_logo from '../../assets/images/icon/aos_logo.webp';
 
 import VisionComponent from './VisionCode';
+import SEO from '../Common/webSiteMeta.jsx';
 const TechnologiesPage = ()=>{
 
     return(
         <>
+        <SEO page="technologies" />
         <div className={Style.innerPage + " " + Style.techPage}>
             <div className={Style.innerBanner}>
                 <img src={technologiesBanner} />
