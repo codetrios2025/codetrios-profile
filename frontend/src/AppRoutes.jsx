@@ -18,6 +18,7 @@ import DesignServices from "./Components/ServicesPages/DesignServices";
 import TechnologySolutions from "./Components/ServicesPages/TechnologySolutions";
 import DigitalStrategy from "./Components/ServicesPages/DigitalStrategy";
 import WebDesign from "./Components/ServicesPages/WebDesign";
+import WebHosting from "./Components/ServicesPages/Hosting";
 import ThankyouPage from "./Components/Pages/ThankYou";
 import AosRoute from "./Components/Common/AosRoute";
 
@@ -45,6 +46,7 @@ function AppRoutes() {
             <Route path="/technology-solutions" element={<TechnologySolutions />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
+            <Route path="/web-hosting" element={<WebHosting />} />
             <Route path="contact-us" element={<ContactUsPage />} />
             <Route path="thank-you" element={<ThankyouPage />} />
           </Route>

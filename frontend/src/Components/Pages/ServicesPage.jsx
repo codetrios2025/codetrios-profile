@@ -9,7 +9,7 @@ import webAppImg from '../../assets/images/web_application.webp';
 import designServicesImg from '../../assets/images/design_services.webp';
 import technologyImg  from '../../assets/images/technology_solutions.webp';
 import designStrategyImg  from '../../assets/images/digital_strategy.webp';
-
+import hostingImg  from '../../assets/images/hosting.webp';
 import { Link } from 'react-router-dom';
 //Icon
 import { BsArrowRight } from "react-icons/bs";
@@ -116,7 +116,7 @@ const ServicesPage = ()=>{
                                     <span className={Style.spanICon}><PiPlugsConnectedBold className={Style.icon} /></span>
                                     <h3>Technology Solutions</h3>
                                     <p>We help businesses adopt cutting-edge technologies and modern frameworks to streamline workflows and boost performance. Whether it’s automation, AI integration, or custom software, CodeTrio ensures your tech stack is built for the future.</p>
-                                    <Link to="/technologies" title='Technology Solutions'>Read More <BsArrowRight className={Style.icon} /></Link>
+                                    <Link to="/technology-solutions" title='Technology Solutions'>Read More <BsArrowRight className={Style.icon} /></Link>
                                 </div>
                             </div>
                         </Col>
@@ -130,6 +130,19 @@ const ServicesPage = ()=>{
                                     <h3>Digital Strategy</h3>
                                     <p>Our work doesn’t stop at development — we offer strategic digital consultancy to guide your business toward growth and innovation. From identifying the right tools to optimizing your online strategy, we help you make smarter technology decisions.</p>
                                     <Link to="/digital-strategy" title='Digital Strategy'>Read More <BsArrowRight className={Style.icon} /></Link>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
+                                <figure>
+                                    <img src={hostingImg} alt="Web hosting service" />
+                                </figure>
+                                <div className={Style.content}>
+                                    <span className={Style.spanICon}><MdInsights  className={Style.icon} /></span>
+                                    <h3>Web Hosting Services</h3>
+                                    <p>Your website’s success depends on its hosting. We ensure lightning-fast speed, strong security, and maximum uptime — so your visitors always get the best experience.</p>
+                                    <Link to="/web-hosting" title='Web hosting service'>Read More <BsArrowRight className={Style.icon} /></Link>
                                 </div>
                             </div>
                         </Col>

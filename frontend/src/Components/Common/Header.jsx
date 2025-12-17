@@ -46,6 +46,7 @@ const Header=()=>{
                                                 <li><Link onClick={closeMenu} to="/e-commerce-solutions" title="eCommerce Solutions">eCommerce Solutions</Link></li>
                                                 <li><Link onClick={closeMenu} to="/technology-solutions" title="Technology Solutions">Technology Solutions</Link></li>
                                                 <li><Link onClick={closeMenu} to="/digital-strategy" title="Digital Strategy">Digital Strategy</Link></li>
+                                                <li><Link onClick={closeMenu} to="/web-hosting" title="Web hosting service">Web Hosting Service</Link></li>
                                             </ul>
                                         </li>
                                         <li><Link onClick={closeMenu} to="/technologies" title="About"><span>Technologies</span></Link></li>

@@ -101,11 +101,12 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><PiPlugsConnectedBold className={Style.icon} /></span>
                                 <h3>Technology Solutions</h3>
-                                <p>We help businesses adopt cutting-edge technologies and modern frameworks to streamline workflows and boost performance. Whether it’s automation, AI integration, or custom software, CodeTrio ensures your tech stack is built for the future.</p>
-                                <Link to="technologies" title='Design Services'>Read More <BsArrowRight className={Style.icon} /></Link>
+                                <p>At CodeTrios, we offer reliable and high-performance web hosting services designed to keep your website fast, secure, and always online. From startups to enterprise platforms, our hosting solutions are built to support your business at every stage.</p>
+                                <Link to="technology-solutions" title='Design Services'>Read More <BsArrowRight className={Style.icon} /></Link>
                             </div>
                         </div>
                     </Col>
+                    
                   
                
                 </Row>
