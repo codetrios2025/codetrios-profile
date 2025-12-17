@@ -16,8 +16,7 @@ import ContactUs from "../HomeRoute/Contact";
 const ContactUsPage = () => {
   return (
     <>
-
-    <SEO page="contact" />
+      <SEO page="contact" />
       <div className={Style.innerPage + " " + Style.contactPage}>
         <div className={Style.contactSec}>
           <Container>
@@ -29,7 +28,9 @@ const ContactUsPage = () => {
               </Col>
               <Col md={5}>
                 <div className={Style.areInfo}>
-                  <h3 data-aos="fade-up" data-aos-delay="100">CodeTrios</h3>
+                  <h3 data-aos="fade-up" data-aos-delay="100">
+                    CodeTrios
+                  </h3>
                   <p data-aos="fade-up" data-aos-delay="200">
                     <IoMailOpenSharp className={Style.icon} />
                     <Link to="mailto:codetrio2025@gmail.com">
@@ -43,8 +44,8 @@ const ContactUsPage = () => {
                   <p data-aos="fade-up" data-aos-delay="400">
                     <FaLocationDot className={Style.icon} />{" "}
                     <span>
-                      We are a trio of passionate developers creating
-                      cutting-edge web solutions for startups
+                      Codetrios 711 Sector -31, Faridabad, Haryana, India
+                      -121003
                     </span>
                   </p>
                 </div>

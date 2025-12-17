@@ -7,7 +7,6 @@ import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
-
   return (
     <footer>
       <Container>
@@ -19,14 +18,42 @@ const Footer = () => {
             </div>
           </Col>
           <Col md={9}>
-            <div className={Style.footerLink} data-aos="fade-up" data-aos-delay="200">
+            <div
+              className={Style.footerLink}
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <ul>
-                <li><Link to="/"><span>Home</span> </Link></li>
-                <li><Link to="about-us"><span>About</span> </Link></li>
-                <li><Link to="services"><span>Services</span> </Link></li>
-                <li><Link to="technologies"><span>Technologies</span> </Link></li>
-                <li><Link to="portfolio"><span>Portfolio</span> </Link></li>
-                <li><Link to="contact-us"><span>Contact Us</span> </Link></li>
+                <li>
+                  <Link to="/">
+                    <span>Home</span>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about-us">
+                    <span>About</span>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="services">
+                    <span>Services</span>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="technologies">
+                    <span>Technologies</span>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="portfolio">
+                    <span>Portfolio</span>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="contact-us">
+                    <span>Contact Us</span>{" "}
+                  </Link>
+                </li>
               </ul>
               <div className={Style.address}>
                 <p>
@@ -42,8 +69,7 @@ const Footer = () => {
                 <p>
                   <FaLocationDot className={Style.icon} />{" "}
                   <span>
-                    We are a trio of passionate developers creating cutting-edge
-                    web solutions for startups
+                    Codetrios 711 Sector -31, Faridabad, Haryana, India - 121003
                   </span>
                 </p>
               </div>
