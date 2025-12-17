@@ -411,13 +411,18 @@ position: relative;
 .buildContainer .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
 .buildContainer .buildElem  ul li{list-style-type: disc;}
 .buildContainer .buildElem  strong{font-size: 18px;font-weight: 600;} */
-.thanksPage{position: relative;text-align: center;padding: 15px;height: 500px;display: flex;align-items: center;flex-direction: column;justify-content: center;
+.thanksPage{position: relative;text-align: center;padding: 15px;height: 640px;display: flex;align-items: center;flex-direction: column;justify-content: center;
 background: #f0f0f0;
 }
 .thanksPage h1{font-weight: 700;color: #7C3AED;}
 .thanksPage a{color: #000;text-decoration: underline;}
 .thanksPage p{font-size: 16px;}
 .contactPage{margin-top: 74px;}
+
+@media (max-width: 1600px){
+.thanksPage{height: 500px;}
+}
+
 @media (max-width: 1400px){
   .heroBanner .content h1{    font-size: 50px;line-height: 60px;}  
   .heroBanner .content{    justify-content: flex-start;}
