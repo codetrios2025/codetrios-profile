@@ -58,9 +58,7 @@ const Footer = () => {
               <div className={Style.address}>
                 <p>
                   <IoMailOpenSharp className={Style.icon} />
-                  <Link to="mailto:codetrio2025@gmail.com">
-                    codetrio2025@gmail.com
-                  </Link>
+                  <Link to="mailto:info@codetrios.com">info@codetrios.com</Link>
                 </p>
                 <p>
                   <IoCall className={Style.icon} />{" "}
@@ -69,7 +67,7 @@ const Footer = () => {
                 <p>
                   <FaLocationDot className={Style.icon} />{" "}
                   <span>
-                    Codetrios 711 Sector -31, Faridabad, Haryana, India - 121003
+                    Codetrios 711 Sector -31, Faridabad,<br/> Haryana, India - 121003
                   </span>
                 </p>
               </div>

@@ -33,8 +33,8 @@ const ContactUsPage = () => {
                   </h3>
                   <p data-aos="fade-up" data-aos-delay="200">
                     <IoMailOpenSharp className={Style.icon} />
-                    <Link to="mailto:codetrio2025@gmail.com">
-                      codetrio2025@gmail.com
+                    <Link to="mailto:info@codetrios.com">
+                      info@codetrios.com
                     </Link>
                   </p>
                   <p data-aos="fade-up" data-aos-delay="300">
@@ -44,7 +44,7 @@ const ContactUsPage = () => {
                   <p data-aos="fade-up" data-aos-delay="400">
                     <FaLocationDot className={Style.icon} />{" "}
                     <span>
-                      Codetrios 711 Sector -31, Faridabad, Haryana, India
+                      Codetrios 711 Sector -31, Faridabad, <br/>Haryana, India
                       -121003
                     </span>
                   </p>

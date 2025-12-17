@@ -17,7 +17,7 @@ const AboutUs = ({data}) =>{
                 <Row>
                     <Col md={6}>
                         <figure data-aos="fade-up">
-                            <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
+                            <img src={webImage} className='imgFull' alt='Full-Stack Web Development that Drives Business Growth' width="1747" height="1334" />
                         </figure>
                     </Col>
                     <Col md={6}>
