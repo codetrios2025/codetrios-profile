@@ -24,7 +24,8 @@ const AboutUs = ({data}) =>{
                         <div className={Style.aboutContent}>
                             <h6 data-aos="fade-up">About Codetrios</h6>
                             <h2 className={Style.title} data-aos="fade-up" data-aos-delay="200">Full-Stack Web Development that Drives Business Growth</h2>
-                            <p data-aos="fade-up" data-aos-delay="400">We partner with businesses to transform ideas into high-performing, scalable, and SEO-optimized web platforms—all with a single, expert team.</p>
+                            <p data-aos="fade-up" data-aos-delay="400">At Codetrios, our work doesn’t stop at launch. We provide continuous website maintenance, updates, security monitoring, and performance optimization to ensure long-term success.</p>
+                            <p data-aos="fade-up" data-aos-delay="500">We partner with businesses to transform ideas into high-performing, scalable, and SEO-optimized web platforms—all with a single, expert team.</p>
                             <ul data-aos="fade-up" data-aos-delay="600">
                                 <li><FiCheck className={Style.icon} /> Top Digital Service: We craft future-ready websites with creative finesse.</li>
                                 <li><FiCheck className={Style.icon} /> Seamless Digital Transformation: We craft websites that redefine your online presence.</li>

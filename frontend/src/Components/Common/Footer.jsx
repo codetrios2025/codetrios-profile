@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Logo from "../../assets/images/logo01.png";
+import Logo from "../../assets/images/logo.webp";
 import Style from "../CSS/Header.module.css";
 import { Link, Outlet } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";
@@ -14,7 +14,7 @@ const Footer = () => {
           <Col md={3}>
             <div className={Style.info} data-aos="fade-up">
               <img src={Logo} alt="codetrios" />
-              <p>Website design & development company - Codetrios</p>
+              <p>Website Development & Ongoing Maintenance Services.</p>
             </div>
           </Col>
           <Col md={9}>

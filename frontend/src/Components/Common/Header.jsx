@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Header.module.css';
 import { Link, Outlet  } from "react-router-dom";
-import Logo from '../../assets/images/logo01.png';
+import Logo from '../../assets/images/logo.webp';
 import { CiMenuFries } from "react-icons/ci";
 
 import { IoIosArrowDown } from "react-icons/io";

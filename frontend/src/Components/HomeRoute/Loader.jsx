@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import icon from '../../assets/images/icon.png'
-import logo from '../../assets/images/logo_loader.png'
+import icon from '../../assets/images/icon.webp'
+import logo from '../../assets/images/logo_loader.webp'
 
 export default function Loader() {
   const [showLogo, setShowLogo] = useState(false);
@@ -8,7 +8,7 @@ export default function Loader() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLogo(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
