@@ -1,7 +1,7 @@
 {
   "home": {
-    "title": "CodeTrios - Software Development & IT Services Company | Web, Mobile App & SaaS Development",
-    "description": "CodeTrios is a global software development company delivering web development, mobile app development, SaaS solutions, MERN stack development, and AI automation services. We help startups and enterprises build secure, scalable and high-performance digital products worldwide.",
+    "title": "Software Development Company | Web, Mobile & SaaS – CodeTrios",
+    "description": "CodeTrios is a global software development company offering web development, mobile apps, SaaS solutions, MERN stack and AI automation for startups and enterprises.",
     "keywords": "software development company, web development services, mobile app development, SaaS development, MERN stack development, custom software development, AI automation services, IT outsourcing company, hire remote developers, global software company"
   },
   "about": {
@@ -10,63 +10,63 @@
     "keywords": "About CodeTrios, Web Development Company, Full-Stack Development Team, Digital Solutions Company, Web & App Development Experts, Software Development Agency, Technology Consulting Company, Custom Development Services, Innovative Web Solutions, IT Services Company"
   },
   "services": {
-    "title": "Our Services - Web, App & Digital Solutions by CodeTrios",
-    "description": "CodeTrios offers professional web development, mobile app development, e-commerce solutions, UI/UX design, API integration, and scalable digital services tailored to modern business needs.",
+    "title": "IT & Software Development Services | CodeTrios",
+    "description": "Explore CodeTrios services including web development, mobile app development, e-commerce solutions, UI/UX design, and scalable digital solutions.",
     "keywords": "web development services, full-stack development, mobile app development services, e-commerce development, UI UX design services, API integration"
   },
-  "web-desing": {
-    "title": "Website Design Services | Creative & Responsive UI/UX – CodeTrios",
-    "description": "CodeTrios offers professional website design services including responsive layouts, modern UI/UX, and conversion-focused designs that enhance brand identity and user engagement.",
+  "website-design-services": {
+    "title": "Website Design Services | UI/UX & Responsive Design – CodeTrios",
+    "description": "Professional website design services with modern UI/UX, responsive layouts, and conversion-focused designs to grow your brand online.",
     "keywords": "website design services, professional website design, UI UX design services, responsive web design, custom website design"
   },
   "web-development": {
-    "title": "Web Development Services | Scalable & Secure Solutions – CodeTrios",
-    "description": "CodeTrios provides custom web development services including full-stack development, scalable architectures, secure applications, and performance-optimized solutions for businesses.",
+    "title": "Web Development Services | Secure & Scalable Solutions – CodeTrios",
+    "description": "Custom web development services delivering secure, scalable, and high-performance websites and applications for growing businesses.",
     "keywords": "web development services, custom web development, full-stack web development, scalable web applications, website development company"
   },
-  "eCommerce": {
-    "title": "E-Commerce Solutions | Scalable Online Stores – CodeTrios",
-    "description": "Grow your online business with CodeTrios e-commerce solutions. We build secure, scalable, and conversion-focused online stores with seamless payment integration.",
+  "ecommerce-development-services": {
+    "title": "Ecommerce Development Services | Online Store Solutions – CodeTrios",
+    "description": "We build secure, scalable ecommerce websites with payment integration, performance optimization, and conversion-focused design.",
     "keywords": "e-commerce solutions, online store development, e-commerce website development, payment gateway integration"
   },
-  "webapps": {
-    "title": "Web Application Development Services | Scalable Apps – CodeTrios",
-    "description": "CodeTrios builds secure, scalable web applications using modern frameworks. From custom dashboards to SaaS platforms, we deliver high-performance web app solutions.",
+  "web-application-development": {
+    "title": "Web Application Development Services | SaaS & Custom Apps – CodeTrios",
+    "description": "Scalable web application development services including SaaS platforms, dashboards, and enterprise-grade custom applications.",
     "keywords": "web application development, custom web applications, SaaS application development, scalable web apps"
   },
-  "design-services": {
-    "title": "Design Services | UI/UX, Branding & Creative Design – CodeTrios",
-    "description": "CodeTrios provides professional design services including UI/UX design, branding, wireframing, and visual identity to create engaging digital experiences.",
+  "ui-ux-design-services": {
+    "title": "UI/UX Design Services | Creative Digital Design – CodeTrios",
+    "description": "Professional UI/UX design services including branding, wireframes, and visual design to create engaging digital experiences.",
     "keywords": "design services, UI UX design services, creative design agency, branding services"
   },
-  "technology-solutions": {
+  "custom-software-solutions": {
     "title": "Technology Solutions | Custom & Scalable Systems – CodeTrios",
     "description": "CodeTrios delivers advanced technology solutions including custom software, system integration, automation, and scalable architectures for modern businesses.",
     "keywords": "technology solutions, custom software solutions, business technology services, scalable IT solutions"
   },
-  "digital-strategy": {
-    "title": "Digital Strategy Services | Growth-Driven Solutions – CodeTrios",
-    "description": "CodeTrios helps businesses grow with data-driven digital strategy services including planning, optimization, conversion strategy, and digital transformation.",
+  "digital-strategy-consulting": {
+    "title": "Digital Strategy Consulting Services | Business Growth – CodeTrios",
+    "description": "Data-driven digital strategy services to help businesses grow through optimization, planning, and digital transformation.",
     "keywords": "digital strategy services, digital transformation services, business digital strategy, growth strategy consulting"
   },
   "technologies": {
-    "title": "Technologies We Use | Modern Tech Stack – CodeTrios",
-    "description": "Explore the technology stack behind CodeTrios solutions — modern frameworks, tools, and platforms for web, mobile, cloud, and scalable application development that drive performance and innovation.",
+    "title": "Custom Software Solutions | Scalable Technology – CodeTrios",
+    "description": "Custom software solutions including system integration, automation, and scalable architectures for modern enterprises.",
     "keywords": "technology stack, development technologies, modern frameworks, software development tech, web and app tools"
   },
-   "web-hosting": {
-    "title": "Web Hosting Services | Secure, Fast & Scalable Hosting – CodeTrios",
-    "description": "CodeTrios offers reliable web hosting services with high performance, strong security, scalable resources, and expert support to keep your website fast and always online.",
+   "web-hosting-services": {
+    "title": "Web Hosting Services | Secure & Fast Hosting – CodeTrios",
+    "description": "Reliable web hosting services with high performance, security, scalability, and expert support to keep your site online 24/7.",
     "keywords": "web hosting services, reliable web hosting, managed web hosting, secure hosting solutions, cloud web hosting"
   },
   "portfolio": {
-    "title": "Portfolio",
-    "description": "",
+    "title": "Our Portfolio | Web & App Development Projects – CodeTrios",
+    "description": "Explore our portfolio of web, mobile, SaaS, and ecommerce projects delivered for startups and enterprises worldwide.",
     "keywords": ""
   },
   "contact": {
-    "title": "CodeTrios - Contact for Web Solutions Services",
-    "description": "Get in touch with CodeTrios to discuss your web, mobile, or digital project. Contact our expert team today for consultation, support, or custom solutions tailored to your business needs.",
+    "title": "Contact CodeTrios | Software & Web Development Company",
+    "description": "Contact CodeTrios to discuss your web, mobile, or software project. Get expert consultation and custom digital solutions.",
     "keywords": "contact CodeTrios, web development company contact, digital solutions consultation, software development inquiry"
   }
 }

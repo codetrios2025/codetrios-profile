@@ -39,14 +39,14 @@ const Header=()=>{
                                                 <IoIosArrowDown className={subOpen ? "rotate" : ""} />
                                             </button>
                                              <ul className={`subMenuMob ${Style.subMenu} ${subOpen ? "open" : ""}`}>
-                                                <li><Link onClick={closeMenu} to="/website-design" title="Website Design">Website Design</Link></li>
-                                                <li><Link onClick={closeMenu} to="/web-development" title="Web Development">Web Development</Link></li>
-                                                <li><Link onClick={closeMenu} to="/web-applications" title="Web Applications">Web Applications</Link></li>
-                                                <li><Link onClick={closeMenu} to="/design-services" title="Design Services">Design Services</Link></li>
-                                                <li><Link onClick={closeMenu} to="/e-commerce-solutions" title="eCommerce Solutions">eCommerce Solutions</Link></li>
-                                                <li><Link onClick={closeMenu} to="/technology-solutions" title="Technology Solutions">Technology Solutions</Link></li>
-                                                <li><Link onClick={closeMenu} to="/digital-strategy" title="Digital Strategy">Digital Strategy</Link></li>
-                                                <li><Link onClick={closeMenu} to="/web-hosting" title="Web hosting service">Web Hosting Service</Link></li>
+                                                <li><Link onClick={closeMenu} to="/website-design-services" title="website design services">Website Design</Link></li>
+                                                <li><Link onClick={closeMenu} to="/web-development-services" title="web-development-services">Web Development</Link></li>
+                                                <li><Link onClick={closeMenu} to="/web-application-development" title="web application development">Web Applications</Link></li>
+                                                <li><Link onClick={closeMenu} to="/ui-ux-design-services" title="ui ux design services">Design Services</Link></li>
+                                                <li><Link onClick={closeMenu} to="/ecommerce-development-services" title="ecommerce development services">eCommerce Solutions</Link></li>
+                                                <li><Link onClick={closeMenu} to="/custom-software-solutions" title="custom software solutions">Technology Solutions</Link></li>
+                                                <li><Link onClick={closeMenu} to="/digital-strategy-consulting" title="digital strategy consulting">Digital Strategy</Link></li>
+                                                <li><Link onClick={closeMenu} to="/web-hosting-services" title="web hosting services">Web Hosting Service</Link></li>
                                             </ul>
                                         </li>
                                         <li><Link onClick={closeMenu} to="/technologies" title="About"><span>Technologies</span></Link></li>

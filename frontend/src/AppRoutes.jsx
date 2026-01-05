@@ -37,16 +37,16 @@ function AppRoutes() {
             <Route index element={<HomeRoute />} />
             <Route path="about-us" element={<AboutUsPage />} />
             <Route path="services" element={<Services />} />
-            <Route path="/e-commerce-solutions" element={<EcommerceSolutions />} />
-            <Route path="/web-applications" element={<WebApplications />} />
-            <Route path="/web-development" element={<WebDevelopment />} />
-            <Route path="/design-services" element={<DesignServices />} />
-            <Route path="/digital-strategy" element={<DigitalStrategy />} />
-            <Route path="/website-design" element={<WebDesign />} />
-            <Route path="/technology-solutions" element={<TechnologySolutions />} />
+            <Route path="/ecommerce-development-services" element={<EcommerceSolutions />} />
+            <Route path="/web-application-development" element={<WebApplications />} />
+            <Route path="/web-development-services" element={<WebDevelopment />} />
+            <Route path="/ui-ux-design-services" element={<DesignServices />} />
+            <Route path="/digital-strategy-consulting" element={<DigitalStrategy />} />
+            <Route path="/website-design-services" element={<WebDesign />} />
+            <Route path="/custom-software-solutions" element={<TechnologySolutions />} />
+            <Route path="/web-hosting-services" element={<WebHosting />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
-            <Route path="/web-hosting" element={<WebHosting />} />
             <Route path="contact-us" element={<ContactUsPage />} />
             <Route path="thank-you" element={<ThankyouPage />} />
           </Route>

@@ -16,7 +16,7 @@ const EcommerceSolutions = () =>{
 
     return(
         <>
-            <SEO page="eCommerce" />
+            <SEO page="ecommerce-development-services" />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

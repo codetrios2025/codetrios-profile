@@ -14,7 +14,7 @@ const WebApplications = () =>{
 
     return(
         <>
-            <SEO  page="webapps" />
+            <SEO  page="web-application-development" />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

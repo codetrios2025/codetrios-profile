@@ -13,7 +13,7 @@ const WebHosting = () =>{
 
     return(
         <>
-            <SEO page="web-hosting" />
+            <SEO page="web-hosting-services" />
             <div className={Style.innerPage + " " + Style.servicesDetail + " " + Style.hostingStyle}>
                 <div className={Style.innerBanner}>
                     <Container>

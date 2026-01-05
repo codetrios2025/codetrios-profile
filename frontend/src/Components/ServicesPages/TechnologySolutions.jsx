@@ -14,7 +14,7 @@ const TechnologySolutions = () =>{
 
     return(
         <>
-            <SEO page="technology-solutions" />
+            <SEO page="custom-software-solutions" />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

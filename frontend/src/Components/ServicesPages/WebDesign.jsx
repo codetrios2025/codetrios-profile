@@ -14,7 +14,7 @@ const WebDesign = () =>{
 
     return(
         <>
-            <SEO page="web-desing" />
+            <SEO page="website-design-services" />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

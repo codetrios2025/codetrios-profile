@@ -14,7 +14,7 @@ const DigitalStrategy = () =>{
 
     return(
         <>
-            <SEO page="digital-strategy" />
+            <SEO page="digital-strategy-consulting" />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>
