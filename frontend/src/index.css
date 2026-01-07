@@ -1,4 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: 'Rubik Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Light'), url('./assets/fonts/Rubik-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Rubik Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Regular'), url('./assets/fonts/Rubik-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Rubik Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Medium'), url('./assets/fonts/Rubik-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Rubik Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Bold'), url('./assets/fonts/Rubik-Bold.woff') format('woff');
+}
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,14 +32,15 @@
 }
 body {
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik Regular", sans-serif;
   font-size: 16px;
 }
 a{text-decoration: none;}
 ul, figure, ol{margin: 0;padding: 0;}
 li{list-style-type: none;}
 .imgFull{width: auto;max-width: 100%;height: auto;}
-h2{font-weight: 700;}
+h2{font-family: 'Rubik Bold';}
+h3, h4{font-family: 'Rubik Medium';}
 p{line-height: 26px;}
 input[type="number"]::-webkit-inner-spin-button{
   -webkit-appearance: none;

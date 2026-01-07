@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import Style from '../CSS/Style.module.css';
 import HomeBanner from "./Banner";
-import AboutUs from "./About";
-import OurServices from "./Services";
-import OurPortfolio from "./Portfolio";
-import ContactUs from "./Contact";
 import SEO from "../Common/webSiteMeta.jsx";
-//API
+import Loader from "./Loader.jsx";
+
+const AboutUs = lazy(() => import("./About"));
+const OurServices = lazy(() => import("./Services"));
+const OurPortfolio = lazy(() => import("./Portfolio"));
+const ContactUs = lazy(() => import("./Contact"));
 
 const HomeRoute = () =>{
     return(
         <>
           <SEO page="home" />
           <HomeBanner />
-          <AboutUs />
-          <OurServices/>
-          <OurPortfolio />
-          <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
+          <Suspense fallback={<Loader />}>
+            <AboutUs />
+            <OurServices/>
+            <OurPortfolio />
+            <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
+          </Suspense>
         </>
     )
 }

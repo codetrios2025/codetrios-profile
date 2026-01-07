@@ -109,7 +109,7 @@ const ContactUs = () => {
           <Col>
             <div className={Style.contactFomr}>
               <div className={Style.contactImg}>
-                <img src={contactImage} />
+                <img src={contactImage} loading="lazy" />
               </div>
               <div className={Style.detail}>
                 <h2 className={Style.title} data-aos="fade-up">

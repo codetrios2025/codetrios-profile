@@ -2,8 +2,8 @@
 
 .commonPading{padding: 80px 0;}
 
-.title{font-size: 50px;font-weight: 700;}
-/* .title span{font-weight: 400;display: block;} */
+.title{font-size: 50px;font-family: 'Rubik Bold';}
+/* .title span{font-family: 'Rubik Regular';display: block;} */
 .buttonFlex{display: flex;justify-content: center;margin-top: 30px;}
 .primeryBg{background: #7C3AED;}
 
@@ -41,25 +41,25 @@
     background: #eff2f347;
     padding: 5px 10px;
     border-radius: 5px;
-    font-weight: 600;
+    font-family: 'Rubik Medium';
     color: #fff;
 }
 .heroBanner .content h1{
-    font-weight: 300;
+    font-family: 'Rubik Light';
     color: #fff;
     font-size: 30px;
     line-height: 80px;
     margin: 0 0 30px;
     padding: 0 50px;
 }
-.heroBanner .content h1 span.highLight{display: block;text-transform: uppercase;font-size: 74px;font-weight: 700;
+.heroBanner .content h1 span.highLight{display: block;text-transform: uppercase;font-size: 74px;font-family: 'Rubik Bold';
     background: linear-gradient(90deg, #f8ad3c, #f99c10);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
     .heroBanner .content ul{width: 600px;max-width: 100%;margin: 30px auto 0;}    
-.heroBanner .content ul li{color: #fff;font-size: 18px;display: inline-block;margin: 0 10px 10px;font-weight: 200;}    
+.heroBanner .content ul li{color: #fff;font-size: 18px;display: inline-block;margin: 0 10px 10px;font-family: 'Rubik Light';}    
 .heroBanner .content ul li .icon{margin-right: 5px;}
 .heroBanner .content h1 span.highLight span{display: block;}
 .heroBanner .content p{color: #fff;}
@@ -68,7 +68,7 @@
 .queryForm .group{display: flex;align-items: center;position: relative;}
 .queryForm .group input{max-width: 240px;margin: 0 10px 0 10px;font-size: 16px;border: none;padding: 10px 0;}
 .queryForm .group input:focus{outline: none;}
-.queryForm button{border: none;background: #7C3AED;color: #fff;font-weight: 500;font-size: 16px;padding: 15px 30px;border-radius: 30px;}
+.queryForm button{border: none;background: #7C3AED;color: #fff;font-family: 'Rubik Medium';font-size: 16px;padding: 15px 30px;border-radius: 30px;}
 .heroBanner .btnStyle{display: block;}
 .heroBanner form{display: none;}
 /* About */
@@ -90,7 +90,7 @@
     color: transparent;
     background-clip: text; */
     color: #7C3AED;
-    font-weight: 300;
+    font-family: 'Rubik Light';
     font-size: 20px;
     font-size: 20px;
     text-transform: uppercase;
@@ -171,13 +171,13 @@ p strong{font-weight: normal;}
 }
 .servicesBox .content p{
     margin: 0 0 10px 0;
-    font-weight: 400;
+    font-family: 'Rubik Regular';
         overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }
-.servicesBox .content p strong{    font-weight: 400;}
+.servicesBox .content p strong{    font-family: 'Rubik Regular';}
 .servicesBox .content p span{background: transparent!important;}
 .servicesBox .content a{
     color: #000;
@@ -229,7 +229,7 @@ position: relative;
     color: #5e5757;
     margin: 0;
 }
-.projectBox h5{color: #000;margin: 10px 0;font-weight: 600;}
+.projectBox h5{color: #000;margin: 10px 0;font-family: 'Rubik Medium';}
 .contactPage{overflow: hidden;}
 /* Contact Section */
 .contactSec .contactFomr{
@@ -292,7 +292,7 @@ position: relative;
 .whyUs figure{height: 100%;background: #7C3AED;;}
 .whyUs .aboutContent{padding: 40px 0 30px 40px;height: 100%;display: flex;justify-content: center;}
 .whyUs ul li{flex-direction: column;margin-bottom: 25px;}
-.whyUs ul li h4{font-weight: 600;display: flex;align-items: center;margin: 0;font-size: 20px;color: #000;}
+.whyUs ul li h4{font-family: 'Rubik Medium';display: flex;align-items: center;margin: 0;font-size: 20px;color: #000;}
 .whyUs h2{margin-bottom: 40px;}
 .whyUs ul li h4 .icon{top: 0;color: #000;}
 .whyUs ul li p{padding-left: 30px;margin: 0;}
@@ -319,9 +319,9 @@ position: relative;
     margin: 0;
     font-size: 12px;}
 .formPop .commonPading{padding: 0;}
-.formPop h2.title{font-weight: 400;font-size: 30px;}
-.formPop .inputFlex label{color:#4F4C4C;font-weight: 100;}
-.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 400;}
+.formPop h2.title{font-size: 30px;}
+.formPop .inputFlex label{color:#4F4C4C;font-family: 'Rubik Light';}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-family: 'Rubik Regular';}
 .formPop .inputFlex{flex-direction: column;}
 .formPop .inputFlex .group{margin-bottom: 20px;}
 .formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;}
@@ -331,7 +331,7 @@ position: relative;
 .servicesPage .buttonFlex{display: none;}
 
 .servicesPage .subContent{display: block;}
-.servicesDetail .aboutContent h4{font-weight: 600;}
+.servicesDetail .aboutContent h4{font-family: 'Rubik Medium';}
 
 .whoAreSec{position: relative;background: url(../../assets/images/aboutBanner.png) no-repeat center center;background-size: cover;padding: 90px 0;}
 .whoAreSec *{position: relative;z-index: 1;color: #fff;}
@@ -361,7 +361,7 @@ position: relative;
 .ourPlatForm{padding-bottom: 80px;}
 .boxContainer{position: relative;}
 
-.boxContainer h4{text-transform: uppercase;font-weight: 700;color: #000;font-size: 40px;margin-top: 50px;}
+.boxContainer h4{text-transform: uppercase;font-family: 'Rubik Bold';color: #000;font-size: 40px;margin-top: 50px;}
 .boxContainer .boxElem{background: #f0f0f04f;padding: 50px 30px;display: flex;flex-wrap: wrap;color: #000;border-radius: 10px;margin-top: 30px;align-items: center;border-width: 2px 2px 5px 2px;
     border-color: #d8d8d8;
     border-style: solid;position: relative;}
@@ -375,7 +375,7 @@ position: relative;
     justify-content: center;
     align-items: center;}
 .boxContainer .boxElem .techLogo h6{font-size: 16px;margin: 10px 0 0;}
-.boxContainer h5{font-size: 26px;font-weight: 700;margin: 0 0 20px;}
+.boxContainer h5{font-size: 26px;font-family: 'Rubik Bold';margin: 0 0 20px;}
 .PortfolioPage .buttonFlex{display: none;}
 .boxContainer .boxElem .techLogo:hover{background: #fff;border-color: #7C3AED;}
 
@@ -384,22 +384,22 @@ position: relative;
 .servicesDetail .innerBanner div{height: 100%;}
 .servicesDetail .innerBanner h1{color: #fff;
     font-size: 70px;
-    font-weight: 100;
+    font-family: 'Rubik Light';
     margin-bottom: 20px;}
 .servicesDetail .innerBanner p{font-size: 16px;color: #fff;width: 500px;max-width: 100%;}
 .buildStyle .box h3{margin-right: 0;}
 .buildStyle .box ul{margin-left: 15px;margin-bottom: 10px;}
 .buildStyle .box ul li{list-style-type: disc;font-size: 14px;}
-.buildStyle .box strong{font-size: 18px;font-weight: 600;}
+.buildStyle .box strong{font-size: 18px;font-family: 'Rubik Medium';}
 .buildStyle .box p{margin: 0;}
 
 .buildStyle h2{text-align: center;}
 .buildElem{width: 100%;padding: 0;position: relative;perspective: 1000px;margin-bottom: 30px;}
-.buildElem h3{font-weight: 700;font-size: 24px;margin: 10px 0;}
+.buildElem h3{font-family: 'Rubik Bold';font-size: 24px;margin: 10px 0;}
 .buildElem .icon{color: #7C3AED;font-size: 40px;}
 .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
 .buildElem  ul li{list-style-type: disc;}
-.buildElem  strong{font-size: 18px;font-weight: 600;} 
+.buildElem  strong{font-size: 18px;font-family: 'Rubik Medium';} 
 .buildElem .content{  position: relative;width: 100%;height: 100%;transition: transform .7s ease;transform-style: preserve-3d;}
 .buildElem:hover .content {transform: rotateY(180deg);}
 .buildElem:hover .flipBack .icon{color: #fff;}
@@ -417,15 +417,15 @@ position: relative;
     padding: 20px;color: #000;border-radius: 10px;position: relative;overflow: hidden;background: #fff;}
 .buildContainer .buildElem .content *{position: relative;z-index: 9;}
 .buildContainer .buildElem .content .icon{color: #7C3AED;font-size: 40px;}
-.buildContainer .buildElem h3{font-weight: 700;font-size: 24px;}
+.buildContainer .buildElem h3{font-family: 'Rubik Bold';font-size: 24px;}
 .buildContainer .buildElem p{margin: 0;}
 .buildContainer .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
 .buildContainer .buildElem  ul li{list-style-type: disc;}
-.buildContainer .buildElem  strong{font-size: 18px;font-weight: 600;} */
+.buildContainer .buildElem  strong{font-size: 18px;font-family: 'Rubik Medium';} */
 .thanksPage{position: relative;text-align: center;padding: 15px;height: 640px;display: flex;align-items: center;flex-direction: column;justify-content: center;
 background: #f0f0f0;
 }
-.thanksPage h1{font-weight: 700;color: #7C3AED;}
+.thanksPage h1{font-family: 'Rubik Bold';color: #7C3AED;}
 .thanksPage a{color: #000;text-decoration: underline;}
 .thanksPage p{font-size: 16px;}
 .contactPage{margin-top: 74px;}

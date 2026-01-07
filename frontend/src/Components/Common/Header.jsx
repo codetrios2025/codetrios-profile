@@ -24,7 +24,7 @@ const Header=()=>{
                         <Col>
                             <div className={Style.head}>
                                 <div className={Style.logo}>
-                                    <Link to='' alt='codetrios'><img src={Logo} alt="codetrios" width="" height="" /></Link>
+                                    <Link to='' alt='codetrios'><img src={Logo} alt="codetrios" width="180" height="42" /></Link>
                                 </div>
                                 <button type="button" className="menuToggle"  onClick={() => setMenuOpen(true)}><CiMenuFries /></button>
                                 <div className={`mainMenu ${menuOpen ? "activeMenu" : ""}`}>

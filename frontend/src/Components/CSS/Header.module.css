@@ -50,7 +50,7 @@ header{position: fixed;top: 0;left: 0;width: 100%;z-index: 999;background: #fff;
 } */
 .head ul li .subMenu li{width: 100%;margin: 0 0 0 0;}
 .head ul li .subMenu li:last-child{margin: 0;}
-.head ul li .subMenu li a{padding: 10px 15px;font-weight: 500;}
+.head ul li .subMenu li a{padding: 10px 15px;font-family: 'Rubik Medium';}
 .head ul li .subMenu li a:hover{background: #875ad6;color: #fff;}
 .head ul li .subMenu li a:hover::before{content: none;}
 }
