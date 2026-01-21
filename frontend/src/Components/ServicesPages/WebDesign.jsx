@@ -14,7 +14,12 @@ const WebDesign = () =>{
 
     return(
         <>
-            <SEO page="website-design-services" />
+            <SEO page="website-design-services"
+            title="Best Professional website design services Company in India | Affordable Custom Responsive web design services India"
+            description="Best website design company in India providing professional, affordable, custom, responsive, WordPress & ecommerce website design and development services in Delhi, NCR India."
+            keywords="website design services in India, best website design company India, professional web design services India, affordable website design India, custom website design India, responsive web design services India, wordpress website design India, ecommerce website design India, website design and development India, web design company India"
+
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>
@@ -22,7 +27,7 @@ const WebDesign = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Website Design</h1>
-                                    <p>At CodeTrios, we develop high-performance, scalable, and SEO-optimized websites that reflect your brand and drive engagement. Whether it’s a business site, portfolio, or enterprise-level platform — we ensure speed, security, and smooth functionality every step of the way.</p>
+                                    <p>At CodeTrios, we provide professional website design services in India, delivering high-performance, scalable, and SEO-optimized websites that reflect your brand and drive engagement. As a trusted web design company in India, we build business websites, portfolios, WordPress sites, and enterprise platforms with speed, security, and seamless user experience. Whether it’s a business site, portfolio, or enterprise-level platform — we ensure speed, security, and smooth functionality every step of the way.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -38,8 +43,11 @@ const WebDesign = () =>{
                             </Col>
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
-                                    <h2 className={Style.title}>Professional Website Design Services – Modern & Responsive Business Websites</h2>
-                                    <p>Modern, responsive websites that convert visitors into customers. We design visually appealing, user-focused websites that reflect your brand identity and deliver seamless experiences across all devices. Our layouts are created with strategic UX, clear navigation, and strong visual hierarchy to increase engagement and guide users toward actions like inquiries, bookings, or purchases. Every design balances aesthetics with performance, ensuring your website is fast, accessible, and aligned with your business goals.</p>
+                                    <h2 className={Style.title}>Professional & Affordable Website Design Services in India</h2>
+                                    <p>
+                                    We are a best website design company in India offering custom website design, responsive web design services, and complete website design and development solutions. Our professional web design services in India focus on user experience, performance, and conversion-driven layouts. Whether you need a WordPress website design in India, an eCommerce website design, or a fully custom solution, we ensure your website looks stunning and performs flawlessly across all devices.
+                                    </p>
+
                                 </div>
                             </Col>
                         </Row>
@@ -57,7 +65,9 @@ const WebDesign = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdWeb  /></span>
                                     <h3>Landing Page & Corporate Website Design</h3>
-                                    <p>Clean, modern, and purpose-driven designs tailored for businesses that want to make a strong digital impression. We create layouts that highlight your value, build credibility, and inspire user action.</p>
+                                    {/* <p>Clean, modern, and purpose-driven designs tailored for businesses that want to make a strong digital impression. We create layouts that highlight your value, build credibility, and inspire user action.</p> */}
+                                    <p>Clean, modern designs crafted by a leading web design company in India. Ideal for startups, enterprises, and growing brands looking for affordable website design in India.
+                                    </p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -78,7 +88,8 @@ const WebDesign = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FaShoppingCart   /></span>
                                     <h3>E-commerce Store Design</h3>
-                                    <p>Conversion-ready storefronts designed for Shopify, WooCommerce, Magento, or custom e-commerce builds. We ensure intuitive navigation, fast checkout flows, and strong product presentation.</p>
+                                    <p>Conversion-focused ecommerce website design in India for Shopify, WooCommerce, Magento, and custom platforms. Built for speed, usability, and sales growth.</p>
+                                    
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -109,22 +120,35 @@ const WebDesign = () =>{
                                     <p>WCAG-compliant design solutions that ensure your website is usable for all visitors, including those with disabilities. Better accessibility means broader reach and stronger credibility.</p>
                                 </div>
                             </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><MdWeb  /></span>
+                                    <h3>Wordpress Website Design</h3>
+                                    <p>
+                                    We specialize in WordPress website design in India, delivering flexible, scalable, and SEO-ready websites for businesses of all sizes.
+                                    </p>
+                                </div>
+                            </Col>
                         </Row>
+
                     </Container>
                 </div>
-                {/* <div className={Style.whoAreSec}>
+                <div className={Style.whoAreSec}>
                     <Container>
                         <Row>
                             <Col>
                                 <div className={Style.box}>
-                                    <h2 className={Style.title}>Why Choose Our Web Development? </h2>
-                                    <p>Whether you’re starting fresh or revamping an existing site, we ensure your web presence is built to engage, perform, and grow. </p>
+                                   
+                                   <p>
+                                    CodeTrios is a trusted web design company in India offering custom website design, responsive web design services, WordPress website design, ecommerce website design, and complete website design and development solutions. Our affordable website design services in India help businesses establish a strong digital presence and achieve measurable growth.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
-                </div> */}
-                
+                </div>
+               
+
                 <VisionComponent />
             </div>
         </>
