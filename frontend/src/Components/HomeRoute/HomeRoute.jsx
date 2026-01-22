@@ -14,12 +14,10 @@ const HomeRoute = () =>{
         <>
           <SEO page="home" />
           <HomeBanner />
-          <Suspense fallback={<Loader />}>
-            <AboutUs />
-            <OurServices/>
-            <OurPortfolio />
-            <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
-          </Suspense>
+          <AboutUs />
+          <OurServices/>
+          <OurPortfolio />
+          <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>
         </>
     )
 }
