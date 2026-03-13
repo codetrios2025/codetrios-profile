@@ -6,7 +6,7 @@ import { Link, Outlet } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaFacebookF, FaInstagram, FaLinkedinIn   } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -19,9 +19,30 @@ const Footer = () => {
               <img src={Logo} alt="codetrios" />
               <p>Website Development & Ongoing Maintenance Services.</p>
               <ul>
-                <li><Link to="https://www.facebook.com/profile.php?id=61581161434863" target="_blank"><FaFacebookF /></Link></li>
-                <li><Link to="https://www.instagram.com/codetrios/" target="_blank"><FaInstagram /></Link></li>
-                <li><Link to="https://www.linkedin.com/in/code-trio-90ba31385/" target="_blank"><FaLinkedinIn /></Link></li>
+                <li>
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=61581161434863"
+                    target="_blank"
+                  >
+                    <FaFacebookF />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="https://www.instagram.com/codetrios/"
+                    target="_blank"
+                  >
+                    <FaInstagram />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="https://www.linkedin.com/in/code-trio-90ba31385/"
+                    target="_blank"
+                  >
+                    <FaLinkedinIn />
+                  </Link>
+                </li>
                 {/* <li><Link to="" target="_blank"><FaXTwitter /></Link></li> */}
               </ul>
             </div>
@@ -76,7 +97,8 @@ const Footer = () => {
                 <p>
                   <FaLocationDot className={Style.icon} />{" "}
                   <span>
-                    Codetrios 711 Sector -31, Faridabad,<br/> Haryana, India - 121003
+                    Codetrios 711 Sector -31, Faridabad,
+                    <br /> Haryana, India - 121003
                   </span>
                 </p>
               </div>
