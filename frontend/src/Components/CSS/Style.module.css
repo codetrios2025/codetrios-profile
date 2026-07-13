@@ -333,7 +333,9 @@ position: relative;
 .formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-family: 'Rubik Regular';}
 .formPop .inputFlex{flex-direction: column;}
 .formPop .inputFlex .group{margin-bottom: 20px;}
-.formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;}
+.formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;
+display: block;
+}
 .formPop .buttonFlex{margin: 10px 0 0;}
 .formPop .buttonFlex button{background: #7C3AED;color: #fff;}
 
