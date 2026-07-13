@@ -22,7 +22,7 @@ import WebHosting from "./Components/ServicesPages/Hosting";
 import GEOServices from "./Components/ServicesPages/GEOServices";
 import ThankyouPage from "./Components/Pages/ThankYou";
 import AosRoute from "./Components/Common/AosRoute";
-
+import PrivacyPolicy from "./Components/Pages/privacypolicy";
 function AppRoutes() {
   return (
     <>
@@ -50,6 +50,7 @@ function AppRoutes() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />
+           
             <Route path="thank-you" element={<ThankyouPage />} />
           </Route>
       </Routes>

@@ -283,6 +283,7 @@ position: relative;
 /* innerBanner */
 .innerBanner{position: relative;background: url(../../assets/images/innerBanner_bg.webp) no-repeat center center;padding: 0 0 0 0;height:400px;margin-top: 0;background-size: cover;}
 .innerBanner img{width: 100%;height: 100%;object-fit: cover;}
+.aboutPage{overflow: hidden;}
 .aboutPage .aboutContent a{display: none;}
 .weBuild{position: relative;background: #f7f7f7;}
 .weBuild h2{text-align: center;margin: 0 0 40px;}
@@ -347,7 +348,7 @@ display: block;
 .whoAreSec{position: relative;background: url(../../assets/images/aboutBanner.png) no-repeat center center;background-size: cover;padding: 90px 0;}
 .whoAreSec *{position: relative;z-index: 1;color: #fff;}
 .whoAreSec:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: #00000083;}
-.whoAreSec .box{width: 1024PX;margin: 0 auto;text-align: center;}
+.whoAreSec .box{width: 1024px;margin: 0 auto;text-align: center;max-width: 100%;}
 .whoAreSec .box h2{margin: 0 0 30px;}
 .whoAreSec .box p span{background: transparent!important;color: #fff!important;}
 
@@ -390,9 +391,10 @@ display: block;
 .PortfolioPage .buttonFlex{display: none;}
 .boxContainer .boxElem .techLogo:hover{background: #fff;border-color: #7C3AED;}
 
-.servicesDetail .innerBanner{height: 350px;}
+.servicesDetail .innerBanner{height: 450px;}
 .innerBanner .content{height: 100%;display: flex;justify-content: center;flex-direction: column;max-width: 100%;}
 .servicesDetail .innerBanner div{height: 100%;}
+.servicesDetail .innerBanner .content{padding-top: 80px;}
 .servicesDetail .innerBanner h1{color: #fff;
     font-size: 70px;
     font-family: 'Rubik Light';
@@ -539,7 +541,13 @@ display: flex;align-items: center;justify-content: center;}
 .processItem:hover h3{
     color:#4f46e5;
 }
-
+.PrivacySec .innerBanner{display: flex;align-items: center;justify-content: center;}
+.PrivacyBox{    width: 900px;
+    margin: 50px auto;
+    background: #f1f1f1;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 20px;}
 
 @media (max-width: 1600px){
 .thanksPage{height: 500px;}
@@ -561,6 +569,7 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .content{padding: 0;}
 .ideaSec .ideaElem .content{width: 65%;}
 .ideaSec .ideaElem .ideaImg{width: 35%;}
+.servicesDetail .innerBanner .content{padding-top: 80px;}
 }
 
 @media (max-width: 1199px){
@@ -576,7 +585,7 @@ display: flex;align-items: center;justify-content: center;}
 .commonPading{padding: 60px 0;}
 .innerBanner{height: 300px;}
 .contactSec .leftArea h2{margin-bottom: 30px;}
-.innerBanner{margin-top: 71px;}
+.innerBanner{margin-top: 0;}
 .contactPage{margin-top: 71px;}
 .hostingStyle .weBuild .box ul li{font-size: 14px;line-height: 24px;}
  .heroBanner .content h1{font-size: 45px;line-height: 55px;}
@@ -594,6 +603,10 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .content ul li{font-size: 13px;}
 .ideaSec .ideaElem .content ul .icon{    width: 40px;
     height: 40px;font-size: 20px;min-width: 40px;}
+.servicesDetail .innerBanner{height: 390px;}
+.servicesDetail .innerBanner h1{font-size: 50px;}
+.servicesDetail .innerBanner p{font-size: 14px;}
+.servicesDetail .innerBanner .content{padding-top: 60px;}
 }
 
 @media (max-width: 992px){
@@ -603,7 +616,7 @@ display: flex;align-items: center;justify-content: center;}
 .aboutContent{padding: 0;}
 .aboutContent ul li{line-height: 24px;margin-bottom: 6px;}
 
-.innerBanner{margin-top: 65px;height: 230px;}
+.innerBanner{margin-top: 0;height: 230px;}
 .formElem{width: 500px;max-width: 94%;}
 .formElem .contactFomr .contactImg{display: none;}
 .formElem .contactFomr .detail{width: 100%;}
@@ -623,7 +636,11 @@ display: flex;align-items: center;justify-content: center;}
 .servicesDetail .innerBanner{position: relative;}
 .servicesDetail .innerBanner:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #00000038;content: "";}
 .servicesDetail .innerBanner .content{position: relative;z-index: 9;}
-.servicesDetail .innerBanner{height: auto;padding: 40px 0;}
+.servicesDetail .innerBanner{height: 290px;margin-top: 65px;
+        padding: 0 0;}      
+    .servicesDetail .innerBanner .content {
+        padding-top: 0;
+    }         
 .innerBanner .content  h1{font-size: 40px;}
 .innerBanner .content p{font-size: 14px;line-height: 24px;}
 .buildElem h3{font-size: 22px;}
@@ -637,6 +654,11 @@ display: flex;align-items: center;justify-content: center;}
 }
 
 @media (max-width: 767px){
+    .servicesDetail .innerBanner {
+        height: auto;
+        margin-top: 65px;
+        padding: 30px 0;
+    }    
     .contactSec .leftArea::before{position: absolute;content: '';top: 0;width: 100%;height: 100%;right: -100%;background: #7C3AED;}
 .boxContainer h4{font-size: 26px;margin-top: 30px;}   
 .boxContainer h5{font-size: 22px;}
