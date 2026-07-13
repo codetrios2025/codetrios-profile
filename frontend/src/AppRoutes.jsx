@@ -19,6 +19,7 @@ import TechnologySolutions from "./Components/ServicesPages/TechnologySolutions"
 import DigitalStrategy from "./Components/ServicesPages/DigitalStrategy";
 import WebDesign from "./Components/ServicesPages/WebDesign";
 import WebHosting from "./Components/ServicesPages/Hosting";
+import GEOServices from "./Components/ServicesPages/GEOServices";
 import ThankyouPage from "./Components/Pages/ThankYou";
 import AosRoute from "./Components/Common/AosRoute";
 
@@ -45,6 +46,7 @@ function AppRoutes() {
             <Route path="/website-design-services" element={<WebDesign />} />
             <Route path="/custom-software-solutions" element={<TechnologySolutions />} />
             <Route path="/web-hosting-services" element={<WebHosting />} />
+            <Route path="/geo-seo-services" element={<GEOServices />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="technologies" element={<TechnologiesPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />

@@ -24,7 +24,6 @@ const OurPortfolio = () =>{
                                 <div className={Style.projectImg}>
                                     <span className={Style.scrollAnime} style={{ backgroundImage: `url(${portfolio1})` }}></span>
                                 </div>
-                                <p>Ecommerce Website - Shopify</p>
                                 <h5>Elite GYM</h5>
                             </Link>
                         </div>
@@ -35,7 +34,6 @@ const OurPortfolio = () =>{
                                 <div className={Style.projectImg}>
                                     <span className={Style.scrollAnime} style={{ backgroundImage: `url(${portfolio2})` }}></span>
                                 </div>
-                                <p>Ecommerce Website - Shopify</p>
                                 <h5>Prime Estate</h5>
                             </Link>
                         </div>
@@ -46,7 +44,6 @@ const OurPortfolio = () =>{
                                 <div className={Style.projectImg}>
                                     <span className={Style.scrollAnime} style={{ backgroundImage: `url(${portfolio3})` }}></span>
                                 </div>
-                                <p>Ecommerce Website - Shopify</p>
                                 <h5>XOPA</h5>
                             </Link>
                         </div>
@@ -57,7 +54,6 @@ const OurPortfolio = () =>{
                                 <div className={Style.projectImg}>
                                     <span className={Style.scrollAnime} style={{ backgroundImage: `url(${portfolio4})` }}></span>
                                 </div>
-                                <p>Ecommerce Website - Shopify</p>
                                 <h5>Anjum Jewels</h5>
                             </Link>
                         </div>

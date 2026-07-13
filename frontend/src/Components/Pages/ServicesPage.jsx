@@ -10,6 +10,7 @@ import designServicesImg from '../../assets/images/design_services.webp';
 import technologyImg  from '../../assets/images/technology_solutions.webp';
 import designStrategyImg  from '../../assets/images/digital_strategy.webp';
 import hostingImg  from '../../assets/images/hosting.webp';
+import geoImg  from '../../assets/images/geo-img.webp';
 import { Link } from 'react-router-dom';
 //Icon
 import { BsArrowRight } from "react-icons/bs";
@@ -143,6 +144,19 @@ const ServicesPage = ()=>{
                                     <h3>Web Hosting Services</h3>
                                     <p>Your website’s success depends on its hosting. We ensure lightning-fast speed, strong security, and maximum uptime — so your visitors always get the best experience.</p>
                                     <Link to="/web-hosting-services" title='web hosting services'>Read More <BsArrowRight className={Style.icon} /></Link>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={4}>
+                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
+                                <figure>
+                                    <img src={geoImg} alt="geo seo services" />
+                                </figure>
+                                <div className={Style.content}>
+                                    <span className={Style.spanICon}><MdInsights  className={Style.icon} /></span>
+                                    <h3>GEO & SEO Services</h3>
+                                    <p>CodeTrios helps businesses increase their visibility across traditional search engines and AI-powered platforms through AI Search Engine Optimization, Generative Engine Optimization (GEO), and LLM Optimization Services. We optimize your website, content, and digital authority so your business becomes the trusted answer in Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and other AI-driven search experiences.</p>
+                                    <Link to="/geo-seo-services" title='geo seo services'>Read More <BsArrowRight className={Style.icon} /></Link>
                                 </div>
                             </div>
                         </Col>

@@ -47,6 +47,7 @@ const Header=()=>{
                                                 <li><Link onClick={closeMenu} to="/custom-software-solutions" title="custom software solutions">Technology Solutions</Link></li>
                                                 <li><Link onClick={closeMenu} to="/digital-strategy-consulting" title="digital strategy consulting">Digital Strategy</Link></li>
                                                 <li><Link onClick={closeMenu} to="/web-hosting-services" title="web hosting services">Web Hosting Service</Link></li>
+                                                <li><Link onClick={closeMenu} to="/geo-seo-services" title="Geo & SEO Services">Geo & SEO Services</Link></li>
                                             </ul>
                                         </li>
                                         <li><Link onClick={closeMenu} to="/technologies" title="About"><span>Technologies</span></Link></li>
