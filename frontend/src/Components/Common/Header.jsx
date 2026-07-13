@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Header.module.css';
 import { Link, Outlet  } from "react-router-dom";
-import Logo from '../../assets/images/logo.webp';
+import Logo from '../../assets/images/codetrios_logo.webp';
 import { CiMenuFries } from "react-icons/ci";
 
 import { IoIosArrowDown } from "react-icons/io";
@@ -11,14 +11,28 @@ import { IoCloseSharp } from "react-icons/io5";
 const Header=()=>{
     const [menuOpen, setMenuOpen] = useState(false);
     const [subOpen, setSubOpen] = useState(false); 
+    const [isScrolled, setIsScrolled] = useState(false);
     const closeMenu = () => {
     setMenuOpen(false);
     setSubOpen(false);
   };
+   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
     return(
         <>
-            <header>
+            <header className={`header ${isScrolled ? Style.headerFix : ""}`}>
                 <Container>
                     <Row>
                         <Col>

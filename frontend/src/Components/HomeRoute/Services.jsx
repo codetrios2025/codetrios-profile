@@ -23,8 +23,13 @@ const OurServices = () =>{
             <Container>
                 <Row>
                     <Col>
-                        <h2 className={Style.title} data-aos="fade-up">Our Services</h2>
+                    <div className={Style.Heading}>
+                        <h2 data-aos="fade-up">Our <span>Services</span></h2>
                         <p className={Style.subContent} data-aos="fade-up" data-aos-delay="200">At CodeTrios, we deliver end-to-end digital solutions designed to help your business thrive online. From full-stack development and API integrations to responsive design and performance optimization — we handle everything from concept to deployment, ensuring your digital presence is modern, scalable, and future-ready. </p>
+                        <div className={Style.line}><span className={Style.lineDote}></span></div>
+                    </div>
+                       
+                        
                     </Col>
                 </Row>
                 <Row>

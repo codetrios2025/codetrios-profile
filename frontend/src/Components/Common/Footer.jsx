@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Logo from "../../assets/images/logo.webp";
+import Logo from "../../assets/images/codetrios_logo.webp";
 import Style from "../CSS/Header.module.css";
 import { Link, Outlet } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";

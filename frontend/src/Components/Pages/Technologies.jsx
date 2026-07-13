@@ -41,6 +41,16 @@ import anime from '../../assets/images/icon/anime_logo.webp';
 import lottie from '../../assets/images/icon/lottie_logo.webp';
 import aos_logo from '../../assets/images/icon/aos_logo.webp';
 
+import aws from '../../assets/images/icon/aws_cloud.webp';
+import gCloud from '../../assets/images/icon/google_cloud.webp';
+import hostinger from '../../assets/images/icon/hostinger_cloud.webp';
+import tailwind from '../../assets/images/icon/tailwind_logo.webp';
+import openAI from '../../assets/images/icon/OpenAI_logo.webp';
+import claude from '../../assets/images/icon/Claude_ai_logo.webp';
+import perplexity from '../../assets/images/icon/perplexity_ai_logo.webp';
+import github from '../../assets/images/icon/github_copilot_ai_logo.webp';
+import gemini from '../../assets/images/icon/Gemini_ai_logo.webp';
+
 import VisionComponent from './VisionCode';
 import SEO from '../Common/webSiteMeta.jsx';
 const TechnologiesPage = ()=>{
@@ -78,9 +88,9 @@ const TechnologiesPage = ()=>{
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
-                                                <img src={css} alt='' />
+                                                <img src={tailwind} alt='' />
                                             </figure>
-                                            <h6>CSS</h6>
+                                            <h6>Tailwind css</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
@@ -105,13 +115,54 @@ const TechnologiesPage = ()=>{
                                             <figure>
                                                 <img src={reactNative} alt='' />
                                             </figure>
-                                            <h6>React</h6>
+                                            <h6>React Native</h6>
                                         </div>
                                         <div className={Style.techLogo}>
                                             <figure>
                                                 <img src={express} alt='' />
                                             </figure>
                                             <h6>Express.js</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.boxContainer}>
+                                <h4 data-aos="fade-up">AI Automation</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                    <div className={Style.leftArea}>
+                                        <h5>AI Automation</h5>
+                                        <p>Transform your business with intelligent AI solutions that automate workflows, enhance customer experiences, and unlock data-driven decision-making. We build production-ready AI applications tailored to your business goals. </p>
+                                    </div>
+                                    <div className={Style.rightArea}>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={openAI} alt='' />
+                                            </figure>
+                                            <h6>OpenAI</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={claude} alt='' />
+                                            </figure>
+                                            <h6>Claude</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={gemini} alt='' />
+                                            </figure>
+                                            <h6>Gemini</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={perplexity} alt='' />
+                                            </figure>
+                                            <h6>Perplexity</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={github} alt='' />
+                                            </figure>
+                                            <h6>Github Copilot</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -259,6 +310,35 @@ const TechnologiesPage = ()=>{
                                                 <img src={aos_logo} alt='' />
                                             </figure>
                                             <h6>AOS Animation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.boxContainer}>
+                                <h4 data-aos="fade-up">Cloud</h4>
+                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                    <div className={Style.leftArea}>
+                                        <h5>Cloud</h5>
+                                        <p>Modern businesses need secure, scalable, and high-performing cloud infrastructure. At CodeTrios, we help organizations migrate, deploy, and manage applications across leading cloud platforms using DevOps best practices. From cloud migration and CI/CD pipelines to containerization and infrastructure automation, we build reliable cloud solutions that improve performance, reduce costs, and support business growth. </p>
+                                    </div>
+                                    <div className={Style.rightArea}>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={aws} alt='' />
+                                            </figure>
+                                            <h6>AWS</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={gCloud} alt='' />
+                                            </figure>
+                                            <h6>Google Cloud</h6>
+                                        </div>
+                                        <div className={Style.techLogo}>
+                                            <figure>
+                                                <img src={hostinger} alt='' />
+                                            </figure>
+                                            <h6>Hostinger</h6>
                                         </div>
                                     </div>
                                 </div>
