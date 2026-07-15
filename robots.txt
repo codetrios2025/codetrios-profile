@@ -1,0 +1,4 @@
+User-agent: *
+
+Allow: /
+Allow: https://www.codetrios.com/sitemap.xml
