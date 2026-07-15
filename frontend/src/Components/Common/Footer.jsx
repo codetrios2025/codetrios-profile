@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Logo from "../../assets/images/codetrios_logo.webp";
 import Style from "../CSS/Header.module.css";
@@ -7,107 +6,92 @@ import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
     <footer>
       <Container>
         <Row>
-          <Col md={3}>
+          <Col md={4}>
             <div className={Style.info} data-aos="fade-up">
-              <img src={Logo} alt="codetrios" />
-              <p>Website Development & Ongoing Maintenance Services.</p>
+              <img src={Logo} alt="CodeTrios Software Development Company" loading="lazy" decoding="async" width="180" height="30"  />
+              {/* <p>Website Development & Ongoing Maintenance Services.</p> */}
+              <p>Custom Web Development, Mobile App Development, MERN Stack, SaaS Products, AI Automation, and Ongoing Maintenance Services.</p>
               <ul>
                 <li>
-                  <Link
-                    to="https://www.facebook.com/profile.php?id=61581161434863"
-                    target="_blank"
-                  >
+                  <a href="https://www.facebook.com/profile.php?id=61581161434863" target="_blank" rel="noopener noreferrer"aria-label="CodeTrios Facebook" >
                     <FaFacebookF />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="https://www.instagram.com/codetrios/"
-                    target="_blank"
-                  >
+                  <a href="https://www.instagram.com/codetrios/" target="_blank" rel="noopener noreferrer"aria-label="CodeTrios Instagram">
                     <FaInstagram />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="https://www.linkedin.com/in/code-trio-90ba31385/"
-                    target="_blank"
-                  >
+                  <a href="https://www.linkedin.com/in/code-trio-90ba31385/" target="_blank" rel="noopener noreferrer"aria-label="CodeTrios LinkedinIn">
                     <FaLinkedinIn />
-                  </Link>
+                  </a>
                 </li>
-                {/* <li><Link to="" target="_blank"><FaXTwitter /></Link></li> */}
               </ul>
             </div>
           </Col>
-          <Col md={9}>
-            <div
-              className={Style.footerLink}
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <ul>
-                <li>
-                  <Link to="/">
-                    <span>Home</span>{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="about-us">
-                    <span>About</span>{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="services">
-                    <span>Services</span>{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="technologies">
-                    <span>Technologies</span>{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="portfolio">
-                    <span>Portfolio</span>{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="contact-us">
-                    <span>Contact Us</span>{" "}
-                  </Link>
-                </li>
-              </ul>
-              <div className={Style.address}>
-                <p>
-                  <IoMailOpenSharp className={Style.icon} />
-                  <Link to="mailto:info@codetrios.com">info@codetrios.com</Link>
-                </p>
-                <p>
-                  <IoCall className={Style.icon} />{" "}
-                  <Link to="tel:+91 8882309150">+91 8882309150</Link>
-                </p>
-                <p>
-                  <FaLocationDot className={Style.icon} />{" "}
-                  <span>
-                    Codetrios 711 Sector -31, Faridabad,
-                    <br /> Haryana, India - 121003
-                  </span>
-                </p>
+          <Col md={8}>
+            <div className={Style.footerBox}>
+              <div className={Style.box}>
+                <h4>Quick Link</h4>
+                <nav aria-label="Footer Navigation">
+                  <ul>
+                    <li><Link to="/" title="Home">Home</Link></li>
+                    <li><Link to="/about-us" title="About">About</Link></li>
+                    <li><Link to="/services" title="Services">Services</Link></li>
+                    <li><Link to="/technologies" title="Technologies">Technologies</Link></li>
+                    <li><Link to="/portfolio" title="Portfolio">Portfolio</Link></li>
+                    <li><Link to="/contact-us" title="Contact Us">Contact Us</Link></li>
+                  </ul>
+                </nav>
+              </div>
+              <div className={Style.box}>
+                <h4>Our Services</h4>
+                <ul>
+                  <li><Link to="/website-design-services">Website Design</Link></li>
+                  <li><Link to="/web-development-services">Web Development</Link></li>
+                  <li><Link to="/web-application-development">Web Applications</Link></li>
+                  <li><Link to="/ui-ux-design-services">Design Services</Link></li>
+                  <li><Link to="/ecommerce-development-services">eCommerce Solutions</Link></li>
+                  <li><Link to="/custom-software-solutions">Technology Solutions</Link></li>
+                  <li><Link to="/digital-strategy-consulting">Digital Strategy</Link></li>
+                  <li><Link to="/web-hosting-services">Web Hosting Service</Link></li>
+                  <li><Link to="/geo-seo-services">Geo & SEO Services</Link></li>
+                </ul>
+              </div>
+              <div className={Style.box}>
+                <h4>Contact Info</h4>
+                <address className={Style.address}>
+                  <p>
+                    <IoMailOpenSharp className={Style.icon} />
+                    <a href="mailto:info@codetrios.com">info@codetrios.com</a>
+                  </p>
+                  <p>
+                    <IoCall className={Style.icon} />{" "}
+                    <a href="tel:8882309150">+91 8882309150</a>
+                  </p>
+                  <p>
+                    <FaLocationDot className={Style.icon} />{" "}
+                    <span>
+                      Codetrios 711 Sector -31, Faridabad,
+                      <br /> Haryana, India - 121003
+                    </span>
+                  </p>
+                </address>
               </div>
             </div>
           </Col>
         </Row>
       </Container>
       <div className={Style.copyRight}>
-        <p>© 2025 Codetrios. All rights reserved.</p>
+        <small>© 2025 Codetrios. All rights reserved.</small>
       </div>
     </footer>
   );

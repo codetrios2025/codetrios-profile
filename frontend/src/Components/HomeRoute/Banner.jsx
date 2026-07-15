@@ -37,7 +37,7 @@ const HomeBanner = ({data}) =>{
         }
     return(
         <div className={Style.heroBanner}>
-            <img src={HeroImage} fetchPriority="high" alt="We Build Modern Web Experiences That Scale" width="1920" height="898" className={Style.imgResponsive} />
+            <img src={HeroImage} fetchPriority="high" loading="eager" decoding="async" alt="We Build Modern Web Experiences That Scale" width="1920" height="898" className={Style.imgResponsive} />
             <div className={Style.content}>
                 <Container>
                     <Row>

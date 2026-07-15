@@ -2,25 +2,25 @@
     font-family: 'Rubik Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Rubik Light'), url('./assets/fonts/Rubik-Light.woff') format('woff');
+    src: local('Rubik Light'), url('./assets/fonts/Rubik-Light.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Rubik Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Rubik Regular'), url('./assets/fonts/Rubik-Regular.woff') format('woff');
+    src: local('Rubik Regular'), url('./assets/fonts/Rubik-Regular.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Rubik Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Rubik Medium'), url('./assets/fonts/Rubik-Medium.woff') format('woff');
+    src: local('Rubik Medium'), url('./assets/fonts/Rubik-Medium.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Rubik Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Rubik Bold'), url('./assets/fonts/Rubik-Bold.woff') format('woff');
+    src: local('Rubik Bold'), url('./assets/fonts/Rubik-Bold.woff2') format('woff2');
 }
 :root {
   font-synthesis: none;
