@@ -6,7 +6,6 @@ import webImage from '../../assets/images/about_services.webp';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
-import parse from 'html-react-parser';
 
 const AboutUs = ({data}) =>{
     const aboutContent = data?.whoweare?.[0];

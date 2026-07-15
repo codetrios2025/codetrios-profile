@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/E-commerceSolutions.webp';
-import parse from 'html-react-parser';
 
 import { Link } from 'react-router-dom';
 import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
