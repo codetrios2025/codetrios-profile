@@ -14,7 +14,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <div className={Style.info} data-aos="fade-up">
+            <div className={Style.info}>
               <img src={Logo} alt="CodeTrios Software Development Company" loading="lazy" decoding="async" width="180" height="30"  />
               {/* <p>Website Development & Ongoing Maintenance Services.</p> */}
               <p>Custom Web Development, Mobile App Development, MERN Stack, SaaS Products, AI Automation, and Ongoing Maintenance Services.</p>

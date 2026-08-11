@@ -23,8 +23,8 @@ const IdeaBuild = ()=>{
           <Col>
             <div className={Style.ideaElem}>
               <div className={Style.content}>
-                <h2 data-aos="fade-up">Have an Idea? <span>Let's Build Somethink Amazing Together!</span></h2>
-                <p data-aos="fade-up" data-aos-delay="200">Share your idea with us and our experts will turn it into a powerfull <span>difital product that drives results.</span></p>
+                <h2 data-aos="fade-up">Have an Idea? <span>Let's Build Something Amazing Together!</span></h2>
+                <p data-aos="fade-up" data-aos-delay="200">Share your idea with us and our experts will turn it into a powerful <span>digital product that drives results.</span></p>
                 <ul>
                   <li data-aos="fade-up" data-aos-delay="300">
                     <div className={Style.icon}><RiMessage2Line /></div>

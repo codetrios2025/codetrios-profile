@@ -9,8 +9,17 @@ import portfolio2 from "../../assets/images/portfolio02.webp";
 import portfolio3 from "../../assets/images/portfolio03.webp";
 import portfolio4 from "../../assets/images/portfolio04.webp";
 import cretecent from "../../assets/images/portfolio05.webp";
+import nhdc from "../../assets/images/namokar_hospital.webp";
 
 const portfolioData = [
+  {
+    id: 11,
+    title: "Namokar Hospital & Diagnostic Centre",
+    tag:"Website Design & Development",
+    content:"React, Node",
+    image: nhdc,
+    link: "",
+  },
   {
     id: 1,
     title: "Cretecent",

@@ -14,6 +14,12 @@ export default function SEO({ page }) {
         name="keywords"
          content={`${seo?.keywords || ""}, ${geoKeywords}`}
       />
+      <meta
+        name="robots"
+        content="index, follow"
+      />
+       <link rel="canonical" href={seo.canonical} />
+
     </Helmet>
   );
-}
+} 
