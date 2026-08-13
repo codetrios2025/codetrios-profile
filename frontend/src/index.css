@@ -74,9 +74,9 @@ p{line-height: 24px;}
 }
 
 @media (max-width: 992px){
-.menuToggle{display: block;background: transparent;padding: 0;color: #000;font-size: 30px;margin: 10px 0;border: none;}
+.menuToggle{display: block;background: transparent;padding: 0;color: #000;font-size: 30px;margin: 0 0;border: none;position: absolute;right: 0;top: -6px;}
 .closeBtn{display: block;border: none;}
-header .mainMenu{background: #7C3AED;position: fixed;top: 0;right: -100%;width: 300px;height: 100%;padding-top: 30px;overflow: auto;}
+header .mainMenu{background: #7C3AED;position: fixed;top: 0;right: -100%;width: 300px;height: 100%;padding-top: 30px;overflow: auto;z-index: 99;}
 header .mainMenu.activeMenu{right: 0;}
 header .mainMenu ul{flex-direction: column;height: 100%;}
 header .mainMenu ul li{position: relative;}

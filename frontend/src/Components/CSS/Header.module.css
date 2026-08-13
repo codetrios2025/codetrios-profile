@@ -1,7 +1,7 @@
 header{position: fixed;top: 10px;left: 0;width: 100%;z-index: 999;background: transparent;    transition:.4s;}
 header.headerFix{background: #fff;top: 0;box-shadow: 0px 3px 20px 0px #0000001c;}
 .head{display: flex;align-items: center;justify-content: space-between;background: #fff;border-radius: 10px;padding: 0 15px;position: relative;}
-.head .logo img{width: 180px;}
+.head .logo img{width: 180px;height: auto;}
 .head ul{display: flex;}
 .head ul li{margin-left: 0;position: relative;}
 .head ul li a{color: #000;padding: 25px 20px;display: block;position: relative;}
@@ -33,61 +33,59 @@ footer{padding: 30px 0 0;}
 .footerLink ul li a{font-size: 16px;color: #000;}
 .footerLink ul li a:hover{color: #7C3AED;}
 .footerLink{display: flex;flex-direction: column;justify-content: center;}
-
+.headFlex {display: flex;align-items: center;}
+.getTouch{    padding: 8px 25px;
+    background: linear-gradient(90deg, #8E42FF 0%, #5A63FF 45%, #18A8FF 100%);
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 10px;text-transform: uppercase;}
+.getTouch:hover{    background: linear-gradient(90deg, #18A8FF 0%, #5A63FF 55%, #8E42FF 100%);}    
+.formPop{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #000000a1;z-index: 9999;display: flex;align-items: center;justify-content: center;}
+.formElem{width: 800px;background: #fff;max-width: 95%;position: relative;height: 95%;overflow: auto;padding: 30px 15px 20px;}
+.formElem .contactFomr{display: flex;flex-wrap: wrap;}
+.formElem .contactFomr .contactImg{width: 50%;}
+.formElem .contactFomr .contactImg img{width: 100%;height: 100%;object-fit: cover;}
+.formElem .contactFomr .detail{width: 50%;margin: 0;}
+.formElem .contactFomr .inputFlex{margin: 0;}
+.formElem .contactFomr h2{padding-left: 15px;}
+.formElem{padding: 15px 0;}
+.formElem .contactFomr .inputFlex .group{position: relative;}
+.formElem .contactFomr .inputFlex .group p{    position: absolute;
+    left: 15px;
+    bottom: -23px;
+    margin: 0;
+    font-size: 12px;}
+.formPop .commonPading{padding: 0;}
+.formPop h2.title{font-size: 30px;}
+.formPop .inputFlex label{color:#4F4C4C;}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-family: 'Rubik Regular';}
+.formPop .inputFlex{flex-direction: column;}
+.formPop .inputFlex .group{margin-bottom: 20px;}
+.formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;
+display: block;
+}
+.formPop .buttonFlex{margin: 10px 0 0;}
+.formPop .buttonFlex button{background: #7C3AED;color: #fff;}
 @media (min-width:992px){
-.head ul li .subMenu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 0;
-    background: #fff;
-    border-top: 2px solid #053f71c4;
-    padding: 15px 0 0;
-    transition: all 0.2s linear;
-    display: none;
-    box-shadow: 0px 3px 20px 0px #0000001c;
-}
-.head ul li:hover .subMenu{
-    height: auto;
-    top: 71px;
-    display: flex;
-    flex-direction: column;
-
-}
-/* .head ul li .subMenu:before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-}
-.head ul li .subMenu:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-} */
+.head ul li .subMenu{position: absolute;top: 0;left: 0;width: 300px;height: 0;background: #fff;border-top: 2px solid #053f71c4;padding: 15px 0 0;transition: all 0.2s linear;display: none;box-shadow: 0px 3px 20px 0px #0000001c;}
+.head ul li:hover .subMenu{height: auto;top: 71px;display: flex;flex-direction: column;}
 .head ul li .subMenu li{width: 100%;margin: 0 0 0 0;}
 .head ul li .subMenu li:last-child{margin: 0;}
 .head ul li .subMenu li a{padding: 10px 15px;font-family: 'Rubik Medium';}
 .head ul li .subMenu li a:hover{background: #875ad6;color: #fff;}
 .head ul li .subMenu li a:hover::before{content: none;}
-
 }
 
 
 @media (max-width:1200px){
     .head ul li .subMenu{top: -200px;}
     .footerLink ul li a{font-size: 14px;}
+    .head ul li a{    padding: 25px 15px;}
+    .getTouch{padding: 8px 20px;}
 }
 
 @media (max-width:992px){
+.getTouch{position: relative;right: 45px;}    
 .head ul li:hover>a:before{content: none;}    
 .info{padding-right: 0;}    
 .info img{width: 150px;}    
@@ -99,7 +97,7 @@ footer{padding: 30px 0 0;}
 .footerLink ul{padding-bottom: 15px;margin-bottom: 20px;}
 .info{padding-right: 0;}
 .head{padding: 0;}
-header{top: 0;background: #fff;}
+header{top: 0;background: #fff;padding: 12px 0;}
 .footerBox h4{    font-size: 18px;}
 .info p {margin: 14px 0}
 .copyRight{margin-top: 0;}
@@ -112,11 +110,14 @@ header{top: 0;background: #fff;}
 .footerBox{flex-wrap: wrap;margin-top: 20px;}
 .footerBox .box{width: 50%;flex: auto;margin-bottom: 20px;}
 .footerBox .box:last-child{width: 100%;}
+.getTouch{font-size: 13px;}
 }
 
 @media (max-width: 580px){
+.getTouch{right: 35px;padding: 8px 15px;}        
 .footerLink ul{flex-wrap: wrap;justify-content: center;}
 .footerLink ul li{margin: 0 20px 10px;}
 .footerLink ul{padding-bottom: 15px;margin-bottom: 20px;}
 .footerLink ul li{margin: 0 8px 7px;}
+.head .logo img {width: 170px;}
 }
