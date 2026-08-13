@@ -27,7 +27,7 @@ const WebDesign = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Website Design</h1>
-                                    <p>At CodeTrios, we provide professional website design services in India, delivering high-performance, scalable, and SEO-optimized websites that reflect your brand and drive engagement. As a trusted web design company in India, we build business websites, portfolios, WordPress sites, and enterprise platforms with speed, security, and seamless user experience. Whether it’s a business site, portfolio, or enterprise-level platform — we ensure speed, security, and smooth functionality every step of the way.</p>
+                                    <p>We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -44,10 +44,10 @@ const WebDesign = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Professional & Affordable Website Design Services in India</h2>
-                                    <p>
-                                    We are a best website design company in India offering custom website design, responsive web design services, and complete website design and development solutions. Our professional web design services in India focus on user experience, performance, and conversion-driven layouts. Whether you need a WordPress website design in India, an eCommerce website design, or a fully custom solution, we ensure your website looks stunning and performs flawlessly across all devices.
-                                    </p>
-
+                                    <p>Our professional web design services in India include custom website design in India, responsive web design services in India, WordPress website development, eCommerce website development, UI/UX design, and complete website design and development in India. We create websites that are visually engaging, fast-loading, secure, SEO-friendly, and optimized to perform seamlessly across desktops, tablets, and smartphones.</p>
+                                    <p>Whether you are looking for affordable website design in India for a growing business, a WordPress website design in India for your company, or a powerful eCommerce website design in India for your online store, our experienced web design team delivers tailored solutions based on your business goals and target audience.</p>
+                                    <p>As an experienced web design company in India, we handle the complete process—from website strategy and planning to UI/UX design, development, mobile responsiveness, performance optimization, and ongoing support. Our custom website design services in India are built to strengthen your brand identity, improve user engagement, generate leads, and drive conversions.</p>
+                                    <p></p>
                                 </div>
                             </Col>
                         </Row>
@@ -138,10 +138,7 @@ const WebDesign = () =>{
                         <Row>
                             <Col>
                                 <div className={Style.box}>
-                                   
-                                   <p>
-                                    CodeTrios is a trusted web design company in India offering custom website design, responsive web design services, WordPress website design, ecommerce website design, and complete website design and development solutions. Our affordable website design services in India help businesses establish a strong digital presence and achieve measurable growth.
-                                    </p>
+                                    <h5>Choose us for professional, affordable, and scalable website design and development services in India that combine modern technology, creative design, and business-focused results.</h5>
                                 </div>
                             </Col>
                         </Row>

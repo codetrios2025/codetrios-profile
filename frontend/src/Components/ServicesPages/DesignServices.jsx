@@ -22,7 +22,7 @@ const DesignServices = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Design Services</h1>
-                                    <p>Design is at the heart of what we do. Our creative team crafts visually stunning and user-centric designs that build trust and tell your brand story effectively. From branding to responsive layouts, we make your digital identity stand out.</p>
+                                    <p>At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -39,8 +39,10 @@ const DesignServices = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Creative Graphic Design Services – Branding & Visual Identity Experts</h2>
-                                    <p>Design is the foundation of your brand’s digital presence — and at CodeTrios, we ensure every visual element reflects quality, clarity, and purpose. Our creative team combines strategy, aesthetics, and usability to craft designs that don’t just look beautiful, but also solve problems, guide user behavior, and bring your brand to life.</p>
-                                    <p>Whether you’re building a new identity, refreshing an old one, or designing a full digital experience, we help you stand out with compelling visuals that connect with your audience and strengthen your brand.</p>
+                                    <p>Our UI/UX design services and responsive web design services focus on creating intuitive, visually engaging, and user-centered digital experiences. From website and mobile app interfaces to complete digital products, we also provide responsive weblayout design Services that ensure seamless performance across all devices. We develop designs that balance creativity with functionality, ensuring every interaction feels smooth, consistent, and purposeful.</p>
+                                    <p>Whether you are building a new brand identity, refreshing an existing brand, designing a website, or developing a complete digital experience, our team delivers creative branding solutions and compelling visuals that connect with your target audience. We focus on consistent typography, colors, layouts, visual hierarchy, and interaction patterns to build a recognizable and cohesive brand experience supported by strong brand visuals and design services.</p>
+                                    <p>From UI/UX design and website design to mobile app design, brand identity, and digital product design, CodeTrios helps businesses turn ideas into engaging visual experiences. Our expertise also includes creative graphic design services, brand graphics & illustrations, animation design services, and motion graphic design services, helping brands communicate more effectively through dynamic and visually rich storytelling. Our design process combines research, strategy, wireframing, prototyping, visual design, and usability considerations to ensure every decision supports your business objectives.</p>
+                                    <p>With a strong focus on creativity, usability, and conversion, we create designs that not only look beautiful but also solve problems, improve user engagement, and bring your brand to life across digital platforms.</p>
                                 </div>
                             </Col>
                         </Row>

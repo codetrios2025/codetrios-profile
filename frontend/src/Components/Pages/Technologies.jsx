@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
-import technologiesBanner from '../../assets/images/techBanner.webp';
+import technologiesBanner from '../../assets/images/tech_banner.webp';
 import { Link } from 'react-router-dom';
 //logo icon
 import HTML from '../../assets/images/icon/html_logo.webp';

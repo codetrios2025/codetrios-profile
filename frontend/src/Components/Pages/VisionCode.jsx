@@ -25,7 +25,7 @@ const VisionComponent = ()=>{
                     <Col>
                         <div className={Style.visionElem}>
                             <h4 data-aos="fade-up">Your vision deserves more than just code — it deserves commitment.</h4>
-                            <p data-aos="fade-up" data-aos-delay="100">At Code Trios, we combine creativity, technical excellence, and strategic clarity to <br />craft solutions that drive real business growth.</p>
+                            <p data-aos="fade-up" data-aos-delay="100">At Code Trios, we combine creativity, technical excellence and strategic clarity to <br />craft solutions that drive real business growth.</p>
                             <button type='button'onClick={formOpenHandler} data-aos="fade-up" data-aos-delay="200" className={Style.btnStyle}>Book a Free Discovery Call</button>
                         </div>
                     </Col>

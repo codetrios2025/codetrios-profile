@@ -22,7 +22,7 @@ const TechnologySolutions = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Technology Solutions</h1>
-                                    <p>We help businesses adopt cutting-edge technologies and modern frameworks to streamline workflows and boost performance. Whether it’s automation, AI integration, or custom software, CodeTrios ensures your tech stack is built for the future. .</p>
+                                    <p>Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -39,12 +39,19 @@ const TechnologySolutions = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Custom Technology Solutions – Automation & Workflow Optimization</h2>
-                                    <p>Technology is evolving faster than ever — and businesses that adapt early gain a massive competitive advantage. At CodeTrios, we help companies modernize, automate, and scale their operations using powerful, future-ready technologies. Whether you need system upgrades, custom applications, intelligent automation, or architecture planning, we deliver solutions tailored to your exact workflows and growth goals.</p>
-                                    <h4>Our focus is simple:</h4>
+                                    <p>Our technology consulting and digital transformation services help businesses identify opportunities to improve efficiency, reduce operational complexity, and build scalable digital infrastructure. We combine modern technologies, robust development practices, automation software services, and strategic planning to create secure and high-performance systems designed for evolving business needs.</p>
+                                    <p>Whether you need enterprise software development, custom application development, business process automation, cloud solutions, system integration, API development services, API integration services, or technology architecture consulting, our team works closely with you to understand your requirements and build solutions that deliver measurable business value.</p>
+                                    <p>We also specialize in advanced engineering capabilities such as custom software framework development, machine learning software solutions, and modular software solutions, enabling businesses to build flexible, intelligent, and future-ready digital ecosystems.</p>
+                                    <h4>Our Focus Is Simple:</h4>
                                     <ul>
-                                        <li><FiCheck className={Style.icon} /> Build systems that are secure, fast, scalable, and built to last.</li>
-                                        <li><FiCheck className={Style.icon} /> <p>From enterprise tools to smart automation, we become your long-term technology partner, ensuring your business stays ahead in a digital-first world.</p></li>
+                                        <li><FiCheck className={Style.icon} /> Build secure systems that protect your data, applications, and business operations.</li>
+                                        <li><FiCheck className={Style.icon} /> Create fast and high-performance solutions that improve productivity and user experience.</li>
+                                        <li><FiCheck className={Style.icon} /> Develop scalable technology that can grow with your business, users, and changing requirements.</li>
+                                        <li><FiCheck className={Style.icon} /> Automate repetitive processes through advanced automation software services to reduce manual work and improve operational efficiency.</li>
+                                        <li><FiCheck className={Style.icon} /> Modernize existing systems with future-ready technologies and architecture using Custom software modernization development services.</li>
+                                        <li><FiCheck className={Style.icon} /> Build long-term technology partnerships that support continuous innovation and digital growth.</li>
                                     </ul>
+                                    <p>From enterprise platforms and intelligent automation to custom applications, modular software solutions, and scalable technology infrastructure, CodeTrios becomes your long-term technology partner, helping your business stay agile, competitive, and prepared for a digital-first future.</p>
                                 </div>
                             </Col>
                         </Row>

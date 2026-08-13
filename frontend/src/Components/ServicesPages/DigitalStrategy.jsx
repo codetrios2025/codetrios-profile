@@ -22,7 +22,7 @@ const DigitalStrategy = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Digital Strategy</h1>
-                                    <p>Our work doesn’t stop at development — we offer strategic digital consultancy to guide your business toward growth and innovation. From identifying the right tools to optimizing your online strategy, we help you make smarter technology decisions.</p>
+                                    <p>Digital success doesn’t happen by accident—it comes from a clear, data-driven strategy built around your business goals. At CodeTrios, we provide strategic digital solutions as part of our digital strategy consulting services India, helping businesses navigate the evolving digital landscape with actionable insights, structured plans, and performance-focused frameworks. As one of the emerging business strategy consulting firms India, we analyze your audience, market, competitors, and customer journey to develop strategies that create meaningful and measurable business outcomes.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -39,8 +39,19 @@ const DigitalStrategy = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Data-Driven Digital Strategy Services – Grow Your Online Presence</h2>
-                                    <p>Digital success doesn’t happen by accident — it happens through a clear, data-driven strategy. At CodeTrios, we help businesses navigate the digital landscape with actionable insights, structured plans, and performance-focused frameworks. From understanding your audience to optimizing every touchpoint, our strategies ensure your brand shows up consistently and effectively across web, search, social, and paid marketing channels.</p>
-                                    <p>Whether you’re launching a new brand, scaling an existing one, or refining your marketing funnel, we build custom digital roadmaps that maximize visibility, engagement, and conversions.</p>
+                                    <p>Our digital strategy and consulting services and digital consulting services India cover the complete customer journey, helping businesses optimize every digital touchpoint across websites, search engines, social media, content, and paid marketing channels. From building a strong digital foundation to improving campaign performance, our strategies are designed to increase visibility, engagement, qualified traffic, and conversions. We also specialize in IT strategy consulting services India, ensuring that your technology and digital ecosystem work seamlessly with your business goals.</p>
+                                    <p>Whether you are launching a new brand, expanding into new markets, scaling an existing business, or refining your marketing funnel, our digital marketing strategy consulting India approach ensures we create custom digital marketing strategies aligned with your objectives. Our approach combines audience research, market analysis, SEO strategy, content planning, social media strategy, paid advertising, conversion optimization, and performance analytics to create a unified digital growth roadmap.</p>
+                                    <p>We also help businesses develop digital business consulting services India that turn insights into actionable decisions. By continuously analyzing performance, user behavior, and conversion data, we identify opportunities to improve campaigns, optimize customer journeys, and maximize your marketing investment.</p>
+                                    <p>From digital strategy and SEO planning to social media, paid marketing, content strategy, and conversion optimization, CodeTrios delivers integrated digital roadmaps designed to maximize your brand’s online visibility, strengthen engagement, generate qualified leads, and drive sustainable business growth.</p>
+                                    <h4>Our Strategic Approach</h4>
+                                    <ul>
+                                        <li><FiCheck className={Style.icon} /> <strong>Research & Insights –</strong> Understand your audience, market, competitors, and business opportunities.</li>
+                                        <li><FiCheck className={Style.icon} /> <strong>Strategy & Planning –</strong> Build a clear digital roadmap aligned with your business goals.</li>
+                                        <li><FiCheck className={Style.icon} /> <strong>Channel Optimization –</strong> Strengthen your presence across search, web, social, content, and paid channels.</li>
+                                        <li><FiCheck className={Style.icon} /> <strong>Conversion Strategy –</strong> Optimize customer journeys and digital touchpoints to improve conversions.</li>
+                                        <li><FiCheck className={Style.icon} /> <strong>Performance Analytics –</strong> Measure results, identify opportunities, and continuously refine your strategy.</li>
+                                    </ul>
+                                    <p>With CodeTrios as your digital strategy partner, you get structured digital consulting services India that are measurable, scalable, and growth-focused. We help your brand show up consistently, connect with the right audience, and perform effectively across the digital ecosystem.</p>
                                 </div>
                             </Col>
                         </Row>

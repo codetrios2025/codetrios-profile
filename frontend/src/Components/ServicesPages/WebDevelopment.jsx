@@ -22,7 +22,7 @@ const WebDevelopment = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Website Development</h1>
-                                    <p>At CodeTrios, we develop high-performance, scalable, and SEO-optimized websites that reflect your brand and drive engagement. Whether it’s a business site, portfolio, or enterprise-level platform — we ensure speed, security, and smooth functionality every step of the way.</p>
+                                    <p>At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -39,9 +39,11 @@ const WebDevelopment = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Custom Web Development Services – Fast, Secure & Scalable Solutions</h2>
-                                    <p>At CodeTrios, we build high-performance, scalable, and SEO-optimized websites designed to represent your brand with precision and deliver an exceptional user experience. Our development approach focuses on clean architecture, fast loading speeds, and secure infrastructure—ensuring y”:lkytrewZ, M1ur website performs reliably across all devices and platforms.</p>
-                                    <p>Whether you need a corporate website, portfolio, eCommerce store, or a fully customized enterprise platform, we combine modern technologies with industry best practices to deliver digital solutions that support your growth. Every website we build is engineered for long-term success, backed by performance tuning, mobile responsiveness, and seamless integrations that streamline your operations.</p>
-                                    <p>We follow a structured development workflow—strategy, design, coding, testing, and deployment—to ensure your project is handled with transparency and quality control. Our team builds with future scalability in mind, enabling your platform to grow as your business expands, gains traffic, or requires new features.</p>
+                                    <p>As an experienced web development agency, we offer end-to-end solutions covering website design and development, frontend web development, backend development services, and full stack web development. We combine modern technologies, clean coding practices, robust architecture, and industry best practices to build websites that are optimized for performance, security, usability, and long-term scalability.</p>
+                                    <p>Whether you need a corporate website, portfolio website, eCommerce store, WordPress website, or a fully customized enterprise platform, our team develops solutions tailored to your specific business requirements. Our website development services include responsive development, custom functionality, third-party API integrations, database development, performance optimization, security implementation, and SEO-ready architecture.</p>
+                                    <p>Our structured development process covers strategy, UI/UX design, frontend development, backend development, testing, optimization, and deployment. This systematic approach enables our website development company to maintain transparency, quality control, and consistency throughout every stage of your project</p>
+                                    <p>We build every website with future growth in mind. Whether you expect increased traffic, need new features, or plan to expand your digital operations, our scalable architecture makes it easier to evolve your platform over time. From frontend web development and intuitive interfaces to powerful backend development services and complete full stack web development, CodeTrios provides reliable digital solutions built for performance and long-term success</p>
+
                                 </div>
                             </Col>
                         </Row>

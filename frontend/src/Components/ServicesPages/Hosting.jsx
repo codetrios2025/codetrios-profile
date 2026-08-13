@@ -21,7 +21,7 @@ const WebHosting = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Web Hosting Services</h1>
-                                    <p>At CodeTrios, we offer reliable and high-performance web hosting services designed to keep your website fast, secure, and always online. From startups to enterprise platforms, our hosting solutions are built to support your business at every stage.</p>
+                                    <p>Your website’s performance, security, and reliability depend heavily on the quality of its hosting infrastructure. At CodeTrios, we provide secure, high-performance, and scalable web hosting services in India designed to keep your website fast, stable, and accessible around the clock. Recognized as a best web hosting company India, our solutions are built to deliver a smooth user experience while supporting the performance and growth of your digital presence.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -38,15 +38,16 @@ const WebHosting = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Fast, Secure & Scalable Hosting Solutions for Your Digital Growth</h2>
-                                    <p>Your website’s success depends on its hosting. We ensure lightning-fast speed, strong security, and maximum uptime — so your visitors always get the best experience.</p>
+                                    <p>We offer a wide range of hosting solutions including affordable web hosting India, cheap web hosting services India, linux web hosting India, cloud web hosting services India, wordpress web hosting India, business web hosting services India, and shared hosting services India. Whether you are hosting a corporate website, eCommerce store, web application, or high-traffic digital platform, our infrastructure is optimized for speed, reliability, security, and scalability. We combine performance-focused server configurations with proactive monitoring and expert technical support to ensure your website operates without interruption.</p>
                                     <h3>Why Choose CodeTrios Web Hosting?</h3>
                                     <ul>
-                                      <li><FiCheck className={Style.icon} />99.9% uptime assurance</li>
-                                      <li><FiCheck className={Style.icon} />Optimized server performance</li>
-                                      <li><FiCheck className={Style.icon} />Enterprise-grade security</li>
-                                      <li><FiCheck className={Style.icon} />Scalable hosting plans</li>
-                                      <li><FiCheck className={Style.icon} />Expert technical support</li>
+                                      <li><FiCheck className={Style.icon} /> <strong>99.9% Uptime Assurance –</strong> Keep your website accessible and minimize unexpected downtime.</li>
+                                      <li><FiCheck className={Style.icon} /> <strong>Optimized Server Performance –</strong> Fast, reliable infrastructure designed for improved website loading speeds and responsiveness.</li>
+                                      <li><FiCheck className={Style.icon} /> <strong>Enterprise-Grade Security –</strong> Robust security measures help protect your website, applications, and data from common online threats.</li>
+                                      <li><FiCheck className={Style.icon} /> <strong>Scalable Hosting Plans –</strong> Flexible hosting infrastructure that can scale with your traffic, resources, and business requirements.</li>
+                                      <li><FiCheck className={Style.icon} /> <strong>Expert Technical Support –</strong> Get professional assistance with hosting configuration, performance, troubleshooting, and technical requirements.</li>
                                     </ul>
+                                    <p>From website hosting and server management to performance optimization, security, and ongoing technical support, CodeTrios provides reliable web hosting services in India that give your business a strong and dependable digital foundation.</p>
                                 </div>
                             </Col>
                         </Row>

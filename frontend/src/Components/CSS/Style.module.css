@@ -357,9 +357,10 @@ display: block;
 .servicesPage .subContent{display: block;}
 .servicesDetail .aboutContent h4{font-family: 'Rubik Medium';}
 
-.whoAreSec{position: relative;background: url(../../assets/images/aboutBanner.png) no-repeat center center;background-size: cover;padding: 90px 0;}
+.whoAreSec{position: relative;background: url(../../assets/images/aboutBanner.png) no-repeat center center;background-size: cover;padding: 50px 0;}
+.whoAreSec h5{font-size: 40px;line-height: 50px;}
 .whoAreSec *{position: relative;z-index: 1;color: #fff;}
-.whoAreSec:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: #00000083;}
+.whoAreSec:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: "";background: linear-gradient(90deg,#8E42FF 0%,#5A63FF 45%,#18A8FF 100%);}
 .whoAreSec .box{width: 1024px;margin: 0 auto;text-align: center;max-width: 100%;}
 .whoAreSec .box h2{margin: 0 0 30px;}
 .whoAreSec .box p span{background: transparent!important;color: #fff!important;}
@@ -590,6 +591,7 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .content{width: 65%;}
 .ideaSec .ideaElem .ideaImg{width: 35%;}
 .servicesDetail .innerBanner .content{padding-top: 80px;}
+.whoAreSec h5{font-size: 30px;line-height: 40px;}
 }
 
 @media (max-width: 1199px){
@@ -636,7 +638,7 @@ display: flex;align-items: center;justify-content: center;}
 .aboutContent{padding: 0;}
 .aboutContent ul li{line-height: 24px;margin-bottom: 6px;}
 
-.innerBanner{margin-top: 0;height: 230px;}
+.innerBanner{margin-top: 0;}
 .formElem{width: 500px;max-width: 94%;}
 .formElem .contactFomr .contactImg{display: none;}
 .formElem .contactFomr .detail{width: 100%;}
@@ -697,7 +699,6 @@ display: flex;align-items: center;justify-content: center;}
 .heroBanner form{display: none;}
 .aboutContent{margin-top: 0;}
 .title{font-size: 30px;}
-.innerBanner{height: 200px;}
 .commonPading{padding: 50px 0;}
 .heroBanner .btnStyle{display: block;}
 .servicesBox .content p{    display: block;}

@@ -22,7 +22,7 @@ const WebApplications = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Web Applications</h1>
-                                    <p>We create custom web applications that empower your business to operate efficiently from anywhere. Our apps are built to perform — secure, user-friendly, and adaptable across all devices — ensuring both your team and your customers have the best experience. </p>
+                                    <p>At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -39,7 +39,10 @@ const WebApplications = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Mobile App Development Services – Android & iOS App Experts</h2>
-                                    <p>We build powerful, scalable, and secure web applications that streamline your operations and elevate user experience. Whether you need internal tools, customer portals, or enterprise-level platforms, our solutions are tailored to your business goals and optimized for long-term growth. Accessible from any device — fast, intuitive, and engineered for performance.</p>
+                                    <p>In addition to web solutions, we are a full-service mobile application development company offering end-to-end mobile app development services. Our expertise includes custom mobile app development, iOS and Android app development, and advanced cross-platform app development to ensure your product reaches users across all devices efficiently. We also provide specialized iOS app development services and Android app development services, delivering high-performance native applications tailored to each platform. As a trusted app development agency, we help businesses turn ideas into scalable mobile products that drive engagement and growth.</p>
+                                    <p>Whether you need custom web applications, internal business tools, customer portals, SaaS platforms, dashboards, or enterprise-level web applications, our experienced development team creates solutions that align with your business goals. We focus on clean architecture, robust security, high performance, and scalability to ensure your application remains reliable as your business and user base grow.</p>
+                                    <p>Our web applications are built to work seamlessly across devices and platforms, providing users with a consistent experience whether they access your application from a desktop, tablet, or smartphone. From intuitive interfaces and responsive frontend development to powerful backend systems, databases, APIs, and third-party integrations, we deliver complete solutions engineered for performance and long-term reliability.</p>
+                                    <p>With a structured approach covering strategy, UI/UX design, development, testing, deployment, and ongoing optimization, CodeTrios helps businesses build both web and mobile applications that simplify operations, enhance customer engagement, and create a strong foundation for digital growth.</p>
                                 </div>
                             </Col>
                         </Row>
