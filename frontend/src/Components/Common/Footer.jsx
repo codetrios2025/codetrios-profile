@@ -7,7 +7,6 @@ import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-
 const Footer = () => {
   return (
     <footer>
@@ -15,22 +14,47 @@ const Footer = () => {
         <Row>
           <Col md={4}>
             <div className={Style.info}>
-              <img src={Logo} alt="CodeTrios Software Development Company" loading="lazy" decoding="async" width="180" height="30"  />
+              <img
+                src={Logo}
+                alt="CodeTrios Software Development Company"
+                loading="lazy"
+                decoding="async"
+                width="180"
+                height="30"
+              />
               {/* <p>Website Development & Ongoing Maintenance Services.</p> */}
-              <p>Custom Web Development, Mobile App Development, MERN Stack, SaaS Products, AI Automation, and Ongoing Maintenance Services.</p>
+              <p>
+                Custom Web Development, Mobile App Development, MERN Stack, SaaS
+                Products, AI Automation, and Ongoing Maintenance Services.
+              </p>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=61581161434863" target="_blank" rel="noopener noreferrer"aria-label="CodeTrios Facebook" >
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61581161434863"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="CodeTrios Facebook"
+                  >
                     <FaFacebookF />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/codetrios/" target="_blank" rel="noopener noreferrer"aria-label="CodeTrios Instagram">
+                  <a
+                    href="https://www.instagram.com/codetrios/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="CodeTrios Instagram"
+                  >
                     <FaInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/code-trio-90ba31385/" target="_blank" rel="noopener noreferrer"aria-label="CodeTrios LinkedinIn">
+                  <a
+                    href="https://www.linkedin.com/in/code-trio-90ba31385/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="CodeTrios LinkedinIn"
+                  >
                     <FaLinkedinIn />
                   </a>
                 </li>
@@ -43,27 +67,77 @@ const Footer = () => {
                 <h4>Quick Link</h4>
                 <nav aria-label="Footer Navigation">
                   <ul>
-                    <li><Link to="/" title="Home">Home</Link></li>
-                    <li><Link to="/about-us" title="About">About</Link></li>
-                    <li><Link to="/services" title="Services">Services</Link></li>
-                    <li><Link to="/technologies" title="Technologies">Technologies</Link></li>
-                    <li><Link to="/portfolio" title="Portfolio">Portfolio</Link></li>
-                    <li><Link to="/contact-us" title="Contact Us">Contact Us</Link></li>
+                    <li>
+                      <Link to="/" title="Home">
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/about-us" title="About">
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services" title="Services">
+                        Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/technologies" title="Technologies">
+                        Technologies
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/portfolio" title="Portfolio">
+                        Portfolio
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/contact-us" title="Contact Us">
+                        Contact Us
+                      </Link>
+                    </li>
                   </ul>
                 </nav>
               </div>
               <div className={Style.box}>
                 <h4>Our Services</h4>
                 <ul>
-                  <li><Link to="/website-design-services">Website Design</Link></li>
-                  <li><Link to="/web-development-services">Web Development</Link></li>
-                  <li><Link to="/web-application-development">Web Applications</Link></li>
-                  <li><Link to="/ui-ux-design-services">Design Services</Link></li>
-                  <li><Link to="/ecommerce-development-services">eCommerce Solutions</Link></li>
-                  <li><Link to="/custom-software-solutions">Technology Solutions</Link></li>
-                  <li><Link to="/digital-strategy-consulting">Digital Strategy</Link></li>
-                  <li><Link to="/web-hosting-services">Web Hosting Service</Link></li>
-                  <li><Link to="/geo-seo-services">Geo & SEO Services</Link></li>
+                  <li>
+                    <Link to="/website-design-services">Website Design</Link>
+                  </li>
+                  <li>
+                    <Link to="/web-development-services">Web Development</Link>
+                  </li>
+                  <li>
+                    <Link to="/web-application-development">
+                      Web Applications
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/ui-ux-design-services">Design Services</Link>
+                  </li>
+                  <li>
+                    <Link to="/ecommerce-development-services">
+                      eCommerce Solutions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/custom-software-solutions">
+                      Technology Solutions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/digital-strategy-consulting">
+                      Digital Strategy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/web-hosting-services">Web Hosting Service</Link>
+                  </li>
+                  <li>
+                    <Link to="/geo-seo-services">Geo & SEO Services</Link>
+                  </li>
                 </ul>
               </div>
               <div className={Style.box}>
@@ -91,7 +165,9 @@ const Footer = () => {
         </Row>
       </Container>
       <div className={Style.copyRight}>
-        <small>© 2025 Codetrios. All rights reserved.</small>
+        <small>
+          ©{new Date().getFullYear()} Codetrios. All rights reserved.
+        </small>
       </div>
     </footer>
   );
