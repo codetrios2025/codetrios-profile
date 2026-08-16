@@ -8,7 +8,6 @@ import SEO from '../Common/webSiteMeta.jsx';
 import CATComponent from './CATComponent.jsx';
 //Components
 import OurPortfolio from '../HomeRoute/Portfolio';
-import VisionComponent from './VisionCode';
 const PortfolioPage = ()=>{
 
     return(

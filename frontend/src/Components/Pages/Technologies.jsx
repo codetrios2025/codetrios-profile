@@ -51,7 +51,7 @@ import perplexity from '../../assets/images/icon/perplexity_ai_logo.webp';
 import github from '../../assets/images/icon/github_copilot_ai_logo.webp';
 import gemini from '../../assets/images/icon/Gemini_ai_logo.webp';
 
-import VisionComponent from './VisionCode';
+import CATComponent from './CATComponent.jsx';
 import SEO from '../Common/webSiteMeta.jsx';
 const TechnologiesPage = ()=>{
 
@@ -388,4 +388,4 @@ const TechnologiesPage = ()=>{
     )
 }
 
-export default TechnologiesPage;
+export default CATComponent;
