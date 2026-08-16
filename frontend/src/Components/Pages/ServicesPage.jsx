@@ -24,7 +24,7 @@ import { MdDesignServices, MdInsights  } from "react-icons/md";
 import { PiPlugsConnectedBold } from "react-icons/pi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { BsCheckCircle } from "react-icons/bs";
-
+import { LuSearchCheck } from "react-icons/lu";
 //Components
 import Industries from './Industries.jsx';
 import CATComponent from './CATComponent.jsx';
@@ -114,7 +114,7 @@ const ServicesPage = ()=>{
         {
             image: geoImg,
             imageAlt: "SEO and GEO search optimization services",
-            icon: <MdInsights />,
+            icon: <LuSearchCheck />,
             title: "SEO & GEO Services",
             description:
                 "Improve your online visibility across traditional search and emerging AI-powered search experiences. Our SEO and GEO strategies focus on technical optimization, useful content and building your digital authority.",
