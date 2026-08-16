@@ -15,6 +15,7 @@ import { BiGitMerge } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
 
 import SEO from '../Common/webSiteMeta.jsx';
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 
 const DigitalStrategy = () =>{
     const benefits = [
@@ -30,6 +31,12 @@ const DigitalStrategy = () =>{
     return(
         <>
             <SEO page="digital-strategy-consulting" />
+            <ServiceSchema
+                name="Digital Strategy Services"
+                description="CodeTrios provides digital strategy services to help businesses plan, optimize, and scale their digital presence through technology, user experience, automation, and data-driven solutions."
+                url="https://www.codetrios.com/digital-strategy-consulting"
+                serviceType="Digital Strategy Services"
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

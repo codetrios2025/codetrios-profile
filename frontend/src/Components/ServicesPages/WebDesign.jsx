@@ -23,6 +23,7 @@ import Industries from '../Pages/Industries.jsx';
 import SEO from '../Common/webSiteMeta.jsx';
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 const WebDesign = () =>{
     const benefits = [
         "Business-focused website strategy",
@@ -38,6 +39,12 @@ const WebDesign = () =>{
     return(
         <>
             <SEO page="website-design-services" />
+            <ServiceSchema
+                    name="Website Design Services"
+                    description="CodeTrios provides professional website design services for businesses, startups, brands, and organizations, with modern UI/UX, responsive design, SEO-friendly structure, and conversion-focused experiences."
+                    url="https://www.codetrios.com/website-design-services"
+                    serviceType="Website Design Services"
+                />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

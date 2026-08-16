@@ -12,7 +12,7 @@ import { MdSupportAgent, MdDashboardCustomize  } from "react-icons/md";
 import { BiCodeCurly } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
 import SEO from '../Common/webSiteMeta.jsx';
-
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 const WebDevelopment = () =>{
     const benefits = [
         "Business-focused development",
@@ -27,6 +27,18 @@ const WebDevelopment = () =>{
     return(
         <>
             <SEO page="web-development" />
+            <ServiceSchema
+                name="Web Development Services"
+                description="CodeTrios provides scalable web development services for businesses, startups, and enterprises, building fast, secure, responsive, and high-performance websites and web applications."
+                url="https://www.codetrios.com/web-development-services"
+                serviceType={[
+                    "Web Development",
+                    "Custom Web Development",
+                    "React Development",
+                    "MERN Stack Development",
+                    "Web Application Development"
+                ]}
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

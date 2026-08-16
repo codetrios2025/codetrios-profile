@@ -16,6 +16,7 @@ import { BsCloudCheck } from "react-icons/bs";
 import { BsCheckCircle } from "react-icons/bs";
 
 import SEO from '../Common/webSiteMeta.jsx';
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 const WebApplications = () =>{
     const benefits = [
         "Business-focused application architecture",
@@ -30,6 +31,12 @@ const WebApplications = () =>{
     return(
         <>
             <SEO  page="web-application-development" />
+            <ServiceSchema
+                    name="Web Application Development Services"
+                    description="CodeTrios develops scalable and high-performance web applications tailored to business requirements, workflows, integrations, and customer experiences."
+                    url="https://www.codetrios.com/web-application-development"
+                    serviceType="Web Application Development"
+                />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

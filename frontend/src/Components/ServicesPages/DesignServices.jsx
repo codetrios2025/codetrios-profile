@@ -15,6 +15,7 @@ import { MdWeb } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
 
 import SEO from '../Common/webSiteMeta.jsx';
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 
 const DesignServices = () =>{
     const benefits = [
@@ -30,6 +31,12 @@ const DesignServices = () =>{
     return(
         <>
             <SEO page="ui-ux-design-services" />
+            <ServiceSchema
+                name="UI/UX & Digital Design Services"
+                description="CodeTrios provides UI/UX and digital design services focused on creating intuitive, modern, accessible, and engaging digital experiences for websites and applications."
+                url="https://www.codetrios.com/ui-ux-design-services"
+                serviceType="UI/UX Design Services"
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

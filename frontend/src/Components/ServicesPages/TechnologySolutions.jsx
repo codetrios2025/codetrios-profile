@@ -15,12 +15,18 @@ import { TbApi } from "react-icons/tb";
 import { BsCheckCircle } from "react-icons/bs";
 
 import SEO from '../Common/webSiteMeta.jsx';
-
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 const TechnologySolutions = () =>{
 
     return(
         <>
             <SEO page="custom-software-solutions" />
+            <ServiceSchema
+                    name="Technology Solutions"
+                    description="CodeTrios provides custom technology solutions to help businesses modernize their digital infrastructure, improve workflows, integrate systems, and build scalable digital products."
+                    url="https://www.codetrios.com/custom-software-solutions"
+                    serviceType="Custom Software Solutions"
+                />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>

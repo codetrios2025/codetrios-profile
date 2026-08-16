@@ -14,12 +14,18 @@ import { MdDesignServices, MdDns, MdSecurity, MdSpeed, MdSupportAgent  } from "r
 import { BsCheckCircle } from "react-icons/bs";
 
 import SEO from '../Common/webSiteMeta.jsx';
-
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 const WebHosting = () =>{
 
     return(
         <>
             <SEO page="web-hosting-services" />
+            <ServiceSchema
+                    name="Web Hosting Services"
+                    description="CodeTrios provides reliable web hosting solutions designed to support fast, secure, and stable business websites and web applications."
+                    url="https://www.codetrios.com/web-hosting-services"
+                    serviceType="Web Hosting Services"
+                />
             <div className={Style.innerPage + " " + Style.servicesDetail + " " + Style.hostingStyle}>
                 <div className={Style.innerBanner}>
                     <Container>

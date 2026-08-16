@@ -40,11 +40,17 @@ import {
   RiAiGenerate,
 } from "react-icons/ri";
 import { BiTargetLock, BiSearchAlt } from "react-icons/bi";
-
+import ServiceSchema from "../SEO/ServiceSchema.jsx";
 const GEOServices = () => {
   return (
     <>
       <SEO page="geo-seo-services" />
+      <ServiceSchema
+          name="SEO & GEO Services"
+          description="CodeTrios provides SEO and Generative Engine Optimization services to improve search visibility, organic traffic, brand discoverability, and visibility across AI-powered search experiences."
+          url="https://www.codetrios.com/geo-seo-services"
+          serviceType="SEO & GEO Services"
+      />
       <div
         className={
           Style.innerPage +

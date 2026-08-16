@@ -16,6 +16,7 @@ import { MdPhoneIphone, MdSpeed  } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
 
 import SEO from '../Common/webSiteMeta.jsx';
+import ServiceSchema from '../SEO/ServiceSchema.jsx';
 
 const EcommerceSolutions = () =>{
     const benefits = [
@@ -31,6 +32,12 @@ const EcommerceSolutions = () =>{
     return(
         <>
             <SEO page="ecommerce-development-services" />
+            <ServiceSchema
+                name="eCommerce Development Services"
+                description="CodeTrios provides custom eCommerce development solutions for businesses looking to build fast, secure, scalable, and conversion-focused online stores."
+                url="https://www.codetrios.com/ecommerce-development-services"
+                serviceType="eCommerce Development Services"
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>
