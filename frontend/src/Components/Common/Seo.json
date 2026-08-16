@@ -1,92 +1,172 @@
 {
+
   "home": {
-    "title": "Web Design & Development Company in Delhi, Web Design & Development Company in India | CodeTrios",
-    "description": "Web Development Company in India. CodeTrios is Best Website Designing Company in Delhi, India. Get Responsive Ecommerce Website Design, SEO Services, B2B and B2C portal, Digital Marketing, Web Designing in Delhi",
-    "keywords": "Website Designing,Website Designing Companies,Web Designing Company,Website Designing In Delhi,Web Designing Company Delhi,Website Designing Company Delhi,Web Designing Company In Delhi,Website Designing Company In Delhi,Best Website Designing Company In Delhi,Website Designing Services In Delhi,Responsive Website Designing Company In Delhi,Ecommerce Website Designing Company In Delhi,Website Designing Company In India,Website Designing Company In Noida,Best Seo Services In Delhi,Web Development Company In Delhi,Web Development Company In India",
+    "title": "Web Development & Digital Solutions Company in India | CodeTrios",
+    "description": "CodeTrios is a web development and digital solutions company in India offering website design, web development, ecommerce, custom software, UI/UX and AI-powered digital solutions.",
+    "keywords": "web development company India, website design company India, web design and development, ecommerce development company, custom software development, digital solutions company, AI digital solutions",
     "canonical": "https://www.codetrios.com/"
+
   },
+ 
   "about": {
-    "title": "About CodeTrios | Web Design & Development Company",
-    "description": "Learn about CodeTrios, a web design and development company helping businesses build modern websites, web applications and digital solutions.",
-    "keywords": "About CodeTrios, Web Development Company, Full-Stack Development Team, Digital Solutions Company, Web & App Development Experts, Software Development Agency, Technology Consulting Company, Custom Development Services, Innovative Web Solutions, IT Services Company",
+    "title": "About CodeTrios | Web Development & Digital Solutions Company",
+    "description": "Learn about CodeTrios, a web development and digital solutions company helping businesses build websites, web applications, ecommerce platforms and custom software solutions.",
+    "keywords": "about CodeTrios, web development company India, digital solutions company, software development company, web development team, technology solutions company",
     "canonical": "https://www.codetrios.com/about-us"
+
   },
+ 
   "services": {
-    "title": "Web Design & Development Services | CodeTrios",
-   "description": "Explore CodeTrios services including website design, web development, ecommerce development, UI/UX design, custom software and digital solutions.",
-    "keywords": "website design services in India, best website design company India, professional web design services India, affordable website design India, custom website design India, responsive web design services India, wordpress website design India, ecommerce website design India, website design and development India, web design company India",
+    "title": "Web Development & Digital Solutions Services | CodeTrios",
+    "description": "Explore CodeTrios services including website design, web development, ecommerce development, UI/UX design, custom software, web applications, hosting and AI SEO solutions.",
+    "keywords": "web development services India, website design services India, ecommerce development services, custom software development, web application development, UI UX design services, AI SEO services",
     "canonical": "https://www.codetrios.com/services"
+
   },
+ 
   "website-design-services": {
+
     "title": "Website Design Company in India | CodeTrios",
-    "description": "CodeTrios creates professional, responsive and SEO-friendly websites for businesses, startups and organizations. Get a modern website designed around your goals.",
-    "keywords": "website design services in India, best website design company India, professional web design services India, affordable website design India, custom website design India, responsive web design services India, wordpress website design India, ecommerce website design India, website design and development India, web design company India",
+
+    "description": "CodeTrios provides professional website design services in India with responsive, user-friendly and SEO-friendly websites built for businesses, startups and organizations.",
+
+    "keywords": "website design company India, website design services India, professional website design, responsive website design, custom website design, business website design, website redesign services",
+
     "canonical": "https://www.codetrios.com/website-design-services"
+
   },
+ 
   "web-development": {
+
     "title": "Web Development Company in India | CodeTrios",
-    "description": "CodeTrios provides custom web development services including frontend, backend and full-stack development for businesses and organizations.",
-    "keywords": "website development services, website development company, web development agency, full stack web development, backend development services, frontend web development, website design and development",
+
+    "description": "CodeTrios provides custom web development services using modern frontend and backend technologies to build fast, secure and scalable websites and web applications.",
+
+    "keywords": "web development company India, web development services India, custom web development, full stack web development, frontend development services, backend development services, React development, Node.js development",
+
     "canonical": "https://www.codetrios.com/web-development-services"
+
   },
+ 
   "ecommerce-development-services": {
+
     "title": "Ecommerce Development Company in India | CodeTrios",
-    "description": "Build a fast and responsive ecommerce website with CodeTrios. We develop custom online stores using modern ecommerce technologies.",
-    "keywords": "responsive ecommerce website design, best ecommerce development services, best ecommerce development company in India, best ecommerce design and development services, online ecommerce business solutions, woocommerce ecommerce development, shopify ecommerce development, magento ecommerce development",
+
+    "description": "CodeTrios builds responsive and scalable ecommerce websites and online stores with custom features, secure integrations and modern ecommerce technologies.",
+
+    "keywords": "ecommerce development company India, ecommerce website development, ecommerce website design, custom ecommerce development, online store development, WooCommerce development, Shopify development",
+
     "canonical": "https://www.codetrios.com/ecommerce-development-services"
+
   },
+ 
   "web-application-development": {
-    "title": "Web Application Development Company | CodeTrios",
-    "description": "CodeTrios develops scalable custom web applications designed to improve business processes, customer experiences and digital operations.",
-    "keywords": "mobile app development services, iOS and Android app development, cross-platform app development, custom mobile app development, Android app development services, iOS app development services, mobile application development company, app development agency",
+
+    "title": "Web Application Development Company in India | CodeTrios",
+
+    "description": "CodeTrios develops scalable custom web applications that streamline business processes, improve customer experiences and support growing digital operations.",
+
+    "keywords": "web application development company India, web application development services, custom web applications, business web applications, enterprise web application development, React web applications, Node.js web applications, progressive web applications",
+
     "canonical": "https://www.codetrios.com/web-application-development"
+
   },
+ 
   "ui-ux-design-services": {
+
     "title": "UI/UX Design Services in India | CodeTrios",
-    "description": "CodeTrios creates intuitive and modern UI/UX designs for websites and digital products, focused on usability, responsive design and user experience.",
-    "keywords": "responsive weblayout design Services, responsive web design services, user experience design company, creative branding solutions, brand visuals and design services, creative graphic design services, brand graphics & illustrations, animation design services, motion graphic design services",
+
+    "description": "CodeTrios provides UI/UX design services for websites and digital products, creating intuitive, responsive and user-focused experiences that help businesses improve engagement.",
+
+    "keywords": "UI UX design services India, UI UX design company India, website UI design, UX design services, user experience design, responsive interface design, product design services, web design UX",
+
     "canonical": "https://www.codetrios.com/ui-ux-design-services"
+
   },
+ 
   "custom-software-solutions": {
-    "title": "Custom Software Development Company | CodeTrios",
-    "description": "CodeTrios develops custom software solutions, business automation systems, API integrations and scalable digital applications tailored to your business needs.",
-    "keywords": "Top Custom software development services company, Custom software modernization development services, automation software services, API development services, API integration services, custom software framework development, machine learning software solutions, modular software solutions",
+
+    "title": "Custom Software Development Company in India | CodeTrios",
+
+    "description": "CodeTrios develops custom software solutions, business automation systems, API integrations and scalable applications tailored to specific business requirements.",
+
+    "keywords": "custom software development company India, custom software development services, business software development, software automation solutions, API development services, API integration services, enterprise software development, custom business applications",
+
     "canonical": "https://www.codetrios.com/custom-software-solutions"
+
   },
+ 
   "digital-strategy-consulting": {
-    "title": "Digital Strategy Consulting Services | CodeTrios",
-    "description": "CodeTrios provides digital strategy consulting to help businesses plan, improve and grow their digital products, websites and online presence.",
-    "keywords": "digital strategy consulting services India, digital business consulting services India, digital marketing strategy consulting India digital consulting services India, IT strategy consulting services India, business strategy consulting firms India",
+
+    "title": "Digital Strategy Consulting Services in India | CodeTrios",
+
+    "description": "CodeTrios provides digital strategy consulting to help businesses plan, improve and grow their websites, digital products, technology and online presence.",
+
+    "keywords": "digital strategy consulting India, digital consulting services India, digital transformation consulting, technology strategy consulting, digital business consulting, IT strategy consulting, digital product strategy",
+
     "canonical": "https://www.codetrios.com/digital-strategy-consulting"
+
   },
+ 
   "technologies": {
-    "title": "Web Development Technologies | CodeTrios",
-    "description": "Explore the modern web development technologies and frameworks used by CodeTrios to build scalable websites, web applications and digital solutions.",
-    "keywords": "latest web technologies services India, software technologies company India, technology solutions company India, full stack development technologies India, frontend and backend technologies India, back-end development services India, database design and management India",
+
+    "title": "Web Development Technologies & Expertise | CodeTrios",
+
+    "description": "Explore the frontend, backend, database, cloud and modern web technologies used by CodeTrios to build scalable websites, web applications and digital solutions.",
+
+    "keywords": "web development technologies, frontend technologies, backend technologies, React development, Node.js development, PHP development, JavaScript development, database technologies, web application technologies",
+
     "canonical": "https://www.codetrios.com/technologies"
+
   },
-   "web-hosting-services": {
+ 
+  "web-hosting-services": {
+
     "title": "Web Hosting Services in India | CodeTrios",
-    "description": "Reliable web hosting solutions for business websites, WordPress websites and web applications with scalable hosting options from CodeTrios.",
-    "keywords": "web hosting services in India, cloud hosting services, WordPress hosting, VPS hosting, best web hosting company India, affordable web hosting India, cheap web hosting services India, linux web hosting India, cloud web hosting services India, wordpress web hosting India, business web hosting services India, shared hosting services India",
+
+    "description": "CodeTrios provides reliable web hosting solutions for business websites, WordPress websites and web applications with scalable hosting options and technical support.",
+
+    "keywords": "web hosting services India, business web hosting, WordPress hosting India, cloud hosting services, VPS hosting India, Linux web hosting, managed web hosting, website hosting services",
+
     "canonical": "https://www.codetrios.com/web-hosting-services"
+
   },
+ 
   "geo-seo-services": {
-    "title": "SEO & GEO Services | AI Search Optimization | CodeTrios",
-    "description": "Improve your visibility across Google and AI-powered search with SEO, Generative Engine Optimization and AI search optimization services from CodeTrios.",
-    "keywords": "",
+
+    "title": "AI SEO & GEO Services in India | CodeTrios",
+
+    "description": "Improve your visibility across Google and AI-powered search with AI SEO and Generative Engine Optimization services. CodeTrios helps businesses optimize websites for modern search experiences.",
+
+    "keywords": "AI SEO services, GEO services India, Generative Engine Optimization, AI search optimization, AI SEO company India, AI search optimization services, LLM optimization services, AI visibility services, generative AI optimization",
+
     "canonical": "https://www.codetrios.com/geo-seo-services"
+
   },
+ 
   "portfolio": {
-     "title": "Web Design & Development Portfolio | CodeTrios",
-    "description": "Explore CodeTrios website, web application, ecommerce and digital projects created for businesses and organizations.",
-    "keywords": "",
+
+    "title": "Web Development Portfolio & Projects | CodeTrios",
+
+    "description": "Explore CodeTrios web development, website design, ecommerce, web application and custom software projects created for businesses and organizations.",
+
+    "keywords": "web development portfolio, website design portfolio, web development projects, website design projects, ecommerce development projects, web application projects, custom software projects, web development portfolio India",
+
     "canonical": "https://www.codetrios.com/portfolio"
+
   },
+ 
   "contact": {
-   "title": "Get a Free Consultation | Contact CodeTrios",
-    "description": "Have a website, web application or software project in mind? Contact CodeTrios for a free consultation and discuss your project with our team.",
-    "keywords": "contact CodeTrios, web development company contact, digital solutions consultation, software development inquiry",
+
+    "title": "Contact CodeTrios | Web Development & Digital Solutions",
+
+    "description": "Contact CodeTrios to discuss your website, web application, ecommerce, custom software or digital solution project and get a consultation from our team.",
+
+    "keywords": "contact CodeTrios, web development company contact, website development consultation, software development consultation, digital solutions consultation",
+
     "canonical": "https://www.codetrios.com/contact-us"
+
   }
+
 }
+ 

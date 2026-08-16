@@ -53,14 +53,20 @@ border: 1px solid rgba(255, 255, 255, .18);
 .heroBanner .content h1{
     font-weight: 500;
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 70px;
-    margin: 0 0 10px;
+    margin: 20px 0 10px;
     padding: 0 0;
     text-transform: capitalize;
     text-align: left;
 }
-.heroBanner .content h1 span.highLight{text-transform: uppercase;font-weight: 500;
+.heroBanner .content .heroTagline{
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+    margin: 0 0 20px;text-transform: uppercase;
+}
+.heroBanner .content .heroTagline span.highLight{
     background: linear-gradient(90deg,#18A8FF 0%,#3F6FFF 30%,#7B5CFF 60%,#B84DFF 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -599,7 +605,7 @@ display: flex;align-items: center;justify-content: center;}
 }
 
 @media (max-width: 1400px){
- .heroBanner .content h1{font-size: 50px;line-height: 60px;}
+ .heroBanner .content h1{font-size: 45px;line-height: 65px;}
  .heroBanner .content p{font-size: 16px;line-height: 28px;}
   .heroBanner .content ul li{font-size: 16px;}
   .heroBanner .content{    justify-content: flex-start;}
@@ -635,7 +641,7 @@ display: flex;align-items: center;justify-content: center;}
 .innerBanner{margin-top: 0;}
 .contactPage{margin-top: 71px;}
 .hostingStyle .weBuild .box ul li{font-size: 14px;line-height: 24px;}
- .heroBanner .content h1{font-size: 45px;line-height: 55px;}
+ .heroBanner .content h1{font-size: 45px;line-height: 65px;}
  .heroBanner .content p{font-size: 14px;line-height: 26px;}
  .codeTriosElem .box{padding: 20px 5px;}
  .heroBanner .content h6, .codeTriosElem .box h4{font-size: 14px;}
@@ -692,7 +698,7 @@ display: flex;align-items: center;justify-content: center;}
 .innerBanner .content p{font-size: 14px;line-height: 24px;}
 .buildElem h3{font-size: 22px;}
 .contactPage{margin-top: 65px;}
- .heroBanner .detail{    margin-top: 50px;}
+ .heroBanner .detail{    margin-top: 100px;}
  .processItem::before, .processItem::after{content: none;}
 .processList{gap: 0;flex-wrap: wrap;} 
 .processItem{flex: auto;width: 25%;margin-bottom: 20px;}
@@ -704,6 +710,8 @@ display: flex;align-items: center;justify-content: center;}
 .whyChooseSection .content{padding-bottom: 30px;}
 .whyChooseSection figure{margin-bottom: 50px;}
 .whyChooseSection figure img{    width: 100%;height: 100%;object-fit: cover;}
+.heroBanner .content h1 {font-size: 38px;line-height: 50px;}
+.heroBanner .content .heroTagline{font-size: 24px;}
 
 }
 
@@ -725,7 +733,9 @@ display: flex;align-items: center;justify-content: center;}
 .visionSec br{display: none;}
 .whyUs figure{height: 280px;margin-top: 40px;}    
 .whyUs .aboutContent{padding: 0 0 40px 0;margin: 20px 0 0 ;}
-.heroBanner .content h1{padding: 0;}  
+.heroBanner .detail{margin-top: 50px;}
+.heroBanner .content h1{padding: 0;        font-size: 28px;
+        line-height: 40px;}  
 .heroBanner{height: 440px;}
 .heroBanner .content h6{font-size: 14px;}
 .heroBanner form{display: none;}
@@ -746,8 +756,10 @@ display: flex;align-items: center;justify-content: center;}
 .inputFlex .group{padding: 0;}
 .contactFomr h2{margin-bottom: 20px;}
 .formElem .contactFomr h2{padding: 0;}
-.title, .Heading h2 {font-size: 28px;}
-.heroBanner .content h1 {font-size: 35px;line-height: 45px;}    
+.title, .Heading h2 {font-size: 28px;} 
+    .heroBanner .content .heroTagline {
+        font-size: 16px;
+    }
 .ideaSec .ideaElem{padding: 15px;}    
 .ideaSec .ideaElem .content ul{flex-wrap: wrap;gap: 0;}    
 .ideaSec .ideaElem .content ul li{width: 25%;}
@@ -760,12 +772,13 @@ display: flex;align-items: center;justify-content: center;}
 }
 
 @media (max-width: 580px){
+.heroBanner .detail{margin-top: 70px;}    
+.heroBanner .content .heroTagline{font-size: 14px;}    
 .industriesSection ul li{width: 50%;}   
  .industriesSection ul li:nth-child(even){border: none;}
 .catButton{flex-direction: column;}    
 .boxContainer h4{font-size: 20px;margin-top: 30px;}   
 .boxContainer h5{font-size: 18px;margin-bottom: 15px;}  
-.heroBanner .content h1 {font-size: 28px;line-height: 35px;}
 .heroBanner .content h6{padding: 5px 10px;}    
 .heroBanner .content p span, .ideaSec .ideaElem .content p span {display: contents;}
 .inputFlex{flex-direction: column;}
