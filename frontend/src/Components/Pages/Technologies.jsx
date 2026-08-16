@@ -51,7 +51,7 @@ import perplexity from '../../assets/images/icon/perplexity_ai_logo.webp';
 import github from '../../assets/images/icon/github_copilot_ai_logo.webp';
 import gemini from '../../assets/images/icon/Gemini_ai_logo.webp';
 
-import VisionComponent from './VisionCode';
+import CATComponent from './CATComponent.jsx';
 import SEO from '../Common/webSiteMeta.jsx';
 const TechnologiesPage = ()=>{
 
@@ -60,7 +60,7 @@ const TechnologiesPage = ()=>{
         <SEO page="technologies" />
         <div className={Style.innerPage + " " + Style.techPage}>
             <div className={Style.innerBanner}>
-                <img src={technologiesBanner} />
+                <img src={technologiesBanner} alt='technologies' />
             </div>
             <div className={Style.ourPlatForm}>
                 <Container>
@@ -383,7 +383,7 @@ const TechnologiesPage = ()=>{
                 </Container>
             </div>
         </div>
-        <VisionComponent />
+        <CATComponent />
         </>
     )
 }

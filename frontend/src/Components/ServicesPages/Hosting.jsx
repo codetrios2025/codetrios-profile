@@ -39,7 +39,7 @@ const WebHosting = () =>{
                         <Row>
                             <Col md={5}>
                                 <figure>
-                                    <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
+                                    <img src={webImage} className='imgFull' alt='Secure and scalable web hosting services' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>

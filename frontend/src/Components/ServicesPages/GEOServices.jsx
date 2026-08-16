@@ -86,7 +86,7 @@ const GEOServices = () => {
                   <img
                     src={webImage}
                     className="imgFull"
-                    alt=""
+                    alt="SEO and GEO search optimization services"
                     width="1747"
                     height="1334"
                   />

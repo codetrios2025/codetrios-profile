@@ -49,7 +49,7 @@ const WebApplications = () =>{
                         <Row>
                             <Col md={5}>
                                 <figure>
-                                    <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
+                                    <img src={webImage} className='imgFull' alt='Custom web application development' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>

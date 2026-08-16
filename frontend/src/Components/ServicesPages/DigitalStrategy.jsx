@@ -49,7 +49,7 @@ const DigitalStrategy = () =>{
                         <Row>
                             <Col md={5}>
                                 <figure>
-                                    <img src={digitalImg} className='imgFull' alt='' width="1747" height="1334" />
+                                    <img src={digitalImg} className='imgFull' alt='Digital strategy consulting services' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>
