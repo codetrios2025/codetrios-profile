@@ -3,33 +3,52 @@ import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/website-design.webp';
 import { FiCheck } from "react-icons/fi";
-import VisionComponent from '../Pages/VisionCode';
+import { Link } from 'react-router-dom';
+import WhyChooseImg from '../../assets/images/why_choose.webp';
+
 //icon
 import { FaPencilRuler, FaShoppingCart, FaRegIdBadge, FaBullhorn,  FaUniversalAccess   } from "react-icons/fa";
 import { MdWeb, MdDesignServices, MdAutorenew,      } from "react-icons/md";
-import { BiEdit } from "react-icons/bi";
-import SEO from '../Common/webSiteMeta.jsx';
+import { BsCheckCircle } from "react-icons/bs";
+import {LuBuilding2} from "react-icons/lu";
+import { PiBuildingApartmentFill, PiBuildingOfficeLight } from "react-icons/pi";
+import { IoSchoolOutline } from "react-icons/io5";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { BsHeartPulse } from "react-icons/bs";
+import { IoSettingsOutline } from "react-icons/io5";
+import { GoRocket } from "react-icons/go";
 
+import { BiEdit } from "react-icons/bi";
+import Industries from '../Pages/Industries.jsx';
+import SEO from '../Common/webSiteMeta.jsx';
+import CATButton from './CATButtons.jsx';
+import CATComponent from '../Pages/CATComponent.jsx';
 const WebDesign = () =>{
+    const benefits = [
+        "Business-focused website strategy",
+        "Modern and responsive UI/UX",
+        "SEO-friendly website structure",
+        "Fast and performance-focused design",
+        "Mobile-first user experience",
+        "Conversion-focused layouts",
+        "Scalable website architecture",
+        "Ongoing support and improvements",
+    ];
 
     return(
         <>
-            <SEO page="website-design-services"
-            title="Best Professional website design services Company in India | Affordable Custom Responsive web design services India"
-            description="Best website design company in India providing professional, affordable, custom, responsive, WordPress & ecommerce website design and development services in Delhi, NCR India."
-            keywords="website design services in India, best website design company India, professional web design services India, affordable website design India, custom website design India, responsive web design services India, wordpress website design India, ecommerce website design India, website design and development India, web design company India"
-
-            />
+            <SEO page="website-design-services" />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>
                         <Row>
                             <Col>
-                                <div className={Style.content}>
-                                    <h1>Website Design</h1>
+                                <div className={Style.content} data-aos="fade-up" data-aos-delay="100">
+                                    <h1>Professional Website Design Company in India</h1>
                                     <p>We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.</p>
-                                </div>
-                            </Col>
+                                    <CATButton />
+                                </div>                            </Col>
+
                         </Row>
                     </Container>
                 </div>
@@ -37,12 +56,12 @@ const WebDesign = () =>{
                     <Container>
                         <Row>
                             <Col md={5}>
-                                <figure>
-                                    <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
+                                <figure data-aos="fade-up" data-aos-delay="100">
+                                    <img src={webImage} className='imgFull' alt='Professional & Affordable Website Design Services in India' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>
-                                <div className={Style.aboutContent}>
+                                <div className={Style.aboutContent} data-aos="fade-up" data-aos-delay="200">
                                     <h2 className={Style.title}>Professional & Affordable Website Design Services in India</h2>
                                     <p>Our professional web design services in India include custom website design in India, responsive web design services in India, WordPress website development, eCommerce website development, UI/UX design, and complete website design and development in India. We create websites that are visually engaging, fast-loading, secure, SEO-friendly, and optimized to perform seamlessly across desktops, tablets, and smartphones.</p>
                                     <p>Whether you are looking for affordable website design in India for a growing business, a WordPress website design in India for your company, or a powerful eCommerce website design in India for your online store, our experienced web design team delivers tailored solutions based on your business goals and target audience.</p>
@@ -57,14 +76,14 @@ const WebDesign = () =>{
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title}>Our Offerings Include</h2>
+                                <h2 className={Style.title} data-aos="fade-up" data-aos-delay="100">Our Offerings Include</h2>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row data-aos="fade-up" data-aos-delay="100">
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdWeb  /></span>
-                                    <h3>Landing Page & Corporate Website Design</h3>
+                                    <h3>Corporate & Business Website Design</h3>
                                     {/* <p>Clean, modern, and purpose-driven designs tailored for businesses that want to make a strong digital impression. We create layouts that highlight your value, build credibility, and inspire user action.</p> */}
                                     <p>Clean, modern designs crafted by a leading web design company in India. Ideal for startups, enterprises, and growing brands looking for affordable website design in India.
                                     </p>
@@ -133,20 +152,35 @@ const WebDesign = () =>{
 
                     </Container>
                 </div>
-                <div className={Style.whoAreSec}>
+                <Industries />
+                <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
-                            <Col>
-                                <div className={Style.box}>
-                                    <h5>Choose us for professional, affordable, and scalable website design and development services in India that combine modern technology, creative design, and business-focused results.</h5>
+                            <Col lg={6} data-aos="fade-up">
+                                <div className={Style.content}>
+                                    <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
+                                    <h2 className={Style.title}>Digital Solutions Built Around Your Goals</h2>
+                                    <p>Choose us for professional, affordable, and scalable website design and development services in India that combine modern technology, creative design, and business-focused results.</p>
+                                    {benefits.map((benefit, index) => (
+                                        <div className={Style.benefitItem}>
+                                            <BsCheckCircle
+                                                className={Style.icon}
+                                            />
+                                            <span>{benefit}</span>
+                                        </div>
+                                    ))}
+                                    <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
                                 </div>
+                            </Col>
+                            <Col lg={6}>
+                                <figure data-aos="fade-up" data-aos-delay="100">
+                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
+                                </figure>
                             </Col>
                         </Row>
                     </Container>
-                </div>
-               
-
-                <VisionComponent />
+                </section>
+               <CATComponent />
             </div>
         </>
     )

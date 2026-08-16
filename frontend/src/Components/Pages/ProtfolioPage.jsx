@@ -5,7 +5,7 @@ import AboutBanner from '../../assets/images/about-banner.webp';
 import { Link } from 'react-router-dom';
 //Icon
 import SEO from '../Common/webSiteMeta.jsx';
-
+import CATComponent from './CATComponent.jsx';
 //Components
 import OurPortfolio from '../HomeRoute/Portfolio';
 import VisionComponent from './VisionCode';
@@ -20,7 +20,7 @@ const PortfolioPage = ()=>{
             </div>
             <OurPortfolio/>
         </div>
-        <VisionComponent />
+        <CATComponent />
         </>
     )
 }

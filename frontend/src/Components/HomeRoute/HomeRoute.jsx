@@ -6,6 +6,7 @@ import Loader from "./Loader.jsx";
 import WhyCodetrios from "./WhyUs.jsx";
 import IdeaBuild from "./IdeaBuild.jsx";
 import Development from "./Development.jsx";
+import Industries from "../Pages/Industries.jsx";
 const AboutUs = lazy(() => import("./About"));
 const OurServices = lazy(() => import("./Services"));
 const OurPortfolio = lazy(() => import("./Portfolio"));
@@ -19,6 +20,7 @@ const HomeRoute = () =>{
           <AboutUs />
           <WhyCodetrios />
           <OurServices/>
+          <Industries />
           <Development />
           <IdeaBuild />
           {/* <OurPortfolio /> */}

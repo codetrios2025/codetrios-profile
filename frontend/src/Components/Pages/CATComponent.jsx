@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
+import { Link } from 'react-router-dom';
 //Icon
 
 import { IoCloseSharp } from "react-icons/io5";
@@ -8,7 +9,7 @@ import { IoCloseSharp } from "react-icons/io5";
 //Components
 import ContactUs from '../HomeRoute/Contact';
 
-const VisionComponent = ()=>{
+const CATComponent = ()=>{
     const [isOPen, setIsopen] = useState(false);
     const formOpenHandler=()=>{
         setIsopen(true);
@@ -24,9 +25,13 @@ const VisionComponent = ()=>{
                 <Row>
                     <Col>
                         <div className={Style.visionElem}>
-                            <h4 data-aos="fade-up">Your vision deserves more than just code — it deserves commitment.</h4>
-                            <p data-aos="fade-up" data-aos-delay="100">At Code Trios, we combine creativity, technical excellence and strategic clarity to <br />craft solutions that drive real business growth.</p>
-                            <button type='button'onClick={formOpenHandler} data-aos="fade-up" data-aos-delay="200" className={Style.btnStyle}>Book a Free Discovery Call</button>
+                            <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="100">HAVE A PROJECT IN MIND?</span>
+                            <h2 data-aos="fade-up" data-aos-delay="100">Let's Build Something That Helps Your Business Grow</h2>
+                            <p data-aos="fade-up" data-aos-delay="200">Tell us about your project, goals and requirements. Our team can help you choose the right digital solution and technology approach.</p>
+                            <div className={Style.catButton} data-aos="fade-up" data-aos-delay="300">
+                                <button type='button'onClick={formOpenHandler} className={Style.btnStyle}>Get a Free Consultation</button>
+                                <Link to="/portfolio" className={Style.secondaryButton} title="View CodeTrios portfolio">View Our Portfolio</Link>
+                            </div>
                         </div>
                     </Col>
                 </Row>
@@ -44,4 +49,4 @@ const VisionComponent = ()=>{
     )
 }
 
-export default VisionComponent;
+export default CATComponent;

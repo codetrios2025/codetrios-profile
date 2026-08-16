@@ -58,7 +58,7 @@ footer{padding: 30px 0 0;}
 .formPop .commonPading{padding: 0;}
 .formPop h2.title{font-size: 30px;}
 .formPop .inputFlex label{color:#4F4C4C;}
-.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-family: 'Rubik Regular';}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 400;}
 .formPop .inputFlex{flex-direction: column;}
 .formPop .inputFlex .group{margin-bottom: 20px;}
 .formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;
@@ -71,7 +71,7 @@ display: block;
 .head ul li:hover .subMenu{height: auto;top: 71px;display: flex;flex-direction: column;}
 .head ul li .subMenu li{width: 100%;margin: 0 0 0 0;}
 .head ul li .subMenu li:last-child{margin: 0;}
-.head ul li .subMenu li a{padding: 10px 15px;font-family: 'Rubik Medium';}
+.head ul li .subMenu li a{padding: 10px 15px;font-weight: 500;}
 .head ul li .subMenu li a:hover{background: #875ad6;color: #fff;}
 .head ul li .subMenu li a:hover::before{content: none;}
 }

@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/technology_solutions.webp';
 import { FiCheck } from "react-icons/fi";
-import VisionComponent from '../Pages/VisionCode';
+import CATButton from './CATButtons.jsx';
+import CATComponent from '../Pages/CATComponent.jsx';
+import WhyChooseImg from '../../assets/images/why_choose.webp';
+
 //icon
 import { MdSystemUpdateAlt , MdExtension , MdSpeed  } from "react-icons/md";
 import { FaRobot } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
+import { BsCheckCircle } from "react-icons/bs";
+
 import SEO from '../Common/webSiteMeta.jsx';
 
 const TechnologySolutions = () =>{
@@ -21,8 +27,9 @@ const TechnologySolutions = () =>{
                         <Row>
                             <Col>
                                 <div className={Style.content}>
-                                    <h1>Technology Solutions</h1>
+                                    <h1>Custom Software Development Services for Growing Businesses</h1>
                                     <p>Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.</p>
+                                    <CATButton />
                                 </div>
                             </Col>
                         </Row>
@@ -33,7 +40,7 @@ const TechnologySolutions = () =>{
                         <Row>
                             <Col md={5}>
                                 <figure>
-                                    <img src={webImage} className='imgFull' alt='' width="1747" height="1334" />
+                                    <img src={webImage} className='imgFull' alt='Custom Technology Solutions – Automation & Workflow Optimization' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>
@@ -51,63 +58,16 @@ const TechnologySolutions = () =>{
                                         <li><FiCheck className={Style.icon} /> Modernize existing systems with future-ready technologies and architecture using Custom software modernization development services.</li>
                                         <li><FiCheck className={Style.icon} /> Build long-term technology partnerships that support continuous innovation and digital growth.</li>
                                     </ul>
-                                    <p>From enterprise platforms and intelligent automation to custom applications, modular software solutions, and scalable technology infrastructure, CodeTrios becomes your long-term technology partner, helping your business stay agile, competitive, and prepared for a digital-first future.</p>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                {/* <div className={Style.commonPading + " " +Style.weBuild}>
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h2 className={Style.title}>What We Do</h2>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}><MdSystemUpdateAlt  /></span>
-                                    <h3>Software Modernization</h3>
-                                    <p>Upgrade legacy systems with the latest tech stack. </p>
-                                </div>
-                            </Col>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}><MdAutoMode  /></span>
-                                    <h3>Automation & AI Integration</h3>
-                                    <p>Simplify workflows, reduce manual effort, and boost productivity. </p>
-                                </div>
-                            </Col>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}><TbApi  /></span>
-                                    <h3>API Development & Integration</h3>
-                                    <p>Connect your software ecosystem for seamless data flow.</p>
-                                </div>
-                            </Col>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}><BiLayer  /></span>
-                                    <h3>Custom Framework Solutions</h3>
-                                    <p>Node.js, React, and PHP-based tech solutions for scalable systems. </p>
-                                </div>
-                            </Col>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}><MdSpeed   /></span>
-                                    <h3>Performance Optimization</h3>
-                                    <p> Speed, stability, and scalability built into every layer. </p>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div> */}
                 <div className={"boxHeight " + Style.commonPading + " " + Style.weBuild + " " + Style.techStyle}>
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title}>What We Do</h2>
+                                <h2 className={Style.title}>Custom Software Development Services</h2>
                             </Col>
                         </Row>
                         <Row>
@@ -233,8 +193,46 @@ const TechnologySolutions = () =>{
                         </Row>
                     </Container>
                 </div>
-                
-                <VisionComponent />
+                <section className={`${Style.whyChooseSection}`}>
+                    <Container>
+                        <Row>
+                            <Col lg={6} data-aos="fade-up">
+                                <div className={Style.content}>
+                                    <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
+                                    <h2 className={Style.title}>Technology Built Around Your Business</h2>
+                                    <p>From enterprise platforms and intelligent automation to custom applications, modular software solutions, and scalable technology infrastructure, CodeTrios becomes your long-term technology partner, helping your business stay agile, competitive, and prepared for a digital-first future.</p>
+                                    <div className={Style.benefitItem}>
+                                        <BsCheckCircle className={Style.icon}/>
+                                        <span>Business-Focused Development</span>
+                                    </div>
+                                    <div className={Style.benefitItem}>
+                                        <BsCheckCircle className={Style.icon}/>
+                                        <span>Business-Focused Development</span>
+                                    </div>
+                                    <div className={Style.benefitItem}>
+                                        <BsCheckCircle className={Style.icon}/>
+                                        <span>Scalable Architecture</span>
+                                    </div>
+                                    <div className={Style.benefitItem}>
+                                        <BsCheckCircle className={Style.icon}/>
+                                        <span>Security First</span>
+                                    </div>
+                                    <div className={Style.benefitItem}>
+                                        <BsCheckCircle className={Style.icon}/>
+                                        <span>Long-Term Support</span>
+                                    </div>
+                                    <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
+                                </div>
+                            </Col>
+                            <Col lg={6}>
+                                <figure data-aos="fade-up" data-aos-delay="100">
+                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
+                                </figure>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section> 
+                <CATComponent />
             </div>
         </>
     )

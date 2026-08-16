@@ -48,7 +48,7 @@ const HomeBanner = ({data}) =>{
                                     <span>We don’t just build<br/> websites <span className={`fade-text ${fade ? "fade-in" : "fade-out"} ${Style.highLight}`}>we {words[index]}.</span></span>
                                 </h1>
                                 <p data-aos="fade-up" data-aos-delay="350">Helping startups and enterprises grow with AI, <span>custom software, automation, modern web technologies,</span> and data-driven digital experiences.</p>
-                                <button data-aos="fade-up" data-aos-delay="500" type='button'onClick={formOpenHandler} className={Style.btnStyle}>Book Free Consultation</button>
+                                <button data-aos="fade-up" data-aos-delay="500" type='button' onClick={formOpenHandler} className={Style.btnStyle}>Book Free Consultation</button>
                                 {/* <ul data-aos="fade-up" data-aos-delay="600">
                                     <li><FiCheck className={Style.icon} /> 8+ Years Experience</li>
                                     <li><FiCheck className={Style.icon} /> 100+ Projects Delivered</li>

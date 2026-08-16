@@ -15,7 +15,7 @@ import SEO from '../Common/webSiteMeta.jsx';
 
 //Components
 import AboutUs from '../HomeRoute/About';
-import VisionComponent from './VisionCode';
+import CATComponent from './CATComponent.jsx';
 
 const AboutUsPage = ()=>{
     return(
@@ -70,12 +70,12 @@ const AboutUsPage = ()=>{
                     <Row>
                         <Col md={5}>
                             <figure data-aos="fade-right" data-aos-delay="100">
-                                <img src={WhyChooseImg} className='imgFull' alt='' width="1747" height="1334" />
+                                <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
                             </figure>
                         </Col>
                         <Col md={7}>
                             <div className={Style.aboutContent} data-aos="fade-left" data-aos-delay="200">
-                                <h2 className={Style.title}>Why Choose Code Trios</h2>
+                                <h2 className={Style.title}>Why Choose CodeTrios?</h2>
                                <ul>
                                     <li>
                                         <h4><RiLoopLeftLine className={Style.icon} /> Full-Cycle Delivery</h4>
@@ -100,7 +100,7 @@ const AboutUsPage = ()=>{
                 </Container>
             </div>
         </div>
-        <VisionComponent />
+        <CATComponent />
         </>
     )
 }

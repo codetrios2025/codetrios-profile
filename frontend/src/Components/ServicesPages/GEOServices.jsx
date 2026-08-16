@@ -4,7 +4,8 @@ import Style from "../CSS/Style.module.css";
 import webImage from "../../assets/images/geo-img.webp";
 import WhyChooseImg from "../../assets/images/why_choose.webp";
 import { FiCheck } from "react-icons/fi";
-import VisionComponent from "../Pages/VisionCode";
+import CATButton from "./CATButtons.jsx";
+import CATComponent from "../Pages/CATComponent.jsx";
 //icon
 import { FaServer, FaCloud, FaWordpress } from "react-icons/fa";
 import { FiSearch, FiBarChart2 } from "react-icons/fi";
@@ -69,6 +70,7 @@ const GEOServices = () => {
                     AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and other
                     AI-driven search experiences.
                   </p>
+                  <CATButton />
                 </div>
               </Col>
             </Row>
@@ -495,7 +497,7 @@ const GEOServices = () => {
             </Row>
           </Container>
         </div>
-        <VisionComponent />
+        <CATComponent />
       </div>
     </>
   );

@@ -1,17 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/web_development.webp';
-
-import VisionComponent from '../Pages/VisionCode';
+import WhyChooseImg from '../../assets/images/why_choose.webp';
+import CATButton from './CATButtons.jsx';
+import CATComponent from '../Pages/CATComponent.jsx';
 //icon
 import { FaBuilding , FaReact } from "react-icons/fa";
 import { MdSupportAgent, MdDashboardCustomize  } from "react-icons/md";
 import { BiCodeCurly } from "react-icons/bi";
+import { BsCheckCircle } from "react-icons/bs";
 import SEO from '../Common/webSiteMeta.jsx';
 
 const WebDevelopment = () =>{
-
+    const benefits = [
+        "Business-focused development",
+        "Responsive and mobile-first implementation",
+        "SEO-friendly technical structure",
+        "Fast and performance-focused websites",
+        "Scalable architecture",
+        "Clean and maintainable code",
+        "API and third-party integrations",
+        "Ongoing maintenance and support",
+    ];
     return(
         <>
             <SEO page="web-development" />
@@ -21,8 +33,9 @@ const WebDevelopment = () =>{
                         <Row>
                             <Col>
                                 <div className={Style.content}>
-                                    <h1>Website Development</h1>
+                                    <h1>Web Development Company in India</h1>
                                     <p>At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.</p>
+                                    <CATButton />
                                 </div>
                             </Col>
                         </Row>
@@ -42,8 +55,6 @@ const WebDevelopment = () =>{
                                     <p>As an experienced web development agency, we offer end-to-end solutions covering website design and development, frontend web development, backend development services, and full stack web development. We combine modern technologies, clean coding practices, robust architecture, and industry best practices to build websites that are optimized for performance, security, usability, and long-term scalability.</p>
                                     <p>Whether you need a corporate website, portfolio website, eCommerce store, WordPress website, or a fully customized enterprise platform, our team develops solutions tailored to your specific business requirements. Our website development services include responsive development, custom functionality, third-party API integrations, database development, performance optimization, security implementation, and SEO-ready architecture.</p>
                                     <p>Our structured development process covers strategy, UI/UX design, frontend development, backend development, testing, optimization, and deployment. This systematic approach enables our website development company to maintain transparency, quality control, and consistency throughout every stage of your project</p>
-                                    <p>We build every website with future growth in mind. Whether you expect increased traffic, need new features, or plan to expand your digital operations, our scalable architecture makes it easier to evolve your platform over time. From frontend web development and intuitive interfaces to powerful backend development services and complete full stack web development, CodeTrios provides reliable digital solutions built for performance and long-term success</p>
-
                                 </div>
                             </Col>
                         </Row>
@@ -62,7 +73,7 @@ const WebDevelopment = () =>{
                                     <div className={Style.content}>
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><FaBuilding  /></span>
-                                            <h3>Corporate & Business Websites</h3>
+                                            <h3>Corporate & Business Website Development</h3>
                                             <p>We build professional, conversion-focused corporate websites that help businesses establish trust, communicate value clearly, and generate quality leads. Our sites are designed with strategic layouts, modern branding, and optimized performance to support strong digital credibility. Whether you're a startup, SME, or enterprise, we create tailored web experiences that reinforce your brand identity, highlight your services, and drive measurable engagement.</p>
                                         </div>
                                         <div className={Style.flipBack}>
@@ -172,21 +183,35 @@ const WebDevelopment = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </div>
-                {/* <div className={Style.whoAreSec}>
+                </div>  
+                <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
-                            <Col>
-                                <div className={Style.box}>
-                                    <h2 className={Style.title}>Why Choose Our Web Development? </h2>
-                                    <p>Whether you’re starting fresh or revamping an existing site, we ensure your web presence is built to engage, perform, and grow. </p>
+                            <Col lg={6} data-aos="fade-up">
+                                <div className={Style.content}>
+                                    <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
+                                    <h2 className={Style.title}>Development Focused on Performance, Quality & Growth</h2>
+                                    <p>We build every website with future growth in mind. Whether you expect increased traffic, need new features, or plan to expand your digital operations, our scalable architecture makes it easier to evolve your platform over time. From frontend web development and intuitive interfaces to powerful backend development services and complete full stack web development, CodeTrios provides reliable digital solutions built for performance and long-term success</p>
+                                    {benefits.map((benefit, index) => (
+                                        <div className={Style.benefitItem}>
+                                            <BsCheckCircle
+                                                className={Style.icon}
+                                            />
+                                            <span>{benefit}</span>
+                                        </div>
+                                    ))}
+                                    <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
                                 </div>
+                            </Col>
+                            <Col lg={6}>
+                                <figure data-aos="fade-up" data-aos-delay="100">
+                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
+                                </figure>
                             </Col>
                         </Row>
                     </Container>
-                </div> */}
-                
-                <VisionComponent />
+                </section>             
+                <CATComponent />
             </div>
         </>
     )

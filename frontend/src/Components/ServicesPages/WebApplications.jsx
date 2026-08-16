@@ -1,17 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/web_application.webp';
 import { FiCheck } from "react-icons/fi";
-import VisionComponent from '../Pages/VisionCode';
+import CATButton from './CATButtons.jsx';
+import CATComponent from '../Pages/CATComponent.jsx';
+import WhyChooseImg from '../../assets/images/why_choose.webp';
+
 //icon
 import { MdDeveloperMode , MdWeb } from "react-icons/md";
 import { BiGitMerge } from "react-icons/bi";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { BsCloudCheck } from "react-icons/bs";
+import { BsCheckCircle } from "react-icons/bs";
+
 import SEO from '../Common/webSiteMeta.jsx';
 const WebApplications = () =>{
-
+    const benefits = [
+        "Business-focused application architecture",
+        "Responsive and user-friendly interfaces",
+        "Secure authentication and authorization",
+        "Scalable application architecture",
+        "API and third-party integrations",
+        "Performance-focused development",
+        "Maintainable and structured code",
+        "Ongoing maintenance and support",
+    ];
     return(
         <>
             <SEO  page="web-application-development" />
@@ -21,8 +36,9 @@ const WebApplications = () =>{
                         <Row>
                             <Col>
                                 <div className={Style.content}>
-                                    <h1>Web Applications</h1>
+                                    <h1>Web Application Development Company in India</h1>
                                     <p>At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.</p>
+                                    <CATButton />
                                 </div>
                             </Col>
                         </Row>
@@ -41,7 +57,6 @@ const WebApplications = () =>{
                                     <h2 className={Style.title}>Mobile App Development Services – Android & iOS App Experts</h2>
                                     <p>In addition to web solutions, we are a full-service mobile application development company offering end-to-end mobile app development services. Our expertise includes custom mobile app development, iOS and Android app development, and advanced cross-platform app development to ensure your product reaches users across all devices efficiently. We also provide specialized iOS app development services and Android app development services, delivering high-performance native applications tailored to each platform. As a trusted app development agency, we help businesses turn ideas into scalable mobile products that drive engagement and growth.</p>
                                     <p>Whether you need custom web applications, internal business tools, customer portals, SaaS platforms, dashboards, or enterprise-level web applications, our experienced development team creates solutions that align with your business goals. We focus on clean architecture, robust security, high performance, and scalability to ensure your application remains reliable as your business and user base grow.</p>
-                                    <p>Our web applications are built to work seamlessly across devices and platforms, providing users with a consistent experience whether they access your application from a desktop, tablet, or smartphone. From intuitive interfaces and responsive frontend development to powerful backend systems, databases, APIs, and third-party integrations, we deliver complete solutions engineered for performance and long-term reliability.</p>
                                     <p>With a structured approach covering strategy, UI/UX design, development, testing, deployment, and ongoing optimization, CodeTrios helps businesses build both web and mobile applications that simplify operations, enhance customer engagement, and create a strong foundation for digital growth.</p>
                                 </div>
                             </Col>
@@ -52,7 +67,7 @@ const WebApplications = () =>{
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title}>Our Offerings Include</h2>
+                                <h2 className={Style.title}>Web Application Development Services</h2>
                             </Col>
                         </Row>
                         <Row>
@@ -101,20 +116,34 @@ const WebApplications = () =>{
                         </Row>
                     </Container>
                 </div>
-                {/* <div className={Style.whoAreSec}>
+                <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
-                            <Col>
-                                <div className={Style.box}>
-                                    <h2 className={Style.title}>Why Choose Our Web Applications? </h2>
-                                    <p>We focus on performance, security, and user experience. Our applications are modular, easy to maintain, and designed to scale as your business grows.  </p>
+                            <Col lg={6} data-aos="fade-up">
+                                <div className={Style.content}>
+                                    <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
+                                    <h2 className={Style.title}>Web Applications Built for Real Business Needs</h2>
+                                    <p>Our web applications are built to work seamlessly across devices and platforms, providing users with a consistent experience whether they access your application from a desktop, tablet, or smartphone. From intuitive interfaces and responsive frontend development to powerful backend systems, databases, APIs, and third-party integrations, we deliver complete solutions engineered for performance and long-term reliability.</p>
+                                    {benefits.map((benefit, index) => (
+                                        <div className={Style.benefitItem}>
+                                            <BsCheckCircle
+                                                className={Style.icon}
+                                            />
+                                            <span>{benefit}</span>
+                                        </div>
+                                    ))}
+                                    <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
                                 </div>
+                            </Col>
+                            <Col lg={6}>
+                                <figure data-aos="fade-up" data-aos-delay="100">
+                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
+                                </figure>
                             </Col>
                         </Row>
                     </Container>
-                </div> */}
-                
-                <VisionComponent />
+                </section>                
+                <CATComponent />
             </div>
         </>
     )

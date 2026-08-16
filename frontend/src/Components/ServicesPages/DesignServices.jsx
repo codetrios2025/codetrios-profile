@@ -1,17 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/design_services.webp';
 import { FiCheck } from "react-icons/fi";
-import VisionComponent from '../Pages/VisionCode';
+import CATButton from './CATButtons.jsx';
+import CATComponent from '../Pages/CATComponent.jsx';
+import WhyChooseImg from '../../assets/images/why_choose.webp';
+
 //icon
 import { FaRegIdBadge, FaPaintBrush, FaPlayCircle    } from "react-icons/fa";
 import { MdDesignServices   } from "react-icons/md";
 import { MdWeb } from "react-icons/md";
+import { BsCheckCircle } from "react-icons/bs";
+
 import SEO from '../Common/webSiteMeta.jsx';
 
 const DesignServices = () =>{
-
+    const benefits = [
+        "User-centered design approach",
+        "Mobile-first and responsive layouts",
+        "Conversion-focused user journeys",
+        "Consistent design systems",
+        "Wireframes and interactive prototypes",
+        "Modern and scalable UI components",
+        "Performance-aware design decisions",
+        "Designs aligned with business goals",
+    ];
     return(
         <>
             <SEO page="ui-ux-design-services" />
@@ -21,8 +36,9 @@ const DesignServices = () =>{
                         <Row>
                             <Col>
                                 <div className={Style.content}>
-                                    <h1>Design Services</h1>
+                                    <h1>UI UX Design Services for Websites & Digital Products</h1>
                                     <p>At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.</p>
+                                    <CATButton />
                                 </div>
                             </Col>
                         </Row>
@@ -42,7 +58,6 @@ const DesignServices = () =>{
                                     <p>Our UI/UX design services and responsive web design services focus on creating intuitive, visually engaging, and user-centered digital experiences. From website and mobile app interfaces to complete digital products, we also provide responsive weblayout design Services that ensure seamless performance across all devices. We develop designs that balance creativity with functionality, ensuring every interaction feels smooth, consistent, and purposeful.</p>
                                     <p>Whether you are building a new brand identity, refreshing an existing brand, designing a website, or developing a complete digital experience, our team delivers creative branding solutions and compelling visuals that connect with your target audience. We focus on consistent typography, colors, layouts, visual hierarchy, and interaction patterns to build a recognizable and cohesive brand experience supported by strong brand visuals and design services.</p>
                                     <p>From UI/UX design and website design to mobile app design, brand identity, and digital product design, CodeTrios helps businesses turn ideas into engaging visual experiences. Our expertise also includes creative graphic design services, brand graphics & illustrations, animation design services, and motion graphic design services, helping brands communicate more effectively through dynamic and visually rich storytelling. Our design process combines research, strategy, wireframing, prototyping, visual design, and usability considerations to ensure every decision supports your business objectives.</p>
-                                    <p>With a strong focus on creativity, usability, and conversion, we create designs that not only look beautiful but also solve problems, improve user engagement, and bring your brand to life across digital platforms.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -94,133 +109,34 @@ const DesignServices = () =>{
                         </Row>
                     </Container>
                 </div>
-                {/* <div className={Style.commonPading + " " + Style.buildStyle}>
+                <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
-                            <Col>
-                                <h2 className={Style.title}>Our Design Offerings</h2>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col md={4}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <div className={Style.flipFront}>
-                                            <span className={Style.icon}><MdDesignServices  /></span>
-                                            <h3>UI/UX Design</h3>
-                                            <p>We create human-centered design systems that balance aesthetics with functionality.</p>
+                            <Col lg={6} data-aos="fade-up">
+                                <div className={Style.content}>
+                                    <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
+                                    <h2 className={Style.title}>Design Focused on Users and Business Goals</h2>
+                                    <p>With a strong focus on creativity, usability, and conversion, we create designs that not only look beautiful but also solve problems, improve user engagement, and bring your brand to life across digital platforms.</p>
+                                    {benefits.map((benefit, index) => (
+                                        <div className={Style.benefitItem}>
+                                            <BsCheckCircle
+                                                className={Style.icon}
+                                            />
+                                            <span>{benefit}</span>
                                         </div>
-                                        <div className={Style.flipBack}>
-                                            <span className={Style.icon}><MdDesignServices  /></span>
-                                            <h3>Our UI/UX process includes:</h3>
-                                            <ul>
-                                                <li>User journey mapping</li>
-                                                <li>Wireframing and prototyping</li>
-                                                <li>Visual UI design with modern trends</li>
-                                                <li>Usability testing and refinement</li>
-                                                <li>Design systems and component libraries</li>
-                                            </ul>
-                                            <p>interfaces that feel effortless, look modern, and convert better.</p>
-                                        </div>
-                                    </div>
+                                    ))}
+                                    <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
                                 </div>
                             </Col>
-                            <Col md={4}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <div className={Style.flipFront}>
-                                            <span className={Style.icon}><MdWeb  /></span>
-                                            <h3>Website Redesign</h3>
-                                            <p>Outdated websites hurt trust and conversions — we fix that.</p>
-                                        </div>
-                                        <div className={Style.flipBack}>
-                                            <span className={Style.icon}><MdWeb  /></span>
-                                            <h3>Our redesigns focus on:</h3>
-                                            <ul>
-                                                <li>Modernizing the visual layout</li>
-                                                <li>Improving navigation and structure</li>
-                                                <li>Enhancing mobile responsiveness</li>
-                                                <li>Increasing engagement and conversions</li>
-                                                <li>Strengthening brand alignment</li>
-                                            </ul>
-                                            <p>We retain what works and rebuild what doesn’t, transforming your site into a high-performing digital asset.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <Col lg={6}>
+                                <figure data-aos="fade-up" data-aos-delay="100">
+                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
+                                </figure>
                             </Col>
-                            <Col md={4}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <div className={Style.flipFront}>
-                                            <span className={Style.icon}><FaRegIdBadge  /></span>
-                                            <h3>Brand Identity & Logo Design</h3>
-                                            <p>Your logo and branding are the first impression customers get — we make it impactful.</p>
-                                        </div>
-                                        <div className={Style.flipBack}>
-                                            <span className={Style.icon}><FaRegIdBadge  /></span>
-                                            <h3>Our branding services cover:</h3>
-                                            <ul>
-                                                <li>Logo concepts and finalization</li>
-                                                <li>Color palette engineering</li>
-                                                <li>Typography selection</li>
-                                                <li>Brand voice & personality mapping</li>
-                                                <li>Full brand guidelines documentation</li>
-                                            </ul>
-                                            <p>This ensures your brand looks consistent everywhere — online and offline.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col md={4}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <div className={Style.flipFront}>
-                                            <span className={Style.icon}><FaPaintBrush  /></span>
-                                            <h3>Graphics & Illustrations</h3>
-                                            <p>Custom-made visuals that capture attention and support your marketing goals.</p>
-                                        </div>
-                                        <div className={Style.flipBack}>
-                                            <span className={Style.icon}><FaPaintBrush  /></span>
-                                            <h3>We design:</h3>
-                                            <ul>
-                                                <li>Social media creatives</li>
-                                                <li>Ad banners & hero images</li>
-                                                <li>Corporate brochures & presentations</li>
-                                                <li>Icons, infographics & diagrams</li>
-                                                <li>Product and feature illustrations</li>
-                                            </ul>
-                                            <p>Each graphic is optimized for clarity, readability, and engagement.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col md={4}>
-                                <div className={Style.buildElem}>
-                                    <div className={Style.content}>
-                                        <div className={Style.flipFront}>
-                                            <span className={Style.icon}><FaPlayCircle  /></span>
-                                            <h3>Motion & Animation</h3>
-                                            <p>Motion adds clarity, emotion, and modern appeal to your interfaces.</p>
-                                        </div>
-                                        <div className={Style.flipBack}>
-                                            <span className={Style.icon}><FaPlayCircle  /></span>
-                                            <h3>We create:</h3>
-                                            <ul>
-                                                <li>UI micro-interactions</li>
-                                                <li>Logo animations</li>
-                                                <li>Explainer animations</li>
-                                                <li>Scroll-triggered effects</li>
-                                                <li>Animated banners & product visuals</li>
-                                            </ul>
-                                            <p>Animations are carefully applied to guide user attention without overwhelming the experience.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>       
                         </Row>
                     </Container>
-                </div> */}
-                <VisionComponent />
+                </section>  
+                <CATComponent />
             </div>
         </>
     )

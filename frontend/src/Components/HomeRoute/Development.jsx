@@ -85,7 +85,7 @@ const Development = ()=>{
                     <span><HiOutlineRocketLaunch /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>Deployment</h3>
+                  <h3>Launch</h3>
                 </div>
                 {/* 07 */}
                 <div className={Style.processItem} data-aos="fade-up" data-aos-delay="700">

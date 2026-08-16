@@ -15,7 +15,6 @@ const WhatsAppButton = () => {
     padding: "12px 18px",
     borderRadius: "50px",
     textDecoration: "none",
-    fontWeight: "bold",
     zIndex: 999,
   };
 

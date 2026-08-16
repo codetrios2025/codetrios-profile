@@ -89,7 +89,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><FaGlobeAmericas className={Style.icon} /></span>
                                 <h3>Web Applications</h3>
-                                <p>Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.</p>
+                                <p>At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.</p>
                                 <Link to="web-application-development" title='web application development'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>web application development</span>

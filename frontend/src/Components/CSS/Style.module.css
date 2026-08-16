@@ -2,13 +2,13 @@
 
 .commonPading{padding: 80px 0;}
 
-.title{font-size: 50px;font-family: 'Rubik Bold';}
+.title{font-size: 45px;font-weight: 700;}
 /* .title span{font-family: 'Rubik Regular';display: block;} */
 .buttonFlex{display: flex;justify-content: center;margin-top: 30px;}
 .primeryBg{background: #7C3AED;}
 
 .btnStyle{color: #fff;padding: 14px 30px;position: relative;z-index: 1;border: none;overflow: hidden;
-background: linear-gradient(90deg,#8E42FF 0%,#5A63FF 45%,#18A8FF 100%);border-radius: 10px;
+background: linear-gradient(90deg,#8E42FF 0%,#5A63FF 45%,#18A8FF 100%);border-radius: 6px;
    
     font-size: 16px;
     text-transform: capitalize;
@@ -48,10 +48,10 @@ background: linear-gradient(90deg,#8E42FF 0%,#5A63FF 45%,#18A8FF 100%);border-ra
 border: 1px solid rgba(255, 255, 255, .18);
     padding: 7px 20px;
     border-radius: 10px;
-    color: #fff;font-family: 'Rubik Light';
+    color: #fff;font-weight: 300;
 }
 .heroBanner .content h1{
-    font-family: 'Rubik Medium';
+    font-weight: 500;
     color: #fff;
     font-size: 60px;
     line-height: 70px;
@@ -60,7 +60,7 @@ border: 1px solid rgba(255, 255, 255, .18);
     text-transform: capitalize;
     text-align: left;
 }
-.heroBanner .content h1 span.highLight{text-transform: uppercase;font-family: 'Rubik Medium';
+.heroBanner .content h1 span.highLight{text-transform: uppercase;font-weight: 500;
     background: linear-gradient(90deg,#18A8FF 0%,#3F6FFF 30%,#7B5CFF 60%,#B84DFF 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -68,16 +68,16 @@ background-clip: text
 }
 
     .heroBanner .content ul{width: 600px;max-width: 100%;margin: 30px auto 0;}    
-.heroBanner .content ul li{color: #fff;font-size: 18px;display: inline-block;margin: 0 10px 10px;font-family: 'Rubik Light';}    
+.heroBanner .content ul li{color: #fff;font-size: 18px;display: inline-block;margin: 0 10px 10px;font-weight: 300;}    
 .heroBanner .content ul li .icon{margin-right: 5px;}
 .heroBanner .content h1 span.highLight span{display: block;}
-.heroBanner .content p{color: #fff;text-align: left;font-size: 18px;line-height: 30px;font-family: 'Rubik Light';margin-bottom: 20px;}
+.heroBanner .content p{color: #fff;text-align: left;font-size: 18px;line-height: 30px;font-weight: 300;margin-bottom: 20px;}
 .heroBanner .content p span{display: block;}
 .queryForm{padding: 10px 30px;background: #fff;border-radius: 40px;display: flex;justify-content: space-around;margin-top: 50px;}
 .queryForm .group{display: flex;align-items: center;position: relative;}
 .queryForm .group input{max-width: 240px;margin: 0 10px 0 10px;font-size: 16px;border: none;padding: 10px 0;}
 .queryForm .group input:focus{outline: none;}
-.queryForm button{border: none;background: #7C3AED;color: #fff;font-family: 'Rubik Medium';font-size: 16px;padding: 15px 30px;border-radius: 30px;}
+.queryForm button{border: none;background: #7C3AED;color: #fff;font-weight: 500;font-size: 16px;padding: 15px 30px;border-radius: 30px;}
 .heroBanner .btnStyle{display: block;}
 .heroBanner form{display: none;}
 /* About */
@@ -99,7 +99,7 @@ background-clip: text
     color: transparent;
     background-clip: text; */
     color: #7C3AED;
-    font-family: 'Rubik Light';
+    font-weight: 300;
     font-size: 20px;
     font-size: 20px;
     text-transform: uppercase;
@@ -174,19 +174,19 @@ p strong{font-weight: normal;}
     top: -25px;
     left: 20px;
 }
-.servicesBox .content h3{
+.servicesBox .content h2{
     font-size: 22px;
     margin: 10px 0 10px;
+    font-weight: 500;
 }
 .servicesBox .content p{
     margin: 0 0 10px 0;
-    font-family: 'Rubik Regular';
         overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }
-.servicesBox .content p strong{    font-family: 'Rubik Regular';}
+.servicesBox .content p strong{font-weight: 400;}
 .servicesBox .content p span{background: transparent!important;}
 .servicesBox .content a{
     color: #000;
@@ -250,7 +250,7 @@ position: relative;
     color: #5e5757;
     margin: 0;
 }
-.projectBox h5{color: #000;margin: 15px 0 10px;font-family: 'Rubik Medium';}
+.projectBox h5{color: #000;margin: 15px 0 10px;font-weight: 500;}
 .contactPage{overflow: hidden;}
 /* Contact Section */
 .contactSec .contactFomr{
@@ -314,7 +314,7 @@ position: relative;
 .whyUs figure{height: 100%;background: #7C3AED;;}
 .whyUs .aboutContent{padding: 40px 0 30px 40px;height: 100%;display: flex;justify-content: center;}
 .whyUs ul li{flex-direction: column;margin-bottom: 25px;}
-.whyUs ul li h4{font-family: 'Rubik Medium';display: flex;align-items: center;margin: 0;font-size: 20px;color: #000;}
+.whyUs ul li h4{font-weight: 500;display: flex;align-items: center;margin: 0;font-size: 20px;color: #000;}
 .whyUs h2{margin-bottom: 40px;}
 .whyUs ul li h4 .icon{top: 0;color: #000;}
 .whyUs ul li p{padding-left: 30px;margin: 0;}
@@ -343,7 +343,7 @@ position: relative;
 .formPop .commonPading{padding: 0;}
 .formPop h2.title{font-size: 30px;}
 .formPop .inputFlex label{color:#4F4C4C;font-size: 14px;}
-.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-family: 'Rubik Regular';}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 400;}
 .formPop .inputFlex{flex-direction: column;}
 .formPop .inputFlex .group{margin-bottom: 20px;}
 .formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;
@@ -354,8 +354,8 @@ display: block;
 
 .servicesPage .buttonFlex{display: none;}
 
-.servicesPage .subContent{display: block;}
-.servicesDetail .aboutContent h4{font-family: 'Rubik Medium';}
+.servicesPage .subContent{display: block;margin-bottom: 30px;}
+.servicesDetail .aboutContent h4{font-weight: 500;}
 
 .whoAreSec{position: relative;background: url(../../assets/images/aboutBanner.png) no-repeat center center;background-size: cover;padding: 50px 0;}
 .whoAreSec h5{font-size: 40px;line-height: 50px;}
@@ -386,7 +386,7 @@ display: block;
 .ourPlatForm{padding-bottom: 80px;}
 .boxContainer{position: relative;}
 
-.boxContainer h4{text-transform: uppercase;font-family: 'Rubik Bold';color: #000;font-size: 40px;margin-top: 50px;}
+.boxContainer h4{text-transform: uppercase;font-weight: 700;color: #000;font-size: 40px;margin-top: 50px;}
 .boxContainer .boxElem{background: #f0f0f04f;padding: 50px 30px;display: flex;flex-wrap: wrap;color: #000;border-radius: 10px;margin-top: 30px;align-items: center;border-width: 2px 2px 5px 2px;
     border-color: #d8d8d8;
     border-style: solid;position: relative;}
@@ -400,32 +400,38 @@ display: block;
     justify-content: center;
     align-items: center;}
 .boxContainer .boxElem .techLogo h6{font-size: 16px;margin: 10px 0 0;}
-.boxContainer h5{font-size: 26px;font-family: 'Rubik Bold';margin: 0 0 20px;}
+.boxContainer h5{font-size: 26px;font-weight: 700;margin: 0 0 20px;}
 .PortfolioPage .buttonFlex{display: none;}
 .boxContainer .boxElem .techLogo:hover{background: #fff;border-color: #7C3AED;}
 
-.servicesDetail .innerBanner{height: 450px;}
+.servicesDetail .innerBanner {
+    height: auto;
+    position: relative;
+    padding: 30px 0 40px;
+}
+.servicesDetail .innerBanner:before{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #000000f5;content: "";}
+.servicesDetail .innerBanner .catButton a{color: #fff;border-color: #fff;}
 .innerBanner .content{height: 100%;display: flex;justify-content: center;flex-direction: column;max-width: 100%;}
-.servicesDetail .innerBanner div{height: 100%;}
-.servicesDetail .innerBanner .content{padding-top: 80px;}
+/* .servicesDetail .innerBanner div{height: 100%;} */
+.servicesDetail .innerBanner .content{padding-top: 80px;width: 600px;max-width: 100%;position: relative;}
 .servicesDetail .innerBanner h1{color: #fff;
-    font-size: 70px;
-    font-family: 'Rubik Light';
+    font-size: 45px;
+    font-weight: 300;
     margin-bottom: 20px;}
-.servicesDetail .innerBanner p{font-size: 16px;color: #fff;width: 600px;max-width: 100%;}
+.servicesDetail .innerBanner p{font-size: 16px;color: #fff;}
 .buildStyle .box h3{margin-right: 0;}
 .buildStyle .box ul{margin-left: 15px;margin-bottom: 10px;}
 .buildStyle .box ul li{list-style-type: disc;font-size: 14px;}
-.buildStyle .box strong{font-size: 18px;font-family: 'Rubik Medium';}
+.buildStyle .box strong{font-size: 18px;font-weight: 500;}
 .buildStyle .box p{margin: 0;}
 
 .buildStyle h2{text-align: center;}
 .buildElem{width: 100%;padding: 0;position: relative;perspective: 1000px;margin-bottom: 30px;}
-.buildElem h3{font-family: 'Rubik Bold';font-size: 24px;margin: 10px 0;}
+.buildElem h3{font-weight: 700;font-size: 24px;margin: 10px 0;}
 .buildElem .icon{color: #7C3AED;font-size: 40px;}
 .buildElem  ul{margin-left: 15px;margin-bottom: 10px;}
 .buildElem  ul li{list-style-type: disc;}
-.buildElem  strong{font-size: 18px;font-family: 'Rubik Medium';} 
+.buildElem  strong{font-size: 18px;font-weight: 500;} 
 .buildElem .content{  position: relative;width: 100%;height: 100%;transition: transform .7s ease;transform-style: preserve-3d;}
 .buildElem:hover .content {transform: rotateY(180deg);}
 .buildElem:hover .flipBack .icon{color: #fff;}
@@ -451,7 +457,7 @@ display: block;
 .thanksPage{position: relative;text-align: center;padding: 15px;height: 640px;display: flex;align-items: center;flex-direction: column;justify-content: center;
 background: #f0f0f0;
 }
-.thanksPage h1{font-family: 'Rubik Bold';color: #7C3AED;}
+.thanksPage h1{font-weight: 700;color: #7C3AED;}
 .thanksPage a{color: #000;text-decoration: underline;}
 .thanksPage p{font-size: 16px;}
 .contactPage{margin-top: 84px;}
@@ -464,7 +470,7 @@ background: #f0f0f0;
 .codeTriosElem .box{text-align: center;background: transparent;padding: 20px 15px;border-radius: 10px;border: 1px solid rgba(255, 255, 255, .18);}
 .codeTriosElem .box .icon{width: 70px;height: 70px;border-radius: 50%;background: #fff;font-size: 40px;margin: 0 auto;color:#7C3AED;
 display: flex;align-items: center;justify-content: center;}
-.codeTriosElem .box h4{font-size: 16px;margin: 10px 0;color:#fff;font-family: 'Rubik Regular';}
+.codeTriosElem .box h4{font-size: 16px;margin: 10px 0;color:#fff;font-weight: 400;}
 .codeTriosElem .box p{font-size: 14px;color: #000;display: none;}
 .ideaSec{position: relative;padding: 40px 0;}
 .ideaSec h2{line-height: 50px;}
@@ -491,7 +497,7 @@ display: flex;align-items: center;justify-content: center;}
 .processSection::after{content:none;position:absolute;width:500px;height:500px;background:radial-gradient(circle,#f5e9ff 0%,transparent 70%);right:-180px;bottom:-180px;opacity:.8;}
 .processSection .Heading h2{color: #fff;}
 .Heading{text-align:center;margin-bottom:40px;}
-.Heading h2{font-size: 50px;font-family: 'Rubik Bold';margin-bottom: 25px;}
+.Heading h2{font-size: 50px;font-weight: 700;margin-bottom: 25px;}
 .Heading h2 span{
     background:linear-gradient(90deg,#4f46e5,#8b5cf6,#06b6d4);
     -webkit-background-clip:text;
@@ -568,7 +574,25 @@ display: flex;align-items: center;justify-content: center;}
 .mindTitle h2{line-height: 35px;font-size: 20px;margin: 0;}
 .mindTitle h2 span{display: block;font-size: 26px;background: linear-gradient(90deg, #4f46e5, #8b5cf6, #06b6d4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 
+.pageHead{text-align: center;width: 960px;max-width: 100%;margin: 0 auto;}
+.smallTitle{font-size: 20px;font-weight: 400; background: linear-gradient(90deg, #4f46e5, #8b5cf6, #06b6d4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.benefitItem{margin-bottom: 5px;}
+.benefitItem .icon{color: #8b5cf6;margin-right: 10px;}
+.benefitItem span{font-size: 14px;}
+.whyChooseSection{position: relative;overflow: hidden;}
+.whyChooseSection a{margin: 10px 0 0;display: inline-block;}
+.whyChooseSection figure{height: 400px;    text-align: right;}
+.whyChooseSection .content{padding: 50px 0;}
+.catButton{display: flex;align-items: center;gap: 20px;}
+.catButton button, .catButton a{font-size: 14px;font-weight: 500;padding: 12px 20px;border-radius: 6px;}
+.catButton a{    border: 1px solid #04161c;color: #000;}
 
+.industriesSection{    background: #ededed;padding:50px 0}
+.industriesSection ul{display: flex;align-items: center;justify-content: center;margin-top: 20px;}
+.industriesSection ul li{flex: 1;border-right: 2px solid rgba(221, 221, 221, 0.699);}
+.industriesSection ul li:last-child{border: none;}
+.industriesSection ul .icon{font-size: 40px;color: #212529;}
+.industriesSection ul p{margin: 0;font-weight: 500;color: #212529;}
 
 @media (max-width: 1600px){
 .thanksPage{height: 500px;}
@@ -592,6 +616,7 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .ideaImg{width: 35%;}
 .servicesDetail .innerBanner .content{padding-top: 80px;}
 .whoAreSec h5{font-size: 30px;line-height: 40px;}
+.industriesSection ul p{font-size: 14px;}
 }
 
 @media (max-width: 1199px){
@@ -600,7 +625,7 @@ display: flex;align-items: center;justify-content: center;}
 .title, .Heading h2{font-size: 32px;}
 .aboutContent h6{font-size: 16px;}
 .aboutContent ul li{line-height: 26px;}
-.servicesBox .content h3{font-size: 18px;}
+.servicesBox .content h2{font-size: 18px;}
 .projectBox .projectImg{min-height: 285px;}
 .btnStyle{        padding: 12px 20px;font-size: 14px;}
 .inputFlex .group input, .inputFlex .group textarea{font-size: 16px;}
@@ -673,6 +698,13 @@ display: flex;align-items: center;justify-content: center;}
 .processItem{flex: auto;width: 25%;margin-bottom: 20px;}
 .ideaSec .ideaElem .content, .ideaSec .ideaElem .ideaImg{width: 100%;}
 .ideaSec .ideaElem .ideaImg{text-align: center;width: 300px;margin: 20px auto 0;}
+.industriesSection ul{flex-wrap: wrap;}
+.industriesSection ul li {flex: auto;padding: 0 0;width: 25%;margin-bottom: 15px;}
+.industriesSection ul li:nth-child(4){border: none;}
+.whyChooseSection .content{padding-bottom: 30px;}
+.whyChooseSection figure{margin-bottom: 50px;}
+.whyChooseSection figure img{    width: 100%;height: 100%;object-fit: cover;}
+
 }
 
 @media (max-width: 767px){
@@ -722,9 +754,15 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .content ul .icon{    margin-right: 5px;}
 .processSection {padding: 50px 0 30px;}
 .formElem .contactFomr .inputFlex .group p{left: 0;}
+.smallTitle{font-size: 16px;}
+.innerBanner .content h1{font-size: 30px;}
+.innerBanner .catButton{align-items: flex-start;}
 }
 
 @media (max-width: 580px){
+.industriesSection ul li{width: 50%;}   
+ .industriesSection ul li:nth-child(even){border: none;}
+.catButton{flex-direction: column;}    
 .boxContainer h4{font-size: 20px;margin-top: 30px;}   
 .boxContainer h5{font-size: 18px;margin-bottom: 15px;}  
 .heroBanner .content h1 {font-size: 28px;line-height: 35px;}
