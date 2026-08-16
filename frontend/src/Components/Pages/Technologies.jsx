@@ -60,7 +60,7 @@ const TechnologiesPage = ()=>{
         <SEO page="technologies" />
         <div className={Style.innerPage + " " + Style.techPage}>
             <div className={Style.innerBanner}>
-                <img src={technologiesBanner} />
+                <img src={technologiesBanner} alt='technologies' />
             </div>
             <div className={Style.ourPlatForm}>
                 <Container>
@@ -383,9 +383,9 @@ const TechnologiesPage = ()=>{
                 </Container>
             </div>
         </div>
-        <VisionComponent />
+        <CATComponent />
         </>
     )
 }
 
-export default CATComponent;
+export default TechnologiesPage;

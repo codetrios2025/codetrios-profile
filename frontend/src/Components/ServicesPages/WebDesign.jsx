@@ -57,7 +57,7 @@ const WebDesign = () =>{
                         <Row>
                             <Col md={5}>
                                 <figure data-aos="fade-up" data-aos-delay="100">
-                                    <img src={webImage} className='imgFull' alt='Professional & Affordable Website Design Services in India' width="1747" height="1334" />
+                                    <img src={webImage} className='imgFull' alt='Professional website design services' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>
