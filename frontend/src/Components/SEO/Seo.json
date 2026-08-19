@@ -2,7 +2,7 @@
 
   "home": {
     "title": "Web Development & Digital Solutions Company in India | CodeTrios",
-    "description": "CodeTrios is a web development and digital solutions company in India offering website design, web development, ecommerce, custom software, UI/UX and AI-powered digital solutions.",
+    "description": "CodeTrios is a web development and digital solutions company in India offering website design, web development, ecommerce development, custom software, UI/UX design and SEO/GEO services.",
     "keywords": "web development company India, website design company India, web design and development, ecommerce development company, custom software development, digital solutions company, AI digital solutions",
     "canonical": "https://www.codetrios.com/"
 
@@ -36,7 +36,7 @@
 
   },
  
-  "web-development": {
+  "web-development-services": {
 
     "title": "Web Development Company in India | CodeTrios",
 
@@ -49,15 +49,10 @@
   },
  
   "ecommerce-development-services": {
-
     "title": "Ecommerce Development Company in India | CodeTrios",
-
-    "description": "CodeTrios builds responsive and scalable ecommerce websites and online stores with custom features, secure integrations and modern ecommerce technologies.",
-
-    "keywords": "ecommerce development company India, ecommerce website development, ecommerce website design, custom ecommerce development, online store development, WooCommerce development, Shopify development",
-
+    "description": "CodeTrios is an ecommerce development company in India providing custom ecommerce, Shopify and WooCommerce development services for scalable and conversion-focused online stores.",
+    "keywords": "ecommerce development company India, ecommerce development services India, ecommerce website development, ecommerce website design, custom ecommerce development, Shopify development, WooCommerce development, online store development, ecommerce solutions India",
     "canonical": "https://www.codetrios.com/ecommerce-development-services"
-
   },
  
   "web-application-development": {

@@ -13,19 +13,37 @@ import { FaServer, FaCloud, FaWordpress   } from "react-icons/fa";
 import { MdDesignServices, MdDns, MdSecurity, MdSpeed, MdSupportAgent  } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
 
-import SEO from '../Common/webSiteMeta.jsx';
-import ServiceSchema from '../SEO/ServiceSchema.jsx';
+import SEO from '../SEO/websiteMeta.jsx';
+import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
+
 const WebHosting = () =>{
 
     return(
         <>
             <SEO page="web-hosting-services" />
-            <ServiceSchema
-                    name="Web Hosting Services"
-                    description="CodeTrios provides reliable web hosting solutions designed to support fast, secure, and stable business websites and web applications."
-                    url="https://www.codetrios.com/web-hosting-services"
-                    serviceType="Web Hosting Services"
-                />
+            <SchemaGraph
+                pageType="service"
+                pageName="Web Hosting Services"
+                pageDescription="CodeTrios provides web hosting services to help businesses deploy and maintain reliable websites and web applications."
+                pageUrl="https://www.codetrios.com/web-hosting-services"
+                serviceName="Web Hosting Services"
+                serviceDescription="Web hosting services for websites and web applications."
+                serviceType="Web Hosting"
+                breadcrumbs={[
+                    {
+                        name: "Home",
+                        url: "https://www.codetrios.com/"
+                    },
+                    {
+                        name: "Services",
+                        url: "https://www.codetrios.com/services"
+                    },
+                    {
+                        name: "Web Hosting Services",
+                        url: "https://www.codetrios.com/web-hosting-services"
+                    }
+                ]}
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail + " " + Style.hostingStyle}>
                 <div className={Style.innerBanner}>
                     <Container>

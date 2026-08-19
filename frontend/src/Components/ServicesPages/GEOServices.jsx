@@ -25,7 +25,6 @@ import {
   MdManageSearch,
   MdVerifiedUser,
 } from "react-icons/md";
-import SEO from "../Common/webSiteMeta.jsx";
 import {
   TbDeviceDesktopCode,
   TbSeo,
@@ -40,17 +39,36 @@ import {
   RiAiGenerate,
 } from "react-icons/ri";
 import { BiTargetLock, BiSearchAlt } from "react-icons/bi";
-import ServiceSchema from "../SEO/ServiceSchema.jsx";
+import SEO from "../SEO/websiteMeta.jsx";
+import SchemaGraph from "../SEO/Schema/SchemaGraph.jsx";
+
 const GEOServices = () => {
   return (
     <>
       <SEO page="geo-seo-services" />
-      <ServiceSchema
-          name="SEO & GEO Services"
-          description="CodeTrios provides SEO and Generative Engine Optimization services to improve search visibility, organic traffic, brand discoverability, and visibility across AI-powered search experiences."
-          url="https://www.codetrios.com/geo-seo-services"
-          serviceType="SEO & GEO Services"
-      />
+      <SchemaGraph
+        pageType="service"
+        pageName="GEO & SEO Services"
+        pageDescription="CodeTrios provides SEO and Generative Engine Optimization services designed to improve search visibility and visibility across AI-powered search experiences."
+        pageUrl="https://www.codetrios.com/geo-seo-services"
+        serviceName="GEO & SEO Services"
+        serviceDescription="SEO and Generative Engine Optimization services focused on improving organic search visibility and AI search visibility."
+        serviceType="SEO and Generative Engine Optimization"
+        breadcrumbs={[
+            {
+                name: "Home",
+                url: "https://www.codetrios.com/"
+            },
+            {
+                name: "Services",
+                url: "https://www.codetrios.com/services"
+            },
+            {
+                name: "GEO & SEO Services",
+                url: "https://www.codetrios.com/geo-seo-services"
+            }
+        ]}
+    />
       <div
         className={
           Style.innerPage +

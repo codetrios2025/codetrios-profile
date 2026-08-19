@@ -6,14 +6,78 @@ import webImage from '../../assets/images/web_development.webp';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
+import CarouselImport from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 //icon
 import { FaBuilding , FaReact } from "react-icons/fa";
 import { MdSupportAgent, MdDashboardCustomize  } from "react-icons/md";
 import { BiCodeCurly } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
-import SEO from '../Common/webSiteMeta.jsx';
-import ServiceSchema from '../SEO/ServiceSchema.jsx';
+import Industries from '../Pages/Industries.jsx';
+import Development from '../HomeRoute/Development.jsx';
+import SEO from '../SEO/websiteMeta.jsx';
+import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
+//services Icon
+import { FaMobileAlt, FaPaintBrush, FaHandshake, FaGlobeAmericas } from "react-icons/fa";
+import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
+import { BsCart3 } from "react-icons/bs";
+import { PiPlugsConnectedBold } from "react-icons/pi";
+import { MdInsights, MdDesignServices  } from "react-icons/md";
+import { LuSearchCheck } from "react-icons/lu";
+import { GoArrowUpRight } from "react-icons/go";
+
+const Carousel = CarouselImport.default ?? CarouselImport;
+
+const useCarouselBreakpoint = () => {
+    const [breakpoint, setBreakpoint] = useState("desktop");
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+
+            if (width < 580) {
+                setBreakpoint("mobile");
+            } else if (width < 1024) {
+                setBreakpoint("tablet");
+            } else {
+                setBreakpoint("desktop");
+            }
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    return breakpoint;
+};
+const getCarouselPlay = (
+    length,
+    breakpoint,
+    desktopItems = 3,
+    tabletItems = 2
+	) => {
+    if (!length) {
+        return false;
+    }
+    // Mobile shows only 1 item
+    if (breakpoint === "mobile") {
+        return length > 1;
+    }
+    // Tablet
+    if (breakpoint === "tablet") {
+        return length > tabletItems;
+    }
+    // Desktop
+    return length > desktopItems;
+};
 const WebDevelopment = () =>{
+    const breakpoint = useCarouselBreakpoint();
+    const RelatedServicesSlide = {
+        superLargeDesktop: {breakpoint: { max: 4000, min: 3000 },items: 3,},
+        desktop: {breakpoint: { max: 3000, min: 1024 },items: 3},
+        tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
+        mobile: {breakpoint: { max: 580, min: 0 },items: 1}
+    };
     const benefits = [
         "Business-focused development",
         "Responsive and mobile-first implementation",
@@ -24,19 +88,86 @@ const WebDevelopment = () =>{
         "API and third-party integrations",
         "Ongoing maintenance and support",
     ];
+    const servicesData = [
+        {
+            icon: <FaPaintBrush />,
+            title: "Website Design",
+            description:
+                "We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.",
+            link: "/website-design-services",
+            linkTitle: "Explore Website Design Services",
+        },
+        {
+            icon: <BsCart3 />,
+            title: "Ecommerce Development",
+            description:
+                "Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.",
+            link: "/ecommerce-development-services",
+            linkTitle: "Explore Ecommerce Development",
+        },
+        {
+            icon: <FaGlobeAmericas />,
+            title: "Web Application Development",
+            description:
+                "At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.",
+            link: "/web-application-development",
+            linkTitle: "Explore Web Application Development",
+        },
+        {
+            icon: <MdDesignServices />,
+            title: "UI/UX Design",
+            description:
+                "At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.",
+            link: "/ui-ux-design-services",
+            linkTitle: "Explore UI UX Design Services",
+        },
+        {
+            icon: <PiPlugsConnectedBold />,
+            title: "Custom Software Development",
+            description:
+                "Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.",
+            link: "/custom-software-solutions",
+            linkTitle: "Explore Custom Software Solutions",
+        },
+        {
+            icon: <LuSearchCheck />,
+            title: "AI SEO & GEO Services",
+            description:
+                "Improve your online visibility across traditional search and emerging AI-powered search experiences. Our SEO and GEO strategies focus on technical optimization, useful content and building your digital authority.",
+            link: "/geo-seo-services",
+            linkTitle: "Explore SEO & GEO Services",
+        },
+    ];
+    //Data length
+    const relatedLength = servicesData?.length || 0;
+    //AutoPlay
+    const relatedAutoPlay = getCarouselPlay(relatedLength, breakpoint, 3, 2);
+    //Carousel center class
+    const carouselClass = relatedLength === 1 ? "centerCarousel" : relatedLength === 2 ? "centerCarousel" : "";
     return(
         <>
-            <SEO page="web-development" />
-            <ServiceSchema
-                name="Web Development Services"
-                description="CodeTrios provides scalable web development services for businesses, startups, and enterprises, building fast, secure, responsive, and high-performance websites and web applications."
-                url="https://www.codetrios.com/web-development-services"
-                serviceType={[
-                    "Web Development",
-                    "Custom Web Development",
-                    "React Development",
-                    "MERN Stack Development",
-                    "Web Application Development"
+            <SEO page="web-development-services" />
+            <SchemaGraph
+                pageType="service"
+                pageName="Web Development Services"
+                pageDescription="CodeTrios provides professional web development services in India, building scalable, responsive and high-performance websites and web solutions for businesses."
+                pageUrl="https://www.codetrios.com/web-development-services"
+                serviceName="Web Development Services"
+                serviceDescription="Professional web development services in India for businesses and organizations."
+                serviceType="Web Development"
+                breadcrumbs={[
+                    {
+                        name: "Home",
+                        url: "https://www.codetrios.com/"
+                    },
+                    {
+                        name: "Services",
+                        url: "https://www.codetrios.com/services"
+                    },
+                    {
+                        name: "Web Development Services",
+                        url: "https://www.codetrios.com/web-development-services"
+                    }
                 ]}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
@@ -46,7 +177,7 @@ const WebDevelopment = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Web Development Company in India</h1>
-                                    <p>At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.</p>
+                                    <p>CodeTrios is a web development company in India helping businesses, startups, organizations, and growing brands build fast, secure, and scalable websites and web applications. We combine modern frontend and backend technologies, responsive development, performance optimization, and maintainable architecture to create digital platforms designed around real business requirements.</p>
                                     <CATButton />
                                 </div>
                             </Col>
@@ -63,10 +194,10 @@ const WebDevelopment = () =>{
                             </Col>
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
-                                    <h2 className={Style.title}>Custom Web Development Services – Fast, Secure & Scalable Solutions</h2>
-                                    <p>As an experienced web development agency, we offer end-to-end solutions covering website design and development, frontend web development, backend development services, and full stack web development. We combine modern technologies, clean coding practices, robust architecture, and industry best practices to build websites that are optimized for performance, security, usability, and long-term scalability.</p>
-                                    <p>Whether you need a corporate website, portfolio website, eCommerce store, WordPress website, or a fully customized enterprise platform, our team develops solutions tailored to your specific business requirements. Our website development services include responsive development, custom functionality, third-party API integrations, database development, performance optimization, security implementation, and SEO-ready architecture.</p>
-                                    <p>Our structured development process covers strategy, UI/UX design, frontend development, backend development, testing, optimization, and deployment. This systematic approach enables our website development company to maintain transparency, quality control, and consistency throughout every stage of your project</p>
+                                    <h2 className={Style.title}>Custom Web Development Services for Growing Businesses</h2>
+                                    <p>Our web development services cover frontend development, backend development, CMS development, custom functionality, API integrations, database development, performance optimization, security, testing, and deployment.</p>
+                                    <p>We develop websites and web platforms based on the technical and business requirements of each project. Depending on the project, our team can work with technologies such as React.js, Node.js, PHP, WordPress, Drupal, Strapi, APIs, and modern database systems.</p>
+                                    <p>From corporate websites and content-managed websites to custom web applications and ecommerce platforms, our development approach focuses on responsive experiences, maintainable code, security, performance, and long-term scalability.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -86,7 +217,7 @@ const WebDevelopment = () =>{
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><FaBuilding  /></span>
                                             <h3>Corporate & Business Website Development</h3>
-                                            <p>We build professional, conversion-focused corporate websites that help businesses establish trust, communicate value clearly, and generate quality leads. Our sites are designed with strategic layouts, modern branding, and optimized performance to support strong digital credibility. Whether you're a startup, SME, or enterprise, we create tailored web experiences that reinforce your brand identity, highlight your services, and drive measurable engagement.</p>
+                                            <p>We develop professional business websites that communicate your services clearly, establish credibility, and support lead generation. Each website is built around your brand, audience, content structure, and business objectives.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><FaBuilding  /></span>
@@ -108,7 +239,7 @@ const WebDevelopment = () =>{
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><MdDashboardCustomize  /></span>
                                             <h3>CMS Development</h3>
-                                            <p>We develop easy-to-manage websites using powerful CMS platforms like WordPress, Drupal, Strapi, or fully customized admin panels. Our CMS solutions give you full control over your content so you can update pages, blogs, banners, media, and forms without technical knowledge.</p>
+                                            <p>We build manageable content-driven websites using platforms such as WordPress, Drupal, Strapi, and custom content management systems. These solutions allow teams to manage pages, blogs, media, forms, and other website content efficiently.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><MdDashboardCustomize  /></span>
@@ -131,7 +262,7 @@ const WebDevelopment = () =>{
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><BiCodeCurly  /></span>
                                             <h3>Custom PHP & Node.js Development</h3>
-                                            <p>Our team builds robust backend systems using PHP and Node.js to power web applications that require speed, automation, and scalability. Whether it's a custom CRM, booking system, analytics dashboard, or enterprise management solution, we develop secure and modular backends that grow with your business.</p>
+                                            <p>We develop secure backend systems and APIs using PHP and Node.js for websites and web applications that require custom business logic, integrations, automation, authentication, and scalable server-side functionality.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><BiCodeCurly  /></span>
@@ -154,7 +285,7 @@ const WebDevelopment = () =>{
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><FaReact  /></span>
                                             <h3>React.js Frontend Development</h3>
-                                            <p>We build lightning-fast, interactive, and modern user interfaces using React.js, the most widely adopted JavaScript framework for high-performance applications. React enables real-time UI updates, smooth transitions, and exceptional mobile responsiveness—ideal for dashboards, SaaS platforms, eCommerce frontends, and enterprise applications.</p>
+                                            <p>We build responsive and interactive frontend applications with React.js using reusable components, API integrations, responsive interfaces, and maintainable frontend architecture.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><FaReact  /></span>
@@ -177,7 +308,7 @@ const WebDevelopment = () =>{
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><MdSupportAgent  /></span>
                                             <h3>Website Maintenance & Support</h3>
-                                            <p>Your website needs continuous monitoring, optimization, and updates to stay secure and performing at its best. Our maintenance services ensure your digital presence remains healthy, bug-free, and future-ready.</p>
+                                            <p>We provide ongoing website maintenance to help keep websites secure, updated, performant, and reliable. Support can include updates, backups, bug fixes, performance improvements, monitoring, and feature enhancements.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><MdSupportAgent  /></span>
@@ -196,14 +327,15 @@ const WebDevelopment = () =>{
                         </Row>
                     </Container>
                 </div>  
+                <Development title="Our Web Development" subTitle="Process" />
                 <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
                             <Col lg={6} data-aos="fade-up">
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
-                                    <h2 className={Style.title}>Development Focused on Performance, Quality & Growth</h2>
-                                    <p>We build every website with future growth in mind. Whether you expect increased traffic, need new features, or plan to expand your digital operations, our scalable architecture makes it easier to evolve your platform over time. From frontend web development and intuitive interfaces to powerful backend development services and complete full stack web development, CodeTrios provides reliable digital solutions built for performance and long-term success</p>
+                                    <h2 className={Style.title}>Why Choose CodeTrios for Web Development?</h2>
+                                    <p>CodeTrios approaches web development with a focus on performance, maintainability, security, responsive experiences, and long-term scalability. We build solutions around the technical requirements and business objectives of each project rather than using a one-size-fits-all approach.</p>
                                     {benefits.map((benefit, index) => (
                                         <div className={Style.benefitItem}>
                                             <BsCheckCircle
@@ -222,7 +354,40 @@ const WebDevelopment = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </section>             
+                </section>
+                <div className={`${Style.relatedSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2 className={Style.title}>Related Services</h2>
+                                <Carousel
+                                    autoPlaySpeed={3000}
+                                    transitionDuration={500}
+                                    responsive={RelatedServicesSlide}
+                                    autoPlay={relatedAutoPlay}
+                                    infinite={relatedAutoPlay}
+                                    arrows={false}
+                                    containerClass={carouselClass}
+                                >
+                                    {servicesData?.map((item, index) =>{
+                                        return(
+                                            <div className={Style.item} key={index}>
+                                                <div className={Style.box}>
+                                                    <div className={Style.icon}>{item.icon}</div>
+                                                    <div>
+                                                        <h3>{item.title}</h3>
+                                                        <Link to={item.link} title={item.linkTitle}><GoArrowUpRight /></Link>
+                                                    </div>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                                </Carousel>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>             
                 <CATComponent />
             </div>
         </>

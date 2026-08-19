@@ -528,7 +528,9 @@ display: flex;align-items: center;justify-content: center;}
 .processItem h3{
    margin-top: 15px;
     font-size: 16px;
+    line-height: 26px;
     color: #fff;
+    font-weight: 400;
 }
 
 /* .processDot{
@@ -593,13 +595,25 @@ display: flex;align-items: center;justify-content: center;}
 .catButton button, .catButton a{font-size: 14px;font-weight: 500;padding: 12px 20px;border-radius: 6px;}
 .catButton a{    border: 1px solid #04161c;color: #000;}
 
-.industriesSection{    background: #ededed;padding:50px 0}
+.industriesSection{    background: #fff;padding:50px 0}
 .industriesSection ul{display: flex;align-items: center;justify-content: center;margin-top: 20px;}
 .industriesSection ul li{flex: 1;border-right: 2px solid rgba(221, 221, 221, 0.699);}
 .industriesSection ul li:last-child{border: none;}
 .industriesSection ul .icon{font-size: 40px;color: #212529;}
 .industriesSection ul p{margin: 0;font-weight: 500;color: #212529;}
 
+.relatedSec{position: relative;background: #f7f7f7;}
+.relatedSec h2{text-align: center;margin-bottom: 30px;}
+.relatedSec .item{height: 100%;padding: 0 20px;}
+.relatedSec .item .box{border: 1px solid #e3dbdb;border-radius: 10px;height: 100%;padding: 30px 15px;display: flex;flex-direction: column;}
+.relatedSec .item .box div{display: flex;align-items: center;justify-content: space-between;margin: 0px 0 10px;}
+.relatedSec .item .box h3{font-size: 20px;margin: 0;}
+.relatedSec .item .box p{    overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;margin: 0;}
+.relatedSec .item .icon{font-size: 50px;color: #7C3AED;}
+.relatedSec .item a{    width: 35px;height: 35px;background: #e3dbdb;border-radius: 50%;display: flex;align-items: center;justify-content: center;color: #000;}
+.centerHead{text-align: center;width: 960px;margin: 0 auto 4%;max-width: 100%;}
+.centerHead h2{font-size: 36px;margin: 0 0 20px;}
+.secBgView{background: #f1f1f1;}
 @media (max-width: 1600px){
 .thanksPage{height: 500px;}
 }

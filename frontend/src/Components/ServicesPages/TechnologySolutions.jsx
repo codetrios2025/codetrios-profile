@@ -7,34 +7,51 @@ import { FiCheck } from "react-icons/fi";
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
-
 //icon
 import { MdSystemUpdateAlt , MdExtension , MdSpeed  } from "react-icons/md";
-import { FaRobot } from "react-icons/fa";
+import { FaRobot, FaLaptopCode } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { BsCheckCircle } from "react-icons/bs";
+//Components
+import SEO from '../SEO/websiteMeta.jsx';
+import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
 
-import SEO from '../Common/webSiteMeta.jsx';
-import ServiceSchema from '../SEO/ServiceSchema.jsx';
 const TechnologySolutions = () =>{
-
+    
     return(
         <>
             <SEO page="custom-software-solutions" />
-            <ServiceSchema
-                    name="Technology Solutions"
-                    description="CodeTrios provides custom technology solutions to help businesses modernize their digital infrastructure, improve workflows, integrate systems, and build scalable digital products."
-                    url="https://www.codetrios.com/custom-software-solutions"
-                    serviceType="Custom Software Solutions"
-                />
+            <SchemaGraph
+                pageType="service"
+                pageName="Custom Software Solutions"
+                pageDescription="CodeTrios develops custom software solutions designed around the specific business requirements of organizations and growing companies."
+                pageUrl="https://www.codetrios.com/custom-software-solutions"
+                serviceName="Custom Software Solutions"
+                serviceDescription="Custom software development solutions designed around specific business requirements."
+                serviceType="Custom Software Development"
+                breadcrumbs={[
+                    {
+                        name: "Home",
+                        url: "https://www.codetrios.com/"
+                    },
+                    {
+                        name: "Services",
+                        url: "https://www.codetrios.com/services"
+                    },
+                    {
+                        name: "Custom Software Solutions",
+                        url: "https://www.codetrios.com/custom-software-solutions"
+                    }
+                ]}
+            />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
                     <Container>
                         <Row>
                             <Col>
                                 <div className={Style.content}>
-                                    <h1>Custom Software Development Services for Growing Businesses</h1>
-                                    <p>Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.</p>
+                                    <h1>Custom Software Development Company in India</h1>
+                                    <p>CodeTrios is a custom software development company in India helping businesses build secure, scalable, and high-performance software solutions tailored to their specific workflows and business goals. From business automation and enterprise applications to API integrations and software modernization, we create technology solutions designed for long-term growth.</p>
                                     <CATButton />
                                 </div>
                             </Col>
@@ -51,7 +68,7 @@ const TechnologySolutions = () =>{
                             </Col>
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
-                                    <h2 className={Style.title}>Custom Technology Solutions – Automation & Workflow Optimization</h2>
+                                    <h2 className={Style.title}>Custom Software Development Services for Business Growth</h2>
                                     <p>Our technology consulting and digital transformation services help businesses identify opportunities to improve efficiency, reduce operational complexity, and build scalable digital infrastructure. We combine modern technologies, robust development practices, automation software services, and strategic planning to create secure and high-performance systems designed for evolving business needs.</p>
                                     <p>Whether you need enterprise software development, custom application development, business process automation, cloud solutions, system integration, API development services, API integration services, or technology architecture consulting, our team works closely with you to understand your requirements and build solutions that deliver measurable business value.</p>
                                     <p>We also specialize in advanced engineering capabilities such as custom software framework development, machine learning software solutions, and modular software solutions, enabling businesses to build flexible, intelligent, and future-ready digital ecosystems.</p>
@@ -73,7 +90,7 @@ const TechnologySolutions = () =>{
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title}>Custom Software Development Services</h2>
+                                <h2 className={Style.title}>Our Custom Software Development Services</h2>
                             </Col>
                         </Row>
                         <Row>
@@ -82,20 +99,19 @@ const TechnologySolutions = () =>{
                                     <div className={Style.content}>
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><MdSystemUpdateAlt  /></span>
-                                            <h3>Software Modernization</h3>
-                                            <p>Legacy systems slow down productivity and limit innovation. We help transform outdated applications into modern, efficient, and cloud-ready platforms.</p>
+                                            <h3>Business Software Development</h3>
+                                            <p>We build custom business applications that simplify operations, organize information, and help teams manage their day-to-day workflows more efficiently.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><MdSystemUpdateAlt  /></span>
-                                            <h3>Our modernization services include:</h3>
+                                            <h3>What We Build</h3>
                                             <ul>
-                                                <li> Rebuilding monolithic apps into modular architectures</li>
-                                                <li> Migrating old codebases to modern frameworks</li>
-                                                <li> Upgrading databases, backend technologies, and UI layers</li>
-                                                <li> Enhancing security, compliance, and performance</li>
-                                                <li> Re-architecting systems for long-term scalability</li>
+                                                <li>Internal business applications</li>
+                                                <li>Customer portals</li>
+                                                <li>Management systems</li>
+                                                <li>Workflow applications</li>
+                                                <li>Custom dashboards</li>
                                             </ul>
-                                            <p>You get faster workflows, improved reliability, and better technology ROI — without disrupting your business operations.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -105,21 +121,20 @@ const TechnologySolutions = () =>{
                                     <div className={Style.content}>
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><FaRobot  /></span>
-                                        <h3>Automation & AI Integration</h3>
-                                            <p>Eliminate repetitive tasks and reduce operational costs with intelligent automation.</p>
+                                            <h3>Business Automation & AI Integration</h3>
+                                            <p>Automate repetitive processes and connect intelligent technologies with your existing business systems to improve productivity and reduce manual work.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><FaRobot  /></span>
-                                        <h3>We integrate automation and AI across your processes:</h3>
+                                            <h3>Automation Solutions</h3>
                                             <ul>
-                                                <li>Workflow automation for HR, finance, support, and operations</li>
-                                                <li>AI-powered chatbots and customer support tools</li>
-                                                <li>Predictive analytics for business forecasting</li>
-                                                <li>OCR, data extraction, and smart document processing</li>
-                                                <li>Auto-emailing, notifications, and pipeline automation</li>
-                                                <li>Process mapping & automation strategy planning</li>
+                                                <li>Workflow automation</li>
+                                                <li>AI-powered business tools</li>
+                                                <li>Automated notifications</li>
+                                                <li>Document and data processing</li>
+                                                <li>Business process automation</li>
+
                                             </ul>
-                                            <p>The result: more productivity, fewer errors, and better decision-making.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -129,21 +144,19 @@ const TechnologySolutions = () =>{
                                     <div className={Style.content}>
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><TbApi  /></span>
-                                        <h3>API Development & Integration</h3>
-                                            <p>A modern business thrives when its systems work together seamlessly. We build secure, reliable APIs and integrate third-party systems to create a connected ecosystem.</p>
+                                            <h3>API Development & Integration</h3>
+                                            <p>Connect your applications and third-party platforms through secure and reliable APIs designed for efficient data exchange and system integration.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><TbApi  /></span>
-                                        <h3>Our API services include:</h3>
+                                            <h3>API Services</h3>
                                             <ul>
-                                                <li>Custom REST & GraphQL API development</li>
-                                                <li>Secure authentication (JWT, OAuth, API Keys)</li>
-                                                <li>CRM, ERP, LMS, and payment gateway integrations</li>
-                                                <li>Microservices architecture for scalability</li>
-                                                <li>Real-time data sync between platforms</li>
-                                                <li>API performance auditing & optimization</li>
+                                                <li>REST API development</li>
+                                                <li>GraphQL API development</li>
+                                                <li>Third-party API integration</li>
+                                                <li>Payment gateway integration</li>
+                                                <li>CRM and ERP integrations</li>
                                             </ul>
-                                            <p>This ensures smooth communication across all tools and enhances operational efficiency.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -153,21 +166,19 @@ const TechnologySolutions = () =>{
                                     <div className={Style.content}>
                                         <div className={Style.flipFront}>
                                             <span className={Style.icon}><MdExtension  /></span>
-                                        <h3>Custom Framework Solutions</h3>
-                                            <p>We build custom software using modern, enterprise-level frameworks to ensure long-term scalability and strong performance.</p>
+                                            <h3>Software Modernization</h3>
+                                            <p>Modernize outdated software and legacy applications to improve performance, security, maintainability, and scalability.</p>
                                         </div>
                                         <div className={Style.flipBack}>
                                             <span className={Style.icon}><MdExtension  /></span>
-                                        <h3>Our expertise covers:</h3>
+                                            <h3>Modernization Services</h3>
                                             <ul>
-                                                <li>Node.js for fast, scalable backends</li>
-                                                <li>React.js for high-performance frontend interfaces</li>
-                                                <li>PHP & Laravel for robust, flexible applications</li>
-                                                <li>Next.js for modern, SEO-ready web applications</li>
-                                                <li>Express.js for lightweight but powerful APIs</li>
-                                                <li>MongoDB / MySQL / PostgreSQL for data management</li>
+                                                <li>Legacy application modernization</li>
+                                                <li>Technology upgrades</li>
+                                                <li>Database modernization</li>
+                                                <li>Architecture improvements</li>
+                                                <li>Security and performance improvements</li>
                                             </ul>
-                                            <p>Every solution is engineered for high uptime, security, and extensibility.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -176,22 +187,41 @@ const TechnologySolutions = () =>{
                                 <div className={Style.buildElem}>
                                     <div className={Style.content}>
                                         <div className={Style.flipFront}>
-                                            <span className={Style.icon}><MdSpeed  /></span>
-                                            <h3>Performance Optimization</h3>
-                                            <p>Slow systems lead to lost revenue — we fix that.</p>
+                                            <span className={Style.icon}><FaLaptopCode  /></span>
+                                            <h3>Custom Application Development</h3>
+                                            <p>Develop purpose-built applications around your specific business requirements, workflows, users, and operational needs.</p>
                                         </div>
                                         <div className={Style.flipBack}>
-                                            <span className={Style.icon}><MdSpeed  /></span>
-                                            <h3>We optimize applications at every level:</h3>
+                                            <span className={Style.icon}><FaLaptopCode  /></span>
+                                            <h3>Application Solutions</h3>
                                             <ul>
-                                                <li>Code refactoring and cleanup</li>
-                                                <li>Database query optimization</li>
-                                                <li>Server load balancing and caching</li>
-                                                <li>CDN setup & asset optimization</li>
-                                                <li>Cloud scalability enhancements</li>
-                                                <li>Monitoring & performance analytics</li>
+                                                <li>Customer portals</li>
+                                                <li>Business dashboards</li>
+                                                <li>SaaS applications</li>
+                                                <li>Workflow management systems</li>
+                                                <li>Enterprise applications</li>
                                             </ul>
-                                            <p>Our goal: make your systems faster, stable, and ready for growth.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Col>  
+                            <Col md={4}>
+                                <div className={Style.buildElem}>
+                                    <div className={Style.content}>
+                                        <div className={Style.flipFront}>
+                                            <span className={Style.icon}><MdSpeed  /></span>
+                                            <h3>Performance & Scalability</h3>
+                                            <p>Optimize software systems to handle growing traffic, users, data, and business operations while maintaining reliable performance.</p>                                        </div>
+                                        <div className={Style.flipBack}>
+                                            <span className={Style.icon}><MdSpeed  /></span>
+                                            <h3>Performance Services</h3>
+                                            <ul>
+                                                <li>Code optimization</li>
+                                                <li>Database optimization</li>
+                                                <li>Caching strategies</li>
+                                                <li>Server optimization</li>
+                                                <li>Application monitoring</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -205,9 +235,9 @@ const TechnologySolutions = () =>{
                             <Col lg={6} data-aos="fade-up">
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
-                                    <h2 className={Style.title}>Technology Built Around Your Business</h2>
-                                    <p>From enterprise platforms and intelligent automation to custom applications, modular software solutions, and scalable technology infrastructure, CodeTrios becomes your long-term technology partner, helping your business stay agile, competitive, and prepared for a digital-first future.</p>
-                                    <div className={Style.benefitItem}>
+                                    <h2 className={Style.title}>Custom Software Built Around Your Business</h2>
+                                    <p>CodeTrios combines business understanding, modern development practices, and scalable technology to create software solutions that solve real business problems. Our development approach focuses on reliability, security, performance, and long-term maintainability.</p>
+                                <div className={Style.benefitItem}>
                                         <BsCheckCircle className={Style.icon}/>
                                         <span>Business-Focused Development</span>
                                     </div>
@@ -232,7 +262,7 @@ const TechnologySolutions = () =>{
                             </Col>
                             <Col lg={6}>
                                 <figure data-aos="fade-up" data-aos-delay="100">
-                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
+                                    <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios for custom software development?' width="1747" height="1334" />
                                 </figure>
                             </Col>
                         </Row>

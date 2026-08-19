@@ -1,29 +1,45 @@
 import { Helmet } from "react-helmet-async";
 import SeoData from "./Seo.json";
-import GeoKeywords  from './GeoKeywords.json';
+import GeoKeywords from "./GeoKeywords.json";
+
 export default function SEO({ page }) {
     const seo = SeoData[page];
-    const geoKeywords = GeoKeywords.global.join(", ");
+
     if (!seo) return null;
 
     const siteName = "CodeTrios";
 
     const title = seo.title;
-
     const description = seo.description;
-
     const canonical = seo.canonical;
 
     const image =
         seo.image ||
         "https://www.codetrios.com/codetrios_logo.webp";
 
+    // Page-specific GEO keywords
+    const pageGeoKeywords =
+        GeoKeywords.pages?.[page] || [];
+
+    // SEO keywords from Seo.json
+    const seoKeywords = seo.keywords
+        ? seo.keywords
+            .split(",")
+            .map(keyword => keyword.trim())
+        : [];
+
+    // Remove duplicate keywords
+    const keywords = [
+        ...new Set([
+            ...seoKeywords,
+            ...pageGeoKeywords
+        ])
+    ].join(", ");
+
     return (
         <Helmet>
 
-            {/* =========================
-                BASIC SEO
-            ========================== */}
+            {/* BASIC SEO */}
 
             <title>{title}</title>
 
@@ -31,27 +47,25 @@ export default function SEO({ page }) {
                 name="description"
                 content={description}
             />
+
             <meta
                 name="keywords"
-                content={`${seo?.keywords || ""}, ${geoKeywords}`}
-              />
+                content={keywords}
+            />
+
             <meta
                 name="robots"
                 content="index, follow, max-image-preview:large"
             />
 
-            {/* =========================
-                CANONICAL
-            ========================== */}
+            {/* CANONICAL */}
 
             <link
                 rel="canonical"
                 href={canonical}
             />
 
-            {/* =========================
-                OPEN GRAPH
-            ========================== */}
+            {/* OPEN GRAPH */}
 
             <meta
                 property="og:type"
@@ -83,9 +97,7 @@ export default function SEO({ page }) {
                 content={image}
             />
 
-            {/* =========================
-                TWITTER
-            ========================== */}
+            {/* TWITTER */}
 
             <meta
                 name="twitter:card"

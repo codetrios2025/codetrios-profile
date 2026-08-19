@@ -73,6 +73,10 @@ button{border: none;}
 }
 .servicesCol ul li{display: block!important;}
 
+@media only screen and (min-width:580px){
+  .centerCarousel .react-multi-carousel-track {justify-content: center;margin: 0 auto;}
+}
+
 @media (max-width: 1199px){
 body{font-size: 14px;}
 p{line-height: 24px;}

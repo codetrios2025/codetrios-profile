@@ -9,16 +9,77 @@ import { FiCheck } from "react-icons/fi";
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
-
+import CarouselImport from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 //icon
 import { FaStore, FaBoxes , FaServer, FaWordpress, FaTags } from "react-icons/fa";
 import { MdPhoneIphone, MdSpeed  } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
+//services Icon
+import { FaMobileAlt, FaPaintBrush, FaHandshake, FaGlobeAmericas, FaBoxOpen } from "react-icons/fa";
+import { FaShopify, FaCartShopping } from "react-icons/fa6";
+import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
+import { BsCart3 } from "react-icons/bs";
+import { PiPlugsConnectedBold } from "react-icons/pi";
+import { MdInsights, MdDesignServices, MdPayment, MdInventory2  } from "react-icons/md";
+import { LuSearchCheck } from "react-icons/lu";
+import { GoArrowUpRight } from "react-icons/go";
+//Components
+import EcommerceDevelopment from './DeploymentProsess/EcommerceDevelopment.jsx';
+import SEO from '../SEO/websiteMeta.jsx';
+import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
+const Carousel = CarouselImport.default ?? CarouselImport;
 
-import SEO from '../Common/webSiteMeta.jsx';
-import ServiceSchema from '../SEO/ServiceSchema.jsx';
+const useCarouselBreakpoint = () => {
+    const [breakpoint, setBreakpoint] = useState("desktop");
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
 
+            if (width < 580) {
+                setBreakpoint("mobile");
+            } else if (width < 1024) {
+                setBreakpoint("tablet");
+            } else {
+                setBreakpoint("desktop");
+            }
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    return breakpoint;
+};
+const getCarouselPlay = (
+    length,
+    breakpoint,
+    desktopItems = 3,
+    tabletItems = 2
+    ) => {
+    if (!length) {
+        return false;
+    }
+    // Mobile shows only 1 item
+    if (breakpoint === "mobile") {
+        return length > 1;
+    }
+    // Tablet
+    if (breakpoint === "tablet") {
+        return length > tabletItems;
+    }
+    // Desktop
+    return length > desktopItems;
+};
 const EcommerceSolutions = () =>{
+    const breakpoint = useCarouselBreakpoint();
+    const RelatedServicesSlide = {
+        superLargeDesktop: {breakpoint: { max: 4000, min: 3000 },items: 3,},
+        desktop: {breakpoint: { max: 3000, min: 1024 },items: 3},
+        tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
+        mobile: {breakpoint: { max: 580, min: 0 },items: 1}
+    };
     const benefits = [
         "Business-focused ecommerce strategy",
         "Conversion-focused user experience",
@@ -29,14 +90,78 @@ const EcommerceSolutions = () =>{
         "Scalable ecommerce solutions",
         "Ongoing maintenance and support",
     ];
+    const servicesData = [
+        {
+            icon: <FaPaintBrush />,
+            title: "Website Design",
+            description:
+                "We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.",
+            link: "/website-design-services",
+            linkTitle: "Explore Website Design Services",
+        },
+        {
+            icon: <IoCodeSlash />,
+            title: "Web Development",
+            description: "At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.",
+            link: "/web-development-services",
+            linkTitle: "Explore Web Development Services",
+        },
+        {
+            icon: <FaGlobeAmericas />,
+            title: "Web Application Development",
+            description:
+                "At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.",
+            link: "/web-application-development",
+            linkTitle: "Explore Web Application Development",
+        },
+        {
+            icon: <MdDesignServices />,
+            title: "UI/UX Design",
+            description:
+                "At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.",
+            link: "/ui-ux-design-services",
+            linkTitle: "Explore UI UX Design Services",
+        },
+        {
+            icon: <PiPlugsConnectedBold />,
+            title: "Custom Software Development",
+            description:
+                "Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.",
+            link: "/custom-software-solutions",
+            linkTitle: "Explore Custom Software Solutions",
+        }
+    ];
+    //Data length
+    const relatedLength = servicesData?.length || 0;
+    //AutoPlay
+    const relatedAutoPlay = getCarouselPlay(relatedLength, breakpoint, 3, 2);
+    //Carousel center class
+    const carouselClass = relatedLength === 1 ? "centerCarousel" : relatedLength === 2 ? "centerCarousel" : "";
     return(
         <>
             <SEO page="ecommerce-development-services" />
-            <ServiceSchema
-                name="eCommerce Development Services"
-                description="CodeTrios provides custom eCommerce development solutions for businesses looking to build fast, secure, scalable, and conversion-focused online stores."
-                url="https://www.codetrios.com/ecommerce-development-services"
-                serviceType="eCommerce Development Services"
+            <SchemaGraph
+                pageType="service"
+                pageName="Ecommerce Development Services"
+                pageDescription="CodeTrios provides ecommerce development services in India to help businesses build scalable, responsive and conversion-focused online stores."
+                pageUrl="https://www.codetrios.com/ecommerce-development-services"
+                serviceName="Ecommerce Development Services"
+                serviceDescription="Professional ecommerce development services in India for businesses looking to build scalable online stores."
+                serviceType="Ecommerce Development"
+                breadcrumbs={[
+                    {
+                        name: "Home",
+                        url: "https://www.codetrios.com/"
+                    },
+                    {
+                        name: "Services",
+                        url: "https://www.codetrios.com/services"
+                    },
+                    {
+                        name: "Ecommerce Development Services",
+                        url: "https://www.codetrios.com/ecommerce-development-services"
+                    }
+                ]}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -45,7 +170,7 @@ const EcommerceSolutions = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Ecommerce Development Company in India</h1>
-                                    <p>Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.</p>
+                                    <p>CodeTrios is an ecommerce development company in India helping businesses build secure, scalable, and conversion-focused online stores. We design and develop ecommerce websites around your products, customers, business model, and growth objectives, with a focus on usability, performance, mobile responsiveness, and reliable ecommerce functionality.</p>
                                     <CATButton />
                                 </div>
                             </Col>
@@ -62,10 +187,10 @@ const EcommerceSolutions = () =>{
                             </Col>
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
-                                    <h2 className={Style.title}> E-Commerce Development Services – Complete Online Store Setup & Growth</h2>
-                                    <p>Whether you are launching a new online store, migrating from an existing platform, or upgrading your current eCommerce website, our team creates seamless digital shopping experiences through responsive ecommerce website design that is fast, intuitive, mobile-friendly, and optimized for conversions. From custom storefront designs and product catalogs to secure payment gateways and advanced integrations, we build every component with performance and usability in mind.</p>
-                                    <p>Our eCommerce website development services include custom eCommerce development, responsive storefront design, shopping cart and checkout solutions, payment gateway integration, inventory management, order management, customer accounts, third-party API integrations, and performance optimization. We also provide best ecommerce design and development services that ensure your store is visually appealing, highly functional, and conversion-driven. We work with modern technologies and popular eCommerce platforms to deliver flexible solutions, including WooCommerce ecommerce development, Shopify ecommerce development, and Magento ecommerce development, supporting a wide range of business requirements.</p>
-                                    <p>As an experienced eCommerce development company, CodeTrios focuses on creating online stores that are easy to manage, secure for customers, and scalable as your business grows. Our development approach ensures your eCommerce platform performs reliably across desktops, tablets, and smartphones while providing a consistent shopping experience across every customer touchpoint. We also deliver complete online ecommerce business solutions that help businesses establish, manage, and scale their digital presence effectively.</p>
+                                    <h2 className={Style.title}>Professional Ecommerce Development Services in India</h2>
+                                    <p>CodeTrios provides end-to-end ecommerce development services for businesses launching new online stores, migrating existing ecommerce platforms, or improving established stores. We create responsive and user-friendly shopping experiences with structured product catalogs, secure checkout flows, payment integrations, customer accounts, and scalable ecommerce architecture.</p>
+                                    <p>Our ecommerce development services can include custom ecommerce development, responsive ecommerce website design, shopping cart and checkout development, payment gateway integration, inventory and order management, third-party API integrations, and technical performance optimization. We also work with platforms such as WooCommerce, Shopify, and Magento based on the requirements of each business.</p>
+                                    <p>From planning and UI/UX design through development, testing, deployment, and ongoing maintenance, CodeTrios builds ecommerce solutions designed to provide a reliable shopping experience and support long-term business growth.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -81,6 +206,20 @@ const EcommerceSolutions = () =>{
                         <Row>
                             <Col md={4}>
                                 <div className={Style.box}>
+                                    <span className={Style.icon}><FaShopify /></span>
+                                    <h3>Shopify Ecommerce Development</h3>
+                                    <p>We create and customize Shopify stores with responsive storefronts, product structures, payment integrations, custom functionality, and conversion-focused shopping experiences.</p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}><FaWordpress /></span>
+                                    <h3>WooCommerce Development</h3>
+                                    <p>We develop WooCommerce stores with customized product pages, shopping carts, checkout flows, payment gateways, shipping options, and integrations tailored to business requirements.</p>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className={Style.box}>
                                     <span className={Style.icon}><FaStore  /></span>
                                     <h3>Custom Store Setup</h3>
                                     <p>End-to-end ecommerce development with personalized layouts, product structures, and branded interfaces tailored to your industry and audience.</p>
@@ -88,14 +227,14 @@ const EcommerceSolutions = () =>{
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><FaServer  /></span>
+                                    <span className={Style.icon}><MdPayment  /></span>
                                     <h3>Payment Gateway Integration </h3>
                                     <p>Secure checkout experiences powered by trusted gateways like Razorpay, Stripe, PayPal, and more — offering multiple currencies and payment modes.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><FaBoxes  /></span>
+                                    <span className={Style.icon}><MdInventory2  /></span>
                                     <h3>Inventory & Order Management</h3>
                                     <p>Powerful back-office dashboards to manage products, categories, stock levels, orders, returns, and shipping workflows. </p>
                                 </div>
@@ -109,7 +248,7 @@ const EcommerceSolutions = () =>{
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><FaTags   /></span>
+                                    <span className={Style.icon}><FaBoxOpen   /></span>
                                     <h3>Product Optimization</h3>
                                     <p>Well-structured product pages with optimized images, descriptions, variants, and SEO-friendly metadata for better visibility and conversions.</p>
                                 </div>
@@ -123,15 +262,78 @@ const EcommerceSolutions = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </div>       
+                </div>     
+                <section className={`${Style.commonPading} ${Style.weBuild} ${Style.secBgView}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className={Style.centerHead}>
+                                    <h2>Ecommerce Platforms We Work With</h2>
+                                    <p>CodeTrios works with popular ecommerce platforms as well as custom ecommerce technologies to build solutions according to your business requirements.</p>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}>
+                                        <FaWordpress />
+                                    </span>
+
+                                    <h3>WooCommerce</h3>
+
+                                    <p>
+                                        Flexible WordPress-based ecommerce stores with
+                                        customized products, checkout, payments, and
+                                        integrations.
+                                    </p>
+                                </div>
+                            </Col>
+
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}>
+                                        <FaStore />
+                                    </span>
+
+                                    <h3>Shopify</h3>
+
+                                    <p>
+                                        Scalable Shopify storefronts designed for
+                                        usability, performance, product management,
+                                        and online sales.
+                                    </p>
+                                </div>
+                            </Col>
+
+                            <Col md={4}>
+                                <div className={Style.box}>
+                                    <span className={Style.icon}>
+                                        <FaCartShopping />
+                                    </span>
+
+                                    <h3>Custom Ecommerce</h3>
+
+                                    <p>
+                                        Custom ecommerce solutions for businesses
+                                        requiring specialized workflows, integrations,
+                                        or functionality beyond standard platforms.
+                                    </p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section> 
+                <EcommerceDevelopment title="Our Ecommerce Development" subTitle="Process" /> 
                 <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
                             <Col lg={6} data-aos="fade-up">
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
-                                    <h2 className={Style.title}>Ecommerce Development Focused on Growth</h2>
-                                    <p>From strategy and UI/UX design to development, testing, deployment, SEO readiness, and ongoing optimization, CodeTrios delivers end-to-end eCommerce solutions built to improve customer engagement, streamline operations, increase conversions, and support long-term online business growth.</p>
+                                    <h2 className={Style.title}>Why Choose CodeTrios for Ecommerce Development?</h2>
+                                    <p>CodeTrios combines ecommerce strategy, UI/UX design, development, integrations, performance optimization, and ongoing support to create online stores that are designed around real business requirements and customer needs.</p>
                                     {benefits.map((benefit, index) => (
                                         <div className={Style.benefitItem}>
                                             <BsCheckCircle
@@ -150,7 +352,40 @@ const EcommerceSolutions = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </section>          
+                </section>    
+                <div className={`${Style.relatedSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2 className={Style.title}>Related Services</h2>
+                                <Carousel
+                                    autoPlaySpeed={3000}
+                                    transitionDuration={500}
+                                    responsive={RelatedServicesSlide}
+                                    autoPlay={relatedAutoPlay}
+                                    infinite={relatedAutoPlay}
+                                    arrows={false}
+                                    containerClass={carouselClass}
+                                >
+                                    {servicesData?.map((item, index) =>{
+                                        return(
+                                            <div className={Style.item} key={index}>
+                                                <div className={Style.box}>
+                                                    <div className={Style.icon}>{item.icon}</div>
+                                                    <div>
+                                                        <h3>{item.title}</h3>
+                                                        <Link to={item.link} title={item.linkTitle}><GoArrowUpRight /></Link>
+                                                    </div>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                                </Carousel>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>      
                 <CATComponent />
             </div>
         </>

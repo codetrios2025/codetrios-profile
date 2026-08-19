@@ -10,7 +10,7 @@ import { FaServer, FaWordpress } from "react-icons/fa";
 import { RiLoopLeftLine } from "react-icons/ri";
 import { RiTeamLine } from "react-icons/ri";
 import { BiTargetLock } from "react-icons/bi";
-import SEO from '../Common/webSiteMeta.jsx';
+import SEO from '../SEO/webSiteMeta.jsx';
 
 
 //Components

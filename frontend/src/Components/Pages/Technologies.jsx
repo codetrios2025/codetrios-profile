@@ -52,7 +52,7 @@ import github from '../../assets/images/icon/github_copilot_ai_logo.webp';
 import gemini from '../../assets/images/icon/Gemini_ai_logo.webp';
 
 import CATComponent from './CATComponent.jsx';
-import SEO from '../Common/webSiteMeta.jsx';
+import SEO from '../SEO/webSiteMeta.jsx';
 const TechnologiesPage = ()=>{
 
     return(

@@ -41,7 +41,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>
                                 <h3>Website Design</h3>
-                                <p>We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.</p>
+                                <p>CodeTrios is a website design company in India helping businesses, startups, organizations, and growing brands build modern, responsive, and high-performing websites. We combine business strategy, UI/UX design, accessibility, performance, SEO-friendly architecture, and conversion-focused experiences to create websites that support real business goals.</p>
                                 <Link to="website-design-services" title='website design services'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>Website Design Services</span>
@@ -57,7 +57,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><IoCodeSlash className={Style.icon} /></span>
                                 <h3>Web Development</h3>
-                                <p>At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.</p>
+                                <p>CodeTrios is a web development company in India helping businesses, startups, organizations, and growing brands build fast, secure, and scalable websites and web applications. We combine modern frontend and backend technologies, responsive development, performance optimization, and maintainable architecture to create digital platforms designed around real business requirements.</p>
                                 <Link to="web-development-services" title='web development services'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>web development services</span>
@@ -73,7 +73,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><BsCart3 className={Style.icon} /></span>
                                 <h3>E-Commerce Solutions</h3>
-                                <p>Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.</p>
+                                <p>CodeTrios is an ecommerce development company in India helping businesses build secure, scalable, and conversion-focused online stores. We design and develop ecommerce websites around your products, customers, business model, and growth objectives, with a focus on usability, performance, mobile responsiveness, and reliable ecommerce functionality.</p>
                                 <Link to="ecommerce-development-services" title='ecommerce development services'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>ecommerce development services</span>
@@ -89,7 +89,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><FaGlobeAmericas className={Style.icon} /></span>
                                 <h3>Web Applications</h3>
-                                <p>At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.</p>
+                                <p>CodeTrios is a web application development company in India helping businesses and organizations build secure, scalable, and user-friendly web applications. We develop custom digital platforms that simplify business processes, connect systems, improve productivity, and provide reliable experiences for users across modern devices.</p>
                                 <Link to="web-application-development" title='web application development'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>web application development</span>
@@ -105,7 +105,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><MdDesignServices className={Style.icon} /></span>
                                 <h3>Design Services</h3>
-                                <p>At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.</p>
+                                <p>CodeTrios is a UI/UX design company in India creating intuitive, responsive, and user-focused experiences for websites, web applications, SaaS platforms, and digital products. Our design process combines user research, information architecture, wireframing, prototyping, visual design, and usability to create digital experiences that are easy to understand and use.</p>
                                 <Link to="ui-ux-design-services" title='ui ux design services'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>ui ux design services</span>
@@ -121,7 +121,7 @@ const OurServices = () =>{
                             <div className={Style.content}>
                                 <span className={Style.spanICon}><PiPlugsConnectedBold className={Style.icon} /></span>
                                 <h3>Technology Solutions</h3>
-                                <p>Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.</p>
+                                <p>CodeTrios is a custom software development company in India helping businesses build secure, scalable, and high-performance software solutions tailored to their specific workflows and business goals. From business automation and enterprise applications to API integrations and software modernization, we create technology solutions designed for long-term growth.</p>
                                 <Link to="custom-software-solutions" title='custom software solutions'>
                                     Read More <BsArrowRight className={Style.icon} />
                                     <span className={Style.srOnly}>custom software solutions</span>

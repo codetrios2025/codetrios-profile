@@ -10,12 +10,13 @@ import WhyChooseImg from '../../assets/images/why_choose.webp';
 
 //icon
 import { MdTransform, MdEmail , MdAnalytics, MdFactCheck, MdInsights, MdShare , MdTimeline        } from "react-icons/md";
-import { FaBullhorn , FaChartBar  } from "react-icons/fa";
+import { FaBullhorn , FaChartBar, FaChartLine  } from "react-icons/fa";
+import { FaUsersViewfinder, FaDiagramProject, FaFilterCircleDollar } from "react-icons/fa6";
 import { BiGitMerge } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
 
-import SEO from '../Common/webSiteMeta.jsx';
-import ServiceSchema from '../SEO/ServiceSchema.jsx';
+import SEO from '../SEO/websiteMeta.jsx';
+import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
 
 const DigitalStrategy = () =>{
     const benefits = [
@@ -31,11 +32,28 @@ const DigitalStrategy = () =>{
     return(
         <>
             <SEO page="digital-strategy-consulting" />
-            <ServiceSchema
-                name="Digital Strategy Services"
-                description="CodeTrios provides digital strategy services to help businesses plan, optimize, and scale their digital presence through technology, user experience, automation, and data-driven solutions."
-                url="https://www.codetrios.com/digital-strategy-consulting"
-                serviceType="Digital Strategy Services"
+            <SchemaGraph
+                pageType="service"
+                pageName="Digital Strategy Consulting"
+                pageDescription="CodeTrios provides digital strategy consulting to help businesses plan effective digital experiences, technology solutions and growth strategies."
+                pageUrl="https://www.codetrios.com/digital-strategy-consulting"
+                serviceName="Digital Strategy Consulting"
+                serviceDescription="Digital strategy consulting services for businesses planning digital products, websites and technology solutions."
+                serviceType="Digital Strategy Consulting"
+                breadcrumbs={[
+                    {
+                        name: "Home",
+                        url: "https://www.codetrios.com/"
+                    },
+                    {
+                        name: "Services",
+                        url: "https://www.codetrios.com/services"
+                    },
+                    {
+                        name: "Digital Strategy Consulting",
+                        url: "https://www.codetrios.com/digital-strategy-consulting"
+                    }
+                ]}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -61,7 +79,7 @@ const DigitalStrategy = () =>{
                             </Col>
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
-                                    <h2 className={Style.title}>Data-Driven Digital Strategy Services – Grow Your Online Presence</h2>
+                                    <h2 className={Style.title}>Digital Strategy Consulting for Sustainable Business Growth</h2>
                                     <p>Our digital strategy and consulting services and digital consulting services India cover the complete customer journey, helping businesses optimize every digital touchpoint across websites, search engines, social media, content, and paid marketing channels. From building a strong digital foundation to improving campaign performance, our strategies are designed to increase visibility, engagement, qualified traffic, and conversions. We also specialize in IT strategy consulting services India, ensuring that your technology and digital ecosystem work seamlessly with your business goals.</p>
                                     <p>Whether you are launching a new brand, expanding into new markets, scaling an existing business, or refining your marketing funnel, our digital marketing strategy consulting India approach ensures we create custom digital marketing strategies aligned with your objectives. Our approach combines audience research, market analysis, SEO strategy, content planning, social media strategy, paid advertising, conversion optimization, and performance analytics to create a unified digital growth roadmap.</p>
                                     <p>We also help businesses develop digital business consulting services India that turn insights into actionable decisions. By continuously analyzing performance, user behavior, and conversion data, we identify opportunities to improve campaigns, optimize customer journeys, and maximize your marketing investment.</p>
@@ -89,7 +107,7 @@ const DigitalStrategy = () =>{
                         <Row>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><MdInsights    /></span>
+                                    <span className={Style.icon}><FaUsersViewfinder    /></span>
                                     <h3>Audience Research & Insights</h3>
                                     <p>We identify who your customers are, what they need, and where they spend their time online.</p>
                                 </div>
@@ -103,7 +121,7 @@ const DigitalStrategy = () =>{
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><MdShare    /></span>
+                                    <span className={Style.icon}><FaDiagramProject    /></span>
                                     <h3>Channel Strategy & Optimization</h3>
                                     <p>A clear plan for where to invest your efforts — SEO, social media, paid ads, email, etc.</p>
                                 </div>
@@ -117,14 +135,14 @@ const DigitalStrategy = () =>{
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><MdTimeline    /></span>
+                                    <span className={Style.icon}><FaFilterCircleDollar    /></span>
                                     <h3>Conversion Funnel Planning</h3>
                                     <p>Map user journeys from awareness to purchase to ensure more leads turn into customers.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
-                                    <span className={Style.icon}><MdAnalytics    /></span>
+                                    <span className={Style.icon}><FaChartLine    /></span>
                                     <h3>Performance Measurement & Analytics</h3>
                                     <p>Track KPIs, analyze performance dashboards, and refine campaigns for better ROI.</p>
                                 </div>

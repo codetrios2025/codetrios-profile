@@ -1,0 +1,170 @@
+{
+  "primary": [
+    "Generative Engine Optimization",
+    "GEO services",
+    "AI search optimization",
+    "LLM optimization",
+    "AI visibility optimization"
+  ],
+
+  "aiSearch": [
+    "AI search optimization",
+    "AI search optimization services",
+    "AI search visibility",
+    "AI search marketing",
+    "AI search engine optimization",
+    "AI visibility services",
+    "AI answer optimization",
+    "AI answer engine optimization"
+  ],
+
+  "geo": [
+    "Generative Engine Optimization",
+    "Generative Engine Optimization services",
+    "GEO services",
+    "GEO services India",
+    "GEO agency",
+    "GEO company",
+    "GEO consulting services",
+    "Generative AI optimization",
+    "Generative AI optimization services"
+  ],
+
+  "llmo": [
+    "LLM optimization",
+    "LLM optimization services",
+    "LLM SEO",
+    "large language model optimization",
+    "AI answer optimization",
+    "AI answer engine optimization",
+    "LLM visibility",
+    "AI model optimization for search"
+  ],
+
+  "india": [
+    "AI SEO services India",
+    "GEO services India",
+    "AI search optimization India",
+    "LLM optimization services India",
+    "AI visibility services India",
+    "Generative Engine Optimization India",
+    "AI search marketing India"
+  ],
+
+  "brand": [
+    "CodeTrios",
+    "CodeTrios web development",
+    "CodeTrios website design",
+    "CodeTrios web design",
+    "CodeTrios ecommerce development",
+    "CodeTrios SEO",
+    "CodeTrios AI SEO",
+    "CodeTrios GEO services",
+    "CodeTrios Generative Engine Optimization",
+    "CodeTrios LLM optimization",
+    "CodeTrios AI search optimization",
+    "CodeTrios AI visibility"
+  ],
+
+  "pages": {
+    "website-design-services": [
+      "web design company India",
+      "website design company India",
+      "website design services India",
+      "professional website design India",
+      "responsive website design India",
+      "business website design India",
+      "custom website design India",
+      "website redesign services India",
+      "corporate website design India"
+    ],
+
+    "web-development-services": [
+      "web development company India",
+      "web development services India",
+      "custom web development India",
+      "full stack web development India",
+      "frontend development services India",
+      "backend development services India",
+      "React development company India",
+      "Node.js development company India"
+    ],
+
+    "ecommerce-development-services": [
+      "ecommerce development company India",
+      "ecommerce development services India",
+      "ecommerce website development India",
+      "ecommerce website design India",
+      "custom ecommerce development India",
+      "online store development India",
+      "WooCommerce development India",
+      "Shopify development India"
+    ],
+
+    "web-application-development": [
+      "web application development company India",
+      "web application development services India",
+      "custom web application development",
+      "business web applications",
+      "enterprise web application development",
+      "React web application development",
+      "Node.js web application development",
+      "scalable web applications"
+    ],
+
+    "ui-ux-design-services": [
+      "UI UX design services India",
+      "UI UX design company India",
+      "website UI design India",
+      "UX design services India",
+      "user experience design India",
+      "responsive interface design",
+      "product design services India",
+      "web UI UX design"
+    ],
+
+    "custom-software-solutions": [
+      "custom software development company India",
+      "custom software development services India",
+      "business software development India",
+      "custom business applications",
+      "software automation solutions",
+      "API development services India",
+      "API integration services India",
+      "enterprise software development India"
+    ],
+
+    "digital-strategy-consulting": [
+      "digital strategy consulting India",
+      "digital consulting services India",
+      "digital transformation consulting India",
+      "technology strategy consulting India",
+      "digital business consulting India",
+      "IT strategy consulting India",
+      "digital product strategy India"
+    ],
+
+    "web-hosting-services": [
+      "web hosting services India",
+      "business web hosting India",
+      "WordPress hosting India",
+      "cloud hosting services India",
+      "VPS hosting India",
+      "managed web hosting India",
+      "website hosting services India"
+    ],
+
+    "geo-seo-services": [
+      "AI SEO services India",
+      "GEO services India",
+      "Generative Engine Optimization services",
+      "AI search optimization services",
+      "AI search visibility services",
+      "AI visibility services",
+      "LLM optimization services",
+      "LLM SEO services",
+      "AI answer optimization",
+      "Generative AI optimization services"
+    ]
+  }
+}

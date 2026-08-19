@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Style from "../CSS/Style.module.css";
+import Style from "../../CSS/Style.module.css";
 import {
   FiSearch,
   FiClipboard,
@@ -19,9 +19,12 @@ import {
   HiOutlineClipboardDocumentCheck,
   HiOutlineRocketLaunch,
 } from "react-icons/hi2";
-
+import { FaComputerMouse } from "react-icons/fa6";
+import { FaPenRuler } from "react-icons/fa6";
+import { MdDashboardCustomize  } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
-const Development = ({title, subTitle})=>{
+
+const DesignDevelopment = ({title, subTitle})=>{
   return(
     <div className={Style.processSection}>
       <Container>
@@ -40,7 +43,7 @@ const Development = ({title, subTitle})=>{
                     <span><HiOutlineMagnifyingGlass /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>Discovery</h3>
+                  <h3>Research & Discovery</h3>
                 </div>
                 {/* 02 */}
                 <div className={Style.processItem} data-aos="fade-up" data-aos-delay="200">
@@ -49,52 +52,43 @@ const Development = ({title, subTitle})=>{
                     <span><HiOutlineClipboardDocumentList /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>Planning</h3>
+                  <h3>User Flows & Information Architecture</h3>
                 </div>
                 {/* 03 */}
                 <div className={Style.processItem} data-aos="fade-up" data-aos-delay="300">
                   <div className={Style.processNumber}>03</div>
                   <div className={Style.processIcon}>
-                    <span><HiOutlinePaintBrush /></span>
+                    <span><FaPenRuler /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>UI / UX Design</h3>
+                  <h3>Wireframing</h3>
                 </div>
                 {/* 04 */}
                 <div className={Style.processItem} data-aos="fade-up" data-aos-delay="400">
                   <div className={Style.processNumber}>04</div>
                   <div className={Style.processIcon}>
-                    <span><HiOutlineCodeBracketSquare /></span>
+                    <span><MdDashboardCustomize /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>Development</h3>
+                  <h3>UI Design & Design System</h3>
                 </div>
                 {/* 05 */}
                 <div className={Style.processItem} data-aos="fade-up" data-aos-delay="500">
                   <div className={Style.processNumber}>05</div>
                   <div className={Style.processIcon}>
-                    <span><HiOutlineClipboardDocumentCheck /></span>
+                    <span><FaComputerMouse /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>Testing</h3>
+                  <h3>Interactive Prototype</h3>
                 </div>
                 {/* 06 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="600">
-                  <div className={Style.processNumber}>06</div>
-                  <div className={Style.processIcon}>
-                    <span><HiOutlineRocketLaunch /></span>
-                  </div>
-                  <div className={Style.processDot}></div>
-                  <h3>Launch</h3>
-                </div>
-                {/* 07 */}
                 <div className={Style.processItem} data-aos="fade-up" data-aos-delay="700">
-                  <div className={Style.processNumber}>07</div>
+                  <div className={Style.processNumber}>06</div>
                   <div className={Style.processIcon}>
                     <span><BiSupport /></span>
                   </div>
                   <div className={Style.processDot}></div>
-                  <h3>Support</h3>
+                  <h3>Handoff & Design Support</h3>
                 </div>
               </div>
             </div>
@@ -106,4 +100,4 @@ const Development = ({title, subTitle})=>{
 }
 
 
-export default Development;
+export default DesignDevelopment;

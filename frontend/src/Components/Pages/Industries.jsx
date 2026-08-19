@@ -21,9 +21,7 @@ const Industries = ()=>{
             <Row>
                 <Col className="text-center">
                     <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="50">WHO WE WORK WITH</span>
-                    {/* <h2 className={Style.title}>Website Design for Different Business Needs</h2> */}
                     <h2 className={Style.title} data-aos="fade-up" data-aos-delay="100">Industries We Serve</h2>
-                    {/* <p className={Style.subContent}>We design websites for businesses and organizations across different industries, <br />adapting the structure and user experience to their audience and goals.</p> */}
                     <ul data-aos="fade-up" data-aos-delay="200">
                         <li>
                             <div className={Style.icon}><IoSchoolOutline /></div>
