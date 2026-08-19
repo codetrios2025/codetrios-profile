@@ -290,6 +290,7 @@ const ServicesPage = ()=>{
                 </Container>
             </section>
             <Industries />
+            <Development />
             <section className={`${Style.whyChooseSection}`}>
                 <Container>
                     <Row>
@@ -317,7 +318,6 @@ const ServicesPage = ()=>{
                     </Row>
                 </Container>
             </section>
-            <Development />
         </div>  
         <CATComponent />
         </>
