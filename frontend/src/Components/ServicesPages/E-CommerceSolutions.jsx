@@ -1,28 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/e-Commerce_img.webp';
-import { TbDeviceDesktopCode, TbSeo, TbWorldBolt } from "react-icons/tb";
-import { AiOutlineCloudServer } from "react-icons/ai";
-import { FiCheck } from "react-icons/fi";
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //icon
-import { FaStore, FaBoxes , FaServer, FaWordpress, FaTags } from "react-icons/fa";
+import { FaStore, FaWordpress } from "react-icons/fa";
 import { MdPhoneIphone, MdSpeed  } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
 //services Icon
-import { FaMobileAlt, FaPaintBrush, FaHandshake, FaGlobeAmericas, FaBoxOpen } from "react-icons/fa";
+import { FaPaintBrush, FaGlobeAmericas, FaBoxOpen } from "react-icons/fa";
 import { FaShopify, FaCartShopping } from "react-icons/fa6";
-import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
-import { BsCart3 } from "react-icons/bs";
+import { IoCodeSlash } from "react-icons/io5";
 import { PiPlugsConnectedBold } from "react-icons/pi";
-import { MdInsights, MdDesignServices, MdPayment, MdInventory2  } from "react-icons/md";
-import { LuSearchCheck } from "react-icons/lu";
+import { MdDesignServices, MdPayment, MdInventory2  } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
 //Components
 import EcommerceDevelopment from './DeploymentProsess/EcommerceDevelopment.jsx';
@@ -80,6 +76,32 @@ const EcommerceSolutions = () =>{
         tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
         mobile: {breakpoint: { max: 580, min: 0 },items: 1}
     };
+    const faqs = [
+        {
+            question: "What does an ecommerce development company do?",
+            answer: "An ecommerce development company designs and develops online stores, including storefronts, product catalogs, shopping carts, checkout, payment integrations, and supporting business functionality."
+        },
+        {
+            question: "Does CodeTrios provide ecommerce development in India?",
+            answer: "Yes. CodeTrios provides ecommerce development services in India for businesses that need custom or platform-based online stores."
+        },
+        {
+            question: "Does CodeTrios develop Shopify stores?",
+            answer: "Yes, when required by the project, CodeTrios can provide Shopify store development and customization."
+        },
+        {
+            question: "Does CodeTrios provide WooCommerce development?",
+            answer: "Yes. CodeTrios can build and customize WooCommerce stores with products, checkout, payments, integrations, and other ecommerce functionality."
+        },
+        {
+            question: "Can CodeTrios build a custom ecommerce website?",
+            answer: "Yes. Custom ecommerce development can be used when a business requires specialized workflows, integrations, or functionality that standard ecommerce platforms cannot provide."
+        },
+        {
+            question: "Can an existing ecommerce website be redesigned?",
+            answer: "Yes. An existing ecommerce website can be redesigned to improve its user experience, responsive behavior, visual design, performance, and conversion journey."
+        },
+    ]    
     const benefits = [
         "Business-focused ecommerce strategy",
         "Conversion-focused user experience",
@@ -95,14 +117,15 @@ const EcommerceSolutions = () =>{
             icon: <FaPaintBrush />,
             title: "Website Design",
             description:
-                "We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.",
+                "Create professional, responsive and conversion-focused websites with modern UI design and intuitive user experiences.",
             link: "/website-design-services",
             linkTitle: "Explore Website Design Services",
         },
         {
             icon: <IoCodeSlash />,
             title: "Web Development",
-            description: "At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.",
+            description:
+                "Build fast, secure and scalable websites with modern frontend, backend and API development.",
             link: "/web-development-services",
             linkTitle: "Explore Web Development Services",
         },
@@ -110,7 +133,7 @@ const EcommerceSolutions = () =>{
             icon: <FaGlobeAmericas />,
             title: "Web Application Development",
             description:
-                "At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.",
+                "Develop secure and scalable web applications that streamline business processes and improve digital experiences.",
             link: "/web-application-development",
             linkTitle: "Explore Web Application Development",
         },
@@ -118,18 +141,18 @@ const EcommerceSolutions = () =>{
             icon: <MdDesignServices />,
             title: "UI/UX Design",
             description:
-                "At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.",
+                "Design intuitive, accessible and user-focused interfaces that improve usability, engagement and conversions.",
             link: "/ui-ux-design-services",
-            linkTitle: "Explore UI UX Design Services",
+            linkTitle: "Explore UI/UX Design Services",
         },
         {
             icon: <PiPlugsConnectedBold />,
             title: "Custom Software Development",
             description:
-                "Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.",
+                "Develop custom software solutions that automate workflows, solve business challenges and support long-term growth.",
             link: "/custom-software-solutions",
             linkTitle: "Explore Custom Software Solutions",
-        }
+        },
     ];
     //Data length
     const relatedLength = servicesData?.length || 0;
@@ -162,6 +185,7 @@ const EcommerceSolutions = () =>{
                         url: "https://www.codetrios.com/ecommerce-development-services"
                     }
                 ]}
+                faqs={faqs}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -188,9 +212,49 @@ const EcommerceSolutions = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Professional Ecommerce Development Services in India</h2>
-                                    <p>CodeTrios provides end-to-end ecommerce development services for businesses launching new online stores, migrating existing ecommerce platforms, or improving established stores. We create responsive and user-friendly shopping experiences with structured product catalogs, secure checkout flows, payment integrations, customer accounts, and scalable ecommerce architecture.</p>
-                                    <p>Our ecommerce development services can include custom ecommerce development, responsive ecommerce website design, shopping cart and checkout development, payment gateway integration, inventory and order management, third-party API integrations, and technical performance optimization. We also work with platforms such as WooCommerce, Shopify, and Magento based on the requirements of each business.</p>
-                                    <p>From planning and UI/UX design through development, testing, deployment, and ongoing maintenance, CodeTrios builds ecommerce solutions designed to provide a reliable shopping experience and support long-term business growth.</p>
+                                    <p>
+                                        CodeTrios provides end-to-end ecommerce development services for businesses
+                                        launching new online stores, migrating existing ecommerce platforms, or
+                                        improving established stores. We create responsive and user-friendly
+                                        shopping experiences with structured product catalogs, secure checkout
+                                        flows, payment integrations, customer accounts, and scalable ecommerce
+                                        architecture. Our ecommerce projects can also include
+                                        <Link to="/website-design-services" title="Website Design Services">
+                                            {" "}website design
+                                        </Link>
+                                        {" "}to create a consistent and conversion-focused storefront.
+                                    </p>
+                                    <p>
+                                        Our ecommerce development services can include custom ecommerce
+                                        development, responsive ecommerce website design, shopping cart and
+                                        checkout development, payment gateway integration, inventory and order
+                                        management, third-party API integrations, and technical performance
+                                        optimization. Our
+                                        <Link to="/web-development-services" title="Web Development Services">
+                                            {" "}web development services
+                                        </Link>
+                                        {" "}support the frontend, backend, API, and technical architecture
+                                        required for ecommerce platforms, while
+                                        <Link
+                                            to="/web-application-development"
+                                            title="Web Application Development Services"
+                                        >
+                                            {" "}web application development
+                                        </Link>
+                                        {" "}can support custom dashboards, customer portals, business workflows,
+                                        and other advanced ecommerce functionality. We also work with platforms
+                                        such as WooCommerce, Shopify, and Magento based on the requirements of
+                                        each business.
+                                    </p>
+                                    <p>
+                                        From planning and
+                                        <Link to="/ui-ux-design-services" title="UI/UX Design Services">
+                                            {" "}UI/UX design
+                                        </Link>
+                                        {" "}through development, testing, deployment, and ongoing maintenance,
+                                        CodeTrios builds ecommerce solutions designed to provide a reliable
+                                        shopping experience and support long-term business growth.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
@@ -316,9 +380,17 @@ const EcommerceSolutions = () =>{
                                     <h3>Custom Ecommerce</h3>
 
                                     <p>
-                                        Custom ecommerce solutions for businesses
-                                        requiring specialized workflows, integrations,
-                                        or functionality beyond standard platforms.
+                                        Custom ecommerce solutions for businesses requiring specialized workflows,
+                                        integrations, or functionality beyond standard platforms. For more
+                                        complex business systems, our
+                                        <Link
+                                            to="/custom-software-solutions"
+                                            title="Custom Software Development Services"
+                                        >
+                                            {" "}custom software development
+                                        </Link>
+                                        {" "}services can support specialized business logic, automation, and
+                                        integrations.
                                     </p>
                                 </div>
                             </Col>
@@ -385,7 +457,28 @@ const EcommerceSolutions = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </div>      
+                </div>     
+                <div className={`${Style.faqSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>Frequently Asked Questions About Ecommerce Development</h2>
+                                <Accordion defaultActiveKey="0" className='faqStyle'>
+                                    {faqs.map((item, index) =>{
+                                        return(
+                                            <Accordion.Item eventKey={index.toString()} key={index}>
+                                                <Accordion.Header>{item.question}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.answer}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        )
+                                    })}
+                                </Accordion>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div> 
                 <CATComponent />
             </div>
         </>

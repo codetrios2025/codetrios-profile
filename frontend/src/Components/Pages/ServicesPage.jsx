@@ -29,7 +29,10 @@ import { LuSearchCheck } from "react-icons/lu";
 import Industries from './Industries.jsx';
 import CATComponent from './CATComponent.jsx';
 import Development from '../HomeRoute/Development.jsx';
-import SEO from '../SEO/webSiteMeta.jsx';
+import SEO from '../SEO/websiteMeta.jsx';
+import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
+import CATButton from '../ServicesPages/CATButtons.jsx';
+
 const ServicesPage = ()=>{
     const services = [
         {
@@ -97,7 +100,7 @@ const ServicesPage = ()=>{
             icon: <MdInsights />,
             title: "Digital Strategy Consulting",
             description:
-                "Digital success doesn’t happen by accident—it comes from a clear, data-driven strategy built around your business goals. At CodeTrios, we provide strategic digital solutions as part of our digital strategy consulting services India, helping businesses navigate the evolving digital landscape with actionable insights, structured plans, and performance-focused frameworks. As one of the emerging business strategy consulting firms India, we analyze your audience, market, competitors, and customer journey to develop strategies that create meaningful and measurable business outcomes.",
+                "CodeTrios provides digital strategy consulting to help businesses align their digital channels, customer journeys, technology, and growth goals. We use audience research, competitor analysis, channel planning, conversion strategy, and performance measurement to create practical digital roadmaps.",
             link: "/digital-strategy-consulting",
             linkTitle: "Explore Digital Strategy Consulting",
         },
@@ -107,7 +110,7 @@ const ServicesPage = ()=>{
             icon: <FaGlobeAmericas />,
             title: "Web Hosting",
             description:
-                "Your website’s performance, security, and reliability depend heavily on the quality of its hosting infrastructure. At CodeTrios, we provide secure, high-performance, and scalable web hosting services in India designed to keep your website fast, stable, and accessible around the clock. Recognized as a best web hosting company India, our solutions are built to deliver a smooth user experience while supporting the performance and growth of your digital presence.",
+                "CodeTrios provides secure and scalable web hosting services for business websites, ecommerce stores, web applications, and digital platforms. Our hosting services include server configuration, migration, security, performance optimization, backups, monitoring, and technical support.",
             link: "/web-hosting-services",
             linkTitle: "Explore Web Hosting Services",
         },
@@ -117,7 +120,7 @@ const ServicesPage = ()=>{
             icon: <LuSearchCheck />,
             title: "SEO & GEO Services",
             description:
-                "CodeTrios helps businesses increase their visibility across traditional search engines and AI-powered platforms through AI Search Engine Optimization, Generative Engine Optimization (GEO), and LLM Optimization Services. We optimize your website, content, and digital authority so your business becomes the trusted answer in Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and other AI-driven search experiences.",
+                "CodeTrios provides SEO and GEO services that improve website discoverability across traditional search and AI-powered search experiences. Our work includes technical SEO, content optimization, structured data, entity signals, internal linking, and Generative Engine Optimization (GEO) for AI search experiences.",
             link: "/geo-seo-services",
             linkTitle: "Explore SEO & GEO Services",
         },
@@ -134,9 +137,35 @@ const ServicesPage = ()=>{
         <>
 
         <SEO page="services" />
-        <div className={Style.innerPage + " " + Style.servicesPage}>
+        <SchemaGraph
+            pageType="website"
+            pageName="Web Design & Development Services"
+            pageDescription="CodeTrios is a web development and digital solutions company in India offering website design, web development, ecommerce development, web application development, UI/UX design, custom software development, digital strategy consulting, web hosting, and SEO & GEO services."
+            pageUrl="https://www.codetrios.com/services"
+            breadcrumbs={[
+                {
+                    name: "Home",
+                    url: "https://www.codetrios.com/"
+                },
+                {
+                    name: "Services",
+                    url: "https://www.codetrios.com/services"
+                }
+            ]}
+        />
+        <div className={Style.innerPage + " " + Style.servicesPage + " " + Style.servicesDetail}>
             <div className={Style.innerBanner}>
-                <img src={ServicesBanner} alt='CodeTrios web design and development services' />
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className={Style.content}>
+                                <h1>Web Development & Digital Solutions Services</h1>
+                                <p>CodeTrios provides website design, web development, ecommerce development, web application development, UI/UX design, custom software development, digital strategy consulting, web hosting, and SEO & GEO services for businesses and organizations in India.</p>
+                                <CATButton />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <section className={'servicesView ' + Style.commonPading + " " + Style.servicesSec}>
                 <Container>
@@ -145,7 +174,7 @@ const ServicesPage = ()=>{
                             <div className={Style.pageHead}>
                                 <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="100">WHAT WE DO</span>
                                 <h1 className={Style.title} data-aos="fade-up" data-aos-delay="150">Web Design & Development Services</h1>
-                                <p className={Style.subContent}  data-aos="fade-up" data-aos-delay="200">CodeTrios provides web design, web development, ecommerce, web application, UI/UX, custom software, SEO and digital solutions designed to help businesses build a stronger digital presence and grow online.</p>
+                                <p className={Style.subContent}  data-aos="fade-up" data-aos-delay="200">CodeTrios is a web development and digital solutions company in India specializing in website design, web development, ecommerce development, web applications, UI/UX design, custom software, digital strategy, web hosting, and SEO & GEO services.</p>
                             </div>
                         </Col>
                     </Row>
@@ -164,133 +193,48 @@ const ServicesPage = ()=>{
                                         </span>
                                         <h2>{item.title}</h2>
                                         <p>{item.description}</p>
-                                        <Link to={item.link} title={item.linkTitle}>Read More <BsArrowRight className={Style.icon} /></Link>
+                                        <Link to={item.link} title={item.linkTitle}>{item.linkTitle} <BsArrowRight className={Style.icon} /></Link>
                                     </div>
                                 </article>
                             </Col>
                         ))}
-                        {/* <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
-                                <figure>
-                                    <img src={webDesignImg} alt="Professional website design and development" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><FaPaintBrush className={Style.icon} /></span>
-                                    <h2>Website Design</h2>
-                                    <p>We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.</p>
-                                    <Link to="/website-design-services" title='website design services'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="300">
-                                <figure>
-                                    <img src={webDevelopimg} alt="Custom web development services" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><IoCodeSlash className={Style.icon} /></span>
-                                    <h2>Web Development</h2>
-                                    <p>At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.</p>
-                                    <Link to="/web-development-services" title='web development services'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="400">
-                                <figure>
-                                    <img src={eCommerceImg} alt="Ecommerce website development" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><BsCart3 className={Style.icon} /></span>
-                                    <h2>Ecommerce Development</h2>
-                                    <p>Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.</p>
-                                    <Link to="/ecommerce-development-services" title='ecommerce development services'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="500">
-                                <figure>
-                                    <img src={webAppImg} alt="web application development" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><FaGlobeAmericas className={Style.icon} /></span>
-                                    <h2>Web Application Development</h2>
-                                    <p>At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.</p>
-                                    <Link to="/web-application-development" title='web application development'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="600">
-                                <figure>
-                                    <img src={designServicesImg} alt="UI UX design services" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><MdDesignServices className={Style.icon} /></span>
-                                    <h2>UI/UX Design</h2>
-                                    <p>At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.</p>
-                                    <Link to="/ui-ux-design-services" title='ui ux design services'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="700">
-                                <figure>
-                                    <img src={technologyImg} alt="custom software solutions" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><PiPlugsConnectedBold className={Style.icon} /></span>
-                                    <h2>Custom Software Development</h2>
-                                    <p>Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.</p>
-                                    <Link to="/custom-software-solutions" title='custom software solutions'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
-                                <figure>
-                                    <img src={designStrategyImg} alt="digital strategy consulting" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><MdInsights  className={Style.icon} /></span>
-                                    <h2>Digital Strategy Consulting</h2>
-                                    <p>Digital success doesn’t happen by accident—it comes from a clear, data-driven strategy built around your business goals. At CodeTrios, we provide strategic digital solutions as part of our digital strategy consulting services India, helping businesses navigate the evolving digital landscape with actionable insights, structured plans, and performance-focused frameworks. As one of the emerging business strategy consulting firms India, we analyze your audience, market, competitors, and customer journey to develop strategies that create meaningful and measurable business outcomes.</p>
-                                    <Link to="/digital-strategy-consulting" title='digital strategy consulting'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
-                                <figure>
-                                    <img src={hostingImg} alt="web hosting services" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><MdInsights  className={Style.icon} /></span>
-                                    <h2>Web Hosting</h2>
-                                    <p>Your website’s performance, security, and reliability depend heavily on the quality of its hosting infrastructure. At CodeTrios, we provide secure, high-performance, and scalable web hosting services in India designed to keep your website fast, stable, and accessible around the clock. Recognized as a best web hosting company India, our solutions are built to deliver a smooth user experience while supporting the performance and growth of your digital presence.</p>
-                                    <Link to="/web-hosting-services" title='web hosting services'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className={Style.servicesBox} data-aos="fade-up" data-aos-delay="200">
-                                <figure>
-                                    <img src={geoImg} alt="geo seo services" />
-                                </figure>
-                                <div className={Style.content}>
-                                    <span className={Style.spanICon}><MdInsights  className={Style.icon} /></span>
-                                    <h2>GEO & SEO Services</h2>
-                                    <p>CodeTrios helps businesses increase their visibility across traditional search engines and AI-powered platforms through AI Search Engine Optimization, Generative Engine Optimization (GEO), and LLM Optimization Services. We optimize your website, content, and digital authority so your business becomes the trusted answer in Google Search, AI Overviews, ChatGPT, Gemini, Claude, Perplexity, and other AI-driven search experiences.</p>
-                                    <Link to="/geo-seo-services" title='geo seo services'>Read More <BsArrowRight className={Style.icon} /></Link>
-                                </div>
-                            </div>
-                        </Col> */}
                     </Row>
                 </Container>
             </section>
-            <Industries />
-            <Development />
+            <Industries title="Industries We Serve" />
+            <Development title="Our Development" subTitle="Process" />
+            <section className={`${Style.commonPading} ${Style.secBgView}`}>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className={Style.pageHead}>
+                                <span className={Style.smallTitle}>
+                                    TECHNOLOGY EXPERTISE
+                                </span>
+
+                                <h2 className={Style.title}>
+                                    Technologies We Use
+                                </h2>
+
+                                <p className={Style.subContent}>
+                                    CodeTrios uses modern frontend, backend, database,
+                                    cloud, CMS, AI, and design technologies to build
+                                    scalable digital solutions based on each project's
+                                    requirements.
+                                </p>
+
+                                <Link
+                                    to="/technologies"
+                                    className={Style.btnStyle}
+                                    title="Explore CodeTrios technologies and development expertise"
+                                >
+                                    Explore Our Technologies
+                                </Link>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
             <section className={`${Style.whyChooseSection}`}>
                 <Container>
                     <Row>
@@ -298,9 +242,9 @@ const ServicesPage = ()=>{
                             <div className={Style.content}>
                                 <span className={Style.smallTitle}>WHY CODETRIOS</span>
                                 <h2 className={Style.title}>Digital Solutions Built Around Your Goals</h2>
-                                <p>We don't believe in one-size-fits-all digital solutions. We understand your requirements, recommend the right approach and build experiences that are useful for your customers and practical for your business.</p>
+                                <p>CodeTrios is a web development and digital solutions company in India providing end-to-end digital services from strategy and UI/UX design through development, deployment, hosting, optimization, and ongoing technical support.</p>
                                 {benefits.map((benefit, index) => (
-                                    <div className={Style.benefitItem}>
+                                    <div className={Style.benefitItem} key={index}>
                                         <BsCheckCircle
                                             className={Style.icon}
                                         />

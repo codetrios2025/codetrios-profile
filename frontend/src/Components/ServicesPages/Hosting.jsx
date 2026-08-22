@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/hosting.webp';
@@ -7,16 +8,152 @@ import { FiCheck } from "react-icons/fi";
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
-
+import CarouselImport from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 //icon
 import { FaServer, FaCloud, FaWordpress   } from "react-icons/fa";
-import { MdDesignServices, MdDns, MdSecurity, MdSpeed, MdSupportAgent  } from "react-icons/md";
+import { MdDns, MdSecurity, MdSpeed, MdSupportAgent  } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
-
+//services Icon
+import { FaPaintBrush, FaGlobeAmericas } from "react-icons/fa";
+import { IoCodeSlash } from "react-icons/io5";
+import { BsCart3 } from "react-icons/bs";
+import { PiPlugsConnectedBold } from "react-icons/pi";
+import { MdInsights, MdDesignServices  } from "react-icons/md";
+import { LuSearchCheck } from "react-icons/lu";
+import { GoArrowUpRight } from "react-icons/go";
+//Components
+import HostingProcess from './DeploymentProsess/HostingDeployment.jsx';
+import Industries from '../Pages/Industries.jsx';
 import SEO from '../SEO/websiteMeta.jsx';
 import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
+const Carousel = CarouselImport.default ?? CarouselImport;
+
+const useCarouselBreakpoint = () => {
+    const [breakpoint, setBreakpoint] = useState("desktop");
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+
+            if (width < 767) {
+                setBreakpoint("mobile");
+            } else if (width < 1024) {
+                setBreakpoint("tablet");
+            } else {
+                setBreakpoint("desktop");
+            }
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    return breakpoint;
+};
+const getCarouselPlay = (
+    length,
+    breakpoint,
+    desktopItems = 3,
+    tabletItems = 2
+    ) => {
+    if (!length) {
+        return false;
+    }
+    // Mobile shows only 1 item
+    if (breakpoint === "mobile") {
+        return length > 1;
+    }
+    // Tablet
+    if (breakpoint === "tablet") {
+        return length > tabletItems;
+    }
+    // Desktop
+    return length > desktopItems;
+};
 
 const WebHosting = () =>{
+    const breakpoint = useCarouselBreakpoint();
+    const RelatedServicesSlide = {
+        superLargeDesktop: {breakpoint: { max: 4000, min: 3000 },items: 3,},
+        desktop: {breakpoint: { max: 3000, min: 1024 },items: 3},
+        tablet: {breakpoint: { max: 1024, min: 767 },items: 2},
+        mobile: {breakpoint: { max: 767, min: 0 },items: 1}
+    };
+    const faqs = [
+        {
+            question: "What type of web hosting does CodeTrios provide?",
+            answer: "CodeTrios provides shared, VPS, cloud, WordPress, managed and business web hosting solutions based on website traffic, application requirements, performance needs and scalability."
+        },
+        {
+            question: "Does CodeTrios provide WordPress hosting?",
+            answer: "Yes. CodeTrios provides WordPress hosting with installation, SSL configuration, security, performance optimization, backups and migration support."
+        },
+        {
+            question: "Can CodeTrios migrate my existing website?",
+            answer: "Yes. Website migration can include transferring website files, databases, domains, SSL configuration and hosting settings while minimizing downtime."
+        },
+        {
+            question: "Does CodeTrios provide managed hosting?",
+            answer: "Yes. Managed hosting can include server setup, configuration, updates, security, performance tuning, monitoring and technical support."
+        },
+        {
+            question: "Can CodeTrios host ecommerce websites?",
+            answer: "Yes. CodeTrios can provide hosting support for ecommerce websites and combines hosting expertise with its ecommerce development services."
+        },
+        {
+            question: "Can CodeTrios host web applications?",
+            answer: "Yes. Hosting infrastructure can be configured for web applications according to their technology stack, traffic, resource requirements and scalability needs."
+        }
+    ];
+    const servicesData = [
+        {
+            icon: <IoCodeSlash />,
+            title: "Web Development",
+            description:
+                "Build fast, secure and scalable websites and web applications.",
+            link: "/web-development-services",
+            linkTitle: "Explore Web Development Services",
+        },
+        {
+            icon: <FaPaintBrush />,
+            title: "Website Design",
+            description:
+                "Create responsive and conversion-focused website experiences.",
+            link: "/website-design-services",
+            linkTitle: "Explore Website Design Services",
+        },
+        {
+            icon: <BsCart3 />,
+            title: "Ecommerce Development",
+            description:
+                "Build scalable online stores with secure payments and integrations.",
+            link: "/ecommerce-development-services",
+            linkTitle: "Explore Ecommerce Development Services",
+        },
+        {
+            icon: <FaGlobeAmericas />,
+            title: "Web Application Development",
+            description:
+                "Develop secure and scalable business web applications.",
+            link: "/web-application-development",
+            linkTitle: "Explore Web Application Development",
+        },
+        {
+            icon: <LuSearchCheck />,
+            title: "SEO & GEO Services",
+            description:
+                "Improve search visibility and AI search discoverability.",
+            link: "/geo-seo-services",
+            linkTitle: "Explore SEO & GEO Services",
+        },
+    ];
+    //Data length
+    const relatedLength = servicesData?.length || 0;
+    //AutoPlay
+    const relatedAutoPlay = getCarouselPlay(relatedLength, breakpoint, 3, 2);
+    //Carousel center class
+    const carouselClass = relatedLength === 1 ? "centerCarousel" : relatedLength === 2 ? "centerCarousel" : "";
 
     return(
         <>
@@ -43,6 +180,7 @@ const WebHosting = () =>{
                         url: "https://www.codetrios.com/web-hosting-services"
                     }
                 ]}
+                faqs={faqs}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail + " " + Style.hostingStyle}>
                 <div className={Style.innerBanner}>
@@ -51,7 +189,13 @@ const WebHosting = () =>{
                             <Col>
                                 <div className={Style.content}>
                                     <h1>Web Hosting Services in India</h1>
-                                    <p>Your website’s performance, security, and reliability depend heavily on the quality of its hosting infrastructure. At CodeTrios, we provide secure, high-performance, and scalable web hosting services in India designed to keep your website fast, stable, and accessible around the clock. Recognized as a best web hosting company India, our solutions are built to deliver a smooth user experience while supporting the performance and growth of your digital presence.</p>
+                                    <p>Your website’s performance, security, and reliability depend heavily on
+                                        the quality of its hosting infrastructure. At CodeTrios, we provide secure,
+                                        high-performance, and scalable web hosting services in India designed to
+                                        keep websites and web applications fast, stable, and accessible around
+                                        the clock. Our hosting solutions complement our <Link to="/web-development-services" title="Web Development Services">web development services</Link>
+                                        , helping businesses maintain a reliable digital infrastructure.
+                                    </p>
                                     <CATButton />
                                 </div>
                             </Col>
@@ -69,7 +213,7 @@ const WebHosting = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Fast, Secure & Scalable Hosting Solutions for Your Digital Growth</h2>
-                                    <p>We offer a wide range of hosting solutions including affordable web hosting India, cheap web hosting services India, linux web hosting India, cloud web hosting services India, wordpress web hosting India, business web hosting services India, and shared hosting services India. Whether you are hosting a corporate website, eCommerce store, web application, or high-traffic digital platform, our infrastructure is optimized for speed, reliability, security, and scalability. We combine performance-focused server configurations with proactive monitoring and expert technical support to ensure your website operates without interruption.</p>
+                                    <p>We offer a wide range of hosting solutions including Linux, cloud, WordPress, business, VPS, and shared hosting. Whether you are hosting a corporate website, an <Link to="/website-design-services" title="Website Design Services">professionally designed website</Link>, <Link to="/ecommerce-development-services" title="Ecommerce Development Services">ecommerce store</Link>, or <Link to="/web-application-development" title="Web Application Development">web application</Link>, our infrastructure is optimized for speed, reliability, security, and scalability.</p>
                                     <h3>Why Choose CodeTrios Web Hosting?</h3>
                                     <ul>
                                       <li><FiCheck className={Style.icon} /> <strong>99.9% Uptime Assurance –</strong> Keep your website accessible and minimize unexpected downtime.</li>
@@ -155,7 +299,10 @@ const WebHosting = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdSpeed /></span>
                                     <h3>Performance & Optimization</h3>
-                                    <p>Speed-Optimized Hosting for Better User Experience <br />We fine-tune every hosting environment to ensure fast loading times and smooth website performance.</p>
+                                    <p>
+                                        We fine-tune hosting environments to improve loading times, server
+                                        response, caching, and overall website performance. For businesses that
+                                        need broader technical improvements, our <Link to="/web-development-services" title="Web Development Services">web development services</Link> can address website architecture, frontend performance, backend optimization, APIs, and technical scalability.</p>
                                     <strong>Performance Enhancements:</strong>
                                     <ul>
                                       <li>SSD-powered servers</li>
@@ -185,7 +332,12 @@ const WebHosting = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FaWordpress /></span>
                                     <h3>WordPress Hosting</h3>
-                                    <p>Fast and secure WordPress hosting optimized for business websites, blogs, portfolios, and content-driven websites.</p>
+                                    <p>
+                                        Fast and secure WordPress hosting optimized for business websites, blogs,
+                                        portfolios, and content-driven websites. Businesses that need a complete
+                                        WordPress website can also explore our <Link to="/web-development-services" title="Web Development Services">website development services
+                                        </Link> for custom functionality, integrations, performance optimization, and ongoing maintenance.
+                                    </p>
                                     <ul>
                                         <li>WordPress installation</li>
                                         <li>SSL configuration</li>
@@ -212,14 +364,59 @@ const WebHosting = () =>{
                         </Row>
                     </Container>
                 </div>
-                <section className={`${Style.whyChooseSection}`}>
+                <section className={`${Style.commonPading} ${Style.weBuild} ${Style.secBgView} `}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className={`${Style.centerHead} ${Style.bottomNoSpace}`}>
+                                    <h2>Ecommerce Hosting for Online Stores</h2>
+                                    <p>
+                                        Ecommerce websites require reliable infrastructure, fast page
+                                        delivery, secure transactions, and scalable resources to handle
+                                        growing traffic and orders. CodeTrios provides hosting support for
+                                        businesses running online stores alongside our <Link to="/ecommerce-development-services" title="Ecommerce Development Services"> ecommerce development services</Link>.
+                                    </p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                <Industries title="Our Web Hosting for Different Industries" />
+                <HostingProcess title="Our Web Hosting" subTitle="process"/>
+                <section className={`${Style.commonPading} ${Style.weBuild} ${Style.secBgView} `}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className={`${Style.centerHead} ${Style.bottomNoSpace}`}>
+                                    <h2>Hosting Technologies & Infrastructure</h2>
+                                    <ul className={Style.ourTech}>
+                                        <li>Linux Hosting</li>
+                                        <li>PHP Applications</li>
+                                        <li>MySQL / MariaDB</li>
+                                        <li>WordPress</li>
+                                        <li>cPanel</li>
+                                        <li>SSL</li>
+                                        <li>CDN</li>
+                                        <li>Caching</li>
+                                        <li>Cloud Infrastructure</li>
+                                        <li>DNS Management</li>
+                                        <li>Backups</li>
+                                        <li>Server Monitoring</li>
+                                    </ul>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+                <section className={`${Style.whyChooseSection} ${Style.hostingSec}`}>
                     <Container>
                         <Row>
                             <Col lg={6} data-aos="fade-up">
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
                                     <h2 className={Style.title}>Why Choose CodeTrios for Web Hosting?</h2>
-                                    <p>From enterprise platforms and intelligent automation to custom applications, modular software solutions, and scalable technology infrastructure, CodeTrios becomes your long-term technology partner, helping your business stay agile, competitive, and prepared for a digital-first future.</p>
+                                    <p>CodeTrios combines hosting infrastructure with website development, application support, performance optimization, security configuration, and ongoing technical assistance. Businesses can also work with our <Link to="/custom-software-solutions" title="Custom Software Development Services">custom software development team </Link> when they require business applications, workflow automation, API integrations, or scalable software systems.</p>
+                                    <p>Web Hosting is one part of the broader <Link to="/services" title="CodeTrios Services">digital solutions and technology services offered by CodeTrios</Link>.</p>
                                     <div className={Style.benefitItem}>
                                         <BsCheckCircle className={Style.icon}/>
                                         <span>Website + Hosting Expertis</span>
@@ -252,7 +449,7 @@ const WebHosting = () =>{
                                         <BsCheckCircle className={Style.icon}/>
                                         <span>Developer-Friendly Hosting</span>
                                     </div>
-                                    <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
+                                    <Link to="/about-us" className={`${Style.btnStyle} ${Style.servicesBtn}`} title="Learn about CodeTrios">Learn More</Link>
                                 </div>
                             </Col>
                             <Col lg={6}>
@@ -263,6 +460,60 @@ const WebHosting = () =>{
                         </Row>
                     </Container>
                 </section> 
+                <div className={`${Style.relatedSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2 className={Style.title}>Related Services</h2>
+                                <Carousel
+                                    autoPlaySpeed={3000}
+                                    transitionDuration={500}
+                                    responsive={RelatedServicesSlide}
+                                    autoPlay={relatedAutoPlay}
+                                    infinite={relatedAutoPlay}
+                                    arrows={false}
+                                    containerClass={carouselClass}
+                                >
+                                    {servicesData?.map((item, index) =>{
+                                        return(
+                                            <div className={Style.item} key={index}>
+                                                <div className={Style.box}>
+                                                    <div className={Style.icon}>{item.icon}</div>
+                                                    <div>
+                                                        <h3>{item.title}</h3>
+                                                        <Link to={item.link} title={item.linkTitle}><GoArrowUpRight /></Link>
+                                                    </div>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                                </Carousel>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                 <div className={`${Style.faqSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>Frequently Asked Questions About Web Hosting Services</h2>
+                                <Accordion defaultActiveKey="0" className='faqStyle'>
+                                    {faqs.map((item, index) =>{
+                                        return(
+                                            <Accordion.Item eventKey={index.toString()} key={index}>
+                                                <Accordion.Header>{item.question}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.answer}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        )
+                                    })}
+                                </Accordion>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
                 <CATComponent />
             </div>
         </>

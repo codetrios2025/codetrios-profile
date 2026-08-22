@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/web_development.webp';
@@ -18,11 +19,10 @@ import Development from '../HomeRoute/Development.jsx';
 import SEO from '../SEO/websiteMeta.jsx';
 import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
 //services Icon
-import { FaMobileAlt, FaPaintBrush, FaHandshake, FaGlobeAmericas } from "react-icons/fa";
-import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
+import { FaPaintBrush, FaGlobeAmericas } from "react-icons/fa";
 import { BsCart3 } from "react-icons/bs";
 import { PiPlugsConnectedBold } from "react-icons/pi";
-import { MdInsights, MdDesignServices  } from "react-icons/md";
+import { MdDesignServices  } from "react-icons/md";
 import { LuSearchCheck } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -78,6 +78,32 @@ const WebDevelopment = () =>{
         tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
         mobile: {breakpoint: { max: 580, min: 0 },items: 1}
     };
+    const faqs = [
+        {
+            question: "What does a web development company do?",
+            answer: "A web development company builds and maintains websites and web applications, including frontend interfaces, backend systems, databases, APIs, integrations, testing, deployment, and ongoing technical support."
+        },
+        {
+            question: "Does CodeTrios provide custom web development?",
+            answer: "Yes. CodeTrios provides custom web development for businesses and organizations that require specific functionality, integrations, workflows, or application features."
+        },
+        {
+            question: "Which technologies does CodeTrios use?",
+            answer: "Depending on project requirements, CodeTrios works with technologies including React.js, Node.js, PHP, WordPress, Drupal, Strapi, APIs, databases, and modern web development tools."
+        },
+        {
+            question: "Can CodeTrios develop an existing website further?",
+            answer: "Yes. Existing websites can be extended with new features, integrations, performance improvements, redesigns, CMS functionality, and other technical enhancements."
+        },
+        {
+            question: "Does CodeTrios provide website maintenance?",
+            answer: "Yes. Website maintenance can include updates, security improvements, backups, bug fixes, performance optimization, monitoring, and feature enhancements."
+        },
+        {
+            question: "Can CodeTrios build scalable web applications?",
+            answer: "Yes. CodeTrios develops scalable web applications using appropriate frontend, backend, database, API, and hosting architecture based on project requirements."
+        },
+    ]
     const benefits = [
         "Business-focused development",
         "Responsive and mobile-first implementation",
@@ -93,7 +119,7 @@ const WebDevelopment = () =>{
             icon: <FaPaintBrush />,
             title: "Website Design",
             description:
-                "We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.",
+                "Create professional, responsive and conversion-focused websites with modern UI design and intuitive user experiences.",
             link: "/website-design-services",
             linkTitle: "Explore Website Design Services",
         },
@@ -101,39 +127,39 @@ const WebDevelopment = () =>{
             icon: <BsCart3 />,
             title: "Ecommerce Development",
             description:
-                "Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.",
+                "Build high-performing online stores with responsive design, secure payments and ecommerce integrations.",
             link: "/ecommerce-development-services",
-            linkTitle: "Explore Ecommerce Development",
+            linkTitle: "Explore Ecommerce Development Services",
         },
         {
             icon: <FaGlobeAmericas />,
             title: "Web Application Development",
             description:
-                "At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.",
+                "Develop secure and scalable web applications that streamline business processes and improve digital experiences.",
             link: "/web-application-development",
             linkTitle: "Explore Web Application Development",
-        },
+        },  
         {
             icon: <MdDesignServices />,
             title: "UI/UX Design",
             description:
-                "At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.",
+                "Design intuitive, accessible and user-focused interfaces that improve usability, engagement and conversions.",
             link: "/ui-ux-design-services",
-            linkTitle: "Explore UI UX Design Services",
+            linkTitle: "Explore UI/UX Design Services",
         },
         {
             icon: <PiPlugsConnectedBold />,
             title: "Custom Software Development",
             description:
-                "Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.",
+                "Develop custom software solutions that automate workflows, solve business challenges and support long-term growth.",
             link: "/custom-software-solutions",
             linkTitle: "Explore Custom Software Solutions",
         },
         {
             icon: <LuSearchCheck />,
-            title: "AI SEO & GEO Services",
+            title: "SEO & GEO Services",
             description:
-                "Improve your online visibility across traditional search and emerging AI-powered search experiences. Our SEO and GEO strategies focus on technical optimization, useful content and building your digital authority.",
+                "Improve search engine visibility and AI search discoverability with technical SEO, content optimization and GEO strategies.",
             link: "/geo-seo-services",
             linkTitle: "Explore SEO & GEO Services",
         },
@@ -169,6 +195,7 @@ const WebDevelopment = () =>{
                         url: "https://www.codetrios.com/web-development-services"
                     }
                 ]}
+                faqs={faqs}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -197,7 +224,10 @@ const WebDevelopment = () =>{
                                     <h2 className={Style.title}>Custom Web Development Services for Growing Businesses</h2>
                                     <p>Our web development services cover frontend development, backend development, CMS development, custom functionality, API integrations, database development, performance optimization, security, testing, and deployment.</p>
                                     <p>We develop websites and web platforms based on the technical and business requirements of each project. Depending on the project, our team can work with technologies such as React.js, Node.js, PHP, WordPress, Drupal, Strapi, APIs, and modern database systems.</p>
-                                    <p>From corporate websites and content-managed websites to custom web applications and ecommerce platforms, our development approach focuses on responsive experiences, maintainable code, security, performance, and long-term scalability.</p>
+                                    <p>From corporate websites and content-managed websites to {" "} 
+                                        <Link to="/web-application-development" title="Explore Web Application Development">custom web applications</Link>{" "} and{" "} 
+                                        <Link to="/ecommerce-development-services" title="Explore Ecommerce Development Services">ecommerce platforms</Link>, 
+                                        our development approach focuses on responsive experiences, maintainable code, security, performance, and long-term scalability.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -387,7 +417,28 @@ const WebDevelopment = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </div>             
+                </div>       
+                <div className={`${Style.faqSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>Frequently Asked Questions About Web Development</h2>
+                                <Accordion defaultActiveKey="0" className='faqStyle'>
+                                    {faqs.map((item, index) =>{
+                                        return(
+                                            <Accordion.Item eventKey={index.toString()} key={index}>
+                                                <Accordion.Header>{item.question}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.answer}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        )
+                                    })}
+                                </Accordion>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>      
                 <CATComponent />
             </div>
         </>

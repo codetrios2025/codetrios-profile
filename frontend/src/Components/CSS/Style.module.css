@@ -487,7 +487,7 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .content{width: 60%;display: flex;align-items: flex-start;flex-direction: column;justify-content: center;padding-right: 50px;}
 .ideaSec .ideaElem .content p span{display: block;}
 .ideaSec .ideaElem .ideaImg{width: 40%;}
-.ideaSec .ideaElem .ideaImg img{width: auto;max-width: 100%;}
+.ideaSec .ideaElem .ideaImg img{width: auto;max-width: 100%;height: auto;}
 .ideaSec .ideaElem .content ul{display: flex;align-items: center;gap: 20px;margin-bottom: 30px;}
 .ideaSec .ideaElem .content ul li{display: flex;align-items: center;font-size: 14px;color: #000;}
 .ideaSec .ideaElem .content ul .icon{color:#7C3AED;width: 50px;height: 50px;border-radius: 50%;font-size: 25px;display: flex;align-items: center;justify-content: center;background: #fff;margin-right: 10px;}
@@ -588,7 +588,7 @@ display: flex;align-items: center;justify-content: center;}
 .benefitItem .icon{color: #8b5cf6;margin-right: 10px;}
 .benefitItem span{font-size: 14px;}
 .whyChooseSection{position: relative;overflow: hidden;}
-.whyChooseSection a{margin: 10px 0 0;display: inline-block;}
+.whyChooseSection a.servicesBtn{margin: 10px 0 0;display: inline-block;}
 .whyChooseSection figure{height: 400px;    text-align: right;}
 .whyChooseSection .content{padding: 50px 0;}
 .catButton{display: flex;align-items: center;gap: 20px;}
@@ -608,12 +608,32 @@ display: flex;align-items: center;justify-content: center;}
 .relatedSec .item .box{border: 1px solid #e3dbdb;border-radius: 10px;height: 100%;padding: 30px 15px;display: flex;flex-direction: column;}
 .relatedSec .item .box div{display: flex;align-items: center;justify-content: space-between;margin: 0px 0 10px;}
 .relatedSec .item .box h3{font-size: 20px;margin: 0;}
-.relatedSec .item .box p{    overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;margin: 0;}
+.relatedSec .item .box p{margin: 0;}
 .relatedSec .item .icon{font-size: 50px;color: #7C3AED;}
 .relatedSec .item a{    width: 35px;height: 35px;background: #e3dbdb;border-radius: 50%;display: flex;align-items: center;justify-content: center;color: #000;}
 .centerHead{text-align: center;width: 960px;margin: 0 auto 4%;max-width: 100%;}
 .centerHead h2{font-size: 36px;margin: 0 0 20px;}
 .secBgView{background: #f1f1f1;}
+.industriesHead{width: 700px;max-width: 100%;margin: 0 auto;}
+.industriesHead h2, .faqSec h2{font-size: 35px;text-align: center;}
+.faqSec{padding: 60px 0;}
+.bottomNoSpace{margin-bottom: 0;}
+.bottomNoSpace p{margin: 0;}
+.aboutPage .bottomNoSpace a{margin-top: 20px;display: inline-block;}
+.PortfolioPage .innerBanner .catButton a{display:none}
+.ourTech{display: flex;flex-wrap:wrap;gap:10px;justify-content: center;margin-top: 30px;}
+.ourTech li{    border: 1px solid #18A8FF;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 10px;
+    border-radius: 4px;
+    min-width: 170px;
+    text-transform: uppercase;cursor: pointer;}
+.whyChooseSection a{margin-top: 20px;display: inline-block;}
+.whyChooseSection.hostingSec p a{display: contents;}
+.weBuild p a, .aboutSec p a, .innerBanner p a{font-weight: 500;color: #0ea5e9;}
+.whyChooseSection p a{margin: 0;}
+
 @media (max-width: 1600px){
 .thanksPage{height: 500px;}
 }
@@ -626,6 +646,7 @@ display: flex;align-items: center;justify-content: center;}
   .heroBanner .detail{    margin-top: 150px;}
 .queryForm{margin-top: 20px;}
 .title, .Heading h2{font-size: 40px;}
+.industriesHead h2, .faqSec h2{font-size: 30px;}
 .processIcon {width: 100px;height: 100px;}
 .processIcon span {width: 70px;height: 70px;}
 .processItem::before{    right: -42px;width: 64px;}
@@ -643,6 +664,7 @@ display: flex;align-items: center;justify-content: center;}
 .queryForm{padding: 0 30px;}
 .queryForm .group input{max-width: 150PX;font-size: 14PX;}
 .title, .Heading h2{font-size: 32px;}
+.industriesHead h2, .faqSec h2{font-size: 28px;}
 .aboutContent h6{font-size: 16px;}
 .aboutContent ul li{line-height: 26px;}
 .servicesBox .content h2{font-size: 18px;}
@@ -730,6 +752,8 @@ display: flex;align-items: center;justify-content: center;}
 }
 
 @media (max-width: 767px){
+.relatedSec .item{padding: 0;}    
+.relatedSec .item .box h3{font-size: 18px;}    
     .servicesDetail .innerBanner {
         height: auto;
         margin-top: 65px;
@@ -774,6 +798,7 @@ display: flex;align-items: center;justify-content: center;}
     .heroBanner .content .heroTagline {
         font-size: 16px;
     }
+.industriesHead h2, .faqSec h2{font-size: 28px;}    
 .ideaSec .ideaElem{padding: 15px;}    
 .ideaSec .ideaElem .content ul{flex-wrap: wrap;gap: 0;}    
 .ideaSec .ideaElem .content ul li{width: 25%;}

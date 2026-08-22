@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import Style from "../CSS/Style.module.css";
 import webImage from "../../assets/images/geo-img.webp";
 import WhyChooseImg from "../../assets/images/why_choose.webp";
@@ -43,6 +44,24 @@ import SEO from "../SEO/websiteMeta.jsx";
 import SchemaGraph from "../SEO/Schema/SchemaGraph.jsx";
 
 const GEOServices = () => {
+  const faqs = [
+    {
+        question: "What is AI Search Engine Optimization?",
+        answer: "AI Search Engine Optimization is the practice of optimizing websites and content to improve visibility across both traditional search engines and AI-powered search platforms such as ChatGPT, Gemini, Claude, and Google AI Overviews."
+    },
+    {
+        question: "What are Generative Engine Optimization Services?",
+        answer: "Generative Engine Optimization (GEO) focuses on helping your business become a trusted source that AI systems reference when generating answers for users."
+    },
+    {
+        question: "Why does my business need LLM Optimization Services?",
+        answer: "As more users rely on AI assistants to discover products and services, LLM Optimization helps ensure your brand is visible, accurately represented, and recommended by large language models."
+    },
+    {
+        question: "Do you provide AI SEO Services in India?",
+        answer: "Yes. CodeTrios provides AI SEO Services in India and globally, helping businesses improve search visibility, AI discoverability, and long-term organic growth."
+    },
+]  
   return (
     <>
       <SEO page="geo-seo-services" />
@@ -68,6 +87,7 @@ const GEOServices = () => {
                 url: "https://www.codetrios.com/geo-seo-services"
             }
         ]}
+        faqs={faqs}
     />
       <div
         className={
@@ -500,6 +520,27 @@ const GEOServices = () => {
             </Row>
           </Container>
         </div>
+        <div className={`${Style.faqSec} ${Style.commonPading}`}>
+          <Container>
+              <Row>
+                  <Col>
+                      <h2>Frequently Asked Questions About Geo & SEO Services</h2>
+                      <Accordion defaultActiveKey="0" className='faqStyle'>
+                        {faqs.map((item, index) =>{
+                            return(
+                                <Accordion.Item eventKey={index.toString()} key={index}>
+                                    <Accordion.Header>{item.question}</Accordion.Header>
+                                    <Accordion.Body>
+                                        <p>{item.answer}</p>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            )
+                        })}
+                    </Accordion>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
         <div className={Style.whoAreSec}>
           <Container>
             <Row>

@@ -38,7 +38,7 @@ const HomeRoute = () =>{
           <AboutUs />
           <WhyCodetrios />
           <OurServices/>
-          <Industries />
+          <Industries title="Industries We Serve" />
           <Development title="Our Development" subTitle="Process" />
           <IdeaBuild />
           {/* <OurPortfolio /> */}

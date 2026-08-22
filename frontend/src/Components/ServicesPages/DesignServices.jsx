@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/design_services.webp';
-import { FiCheck } from "react-icons/fi";
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //icon
-import { FaRegIdBadge, FaPaintBrush, FaPlayCircle    } from "react-icons/fa";
-import { MdWeb } from "react-icons/md";
+import { FaPaintBrush    } from "react-icons/fa";
 import { BsCheckCircle } from "react-icons/bs";
-//services Icon
-import { FaMobileAlt, FaHandshake, FaGlobeAmericas, FaDesktop, FaLaptopCode, FaPalette } from "react-icons/fa";
-import { FaWandMagicSparkles, FaPenRuler } from "react-icons/fa6";
-import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
-import { BsCart3 } from "react-icons/bs";
-import { PiPlugsConnectedBold } from "react-icons/pi";
-import { MdInsights, MdDesignServices, MdDevices, MdDashboardCustomize  } from "react-icons/md";
-import { LuSearchCheck } from "react-icons/lu";
-import { GoArrowUpRight } from "react-icons/go";
+    //services Icon
+    import { FaGlobeAmericas, FaDesktop, FaLaptopCode, FaPalette } from "react-icons/fa";
+    import { FaWandMagicSparkles, FaPenRuler } from "react-icons/fa6";
+    import { IoCodeSlash } from "react-icons/io5";
+    import { BsCart3 } from "react-icons/bs";
+    import { PiPlugsConnectedBold } from "react-icons/pi";
+    import { MdDevices, MdDashboardCustomize  } from "react-icons/md";
+    import { GoArrowUpRight } from "react-icons/go";
 //Components
 import DesignDevelopment from './DeploymentProsess/DesignDeployment.jsx';
 import SEO from '../SEO/websiteMeta.jsx';
@@ -79,6 +77,32 @@ const DesignServices = () =>{
         tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
         mobile: {breakpoint: { max: 580, min: 0 },items: 1}
     };
+    const faqs = [
+        {
+            question: "What is UI/UX design?",
+            answer: "UI/UX design combines user interface design and user experience design to create digital products that are visually clear, easy to navigate, and useful for their intended users."
+        },
+        {
+            question: "Does CodeTrios provide UI/UX design services in India?",
+            answer: "Yes. CodeTrios provides UI/UX design services in India for websites, web applications, SaaS platforms, dashboards, ecommerce websites, and other digital products."
+        },
+        {
+            question: "Does UI/UX design include wireframes and prototypes?",
+            answer: "Yes. Depending on project requirements, our design process can include user flows, wireframes, interactive prototypes, visual design, and reusable UI components."
+        },
+        {
+            question: "Can CodeTrios redesign an existing website?",
+            answer: "Yes. We can review an existing website's structure, interface, usability, responsiveness, and visual consistency and create a modern redesign aligned with your business goals."
+        },
+        {
+            question: "Does CodeTrios design web applications?",
+            answer: "Yes. We design user interfaces and experiences for dashboards, SaaS platforms, customer portals, business applications, and enterprise web applications."
+        },
+        {
+            question: "Why is UI/UX important for a website?",
+            answer: "Good UI/UX can make navigation clearer, improve usability, help users find information, strengthen brand perception, and support business conversion goals."
+        },
+    ]
     const benefits = [
         "User-centered design approach",
         "Mobile-first and responsive layouts",
@@ -94,14 +118,15 @@ const DesignServices = () =>{
             icon: <FaPaintBrush />,
             title: "Website Design",
             description:
-                "We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.",
+                "Create professional, responsive and conversion-focused websites with modern UI design and intuitive user experiences.",
             link: "/website-design-services",
             linkTitle: "Explore Website Design Services",
         },
         {
             icon: <IoCodeSlash />,
             title: "Web Development",
-            description: "At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.",
+            description:
+                "Build fast, secure and scalable websites with modern frontend, backend and API development.",
             link: "/web-development-services",
             linkTitle: "Explore Web Development Services",
         },
@@ -109,15 +134,15 @@ const DesignServices = () =>{
             icon: <BsCart3 />,
             title: "Ecommerce Development",
             description:
-                "Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.",
+                "Build high-performing online stores with responsive design, secure payments and ecommerce integrations.",
             link: "/ecommerce-development-services",
-            linkTitle: "Explore Ecommerce Development",
+            linkTitle: "Explore Ecommerce Development Services",
         },
         {
             icon: <FaGlobeAmericas />,
             title: "Web Application Development",
             description:
-                "At CodeTrios, we build powerful, scalable, and secure web applications designed to streamline business operations, improve productivity, and deliver exceptional user experiences. Our web application development solutions are tailored to your specific business requirements, helping you transform complex processes into fast, intuitive, and easy-to-use digital platforms.",
+                "Develop secure and scalable web applications that streamline business processes and improve digital experiences.",
             link: "/web-application-development",
             linkTitle: "Explore Web Application Development",
         },
@@ -125,10 +150,10 @@ const DesignServices = () =>{
             icon: <PiPlugsConnectedBold />,
             title: "Custom Software Development",
             description:
-                "Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.",
+                "Develop custom software solutions that automate workflows, solve business challenges and support long-term growth.",
             link: "/custom-software-solutions",
             linkTitle: "Explore Custom Software Solutions",
-        }
+        },
     ];
     //Data length
     const relatedLength = servicesData?.length || 0;
@@ -162,6 +187,7 @@ const DesignServices = () =>{
                         url: "https://www.codetrios.com/ui-ux-design-services"
                     }
                 ]}
+                faqs={faqs}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -188,9 +214,63 @@ const DesignServices = () =>{
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Professional UI/UX Design Services in India</h2>
-                                    <p>CodeTrios provides professional UI/UX design services in India for websites, web applications, SaaS platforms, dashboards, and digital products. We create interfaces that are visually consistent, responsive, accessible, and easy for users to navigate.</p>
-                                    <p>Our UI/UX design process begins by understanding your users, business objectives, content structure, and functional requirements. We then develop user flows, wireframes, prototypes, visual designs, and reusable UI components that create a consistent experience across the product.</p>
-                                    <p>Whether you are launching a new website, redesigning an existing interface, or developing a complex web application, CodeTrios combines user experience strategy with modern interface design to help businesses create digital products that are easier to use, communicate clearly, and support business goals.</p>
+                                    <p>
+                                        CodeTrios provides professional UI/UX design services in India for
+                                        <Link
+                                            to="/website-design-services"
+                                            title="Website Design Services"
+                                        >
+                                            {" "}websites and website design
+                                        </Link>
+                                        , web applications, SaaS platforms, dashboards, and digital products.
+                                        We create interfaces that are visually consistent, responsive,
+                                        accessible, and easy for users to navigate. Our UI/UX expertise also
+                                        supports
+                                        <Link
+                                            to="/web-application-development"
+                                            title="Web Application Development Services"
+                                        >
+                                            {" "}web application development
+                                        </Link>
+                                        {" "}projects that require intuitive interfaces and user-focused
+                                        experiences.
+                                    </p>
+                                    <p>
+                                        Our UI/UX design process begins by understanding your users, business
+                                        objectives, content structure, and functional requirements. We then
+                                        develop user flows, wireframes, prototypes, visual designs, and reusable
+                                        UI components that create a consistent experience across the product.
+                                        These designs can then be implemented through our
+                                        <Link
+                                            to="/web-development-services"
+                                            title="Web Development Services"
+                                        >
+                                            {" "}web development services
+                                        </Link>
+                                        {" "}for responsive, high-performance websites and digital platforms.
+                                    </p>
+                                    <p>
+                                        Whether you are launching a new website, redesigning an existing
+                                        interface, or developing a complex web application, CodeTrios combines
+                                        user experience strategy with modern interface design to help businesses
+                                        create digital products that are easier to use, communicate clearly,
+                                        and support business goals. This approach is also valuable for
+                                        <Link
+                                            to="/ecommerce-development-services"
+                                            title="Ecommerce Development Services"
+                                        >
+                                            {" "}ecommerce development
+                                        </Link>
+                                        {" "}projects and
+                                        <Link
+                                            to="/custom-software-solutions"
+                                            title="Custom Software Development Services"
+                                        >
+                                            {" "}custom software development
+                                        </Link>
+                                        {" "}where usability and interface design are important parts of the
+                                        overall digital solution.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
@@ -311,11 +391,8 @@ const DesignServices = () =>{
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <h3>Ecommerce Websites</h3>
-                                    <p>
-                                        User-friendly ecommerce experiences focused on
-                                        product discovery, navigation, checkout, and
-                                        conversion.
-                                    </p>
+                                    <p>User-friendly <Link to="/ecommerce-development-services" title="Ecommerce Development Services"> {" "}ecommerce development services</Link> 
+                                    {" "}focused on product discovery, navigation, checkout, and conversion.</p>
                                 </div>
                             </Col>
 
@@ -399,6 +476,27 @@ const DesignServices = () =>{
                                         )
                                     })}
                                 </Carousel>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div> 
+                <div className={`${Style.faqSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>Frequently Asked Questions About UI/UX Design</h2>
+                                <Accordion defaultActiveKey="0" className='faqStyle'>
+                                    {faqs.map((item, index) =>{
+                                        return(
+                                            <Accordion.Item eventKey={index.toString()} key={index}>
+                                                <Accordion.Header>{item.question}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.answer}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        )
+                                    })}
+                                </Accordion>
                             </Col>
                         </Row>
                     </Container>

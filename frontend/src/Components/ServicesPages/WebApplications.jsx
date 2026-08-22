@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/web_application.webp';
-import { FiCheck } from "react-icons/fi";
 import CATButton from './CATButtons.jsx';
 import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
@@ -16,11 +16,11 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 import { BsCloudCheck } from "react-icons/bs";
 import { BsCheckCircle } from "react-icons/bs";
 //services Icon
-import { FaMobileAlt, FaPaintBrush, FaHandshake, FaGlobeAmericas } from "react-icons/fa";
-import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
+import { FaPaintBrush } from "react-icons/fa";
+import { IoCodeSlash } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
 import { PiPlugsConnectedBold } from "react-icons/pi";
-import { MdInsights, MdDesignServices  } from "react-icons/md";
+import { MdDesignServices  } from "react-icons/md";
 import { LuSearchCheck } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
 import Development from '../HomeRoute/Development.jsx';
@@ -79,6 +79,32 @@ const WebApplications = () =>{
         tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
         mobile: {breakpoint: { max: 580, min: 0 },items: 1}
     };
+    const faqs = [
+        {
+            question: "What is web application development?",
+            answer: "Web application development is the process of designing and building browser-based applications that provide interactive functionality for businesses, customers, employees, or other users."
+        },
+        {
+            question: "Does CodeTrios provide custom web development?",
+            answer: "Yes. CodeTrios develops custom web applications based on specific business workflows, functionality, user requirements, integrations, and technical objectives."
+        },
+        {
+            question: "Can CodeTrios develop SaaS applications?",
+            answer: "Yes. SaaS platforms can be developed as browser-based applications with user accounts, dashboards, permissions, workflows, APIs, and other required functionality."
+        },
+        {
+            question: "Does CodeTrios develop APIs and integrations?",
+            answer: "Yes. We develop and integrate APIs to connect web applications with databases, payment systems, CRM platforms, ERP systems, third-party services, and other applications."
+        },
+        {
+            question: "Can web applications work on mobile devices?",
+            answer: "Yes. Responsive web applications can be designed to provide usable experiences across desktop, tablet, and mobile devices. Progressive web applications can also provide additional app-like capabilities where appropriate."
+        },
+        {
+            question: "Does CodeTrios provide application maintenance?",
+            answer: "Yes. Ongoing support can include bug fixes, security updates, performance improvements, monitoring, new functionality, and technical maintenance."
+        },
+    ]
     const benefits = [
         "Business-focused application architecture",
         "Responsive and user-friendly interfaces",
@@ -94,14 +120,15 @@ const WebApplications = () =>{
             icon: <FaPaintBrush />,
             title: "Website Design",
             description:
-                "We are a leading web design company in India, providing professional, creative, and result-driven website design services in India for businesses, startups, brands, and organizations. As a best website design company in India, we combine innovative design, intuitive user experience, high performance, and conversion-focused strategies to create websites that help businesses grow online.",
+                "Create professional, responsive and conversion-focused websites with modern UI design and intuitive user experiences.",
             link: "/website-design-services",
             linkTitle: "Explore Website Design Services",
         },
         {
             icon: <IoCodeSlash />,
             title: "Web Development",
-            description: "At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.",
+            description:
+                "Build fast, secure and scalable websites with modern frontend, backend and API development.",
             link: "/web-development-services",
             linkTitle: "Explore Web Development Services",
         },
@@ -109,31 +136,31 @@ const WebApplications = () =>{
             icon: <BsCart3 />,
             title: "Ecommerce Development",
             description:
-                "Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.",
+                "Build high-performing online stores with responsive design, secure payments and ecommerce integrations.",
             link: "/ecommerce-development-services",
-            linkTitle: "Explore Ecommerce Development",
+            linkTitle: "Explore Ecommerce Development Services",
         },
         {
             icon: <MdDesignServices />,
             title: "UI/UX Design",
             description:
-                "At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.",
+                "Design intuitive, accessible and user-focused interfaces that improve usability, engagement and conversions.",
             link: "/ui-ux-design-services",
-            linkTitle: "Explore UI UX Design Services",
+            linkTitle: "Explore UI/UX Design Services",
         },
         {
             icon: <PiPlugsConnectedBold />,
             title: "Custom Software Development",
             description:
-                "Technology is evolving faster than ever, and businesses that adapt early can gain a significant competitive advantage. As a Top Custom software development services company, CodeTrios helps organizations modernize, automate, and scale their operations through powerful, future-ready technology solutions. From system upgrades and Custom software modernization development services to custom software applications, intelligent automation, and technology architecture planning, we deliver solutions tailored to your workflows, business objectives, and long-term growth goals.",
+                "Develop custom software solutions that automate workflows, solve business challenges and support long-term growth.",
             link: "/custom-software-solutions",
             linkTitle: "Explore Custom Software Solutions",
         },
         {
             icon: <LuSearchCheck />,
-            title: "AI SEO & GEO Services",
+            title: "SEO & GEO Services",
             description:
-                "Improve your online visibility across traditional search and emerging AI-powered search experiences. Our SEO and GEO strategies focus on technical optimization, useful content and building your digital authority.",
+                "Improve search engine visibility and AI search discoverability with technical SEO, content optimization and GEO strategies.",
             link: "/geo-seo-services",
             linkTitle: "Explore SEO & GEO Services",
         },
@@ -169,6 +196,7 @@ const WebApplications = () =>{
                         url: "https://www.codetrios.com/web-application-development"
                     }
                 ]}
+                faqs={faqs}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -196,8 +224,19 @@ const WebApplications = () =>{
                                 <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Custom Web Application Development for Businesses</h2>
                                     <p>CodeTrios provides custom web application development services for businesses and organizations that need applications built around specific workflows, users, and business requirements. We develop secure, responsive, and scalable web applications that can be accessed through modern web browsers across desktop, tablet, and mobile devices.</p>
-                                    <p>Our web application development capabilities include custom business applications, customer portals, SaaS platforms, dashboards, workflow systems, API-driven applications, enterprise applications, and progressive web applications. We focus on clean architecture, responsive interfaces, security, performance, and maintainability.</p>
-                                    <p>From planning and UI/UX design to frontend development, backend development, API integration, testing, deployment, and ongoing support, CodeTrios provides an end-to-end approach to building web applications that can evolve with your business.</p>
+                                    <p>Our web application development capabilities include custom business applications,
+                                        customer portals, SaaS platforms, dashboards, workflow systems, API-driven 
+                                        applications, enterprise applications, progressive web applications, and{" "} 
+                                        <Link to="/ecommerce-development-services" title="Explore Ecommerce Development Services">ecommerce platforms</Link>. 
+                                        We focus on clean architecture, responsive interfaces, security, performance, and maintainability.
+                                    </p>
+                                    <p>From planning and{" "} <Link to="/ui-ux-design-services" title="Explore UI/UX Design Services">UI/UX design</Link>{" "} 
+                                        to frontend development, backend development, API integration, testing, 
+                                        deployment, and ongoing support, CodeTrios provides an end-to-end approach 
+                                        to building web applications that can evolve with your business. Our 
+                                        development practices can also support technical foundations required for 
+                                        <Link to="/geo-seo-services" title="Explore SEO & GEO Services"> SEO & GEO</Link>{" "} strategies.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
@@ -215,7 +254,10 @@ const WebApplications = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdDeveloperMode  /></span>
                                     <h3>Custom Application Development</h3>
-                                    <p>End-to-end development of bespoke web applications built around your business processes. From internal CRMs and inventory systems to customer portals and advanced workflow apps — we turn complex requirements into a seamless digital experience.</p>
+                                    <p>End-to-end development of bespoke web applications built around your business 
+                                        processes. From internal CRMs and inventory systems to customer portals and advanced workflow apps, our{" "}
+                                        <Link to="/custom-software-solutions" title="Explore Custom Software Solutions">custom software development</Link>{" "} 
+                                        approach turns complex requirements into a seamless digital experience.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -229,7 +271,10 @@ const WebApplications = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdWeb  /></span>
                                     <h3>PHP & Node.js Development</h3>
-                                    <p>We develop backend functionality using PHP and Node.js for custom web applications that require business logic, authentication, database connectivity, APIs, integrations, and scalable server-side functionality.</p>
+                                    <p>We develop backend functionality using PHP and Node.js for custom web applications 
+                                        as part of our{" "} <Link to="/web-development-services" title="Explore Web Development Services">web development services</Link>{" "} 
+                                        that require business logic, authentication, database connectivity, APIs, integrations, and scalable server-side functionality.
+                                    </p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -403,7 +448,28 @@ const WebApplications = () =>{
                             </Col>
                         </Row>
                     </Container>
-                </div>                
+                </div> 
+                <div className={`${Style.faqSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>Frequently Asked Questions About Web Application Development</h2>
+                                <Accordion defaultActiveKey="0" className='faqStyle'>
+                                    {faqs.map((item, index) =>{
+                                        return(
+                                            <Accordion.Item eventKey={index.toString()} key={index}>
+                                                <Accordion.Header>{item.question}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.answer}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        )
+                                    })}
+                                </Accordion>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>               
                 <CATComponent />
             </div>
         </>

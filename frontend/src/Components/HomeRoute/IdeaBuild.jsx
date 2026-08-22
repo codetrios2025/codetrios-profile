@@ -46,7 +46,7 @@ const IdeaBuild = ()=>{
                 <button onClick={formOpenHandler} data-aos="fade-up" data-aos-delay="600" type='button' className={Style.btnStyle}>Book Free Consultation</button>
               </div>
               <div className={Style.ideaImg} data-aos="fade-in" data-aos-delay="500">
-                <img src={IdeaImg} alt="Have an Idea? Let's Build Somethink Amazing Together!" />
+                <img src={IdeaImg} alt="Have an Idea? Let's Build Somethink Amazing Together!" width="488" height="386" />
               </div>
             </div>
           </Col>

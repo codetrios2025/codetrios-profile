@@ -72,6 +72,13 @@ button{border: none;}
   transform: translateY(10px);
 }
 .servicesCol ul li{display: block!important;}
+.faqStyle{position: relative;width: 960px;margin: 30px auto 0;max-width: 100%;}
+.faqStyle .accordion-button:focus{outline: 0;box-shadow: none;}
+.faqStyle .accordion-item{margin-bottom: 20px;border-radius: 4px;overflow: hidden;}
+.faqStyle .accordion-item .accordion-header button{    outline: 0;background: #4b72ff;color: #fff;font-weight: 500;font-size: 20px;}
+.faqStyle .accordion-collapse{background: rgb(247, 247, 247);}
+.faqStyle .accordion-button::after{filter: brightness(0) invert(1);}
+.faqStyle .accordion-body p{margin: 0;}
 
 @media only screen and (min-width:580px){
   .centerCarousel .react-multi-carousel-track {justify-content: center;margin: 0 auto;}
@@ -83,6 +90,7 @@ p{line-height: 24px;}
 }
 
 @media (max-width: 992px){
+.faqStyle .accordion-item .accordion-header button{font-size: 18px;}  
 .menuToggle{display: block;background: transparent;padding: 0;color: #000;font-size: 30px;margin: 0 0;border: none;position: absolute;right: 0;top: -6px;}
 .closeBtn{display: block;border: none;}
 header .mainMenu{background: #7C3AED;position: fixed;top: 0;right: -100%;width: 300px;height: 100%;padding-top: 30px;overflow: auto;z-index: 99;}
@@ -126,22 +134,15 @@ header .mainMenu ul li .subMenuMob li a{        padding: 10px 30px;}
 }
 
 @media (max-width: 767px){
+.faqStyle .accordion-item .accordion-header button {font-size: 16px;line-height: 26px;padding: 15px;}  
+.faqStyle .accordion-body {padding: 15px 15px 0;}
 .servicesView .col-md-4{width: 100%;}
 .boxHeight .col-md-4 {width: 100%;}
 }
-.error-text {
-  color: #ff4d4d;
-  font-size: 14px;
-  margin-top: 4px;
-}
+.error-text {color: #ff4d4d;font-size: 14px;margin-top: 4px;}
 
 /* ICON ANIMATION */
-.loader-icon {
-  width: 80px;
-  animation: moveIcon 2.5s ease-in-out forwards;
-  transition: opacity 0.4s ease;transition: all 0.2s linear;
-  left: 120px;
-}
+.loader-icon {width: 80px;animation: moveIcon 2.5s ease-in-out forwards;transition: opacity 0.4s ease;transition: all 0.2s linear;left: 120px;}
 
 @keyframes moveIcon {
   0%   { transform: translate(0, 0) scale(1); }

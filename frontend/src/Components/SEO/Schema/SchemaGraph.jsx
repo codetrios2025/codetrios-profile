@@ -5,7 +5,8 @@ import WebsiteSchema from "./WebsiteSchema";
 import WebPageSchema from "./WebPageSchema";
 import ServiceSchema from "./ServiceSchema";
 import BreadcrumbSchema from "./BreadcrumbSchema";
-
+import FAQSchema from "./FAQSchema";
+import ItemListSchema from "./ItemListSchema";
 const SchemaGraph = ({
     pageType = "website",
 
@@ -17,7 +18,13 @@ const SchemaGraph = ({
     serviceDescription,
     serviceType,
 
-    breadcrumbs = []
+    breadcrumbs = [],
+
+    faqs = [],
+
+    itemListName,
+    itemListDescription,
+    itemListItems = []
 }) => {
 
     return (
@@ -54,6 +61,21 @@ const SchemaGraph = ({
             {breadcrumbs.length > 0 && (
                 <BreadcrumbSchema
                     items={breadcrumbs}
+                />
+            )}
+            {/* FAQ */}
+            {faqs.length > 0 && (
+                <FAQSchema faqs={faqs} />
+            )}
+            {/* ==============================
+                ITEM LIST
+            ============================== */}
+            {itemListItems.length > 0 && (
+                <ItemListSchema
+                    name={itemListName}
+                    description={itemListDescription}
+                    url={pageUrl}
+                    items={itemListItems}
                 />
             )}
         </>

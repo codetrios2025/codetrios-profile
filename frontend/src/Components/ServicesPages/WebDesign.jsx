@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import Style from '../CSS/Style.module.css';
 import webImage from '../../assets/images/website-design.webp';
 import { FiCheck } from "react-icons/fi";
@@ -8,17 +9,9 @@ import WhyChooseImg from '../../assets/images/why_choose.webp';
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //icon
-import { FaPencilRuler, FaShoppingCart, FaRegIdBadge, FaBullhorn,  FaUniversalAccess   } from "react-icons/fa";
-import { MdWeb, MdDesignServices, MdAutorenew,      } from "react-icons/md";
+import { MdDesignServices} from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
-import {LuBuilding2} from "react-icons/lu";
-import { PiBuildingApartmentFill, PiBuildingOfficeLight } from "react-icons/pi";
-import { IoSchoolOutline } from "react-icons/io5";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { BsHeartPulse } from "react-icons/bs";
-import { GoRocket } from "react-icons/go";
 
-import { BiEdit } from "react-icons/bi";
 import Development from '../HomeRoute/Development.jsx';
 import Industries from '../Pages/Industries.jsx';
 import CATButton from './CATButtons.jsx';
@@ -99,6 +92,38 @@ const WebDesign = () =>{
         tablet: {breakpoint: { max: 1024, min: 580 },items: 2},
         mobile: {breakpoint: { max: 580, min: 0 },items: 1}
     };
+    const faqs = [
+        {
+            question: "How much does website design cost in India?",
+            answer:
+                "Website design costs in India vary depending on the number of pages, design complexity, functionality, content requirements, integrations, and customization involved. A simple business website generally requires a smaller design scope than an ecommerce website or a complex digital platform. CodeTrios evaluates your requirements and recommends a website design approach based on your business goals and project scope."
+        },
+        {
+            question: "How long does it take to design a website?",
+            answer:
+                "Website design timelines depend on the website's size, number of pages, design complexity, functionality, content requirements, and feedback cycles. A straightforward business website usually requires less design time than a large ecommerce website or custom digital product. CodeTrios determines the expected timeline during the project planning stage."
+        },
+        {
+            question: "Does CodeTrios provide responsive website design?",
+            answer:
+                "Yes. CodeTrios designs responsive websites that work across desktops, tablets, and smartphones. Our design process considers mobile usability, navigation, content hierarchy, readability, and consistent user experiences across different screen sizes."
+        },
+        {
+            question: "Can CodeTrios redesign an existing website?",
+            answer:
+                "Yes. CodeTrios provides website redesign and revamp services for businesses with outdated, difficult-to-use, or poorly performing websites. A redesign can improve visual design, information architecture, usability, responsive behavior, accessibility, performance, and conversion-focused layouts."
+        },
+        {
+            question: "Does CodeTrios design WordPress websites?",
+            answer:
+                "Yes. CodeTrios provides WordPress website design for businesses, organizations, and projects that need a flexible content management system. WordPress websites can be designed with responsive layouts, user-friendly content management, SEO-friendly architecture, and requirements specific to the business."
+        },
+        {
+            question: "Does CodeTrios provide ecommerce website design?",
+            answer:
+                "Yes. CodeTrios provides ecommerce website design for online stores, including Shopify, WooCommerce, and custom ecommerce requirements. The design focuses on product discovery, navigation, mobile usability, checkout experiences, customer trust, and conversion."
+        }
+    ];
     const benefits = [
         "Business-focused website strategy",
         "Modern and responsive UI/UX",
@@ -110,39 +135,40 @@ const WebDesign = () =>{
         "Ongoing support and improvements",
     ];
     
-    const servicesData = [
-        {
-            icon: <IoCodeSlash />,
-            title: "Web Development",
-            description: "At CodeTrios, we are a professional website development company delivering high-performance, scalable, secure, and SEO-friendly digital solutions for businesses of all sizes. Our website development services are designed to create fast, reliable, and user-focused websites that accurately represent your brand and provide an exceptional experience across all devices.",
-            link: "/web-development-services",
-            linkTitle: "Explore Web Development Services",
-        },
-        {
-            icon: <BsCart3 />,
-            title: "Ecommerce Development",
-            description:
-                "Taking your business online requires more than just a website—it requires a strategic, high-performance eCommerce ecosystem designed to enhance user experience, streamline operations, and drive sales. At CodeTrios, we provide comprehensive eCommerce development services and are recognized for delivering the best ecommerce development services tailored to modern business needs. As the best ecommerce development company in India, we specialize in building robust, secure, scalable, and conversion-focused online stores designed around your business model, products, and customer behavior.",
-            link: "/ecommerce-development-services",
-            linkTitle: "Explore Ecommerce Development",
-        },
-        {
-            icon: <MdDesignServices />,
-            title: "UI/UX Design",
-            description:
-                "At CodeTrios, we believe design is the foundation of a strong digital presence. As a user experience design company, our creative team combines strategy, aesthetics, usability, and technology to create digital experiences that reflect your brand identity while delivering meaningful results. Every visual element is designed with a clear purpose—to engage users, communicate your message, guide user behavior, and strengthen your brand.",
-            link: "/ui-ux-design-services",
-            linkTitle: "Explore UI UX Design Services",
-        },
-        {
-            icon: <LuSearchCheck />,
-            title: "SEO & GEO Services",
-            description:
-                "Improve your online visibility across traditional search and emerging AI-powered search experiences. Our SEO and GEO strategies focus on technical optimization, useful content and building your digital authority.",
-            link: "/geo-seo-services",
-            linkTitle: "Explore SEO & GEO Services",
-        },
-    ];
+const servicesData = [
+    {
+        icon: <IoCodeSlash />,
+        title: "Web Development",
+        description:
+            "Build fast, secure and scalable websites with modern frontend, backend and API development.",
+        link: "/web-development-services",
+        linkTitle: "Explore Web Development Services",
+    },
+    {
+        icon: <BsCart3 />,
+        title: "Ecommerce Development",
+        description:
+            "Build high-performing online stores with responsive design, secure payments and ecommerce integrations.",
+        link: "/ecommerce-development-services",
+        linkTitle: "Explore Ecommerce Development Services",
+    },
+    {
+        icon: <MdDesignServices />,
+        title: "UI/UX Design",
+        description:
+            "Design intuitive, accessible and user-focused interfaces that improve usability, engagement and conversions.",
+        link: "/ui-ux-design-services",
+        linkTitle: "Explore UI/UX Design Services",
+    },
+    {
+        icon: <LuSearchCheck />,
+        title: "SEO & GEO Services",
+        description:
+            "Improve search engine visibility and AI search discoverability with technical SEO, content optimization and GEO strategies.",
+        link: "/geo-seo-services",
+        linkTitle: "Explore SEO & GEO Services",
+    },
+];
     
     //Data length
     const relatedLength = servicesData?.length || 0;
@@ -162,6 +188,7 @@ const WebDesign = () =>{
                 serviceName="Website Design Services"
                 serviceDescription="Professional website design services in India for businesses, organizations and growing brands."
                 serviceType="Website Design"
+                
                 breadcrumbs={[
                     {
                         name: "Home",
@@ -176,6 +203,8 @@ const WebDesign = () =>{
                         url: "https://www.codetrios.com/website-design-services"
                     }
                 ]}
+                
+                faqs={faqs}
             />
             <div className={Style.innerPage + " " + Style.servicesDetail}>
                 <div className={Style.innerBanner}>
@@ -230,7 +259,12 @@ const WebDesign = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdDesignServices    /></span>
                                     <h3>UI/UX</h3>
-                                    <p>Pixel-perfect, device-friendly interfaces crafted for an exceptional user experience. Every page is optimized for seamless browsing across mobiles, tablets, and desktops — ensuring maximum engagement.</p>
+                                    <p>Pixel-perfect, device-friendly interfaces crafted for an exceptional 
+                                        user experience. Every page is optimized for seamless browsing 
+                                        across mobiles, tablets, and desktops. For dedicated product and 
+                                        interface experience work, explore our{" "} 
+                                        <Link to="/ui-ux-design-services">UI/UX design services</Link>.
+                                    </p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -244,7 +278,10 @@ const WebDesign = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FiShoppingCart   /></span>
                                     <h3>E-commerce</h3>
-                                    <p>Conversion-focused ecommerce website design in India for Shopify, WooCommerce, Magento, and custom platforms. Built for speed, usability, and sales growth.</p>
+                                    <p>Conversion-focused ecommerce website design in India for Shopify, 
+                                        WooCommerce, Magento, and custom platforms. For complete store 
+                                        development and functionality, explore our{" "} 
+                                        <Link to="/ecommerce-development-services">ecommerce development services</Link>.</p>
                                     
                                 </div>
                             </Col>
@@ -273,7 +310,17 @@ const WebDesign = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FiEye   /></span>
                                     <h3>Accessibility</h3>
-                                    <p>WCAG-compliant design solutions that ensure your website is usable for all visitors, including those with disabilities. Better accessibility means broader reach and stronger credibility.</p>
+                                    <p>clear information architecture, mobile-first experiences, fast-loading
+                                        pages, accessibility, SEO-friendly structure, and conversion-focused
+                                        layouts. For businesses looking to improve visibility across traditional
+                                        search and AI-powered search experiences, CodeTrios also provides
+                                        <Link
+                                            to="/geo-seo-services"
+                                            title="Explore SEO and GEO Services"
+                                        >
+                                            {" "}SEO and GEO services
+                                        </Link>.
+                                    </p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -289,7 +336,11 @@ const WebDesign = () =>{
 
                     </Container>
                 </div>
-                <Industries />
+                <Industries title="Website Design for Different Industries" subText="CodeTrios designs websites for businesses and
+                    organizations across different industries. Our
+                    approach adapts the website structure, user
+                    experience, content presentation, and conversion
+                    journey to the needs of each organization." />
                 <Development title="Our Website Design" subTitle="Process" />
                 <section className={`${Style.whyChooseSection}`}>
                     <Container>
@@ -347,6 +398,27 @@ const WebDesign = () =>{
                                         )
                                     })}
                                 </Carousel>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className={`${Style.faqSec} ${Style.commonPading}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>Frequently Asked Questions About Website Design</h2>
+                                <Accordion defaultActiveKey="0" className='faqStyle'>
+                                    {faqs.map((item, index) =>{
+                                        return(
+                                            <Accordion.Item eventKey={index.toString()} key={index}>
+                                                <Accordion.Header>{item.question}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.answer}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        )
+                                    })}
+                                </Accordion>
                             </Col>
                         </Row>
                     </Container>

@@ -3,33 +3,33 @@ import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Style.module.css';
 //Icon
 //icon
-import { FaPencilRuler, FaShoppingCart, FaRegIdBadge, FaBullhorn,  FaUniversalAccess   } from "react-icons/fa";
-import { MdWeb, MdDesignServices, MdAutorenew,      } from "react-icons/md";
-import { BsCheckCircle } from "react-icons/bs";
 import {LuBuilding2} from "react-icons/lu";
-import { PiBuildingApartmentFill, PiBuildingOfficeLight } from "react-icons/pi";
+import { PiBuildingOfficeLight } from "react-icons/pi";
 import { IoSchoolOutline } from "react-icons/io5";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { BsHeartPulse } from "react-icons/bs";
 import { IoSettingsOutline } from "react-icons/io5";
 import { GoRocket } from "react-icons/go";
 
-const Industries = ()=>{
+const Industries = ({title, subText})=>{
   return(
     <div className={`${Style.industriesSection}`}>
         <Container>
             <Row>
                 <Col className="text-center">
-                    <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="50">WHO WE WORK WITH</span>
-                    <h2 className={Style.title} data-aos="fade-up" data-aos-delay="100">Industries We Serve</h2>
-                    <ul data-aos="fade-up" data-aos-delay="200">
+                    <div className={Style.industriesHead}>
+                        <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="50">WHO WE WORK WITH</span>
+                        <h2 className={Style.title} data-aos="fade-up" data-aos-delay="100">{title}</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">{subText}</p>
+                    </div>
+                    <ul data-aos="fade-up" data-aos-delay="300">
                         <li>
                             <div className={Style.icon}><IoSchoolOutline /></div>
                             <p>School & College</p>
                         </li>
                         <li>
                             <div className={Style.icon}><LuBuilding2 /></div>
-                            <p>Corporate</p>
+                            <p>Corporate & B2B</p>
                         </li>
                         <li>
                             <div className={Style.icon}><PiBuildingOfficeLight /></div>
