@@ -776,11 +776,11 @@ display: flex;align-items: center;justify-content: center;}
 .whyChooseSection figure img{    width: 100%;height: 100%;object-fit: cover;}
 .heroBanner .content h1 {font-size: 38px;line-height: 50px;}
 .heroBanner .content .heroTagline{font-size: 24px;}
-
+.noFound{margin-top: 65px;}  
 }
 
 @media (max-width: 767px){
-.noFound{margin-top: 70px;}    
+  
 .noFound .content h1{    font-size: 50px;}    
 .relatedSec .item{padding: 0;}    
 .relatedSec .item .box h3{font-size: 18px;}    
