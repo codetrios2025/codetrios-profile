@@ -10,19 +10,16 @@ import CATComponent from '../Pages/CATComponent.jsx';
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //icon
-import { FaBuilding , FaReact } from "react-icons/fa";
-import { MdSupportAgent, MdDashboardCustomize  } from "react-icons/md";
+import { MdSupportAgent, MdDashboardCustomize, MdDesignServices  } from "react-icons/md";
 import { BiCodeCurly } from "react-icons/bi";
-import { BsCheckCircle } from "react-icons/bs";
+import { BsCheckCircle, BsCart3 } from "react-icons/bs";
 import Industries from '../Pages/Industries.jsx';
 import Development from '../HomeRoute/Development.jsx';
 import SEO from '../SEO/websiteMeta.jsx';
 import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
 //services Icon
-import { FaPaintBrush, FaGlobeAmericas } from "react-icons/fa";
-import { BsCart3 } from "react-icons/bs";
+import { FaPaintBrush, FaGlobeAmericas, FaBuilding , FaReact } from "react-icons/fa";
 import { PiPlugsConnectedBold } from "react-icons/pi";
-import { MdDesignServices  } from "react-icons/md";
 import { LuSearchCheck } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -82,6 +79,22 @@ const WebDevelopment = () =>{
         {
             question: "What does a web development company do?",
             answer: "A web development company builds and maintains websites and web applications, including frontend interfaces, backend systems, databases, APIs, integrations, testing, deployment, and ongoing technical support."
+        },
+        {
+            question: "How much do web development services cost in India?",
+            answer: "The cost of web development depends on factors such as project complexity, required features, technology, integrations, design requirements, content management needs, and ongoing support. CodeTrios provides project-specific estimates based on business and technical requirements."
+        },
+        {
+            question: "How long does it take to develop a website?",
+            answer: "Website development timelines depend on the size and complexity of the project. A simple business website may take a few weeks, while custom websites and web applications with advanced functionality, integrations, or workflows can take longer."
+        },
+        {
+            question: "Do you develop SEO-friendly websites?",
+            answer: "Yes. CodeTrios follows SEO-friendly development practices such as responsive design, clean site structure, performance optimization, crawlable content, proper technical implementation, and structured data where appropriate."
+        },
+        {
+            question: "What is the difference between web design and web development?",
+            answer: "Web design focuses on visual appearance, layout, branding, and user experience, while web development focuses on building the frontend and backend functionality that makes a website or web application work."
         },
         {
             question: "Does CodeTrios provide custom web development?",
@@ -155,14 +168,6 @@ const WebDevelopment = () =>{
             link: "/custom-software-solutions",
             linkTitle: "Explore Custom Software Solutions",
         },
-        {
-            icon: <LuSearchCheck />,
-            title: "SEO & GEO Services",
-            description:
-                "Improve search engine visibility and AI search discoverability with technical SEO, content optimization and GEO strategies.",
-            link: "/geo-seo-services",
-            linkTitle: "Explore SEO & GEO Services",
-        },
     ];
     //Data length
     const relatedLength = servicesData?.length || 0;
@@ -224,10 +229,15 @@ const WebDevelopment = () =>{
                                     <h2 className={Style.title}>Custom Web Development Services for Growing Businesses</h2>
                                     <p>Our web development services cover frontend development, backend development, CMS development, custom functionality, API integrations, database development, performance optimization, security, testing, and deployment.</p>
                                     <p>We develop websites and web platforms based on the technical and business requirements of each project. Depending on the project, our team can work with technologies such as React.js, Node.js, PHP, WordPress, Drupal, Strapi, APIs, and modern database systems.</p>
-                                    <p>From corporate websites and content-managed websites to {" "} 
-                                        <Link to="/web-application-development" title="Explore Web Application Development">custom web applications</Link>{" "} and{" "} 
-                                        <Link to="/ecommerce-development-services" title="Explore Ecommerce Development Services">ecommerce platforms</Link>, 
-                                        our development approach focuses on responsive experiences, maintainable code, security, performance, and long-term scalability.</p>
+                                    <p>From corporate websites and content-managed websites to{" "}
+                                        <Link to="/website-design-services" title="Explore Website Design Services">professional website design</Link>,
+                                        {" "}
+                                        <Link to="/web-application-development" title="Explore Web Application Development">custom web applications</Link>{" "}
+                                        and{" "}
+                                        <Link to="/ecommerce-development-services" title="Explore Ecommerce Development Services">ecommerce platforms</Link>,
+                                        our development approach focuses on responsive experiences,
+                                        maintainable code, security, performance, and long-term scalability.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
@@ -367,7 +377,7 @@ const WebDevelopment = () =>{
                                     <h2 className={Style.title}>Why Choose CodeTrios for Web Development?</h2>
                                     <p>CodeTrios approaches web development with a focus on performance, maintainability, security, responsive experiences, and long-term scalability. We build solutions around the technical requirements and business objectives of each project rather than using a one-size-fits-all approach.</p>
                                     {benefits.map((benefit, index) => (
-                                        <div className={Style.benefitItem}>
+                                        <div className={Style.benefitItem} key={index}>
                                             <BsCheckCircle
                                                 className={Style.icon}
                                             />
@@ -394,9 +404,10 @@ const WebDevelopment = () =>{
                                     autoPlaySpeed={3000}
                                     transitionDuration={500}
                                     responsive={RelatedServicesSlide}
-                                    autoPlay={relatedAutoPlay}
-                                    infinite={relatedAutoPlay}
+                                    autoPlay={false}
+                                    infinite={false}
                                     arrows={false}
+                                    showDots={true}
                                     containerClass={carouselClass}
                                 >
                                     {servicesData?.map((item, index) =>{

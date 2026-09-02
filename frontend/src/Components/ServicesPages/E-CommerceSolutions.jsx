@@ -434,9 +434,10 @@ const EcommerceSolutions = () =>{
                                     autoPlaySpeed={3000}
                                     transitionDuration={500}
                                     responsive={RelatedServicesSlide}
-                                    autoPlay={relatedAutoPlay}
-                                    infinite={relatedAutoPlay}
+                                    autoPlay={false}
+                                    infinite={false}
                                     arrows={false}
+                                    showDots={true}
                                     containerClass={carouselClass}
                                 >
                                     {servicesData?.map((item, index) =>{

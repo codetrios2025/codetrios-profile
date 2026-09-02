@@ -16,7 +16,7 @@ const portfolioData = [
     id: 11,
     title: "Namokar Hospital & Diagnostic Centre",
     tag:"Website Design & Development",
-    content:"React, Node",
+    content:"React.js, Node.js",
     image: nhdc,
     link: "",
   },
@@ -24,7 +24,7 @@ const portfolioData = [
     id: 1,
     title: "Cretecent",
     tag:"Website Design & Development",
-    content:"Wordpress",
+    content:"WordPress",
     image: cretecent,
     link: "",
   },
@@ -32,7 +32,7 @@ const portfolioData = [
     id: 2,
     title: "Elite GYM",
     tag:"Website Design & Development",
-    content:"React , Node",
+    content:"React.js , Node.js",
     image: portfolio1,
     link: "",
   },
@@ -40,7 +40,7 @@ const portfolioData = [
     id: 3,
     title: "Prime Estate",
     tag:"Website Design & Development",
-    content:"React , Node",
+    content:"React.js , Node.js",
     image: portfolio2,
     link: "",
   },
@@ -80,7 +80,7 @@ const OurPortfolio = () => {
               md={4}
               key={item.id}
             >
-              <div className={Style.projectBox}>
+              <article className={Style.projectBox}>
                 <Link to={item.link}>
                   <div className={Style.projectImg}>
                     <span
@@ -98,7 +98,7 @@ const OurPortfolio = () => {
                       <h5>{item.title}</h5>
                     </div>
                 </Link>
-              </div>
+              </article>
             </Col>
           ))}
         </Row>
@@ -106,7 +106,7 @@ const OurPortfolio = () => {
         <Row>
           <Col>
             <div className={Style.buttonFlex}>
-              <Link to="" className={Style.btnStyle}>
+              <Link to="/portfolio" className={Style.btnStyle} title="View all CodeTrios projects">
                 See all Projects
                 <BsArrowRight className={Style.icon} />
               </Link>
