@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Add your frontend pages:
 import LayoutScreen from "./Components/Common/Layout";
 import HomeRoute from "./Components/HomeRoute/HomeRoute";
- import AboutUsPage from "./Components/Pages/AboutUsPage";
- import Services from './Components/Pages/ServicesPage'
- import ServicesDetail from "./Components/Pages/ServicesDetail";
- import ScrollTop from "./Components/Common/ScrollTop";
- import ContactUsPage from "./Components/Pages/ContactUsPage";
- import TechnologiesPage from "./Components/Pages/Technologies";
- import PortfolioPage from "./Components/Pages/ProtfolioPage";
+import AboutUsPage from "./Components/Pages/AboutUsPage";
+import Services from "./Components/Pages/ServicesPage";
+import ServicesDetail from "./Components/Pages/ServicesDetail";
+import ScrollTop from "./Components/Common/ScrollTop";
+import ContactUsPage from "./Components/Pages/ContactUsPage";
+import TechnologiesPage from "./Components/Pages/Technologies";
+import PortfolioPage from "./Components/Pages/ProtfolioPage";
 //Services pages
 import EcommerceSolutions from "./Components/ServicesPages/E-CommerceSolutions";
 import WebApplications from "./Components/ServicesPages/WebApplications";
@@ -29,30 +29,44 @@ function AppRoutes() {
       <ScrollTop />
       <AosRoute />
       <Routes>
-
         {/* -----------------------------------
             FRONTEND / PUBLIC ROUTES
         ------------------------------------ */}
-        
-          <Route path="/" element={<LayoutScreen />}>
-            <Route index element={<HomeRoute />} />
-            <Route path="about-us" element={<AboutUsPage />} />
-            <Route path="services" element={<Services />} />
-            <Route path="/ecommerce-development-services" element={<EcommerceSolutions />} />
-            <Route path="/web-application-development" element={<WebApplications />} />
-            <Route path="/web-development-services" element={<WebDevelopment />} />
-            <Route path="/ui-ux-design-services" element={<DesignServices />} />
-            <Route path="/digital-strategy-consulting" element={<DigitalStrategy />} />
-            <Route path="/website-design-services" element={<WebDesign />} />
-            <Route path="/custom-software-solutions" element={<TechnologySolutions />} />
-            <Route path="/web-hosting-services" element={<WebHosting />} />
-            <Route path="/geo-seo-services" element={<GEOServices />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="technologies" element={<TechnologiesPage />} />
-            <Route path="contact-us" element={<ContactUsPage />} />
-           
-            <Route path="thank-you" element={<ThankyouPage />} />
-          </Route>
+
+        <Route path="/" element={<LayoutScreen />}>
+          <Route index element={<HomeRoute />} />
+          <Route path="about-us" element={<AboutUsPage />} />
+          <Route path="services" element={<Services />} />
+          <Route
+            path="/ecommerce-development-services"
+            element={<EcommerceSolutions />}
+          />
+          <Route
+            path="/web-application-development"
+            element={<WebApplications />}
+          />
+          <Route
+            path="/web-development-services"
+            element={<WebDevelopment />}
+          />
+          <Route path="/ui-ux-design-services" element={<DesignServices />} />
+          <Route
+            path="/digital-strategy-consulting"
+            element={<DigitalStrategy />}
+          />
+          <Route path="/website-design-services" element={<WebDesign />} />
+          <Route
+            path="/custom-software-solutions"
+            element={<TechnologySolutions />}
+          />
+          <Route path="/web-hosting-services" element={<WebHosting />} />
+          <Route path="/geo-seo-services" element={<GEOServices />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="technologies" element={<TechnologiesPage />} />
+          <Route path="contact-us" element={<ContactUsPage />} />
+
+          <Route path="thank-you" element={<ThankyouPage />} />
+        </Route>
       </Routes>
     </>
   );
