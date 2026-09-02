@@ -633,7 +633,35 @@ display: flex;align-items: center;justify-content: center;}
 .whyChooseSection.hostingSec p a{display: contents;}
 .weBuild p a, .aboutSec p a, .innerBanner p a{font-weight: 500;color: #0ea5e9;}
 .whyChooseSection p a{margin: 0;}
-
+.noFound{    background: #7C3AED;
+    border-top: 1px solid #eef3fa;
+    margin-top: 100px;
+    padding: 60px 0;}
+.noFound .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+.noFound .content h5 {
+    margin: 0;
+    font-size: 40px;
+}
+.noFound .content h1 {
+    margin: 0;
+    font-size: 70px;
+}
+.noFound .noFoundBtn {
+    gap: 15px;
+    display: flex;
+}
+.noFound .noFoundBtn button, .noFound .noFoundBtn a {
+    color: #fff;
+    background: 0 0;
+}
 @media (max-width: 1600px){
 .thanksPage{height: 500px;}
 }
@@ -752,6 +780,8 @@ display: flex;align-items: center;justify-content: center;}
 }
 
 @media (max-width: 767px){
+.noFound{margin-top: 70px;}    
+.noFound .content h1{    font-size: 50px;}    
 .relatedSec .item{padding: 0;}    
 .relatedSec .item .box h3{font-size: 18px;}    
     .servicesDetail .innerBanner {
@@ -811,6 +841,10 @@ display: flex;align-items: center;justify-content: center;}
 }
 
 @media (max-width: 580px){
+    .noFound .content h1 {
+        font-size: 40px;
+    }
+.noFound .content h5{font-size: 30px;}        
 .heroBanner .detail{margin-top: 70px;}    
 .heroBanner .content .heroTagline{font-size: 14px;}    
 .industriesSection ul li{width: 50%;}   
