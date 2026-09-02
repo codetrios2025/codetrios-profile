@@ -1,91 +1,91 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  
-    <!-- Homepage -->
+  <!-- Homepage -->
 <url>
 <loc>https://www.codetrios.com/</loc>
 <lastmod>2026-08-25</lastmod>
 </url>
  
-    <!-- About -->
+  <!-- About -->
 <url>
 <loc>https://www.codetrios.com/about-us</loc>
-<lastmod>2026-07-09</lastmod>
+<lastmod>2026-08-25</lastmod>
 </url>
  
-    <!-- Services Hub -->
+  <!-- Services Hub -->
 <url>
 <loc>https://www.codetrios.com/services</loc>
 <lastmod>2026-08-25</lastmod>
 </url>
  
-    <!-- Website Design Services -->
+  <!-- Website Design Services -->
 <url>
 <loc>https://www.codetrios.com/website-design-services</loc>
-<lastmod>2026-08-25</lastmod>
+<lastmod>2026-09-02</lastmod>
 </url>
  
-    <!-- Web Development Services -->
+  <!-- Web Development Services -->
 <url>
 <loc>https://www.codetrios.com/web-development-services</loc>
-<lastmod>2026-08-25</lastmod>
+<lastmod>2026-09-02</lastmod>
 </url>
  
-    <!-- Web Application Development -->
+  <!-- Web Application Development -->
 <url>
 <loc>https://www.codetrios.com/web-application-development</loc>
-<lastmod>2026-07-09</lastmod>
+<lastmod>2026-09-02</lastmod>
 </url>
  
-    <!-- UI/UX Design Services -->
+  <!-- UI/UX Design Services -->
 <url>
 <loc>https://www.codetrios.com/ui-ux-design-services</loc>
-<lastmod>2026-07-09</lastmod>
+<lastmod>2026-09-02</lastmod>
 </url>
  
-    <!-- Ecommerce Development Services -->
+  <!-- Ecommerce Development Services -->
 <url>
 <loc>https://www.codetrios.com/ecommerce-development-services</loc>
+<lastmod>2026-09-02</lastmod>
+</url>
+ 
+  <!-- Custom Software Solutions -->
+<url>
+<loc>https://www.codetrios.com/custom-software-solutions</loc>
+<lastmod>2026-09-02</lastmod>
+</url>
+ 
+  <!-- Digital Strategy Consulting -->
+<url>
+<loc>https://www.codetrios.com/digital-strategy-consulting</loc>
+<lastmod>2026-09-02</lastmod>
+</url>
+ 
+  <!-- Web Hosting Services -->
+<url>
+<loc>https://www.codetrios.com/web-hosting-services</loc>
+<lastmod>2026-09-02</lastmod>
+</url>
+ 
+  <!-- GEO SEO Services -->
+<url>
+<loc>https://www.codetrios.com/geo-seo-services</loc>
+<lastmod>2026-09-02</lastmod>
+</url>
+ 
+  <!-- Technologies -->
+<url>
+<loc>https://www.codetrios.com/technologies</loc>
 <lastmod>2026-08-25</lastmod>
 </url>
  
-    <!-- Custom Software Solutions -->
-<url>
-<loc>https://www.codetrios.com/custom-software-solutions</loc>
-<lastmod>2026-07-09</lastmod>
-</url>
- 
-    <!-- Digital Strategy Consulting -->
-<url>
-<loc>https://www.codetrios.com/digital-strategy-consulting</loc>
-<lastmod>2026-07-09</lastmod>
-</url>
- 
-    <!-- Web Hosting Services -->
-<url>
-<loc>https://www.codetrios.com/web-hosting-services</loc>
-<lastmod>2026-07-09</lastmod>
-</url>
- 
-    <!-- GEO SEO Services -->
-<url>
-<loc>https://www.codetrios.com/geo-seo-services</loc>
-<lastmod>2026-07-09</lastmod>
-</url>
- 
-    <!-- Technologies -->
-<url>
-<loc>https://www.codetrios.com/technologies</loc>
-<lastmod>2026-07-09</lastmod>
-</url>
- 
-    <!-- Portfolio -->
+  <!-- Portfolio -->
 <url>
 <loc>https://www.codetrios.com/portfolio</loc>
-<lastmod>2026-07-09</lastmod>
+<lastmod>2026-09-02</lastmod>
 </url>
  
-    <!-- Contact -->
+  <!-- Contact -->
 <url>
 <loc>https://www.codetrios.com/contact-us</loc>
 <lastmod>2026-07-09</lastmod>
