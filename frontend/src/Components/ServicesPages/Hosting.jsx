@@ -29,51 +29,7 @@ import SEO from '../SEO/websiteMeta.jsx';
 import SchemaGraph from '../SEO/Schema/SchemaGraph.jsx';
 const Carousel = CarouselImport.default ?? CarouselImport;
 
-const useCarouselBreakpoint = () => {
-    const [breakpoint, setBreakpoint] = useState("desktop");
-    useEffect(() => {
-        const handleResize = () => {
-            const width = window.innerWidth;
-
-            if (width < 767) {
-                setBreakpoint("mobile");
-            } else if (width < 1024) {
-                setBreakpoint("tablet");
-            } else {
-                setBreakpoint("desktop");
-            }
-        };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-    return breakpoint;
-};
-const getCarouselPlay = (
-    length,
-    breakpoint,
-    desktopItems = 3,
-    tabletItems = 2
-    ) => {
-    if (!length) {
-        return false;
-    }
-    // Mobile shows only 1 item
-    if (breakpoint === "mobile") {
-        return length > 1;
-    }
-    // Tablet
-    if (breakpoint === "tablet") {
-        return length > tabletItems;
-    }
-    // Desktop
-    return length > desktopItems;
-};
-
 const WebHosting = () =>{
-    const breakpoint = useCarouselBreakpoint();
     const RelatedServicesSlide = {
         superLargeDesktop: {breakpoint: { max: 4000, min: 3000 },items: 3,},
         desktop: {breakpoint: { max: 3000, min: 1024 },items: 3},
@@ -150,8 +106,6 @@ const WebHosting = () =>{
     ];
     //Data length
     const relatedLength = servicesData?.length || 0;
-    //AutoPlay
-    const relatedAutoPlay = getCarouselPlay(relatedLength, breakpoint, 3, 2);
     //Carousel center class
     const carouselClass = relatedLength === 1 ? "centerCarousel" : relatedLength === 2 ? "centerCarousel" : "";
 
@@ -411,7 +365,7 @@ const WebHosting = () =>{
                 <section className={`${Style.whyChooseSection} ${Style.hostingSec}`}>
                     <Container>
                         <Row>
-                            <Col lg={6} data-aos="fade-up">
+                            <Col lg={6}>
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
                                     <h2 className={Style.title}>Why Choose CodeTrios for Web Hosting?</h2>
@@ -453,7 +407,7 @@ const WebHosting = () =>{
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <figure data-aos="fade-up" data-aos-delay="100">
+                                <figure>
                                     <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
                                 </figure>
                             </Col>

@@ -29,13 +29,13 @@ const EcommerceDevelopment = ({title, subTitle})=>{
         <Row>
           <Col>
             <div className={Style.Heading}>
-              <h2 data-aos="fade-up">{title} <span>{subTitle}</span></h2>
+              <h2>{title} <span>{subTitle}</span></h2>
               <div className={Style.line}><span className={Style.lineDote}></span></div>
             </div>
             <div className={Style.processWrap}>
               <div className={Style.processList}>
                 {/* 01 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="100">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>01</div>
                   <div className={Style.processIcon}>
                     <span><HiOutlineMagnifyingGlass /></span>
@@ -44,7 +44,7 @@ const EcommerceDevelopment = ({title, subTitle})=>{
                   <h3>Ecommerce Strategy</h3>
                 </div>
                 {/* 02 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="200">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>02</div>
                   <div className={Style.processIcon}>
                     <span><FaPalette /></span>
@@ -53,7 +53,7 @@ const EcommerceDevelopment = ({title, subTitle})=>{
                   <h3>UI/UX Design</h3>
                 </div>
                 {/* 03 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="300">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>03</div>
                   <div className={Style.processIcon}>
                     <span><FaCode /></span>
@@ -62,7 +62,7 @@ const EcommerceDevelopment = ({title, subTitle})=>{
                   <h3>Development</h3>
                 </div>
                 {/* 04 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="400">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>04</div>
                   <div className={Style.processIcon}>
                     <span><FaPlug /></span>
@@ -71,7 +71,7 @@ const EcommerceDevelopment = ({title, subTitle})=>{
                   <h3>Payment & Integration</h3>
                 </div>
                 {/* 05 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="500">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>05</div>
                   <div className={Style.processIcon}>
                     <span><FaVial /></span>
@@ -80,7 +80,7 @@ const EcommerceDevelopment = ({title, subTitle})=>{
                   <h3>Testing & Optimization</h3>
                 </div>
                 {/* 06 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="700">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>06</div>
                   <div className={Style.processIcon}>
                     <span><BiSupport /></span>

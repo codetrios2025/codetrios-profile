@@ -25,10 +25,10 @@ const CATComponent = ()=>{
                 <Row>
                     <Col>
                         <div className={Style.visionElem}>
-                            <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="100">HAVE A PROJECT IN MIND?</span>
-                            <h2 data-aos="fade-up" data-aos-delay="100">Let's Build Something That Helps Your Business Grow</h2>
-                            <p data-aos="fade-up" data-aos-delay="200">Tell us about your project, goals and requirements. Our team can help you choose the right digital solution and technology approach.</p>
-                            <div className={Style.catButton} data-aos="fade-up" data-aos-delay="300">
+                            <span className={Style.smallTitle}>HAVE A PROJECT IN MIND?</span>
+                            <h2>Let's Build Something That Helps Your Business Grow</h2>
+                            <p>Tell us about your project, goals and requirements. Our team can help you choose the right digital solution and technology approach.</p>
+                            <div className={Style.catButton}>
                                 <button type='button'onClick={formOpenHandler} className={Style.btnStyle}>Get a Free Consultation</button>
                                 <Link to="/portfolio" className={Style.secondaryButton} title="View CodeTrios portfolio">View Our Portfolio</Link>
                             </div>

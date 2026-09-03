@@ -349,7 +349,7 @@ const GEOServices = () => {
           <Container>
             <Row>
               <Col md={5}>
-                <figure data-aos="fade-right" data-aos-delay="100">
+                <figure>
                   <img
                     src={WhyChooseImg}
                     className="imgFull"
@@ -360,11 +360,7 @@ const GEOServices = () => {
                 </figure>
               </Col>
               <Col md={7}>
-                <div
-                  className={Style.aboutContent}
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
+                <div className={Style.aboutContent}>
                   <h2 className={Style.title}>Why Choose CodeTrios?</h2>
                   <ul>
                     <li>

@@ -202,8 +202,8 @@ const TechnologiesPage = ()=>{
                     <Row>
                         <Col>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">Frontend Development Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>Frontend Development Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>Front-End Development</h5>
                                         <p>We craft high-performance, interactive, and visually stunning front-end experiences using modern JavaScript frameworks and UI technologies. Our focus is on building interfaces that are fast, responsive, accessible, and aligned with your brand identity. With pixel-perfect precision and smooth user flows, we ensure your customers enjoy an intuitive and seamless digital experience across all devices.</p>
@@ -256,8 +256,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">AI & Generative AI Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>AI & Generative AI Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>AI & Generative AI Development</h5>
                                         <p>We integrate modern AI and generative AI technologies into websites, web applications, business workflows, and custom software solutions. Depending on project requirements, our solutions can use AI APIs, conversational AI, content generation, automation, search, and intelligent business workflows. </p>
@@ -297,8 +297,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">Backend Development Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>Backend Development Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>Back-End Development</h5>
                                         <p>We deliver secure, scalable, and high-performance backend systems designed to handle complex business logic, heavy loads, and real-time interactions. Our backend architecture ensures speed, reliability, and seamless data processing to support your web and mobile applications.</p>
@@ -362,8 +362,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">UI/UX Design Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>UI/UX Design Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>UI/UX Design & Creative Tools</h5>
                                         <p>CodeTrios uses modern UI/UX and creative design tools to create wireframes, design systems, prototypes, visual assets and user-centered digital experiences.</p>
@@ -409,8 +409,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">Animation & Motion Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>Animation & Motion Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>Animation, Motion & 3D</h5>
                                         <p>We enhance digital experiences with smooth, engaging, and visually appealing animations. From micro-interactions to full-scale motion graphics, our team uses advanced animation frameworks to bring interfaces and brand stories to life.</p>
@@ -450,8 +450,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">Cloud & Infrastructure Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>Cloud & Infrastructure Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>Cloud</h5>
                                         <p>Modern businesses need secure, scalable, and high-performing cloud infrastructure. At CodeTrios, we help organizations migrate, deploy, and manage applications across leading cloud platforms using DevOps best practices. From cloud migration and CI/CD pipelines to containerization and infrastructure automation, we build reliable cloud solutions that improve performance, reduce costs, and support business growth. </p>
@@ -479,8 +479,8 @@ const TechnologiesPage = ()=>{
                                 </div>
                             </div>
                             <div className={Style.boxContainer}>
-                                <h4 data-aos="fade-up">Database Technologies</h4>
-                                <div className={Style.boxElem} data-aos="fade-up" data-aos-delay="200">
+                                <h4>Database Technologies</h4>
+                                <div className={Style.boxElem}>
                                     <div className={Style.leftArea}>
                                         <h5>Database Development</h5>
                                         <p>Our database solutions ensure your applications run smoothly, securely, and efficiently. We architect data structures that scale with your business and support high-speed queries, analytics, and transaction-heavy workloads.</p>

@@ -68,13 +68,13 @@ const OurPortfolio = () => {
       <Container>
         <Row>
           <Col>
-            <h2 className={Style.title} data-aos="fade-up">
+            <h2 className={Style.title}>
               Featured Projects
             </h2>
           </Col>
         </Row>
 
-        <Row data-aos="fade-up">
+        <Row>
           {portfolioData.map((item) => (
             <Col
               md={4}

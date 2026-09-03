@@ -18,11 +18,11 @@ const Industries = ({title, subText})=>{
             <Row>
                 <Col className="text-center">
                     <div className={Style.industriesHead}>
-                        <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="50">WHO WE WORK WITH</span>
-                        <h2 className={Style.title} data-aos="fade-up" data-aos-delay="100">{title}</h2>
-                        <p data-aos="fade-up" data-aos-delay="200">{subText}</p>
+                        <span className={Style.smallTitle}>WHO WE WORK WITH</span>
+                        <h2 className={Style.title}>{title}</h2>
+                        <p>{subText}</p>
                     </div>
-                    <ul data-aos="fade-up" data-aos-delay="300">
+                    <ul>
                         <li>
                             <div className={Style.icon}><IoSchoolOutline /></div>
                             <p>School & College</p>

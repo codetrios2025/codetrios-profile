@@ -31,13 +31,13 @@ const DesignDevelopment = ({title, subTitle})=>{
         <Row>
           <Col>
             <div className={Style.Heading}>
-              <h2 data-aos="fade-up">{title} <span>{subTitle}</span></h2>
+              <h2>{title} <span>{subTitle}</span></h2>
               <div className={Style.line}><span className={Style.lineDote}></span></div>
             </div>
             <div className={Style.processWrap}>
               <div className={Style.processList}>
                 {/* 01 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="100">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>01</div>
                   <div className={Style.processIcon}>
                     <span><HiOutlineMagnifyingGlass /></span>
@@ -46,7 +46,7 @@ const DesignDevelopment = ({title, subTitle})=>{
                   <h3>Research & Discovery</h3>
                 </div>
                 {/* 02 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="200">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>02</div>
                   <div className={Style.processIcon}>
                     <span><HiOutlineClipboardDocumentList /></span>
@@ -55,7 +55,7 @@ const DesignDevelopment = ({title, subTitle})=>{
                   <h3>User Flows & Information Architecture</h3>
                 </div>
                 {/* 03 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="300">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>03</div>
                   <div className={Style.processIcon}>
                     <span><FaPenRuler /></span>
@@ -64,7 +64,7 @@ const DesignDevelopment = ({title, subTitle})=>{
                   <h3>Wireframing</h3>
                 </div>
                 {/* 04 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="400">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>04</div>
                   <div className={Style.processIcon}>
                     <span><MdDashboardCustomize /></span>
@@ -73,7 +73,7 @@ const DesignDevelopment = ({title, subTitle})=>{
                   <h3>UI Design & Design System</h3>
                 </div>
                 {/* 05 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="500">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>05</div>
                   <div className={Style.processIcon}>
                     <span><FaComputerMouse /></span>
@@ -82,7 +82,7 @@ const DesignDevelopment = ({title, subTitle})=>{
                   <h3>Interactive Prototype</h3>
                 </div>
                 {/* 06 */}
-                <div className={Style.processItem} data-aos="fade-up" data-aos-delay="700">
+                <div className={Style.processItem}>
                   <div className={Style.processNumber}>06</div>
                   <div className={Style.processIcon}>
                     <span><BiSupport /></span>

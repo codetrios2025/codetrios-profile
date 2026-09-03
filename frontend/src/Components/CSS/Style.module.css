@@ -349,7 +349,7 @@ position: relative;
 .formPop .commonPading{padding: 0;}
 .formPop h2.title{font-size: 30px;}
 .formPop .inputFlex label{color:#4F4C4C;font-size: 14px;}
-.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 400;}
+.formPop .inputFlex .group input, .formPop .inputFlex .group textarea{font-size: 16px; border-color: #dee2e6;color: #4F4C4C;padding: 5px 0;font-weight: 400;}
 .formPop .inputFlex{flex-direction: column;}
 .formPop .inputFlex .group{margin-bottom: 20px;}
 .formPop .closeBtn{position: absolute;top: 0;right: 0;border: none;padding: 0 5px 4px;margin: 0;background: #7C3AED;color: #fff;font-size: 24px;line-height: normal;z-index: 99;
@@ -720,13 +720,13 @@ display: flex;align-items: center;justify-content: center;}
 .ideaSec .ideaElem .content ul li{font-size: 13px;}
 .ideaSec .ideaElem .content ul .icon{    width: 40px;
     height: 40px;font-size: 20px;min-width: 40px;}
-.servicesDetail .innerBanner{height: 390px;}
-.servicesDetail .innerBanner h1{font-size: 50px;}
 .servicesDetail .innerBanner p{font-size: 14px;}
 .servicesDetail .innerBanner .content{padding-top: 60px;}
+.servicesDetail .innerBanner{padding: 50px 0 50px;}
 }
 
 @media (max-width: 992px){
+.servicesDetail .innerBanner {padding: 30px 0 40px;}    
 .heroBanner{margin-top: 60px;}
 .heroBanner img{    width: 100%;height: 100%;object-fit: cover;}
 .projectBox h5{margin: 10px 0 0;}
@@ -753,8 +753,7 @@ display: flex;align-items: center;justify-content: center;}
 .servicesDetail .innerBanner{position: relative;}
 .servicesDetail .innerBanner:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #00000038;content: "";}
 .servicesDetail .innerBanner .content{position: relative;z-index: 9;}
-.servicesDetail .innerBanner{height: 290px;margin-top: 65px;
-        padding: 0 0;}      
+.servicesDetail .innerBanner{margin-top: 65px;}      
     .servicesDetail .innerBanner .content {
         padding-top: 0;
     }         

@@ -38,8 +38,12 @@ const HomeRoute = () =>{
           <AboutUs />
           <WhyCodetrios />
           <OurServices/>
+          <div data-aos="fade-up" data-aos-delay="50">
           <Industries title="Industries We Serve" />
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100">
           <Development title="Our Development" subTitle="Process" />
+          </div>
           <IdeaBuild />
           {/* <OurPortfolio /> */}
           <div className={Style.primeryBg + " " + Style.contactSec}><ContactUs /></div>

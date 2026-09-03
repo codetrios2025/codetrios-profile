@@ -42,50 +42,8 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Carousel = CarouselImport.default ?? CarouselImport;
 
-const useCarouselBreakpoint = () => {
-    const [breakpoint, setBreakpoint] = useState("desktop");
-    useEffect(() => {
-        const handleResize = () => {
-            const width = window.innerWidth;
-
-            if (width < 580) {
-                setBreakpoint("mobile");
-            } else if (width < 1024) {
-                setBreakpoint("tablet");
-            } else {
-                setBreakpoint("desktop");
-            }
-        };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-    return breakpoint;
-};
-const getCarouselPlay = (
-    length,
-    breakpoint,
-    desktopItems = 3,
-    tabletItems = 2
-	) => {
-    if (!length) {
-        return false;
-    }
-    // Mobile shows only 1 item
-    if (breakpoint === "mobile") {
-        return length > 1;
-    }
-    // Tablet
-    if (breakpoint === "tablet") {
-        return length > tabletItems;
-    }
-    // Desktop
-    return length > desktopItems;
-};
 const WebDesign = () =>{
-    const breakpoint = useCarouselBreakpoint();
+    
     const RelatedServicesSlide = {
         superLargeDesktop: {breakpoint: { max: 4000, min: 3000 },items: 3,},
         desktop: {breakpoint: { max: 3000, min: 1024 },items: 3},
@@ -172,8 +130,6 @@ const servicesData = [
     
     //Data length
     const relatedLength = servicesData?.length || 0;
-    //AutoPlay
-    const relatedAutoPlay = getCarouselPlay(relatedLength, breakpoint, 3, 2);
     //Carousel center class
     const carouselClass = relatedLength === 1 ? "centerCarousel" : relatedLength === 2 ? "centerCarousel" : "";
 
@@ -211,7 +167,7 @@ const servicesData = [
                     <Container>
                         <Row>
                             <Col>
-                                <div className={Style.content} data-aos="fade-up" data-aos-delay="100">
+                                <div className={Style.content}>
                                     <h1>Professional Website Design Company in India</h1>
                                     <p>CodeTrios is a website design company in India helping businesses, startups, organizations, and growing brands build modern, responsive, and high-performing websites. We combine business strategy, UI/UX design, accessibility, performance, SEO-friendly architecture, and conversion-focused experiences to create websites that support real business goals.</p>
                                     <CATButton />
@@ -225,12 +181,12 @@ const servicesData = [
                     <Container>
                         <Row>
                             <Col md={5}>
-                                <figure data-aos="fade-up" data-aos-delay="100">
+                                <figure>
                                     <img src={webImage} className='imgFull' alt='CodeTrios website design services' width="1747" height="1334" />
                                 </figure>
                             </Col>
                             <Col md={7}>
-                                <div className={Style.aboutContent} data-aos="fade-up" data-aos-delay="200">
+                                <div className={Style.aboutContent}>
                                     <h2 className={Style.title}>Website Design Services Built Around Your Business Goals</h2>
                                     <p>Our website design services cover the complete design journey, from understanding your business and audience to creating the visual interface and preparing a scalable design system for development. We design websites for companies, startups, institutions, professional organizations, and growing brands.</p>
                                     <p>Our approach focuses on responsive UI/UX, clear information architecture, mobile-first experiences, fast-loading pages, accessibility, SEO-friendly structure, and conversion-focused layouts. The result is a website that is easier for visitors to navigate and easier for businesses to manage and grow.</p>
@@ -244,10 +200,10 @@ const servicesData = [
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title} data-aos="fade-up" data-aos-delay="100">Our Offerings Include</h2>
+                                <h2 className={Style.title}>Our Offerings Include</h2>
                             </Col>
                         </Row>
-                        <Row data-aos="fade-up" data-aos-delay="100">
+                        <Row>
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FiBriefcase  /></span>
@@ -345,7 +301,7 @@ const servicesData = [
                 <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>
-                            <Col lg={6} data-aos="fade-up">
+                            <Col lg={6}>
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
                                     <h2 className={Style.title}>Why Choose CodeTrios for Website Design?</h2>
@@ -362,7 +318,7 @@ const servicesData = [
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <figure data-aos="fade-up" data-aos-delay="100">
+                                <figure>
                                     <img src={WhyChooseImg} className='imgFull' alt='Why choose CodeTrios for website design' width="1747" height="1334" />
                                 </figure>
                             </Col>

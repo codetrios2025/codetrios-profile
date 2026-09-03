@@ -172,16 +172,16 @@ const ServicesPage = ()=>{
                     <Row>
                         <Col>
                             <div className={Style.pageHead}>
-                                <span className={Style.smallTitle} data-aos="fade-up" data-aos-delay="100">WHAT WE DO</span>
-                                <h1 className={Style.title} data-aos="fade-up" data-aos-delay="150">Web Design & Development Services</h1>
-                                <p className={Style.subContent}  data-aos="fade-up" data-aos-delay="200">CodeTrios is a web development and digital solutions company in India specializing in website design, web development, ecommerce development, web applications, UI/UX design, custom software, digital strategy, web hosting, and SEO & GEO services.</p>
+                                <span className={Style.smallTitle}>WHAT WE DO</span>
+                                <h1 className={Style.title}>Web Design & Development Services</h1>
+                                <p className={Style.subContent}>CodeTrios is a web development and digital solutions company in India specializing in website design, web development, ecommerce development, web applications, UI/UX design, custom software, digital strategy, web hosting, and SEO & GEO services.</p>
                             </div>
                         </Col>
                     </Row>
                     <Row>
                         {services.map((item, index) =>(
                             <Col md={6} lg={4} key={index}>
-                                <article className={Style.servicesBox} data-aos="fade-up" data-aos-delay={(index % 3) * 100}>
+                                <article className={Style.servicesBox}>
                                     <figure>
                                         <img src={item.image} alt={item.imageAlt} loading="lazy" />
                                     </figure>
@@ -238,7 +238,7 @@ const ServicesPage = ()=>{
             <section className={`${Style.whyChooseSection}`}>
                 <Container>
                     <Row>
-                        <Col lg={6} data-aos="fade-up">
+                        <Col lg={6}>
                             <div className={Style.content}>
                                 <span className={Style.smallTitle}>WHY CODETRIOS</span>
                                 <h2 className={Style.title}>Digital Solutions Built Around Your Goals</h2>
@@ -254,8 +254,8 @@ const ServicesPage = ()=>{
                                 <Link to="/about-us" className={Style.btnStyle} title="Learn more about CodeTrios">Learn More</Link>
                             </div>
                         </Col>
-                        <Col lg={6} className="mt-4 mt-lg-0" data-aos="fade-up">
-                            <figure data-aos="fade-up" data-aos-delay="100">
+                        <Col lg={6} className="mt-4 mt-lg-0">
+                            <figure>
                                 <img src={WhyChooseImg} className='imgFull' alt='Why Choose CodeTrios?' width="1747" height="1334" />
                             </figure>
                         </Col>

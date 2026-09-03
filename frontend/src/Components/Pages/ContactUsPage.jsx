@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import SEO from "../SEO/webSiteMeta.jsx";
+import SEO from '../SEO/websiteMeta.jsx';
 //Components
 import ContactUs from "../HomeRoute/Contact";
 
@@ -28,20 +28,20 @@ const ContactUsPage = () => {
               </Col>
               <Col md={5}>
                 <div className={Style.areInfo}>
-                  <h3 data-aos="fade-up" data-aos-delay="100">
+                  <h3>
                     CodeTrios
                   </h3>
-                  <p data-aos="fade-up" data-aos-delay="200">
+                  <p>
                     <IoMailOpenSharp className={Style.icon} />
                     <Link to="mailto:info@codetrios.com">
                       info@codetrios.com
                     </Link>
                   </p>
-                  <p data-aos="fade-up" data-aos-delay="300">
+                  <p>
                     <IoCall className={Style.icon} />{" "}
                     <Link to="tel:+91 8882309150">+91 8882309150</Link>
                   </p>
-                  <p data-aos="fade-up" data-aos-delay="400">
+                  <p>
                     <FaLocationDot className={Style.icon} />{" "}
                     <span>
                       Codetrios 711 Sector -31, Faridabad, <br/>Haryana, India
