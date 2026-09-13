@@ -10,10 +10,18 @@ import WhyChooseImg from '../../assets/images/why_choose.webp';
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //icon
-import { FaPaintBrush    } from "react-icons/fa";
+import {
+  FaPaintBrush,  
+  FaBriefcase,
+  FaLaptopCode,
+  FaCloud,
+  FaShoppingCart,
+  FaBuilding,
+  FaMobileAlt
+} from "react-icons/fa";
 import { BsCheckCircle } from "react-icons/bs";
     //services Icon
-    import { FaGlobeAmericas, FaDesktop, FaLaptopCode, FaPalette } from "react-icons/fa";
+    import { FaGlobeAmericas, FaDesktop, FaPalette } from "react-icons/fa";
     import { FaWandMagicSparkles, FaPenRuler } from "react-icons/fa6";
     import { IoCodeSlash } from "react-icons/io5";
     import { BsCart3 } from "react-icons/bs";
@@ -299,7 +307,7 @@ const DesignServices = () =>{
                     </Container>
                 </div>
                 <DesignDevelopment title="Our UI/UX Design" subTitle="Process" />
-                <section className={`${Style.commonPading} ${Style.weBuild} `}>
+                <section className={`${Style.commonPading} ${Style.darkSection} `}>
                     <Container>
                         <Row>
                             <Col>
@@ -311,65 +319,58 @@ const DesignServices = () =>{
                         </Row>
 
                         <Row>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Business Websites</h3>
-                                    <p>
-                                        Professional website interfaces designed to
-                                        communicate services, build trust, and generate
-                                        enquiries.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Web Applications</h3>
-                                    <p>
-                                        User-focused interfaces for business applications,
-                                        portals, dashboards, and workflow systems.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>SaaS Products</h3>
-                                    <p>
-                                        Scalable UI systems for SaaS platforms with
-                                        dashboards, user accounts, workflows, and
-                                        subscription-based functionality.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Ecommerce Websites</h3>
-                                    <p>User-friendly <Link to="/ecommerce-development-services" title="Ecommerce Development Services"> {" "}ecommerce development services</Link> 
-                                    {" "}focused on product discovery, navigation, checkout, and conversion.</p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Enterprise Platforms</h3>
-                                    <p>
-                                        Structured interfaces for complex business
-                                        processes, permissions, reporting, and data-heavy
-                                        applications.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Digital Products</h3>
-                                    <p>
-                                        UI/UX design for new digital products from
-                                        initial concept and wireframes through final
-                                        interface design.
-                                    </p>
+                            <Col>
+                                <div className={Style.darkContainer}>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaBriefcase /></div>
+                                        <h3>Business Websites</h3>
+                                        <p>
+                                            Professional website interfaces designed to
+                                            communicate services, build trust, and generate
+                                            enquiries.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaLaptopCode /></div>
+                                        <h3>Web Applications</h3>
+                                        <p>
+                                            User-focused interfaces for business applications,
+                                            portals, dashboards, and workflow systems.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaCloud /></div>
+                                        <h3>SaaS Products</h3>
+                                        <p>
+                                            Scalable UI systems for SaaS platforms with
+                                            dashboards, user accounts, workflows, and
+                                            subscription-based functionality.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaShoppingCart /></div>
+                                        <h3>Ecommerce Websites</h3>
+                                        <p>User-friendly <Link to="/ecommerce-development-services" title="Ecommerce Development Services"> {" "}ecommerce development services</Link> 
+                                        {" "}focused on product discovery, navigation, checkout, and conversion.</p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaBuilding /></div>
+                                        <h3>Enterprise Platforms</h3>
+                                        <p>
+                                            Structured interfaces for complex business
+                                            processes, permissions, reporting, and data-heavy
+                                            applications.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaMobileAlt /></div>
+                                        <h3>Digital Products</h3>
+                                        <p>
+                                            UI/UX design for new digital products from
+                                            initial concept and wireframes through final
+                                            interface design.
+                                        </p>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

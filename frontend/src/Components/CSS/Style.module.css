@@ -2,7 +2,7 @@
 
 .commonPading{padding: 80px 0;}
 
-.title{font-size: 45px;font-weight: 700;}
+.title, .innerPage .Heading h2{font-size: 45px;font-weight: 700;}
 /* .title span{font-family: 'Rubik Regular';display: block;} */
 .buttonFlex{display: flex;justify-content: center;margin-top: 30px;}
 .primeryBg{background: #7C3AED;}
@@ -187,18 +187,14 @@ p strong{font-weight: normal;}
 }
 .servicesBox .content p{
     margin: 0 0 10px 0;
-        overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
 }
 .servicesBox .content p strong{font-weight: 400;}
 .servicesBox .content p span{background: transparent!important;}
 .servicesBox .content a{
-    color: #000;
+    color: #7C3AED;
 }
 .servicesBox .content a:hover{
-    color: #7C3AED;
+    color: #6228c5;
 }
 .whyUs .aboutContent ul li{padding: 0;}
 .whyUs .aboutContent ul li .icon{position: relative;}
@@ -631,7 +627,7 @@ display: flex;align-items: center;justify-content: center;}
     text-transform: uppercase;cursor: pointer;}
 .whyChooseSection a{margin-top: 20px;display: inline-block;}
 .whyChooseSection.hostingSec p a{display: contents;}
-.weBuild p a, .aboutSec p a, .innerBanner p a{font-weight: 500;color: #0ea5e9;}
+.weBuild p a, .aboutSec p a, .innerBanner p a{font-weight: 400;color: #0ea5e9;}
 .whyChooseSection p a{margin: 0;}
 .noFound{    background: #7C3AED;
     border-top: 1px solid #eef3fa;
@@ -662,6 +658,39 @@ display: flex;align-items: center;justify-content: center;}
     color: #fff;
     background: 0 0;
 }
+
+.darkSection{    background: #0f141c;color: #fff;}
+.darkContainer{display: grid;grid-template-columns: repeat(3, 1fr);gap: 24px;margin-top: 0;}
+.darkSection .box{    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+        
+    border: 1.5px solid rgba(147, 197, 253, 0.3);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    color: #fff;}
+.darkSection .box:hover{
+    transform: translateY(-4px);
+  border-color: #60a5fa;
+  box-shadow: 0 12px 40px 0 rgba(96, 165, 250, 0.25);
+}
+.darkSection .box h3{    font-size: 20px;
+    margin: 10px 0 15px 0}
+.darkSection .box .boxIcon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 2rem;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 8px var(--glow-color));
+  transition: opacity 0.3s ease;
+}
+.darkSection .box:hover .boxIcon {
+  opacity: 1;
+}
+
 @media (max-width: 1600px){
 .thanksPage{height: 500px;}
 }
@@ -673,8 +702,8 @@ display: flex;align-items: center;justify-content: center;}
   .heroBanner .content{    justify-content: flex-start;}
   .heroBanner .detail{    margin-top: 150px;}
 .queryForm{margin-top: 20px;}
-.title, .Heading h2{font-size: 40px;}
-.industriesHead h2, .faqSec h2{font-size: 30px;}
+.title, .innerPage .Heading h2{font-size: 40px;}
+.industriesHead h2, .faqSec h2, .centerHead h2{font-size: 30px;}
 .processIcon {width: 100px;height: 100px;}
 .processIcon span {width: 70px;height: 70px;}
 .processItem::before{    right: -42px;width: 64px;}
@@ -691,8 +720,8 @@ display: flex;align-items: center;justify-content: center;}
 @media (max-width: 1199px){
 .queryForm{padding: 0 30px;}
 .queryForm .group input{max-width: 150PX;font-size: 14PX;}
-.title, .Heading h2{font-size: 32px;}
-.industriesHead h2, .faqSec h2{font-size: 28px;}
+.title, .innerPage .Heading h2{font-size: 32px;}
+.industriesHead h2, .faqSec h2, .centerHead h2{font-size: 28px;}
 .aboutContent h6{font-size: 16px;}
 .aboutContent ul li{line-height: 26px;}
 .servicesBox .content h2{font-size: 18px;}
@@ -776,6 +805,7 @@ display: flex;align-items: center;justify-content: center;}
 .heroBanner .content h1 {font-size: 38px;line-height: 50px;}
 .heroBanner .content .heroTagline{font-size: 24px;}
 .noFound{margin-top: 65px;}  
+.darkContainer{grid-template-columns: repeat(2, 1fr);}
 }
 
 @media (max-width: 767px){
@@ -807,7 +837,7 @@ display: flex;align-items: center;justify-content: center;}
 .heroBanner .content h6{font-size: 14px;}
 .heroBanner form{display: none;}
 .aboutContent{margin-top: 0;}
-.title{font-size: 30px;}
+.title, .innerPage .Heading h2{font-size: 30px;}
 .commonPading{padding: 50px 0;}
 .heroBanner .btnStyle{display: block;}
 .servicesBox .content p{    display: block;}
@@ -823,11 +853,11 @@ display: flex;align-items: center;justify-content: center;}
 .inputFlex .group{padding: 0;}
 .contactFomr h2{margin-bottom: 20px;}
 .formElem .contactFomr h2{padding: 0;}
-.title, .Heading h2 {font-size: 28px;} 
+.title, .innerPage .Heading h2 {font-size: 28px;} 
     .heroBanner .content .heroTagline {
         font-size: 16px;
     }
-.industriesHead h2, .faqSec h2{font-size: 28px;}    
+.industriesHead h2, .faqSec h2, .centerHead h2{font-size: 28px;}    
 .ideaSec .ideaElem{padding: 15px;}    
 .ideaSec .ideaElem .content ul{flex-wrap: wrap;gap: 0;}    
 .ideaSec .ideaElem .content ul li{width: 25%;}
@@ -837,9 +867,13 @@ display: flex;align-items: center;justify-content: center;}
 .smallTitle{font-size: 16px;}
 .innerBanner .content h1{font-size: 30px;}
 .innerBanner .catButton{align-items: flex-start;}
+.darkSection .box{padding: 20px 40px 20px 20px;}
+.darkSection .box .boxIcon{top: 18px;right: 14px;font-size: 24px;}
+.darkContainer{margin-top: 20px;}
 }
 
 @media (max-width: 580px){
+.darkContainer{grid-template-columns: repeat(1, 1fr);}    
     .noFound .content h1 {
         font-size: 40px;
     }
@@ -855,7 +889,7 @@ display: flex;align-items: center;justify-content: center;}
 .heroBanner .content p span, .ideaSec .ideaElem .content p span {display: contents;}
 .inputFlex{flex-direction: column;}
 .inputFlex .group{margin-bottom: 20px;}
-.title{font-size: 24px;}
+.title, .innerPage .Heading h2{font-size: 24px;}
 .boxContainer .boxElem .techLogo{width: 33%;}
 .techStyle .buildElem .content{height: 400px;}
 .Heading h2{margin-bottom: 15px;}

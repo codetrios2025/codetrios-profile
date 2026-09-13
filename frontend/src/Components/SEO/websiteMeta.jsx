@@ -96,6 +96,10 @@ export default function SEO({ page }) {
                 property="og:image"
                 content={image}
             />
+            <meta
+                property="og:image:alt"
+                content={`${siteName} - ${title}`}
+            />
 
             {/* TWITTER */}
 

@@ -32,7 +32,14 @@ import {
   FiCode
 } from "react-icons/fi";
 //services Icon
-import { FaMobileAlt, FaPaintBrush, FaHandshake, FaGlobeAmericas } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaBuilding,
+  FaShoppingCart,
+  FaRocket,
+  FaBullseye,
+  FaWordpress
+} from "react-icons/fa";
 import { IoCodeSlash, IoSettingsOutline } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
 import { PiPlugsConnectedBold } from "react-icons/pi";
@@ -138,11 +145,11 @@ const servicesData = [
             <SEO page="website-design-services" />
             <SchemaGraph
                 pageType="service"
-                pageName="Website Design Services"
-                pageDescription="CodeTrios provides professional website design services in India, creating responsive, user-friendly and conversion-focused websites for businesses and organizations."
+                pageName="Website Design Company in India"
+                pageDescription="CodeTrios provides website design services in India, creating responsive, user-friendly, SEO-friendly, and conversion-focused websites for businesses, startups, organizations, and growing brands."
                 pageUrl="https://www.codetrios.com/website-design-services"
                 serviceName="Website Design Services"
-                serviceDescription="Professional website design services in India for businesses, organizations and growing brands."
+                serviceDescription="Website design services in India for businesses, startups, organizations, and growing brands."
                 serviceType="Website Design"
                 
                 breadcrumbs={[
@@ -168,8 +175,8 @@ const servicesData = [
                         <Row>
                             <Col>
                                 <div className={Style.content}>
-                                    <h1>Professional Website Design Company in India</h1>
-                                    <p>CodeTrios is a website design company in India helping businesses, startups, organizations, and growing brands build modern, responsive, and high-performing websites. We combine business strategy, UI/UX design, accessibility, performance, SEO-friendly architecture, and conversion-focused experiences to create websites that support real business goals.</p>
+                                    <h1>Website Design Company in India</h1>
+                                    <p>CodeTrios is a website design company in India helping businesses, startups, organizations, and growing brands create modern, responsive, and high-performing websites. We combine business strategy, UI/UX design, accessibility, performance, SEO-friendly architecture, and conversion-focused experiences to build websites around real business goals.</p>
                                     <CATButton />
                                 </div>                            
                             </Col>
@@ -190,7 +197,15 @@ const servicesData = [
                                     <h2 className={Style.title}>Website Design Services Built Around Your Business Goals</h2>
                                     <p>Our website design services cover the complete design journey, from understanding your business and audience to creating the visual interface and preparing a scalable design system for development. We design websites for companies, startups, institutions, professional organizations, and growing brands.</p>
                                     <p>Our approach focuses on responsive UI/UX, clear information architecture, mobile-first experiences, fast-loading pages, accessibility, SEO-friendly structure, and conversion-focused layouts. The result is a website that is easier for visitors to navigate and easier for businesses to manage and grow.</p>
-                                    <p>Depending on your requirements, CodeTrios can design corporate websites, business websites, ecommerce stores, landing pages, WordPress websites, and redesigned digital experiences.</p>
+                                    <p>
+                                        Depending on your requirements, CodeTrios can design corporate websites,
+                                        business websites, ecommerce stores, landing pages, WordPress websites,
+                                        and redesigned digital experiences. Once the design is finalized, our{" "}
+                                        <Link to="/web-development-services" title="Explore Web Development Services">web development services</Link> {" "}can turn the approved designs into fast, responsive, and scalable websites.</p>
+                                    <p>For businesses that need more than a traditional website, CodeTrios also provides{" "}
+                                    <Link to="/web-application-development" title="Explore CodeTrios web application development services">
+                                        web application development
+                                    </Link>{" "}for custom portals, dashboards, business platforms, and workflow-driven digital applications.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -200,21 +215,21 @@ const servicesData = [
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title}>Our Offerings Include</h2>
+                                <h2 className={Style.title}>Our Website Design Services</h2>
                             </Col>
                         </Row>
                         <Row>
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FiBriefcase  /></span>
-                                    <h3>Corporate Website</h3>
+                                    <h3>Corporate Website Design</h3>
                                     <p>Modern website experiences designed around your business objectives, brand identity, target audience, and conversion goals.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdDesignServices    /></span>
-                                    <h3>UI/UX</h3>
+                                    <h3>UI/UX Website Design</h3>
                                     <p>Pixel-perfect, device-friendly interfaces crafted for an exceptional 
                                         user experience. Every page is optimized for seamless browsing 
                                         across mobiles, tablets, and desktops. For dedicated product and 
@@ -233,7 +248,7 @@ const servicesData = [
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FiShoppingCart   /></span>
-                                    <h3>E-commerce</h3>
+                                    <h3>Ecommerce Website Design</h3>
                                     <p>Conversion-focused ecommerce website design in India for Shopify, 
                                         WooCommerce, Magento, and custom platforms. For complete store 
                                         development and functionality, explore our{" "} 
@@ -265,33 +280,69 @@ const servicesData = [
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FiEye   /></span>
-                                    <h3>Accessibility</h3>
-                                    <p>clear information architecture, mobile-first experiences, fast-loading
-                                        pages, accessibility, SEO-friendly structure, and conversion-focused
-                                        layouts. For businesses looking to improve visibility across traditional
-                                        search and AI-powered search experiences, CodeTrios also provides
-                                        <Link
-                                            to="/geo-seo-services"
-                                            title="Explore SEO and GEO Services"
-                                        >
-                                            {" "}SEO and GEO services
-                                        </Link>.
-                                    </p>
+                                    <h3>Website Accessibility</h3>
+                                    <p>We design accessible websites with clear navigation, readable content, appropriate visual hierarchy, keyboard-friendly interactions, and user-friendly experiences across different devices and abilities.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><BsWordpress   /></span>
-                                    <h3>Wordpress</h3>
-                                    <p>
-                                    We specialize in WordPress website design in India, delivering flexible, scalable, and SEO-ready websites for businesses of all sizes.
-                                    </p>
+                                    <h3>WordPress Website Design</h3>
+                                    <p>We specialize in WordPress website design in India, delivering flexible, scalable, and SEO-ready websites for businesses of all sizes.</p>
                                 </div>
                             </Col>
                         </Row>
 
                     </Container>
                 </div>
+                <section className={`${Style.commonPading} ${Style.darkSection}`}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className={Style.centerHead}>
+                                    <h2 className={Style.title}>Types of Websites We Design</h2>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                                <div className={Style.darkContainer}>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaBriefcase /></div>
+                                        <h3>Business Websites</h3>
+                                        <p>Websites designed for companies that need a professional digital presence.</p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaBuilding /></div>
+                                        <h3>Corporate Websites</h3>
+                                        <p>Structured websites for established organizations and larger businesses.</p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaShoppingCart /></div>
+                                        <h3>Ecommerce Websites</h3>
+                                        <p>Online stores designed around product discovery, shopping and conversion.</p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaRocket /></div>
+                                        <h3>Startup Websites</h3>
+                                        <p>Flexible websites designed to communicate a startup's product, service and value proposition.</p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaBullseye /></div>
+                                        <h3>Landing Pages</h3>
+                                        <p>Campaign-focused pages designed for marketing and lead generation.</p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaWordpress /></div>
+                                        <h3>WordPress Websites</h3>
+                                        <p>Content-managed websites built around flexible publishing and business requirements.</p>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
                 <Industries title="Website Design for Different Industries" subText="CodeTrios designs websites for businesses and
                     organizations across different industries. Our
                     approach adapts the website structure, user
@@ -305,7 +356,7 @@ const servicesData = [
                                 <div className={Style.content}>
                                     <span className={Style.smallTitle}>WHY CHOOSE CODETRIOS</span>
                                     <h2 className={Style.title}>Why Choose CodeTrios for Website Design?</h2>
-                                    <p>Choose us for professional, affordable, and scalable website design and development services in India that combine modern technology, creative design, and business-focused results.</p>
+                                    <p>Choose CodeTrios for business-focused website design that combines modern UI/UX, responsive experiences, SEO-friendly structure, performance-conscious design, and scalable solutions tailored to your business goals.</p>
                                     {benefits.map((benefit, index) => (
                                         <div className={Style.benefitItem} key={index}>
                                             <BsCheckCircle

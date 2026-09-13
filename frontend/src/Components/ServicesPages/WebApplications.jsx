@@ -9,6 +9,14 @@ import CATComponent from '../Pages/CATComponent.jsx';
 import WhyChooseImg from '../../assets/images/why_choose.webp';
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import {
+  FaBriefcase,
+  FaUsers,
+  FaCloud,
+  FaChartBar,
+  FaProjectDiagram,
+  FaPlug
+} from "react-icons/fa";
 //icon
 import { MdDeveloperMode , MdWeb } from "react-icons/md";
 import { BiGitMerge } from "react-icons/bi";
@@ -255,8 +263,8 @@ const WebApplications = () =>{
                         </Row>
                     </Container>
                 </div>
-                <Development title="Our Web Application" subTitle="Development Process" />
-                <section className={`${Style.commonPading} ${Style.weBuild} `}>
+                
+                <section className={`${Style.commonPading} ${Style.darkSection} `}>
                     <Container>
                         <Row>
                             <Col>
@@ -276,73 +284,67 @@ const WebApplications = () =>{
                         </Row>
 
                         <Row>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Business Management Systems</h3>
-                                    <p>
-                                        Custom systems for managing business processes,
-                                        records, workflows, and internal operations.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Customer Portals</h3>
-                                    <p>
-                                        Secure portals that allow customers to access
-                                        information, services, documents, accounts, and
-                                        other digital functionality.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>SaaS Applications</h3>
-                                    <p>
-                                        Browser-based software platforms designed for
-                                        recurring users, subscription models, and scalable
-                                        digital services.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Dashboards & Reporting</h3>
-                                    <p>
-                                        Interactive dashboards for monitoring business
-                                        data, activities, performance, and operational
-                                        metrics.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Workflow Applications</h3>
-                                    <p>
-                                        Digital workflows that help organizations automate
-                                        repetitive processes and improve operational
-                                        efficiency.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>API-Driven Applications</h3>
-                                    <p>
-                                        Applications that connect internal systems,
-                                        third-party platforms, databases, and external
-                                        services through APIs.
-                                    </p>
+                            <Col>
+                                <div className={Style.darkContainer}>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaBriefcase /></div>
+                                        <h3>Business Management Systems</h3>
+                                        <p>
+                                            Custom systems for managing business processes,
+                                            records, workflows, and internal operations.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaUsers /></div>
+                                        <h3>Customer Portals</h3>
+                                        <p>
+                                            Secure portals that allow customers to access
+                                            information, services, documents, accounts, and
+                                            other digital functionality.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaCloud /></div>
+                                        <h3>SaaS Applications</h3>
+                                        <p>
+                                            Browser-based software platforms designed for
+                                            recurring users, subscription models, and scalable
+                                            digital services.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaChartBar /></div>
+                                        <h3>Dashboards & Reporting</h3>
+                                        <p>
+                                            Interactive dashboards for monitoring business
+                                            data, activities, performance, and operational
+                                            metrics.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaProjectDiagram /></div>
+                                        <h3>Workflow Applications</h3>
+                                        <p>
+                                            Digital workflows that help organizations automate
+                                            repetitive processes and improve operational
+                                            efficiency.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div class={Style.boxIcon}><FaPlug /></div>
+                                        <h3>API-Driven Applications</h3>
+                                        <p>
+                                            Applications that connect internal systems,
+                                            third-party platforms, databases, and external
+                                            services through APIs.
+                                        </p>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </section>
+                <Development title="Our Web Application" subTitle="Development Process" />
                 <section className={`${Style.whyChooseSection}`}>
                     <Container>
                         <Row>

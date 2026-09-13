@@ -139,8 +139,8 @@ const ServicesPage = ()=>{
         <SEO page="services" />
         <SchemaGraph
             pageType="website"
-            pageName="Web Design & Development Services"
-            pageDescription="CodeTrios is a web development and digital solutions company in India offering website design, web development, ecommerce development, web application development, UI/UX design, custom software development, digital strategy consulting, web hosting, and SEO & GEO services."
+            pageName="Web Design, Development & Digital Solutions Services"
+            pageDescription="CodeTrios provides website design, web development, ecommerce development, web application development, UI/UX design, custom software development, digital strategy consulting, web hosting, and SEO & GEO services for businesses and organizations in India."
             pageUrl="https://www.codetrios.com/services"
             breadcrumbs={[
                 {
@@ -159,8 +159,8 @@ const ServicesPage = ()=>{
                     <Row>
                         <Col>
                             <div className={Style.content}>
-                                <h1>Web Development & Digital Solutions Services</h1>
-                                <p>CodeTrios provides website design, web development, ecommerce development, web application development, UI/UX design, custom software development, digital strategy consulting, web hosting, and SEO & GEO services for businesses and organizations in India.</p>
+                                <h1>Web Design, Development & Digital Solutions Services</h1>
+                                <p>CodeTrios provides end-to-end web design, development, and digital technology services for businesses, startups, and organizations in India. From website design and ecommerce development to web applications, custom software, UI/UX, digital strategy, hosting, and SEO & GEO, we build scalable digital solutions around your business goals.</p>
                                 <CATButton />
                             </div>
                         </Col>
@@ -172,9 +172,9 @@ const ServicesPage = ()=>{
                     <Row>
                         <Col>
                             <div className={Style.pageHead}>
-                                <span className={Style.smallTitle}>WHAT WE DO</span>
-                                <h1 className={Style.title}>Web Design & Development Services</h1>
-                                <p className={Style.subContent}>CodeTrios is a web development and digital solutions company in India specializing in website design, web development, ecommerce development, web applications, UI/UX design, custom software, digital strategy, web hosting, and SEO & GEO services.</p>
+                                <span className={Style.smallTitle}>OUR SERVICES</span>
+                                <h2 className={Style.title}>Our Web Design, Development & Digital Services</h2>
+                                <p className={Style.subContent}> Explore CodeTrios services for website design, web development, ecommerce, web applications, UI/UX, custom software, digital strategy, hosting, and SEO & GEO. Each service is delivered with a focus on usability, performance, scalability, and long-term business growth.</p>
                             </div>
                         </Col>
                     </Row>
@@ -193,7 +193,7 @@ const ServicesPage = ()=>{
                                         </span>
                                         <h2>{item.title}</h2>
                                         <p>{item.description}</p>
-                                        <Link to={item.link} title={item.linkTitle}>{item.linkTitle} <BsArrowRight className={Style.icon} /></Link>
+                                        <Link to={item.link} title={item.linkTitle}>Explore More <BsArrowRight className={Style.icon} /></Link>
                                     </div>
                                 </article>
                             </Col>
@@ -242,7 +242,7 @@ const ServicesPage = ()=>{
                             <div className={Style.content}>
                                 <span className={Style.smallTitle}>WHY CODETRIOS</span>
                                 <h2 className={Style.title}>Digital Solutions Built Around Your Goals</h2>
-                                <p>CodeTrios is a web development and digital solutions company in India providing end-to-end digital services from strategy and UI/UX design through development, deployment, hosting, optimization, and ongoing technical support.</p>
+                                <p>CodeTrios combines strategy, design, development, deployment, hosting, optimization, and technical support to help businesses build and improve their digital presence. Our solutions are planned around your goals, users, technology requirements, and long-term growth.</p>
                                 {benefits.map((benefit, index) => (
                                     <div className={Style.benefitItem} key={index}>
                                         <BsCheckCircle

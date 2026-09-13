@@ -16,6 +16,14 @@ import { FaRobot, FaLaptopCode } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { BsCheckCircle } from "react-icons/bs";
 //services Icon
+import {
+  FaBriefcase,
+  FaUserCircle,
+  FaCloud,
+  FaBuilding,
+  FaCogs,
+  FaPlug
+} from "react-icons/fa";
 import { FaPaintBrush, FaGlobeAmericas } from "react-icons/fa";
 import { IoCodeSlash } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
@@ -416,12 +424,12 @@ const TechnologySolutions = () =>{
                         </Row>
                     </Container>
                 </section>
-                <section className={`${Style.commonPading} ${Style.weBuild} ${Style.secBgView}`}>
+                <section className={`${Style.commonPading} ${Style.darkSection}`}>
                     <Container>
                         <Row>
                             <Col>
                                 <div className={Style.centerHead}>
-                                    <h2>What Does CodeTrios Build?</h2>
+                                    <h2 className={Style.title}>What Does CodeTrios Build?</h2>
                                     <p>
                                         CodeTrios builds custom digital systems for businesses
                                         that require functionality beyond standard software
@@ -432,63 +440,56 @@ const TechnologySolutions = () =>{
                         </Row>
 
                         <Row>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Business Applications</h3>
-                                    <p>
-                                        Custom applications for internal operations,
-                                        management, workflows, and business processes.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Customer Portals</h3>
-                                    <p>
-                                        Secure portals for customers, partners, employees,
-                                        and other users.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>SaaS Platforms</h3>
-                                    <p>
-                                        Scalable browser-based software platforms with
-                                        accounts, dashboards, workflows, and integrations.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Enterprise Applications</h3>
-                                    <p>
-                                        Software systems supporting complex organizational
-                                        workflows, data, permissions, and integrations.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>Workflow Automation</h3>
-                                    <p>
-                                        Software that reduces repetitive manual processes
-                                        and improves operational efficiency.
-                                    </p>
-                                </div>
-                            </Col>
-
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <h3>API-Connected Systems</h3>
-                                    <p>
-                                        Applications that connect CRMs, ERPs, payment systems,
-                                        databases, ecommerce platforms, and other services.
-                                    </p>
+                            <Col>
+                                <div className={Style.darkContainer}>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaBriefcase /></div>
+                                        <h3>Business Applications</h3>
+                                        <p>
+                                            Custom applications for internal operations,
+                                            management, workflows, and business processes.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaUserCircle /></div>
+                                        <h3>Customer Portals</h3>
+                                        <p>
+                                            Secure portals for customers, partners, employees,
+                                            and other users.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaCloud /></div>
+                                        <h3>SaaS Platforms</h3>
+                                        <p>
+                                            Scalable browser-based software platforms with
+                                            accounts, dashboards, workflows, and integrations.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaBuilding /></div>
+                                        <h3>Enterprise Applications</h3>
+                                        <p>
+                                            Software systems supporting complex organizational
+                                            workflows, data, permissions, and integrations.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaCogs /></div>
+                                        <h3>Workflow Automation</h3>
+                                        <p>
+                                            Software that reduces repetitive manual processes
+                                            and improves operational efficiency.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <div className={Style.boxIcon}><FaPlug /></div>
+                                        <h3>API-Connected Systems</h3>
+                                        <p>
+                                            Applications that connect CRMs, ERPs, payment systems,
+                                            databases, ecommerce platforms, and other services.
+                                        </p>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

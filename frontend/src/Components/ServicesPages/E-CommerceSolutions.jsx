@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
@@ -121,11 +121,11 @@ const EcommerceSolutions = () =>{
             <SEO page="ecommerce-development-services" />
             <SchemaGraph
                 pageType="service"
-                pageName="Ecommerce Development Services"
-                pageDescription="CodeTrios provides ecommerce development services in India to help businesses build scalable, responsive and conversion-focused online stores."
+                pageName="Ecommerce Development Company in India"
+                pageDescription="CodeTrios provides ecommerce development services in India for businesses that need scalable online stores, ecommerce platforms, custom functionality, integrations, and conversion-focused shopping experiences."
                 pageUrl="https://www.codetrios.com/ecommerce-development-services"
                 serviceName="Ecommerce Development Services"
-                serviceDescription="Professional ecommerce development services in India for businesses looking to build scalable online stores."
+                serviceDescription="Ecommerce development services for Shopify, WooCommerce, and custom online stores, including ecommerce functionality, integrations, payments, and performance optimization."
                 serviceType="Ecommerce Development"
                 breadcrumbs={[
                     {
@@ -167,7 +167,7 @@ const EcommerceSolutions = () =>{
                             </Col>
                             <Col md={7}>
                                 <div className={Style.aboutContent}>
-                                    <h2 className={Style.title}>Professional Ecommerce Development Services in India</h2>
+                                    <h2 className={Style.title}>Ecommerce Development Solutions for Growing Businesses</h2>
                                     <p>
                                         CodeTrios provides end-to-end ecommerce development services for businesses
                                         launching new online stores, migrating existing ecommerce platforms, or
@@ -176,7 +176,7 @@ const EcommerceSolutions = () =>{
                                         flows, payment integrations, customer accounts, and scalable ecommerce
                                         architecture. Our ecommerce projects can also include
                                         <Link to="/website-design-services" title="Website Design Services">
-                                            {" "}website design
+                                            {" "}website design services
                                         </Link>
                                         {" "}to create a consistent and conversion-focused storefront.
                                     </p>
@@ -205,7 +205,7 @@ const EcommerceSolutions = () =>{
                                     <p>
                                         From planning and
                                         <Link to="/ui-ux-design-services" title="UI/UX Design Services">
-                                            {" "}UI/UX design
+                                            {" "}UI/UX design services
                                         </Link>
                                         {" "}through development, testing, deployment, and ongoing maintenance,
                                         CodeTrios builds ecommerce solutions designed to provide a reliable
@@ -220,7 +220,7 @@ const EcommerceSolutions = () =>{
                     <Container>
                         <Row>
                             <Col>
-                                <h2 className={Style.title}> Ecommerce Development Services</h2>
+                                <h2 className={Style.title}>Our Ecommerce Development Services</h2>
                             </Col>
                         </Row>
                         <Row>
@@ -241,8 +241,8 @@ const EcommerceSolutions = () =>{
                             <Col md={4}>
                                 <div className={Style.box}>
                                     <span className={Style.icon}><FaStore  /></span>
-                                    <h3>Custom Store Setup</h3>
-                                    <p>End-to-end ecommerce development with personalized layouts, product structures, and branded interfaces tailored to your industry and audience.</p>
+                                    <h3>Custom Ecommerce Development</h3>
+                                    <p>Custom ecommerce solutions designed around your business workflows, products, integrations, and customer experience requirements.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -263,7 +263,7 @@ const EcommerceSolutions = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdPhoneIphone  /></span>
                                     <h3>Mobile-Responsive Design</h3>
-                                    <p>Optimized layouts that ensure your store loads fast and performs exceptionally on all screen sizes.</p>
+                                    <p>Responsive ecommerce experiences designed for smartphones, tablets, and desktops, with mobile-friendly navigation, product browsing, and checkout flows.</p>
                                 </div>
                             </Col>
                             <Col md={4}>
@@ -277,13 +277,13 @@ const EcommerceSolutions = () =>{
                                 <div className={Style.box}>
                                     <span className={Style.icon}><MdSpeed /></span>
                                     <h3>Performance Optimization</h3>
-                                    <p>Fast-loading pages for better user retention and search ranking.</p>
+                                    <p>Optimize ecommerce pages, images, scripts, and technical implementation to improve loading speed, user experience, and store performance.</p>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </div>     
-                <section className={`${Style.commonPading} ${Style.weBuild} ${Style.secBgView}`}>
+                <section className={`${Style.commonPading} ${Style.darkSection}`}>
                     <Container>
                         <Row>
                             <Col>
@@ -295,59 +295,53 @@ const EcommerceSolutions = () =>{
                         </Row>
 
                         <Row>
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}>
-                                        <FaWordpress />
-                                    </span>
+                            <Col>
+                                <div className={Style.darkContainer}>
+                                    <div className={Style.box}>
+                                        <span className={Style.boxIcon}><FaWordpress /></span>
 
-                                    <h3>WooCommerce</h3>
+                                        <h3>WooCommerce</h3>
 
-                                    <p>
-                                        Flexible WordPress-based ecommerce stores with
-                                        customized products, checkout, payments, and
-                                        integrations.
-                                    </p>
-                                </div>
-                            </Col>
+                                        <p>
+                                            Flexible WordPress-based ecommerce stores with
+                                            customized products, checkout, payments, and
+                                            integrations.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <span className={Style.boxIcon}>
+                                            <FaStore />
+                                        </span>
 
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}>
-                                        <FaStore />
-                                    </span>
+                                        <h3>Shopify</h3>
 
-                                    <h3>Shopify</h3>
+                                        <p>
+                                            Scalable Shopify storefronts designed for
+                                            usability, performance, product management,
+                                            and online sales.
+                                        </p>
+                                    </div>
+                                    <div className={Style.box}>
+                                        <span className={Style.boxIcon}>
+                                            <FaCartShopping />
+                                        </span>
 
-                                    <p>
-                                        Scalable Shopify storefronts designed for
-                                        usability, performance, product management,
-                                        and online sales.
-                                    </p>
-                                </div>
-                            </Col>
+                                        <h3>Custom Ecommerce</h3>
 
-                            <Col md={4}>
-                                <div className={Style.box}>
-                                    <span className={Style.icon}>
-                                        <FaCartShopping />
-                                    </span>
-
-                                    <h3>Custom Ecommerce</h3>
-
-                                    <p>
-                                        Custom ecommerce solutions for businesses requiring specialized workflows,
-                                        integrations, or functionality beyond standard platforms. For more
-                                        complex business systems, our
-                                        <Link
-                                            to="/custom-software-solutions"
-                                            title="Custom Software Development Services"
-                                        >
-                                            {" "}custom software development
-                                        </Link>
-                                        {" "}services can support specialized business logic, automation, and
-                                        integrations.
-                                    </p>
+                                        <p>
+                                            Custom ecommerce solutions for businesses requiring specialized workflows,
+                                            integrations, or functionality beyond standard platforms. For more
+                                            complex business systems, our
+                                            <Link
+                                                to="/custom-software-solutions"
+                                                title="Custom Software Development Services"
+                                            >
+                                                {" "}custom software development
+                                            </Link>
+                                            {" "}services can support specialized business logic, automation, and
+                                            integrations.
+                                        </p>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>
@@ -363,7 +357,7 @@ const EcommerceSolutions = () =>{
                                     <h2 className={Style.title}>Why Choose CodeTrios for Ecommerce Development?</h2>
                                     <p>CodeTrios combines ecommerce strategy, UI/UX design, development, integrations, performance optimization, and ongoing support to create online stores that are designed around real business requirements and customer needs.</p>
                                     {benefits.map((benefit, index) => (
-                                        <div className={Style.benefitItem}>
+                                        <div className={Style.benefitItem} key={index}>
                                             <BsCheckCircle
                                                 className={Style.icon}
                                             />

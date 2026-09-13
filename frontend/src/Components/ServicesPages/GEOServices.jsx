@@ -103,7 +103,7 @@ const GEOServices = () => {
             <Row>
               <Col>
                 <div className={Style.content}>
-                  <h1>Geo & SEO Services</h1>
+                  <h1>SEO & Generative Engine Optimization (GEO) Services in India</h1>
                   <p>
                     CodeTrios helps businesses increase their visibility across
                     traditional search engines and AI-powered platforms through
