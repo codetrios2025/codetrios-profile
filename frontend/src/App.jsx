@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import WhatsAppButton from "./Components/Common/WhatsAppButton";
+import Chatbot from "./Chatbot";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <ToastContainer />
       <AppRoutes />
       <WhatsAppButton />
+      <Chatbot />
     </>
   );
 }
